@@ -1,0 +1,128 @@
+<!DOCTYPE >
+<html lang="ru">
+  <head>
+    <title>Alikson</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="HeaderContainer">
+        <logo>
+          <img src="img/logo.svg">
+        </logo>
+        <nav>
+          <ul>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Направление бизнеса</a></li>
+            <li><a href="">Карьера в компании</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div>
+          <input type="text" placeholder="Поиск по сайту">
+          <button><img src="img/zoom.svg"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="MainSection">
+        <div class="VideoContainer">
+          <video muted autoplay loop>
+            <source src="img/mainVideo.mp4">
+          </video>
+        </div>
+        <div class="MainContainer">
+          <img src="img/name.svg">
+          <p>Технологии<br>Доверие<br>Результат</p>
+          <a href="">СВЯЗАТЬСЯ</a>
+        </div>
+      </section>
+      <section class="AboutSection">
+        <div class="About-Header">
+          <h2>О КОМПАНИИ</h2>
+          <p>Наша компания специализируется на комплексных поставках высокотехнологичной и потребительской электроники, комплектующих и оборудования</p>
+        </div>
+        <div class="About-Main">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/About1.png"></div>
+              <div class="swiper-slide"><img src="img/About2.png"></div>
+              <div class="swiper-slide"><img src="img/About3.png"></div>
+              <div class="swiper-slide"><img src="img/About4.png"></div>
+              <div class="swiper-slide"><img src="img/About5.png"></div>
+              <div class="swiper-slide"><img src="img/About6.png"></div>
+              <div class="swiper-slide"><img src="img/About7.png"></div>
+            </div>
+          </div>
+          <div class="Info">
+            <div class="Card">
+              <div>
+                <h3>42,8млрд ₽</h3>
+                <p>годовой оборот</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>20МЛН $</h3>
+                <p>недвижимость компании</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>100+</h3>
+                <p>международных партнеров</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>400+</h3>
+                <p>сотрудников</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>20+ проектов</h3>
+                <p>инвестиционный портфель</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>ОАЭ, китай, европа</h3>
+                <p>офисы по всему миру</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="BuisnesSection">
+        <div class="Buisnes-Header">
+          <h2>НАПРАВЛЕНИЯ<br>БИЗНЕСА</h2>
+          <p>Мы создаем возможности для роста и успеха, предлагая эффективные решения под любые задачи бизнеса</p>
+        </div>
+        <div class="Buisnes-Main">
+
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween:-150,
+      speed:5000,
+      autoplay:{
+        delay: 0,
+      }
+    });
+  </script>
+</html>

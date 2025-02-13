@@ -1,0 +1,283 @@
+/* ОБЩИЕ */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'TT Firs Neue';
+    border: none;
+    background: none;
+}
+
+main{
+}
+
+
+section{
+}
+
+li{
+    list-style: none;
+}
+
+
+
+body{
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+}
+
+
+h2{
+    font-size: 52px;
+    color: #0485FE;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* ХЕДЕР */
+header{
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 0px 0px 6px 6px;
+    border: 1px solid #3535358F;
+    z-index: 1;
+    position: relative;
+}
+
+.HeaderContainer{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap:28px;
+}
+
+header nav a, header input, header input::placeholder, header input::-webkit-input-placeholder{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+}
+
+header nav a:hover{
+    color: #0485FE;
+}
+
+header input{
+    width: 130px;
+}
+
+.HeaderContainer div{
+    background: #2B2A2938;
+    border: 1px solid #3535358F;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+
+
+
+
+
+
+
+/* СЕКЦИИ */
+.MainSection{
+    position: relative;
+    top:-6px;
+    overflow: hidden;
+}
+
+.MainSection .MainContainer{
+    padding: 90px 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    margin-left: calc((100vw - 1280px) / 2);
+}
+
+.MainSection .VideoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.MainSection video{
+    height: 750px;
+}
+
+.MainSection img{
+    margin-bottom: 73px;
+}
+
+.MainSection p{
+    margin-bottom: 111px;
+    font-size: 35px;
+    color:#fff;
+}
+
+.MainSection a{
+    transition: 0.5s ease;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 500;
+    background: #0456CA4D;
+    padding: 27px 50px;
+    border: 1px solid #AAAAAA;
+    border-radius: 6px;
+    box-shadow: 0px 0px 50.58px 0px #0666DF;
+}
+
+.MainSection a:hover{
+    background: #fff;
+    color:#000;
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.AboutSection{
+    background: #181818;
+    padding: 70px 0px 110px 0px;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #3535358F;
+    position: relative;
+    top: -25px;
+}
+
+.AboutSection > div{
+    width: 1440px;
+    margin: auto;
+}
+
+.About-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 80px;
+    margin-bottom: 40px !important;
+}
+
+.About-Header p{
+    font-size: 25px;
+    color:#fff;
+    width: 744px;
+}
+
+.AboutSection .swiper-wrapper {
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    height: auto;
+  }
+
+.AboutSection .swiper{
+    width: 584px;
+    margin: 0px;
+    flex-shrink: 0;
+}
+
+.AboutSection .swiper-slide img{
+    border-radius: 10px;
+}
+
+.About-Main{
+    display: flex;
+    gap:30px;
+}
+
+.About-Main .Info{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+.About-Main .Card{
+    display: flex;
+    gap:16px;
+    align-items: center;
+}
+.About-Main .Card h3{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.About-Main .Card p{
+    color: #FFF;
+    font-size: 18px;
+    opacity: 0.5;
+}
+.About-Main .Card::before{
+    content: "";
+    width: 3px;
+    height: 54px;
+    display: block;
+    background: #0485FE;
+}
+
+
+
+.BuisnesSection{
+    background: #232323;
+}
+
+.BuisnesSection > div{
+    width: 1280px;
+    margin: auto;
+}
+
+.Buisnes-Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Buisnes-Header p{
+    width: 744px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/* ФУТЕР */
+footer{
+    background: rgba(23, 23, 23, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.FooterContainer{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px 50px 0px;
+}
+
+
+
+
+
+
