@@ -157,7 +157,7 @@ header input{
 
 .AboutSection{
     background: #181818;
-    padding: 70px 0px 110px 0px;
+    padding: 70px 0px 153px 0px;
     border-radius: 20px 20px 0px 0px;
     border: 2px solid #3535358F;
     position: relative;
@@ -237,7 +237,12 @@ header input{
 
 
 .BuisnesSection{
-    background: #232323;
+    padding: 70px 0px 100px 0px;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #353535;
+    position: relative;
+    top:-43px;
+    background: url("../img/Back.png") #232323;
 }
 
 .BuisnesSection > div{
@@ -248,6 +253,7 @@ header input{
 .Buisnes-Header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 90px !important;
 }
 
 .Buisnes-Header p{
@@ -255,6 +261,66 @@ header input{
     color: #FFF;
     font-size: 25px;
 }
+
+.Buisnes-Main .Card{
+    background: #2C2C2C;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 32px 0px 22px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease-out;
+}
+
+.Buisnes-Main .Card h3{
+    transition: 0.5s ease;
+    color: #747474;
+    font-size: 32px;
+    font-weight: 500;
+    width: 276px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.Buisnes-Main .Card a{
+    transition: 0.5s ease;
+    color: #747474;
+    font-size: 18px;
+}
+
+.Buisnes-Main .Card p{
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.Buisnes-Main .Grid-1{
+    display: grid;
+    grid-template-columns: 460px 433px 337px;
+    justify-content: space-between;
+    grid-template-rows: 350px 23px;
+}
+
+.Buisnes-Main .Grid-2{
+    display: grid;
+    grid-template-columns: 267px 334px 281px 338px;
+    justify-content: space-between;
+    grid-template-rows: 354px 349px;
+    row-gap: 23px;
+}
+
+.Buisnes-Main .Card:hover{
+    transform: translate(-15px, -14px);
+    box-shadow: 15px 14px 0px 0px rgba(44, 44, 44, 1), 15px 14px 0px 1px #747474;
+    background: url(../img/CardBack.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.Buisnes-Main .Card:hover h3, .Buisnes-Main .Card:hover a, .Buisnes-Main .Card:hover p{
+    color:#fff;
+    opacity: 1;
+}
+
 
 
 
