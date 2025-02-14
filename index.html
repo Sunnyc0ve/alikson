@@ -189,12 +189,115 @@
           </div>
         </div>
       </section>
+      <section class="NewsSection">
+        <div class="News-Header">
+          <h2>НОВОСТИ</h2>
+          <p>О нас пишут - и мы не останавливаемся на достигнутом</p>
+        </div>
+        <div class="News-Main">
+          <div class="swiperN">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="Card">
+                  <img src="img/News1.png">
+                  <div class="Tags">
+                    <a href="">#apartsharing</a>
+                    <a href="">#tadviser</a>
+                    <a href="">#интервью</a>
+                  </div>
+                  <p>Гасан Мустафаев, приобрел долю в компании Apart Sharing за $10 млн</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <img src="img/News2.png">
+                  <div class="Tags">
+                    <a href="">#рбк</a>
+                    <a href="">#финансы</a>
+                    <a href="">#интервью</a>
+                  </div>
+                  <p>Как 24-летний предприниматель создал миллиардную компанию Alikson Group</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <img src="img/News3.png">
+                  <div class="Tags">
+                    <a href="">#рбк</a>
+                    <a href="">#девелопмент</a>
+                    <a href="">#интервью</a>
+                  </div>
+                  <p>Открыть девелоперскую компанию в 25 лет: что важно знать об Alikson Group</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <img src="img/News4.png">
+                  <div class="Tags">
+                    <a href="">#tadviser</a>
+                    <a href="">#биография</a>
+                  </div>
+                  <p>Мустафаев Гасан Агаевич. Биография</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+            </div>
+            <div class="Swiper-Control">
+              <button class="Swiper-Prev"><img src="img/ArrowLeft.svg"></button>
+              <button class="Swiper-Next"><img src="img/ArrowRight.svg"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ProjectsSection">
+        <div class="Projects-Header">
+          <h2>НАШИ ПРОЕКТЫ</h2>
+          <p>За последние четыре года мы организовали и приняли участие в множестве масштабных мероприятий.</p>
+        </div>
+        <div class="Projects-Main">
+          <div class="Links">
+            <a href="">alikson team</a>
+            <a href="">alikson service</a>
+            <a href="">благотфорительный фонд</a>
+          </div>
+          <div class="Info">
+            <div class="Banner">
+              <h3>ALIKSON TEAM</h3>
+              <p>Дебют в Медиа Баскет</p>
+              <div>
+                <a href="">организатор alikson group</a>
+                <a href="">подробнее</a>
+              </div>
+            </div>
+            <div class="Stats">
+              <div>
+                <h3>3 МЛРД</h3>
+                <p>Охват лиги в соцсетях</p>
+              </div>
+              <div>
+                <h3>40+ МЛН</h3>
+                <p>Подписчики игроков и амбассадоров</p>
+              </div>
+              <div>
+                <h3>48+ МЛН</h3>
+                <p>Охват публикаций о команде</p>
+              </div>
+              <div>
+                <img src="img/ArrowRight_1.svg">
+                <a href="">стать спонсором</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
   <script>
     const swiper = new Swiper(".swiper", {
-      // Optional parameters
       direction: "horizontal",
       loop: false,
       slidesPerView: 1,
@@ -203,6 +306,17 @@
       autoplay:{
         delay: 0,
       }
+    });
+
+    const swiperN = new Swiper(".swiperN", {
+      direction: "horizontal",
+      loop: false,
+      slidesPerView: 3,
+      spaceBetween:-150,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
     });
   </script>
 </html>

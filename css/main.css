@@ -266,7 +266,7 @@ header input{
     background: #2C2C2C;
     border: 1px solid #747474;
     border-radius: 10px;
-    padding: 32px 0px 22px 21px;
+    padding: 32px 20px 22px 21px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -320,6 +320,281 @@ header input{
     color:#fff;
     opacity: 1;
 }
+
+
+
+
+.NewsSection{
+    background: #181818;
+    padding: 70px 0px 153px 0px;
+    border-radius: 20px;
+    border: 2px solid #3535358F;
+    position: relative;
+    top: -61px;
+    z-index: 2;
+}
+
+
+.News-Main{
+    display: flex;
+    gap:30px;
+}
+
+.NewsSection > div{
+    width: 1440px;
+    margin: auto;
+}
+
+.News-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 80px;
+    margin-bottom: 40px !important;
+}
+
+.News-Header p{
+    font-size: 25px;
+    color:#fff;
+    width: 744px;
+}
+
+.NewsSection .swiper-wrapper {
+    height: auto;
+  }
+
+.NewsSection .swiperN{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.NewsSection .swiper-slide img{
+    border-radius: 10px;
+}
+
+.NewsSection .swiper-slide{
+    height: auto;
+}
+
+
+.News-Main .Card{
+    border-radius: 10px;
+    border: 1.5px solid #FFF;
+    background: #FFFFFF29;
+    width: 361px;
+     height: 100%; 
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.News-Main .Card img{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #818181;
+}
+
+.News-Main .Tags{
+    margin-left: 12px;
+}
+
+.News-Main .Tags a{
+    color:#fff;
+    opacity: 0.7;
+    font-size: 15;
+}
+
+.News-Main .Card p{
+    font-weight: 500;
+    font-size: 20px;
+    color:#fff;
+    margin: 0px 12px;
+}
+
+.News-Main .Card > a{
+    font-weight: 500;
+    font-size: 15px;
+    color:#1E1E1E;
+    background: #fff;
+    border-radius: 5px;
+    padding: 8.5px 13px;
+    margin-left: 12px;
+}
+
+.Swiper-Control{
+    display: flex;
+    justify-content: end;
+    gap:10px;
+    margin-top: 68px;
+}
+
+.Swiper-Control>button{
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 20px;
+    background: #FFFFFF29;
+    border-radius: 10px;
+}
+
+
+
+.ProjectsSection{
+    padding: 108px 0px 114px 0px;
+    background: url("../img/Back_1.png") #232323;
+    position: relative;
+    top:-80px;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+.ProjectsSection > div{
+    width: 1280px;
+    margin: auto;
+}
+
+.Projects-Header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px !important;
+}
+
+.Projects-Header p{
+    width: 744px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.Projects-Main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Projects-Main .Links{
+    display: flex;
+    flex-direction: column;
+    gap:73px;
+}
+
+.Projects-Main .Links a{
+    transition: 0.5s ease;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 250;
+    text-transform: uppercase;
+    width: 451px;
+    padding: 40px 0px;
+    border-radius: 10px;
+    border: 0.6px solid #FFF;
+    background: #232323;
+    opacity: 0.75;
+}
+
+.Projects-Main .Links a:hover{
+    backdrop-filter: blur(19.4209041595459px);
+    box-shadow: 0px 0px 50.58px 0px #0666DF, 0px 0px 16.18px 0px #0485FE91, 0px 0px 6.68px 0px #FFFFFF59;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.Projects-Main .Info{
+    display: flex;
+    gap:15px;
+}
+
+.Projects-Main .Info .Banner{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+    justify-content: end;
+    padding: 23px 18px;
+    border-radius: 10px;
+}
+
+.Projects-Main .Info .Banner h3{
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.Projects-Main .Info .Banner p{
+    color: #FFF;
+    font-size: 15px;
+}
+
+.Projects-Main .Info .Banner a{
+    transition: 0.5s ease;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 5px;
+    background: radial-gradient(circle, #0485FE 53%, #0485FE 93%);
+    text-transform: uppercase;
+    border: 0.1px solid #0485FE;
+}
+
+.Projects-Main .Info .Banner > div{
+    gap: 12px;
+    display: flex;
+}
+
+.Projects-Main .Info .Banner a:hover{
+    background: radial-gradient(circle, rgba(26,88,72,1) 53%, rgba(43,103,89,1) 93%);
+    border: 0.1px solid #FFFFFF;
+    backdrop-filter: blur(19.4209041595459px);
+    box-shadow: 0px 0px 9.9px 0px #00C99AC2, 0px 0px 4.5px 0px #00C597C9, 0px 0px 1.6px 0px #FFFFFF;
+}
+
+
+.Projects-Main .Info .Stats{
+    border-radius: 10px;
+    background: #1E1E1E;
+    padding: 32px 16px 27px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 288px;
+}
+
+.Projects-Main .Info .Stats h3{
+    color: #0084FF;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.Projects-Main .Info .Stats p{
+    color: #FFF;
+font-size: 18px;
+}
+
+.Projects-Main .Info .Stats a{
+    color: #FFF;
+font-size: 15px;
+font-weight: 500;
+letter-spacing: -0.152px;
+text-decoration-line: underline;
+text-transform: uppercase;
+}
+
+.Projects-Main .Info .Stats > div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 
