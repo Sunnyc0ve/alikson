@@ -49,15 +49,26 @@
           <p>Наша компания специализируется на комплексных поставках высокотехнологичной и потребительской электроники, комплектующих и оборудования</p>
         </div>
         <div class="About-Main">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/About1.png"></div>
-              <div class="swiper-slide"><img src="img/About2.png"></div>
-              <div class="swiper-slide"><img src="img/About3.png"></div>
-              <div class="swiper-slide"><img src="img/About4.png"></div>
-              <div class="swiper-slide"><img src="img/About5.png"></div>
-              <div class="swiper-slide"><img src="img/About6.png"></div>
-              <div class="swiper-slide"><img src="img/About7.png"></div>
+          <div class="wrap">
+            <div class="items-wrap">
+              <div class="items marquee">
+                <div class="item"><img src="img/About1.png"></div>
+                <div class="item"><img src="img/About2.png"></div>
+                <div class="item"><img src="img/About3.png"></div>
+                <div class="item"><img src="img/About4.png"></div>
+                <div class="item"><img src="img/About5.png"></div>
+                <div class="item"><img src="img/About6.png"></div>
+                <div class="item"><img src="img/About7.png"></div>
+              </div>
+              <div aria-hidden="true" class="items marquee">
+                <div class="item"><img src="img/About1.png"></div>
+                <div class="item"><img src="img/About2.png"></div>
+                <div class="item"><img src="img/About3.png"></div>
+                <div class="item"><img src="img/About4.png"></div>
+                <div class="item"><img src="img/About5.png"></div>
+                <div class="item"><img src="img/About6.png"></div>
+                <div class="item"><img src="img/About7.png"></div>
+              </div>
             </div>
           </div>
           <div class="Info">
@@ -293,8 +304,95 @@
           </div>
         </div>
       </section>
+      <section class="FormSection">
+        <div class="Form-Header">
+          <h2>ПРИГЛАШАЕМ<br>К СОТРУДНИЧЕСТВУ</h2>
+          <p>Станьте частью инноваций и стройте будущее вместе с ALIKSON</p>
+        </div>
+        <div class="Form-Main">
+          <form action="" method="POST">
+            <div>
+              <img src="img/inputInfo.svg">
+              <input type="text" name="name" required placeholder="Ваше имя">
+            </div>
+            <div>
+              <img src="img/inputInfo.svg">
+              <input type="text" name="phone" required placeholder="Ваш телефон">
+            </div>
+            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+          </form>
+        </div>
+      </section>
+      <section class="PartnersSection">
+        <div class="wrap">
+          <div class="items-wrap">
+            <div class="items marquee">
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+            </div>
+            <div aria-hidden="true" class="items marquee">
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+              <div class="item"><img src="img/Partner1.svg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="FooterContainer">
+        <div class="FooterContainer-Left">
+          <logo><img src="img/logoFooter.svg"></logo>
+          <a href=""><img src="img/tg.svg">@alikson_msk</a>
+        </div>
+        <div class="FooterContainer-Right">
+          <div>
+            <h3>Навигация</h3>
+            <a href="">О компании</a>
+            <a href="">Новости</a>
+            <a href="">Карьера в компании</a>
+            <a href="">Наши проекты</a>
+            <a href="">Контакты</a>
+          </div>
+          <div>
+            <h3>Направления</h3>
+            <a href="">Маркетплейс электроники</a>
+            <a href="">Alikson инвестиции</a>
+            <a href="">Аренда премиум авто</a>
+            <a href="">Тендерный дивизион</a>
+            <a href="">Оптовая дистрибуция</a>
+            <a href="">Внешнеэкономическая деятельность</a>
+          </div>
+          <div>
+            <a href="">Apart Sharing</a>
+            <a href="">Майнинг</a>
+            <a href="">Логистика</a>
+            <a href="">Платежный агент</a>
+            <a href="">Девелопмент</a>
+          </div>
+          <div>
+            <h3>Социальные сети</h3>
+            <a href="">Telegram</a>
+            <a href="">Vkontakte</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script>
     const swiper = new Swiper(".swiper", {
