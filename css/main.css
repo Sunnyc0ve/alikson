@@ -14,6 +14,7 @@ main{
 
 
 section{
+    overflow: hidden;
 }
 
 li{
@@ -85,7 +86,7 @@ header input{
     width: 130px;
 }
 
-.HeaderContainer div{
+.Header-Menu{
     background: #2B2A2938;
     border: 1px solid #3535358F;
     padding: 10px 15px;
@@ -95,6 +96,9 @@ header input{
     gap:10px;
 }
 
+.Header-Menu_mobile{
+    display: none;
+}
 
 
 
@@ -124,6 +128,10 @@ header input{
 
 .MainSection video{
     height: 750px;
+}
+
+.Video_mobile{
+    display: none;
 }
 
 .MainSection img{
@@ -242,6 +250,8 @@ header input{
     position: relative;
     top:-43px;
     background: url("../img/Back.png") #232323;
+    background-position: center;
+    background-size: 100%;
 }
 
 .BuisnesSection > div{
@@ -318,6 +328,10 @@ header input{
 .Buisnes-Main .Card:hover h3, .Buisnes-Main .Card:hover a, .Buisnes-Main .Card:hover p{
     color:#fff;
     opacity: 1;
+}
+
+.Buisnes-Main_mobile{
+    display: none;
 }
 
 
@@ -442,6 +456,7 @@ header input{
     justify-content: end;
     gap:10px;
     margin-top: 68px;
+    padding-right: 80px;
 }
 
 .Swiper-Control>button{
@@ -492,7 +507,7 @@ header input{
     gap:73px;
 }
 
-.Projects-Main .Links a{
+.Projects-Main .Links button{
     transition: 0.5s ease;
     text-align: center;
     color: #FFF;
@@ -507,7 +522,7 @@ header input{
     opacity: 0.75;
 }
 
-.Projects-Main .Links a:hover{
+.Projects-Main .Links button:hover, .Projects-Main .Links .Active{
     backdrop-filter: blur(19.4209041595459px);
     box-shadow: 0px 0px 50.58px 0px #0666DF, 0px 0px 16.18px 0px #0485FE91, 0px 0px 6.68px 0px #FFFFFF59;
     opacity: 1;
@@ -519,6 +534,10 @@ header input{
     gap:15px;
 }
 
+.Projects-Main .Info:not(.Active){
+    display: none;
+}
+
 .Projects-Main .Info .Banner{
     background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png");
     background-size: 100% 100%;
@@ -528,6 +547,17 @@ header input{
     justify-content: end;
     padding: 23px 18px;
     border-radius: 10px;
+    width: 449px;
+}
+
+.Projects-Main .Info:nth-child(3) .Banner{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects2.png");
+    background-size: 100% 100%;
+}
+
+.Projects-Main .Info:nth-child(4) .Banner{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects3.png");
+    background-size: 100% 100%;
 }
 
 .Projects-Main .Info .Banner h3{
@@ -599,6 +629,10 @@ text-transform: uppercase;
 .Projects-Main .Info .Stats > div:last-child{
     display: flex;
     justify-content: space-between;
+}
+
+.Projects-Main_mobile{
+    display: none;
 }
 
 
@@ -832,7 +866,1165 @@ footer{
 }
 
 
+@media (max-width:1439px){
+    .HeaderContainer{
+        width: 920px;
+    }
+
+    .MainSection .MainContainer{
+        margin-left: calc((100vw - 920px) / 2);
+    }
+
+    .BuisnesSection > div{
+        width: 920px;
+    }
+
+    .ProjectsSection > div{
+        width: 920px;
+    }
+
+    .FormSection > div{
+        width: 920px;
+    }
+
+    .FooterContainer{
+        width: 920px;
+    }
+
+    .AboutSection > div{
+        width: 980px;
+    }
+
+    .NewsSection > div{
+        width: 980px;
+    }
+
+    header nav a, header input, header input::placeholder, header input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .About-Header p {
+        width: 501px;
+        font-size: 19px;
+    }
+
+    .About-Header {
+        padding: 0px 30px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .AboutSection .wrap {
+        width: 420px;
+        margin: 0px;
+    }
+
+    .About-Main .Card h3 {
+        font-size: 22px;
+    }
+
+
+    .BuisnesSection{
+        background-size: 100% 100%;
+    }
+
+    .Buisnes-Header p {
+        width: 401px;
+        font-size: 19px;
+    }
+
+
+    .Buisnes-Main .Grid-1 {
+        grid-template-columns: 340px 293px 237px;
+    }
+
+    .Buisnes-Main .Grid-2 {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 290px;
+        gap: 23px;
+    }
+
+    .Buisnes-Main .Card h3 {
+        font-size: 24px;
+    }
+
+    .News-Header p {
+        width: 401px;
+        font-size: 19px;
+    }
+
+    .News-Header {
+        padding: 0px 30px;
+    }
+
+    .News-Header p {
+        width: 401px;
+        font-size: 19px;
+    }
+
+    .News-Header {
+        padding: 0px 30px;
+    }
+
+    .Swiper-Control{
+        padding-right: 30px;
+    }
+
+
+    .Projects-Header p {
+        width: 401px;
+        font-size: 19px;
+    }
+
+    .Projects-Main .Links button {
+        width: 276px;
+        font-size: 18px;
+    }
+
+    .Projects-Main .Info .Banner > div {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .Projects-Main .Info .Banner {
+        width: 330px;
+        background-size: 130% 100%;
+        background-position: center;
+    }
+
+    .Projects-Main .Info:nth-child(3) .Banner{
+        background-size: 130% 100%;
+        background-position: center;
+    }
+    
+    .Projects-Main .Info:nth-child(4) .Banner{
+        background-size: 130% 100%;
+        background-position: center;
+    }
+
+    .Projects-Main .Info .Stats {
+        width: 268px;
+    }
+
+    .Projects-Main .Links {
+        gap: 45px;
+    }
+
+
+    .Form-Header p {
+        width: 401px;
+        font-size: 19px;
+    }
+
+    .Form-Header h2 {
+        font-size: 43px;
+    }
+
+    .Form-Header {
+        gap: 44px;
+    }
+
+    .FormSection form [type='submit'] {
+        width: 544px;
+    }
+
+
+    .FooterContainer {
+        gap: 249px;
+    }
+
+}
 
 
 
+
+@media (max-width:979px){
+    .HeaderContainer{
+        width: 600px;
+    }
+
+    .Header-Menu_mobile{
+        display: flex;
+        gap:8px;
+    }
+
+
+    .HeaderContainer nav, .Header-Menu{
+        display: none;
+    }
+
+    .MainSection .MainContainer{
+        margin-left: calc((100vw - 600px) / 2);
+        padding: 25px 0px 33px 0px;
+    }
+
+    .MainSection img {
+        margin-bottom: 35px;
+        width: 178px;
+    }
+
+    .MainSection p {
+        margin-bottom: 54px;
+        font-size: 15px;
+    }
+
+    .MainSection a {
+        font-size: 12px;
+        padding: 14px 35px;
+        box-shadow: 0px 0px 20.58px 0px #0666DF;
+    }
+
+    /* .Video_mobile{
+        display: block;
+    }
+
+    .Video_desktop{
+        display: none;
+    } */
+
+    .MainSection video {
+        height: 365px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    .AboutSection, .BuisnesSection, .NewsSection, .ProjectsSection, .FormSection{
+        padding: 30px 0px 40px 0px;
+    }
+
+    .PartnersSection{
+        padding: 30px 0px 10px 0px;
+    }
+
+    .PartnersSection img{
+        width: 110px;
+    }
+
+    .Buisnes-Header, .Projects-Header, .Form-Header{
+        margin-bottom: 30px !important;
+    }
+
+    .About-Main > .Info, .About-Header{
+        width: 600px !important;
+        margin: auto;
+    }
+
+    .About-Main > .wrap{
+        width: 100%;
+    }
+
+    .About-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .About-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+    .About-Main {
+        flex-direction: column;
+    }
+
+    .About-Main .Card::before {
+        display: none;
+    }
+
+    .About-Main .Card h3 {
+        font-size: 18px;
+    }
+
+    .About-Main .Card p {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .About-Main .Card {
+        border-radius: 5px;
+        border: 1px solid #002D58;
+        padding: 7px 4px 7px 9px;
+    }
+
+    .About-Main .Info {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-left: calc((100vw - 600px) / 2);
+    }
+
+    .AboutSection .wrap img {
+        width: 193px;
+    }
+
+
+
+    .BuisnesSection > div{
+        width: 600px;
+    }
+
+    .Buisnes-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .Buisnes-Header h2 br{
+        display: none;
+    }
+
+    .Buisnes-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Buisnes-Main{
+        display: none;
+    }
+    
+    .Buisnes-Main_mobile{
+        display: block;
+    }
+
+    .Buisnes-Main_mobile .Card {
+        background: #2C2C2C;
+        border: 1px solid #747474;
+        border-radius: 10px;
+        padding: 18px 12px 17px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.5s ease-out;
+        width: 206px;
+        height: 203px;
+    }
+
+    .Buisnes-Main_mobile .Card:hover {
+        transform: translate(-15px, -14px);
+        box-shadow: 15px 14px 0px 0px rgba(44, 44, 44, 1), 15px 14px 0px 1px #747474;
+        background: url(../img/CardBack.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .Buisnes-Main_mobile .Card:hover h3, .Buisnes-Main_mobile .Card:hover a, .Buisnes-Main_mobile .Card:hover p{
+        color:#fff;
+        opacity: 1;
+    }
+
+    .Buisnes-Main_mobile .Card h3 {
+        transition: 0.5s ease;
+        color: #747474;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .Buisnes-Main_mobile .Card p {
+        font-size: 10px;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+
+    .Buisnes-Main_mobile .Card a {
+        transition: 0.5s ease;
+        color: #747474;
+        font-size: 12px;
+    }
+
+    .BuisnesSection .swiperB{
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    }
+
+    .BuisnesSection .swiper-wrapper{
+        height: auto;
+    }
+
+    .Swiper-Control {
+        padding:0px;
+        justify-content: space-between;
+        margin-top: 119px;
+    }
+
+
+
+    .NewsSection > div{
+        width: 600px;
+    }
+
+    .News-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .News-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .News-Main .Card {
+        width: 216px;
+    }
+
+    .News-Main .Tags{
+        margin: 0px 7px;
+    }
+
+    .News-Main .Tags a {
+        font-size: 9px;
+    }
+
+    .News-Main .Card p {
+        font-weight: 400;
+        font-size: 13px;
+        margin: 0px 7px;
+    }
+
+    .News-Main .Card > a {
+        font-weight: 500;
+        font-size: 9px;
+        color: #1e1e1e;
+        padding: 5px 7px;
+        margin: 0px 7px;
+    }
+
+    .NewsSection .swiperN {
+        overflow: visible;
+    }
+
+
+
+    .ProjectsSection > div{
+        width: 600px;
+    }
+    
+    .Projects-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .Projects-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Projects-Main{
+        display: none;
+    }
+
+    .Projects-Main_mobile{
+        display: block;
+    }
+
+
+    .Projects-Main_mobile .Info{
+        display: flex;
+        width: 600px;
+        height: 215px;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects1.png");
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        gap:9px;
+        justify-content: space-between;
+        padding: 17px 0px 9px 13px;
+        border-radius: 10px;
+        width: 380px;
+        flex-shrink: 0;
+        height: 315px;
+    }
+    
+    .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects2.png");
+        background-size: 100% 100%;
+    }
+    
+    .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects3.png");
+        background-size: 100% 100%;
+    }
+    
+    .Projects-Main_mobile .Info .Banner h3{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        width: 100px;
+    }
+    
+    .Projects-Main_mobile .Info .Banner p{
+        color: #FFF;
+        font-size: 8px;
+        width: 100px;
+    }
+    
+    .Projects-Main_mobile .Info .Banner a{
+        transition: 0.5s ease;
+        color: #FFF;
+        font-size: 8px;
+        font-weight: 500;
+        padding: 7px 13px;
+        border-radius: 5px;
+        background: radial-gradient(circle, #0485FE 53%, #0485FE 93%);
+        text-transform: uppercase;
+        border: 0.1px solid #0485FE;
+        width: 89px;
+        text-align: center;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Banner a:hover{
+        background: radial-gradient(circle, rgba(26,88,72,1) 53%, rgba(43,103,89,1) 93%);
+        border: 0.1px solid #FFFFFF;
+        backdrop-filter: blur(19.4209041595459px);
+        box-shadow: 0px 0px 9.9px 0px #00C99AC2, 0px 0px 4.5px 0px #00C597C9, 0px 0px 1.6px 0px #FFFFFF;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Stats{
+        border-radius: 10px;
+        background: #1E1E1E;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 241px;
+        height: 315px;
+        position: absolute;
+        right: 0px;
+    }
+    
+    .Projects-Main_mobile .Info .Stats h3{
+        color: #0084FF;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    
+    .Projects-Main_mobile .Info .Stats p{
+        color: #FFF;
+    font-size: 9px;
+    font-weight: 300;
+    }
+    
+    .Projects-Main_mobile .Info .Stats a{
+        color: #FFF;
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: -0.152px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    }
+    
+    .Projects-Main_mobile .Info .Stats > div:last-child{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ProjectsSection .swiperP {
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+    }
+
+    .ProjectsSection .swiper-wrapper{
+        height: auto;
+    }
+
+
+
+    .FormSection > div{
+        width: 600px;
+    }
+
+    .Form-Header{
+        flex-direction: column;
+    }
+
+    
+
+    .Form-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Form-Header h2 {
+        font-size: 23px;
+    }
+
+    .FormSection form [type='submit'] {
+        width: 100%;
+        font-size: 12px;
+        padding: 15px 0px;
+    }
+
+    .FormSection form [type='text'], .FormSection form [type='text']::placeholder, .FormSection form [type='text']::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .FormSection form > div {
+        padding: 14px 16px;
+    }
+
+    .FormSection form {
+        width: 100%;
+        gap:12px;
+    }
+
+
+    .FooterContainer{
+        display: none;
+    }
+
+    .FooterContainer_mobile{
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:16px;
+    }
+
+    .FooterContainer_mobile button{
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .FooterContainer_mobile a {
+        color: #0485FE;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+@media (max-width:659px){
+    .HeaderContainer{
+        width: 300px;
+    }
+
+    .Header-Menu_mobile{
+        display: flex;
+        gap:8px;
+    }
+
+
+    .HeaderContainer nav, .Header-Menu{
+        display: none;
+    }
+
+    .MainSection .MainContainer{
+        margin-left: calc((100vw - 300px) / 2);
+        padding: 25px 0px 33px 0px;
+    }
+
+    .MainSection img {
+        margin-bottom: 35px;
+        width: 178px;
+    }
+
+    .MainSection p {
+        margin-bottom: 54px;
+        font-size: 15px;
+    }
+
+    .MainSection a {
+        font-size: 12px;
+        padding: 14px 35px;
+        box-shadow: 0px 0px 20.58px 0px #0666DF;
+    }
+
+    /* .Video_mobile{
+        display: block;
+    }
+
+    .Video_desktop{
+        display: none;
+    } */
+
+    .MainSection video {
+        height: 302px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    .AboutSection, .BuisnesSection, .NewsSection, .ProjectsSection, .FormSection{
+        padding: 30px 0px 40px 0px;
+    }
+
+    .PartnersSection{
+        padding: 30px 0px 10px 0px;
+    }
+
+    .PartnersSection img{
+        width: 110px;
+    }
+
+    .Buisnes-Header, .Projects-Header, .Form-Header{
+        margin-bottom: 30px !important;
+    }
+
+    .About-Main > .Info, .About-Header{
+        width: 300px !important;
+        margin: auto;
+    }
+
+    .About-Main > .wrap{
+        width: 100%;
+    }
+
+    .About-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .About-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+    .About-Main {
+        flex-direction: column;
+    }
+
+    .About-Main .Card::before {
+        display: none;
+    }
+
+    .About-Main .Card h3 {
+        font-size: 18px;
+    }
+
+    .About-Main .Card p {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .About-Main .Card {
+        border-radius: 5px;
+        border: 1px solid #002D58;
+        padding: 7px 4px 7px 9px;
+    }
+
+    .About-Main .Info {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-left: calc((100vw - 300px) / 2);
+    }
+
+    .AboutSection .wrap img {
+        width: 193px;
+    }
+
+
+
+    .BuisnesSection > div{
+        width: 300px;
+    }
+
+    .Buisnes-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .Buisnes-Header h2 br{
+        display: none;
+    }
+
+    .Buisnes-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Buisnes-Main{
+        display: none;
+    }
+    
+    .Buisnes-Main_mobile{
+        display: block;
+    }
+
+    .Buisnes-Main_mobile .Card {
+        background: #2C2C2C;
+        border: 1px solid #747474;
+        border-radius: 10px;
+        padding: 18px 12px 17px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.5s ease-out;
+        width: 206px;
+        height: 203px;
+    }
+
+    .Buisnes-Main_mobile .Card:hover {
+        transform: translate(-15px, -14px);
+        box-shadow: 15px 14px 0px 0px rgba(44, 44, 44, 1), 15px 14px 0px 1px #747474;
+        background: url(../img/CardBack.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .Buisnes-Main_mobile .Card:hover h3, .Buisnes-Main_mobile .Card:hover a, .Buisnes-Main_mobile .Card:hover p{
+        color:#fff;
+        opacity: 1;
+    }
+
+    .Buisnes-Main_mobile .Card h3 {
+        transition: 0.5s ease;
+        color: #747474;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .Buisnes-Main_mobile .Card p {
+        font-size: 10px;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+
+    .Buisnes-Main_mobile .Card a {
+        transition: 0.5s ease;
+        color: #747474;
+        font-size: 12px;
+    }
+
+    .BuisnesSection .swiperB{
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    }
+
+    .BuisnesSection .swiper-wrapper{
+        height: auto;
+    }
+
+    .Swiper-Control {
+        margin-top: 20px;
+    }
+
+
+
+    .NewsSection > div{
+        width: 300px;
+    }
+
+    .News-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .News-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .News-Main .Card {
+        width: 216px;
+    }
+
+    .News-Main .Tags{
+        margin: 0px 7px;
+    }
+
+    .News-Main .Tags a {
+        font-size: 9px;
+    }
+
+    .News-Main .Card p {
+        font-weight: 400;
+        font-size: 13px;
+        margin: 0px 7px;
+    }
+
+    .News-Main .Card > a {
+        font-weight: 500;
+        font-size: 9px;
+        color: #1e1e1e;
+        padding: 5px 7px;
+        margin: 0px 7px;
+    }
+
+    .NewsSection .swiperN {
+        overflow: visible;
+    }
+
+
+
+    .ProjectsSection > div{
+        width: 300px;
+    }
+    
+    .Projects-Header{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .Projects-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Projects-Main{
+        display: none;
+    }
+
+    .Projects-Main_mobile{
+        display: block;
+    }
+
+
+    .Projects-Main_mobile .Info{
+        display: flex;
+        width: 300px;
+        height: 215px;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects1.png");
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        gap:9px;
+        justify-content: space-between;
+        padding: 17px 0px 9px 13px;
+        border-radius: 10px;
+        width: 179px;
+        flex-shrink: 0;
+        height: auto;
+    }
+    
+    .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects2.png");
+        background-size: 100% 100%;
+    }
+    
+    .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner{
+        background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%), url("../img/Projects3.png");
+        background-size: 100% 100%;
+    }
+    
+    .Projects-Main_mobile .Info .Banner h3{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        width: 100px;
+    }
+    
+    .Projects-Main_mobile .Info .Banner p{
+        color: #FFF;
+        font-size: 8px;
+        width: 100px;
+    }
+    
+    .Projects-Main_mobile .Info .Banner a{
+        transition: 0.5s ease;
+        color: #FFF;
+        font-size: 8px;
+        font-weight: 500;
+        padding: 7px 13px;
+        border-radius: 5px;
+        background: radial-gradient(circle, #0485FE 53%, #0485FE 93%);
+        text-transform: uppercase;
+        border: 0.1px solid #0485FE;
+        width: 89px;
+        text-align: center;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Banner a:hover{
+        background: radial-gradient(circle, rgba(26,88,72,1) 53%, rgba(43,103,89,1) 93%);
+        border: 0.1px solid #FFFFFF;
+        backdrop-filter: blur(19.4209041595459px);
+        box-shadow: 0px 0px 9.9px 0px #00C99AC2, 0px 0px 4.5px 0px #00C597C9, 0px 0px 1.6px 0px #FFFFFF;
+    }
+    
+    
+    .Projects-Main_mobile .Info .Stats{
+        border-radius: 10px;
+        background: #1E1E1E;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 141px;
+        height: 215px;
+        position: absolute;
+        right: 0px;
+    }
+    
+    .Projects-Main_mobile .Info .Stats h3{
+        color: #0084FF;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    
+    .Projects-Main_mobile .Info .Stats p{
+        color: #FFF;
+    font-size: 9px;
+    font-weight: 300;
+    }
+    
+    .Projects-Main_mobile .Info .Stats a{
+        color: #FFF;
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: -0.152px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    }
+    
+    .Projects-Main_mobile .Info .Stats > div:last-child{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ProjectsSection .swiperP {
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+    }
+
+    .ProjectsSection .swiper-wrapper{
+        height: auto;
+    }
+
+
+
+    .FormSection > div{
+        width: 300px;
+    }
+
+    .Form-Header{
+        flex-direction: column;
+    }
+
+    
+
+    .Form-Header p {
+        width: auto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.12px;
+    }
+
+    .Form-Header h2 {
+        font-size: 23px;
+    }
+
+    .FormSection form [type='submit'] {
+        width: 100%;
+        font-size: 12px;
+        padding: 15px 0px;
+    }
+
+    .FormSection form [type='text'], .FormSection form [type='text']::placeholder, .FormSection form [type='text']::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .FormSection form > div {
+        padding: 14px 16px;
+    }
+
+    .FormSection form {
+        width: 100%;
+        gap:12px;
+    }
+
+
+    .FooterContainer{
+        display: none;
+    }
+
+    .FooterContainer_mobile{
+        width: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:16px;
+    }
+
+    .FooterContainer_mobile button{
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .FooterContainer_mobile a {
+        color: #0485FE;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:379px){
+     .Video_mobile{
+        display: block;
+    }
+
+    .Video_desktop{
+        display: none;
+    }
+
+    .MainSection video {
+        height: 302px;
+    }
+}
 

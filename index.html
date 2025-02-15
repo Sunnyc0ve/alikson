@@ -16,25 +16,32 @@
         <logo>
           <img src="img/logo.svg">
         </logo>
-        <nav>
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Направление бизнеса</a></li>
-            <li><a href="">Карьера в компании</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <div>
-          <input type="text" placeholder="Поиск по сайту">
-          <button><img src="img/zoom.svg"></button>
+          <nav>
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Направление бизнеса</a></li>
+              <li><a href="">Карьера в компании</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="Header-Menu">
+            <input type="text" placeholder="Поиск по сайту">
+            <button><img src="img/zoom.svg"></button>
+          </div>
+        <div class="Header-Menu_mobile">
+          <button><img src="img/zoom_1.svg"></button>
+          <button><img src="img/menu.svg"></button>
         </div>
       </div>
     </header>
     <main>
       <section class="MainSection">
         <div class="VideoContainer">
-          <video muted autoplay loop>
+          <video muted autoplay loop class="Video_desktop">
             <source src="img/mainVideo.mp4">
+          </video>
+          <video muted autoplay loop class="Video_mobile">
+            <source src="img/mainVideo_1.mp4">
           </video>
         </div>
         <div class="MainContainer">
@@ -113,7 +120,7 @@
       </section>
       <section class="BuisnesSection">
         <div class="Buisnes-Header">
-          <h2>НАПРАВЛЕНИЯ<br>БИЗНЕСА</h2>
+          <h2>НАПРАВЛЕНИЯ <br>БИЗНЕСА</h2>
           <p>Мы создаем возможности для роста и успеха, предлагая эффективные решения под любые задачи бизнеса</p>
         </div>
         <div class="Buisnes-Main">
@@ -199,6 +206,116 @@
             </div>
           </div>
         </div>
+
+        <div class="Buisnes-Main_mobile">
+          <div class="swiperB">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>ОПТОВАЯ ДИСТРИБУЦИЯ</h3>
+                    <p>Мы предлагаем надежную и выгодную оптовую дистрибуцию, обеспечивая полную поддержку и прозрачность процессов</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>ALIKSON ИНВЕСТИЦИИ</h3>
+                    <p>Мы предлагаем надежные инвестиционные возможности спрозрачной структурой и высоким уровнем поддержки для уверенного роста капитала</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>маркетплейс электроники</h3>
+                    <p>Наши маркетплейсы предлагают удобные решения для торговли с высокой степенью доверия и технологической поддержки</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>МАЙНИНГ</h3>
+                    <p>Обеспечиваем стабильный и безопасный доступ к современным решениям в области майнинга, минимизируя риски и повышая доходность инвестиций</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>АРЕНДА ПРЕМИУМ АВТО</h3>
+                    <p>Премиальный автопрокат от Alikson Group гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>apart<br>sharing</h3>
+                    <p>Удобный и безопасный сервис сдачи в аренду апартаментов с максимальной заботой о комфорте гостей и владельцев недвижимости</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>ВЭД</h3>
+                    <p>Мы предлагаем надежную и выгодную оптовую дистрибуцию, обеспечивая полную поддержку и прозрачность процессов</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>тендерный дивизион</h3>
+                    <p>Мы предоставляем комплексные тендерные решения, помогая клиентам эффективно участвовать в конкурсах и минимизировать бюрократические риски</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>девелопмент</h3>
+                    <p>Реализуем устойчивые и перспективные девелоперские проекты, гарантируя высокую ликвидность  и доходность объектов</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>ЛОГИСТИКА</h3>
+                    <p>Организуем надежные и оптимизированные логистические цепочки, гарантируя своевременную доставку по всему миру</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div>
+                    <h3>платежный агент</h3>
+                    <p>Реализуем устойчивые и перспективные девелоперские проекты, гарантируя высокую ликвидность  и доходность объектов</p>
+                  </div>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="Swiper-Control">
+              <button class="Swiper-Prev"><img src="img/ArrowLeft.svg"></button>
+              <button class="Swiper-Next"><img src="img/ArrowRight.svg"></button>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="NewsSection">
         <div class="News-Header">
@@ -270,11 +387,11 @@
         </div>
         <div class="Projects-Main">
           <div class="Links">
-            <a href="">alikson team</a>
-            <a href="">alikson service</a>
-            <a href="">благотфорительный фонд</a>
+            <button class="Active" data="Team">alikson team</button>
+            <button data="Service">alikson service</button>
+            <button data="Fond">благотфорительный фонд</button>
           </div>
-          <div class="Info">
+          <div class="Info Active" data="Team">
             <div class="Banner">
               <h3>ALIKSON TEAM</h3>
               <p>Дебют в Медиа Баскет</p>
@@ -300,6 +417,140 @@
                 <img src="img/ArrowRight_1.svg">
                 <a href="">стать спонсором</a>
               </div>
+            </div>
+          </div>
+          <div class="Info" data="Service">
+            <div class="Banner">
+              <h3>ALIKSON SERVICE</h3>
+              <p>Профессиональный сервис для вашего оборудования и техники</p>
+              <div>
+                <a href="">организатор alikson group</a>
+                <a href="">подробнее</a>
+              </div>
+            </div>
+            <div class="Stats">
+              <div>
+                <h3>45+ ТЫС</h3>
+                <p>единиц техники отремонтировано нашими специалистами</p>
+              </div>
+              <div>
+                <h3>1 ГОД</h3>
+                <p>гарантии на ремонт техники</p>
+              </div>
+              <div>
+                <img src="img/ArrowRight_1.svg">
+                <a href="">стать спонсором</a>
+              </div>
+            </div>
+          </div>
+          <div class="Info" data="Fond">
+            <div class="Banner">
+              <h3>ФОНД ALIKSON</h3>
+              <p>Благотворительный фонд Alikson: Помогать — наша ответственность</p>
+              <div>
+                <a href="">организатор alikson group</a>
+                <a href="">подробнее</a>
+              </div>
+            </div>
+            <div class="Stats">
+              <div>
+                <h3>45+</h3>
+                <p>Проектов реализовано за 2 года </p>
+              </div>
+              <div>
+                <h3>1%</h3>
+                <p>Прибыли компании перечисляется в благотворительные фонды</p>
+              </div>
+              <div>
+                <img src="img/ArrowRight_1.svg">
+                <a href="">стать спонсором</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Projects-Main_mobile">
+          <div class="swiperP">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="Info">
+                  <div class="Banner">
+                    <div>
+                      <h3>ALIKSON TEAM</h3>
+                      <p>Дебют в Медиа Баскет</p>
+                    </div>
+                      <a href="">подробнее</a>
+                  </div>
+                  <div class="Stats">
+                    <div>
+                      <h3>3 МЛРД</h3>
+                      <p>Охват лиги в соцсетях</p>
+                    </div>
+                    <div>
+                      <h3>40+ МЛН</h3>
+                      <p>Подписчики игроков и амбассадоров</p>
+                    </div>
+                    <div>
+                      <h3>48+ МЛН</h3>
+                      <p>Охват публикаций о команде</p>
+                    </div>
+                    <div>
+                      <a href="">стать спонсором</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Info">
+                  <div class="Banner">
+                    <div>
+                      <h3>ALIKSON SERVICE</h3>
+                      <p>Профессиональный сервис для вашего оборудования и техники</p>
+                    </div>
+                      <a href="">подробнее</a>
+                  </div>
+                  <div class="Stats">
+                    <div>
+                      <h3>45+ ТЫС</h3>
+                      <p>единиц техники отремонтировано нашими специалистами</p>
+                    </div>
+                    <div>
+                      <h3>1 ГОД</h3>
+                      <p>гарантии на ремонт техники</p>
+                    </div>
+                    <div>
+                      <a href="">стать спонсором</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Info">
+                  <div class="Banner">
+                    <div>
+                      <h3>ФОНД ALIKSON</h3>
+                      <p>Благотворительный фонд Alikson: Помогать — наша ответственность</p>
+                    </div>
+                      <a href="">подробнее</a>
+                  </div>
+                  <div class="Stats">
+                    <div>
+                      <h3>45+</h3>
+                      <p>Проектов реализовано за 2 года </p>
+                    </div>
+                    <div>
+                      <h3>1%</h3>
+                      <p>Прибыли компании перечисляется в благотворительные фонды</p>
+                    </div>
+                    <div>
+                      <a href="">стать спонсором</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Swiper-Control">
+              <button class="Swiper-Prev"><img src="img/ArrowLeft.svg"></button>
+              <button class="Swiper-Next"><img src="img/ArrowRight.svg"></button>
             </div>
           </div>
         </div>
@@ -392,29 +643,68 @@
           </div>
         </div>
       </div>
+      <div class="FooterContainer_mobile">
+        <logo><img src="img/logoFooter.svg"></logo>
+        <button>Навигация</button>
+        <button>Направления</button>
+        <button>Социальные сети</button>
+         <a href=""><img src="img/tg.svg">@alikson_msk</a>
+      </div>
     </footer>
   </body>
   <script>
-    const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      loop: false,
-      slidesPerView: 1,
-      spaceBetween:-150,
-      speed:5000,
-      autoplay:{
-        delay: 0,
-      }
-    });
 
     const swiperN = new Swiper(".swiperN", {
+      slidesPerView: 1,
+      spaceBetween: -70,
+      breakpoints: {
+        660: { slidesPerView: 2, spaceBetween: -100},
+        980: { slidesPerView: 2, spaceBetween: -180},
+        1440: { slidesPerView: 3, spaceBetween: -250},
+      },
       direction: "horizontal",
       loop: false,
-      slidesPerView: 3,
-      spaceBetween:-150,
       navigation: {
         nextEl: ".Swiper-Next",
         prevEl: ".Swiper-Prev",
       },
     });
+
+    const swiperB = new Swiper(".swiperB", {
+      slidesPerView: 1,
+      spaceBetween: -80,
+      breakpoints: {
+        660: { slidesPerView: 2, spaceBetween: -100},
+      },
+      direction: "horizontal",
+      loop: false,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
+    });
+
+    const swiperP = new Swiper(".swiperP", {
+      slidesPerView: 1,
+      // breakpoints: {
+      //   1440: { slidesPerView: 3, spaceBetween: -250},
+      // },
+      direction: "horizontal",
+      loop: false,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
+    });
+
+    document.querySelectorAll('.Projects-Main .Links button').forEach(e=>{
+      e.addEventListener('click',()=>{
+        document.querySelector('.Projects-Main .Links .Active').removeAttribute('class')
+        e.setAttribute('class','Active')
+        const data=e.getAttribute('data')
+        document.querySelector('.Projects-Main > .Active').setAttribute('class','Info')
+        document.querySelector(`.Projects-Main > [data=${data}]`).setAttribute('class','Info Active')
+      })
+    })
   </script>
 </html>
