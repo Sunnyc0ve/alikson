@@ -34,6 +34,7 @@ h2 {
   font-size: 52px;
   color: #0485fe;
   font-weight: 600;
+  line-height: 100%;
 }
 
 /* ХЕДЕР */
@@ -176,6 +177,8 @@ header input {
   font-size: 25px;
   color: #fff;
   width: 744px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
 }
 
 .AboutSection .swiper-wrapper {
@@ -254,6 +257,8 @@ header input {
   width: 744px;
   color: #fff;
   font-size: 25px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
 }
 
 .Buisnes-Main .Card {
@@ -353,10 +358,13 @@ header input {
   font-size: 25px;
   color: #fff;
   width: 744px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
 }
 
 .NewsSection .swiper-wrapper {
   height: auto;
+  margin-left: 80px;
 }
 
 .NewsSection .swiperN {
@@ -380,11 +388,11 @@ header input {
 
 .News-Main .Card {
   border-radius: 10px;
-  border: 1.5px solid #ffffff50;
+  border: 1.81px solid #818181;
   background: #ffffff29;
   width: 361px;
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 14.84px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -394,12 +402,13 @@ header input {
 
 .News-Main .Card img {
   width: 100%;
+  height: 198px;
   border-radius: 10px;
-  border: 1px solid #818181;
+  border: 1.81px solid #818181;
 }
 
 .News-Main .Tags {
-  margin-left: 12px;
+  margin-left: 12.64px;
 }
 
 .News-Main .Tags a {
@@ -409,10 +418,9 @@ header input {
 }
 
 .News-Main .Card p {
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   color: #fff;
-  margin: 0px 12px;
+  margin: 0px 12.64px;
 }
 
 .News-Main .Card > a {
@@ -423,7 +431,7 @@ header input {
   background: #fff;
   border-radius: 5px;
   padding: 8.5px 13px;
-  margin-left: 12px;
+  margin-left: 12.64px;
   border: 1px solid #fff;
 }
 
@@ -436,7 +444,7 @@ header input {
 .Swiper-Control {
   display: flex;
   justify-content: end;
-  gap: 10px;
+  gap: 11px;
   margin-top: 68px;
   padding-right: 80px;
 }
@@ -444,9 +452,13 @@ header input {
 .Swiper-Control > button {
   color: #fff;
   font-size: 24px;
-  padding: 8px 20px;
+  padding: 7.5px 20.5px;
   background: #ffffff29;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.Swiper-Control > button:hover {
+  opacity: 0.8;
 }
 
 .ProjectsSection {
@@ -473,6 +485,8 @@ header input {
   width: 744px;
   color: #fff;
   font-size: 25px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
 }
 
 .Projects-Main {
@@ -567,12 +581,19 @@ header input {
   border: 0.1px solid #0485fe;
 }
 
+.Projects-Main .Info .Banner a:last-child{
+  color: rgba(24, 24, 24, 1);
+  background: rgba(142, 142, 142, 1);
+  border: 0.1px solid rgba(142, 142, 142, 1);
+}
+
 .Projects-Main .Info .Banner > div {
   gap: 12px;
   display: flex;
 }
 
 .Projects-Main .Info .Banner a:hover {
+  color:#fff;
   background: radial-gradient(
     circle,
     rgba(26, 88, 72, 1) 53%,
@@ -626,13 +647,15 @@ header input {
 .Form-Header {
   display: flex;
   gap: 24px;
-  margin-bottom: 90px !important;
+  margin-bottom: 50px !important;
 }
 
 .Form-Header p {
   width: 647px;
   color: #fff;
   font-size: 25px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
 }
 
 .Form-Header h2 {
@@ -641,7 +664,9 @@ header input {
 
 .FormSection {
   background: #181818 url("../img/Back_2.svg") no-repeat;
-  padding: 70px 0px 153px 0px;
+  background-size: 760px;
+  background-position: -131px -10px;
+  padding: 70px 0px 65px 0px;
   border-radius: 20px;
   border: 2px solid #3535358f;
   position: relative;
@@ -663,6 +688,15 @@ header input {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 744px;
+}
+
+.FormSection form p{
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 28.75px;
+  letter-spacing: -1%;
+  color: rgba(255, 255, 255, 1);
 }
 
 .FormSection form > div {
@@ -684,13 +718,13 @@ header input {
 }
 
 .FormSection form [type="submit"] {
+  margin-bottom: 26px;
   transition: 0.5s ease;
   text-align: center;
   color: #fff;
   font-size: 21px;
   font-weight: 250;
   text-transform: uppercase;
-  width: 744px;
   padding: 25px 0px;
   border-radius: 10px;
   border: 0.6px solid #fff;
@@ -838,6 +872,11 @@ footer {
 
 .FooterContainer-Right > div {
   max-width: 168px;
+}
+
+
+.FooterContainer_mobile {
+  display: none;
 }
 
 @media (max-width: 1439px) {
@@ -999,8 +1038,12 @@ footer {
     gap: 44px;
   }
 
-  .FormSection form [type="submit"] {
+  .FormSection form {
     width: 544px;
+  }
+
+  .FormSection form p br{
+    display: none;
   }
 
   .FooterContainer {
@@ -1043,14 +1086,6 @@ footer {
     padding: 14px 35px;
     box-shadow: 0px 0px 20.58px 0px #0666df;
   }
-
-  /* .Video_mobile{
-        display: block;
-    }
-
-    .Video_desktop{
-        display: none;
-    } */
 
   .MainSection video {
     height: 365px;
@@ -1496,15 +1531,22 @@ footer {
     gap: 5px;
     margin-top: 10px;
   }
+
+  .NewsSection .swiper-wrapper {
+     margin-left: 0px;
+}
 }
 
-@media (min-width: 670px) {
-  .FooterContainer_mobile {
-    display: none;
-  }
-}
 
 @media (max-width: 659px) {
+  header{
+    padding: 14px 0px;
+  }
+
+  header logo img{
+    width: 55px;
+  }
+
   .HeaderContainer {
     width: 300px;
   }
@@ -1537,16 +1579,13 @@ footer {
   .MainSection a {
     font-size: 12px;
     padding: 12px 35px;
-    box-shadow: 0px 0px 20.58px 0px #0666df;
+    /* box-shadow: 0px 0px 20.58px 0px #0666df;
+    backdrop-filter: blur(13.198692321777344px) */
+
+  box-shadow: 0px 0px 12.1px 0px rgba(6, 102, 223, 1), 0px 0px 6.6px 0px rgba(4, 133, 254, 0.57), 0px 0px 3px 0px rgba(255, 255, 255, 0.35);
+
   }
 
-  /* .Video_mobile{
-        display: block;
-    }
-
-    .Video_desktop{
-        display: none;
-    } */
 
   .MainSection video {
     height: 302px;
@@ -1555,22 +1594,19 @@ footer {
   h2 {
     font-size: 23px;
   }
-
-  .AboutSection,
-  .BuisnesSection,
-  .NewsSection,
-  .ProjectsSection,
-  .FormSection {
-    padding: 30px 0px 40px 0px;
+/*asd*/
+  .AboutSection {
+    padding: 27px 0px 40px 0px;
+    border-radius: 7px 7px 0px 0px;
   }
 
-  .NewsSection {
-    padding: 30px 0px 20px 0px;
-  }
+  
 
   .FormSection {
-    background-size: contain;
-  }
+    background-size: 458px;
+    background-position: -85px -20px;
+}
+
 
   .ProjectsSection {
     padding: 40px 0px 40px 0px;
@@ -1589,7 +1625,9 @@ footer {
   .Form-Header {
     margin-bottom: 30px !important;
   }
-
+  .AboutSection > div {
+    width: 100%;
+  }
   .About-Main > .Info,
   .About-Header {
     width: 300px !important;
@@ -1603,6 +1641,8 @@ footer {
   .About-Header {
     flex-direction: column;
     padding: 0px;
+    gap:25px;
+    margin-bottom: 14px !important;
   }
 
   .About-Header p {
@@ -1613,6 +1653,8 @@ footer {
   }
   .About-Main {
     flex-direction: column;
+    width: 100%;
+    gap:25.6px;
   }
 
   .About-Main .Card::before {
@@ -1621,17 +1663,20 @@ footer {
 
   .About-Main .Card h3 {
     font-size: 18px;
+    line-height: 100%;
   }
 
   .About-Main .Card p {
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: -0.06;
+    line-height: 100%;
   }
 
   .About-Main .Card {
     border-radius: 5px;
     border: 1px solid #002d58;
-    padding: 7px 4px 7px 9px;
+    padding: 4px 5px 4px 9px;
   }
 
   .About-Main .Info {
@@ -1641,8 +1686,15 @@ footer {
   }
 
   .AboutSection .wrap img {
-    width: 193px;
+    width: 193.5px;
+    border-radius: 5.8px;
   }
+
+  .AboutSection .wrap .items{
+    gap:6px;
+  }
+
+
 
   .BuisnesSection > div {
     width: 300px;
@@ -1651,6 +1703,10 @@ footer {
   .Buisnes-Header {
     flex-direction: column;
     padding: 0px;
+  }
+
+  .Buisnes-Header h2{
+    margin-bottom: 30px;
   }
 
   .Buisnes-Header h2 br {
@@ -1674,7 +1730,7 @@ footer {
 
   .Buisnes-Main_mobile .Card {
     background: #2c2c2c;
-    border: 1px solid #747474;
+    border: 1px solid #353535;
     border-radius: 10px;
     padding: 18px 12px 17px 16px;
     display: flex;
@@ -1683,6 +1739,15 @@ footer {
     transition: 0.5s ease-out;
     width: 206px;
     height: 203px;
+  }
+
+  .Swiper-Control > button {
+    padding: 5.7px 16px;
+    border-radius: 4px;
+}
+
+  .Swiper-Control > button img{
+    width: 6px;
   }
 
   .Buisnes-Main_mobile .Card:hover {
@@ -1720,6 +1785,11 @@ footer {
     font-size: 12px;
   }
 
+  .BuisnesSection{
+    padding: 30px 0px 45px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+
   .BuisnesSection .swiperB {
     width: 100%;
     margin: 0px;
@@ -1735,7 +1805,14 @@ footer {
   }
 
   .Swiper-Control {
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+
+
+
+  .NewsSection {
+    padding: 30px 0px 20px 0px;
+    border-radius: 7px;
   }
 
   .NewsSection > div {
@@ -1745,6 +1822,7 @@ footer {
   .News-Header {
     flex-direction: column;
     padding: 0px;
+    margin-bottom: 30px !important;
   }
 
   .News-Header p {
@@ -1756,22 +1834,24 @@ footer {
   }
 
   .News-Main .Card {
+    display: grid;
+    grid-template-rows: 105px 12px 2fr 1fr;
     width: 216px;
+    justify-items: start;
     padding-bottom: 10px;
-  }
+}
 
-  .News-Main .Tags {
-    margin: -15px 7px;
-  }
 
   .News-Main .Tags a {
     font-size: 9px;
+    line-height: 100%;
   }
 
   .News-Main .Card p {
     font-weight: 400;
     font-size: 13px;
     margin: 0px 7px;
+    line-height: 100%;
   }
 
   .News-Main .Card > a {
@@ -1780,6 +1860,12 @@ footer {
     color: #1e1e1e;
     padding: 5px 7px;
     margin: 0px 7px;
+    line-height: 100%;
+  }
+
+
+  .News-Main .Card img{
+    height: 119.29px;
   }
 
   .NewsSection .swiperN {
@@ -1818,8 +1904,7 @@ footer {
   }
 
   .Projects-Main_mobile .Info .Banner {
-    background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%),
-      url("../img/Projects1.png");
+     background: /*linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%),*/url("../img/Projects1.png"); 
     background-size: 150%;
     display: flex;
     flex-direction: column;
@@ -1830,7 +1915,24 @@ footer {
     width: 179px;
     flex-shrink: 0;
     height: auto;
+    border: 1px solid rgba(53, 53, 53, 1);
+    background-position-y: 20px;
   }
+
+  .Projects-Main_mobile .Info .Banner > div {
+    position: relative;
+  }
+
+  .Projects-Main_mobile .Info .Banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+}
 
   .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner {
     background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%),
@@ -1858,6 +1960,13 @@ footer {
     width: 100px;
   }
 
+  .Projects-Main_mobile .swiper-slide:first-child .Banner p{
+      width: 58px;
+      position: relative;
+      top: -24px;
+      left: 62px;
+  }
+
   .Projects-Main_mobile .Info .Banner a {
     transition: 0.5s ease;
     color: #fff;
@@ -1870,7 +1979,8 @@ footer {
     border: none;
     width: 89px;
     text-align: center;
-    filter: drop-shadow(0px 0px 6px #0485fe);
+    box-shadow: 0px 0px 12.7px 0px rgba(4, 133, 254, 1), 0px 0px 4.6px 0px rgba(4, 133, 254, 0.79), 0px 0px 0.5px 0px rgba(255, 255, 255, 1);
+
   }
 
   .Projects-Main_mobile .Info .Banner a:hover {
@@ -1896,6 +2006,7 @@ footer {
     height: 215px;
     position: absolute;
     right: 0px;
+    border: 1px solid rgba(53, 53, 53, 1)
   }
 
   .Projects-Main_mobile .Info .Stats h3 {
@@ -1962,7 +2073,12 @@ footer {
   .FormSection form [type="submit"] {
     width: 100%;
     font-size: 12px;
-    padding: 15px 0px;
+    padding: 12px 0px;
+    border-radius: 5px;
+    border-color: #353535;
+    opacity: 1;
+    box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+    margin-bottom: 14px;
   }
 
   .FormSection form [type="text"],
@@ -1971,8 +2087,18 @@ footer {
     font-size: 12px;
   }
 
+  .FormSection form p {
+    font-size: 10px;
+    line-height: 100%;
+}
+
+.FormSection form p br {
+  display: block;
+}
+
   .FormSection form > div {
-    padding: 14px 16px;
+    padding: 7px 16px;
+    border-radius: 5px;
   }
 
   .FormSection form {
