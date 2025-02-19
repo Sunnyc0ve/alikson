@@ -541,7 +541,7 @@ footer{
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .Buisnes-Main_mobile .Card p {
@@ -656,7 +656,7 @@ footer{
   border: 1.81px solid #818181;
   background: #ffffff29;
   width: 361px;
-  height: 100%;
+  height: 374.83px;
   padding-bottom: 14.84px;
   display: flex;
   flex-direction: column;
@@ -785,6 +785,7 @@ footer{
 
   .News-Main .Card {
     width: 216px;
+    height: 280.83px;
   }
 
   .News-Main .Tags {
@@ -853,6 +854,7 @@ footer{
     grid-template-rows: 105px 12px 2fr 1fr;
     justify-items: start;
     padding-bottom: 4.9px;
+    height: 231.89px;
 }
 
   .News-Main .Tags {
