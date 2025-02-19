@@ -25,6 +25,7 @@
   
   button {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
   
   h1 {
@@ -92,7 +93,7 @@
     gap: 10px;
   }
   
-  .Header-Menu_mobile {
+  .Header-Menu_mobile, .Header-Menu_mobile_hidden{
     display: none;
   }
 
@@ -115,6 +116,10 @@
 }
 
 @media (max-width: 979px) {
+    header{
+        transition: 0.5s ease;
+    }
+
     .HeaderContainer {
       width: 600px;
     }
@@ -131,7 +136,98 @@
 
     h2 {
         font-size: 23px;
-      }
+    }
+
+    .Header-Menu_mobile_hidden{
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background: #181818;
+        width: 100%;
+        top: 78px;
+        left: 0px;
+        padding: 25px 0px;
+        transform: translateX(100vw);
+        overflow: scroll;
+        max-height: calc(100vh - 49px);
+    }
+
+    .Header-Menu_mobile_hidden > div{
+        width: 600px;
+    }
+
+    .Header-Menu_mobile_hidden > div::before{
+        content: '';
+        background: #353535;
+        width: 100%;
+        height: 1px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .Header-Menu_mobile_hidden > div > div:not(.LastContainer){
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        margin-bottom: 15px;
+    }
+
+    .Header-Menu_mobile_hidden > div > div > div:not(.LangContainer){
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+
+    .Header-Menu_mobile_hidden button{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Header-Menu_mobile_hidden a{
+        color:#fff;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .Header-Menu_mobile_hidden button span{
+        color:#fff;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .Header-Menu_mobile_hidden button img{
+        width: 17px;
+        transition: 0.5s ease;
+    }
+
+    .LastContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .LangContainer{
+        border: 1px solid #353535;
+        display: flex;
+        border-radius: 2px;
+    }
+
+    .LangContainer button{
+        color: #fff;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 12px;
+    }
+
+    .LangContainer .Active{
+        background: #353535;
+    }
 
 }
 
@@ -146,6 +242,14 @@
   
     .HeaderContainer {
       width: 300px;
+    }
+
+    .Header-Menu_mobile_hidden > div{
+        width: 300px;
+    }
+
+    .Header-Menu_mobile_hidden{
+        top: 48px;
     }
 }
 
