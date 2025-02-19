@@ -1,0 +1,258 @@
+/* ОБЩИЕ */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "TT Firs Neue";
+    border: none;
+    background: none;
+  }
+  
+  main {
+  }
+  
+  section {
+    overflow: hidden;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  body {
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  h1 {
+  }
+  
+  h2 {
+    font-size: 52px;
+    color: #0485fe;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+
+  
+  /* ХЕДЕР */
+  header {
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 0px 0px 6px 6px;
+    border: 1px solid #3535358f;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .HeaderContainer {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 28px;
+  }
+  
+  header nav a,
+  header input,
+  header input::placeholder,
+  header input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+  }
+  
+  header nav a:hover {
+    color: #0485fe;
+  }
+  
+  header input {
+    width: 130px;
+  }
+  
+  .Header-Menu {
+    background: #2b2a2938;
+    border: 1px solid #3535358f;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Header-Menu_mobile {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    .HeaderContainer {
+      width: 920px;
+    }
+
+    header nav a,
+  header input,
+  header input::placeholder,
+  header input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+}
+
+@media (max-width: 979px) {
+    .HeaderContainer {
+      width: 600px;
+    }
+  
+    .Header-Menu_mobile {
+      display: flex;
+      gap: 8px;
+    }
+  
+    .HeaderContainer nav,
+    .Header-Menu {
+      display: none;
+    }
+
+    h2 {
+        font-size: 23px;
+      }
+
+}
+
+@media (max-width: 659px) {
+    header {
+      padding: 14px 0px;
+    }
+  
+    header logo img {
+      width: 55px;
+    }
+  
+    .HeaderContainer {
+      width: 300px;
+    }
+}
+
+
+
+
+
+  /* ФУТЕР */
+footer {
+    background: rgba(23, 23, 23, 1);
+    margin-top: -135px;
+    padding: 59px 0px 30px 0px;
+  }
+  
+  .FooterContainer {
+    width: 1280px;
+    display: flex;
+    margin: auto;
+    gap: 438px;
+  }
+  
+  .FooterContainer-Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .FooterContainer-Left a {
+    color: #0485fe;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .FooterContainer-Right {
+    display: flex;
+    gap: 34px;
+  }
+  
+  .FooterContainer-Right h3 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 22px;
+  }
+  
+  .FooterContainer-Right a {
+    color: #bebebe;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .FooterContainer-Right > div:nth-child(3) a:first-child {
+    margin-top: 38px;
+  }
+  
+  .FooterContainer-Right > div {
+    max-width: 168px;
+  }
+  
+  .FooterContainer_mobile {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    .FooterContainer {
+        width: 920px;
+        gap: 249px;
+      }
+  }
+
+  @media (max-width: 979px) {
+    .FooterContainer {
+        display: none;
+      }
+    
+      .FooterContainer_mobile {
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+      }
+    
+      .FooterContainer_mobile button {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    
+      .FooterContainer_mobile a {
+        color: #0485fe;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+      }
+  }
+
+  @media (max-width: 659px) {
+      .FooterContainer_mobile {
+        width: 300px;
+      }
+  }
