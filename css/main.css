@@ -384,7 +384,7 @@ footer{
   background: #2c2c2c;
   border: 1px solid #747474;
   border-radius: 10px;
-  padding: 32px 20px 22px 21px;
+  padding: 16px 20px 22px 21px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -431,7 +431,8 @@ footer{
   transform: translate(-15px, -14px);
   box-shadow: 15px 14px 0px 0px rgba(44, 44, 44, 1), 15px 14px 0px 1px #747474;
   background: url('../img/CardBack.png') no-repeat;
-  background-size: 100% 100%;
+  background-size: 102% 102%;
+  background-position: -2px -2px;
 }
 
 .Buisnes-Main .Card:hover h3,
@@ -512,7 +513,7 @@ footer{
     background: #2c2c2c;
     border: 1px solid #353535;
     border-radius: 10px;
-    padding: 18px 12px 17px 16px;
+    padding: 12px 12px 17px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -525,7 +526,8 @@ footer{
     transform: translate(-15px, -14px);
     box-shadow: 15px 14px 0px 0px rgba(44, 44, 44, 1), 15px 14px 0px 1px #747474;
     background: url('../img/CardBack.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: 102% 102%;
+    background-position: -2px -2px;
   }
 
   .Buisnes-Main_mobile .Card:hover h3,
@@ -803,7 +805,7 @@ footer{
   }
 
   .News-Main .Card .Card-Image {
-    height: 126px;
+    height: 118px;
   }
 
   .News-Main .Card > a {
@@ -1165,7 +1167,7 @@ footer{
     flex-direction: column;
     gap: 9px;
     justify-content: space-between;
-    padding: 17px 0px 9px 13px;
+    padding: 9px 0px 9px 13px;
     border-radius: 10px;
     width: 380px;
     flex-shrink: 0;
