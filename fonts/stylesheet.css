@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'TT Fors Trial Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Fors Trial Medium'), url('TT Fors Trial Medium.woff') format('woff');
+    }
+
+@font-face {
     font-family: 'TT Firs Neue';
     src: url('TTFirsNeue-Light.eot');
     src: local('TT Firs Neue Light'), local('TTFirsNeue-Light'),

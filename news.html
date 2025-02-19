@@ -10,7 +10,11 @@
     />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <link rel="stylesheet" href="./css/pages/news/_globals.css">
+    <link rel="stylesheet" href="./css/pages/news/_utils.css">
+    <link rel="stylesheet" href="./css/pages/news/blocks/_news.css">
   </head>
 
   <body>
@@ -37,7 +41,127 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="container">
+
+
+        <section class="news__section">
+          <h1 class="news__section-heading">НОВОСТИ</h1>
+  
+          <div class="news__inner">
+            <div class="news__card">
+              <img src="./img/news/news-image.png" alt
+              height="337px" width="548px" loading="lazy"
+              class="news__card-image">
+  
+              <div class="news__body">
+                <div class="news__content">
+  
+                  <div class="news__tags_w_heading">
+                    <p class="news__content-tags">
+                      #рбк #девелопмент #интервью
+                    </p>
+                    <h1 class="news__content-heading">
+                      Открыть девелоперскую компанию в 25 лет: что важно знать об Alikson Group
+                    </h1>
+                  </div>
+  
+                  <button class="news__content-button">
+                    Подробнее
+                    <span class="news__button-icon">
+                      <img src="./img/news/icons/arrow-right.svg" alt
+                      width="65px" loading="lazy">
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img src="./img/news/news-image.png" alt
+              height="337px" width="548px" loading="lazy"
+              class="news__card-image">
+  
+              <div class="news__body">
+                <div class="news__content">
+  
+                  <div class="news__tags_w_heading">
+                    <p class="news__content-tags">
+                      #рбк #девелопмент #интервью
+                    </p>
+                    <h1 class="news__content-heading">
+                      Открыть девелоперскую компанию в 25 лет: что важно знать об Alikson Group
+                    </h1>
+                  </div>
+  
+                  <button class="news__content-button">
+                    Подробнее
+                    <span class="news__button-icon">
+                      <img src="./img/news/icons/arrow-right.svg" alt
+                      width="65px" loading="lazy">
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img src="./img/news/news-image.png" alt
+              height="337px" width="548px" loading="lazy"
+              class="news__card-image">
+  
+              <div class="news__body">
+                <div class="news__content">
+  
+                  <div class="news__tags_w_heading">
+                    <p class="news__content-tags">
+                      #рбк #девелопмент #интервью
+                    </p>
+                    <h1 class="news__content-heading">
+                      Открыть девелоперскую компанию в 25 лет: что важно знать об Alikson Group
+                    </h1>
+                  </div>
+  
+                  <button class="news__content-button">
+                    Подробнее
+                    <span class="news__button-icon">
+                      <img src="./img/news/icons/arrow-right.svg" alt
+                      width="65px" loading="lazy">
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img src="./img/news/news-image.png" alt
+              height="337px" width="548px" loading="lazy"
+              class="news__card-image">
+  
+              <div class="news__body">
+                <div class="news__content">
+  
+                  <div class="news__tags_w_heading">
+                    <p class="news__content-tags">
+                      #рбк #девелопмент #интервью
+                    </p>
+                    <h1 class="news__content-heading">
+                      Открыть девелоперскую компанию в 25 лет: что важно знать об Alikson Group
+                    </h1>
+                  </div>
+  
+                  <button class="news__content-button">
+                    Подробнее
+                    <span class="news__button-icon">
+                      <img src="./img/news/icons/arrow-right.svg" alt
+                      width="65px" loading="lazy">
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
     </main>
     <footer>
       <div class="FooterContainer">
@@ -86,4 +210,54 @@
       </div>
     </footer>
   </body>
+  <script>
+    //ХЕДЕР
+    const MenuButton=document.querySelector('#MenuButton')
+    const Menu=document.querySelector('.Header-Menu_mobile_hidden')
+
+    MenuButton.addEventListener('click',()=>{
+      if(Menu.getAttribute('style')==undefined){
+        Menu.setAttribute('style','transform: translateX(0px);')
+        MenuButton.querySelector('img').setAttribute('src','img/closeMenu.svg')
+        document.querySelector('header').setAttribute('style','border-radius: 0px;')
+        document.querySelector('body').setAttribute('style','overflow:hidden;')
+      }else{
+        Menu.removeAttribute('style')
+        MenuButton.querySelector('img').setAttribute('src','img/menu.svg')
+        document.querySelector('header').removeAttribute('style')
+        document.querySelector('body').removeAttribute('style')
+      }
+    })
+
+    Menu.querySelectorAll('button[data]').forEach(e=>{
+      e.addEventListener('click',()=>{
+        const data=e.getAttribute('data')
+        const UnderMenu=document.querySelectorAll(`[data=${data}]`)[1]
+        const height=UnderMenu.querySelector('div').clientHeight
+        if(UnderMenu.getAttribute('style')==undefined){
+          document.querySelectorAll('.Header-Menu_mobile_hidden [active]').forEach(e=>{
+            e.removeAttribute('active')
+            e.removeAttribute('style')
+          })
+          UnderMenu.setAttribute('style',`height:${height}px; margin-top:17px;`)
+          e.querySelector('img').setAttribute('style','transform:rotate(90deg);')
+          UnderMenu.setAttribute('active','')
+          e.querySelector('img').setAttribute('active','')
+        }else{
+          UnderMenu.removeAttribute('style')
+          e.querySelector('img').removeAttribute('style')
+        }
+      })
+    })
+
+    document.querySelectorAll('.LangContainer button').forEach(e=>{
+      e.addEventListener('click',()=>{
+        if(e.getAttribute('class')==undefined){
+          document.querySelector('.LangContainer .Active').removeAttribute('class')
+          e.setAttribute('class','Active')
+        }
+      })
+    })
+    //ХЕДЕР
+    </script>
 </html>

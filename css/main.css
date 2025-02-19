@@ -197,6 +197,7 @@ footer{
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'TT Fors Trial Medium';
 }
 .About-Main .Card p {
   color: #fff;
@@ -341,7 +342,7 @@ footer{
     height: 106px;
   }
 
-  .AboutSection .wrap .items {
+  .AboutSection .wrap .items,.AboutSection .items-wrap {
     gap: 6px;
   }
 }
@@ -1652,6 +1653,10 @@ footer{
   to {
     transform: translateX(calc(-100% - 20px));
   }
+}
+
+.PartnersSection .marquee {
+  animation: scroll 120s linear infinite;
 }
 
 @media (max-width: 1439px) {
