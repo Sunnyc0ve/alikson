@@ -1,7 +1,7 @@
 <!DOCTYPE >
 <html lang="ru">
   <head>
-    <title>Alikson</title>
+    <title>Alikson - Main</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -13,115 +13,15 @@
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-
   <body>
-    <header>
-      <div class="HeaderContainer">
-        <logo>
-          <img src="img/logo.svg" />
-        </logo>
-        <nav>
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Направление бизнеса</a></li>
-            <li><a href="">Карьера в компании</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="Header-Menu">
-          <input type="text" placeholder="Поиск по сайту" />
-          <button><img src="img/zoom.svg" /></button>
-        </div>
-        <div class="Header-Menu_mobile">
-          <button><img src="img/zoom_1.svg" /></button>
-          <button id="MenuButton"><img src="img/menu.svg" /></button>
-          <div class="Header-Menu_mobile_hidden">
-            <div>
-              <button data="m1"><span>О КОМПАНИИ</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m1">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <button data="m2"><span>НОВОСТИ</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m2">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <button data="m3"><span>НАШИ ПРОЕКТЫ</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m3">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <button data="m4"><span>СОТРУДНИЧЕСТВО</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m4">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <button data="m5"><span>КОНТАКТЫ</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m5">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <button data="m6"><span>ТЕХПОДДЕРЖКА</span><img src="img/ArrowRight_2.svg"></button>
-              <div data="m6">
-                <div>
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a> 
-                <a href="">Ссылка</a>
-              </div>
-              </div>
-            </div>
-            <div>
-              <div class="LastContainer">
-                <a href="">8-999-999-99-99</a>
-                <div class="LangContainer">
-                  <button class="Active">RU</button>
-                  <button>EN</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <?php include('include/header.html')?>
     <main>
       <section class="MainSection">
         <div class="VideoContainer">
-          <video muted autoplay loop class="Video_desktop">
+          <video muted autoplay loop playsinline class="Video_desktop">
             <source src="img/mainVideo.mp4" />
           </video>
-          <video muted autoplay loop class="Video_mobile">
+          <video muted autoplay loop playsinline class="Video_mobile">
             <source src="img/mainVideo_1.mp4" />
           </video>
         </div>
@@ -877,106 +777,11 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="FooterContainer">
-        <div class="FooterContainer-Left">
-          <logo><img src="img/logoFooter.svg" /></logo>
-          <a href=""><img src="img/tg.svg" />@alikson_msk</a>
-        </div>
-        <div class="FooterContainer-Right">
-          <div>
-            <h3>Навигация</h3>
-            <a href="">О компании</a>
-            <a href="">Новости</a>
-            <a href="">Карьера в компании</a>
-            <a href="">Наши проекты</a>
-            <a href="">Контакты</a>
-          </div>
-          <div>
-            <h3>Направления</h3>
-            <a href="">Маркетплейс электроники</a>
-            <a href="">Alikson инвестиции</a>
-            <a href="">Аренда премиум авто</a>
-            <a href="">Тендерный дивизион</a>
-            <a href="">Оптовая дистрибуция</a>
-            <a href="">Внешнеэкономическая деятельность</a>
-          </div>
-          <div>
-            <a href="">Apart Sharing</a>
-            <a href="">Майнинг</a>
-            <a href="">Логистика</a>
-            <a href="">Платежный агент</a>
-            <a href="">Девелопмент</a>
-          </div>
-          <div>
-            <h3>Социальные сети</h3>
-            <a href="">Telegram</a>
-            <a href="">Vkontakte</a>
-          </div>
-        </div>
-      </div>
-      <div class="FooterContainer_mobile">
-        <logo><img src="img/logoFooter.svg" /></logo>
-        <button>Навигация</button>
-        <button>Направления</button>
-        <button>Социальные сети</button>
-        <a href=""><img src="img/tg.svg" />@alikson_msk</a>
-      </div>
-    </footer>
+    <?php include('include/footer.html') ?>
   </body>
+  <script src="include/header.js"></script>
   <script>
-    //ХЕДЕР
-    const MenuButton=document.querySelector('#MenuButton')
-    const Menu=document.querySelector('.Header-Menu_mobile_hidden')
-
-    MenuButton.addEventListener('click',()=>{
-      if(Menu.getAttribute('style')==undefined){
-        Menu.setAttribute('style','transform: translateX(0px);')
-        MenuButton.querySelector('img').setAttribute('src','img/closeMenu.svg')
-        document.querySelector('header').setAttribute('style','border-radius: 0px;')
-        document.querySelector('body').setAttribute('style','overflow:hidden;')
-      }else{
-        Menu.removeAttribute('style')
-        MenuButton.querySelector('img').setAttribute('src','img/menu.svg')
-        document.querySelector('header').removeAttribute('style')
-        document.querySelector('body').removeAttribute('style')
-      }
-    })
-
-    Menu.querySelectorAll('button[data]').forEach(e=>{
-      e.addEventListener('click',()=>{
-        const data=e.getAttribute('data')
-        const UnderMenu=document.querySelectorAll(`[data=${data}]`)[1]
-        const height=UnderMenu.querySelector('div').clientHeight
-        if(UnderMenu.getAttribute('style')==undefined){
-          document.querySelectorAll('.Header-Menu_mobile_hidden [active]').forEach(e=>{
-            e.removeAttribute('active')
-            e.removeAttribute('style')
-          })
-          UnderMenu.setAttribute('style',`height:${height}px; margin-top:17px;`)
-          e.querySelector('img').setAttribute('style','transform:rotate(90deg);')
-          UnderMenu.setAttribute('active','')
-          e.querySelector('img').setAttribute('active','')
-        }else{
-          UnderMenu.removeAttribute('style')
-          e.querySelector('img').removeAttribute('style')
-        }
-      })
-    })
-
-    document.querySelectorAll('.LangContainer button').forEach(e=>{
-      e.addEventListener('click',()=>{
-        if(e.getAttribute('class')==undefined){
-          document.querySelector('.LangContainer .Active').removeAttribute('class')
-          e.setAttribute('class','Active')
-        }
-      })
-    })
-    //ХЕДЕР
-
-
-
-
+    //Слайдеры
     const swiperN = new Swiper(".swiperN", {
       slidesPerView: 1,
       spaceBetween: -70,
@@ -1017,6 +822,8 @@
       },
     });
 
+
+    //Переключеие проектов
     document.querySelectorAll(".Projects-Main .Links button").forEach((e) => {
       e.addEventListener("click", () => {
         document

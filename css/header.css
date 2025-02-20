@@ -352,6 +352,10 @@ footer {
         gap: 5px;
         margin-top: 10px;
       }
+
+      footer logo img{
+        width: 65px;
+      }
   }
 
   @media (max-width: 659px) {

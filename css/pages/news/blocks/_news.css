@@ -14,8 +14,9 @@
     flex-shrink: 0;
     border-radius: 7px;
     border: 1px solid #8D8D8D;
-
     z-index: 2;
+    height:337px;
+    width:548px;
 }
 
 .news__body {
@@ -136,7 +137,22 @@
     width: 1280px;
 }
 
-body, footer{
-    background: #181818;
+@media (max-width: 1439px) {
+    .news__inner, .news__section-heading {
+        width: 920px;
+    }
+
+    .news__card-image {
+        width:393px;
+        height: 281px;
+    }
+
+    .news__content {
+        width: 100%;
+    }
+
+    .news__content-button {
+        width: 432px;
+    }
 }
 
