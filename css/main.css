@@ -1656,7 +1656,7 @@ footer{
 }
 
 .PartnersSection .marquee {
-  animation: scroll 120s linear infinite;
+  animation: scroll 200s linear infinite;
 }
 
 @media (max-width: 1439px) {
