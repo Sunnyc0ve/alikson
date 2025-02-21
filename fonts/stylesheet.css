@@ -3,6 +3,20 @@
     font-style: normal;
     font-weight: normal;
     src: local('TT Fors Trial Medium'), url('TT Fors Trial Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT Fors Trial Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Fors Trial Bold'), url('TT Fors Trial Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT Fors Trial ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Fors Trial ExtraBold'), url('TT Fors Trial ExtraBold.woff') format('woff');
     }
 
 @font-face {

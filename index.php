@@ -66,31 +66,31 @@
           <div class="Info">
             <div class="Card">
               <div>
-                <h3>42,8 млрд ₽</h3>
+                <h3><span>42,8</span> млрд ₽</h3>
                 <p>годовой оборот</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3>20 МЛН $</h3>
+                <h3><span>20</span> МЛН $</h3>
                 <p>недвижимость компании</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3>100+</h3>
+                <h3><span>100+</span></h3>
                 <p>международных партнеров</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3>400+</h3>
+                <h3><span></span>400+</h3>
                 <p>сотрудников</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3>20+ проектов</h3>
+                <h3><span>20+</span> проектов</h3>
                 <p>инвестиционный портфель</p>
               </div>
             </div>
@@ -115,66 +115,84 @@
           <div class="Grid-1">
             <div class="Card">
               <div>
-                <h3>ОПТОВАЯ ДИСТРИБУЦИЯ</h3>
+                <h3>Premier Cars — Аренда премиум автомобилей</h3>
                 <p>
-                  Мы предлагаем надежную и выгодную оптовую дистрибуцию,
-                  обеспечивая полную поддержку и прозрачность процессов
+                Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
             <div class="Card">
               <div>
-                <h3>ALIKSON ИНВЕСТИЦИИ</h3>
+                <h3>Аликсон Маркетплейс</h3>
                 <p>
-                  Мы предлагаем надежные инвестиционные возможности спрозрачной
-                  структурой и высоким уровнем поддержки для уверенного роста
-                  капитала
+                Наша платформа предлагает удобные решения для торговли с высокой степенью технологической поддержки и хорошей доходностью
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
             <div class="Card">
               <div>
-                <h3>маркетплейс электроники</h3>
+                <h3>Оптовая дистрибуция</h3>
                 <p>
-                  Наши маркетплейсы предлагают удобные решения для торговли с
-                  высокой степенью доверия и технологической поддержки
+                Эффективная и выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и прозрачность транспортировок.
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
           </div>
           <div class="Grid-2">
+          <div class="Card">
+              <div>
+                <h3>Alikson <br>Invest</h3>
+                <p>
+                Надежные инвестиционные возможности с прозрачной структурой и высоким уровнем поддержки для уверенного роста капитала
+                </p>
+              </div>
+              <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            
             <div class="Card">
               <div>
-                <h3>МАЙНИНГ</h3>
+                <h3>Майнинг</h3>
                 <p>
-                  Обеспечиваем стабильный и безопасный доступ к современным
-                  решениям в области майнинга, минимизируя риски и повышая
-                  доходность инвестиций
+                Предоставляем стабильный и безопасный доступ к современным решениям в области майнинга, минимизируя риски и повышая доходность инвестиций
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
             <div class="Card">
               <div>
-                <h3>АРЕНДА ПРЕМИУМ АВТО</h3>
+                <h3>Логистика</h3>
                 <p>
-                  Премиальный автопрокат от Alikson Group гарантирует клиентам
-                  высокий уровень сервиса и надежность для комфортных и
-                  статусных поездок
+                Организуем надежные и оптимизированные логистические цепочки, гарантируя своевременную доставку по всему миру
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
             <div class="Card">
               <div>
-                <h3>apart<br />sharing</h3>
+                <h3>Тендерный дивизион</h3>
                 <p>
-                  Удобный и безопасный сервис сдачи в аренду апартаментов с
-                  максимальной заботой о комфорте гостей и владельцев
-                  недвижимости
+                Комплексные тендерные решения, помогая клиентам эффективно участвовать в конкурсах и минимизировать бюрократические риски
+                </p>
+              </div>
+              <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>Платежный агент</h3>
+                <p>
+                  Удобные и безопасные услуги платежного агента для приема и обработки платежей ваших клиентов
+                </p>
+              </div>
+              <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="Card">
+              <div>
+                <h3>Девелопмент</h3>
+                <p>
+                Реализуем устойчивые и перспективные девелоперские проекты, гарантируя высокую ликвидность и доходность объектов
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
@@ -183,49 +201,16 @@
               <div>
                 <h3>ВЭД</h3>
                 <p>
-                  Мы предлагаем надежную и выгодную оптовую дистрибуцию,
-                  обеспечивая полную поддержку и прозрачность процессов
+                Комплексные услуги по сопровождению внешнеэкономической деятельности (ВЭД), обеспечивая эффективную и безопасную работу с международными партнерами
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
             </div>
             <div class="Card">
               <div>
-                <h3>тендерный дивизион</h3>
+                <h3>Apart Sharing</h3>
                 <p>
-                  Мы предоставляем комплексные тендерные решения, помогая
-                  клиентам эффективно участвовать в конкурсах и минимизировать
-                  бюрократические риски
-                </p>
-              </div>
-              <a href="">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="Card">
-              <div>
-                <h3>девелопмент</h3>
-                <p>
-                  Реализуем устойчивые и перспективные девелоперские проекты,
-                  гарантируя высокую ликвидность и доходность объектов
-                </p>
-              </div>
-              <a href="">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="Card">
-              <div>
-                <h3>ЛОГИСТИКА</h3>
-                <p>
-                  Организуем надежные и оптимизированные логистические цепочки,
-                  гарантируя своевременную доставку по всему миру
-                </p>
-              </div>
-              <a href="">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="Card">
-              <div>
-                <h3>платежный агент</h3>
-                <p>
-                  Реализуем устойчивые и перспективные девелоперские проекты,
-                  гарантируя высокую ликвидность и доходность объектов
+                Технологичный и безопасный сервис для сдачи в аренду апартаментов с максимальной заботой о комфорте гостей и владельцев недвижимости
                 </p>
               </div>
               <a href="">ПОДРОБНЕЕ</a>
@@ -236,145 +221,128 @@
         <div class="Buisnes-Main_mobile">
           <div class="swiperB">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>ОПТОВАЯ ДИСТРИБУЦИЯ</h3>
-                    <p>
-                      Мы предлагаем надежную и выгодную оптовую дистрибуцию,
-                      обеспечивая полную поддержку и прозрачность процессов
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Premier Cars — Аренда премиум автомобилей</h3>
+                  <p>
+                  Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>ALIKSON ИНВЕСТИЦИИ</h3>
-                    <p>
-                      Мы предлагаем надежные инвестиционные возможности
-                      спрозрачной структурой и высоким уровнем поддержки для
-                      уверенного роста капитала
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Аликсон Маркетплейс</h3>
+                  <p>
+                  Наша платформа предлагает удобные решения для торговли с высокой степенью технологической поддержки и хорошей доходностью
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>маркетплейс электроники</h3>
-                    <p>
-                      Наши маркетплейсы предлагают удобные решения для торговли
-                      с высокой степенью доверия и технологической поддержки
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Оптовая дистрибуция</h3>
+                  <p>
+                  Эффективная и выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и прозрачность транспортировок.
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>МАЙНИНГ</h3>
-                    <p>
-                      Обеспечиваем стабильный и безопасный доступ к современным
-                      решениям в области майнинга, минимизируя риски и повышая
-                      доходность инвестиций
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Alikson <br>Invest</h3>
+                  <p>
+                  Надежные инвестиционные возможности с прозрачной структурой и высоким уровнем поддержки для уверенного роста капитала
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>АРЕНДА ПРЕМИУМ АВТО</h3>
-                    <p>
-                      Премиальный автопрокат от Alikson Group гарантирует
-                      клиентам высокий уровень сервиса и надежность для
-                      комфортных и статусных поездок
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Майнинг</h3>
+                  <p>
+                  Предоставляем стабильный и безопасный доступ к современным решениям в области майнинга, минимизируя риски и повышая доходность инвестиций
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>apart<br />sharing</h3>
-                    <p>
-                      Удобный и безопасный сервис сдачи в аренду апартаментов с
-                      максимальной заботой о комфорте гостей и владельцев
-                      недвижимости
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Логистика</h3>
+                  <p>
+                  Организуем надежные и оптимизированные логистические цепочки, гарантируя своевременную доставку по всему миру
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>ВЭД</h3>
-                    <p>
-                      Мы предлагаем надежную и выгодную оптовую дистрибуцию,
-                      обеспечивая полную поддержку и прозрачность процессов
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Тендерный дивизион</h3>
+                  <p>
+                  Комплексные тендерные решения, помогая клиентам эффективно участвовать в конкурсах и минимизировать бюрократические риски
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>тендерный дивизион</h3>
-                    <p>
-                      Мы предоставляем комплексные тендерные решения, помогая
-                      клиентам эффективно участвовать в конкурсах и
-                      минимизировать бюрократические риски
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Платежный агент</h3>
+                  <p>
+                    Удобные и безопасные услуги платежного агента для приема и обработки платежей ваших клиентов
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>девелопмент</h3>
-                    <p>
-                      Реализуем устойчивые и перспективные девелоперские
-                      проекты, гарантируя высокую ликвидность и доходность
-                      объектов
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Девелопмент</h3>
+                  <p>
+                  Реализуем устойчивые и перспективные девелоперские проекты, гарантируя высокую ликвидность и доходность объектов
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>ЛОГИСТИКА</h3>
-                    <p>
-                      Организуем надежные и оптимизированные логистические
-                      цепочки, гарантируя своевременную доставку по всему миру
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>ВЭД</h3>
+                  <p>
+                  Комплексные услуги по сопровождению внешнеэкономической деятельности (ВЭД), обеспечивая эффективную и безопасную работу с международными партнерами
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
-              <div class="swiper-slide">
-                <div class="Card">
-                  <div>
-                    <h3>платежный агент</h3>
-                    <p>
-                      Реализуем устойчивые и перспективные девелоперские
-                      проекты, гарантируя высокую ликвидность и доходность
-                      объектов
-                    </p>
-                  </div>
-                  <a href="">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="Card">
+                <div>
+                  <h3>Apart Sharing</h3>
+                  <p>
+                  Технологичный и безопасный сервис для сдачи в аренду апартаментов с максимальной заботой о комфорте гостей и владельцев недвижимости
+                  </p>
                 </div>
+                <a href="">ПОДРОБНЕЕ</a>
               </div>
+            </div>
             </div>
             <div class="Swiper-Control">
               <button class="Swiper-Prev">
@@ -670,7 +638,7 @@
               />
             </div>
             <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Мы свяжемся с вами в ближайшие часы, чтобы ответить<br> на все вопросы</p>
+            <p>Мы свяжемся с вами в ближайшее время, чтобы ответить<br> на все вопросы</p>
           </form>
         </div>
       </section>
@@ -678,100 +646,100 @@
         <div class="wrap">
           <div class="items-wrap">
             <div class="items marquee">
-              <div class="item"><img src="img/Partners/Frame 301.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-1.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-2.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-3.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-4.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-5.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-6.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-7.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-8.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-9.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-10.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-11.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-12.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-13.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-14.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-15.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-16.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-17.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-18.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-19.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-20.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-21.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-22.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-23.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-24.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-25.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-26.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-27.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-28.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-29.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-30.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-31.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-32.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-33.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-34.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-35.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-36.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-37.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-38.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-39.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-40.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-41.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-42.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-43.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 306.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 307.svg" /></div>
+              <div class="item"><img src="img/Partners/Frame 301.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-1.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-2.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-3.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-4.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-5.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-6.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-7.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-8.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-9.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-10.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-11.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-12.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-13.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-14.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-15.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-16.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-17.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-18.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-19.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-20.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-21.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-22.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-23.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-24.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-25.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-26.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-27.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-28.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-29.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-30.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-31.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-32.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-33.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-34.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-35.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-36.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-37.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-38.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-39.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-40.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-41.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-42.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-43.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-44.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-45.png" /></div>
             </div>
             <div aria-hidden="true" class="items marquee">
-              <div class="item"><img src="img/Partners/Frame 301.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-1.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-2.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-3.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-4.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-5.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-6.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-7.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-8.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-9.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-10.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-11.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-12.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-13.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-14.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-15.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-16.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-17.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-18.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-19.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-20.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-21.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-22.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-23.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-24.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-25.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-26.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-27.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-28.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-29.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-30.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-31.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-32.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-33.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-34.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-35.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-36.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-37.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-38.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-39.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-40.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-41.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-42.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 301-43.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 306.svg" /></div>
-              <div class="item"><img src="img/Partners/Frame 307.svg" /></div>
+              <div class="item"><img src="img/Partners/Frame 301.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-1.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-2.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-3.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-4.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-5.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-6.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-7.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-8.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-9.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-10.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-11.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-12.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-13.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-14.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-15.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-16.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-17.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-18.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-19.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-20.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-21.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-22.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-23.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-24.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-25.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-26.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-27.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-28.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-29.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-30.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-31.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-32.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-33.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-34.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-35.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-36.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-37.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-38.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-39.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-40.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-41.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-42.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-43.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-44.png" /></div>
+              <div class="item"><img src="img/Partners/Frame 301-45.png" /></div>
             </div>
           </div>
         </div>
