@@ -1,0 +1,283 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:174px;
+    padding: 59px 0px 85px 0px;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:24px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 69.58px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.696px;
+    text-transform: uppercase;
+    width: 532px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.27px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:259px;
+}
+
+.MainSection-Content a{
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    padding: 17.156px 25.734px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    flex-shrink: 0;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    row-gap:36px;
+    column-gap: 10px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+.MainSection .Info:first-child{
+    grid-column: span 2;
+}
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 69px;
+font-weight: 500;
+line-height: 111%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 111%;
+    letter-spacing: -0.2px;
+    font-family: "Mulish";
+}
+
+
+
+/*Наши сервисы*/
+.ServicesSection{
+    margin: auto;
+    padding: 68px 0px 65px 0px;
+    border-radius: 15px;
+    border: 1px solid #353535;
+    background: #212121 url("../../../img/apart_sharing/ServicesBack.png") no-repeat;
+    background-position: calc((100vw - 1430px) / 2);
+}
+
+.ServicesSection > div{
+    width: 1280px;
+    margin: auto;
+}
+
+.Services-Content{
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+    width: 732px;
+    margin-left: auto;
+}
+
+.Services-Content .Card{
+    background: #30303061;
+    border: 1px solid #0058AB;
+    backdrop-filter: blur(19.600000381469727px);
+    border-radius: 10px;
+    display: flex;
+    gap:40px;
+    align-items: center;
+    width: 100%;
+    height: 111px;
+    padding-left: 35px;
+}
+
+.Services-Content .Card > div{
+    width: 93px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Services-Content .Card h3{
+    color: #FFF;
+    font-size: 32.44px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+/*Система автоматизации*/
+.AutoSection{
+    background: #181818 url("../../../img/apart_sharing/AutoBack.png") no-repeat;
+    background-size: 100% 330%;
+    background-position: right -881px;
+    padding: 69px 0px 95px 0px;
+}
+
+.AutoSection > *{
+    width: 1280px;
+    margin: auto;
+}
+
+.Auto-Content{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 422px 363px 379px;
+    grid-template-rows: 297px;
+    justify-content: space-between;
+}
+
+.Auto-Content .Card{
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 2px solid #393939;
+    background: rgba(23, 23, 23, 0.40);
+    backdrop-filter: blur(16.980453491210938px);
+}
+
+.Auto-Content .Card:nth-child(2){
+box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
+backdrop-filter: blur(16.980453491210938px);
+}
+
+
+.Auto-Content .Card-Header{
+    border-bottom: 2px solid #393939;
+    padding: 15px 0px 11px 23px;
+}
+
+
+
+.Auto-Content .Card h3{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Auto-Content .Card p{
+    color: #FFF;
+    font-size: 16.344px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Auto-Content .Card-Content{
+    padding: 11px 0px 0px 23px;
+}
+
+.Auto-Content .Card-Content li{
+    color: #FFF;
+    font-size: 20.431px;
+    font-weight: 400;
+    line-height: 111%;
+    list-style: disc;
+    margin-left: 20px;
+    font-family: "Mulish";
+}
+
+
+
+
+/*Преимущества секция*/
+.AdvantagesSection{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #353535;
+    background: #212121 url("../../../img/apart_sharing/AdvantagesBack.png") no-repeat;
+    background-position: calc((100vw - 1430px) / 2) 198px;
+    padding: 78px 0px 120px calc((100vw - 1280px) / 2);
+    gap:62px;
+}
+
+.Advantages-Header{
+    display: flex;
+    flex-direction: column;
+    width: 498px;
+    flex-shrink: 0;
+}
+
+.Advantages-Content{
+    width: 100%;
+}
+
+.Advantages-Content p{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+
+.Advantages-Content div{
+    background: #0058AB;
+    height: 1px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
