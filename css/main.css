@@ -549,10 +549,6 @@ footer{
     opacity: 1;
   }
 
-  .Buisnes-Main_mobile .swiper-slide:first-child h3 {
-    font-size: 16px;
-  }
-
   .Buisnes-Main_mobile .Card h3 {
     transition: 0.5s ease;
     color: #747474;
@@ -762,6 +758,30 @@ footer{
 
 .swiperN .swiper-slide:nth-child(4) .Card-Image {
   background: url("../img/News4.png");
+}
+
+.swiperN .swiper-slide:nth-child(5) .Card-Image {
+  background: url("../img/News5.png");
+}
+
+.swiperN .swiper-slide:nth-child(6) .Card-Image {
+  background: url("../img/News6.png");
+}
+
+.swiperN .swiper-slide:nth-child(7) .Card-Image {
+  background: url("../img/News7.png");
+}
+
+.swiperN .swiper-slide:nth-child(8) .Card-Image {
+  background: url("../img/News8.png");
+}
+
+.swiperN .swiper-slide:nth-child(9) .Card-Image {
+  background: url("../img/News9.png");
+}
+
+.swiperN .swiper-slide:nth-child(10) .Card-Image {
+  background: url("../img/News10.png");
 }
 
 @media (max-width: 1439px) {
@@ -1662,7 +1682,7 @@ footer{
 }
 
 .marquee {
-  animation: scroll 40s linear infinite;
+  animation: scroll 80s linear infinite;
 }
 
 @keyframes scroll {
@@ -1675,7 +1695,7 @@ footer{
 }
 
 .PartnersSection .marquee {
-  animation: scroll 200s linear infinite;
+  animation: scroll 300s linear infinite;
 }
 
 @media (max-width: 1439px) {

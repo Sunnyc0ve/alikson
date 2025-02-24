@@ -51,6 +51,11 @@
                 <div class="item"><img src="img/About5.png" /></div>
                 <div class="item"><img src="img/About6.png" /></div>
                 <div class="item"><img src="img/About7.png" /></div>
+                <div class="item"><img src="img/About8.png" /></div>
+                <div class="item"><img src="img/About9.png" /></div>
+                <div class="item"><img src="img/About10.png" /></div>
+                <div class="item"><img src="img/About11.png" /></div>
+                <div class="item"><img src="img/About12.png" /></div>
               </div>
               <div aria-hidden="true" class="items marquee">
                 <div class="item"><img src="img/About1.png" /></div>
@@ -60,6 +65,11 @@
                 <div class="item"><img src="img/About5.png" /></div>
                 <div class="item"><img src="img/About6.png" /></div>
                 <div class="item"><img src="img/About7.png" /></div>
+                <div class="item"><img src="img/About8.png" /></div>
+                <div class="item"><img src="img/About9.png" /></div>
+                <div class="item"><img src="img/About10.png" /></div>
+                <div class="item"><img src="img/About11.png" /></div>
+                <div class="item"><img src="img/About12.png" /></div>
               </div>
             </div>
           </div>
@@ -115,7 +125,7 @@
           <div class="Grid-1">
             <div class="Card">
               <div>
-                <h3>Premier Cars — Аренда премиум автомобилей</h3>
+                <h3>Premier Cars</h3>
                 <p>
                 Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок
                 </p>
@@ -224,7 +234,7 @@
             <div class="swiper-slide">
               <div class="Card">
                 <div>
-                  <h3>Premier Cars — Аренда премиум автомобилей</h3>
+                  <h3>Premier Cars</h3>
                   <p>
                   Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок
                   </p>
@@ -367,13 +377,12 @@
                 <div class="Card">
                   <div class="Card-Image" src="img/News1.png"></div>
                   <div class="Tags">
-                    <a href="">#apartsharing</a>
                     <a href="">#tadviser</a>
+                    <a href="">#apartsharing</a>
                     <a href="">#интервью</a>
                   </div>
                   <p>
-                    Гасан Мустафаев, приобрел долю в компании Apart Sharing за
-                    $10 млн
+                  Сервис аренды Apartsharing стал частью Alikson Group в рамках сделки на $10 млн
                   </p>
                   <a href="">Читать полностью</a>
                 </div>
@@ -382,13 +391,11 @@
                 <div class="Card">
                   <div class="Card-Image" src="img/News2.png"></div>
                   <div class="Tags">
-                    <a href="">#рбк</a>
-                    <a href="">#финансы</a>
-                    <a href="">#интервью</a>
+                    <a href="">#aliksonteam</a>
+                    <a href="">#медиабаскет</a>
                   </div>
                   <p>
-                    Как 24-летний предприниматель создал миллиардную компанию
-                    Alikson Group
+                  Alikson Team в 4-м сезоне Media Basket: От дебюта до полуфинала
                   </p>
                   <a href="">Читать полностью</a>
                 </div>
@@ -398,12 +405,11 @@
                   <div class="Card-Image" src="img/News3.png"></div>
                   <div class="Tags">
                     <a href="">#рбк</a>
-                    <a href="">#девелопмент</a>
+                    <a href="">#финансы</a>
                     <a href="">#интервью</a>
                   </div>
                   <p>
-                    Открыть девелоперскую компанию в 25 лет: что важно знать об
-                    Alikson Group
+                  Как 24-летний предприниматель создал миллиардную компанию Alikson Group
                   </p>
                   <a href="">Читать полностью</a>
                 </div>
@@ -412,10 +418,80 @@
                 <div class="Card">
                   <div class="Card-Image" src="img/News4.png"></div>
                   <div class="Tags">
+                    <a href="">#рбк</a>
+                    <a href="">#девелопмент</a>
+                    <a href="">#интервью</a>
+                  </div>
+                  <p>Инновационный подход 
+                  к созданию современных офисных пространств</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News5.png"></div>
+                  <div class="Tags">
                     <a href="">#tadviser</a>
                     <a href="">#биография</a>
                   </div>
-                  <p>Мустафаев Гасан Агаевич. Биография</p>
+                  <p>Офисный шеринг в Москве: Как гибкие офисы меняют правила игры на рынке недвижимости</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News6.png"></div>
+                  <div class="Tags">
+                    <a href="">#tadviser</a>
+                    <a href="">#биография</a>
+                  </div>
+                  <p>Alikson Group на конференции T–LAB: новые горизонты 
+                  IT-экосистем</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News7.png"></div>
+                  <div class="Tags">
+                    <a href="">#ura.ru</a>
+                    <a href="">#электроника</a>
+                  </div>
+                  <p>Российский рынок электроники в 2025: Прогнозы, перспективы</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News8.png"></div>
+                  <div class="Tags">
+                    <a href="">#aliksonteam</a>
+                    <a href="">#медиабаскет</a>
+                  </div>
+                  <p>Alikson Team: Яркий дебют в медийной баскетбольной лиге</p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News9.png"></div>
+                  <div class="Tags">
+                    <a href="">#инк</a>
+                    <a href="">#майнинг</a>
+                  </div>
+                  <p>Майнинг в России: Рост на 7% за год и новые перспективы для инвесторов
+                  </p>
+                  <a href="">Читать полностью</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Card">
+                  <div class="Card-Image" src="img/News10.png"></div>
+                  <div class="Tags">
+                    <a href="">#папарацци</a>
+                    <a href="">#мероприятия</a>
+                  </div>
+                  <p>Alikson Group: Новогодний корпоратив в стиле "Ревущих 20-х"</p>
                   <a href="">Читать полностью</a>
                 </div>
               </div>
@@ -436,7 +512,7 @@
           <h2>НАШИ ПРОЕКТЫ</h2>
           <p>
             За последние четыре года мы организовали и приняли участие в
-            множестве масштабных мероприятий.
+            ряде значимых мероприятий.
           </p>
         </div>
         <div class="Projects-Main">
@@ -493,7 +569,7 @@
               </div>
               <div>
                 <img src="img/ArrowRight_1.svg" />
-                <a href="">стать спонсором</a>
+                <a href="">подробнее</a>
               </div>
             </div>
           </div>
@@ -519,7 +595,7 @@
               </div>
               <div>
                 <img src="img/ArrowRight_1.svg" />
-                <a href="">стать спонсором</a>
+                <a href="">подробнее</a>
               </div>
             </div>
           </div>
@@ -574,7 +650,7 @@
                       <p>гарантии на ремонт техники</p>
                     </div>
                     <div>
-                      <a href="">стать спонсором</a>
+                      <a href="">подробнее</a>
                     </div>
                   </div>
                 </div>
@@ -600,7 +676,7 @@
                       </p>
                     </div>
                     <div>
-                      <a href="">стать спонсором</a>
+                      <a href="">подробнее</a>
                     </div>
                   </div>
                 </div>
