@@ -52,6 +52,7 @@
                 <div class="item"><img src="img/About6.png" /></div>
                 <div class="item"><img src="img/About7.png" /></div>
                 <div class="item"><img src="img/About8.png" /></div>
+                <div class="item"><img src="img/About8_1.png" /></div>
                 <div class="item"><img src="img/About9.png" /></div>
                 <div class="item"><img src="img/About10.png" /></div>
                 <div class="item"><img src="img/About11.png" /></div>
@@ -66,6 +67,7 @@
                 <div class="item"><img src="img/About6.png" /></div>
                 <div class="item"><img src="img/About7.png" /></div>
                 <div class="item"><img src="img/About8.png" /></div>
+                <div class="item"><img src="img/About8_1.png" /></div>
                 <div class="item"><img src="img/About9.png" /></div>
                 <div class="item"><img src="img/About10.png" /></div>
                 <div class="item"><img src="img/About11.png" /></div>

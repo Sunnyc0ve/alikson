@@ -137,6 +137,10 @@ footer{
 
 /* Секция о нас */
 
+[src="img/About8_1.png"]{
+  display: none;
+}
+
 .AboutSection {
   background: #171717;
   padding: 70px 0px 100px 0px;
@@ -305,6 +309,13 @@ footer{
 }
 
 @media (max-width: 659px) {
+  [src="img/About8.png"]{
+    display: none;
+  }
+  
+  [src="img/About8_1.png"]{
+    display: block;
+  }
   .AboutSection {
     padding: 27px 0px 40px 0px;
     border-radius: 7px 7px 0px 0px;
@@ -1695,7 +1706,7 @@ footer{
 }
 
 .PartnersSection .marquee {
-  animation: scroll 300s linear infinite;
+  animation: scroll 250s linear infinite;
 }
 
 @media (max-width: 1439px) {
