@@ -829,6 +829,7 @@
   <script>
     //Слайдеры
     const swiperN = new Swiper(".swiperN", {
+      loop: true,
       slidesPerView: 1,
       spaceBetween: -70,
       breakpoints: {
@@ -837,7 +838,6 @@
         1440: { slidesPerView: 3, spaceBetween: -275 },
       },
       direction: "horizontal",
-      loop: false,
       navigation: {
         nextEl: ".Swiper-Next",
         prevEl: ".Swiper-Prev",

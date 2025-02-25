@@ -139,6 +139,54 @@
                 <p>Мобильное приложение</p>
             </div>
         </section>
+        <section class="HowSection">
+            <div class="How-Header">
+                <h2>Как это работает?</h2>
+            </div>
+            <div class="How-Content">
+                <div class="Card">
+                    <h3>01</h3>
+                    <p>Владелец регистрируется в приложении Apart Business и загружает информацию о своей недвижимости</p>
+                </div>
+                <div class="Card">
+                    <h3>02</h3>
+                    <p>Платформа автоматически управляет бронированиями, заселением и списанием оплаты</p>
+                </div>
+                <div class="Card">
+                    <h3>03</h3>
+                    <p>Владелец может отслеживать доход, статистику по бронированиям и состояние объекта в режиме реального времени</p>
+                </div>
+                <div class="Card">
+                    <h3>04</h3>
+                    <p>Мобильное приложение Apart Cleaning позволяет автоматизировать процессы уборки и контроля качества после каждого арендатора</p>
+                </div>
+            </div>
+        </section>
+        <section class="FormSection">
+        <div class="Form-Header">
+          <h2>оставьте заявку</h2>
+          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
+        </div>
+        <div class="Form-Main">
+          <form action="" method="POST">
+            <div>
+              <img src="img/inputInfo.svg" />
+              <input type="text" name="name" required placeholder="Ваше имя" />
+            </div>
+            <div>
+              <img src="img/inputInfo.svg" />
+              <input
+                type="text"
+                name="phone"
+                required
+                placeholder="Ваш телефон"
+              />
+            </div>
+            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
+            <p>Заполните форму, чтобы узнать больше</p>
+          </form>
+        </div>
+      </section>
     </main>
     <?php include('include/footer.html') ?>
   </body>
