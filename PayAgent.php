@@ -1,0 +1,175 @@
+<!DOCTYPE >
+<html lang="ru">
+  <head>
+    <title>Alikson - Платёжный агент</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/pages/pay_agent/_payagent.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <?php include('include/header.html')?>
+    <main>
+        <section class="MainSection">
+            <div class="MainSection-Header">
+                <h1>Платежный<br> агент</h1>
+                <p>Платежный агент, предоставляющий полный спектр услуг для международных расчетов российских компаний. Мы помогаем бизнесу сохранять финансовые потоки стабильными, независимо от ограничений</p>
+            </div>
+            <div class="MainSection-Content">
+                <a href="">Оставить заявку</a>
+                <div>
+                    <div class="Info">
+                        <div>
+                            <h3>30+</h3>
+                            <p>направлений работы, крипто- и международные платежи</p>
+                        </div>
+                    </div>
+                    <div class="Info">
+                        <div>
+                            <h3>1-3 ДНЯ</h3>
+                            <p>средний срок обработки международных платежей</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="AboutSection">
+            <div>
+                <div class="About-Left">
+                    <h2>Что такое<br> платежный агент?</h2>
+                    <div><img src="img/pay_agent/AboutImg.png"></div>
+                </div>
+                <div class="About-Right">
+                    <p>Платежный агент — это финансовый посредник, который осуществляет переводы между клиентами и их контрагентами за границей. Он принимает денежные средства от клиента и передает их на счета поставщиков или партнеров на основании заключенного договора.</p>
+                    <p>Мы помогаем бизнесу проводить расчеты в ОАЭ, Китае и странах Европы, гарантируя соблюдение всех международных норм и стандартов</p>
+                    <a href="">оставить заявку <img src="img/pay_agent/Arrow.svg"></a>
+                </div>
+            </div>
+        </section>
+        <section class="ServicesSection">
+            <div class="Services-Header">
+                <h2>Кому подойдут наши услуги?</h2>
+            </div>
+            <div class="Services-Content">
+                <div class="Card">
+                    <div><img src="img/pay_agent/Services1.svg"></div>
+                    <h3>Селлеры маркетплейсов</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Services2.svg"></div>
+                    <h3>Владельцы торговых бизнесов</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Services3.svg"></div>
+                    <h3>Производственные компании</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Services4.svg"></div>
+                    <h3>Импортеры<br> и экспортеры</h3>
+                </div>
+            </div>
+        </section>
+        <section class="KindsSection">
+            <div class="Kinds-Header">
+                <h2>Виды<br> переводов:</h2>
+                    <div class="wrap">
+                        <div class="items-wrap">
+                            <div class="items marquee">
+                                <div class="item"><img src="img/pay_agent/Kinds1.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds2.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds3.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds4.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds5.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds6.png" /></div>
+                            </div>
+                            <div aria-hidden="true" class="items marquee">
+                                <div class="item"><img src="img/pay_agent/Kinds1.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds2.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds3.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds4.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds5.png" /></div>
+                                <div class="item"><img src="img/pay_agent/Kinds6.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="Kinds-Content">
+                <p>Валютные переводы за границу</p>
+                <div></div>
+                <p>Международные расчеты<br> в USD, EUR, AED, CNY</p>
+                <div></div>
+                <p>Оплата юридическим лицам и<br> частным поставщикам</p>
+                <div></div>
+                <p>Обмен валют и криптоплатежи</p>
+                <div></div>
+                <p>Инкассация денежных средств</p>
+                <div></div>
+                <p>Финансовая логистика</p>
+            </div>
+        </section>
+        <section class="AdvantagesSection">
+            <div class="Advantages-Header">
+                <h2>Наши преимущества:</h2>
+            </div>
+            <div class="Advantages-Content">
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages1.svg"></div>
+                    <h3>Безопасность</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages2.svg"></div>
+                    <h3>Абсолютно легально</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages3.svg"></div>
+                    <h3>Скорость переводов</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages4.svg"></div>
+                    <h3>Низкие комиссии</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages5.svg"></div>
+                    <h3>Экономия на конвертации</h3>
+                </div>
+                <div class="Card">
+                    <div><img src="img/pay_agent/Advantages6.svg"></div>
+                    <h3>Индивидуальный подход</h3>
+                </div>
+            </div>
+        </section>
+        <section class="FormSection">
+        <div class="Form-Header">
+          <h2>оставьте заявку</h2>
+          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
+        </div>
+        <div class="Form-Main">
+          <form action="" method="POST">
+            <div>
+              <img src="img/inputInfo.svg" />
+              <input type="text" name="name" required placeholder="Ваше имя" />
+            </div>
+            <div>
+              <img src="img/inputInfo.svg" />
+              <input
+                type="text"
+                name="phone"
+                required
+                placeholder="Ваш телефон"
+              />
+            </div>
+            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
+            <p>Заполните форму, чтобы узнать больше</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <?php include('include/footer.html') ?>
+  </body>
+  <script src="include/header.js"></script>
+</html>

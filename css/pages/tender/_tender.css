@@ -21,6 +21,8 @@ h2{
     align-items: center;
     gap:174px;
     padding: 59px 0px 110px 0px;
+    background: url("../../../img/tender/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
 .MainSection > div{

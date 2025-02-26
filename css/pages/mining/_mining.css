@@ -1,0 +1,835 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:419px;
+    padding: 65px 0px 86px 0px;
+    background: url("../../../img/mining/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:24px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 69.58px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.696px;
+    text-transform: uppercase;
+    width: 532px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.27px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:259px;
+}
+
+.MainSection-Content a{
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    padding: 17.156px 25.734px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+.MainSection-Content a:hover{
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    row-gap:36px;
+    column-gap: 10px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 69px;
+font-weight: 500;
+line-height: 80%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    letter-spacing: -0.25px;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27.75px;
+}
+
+
+
+/*Почему майнинг выгоден*/
+.AboutSection{
+    border-radius: 15px;
+    border: 1px solid #353535;
+    padding: 86px 0px;
+}
+
+.AboutSection h2{
+    width: 1280px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+
+
+.About-Content{
+    display: flex;
+    gap: 57px;
+}
+
+.About-Content .Info p{
+    color: #FFF;
+    font-family: Mulish;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27.75px;
+    letter-spacing: -0.25px;
+}
+
+.About-Content .Info h3{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 38.85px;
+    letter-spacing: -0.35;
+    color: #0485FE;
+    text-transform: uppercase;
+}
+
+.About-Content .Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap{
+    width: calc((100vw - 300px) / 2);
+}
+  
+  .items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 29px;
+  }
+  
+  .items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 29px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: all 0.1s ease-in-out;
+    width: 498px;
+    height: 389px;
+  }
+
+  .item img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .marquee {
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+
+
+
+
+
+
+
+  /*Майнинг или банк*/
+  .VsSection{
+    padding: 89px 0px 86px 0px;
+  }
+
+  .VsSection > div{
+    width: 1280px;
+    margin: auto;
+  }
+
+  .Vs-Header p{
+    font-weight: 500;
+    font-size: 52.13px;
+    line-height: 57.86px;
+    letter-spacing: -0.5213;
+    color:#0485FE;
+    text-transform: uppercase;
+  }
+
+
+  .Vs-Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .Vs-Content .Card:first-child{
+    background: #262626;
+    width: 494;
+    height: 570;
+    padding: 19px 22px;
+    border-radius: 10px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header h3{
+    font-weight: 500;
+    font-size: 27.57px;
+    line-height: 35.45px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.77;
+    text-transform: uppercase;
+    width: 220px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header > div > div{
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    opacity: 0.63;
+    width: 184px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 5px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header span{
+    font-weight: 500;
+    font-size: 30.58px;
+    line-height: 41.57px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.59;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header p{
+    font-weight: 400;
+    font-size: 17.09px;
+    line-height: 22.04px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.77;
+    text-align: right;
+  }
+
+  /* .Card-Content span{
+    position: absolute;
+    font-weight: 500;
+    font-size: 32.1px;
+    line-height: 36.55px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.77;
+  } */
+
+  .Vs-Content .Card:first-child .Card-Content{
+    display: flex;
+    justify-content: end;
+    margin: 64px 0px 46px 0px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Footer p{
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 22.43px;
+    line-height: 28.15px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.77;
+    margin-bottom: 7px;
+  }
+
+
+  
+
+
+  .Vs-Content .Card:last-child{
+    background: #262626;
+    border: 1px solid #353535;
+    backdrop-filter: blur(5.96500301361084px);
+
+box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
+
+    width: 722;
+    height: 662;
+    padding:30px 34px 21px 34px;
+    border-radius: 10px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header h3{
+    font-weight: 500;
+    letter-spacing: 0px;
+    color:#fff;
+    text-transform: uppercase;
+    width: 290px;
+    font-size: 36.46px;
+    line-height: 46.88px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header > div > div{
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    background: #0485FE1A;
+    backdrop-filter: blur(5.96500301361084px);
+    box-shadow: 0px 0px 15.53px 0px #0666DF, 0px 0px 4.97px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
+    width: 307px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 10px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header span{
+    font-weight: 500;
+    letter-spacing: 0px;
+    color:#fff;
+    font-size: 51.2px;
+    line-height: 69.6px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header p{
+    font-weight: 400;
+    letter-spacing: 0px;
+    color:#fff;
+    text-align: right;
+    font-size: 28.13px;
+    line-height: 36.29px;
+  }
+
+  /* .Card-Content span{
+    position: absolute;
+    font-weight: 500;
+    font-size: 32.1px;
+    line-height: 36.55px;
+    letter-spacing: 0px;
+    color:#fff;
+    opacity: 0.77;
+  } */
+
+  .Vs-Content .Card:last-child .Card-Content{
+    display: flex;
+    justify-content: end;
+    margin-top: 27px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Footer p{
+    font-family: 'Mulish';
+    font-weight: 400;
+    letter-spacing: 0px;
+    color:#fff;
+    margin-bottom: 8px;
+    font-size: 26.05px;
+    line-height: 32.69px;
+  }
+
+  .Vs-Footer{
+    background: #262626;
+    border: 1px solid #353535;
+    width: 100%;
+    height: 182;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 77px !important;
+    gap:62px;
+    padding-left: 33px;
+  }
+
+  .Vs-Footer p{
+    font-family: 'Mulish';
+    font-weight: 500;
+    font-size: 30.37px;
+    line-height: 33.71px;
+    letter-spacing: -0.3037;
+    color:#FFFFFF;
+    width: 467px;
+    flex-shrink: 0;
+  }
+
+  .Vs-Footer div{
+    backdrop-filter: blur(5.96500301361084px);
+    box-shadow: 0px 0px 15.53px 0px #0666DF, 0px 0px 4.97px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 57px;
+  }
+
+  .Vs-Footer div span{
+    font-weight: 500;
+    font-size: 106.08px;
+    line-height: 117.75px;
+    letter-spacing: -1.0608px;
+    color:#0485FE;
+  }
+
+
+
+  /*Что такое платежный агент*/
+ .ServicesSection{
+    margin: auto;
+    padding: 85px 0px 0px 0px;
+    border: 1px solid #353535;
+    background: #212121;
+    border-radius: 15px;
+}
+
+.ServicesSection > div{
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    gap:44px;
+}
+
+.ServicesSection h2{
+    font-size: 47.1px;
+    line-height: 53.4px;
+    margin-bottom: 55px;
+}
+
+.Services-Left > div{
+    width: 479px;
+    height: 492;
+    overflow: hidden;
+}
+
+.Services-Left > div img{
+    position: relative;
+    top: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.Services-Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:32px;
+}
+
+.Services-Right .Card{
+    background: #303030;
+    width: 732px;
+    border-radius: 10px;
+}
+
+.Services-Right .Card:first-child{
+    height: 218px;
+    padding: 38px 20px 0px 32px;
+}
+
+.Services-Right .Card:last-child{
+    height: 212px;
+    padding: 41px 20px 0px 32px;
+}
+
+.Services-Right .Card h3{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 38.85px;
+    letter-spacing: -0.35;
+    color:#0485FE;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.Services-Right .Card p{
+    line-height: 38.85px;
+    letter-spacing: -0.25;
+    color:#fff;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27.75px;
+}
+
+
+
+/*Преимущества секция*/
+.AdvantagesSection{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #353535;
+    background: #191919;
+    padding: 85px 0px 93px calc((100vw - 1280px) / 2);
+    gap:59px;
+}
+
+.Advantages-Header{
+    display: flex;
+    flex-direction: column;
+    width: 498px;
+    flex-shrink: 0;
+}
+
+.Advantages-Content{
+    width: 100%;
+}
+
+.Advantages-Content h3{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 30.85px;
+    letter-spacing: -0.35px;
+}
+
+.Advantages-Content p{
+    color: #FFF;
+    letter-spacing: -0.25px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27.75px;
+}
+
+.Advantages-Content div{
+    background: #0058AB;
+    height: 1px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+
+
+
+/*Почему нас выбирают*/
+.WhySection{
+    background: #212121;
+    padding: 85px 0px;
+}
+
+.WhySection > *{
+    width: 1280px;
+    margin: auto;
+}
+
+.Why-Content{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 188px 188px;
+    grid-row-gap: 41px;
+    grid-column-gap: 36px;
+}
+
+.Why-Content .Card{
+    display: flex;
+    gap:7px;
+    align-items: center;
+    border-radius: 12px;
+    background: #303030;
+    border: 1px solid #8D8D8D;
+    padding-left: 10px;
+}
+
+.Why-Content .Card > div{
+    width: 114px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Why-Content .Card h3{
+    letter-spacing: 0.35px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 38.85px;
+}
+
+
+
+/*Система автоматизации*/
+.PacksSection{
+    background: #181818 url("../../../img/apart_sharing/PacksBack.png") no-repeat;
+    background-size: 100% 330%;
+    background-position: right -881px;
+    padding: 69px 0px 95px 0px;
+}
+
+.PacksSection > *{
+    width: 1280px;
+    margin: auto;
+}
+
+.Packs-Content{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    grid-template-rows: 405px;
+    justify-content: space-between;
+}
+
+.Packs-Content .Card{
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #353535;
+    background: #2828289E;
+    backdrop-filter: blur(16.980453491210938px);
+}
+
+.Packs-Content .Card:nth-child(2){
+box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
+backdrop-filter: blur(16.980453491210938px);
+}
+
+
+.Packs-Content .Card-Header{
+    border-bottom: 1px solid #353535;
+    background: #282828;
+    height: 131px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Packs-Content .Card h3{
+    color: #0485FE;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 35.59px;
+    line-height: 39.5px;
+    letter-spacing: -0.3559;
+    text-align: center;
+}
+
+.Packs-Content .Card h4{
+    color: #fff;
+    letter-spacing: -0.27;
+font-weight: 400;
+font-size: 27px;
+line-height: 29.97px;
+
+}
+
+.Packs-Content .Card p{
+    color: #FFF;
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 25.53px;
+    letter-spacing: -0.23px;
+}
+
+.Packs-Content .Card-Content{
+    padding: 11px 0px 0px 23px;
+    display: flex;
+    gap:34px;
+    justify-content: center;
+    flex-direction: column;
+    height: 274px;
+}
+
+.Packs-Content .Card-Content li{
+    color: #FFF;
+    font-size: 20.431px;
+    font-weight: 400;
+    line-height: 111%;
+    list-style: disc;
+    margin-left: 20px;
+    font-family: "Mulish";
+}
+
+
+
+/* Секция форма */
+
+.Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#fff;
+    width: 729px;
+  }
+  
+  .Form-Header h2 {
+    color: #0485FE;
+  }
+  
+  .FormSection {
+    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background-size: 760px;
+    background-position: -131px -10px;
+    padding: 77px 0px 104px 0px;
+    border-radius: 20px;
+    border: 2px solid #3535358f;
+    position: relative;
+  }
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 734px;
+  }
+  
+  .FormSection form p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#666;
+  }
+  
+  .FormSection form > div {
+    padding: 27px 36px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #232323;
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
+
+  }
