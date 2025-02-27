@@ -273,6 +273,7 @@ footer{
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.12px;
+    display: none;
   }
   .About-Main {
     flex-direction: column;
@@ -522,6 +523,7 @@ footer{
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.12px;
+    display: none;
   }
 
   .Buisnes-Main {
@@ -754,7 +756,7 @@ footer{
   opacity: 0.8;
 }
 
-.swiperN .swiper-slide:nth-child(1) .Card-Image {
+/* .swiperN .swiper-slide:nth-child(1) .Card-Image {
   background: url("../img/News1.png");
   background-size: 101% !important;
 }
@@ -793,7 +795,7 @@ footer{
 
 .swiperN .swiper-slide:nth-child(10) .Card-Image {
   background: url("../img/News10.png");
-}
+} */
 
 @media (max-width: 1439px) {
   .NewsSection > div {
@@ -833,6 +835,7 @@ footer{
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.12px;
+    display: none;
   }
 
   .News-Main .Card {
@@ -1193,6 +1196,7 @@ footer{
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.12px;
+    display: none;
   }
 
   .Projects-Main {
@@ -1296,7 +1300,7 @@ footer{
 
   .Projects-Main_mobile .Info .Stats p {
     color: #fff;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 300;
   }
 
@@ -1549,6 +1553,7 @@ footer{
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.12px;
+    display: none;
   }
 
   .Form-Header h2 {
@@ -1692,9 +1697,9 @@ footer{
   transition: all 0.1s ease-in-out;
 }
 
-.marquee {
+/* .marquee {
   animation: scroll 80s linear infinite;
-}
+} */
 
 @keyframes scroll {
   from {

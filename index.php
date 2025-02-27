@@ -96,7 +96,7 @@
             </div>
             <div class="Card">
               <div>
-                <h3><span></span>400+</h3>
+                <h3><span>400+</span></h3>
                 <p>сотрудников</p>
               </div>
             </div>
@@ -377,7 +377,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News1.png"></div>
+                  <img class="Card-Image" src="img/News1.png"></img>
                   <div class="Tags">
                     <a href="">#tadviser</a>
                     <a href="">#apartsharing</a>
@@ -391,7 +391,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News2.png"></div>
+                  <img class="Card-Image" src="img/News2.png"></img>
                   <div class="Tags">
                     <a href="">#aliksonteam</a>
                     <a href="">#медиабаскет</a>
@@ -404,7 +404,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News3.png"></div>
+                  <img class="Card-Image" src="img/News3.png"></img>
                   <div class="Tags">
                     <a href="">#рбк</a>
                     <a href="">#финансы</a>
@@ -418,7 +418,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News4.png"></div>
+                  <img class="Card-Image" src="img/News4.png"></img>
                   <div class="Tags">
                     <a href="">#рбк</a>
                     <a href="">#девелопмент</a>
@@ -431,7 +431,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News5.png"></div>
+                  <img class="Card-Image" src="img/News5.png"></img>
                   <div class="Tags">
                     <a href="">#tadviser</a>
                     <a href="">#биография</a>
@@ -442,7 +442,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News6.png"></div>
+                  <img class="Card-Image" src="img/News6.png"></img>
                   <div class="Tags">
                     <a href="">#tadviser</a>
                     <a href="">#биография</a>
@@ -454,7 +454,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News7.png"></div>
+                  <img class="Card-Image" src="img/News7.png"></img>
                   <div class="Tags">
                     <a href="">#ura.ru</a>
                     <a href="">#электроника</a>
@@ -465,7 +465,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News8.png"></div>
+                  <img class="Card-Image" src="img/News8.png"></img>
                   <div class="Tags">
                     <a href="">#aliksonteam</a>
                     <a href="">#медиабаскет</a>
@@ -476,7 +476,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News9.png"></div>
+                  <img class="Card-Image" src="img/News9.png"></img>
                   <div class="Tags">
                     <a href="">#инк</a>
                     <a href="">#майнинг</a>
@@ -488,7 +488,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="Card">
-                  <div class="Card-Image" src="img/News10.png"></div>
+                  <img class="Card-Image" src="img/News10.png"></img>
                   <div class="Tags">
                     <a href="">#папарацци</a>
                     <a href="">#мероприятия</a>
@@ -520,7 +520,7 @@
         <div class="Projects-Main">
           <div class="Links">
             <button class="Active" data="Team">alikson team</button>
-            <button data="Service">alikson service</button>
+            <button data="Service">alikson club</button>
             <button data="Fond">благотфорительный фонд</button>
           </div>
           <div class="Info Active" data="Team">
@@ -553,7 +553,7 @@
           </div>
           <div class="Info" data="Service">
             <div class="Banner">
-              <h3>ALIKSON SERVICE</h3>
+              <h3>ALIKSON CLUB</h3>
               <p>Профессиональный сервис для вашего оборудования и техники</p>
               <div>
                 <a href="">организатор alikson group</a>
@@ -637,7 +637,7 @@
                 <div class="Info">
                   <div class="Banner">
                     <div>
-                      <h3>ALIKSON SERVICE</h3>
+                      <h3>ALIKSON CLUB</h3>
                       <p>Профессиональный сервис для вашей техники</p>
                     </div>
                     <a href="">подробнее</a>
@@ -830,8 +830,10 @@
     //Слайдеры
     const swiperN = new Swiper(".swiperN", {
       loop: true,
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: -70,
+      watchSlidesProgress: true, // Следит за прогрессом слайдов
+  watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
         660: { slidesPerView: 2, spaceBetween: -100 },
         980: { slidesPerView: 2, spaceBetween: -180 },
@@ -845,13 +847,15 @@
     });
 
     const swiperB = new Swiper(".swiperB", {
-      slidesPerView: 1,
+        loop: true,
+      slidesPerView: "auto",
       spaceBetween: -80,
+      watchSlidesProgress: true, // Следит за прогрессом слайдов
+  watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
         660: { slidesPerView: 2, spaceBetween: -100 },
       },
       direction: "horizontal",
-      loop: false,
       navigation: {
         nextEl: ".Swiper-Next",
         prevEl: ".Swiper-Prev",
@@ -885,5 +889,61 @@
           .setAttribute("class", "Info Active");
       });
     });
+    
+    //о компании
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) { // Только для мобилок
+    const marquee = document.querySelector(".items-wrap");
+    const marqueeContent = marquee.innerHTML; // Сохраняем оригинальный контент
+    marquee.innerHTML += marqueeContent; // Дублируем контент
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let isScrolling = false;
+    let speed = 0.5; // Скорость автопрокрутки
+    let autoScroll;
+
+    function startAutoScroll() {
+      if (!isScrolling) {
+        autoScroll = setInterval(() => {
+          marquee.scrollLeft += speed;
+          if (marquee.scrollLeft >= marquee.scrollWidth / 2) {
+            marquee.scrollLeft = 0; // Перепрыгиваем в начало без рывков
+          }
+        }, 16);
+      }
+    }
+
+    function stopAutoScroll() {
+      clearInterval(autoScroll);
+      isScrolling = true;
+      setTimeout(() => { isScrolling = false; startAutoScroll(); }, 2000); // Через 2 сек снова автопрокрутка
+    }
+
+    startAutoScroll();
+
+    marquee.addEventListener("touchstart", (e) => {
+      isDown = true;
+      startX = e.touches[0].pageX - marquee.offsetLeft;
+      scrollLeft = marquee.scrollLeft;
+      stopAutoScroll(); // Останавливаем автопрокрутку при свайпе
+    });
+
+    marquee.addEventListener("touchmove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - marquee.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      marquee.scrollLeft = scrollLeft - walk;
+    });
+
+    marquee.addEventListener("touchend", () => {
+      isDown = false;
+    });
+  }
+});
+
+
   </script>
 </html>
