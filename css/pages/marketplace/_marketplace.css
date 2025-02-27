@@ -1,0 +1,409 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:185px;
+    padding: 60px 0px 85px 0px;
+    background: url("../../../img/marketplace/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:40px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 67.44px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.6744px;
+    text-transform: uppercase;
+    width: 512px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.27px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:260px;
+}
+
+.MainSection-Content a{
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    padding: 17.156px 25.734px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+.MainSection-Content a:hover{
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 395px 1fr;
+    row-gap:36px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 69px;
+font-weight: 500;
+line-height: 111%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 111%;
+    letter-spacing: -0.25px;
+    font-family: "Mulish";
+}
+
+
+
+
+
+
+
+
+/*Что мы предлагаем*/
+.AboutSection{
+  display: flex;
+  padding: 68px 0px 72px 0px;
+  gap:71px;
+  align-items: end;
+  background: #181818;
+}
+
+.AboutSection h2{
+  margin-left: calc((100vw - 1280px) / 2);
+  position: absolute;
+}
+
+.About-Header{
+  display: flex;
+  flex-direction: column;
+  width: 498px;
+  flex-shrink: 0;
+  width: calc((100vw - 300px) / 2);
+}
+
+.About-Content{
+  width: 100%;
+}
+
+.About-Content p{
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 74%;
+  text-transform: uppercase;
+}
+
+.About-Content div{
+  background: #0058AB;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.wrap{
+  margin-top: 125px;
+}
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 29px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 29px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  width: 503px;
+  height: 329px;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+
+
+
+
+/*Категории*/
+.AdvantagesSection{
+  background: #212121; 
+  padding: 69px 0px;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid #353535;
+}
+
+.AdvantagesSection > div{
+  width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:29px;
+}
+
+.AdvantagesSection .Card{
+  display: flex;
+  gap:38px;
+  align-items: center;
+  margin-bottom: 33px;
+  height: 158px;
+  background: #3030304D;
+  border: 1px solid #353535;
+  backdrop-filter: blur(19.600000381469727px);
+  border-radius: 10px;
+  padding-left: 25px;
+}
+
+.AdvantagesSection .Card span{
+  color:#fff;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38.85px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+}
+
+.AdvantagesSection .Card > div{
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.Advantages-Left{
+  display: flex;
+  flex-direction: column;
+}
+
+.AdvantagesSection h2{
+  margin-bottom: auto;
+}
+
+
+
+
+
+/*Наши партнёры*/
+.PartnersSection{
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+  padding: 69px 0px;
+}
+
+.PartnersSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Partners-Content{
+  margin-top: 67px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 155px);
+  grid-column-gap: 27px;
+  grid-row-gap: 25px;
+}
+
+.Partners-Content .Card{
+  border-radius:10px;
+  border: 1.5px solid #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #24242478;
+  box-shadow: 0px 0px 18.7px 0px #0485FE, 0px 0px 9.72px 0px #0485FE, 0px 0px 2.99px 0px #FFFFFF;
+  backdrop-filter: blur(24.681249618530273px)
+}
+
+
+
+
+/* Секция форма */
+
+.Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#fff;
+    width: 729px;
+  }
+  
+  .Form-Header h2 {
+    color: #0485FE;
+  }
+  
+  .FormSection {
+    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background-size: 760px;
+    background-position: -131px -10px;
+    padding: 77px 0px 104px 0px;
+    border-radius: 20px;
+    border: 2px solid #3535358f;
+    position: relative;
+  }
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 734px;
+  }
+  
+  .FormSection form p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#666;
+  }
+  
+  .FormSection form > div {
+    padding: 27px 36px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #232323;
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
+
+  }

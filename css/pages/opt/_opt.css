@@ -191,6 +191,199 @@ text-transform: uppercase;
 
 
 
+/*Наши преимущества*/
+.AdvantagesSection{
+  display: flex;
+  padding: 64px 0px 91px 0px;
+  gap:71px;
+  align-items: end;
+  background: #181818;
+}
+
+.AdvantagesSection h2{
+  margin-left: calc((100vw - 1280px) / 2);
+  margin-bottom: 60px;
+}
+
+.Advantages-Header{
+  display: flex;
+  flex-direction: column;
+  width: 498px;
+  flex-shrink: 0;
+  width: calc((100vw - 300px) / 2);
+}
+
+.Advantages-Content{
+  width: 100%;
+}
+
+.Advantages-Content p{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 111%;
+  text-transform: uppercase;
+}
+
+.Advantages-Content div{
+  background: #0058AB;
+  height: 1px;
+  width: 100%;
+  margin: 25.4px 0px;
+}
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 29px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 29px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.1s ease-in-out;
+  width: 488px;
+  height: 357px;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+
+
+
+/*Категории*/
+.CategoriesSection{
+  background: #212121; 
+  padding: 97px 0px 71px 0px;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid #353535;
+}
+
+.CategoriesSection > div{
+  width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 579px 1fr;
+  gap:81px;
+}
+
+.CategoriesSection .Card{
+  display: flex;
+  gap:24px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.CategoriesSection .Card span{
+  color:#fff;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45.15px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.CategoriesSection .Card > div{
+  width: 113;
+  height: 99;
+  border-radius: 13px;
+  border: 1px solid #8D8D8D;
+  backdrop-filter: blur(8.302919387817383px);
+  box-shadow: 0px 0px 17.6px 0px #0666DF, 0px 0px 4.1px 0px #0485FE91,0px 0px 2.7px 0px #FFFFFF59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.Categories-Left{
+  display: flex;
+  flex-direction: column;
+}
+
+.CategoriesSection h2{
+  margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+
+/*Наши клиенты*/
+.ClientsSection{
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+  padding: 71px 0px 85px 0px;
+}
+
+.ClientsSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Clients-Content{
+  margin-top: 41px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 124px);
+  grid-column-gap: 22px;
+  grid-row-gap: 14px;
+}
+
+.Clients-Content .Card{
+  border-radius:11px;
+  border: 1px solid #0058AB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Секция форма */

@@ -76,6 +76,104 @@
                 </div>
             </div>
         </section>
+        <section class="AdvantagesSection">
+            <div class="Advantages-Header">
+                <h2>Наши<br> преимущества</h2>
+                    <div class="wrap">
+                        <div class="items-wrap">
+                            <div class="items marquee">
+                                <div class="item"><img src="img/opt/Advantages1.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages2.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages3.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages4.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages5.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages6.png" /></div>
+                            </div>
+                            <div aria-hidden="true" class="items marquee">
+                                <div class="item"><img src="img/opt/Advantages1.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages2.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages3.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages4.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages5.png" /></div>
+                                <div class="item"><img src="img/opt/Advantages6.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="Advantages-Content">
+                <p>Высокая прибыльность</p>
+                <div></div>
+                <p>Прозрачные сделки</p>
+                <div></div>
+                <p>быстрая Масштабируемость</p>
+                <div></div>
+                <p>Экономия времени и ресурсов</p>
+                <div></div>
+                <p>юридическая защита</p>
+            </div>
+        </section>
+        <section class="CategoriesSection">
+          <div>
+            <div class="Categories-Left">
+              <h2>Категории товаров</h2>
+              <div class="Card">
+                <div><img src="img/opt/Categories1.svg"></div>
+                <span>электроника</span>
+              </div>
+              <div class="Card">
+                <div><img src="img/opt/Categories2.svg"></div>
+                <span>бытовая техника</span>
+              </div>
+              <div class="Card">
+                <div><img src="img/opt/Categories3.svg"></div>
+                <span>Автотовары</span>
+              </div>
+            </div>
+            <div class="Categories-Right">
+              <div class="Card">
+                <div><img src="img/opt/Categories4.svg"></div>
+                <span>фото- и видео техника</span>
+              </div>
+              <div class="Card">
+                <div><img src="img/opt/Categories5.svg"></div>
+                <span>компьютерная техника</span>
+              </div>
+              <div class="Card">
+                <div><img src="img/opt/Categories6.svg"></div>
+                <span>проф. оборудование</span>
+              </div>
+              <div class="Card">
+                <div><img src="img/opt/Categories7.svg"></div>
+                <span>игры и развлечения</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ClientsSection">
+            <h2>наши клиенты</h2>
+            <div class="Clients-Content">
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+            </div>
+        </section>
 
 
         <section class="FormSection">

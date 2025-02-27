@@ -1,0 +1,437 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:185px;
+    padding: 60px 0px 85px 0px;
+    background: url("../../../img/premier_cars/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:40px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 67.44px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.6744px;
+    text-transform: uppercase;
+    width: 512px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.27px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:260px;
+}
+
+.MainSection-Content a{
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    padding: 17.156px 25.734px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+.MainSection-Content a:hover{
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    row-gap:36px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+.MainSection .Info:first-child{
+    grid-column: span 2;
+}
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 69px;
+font-weight: 500;
+line-height: 111%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 111%;
+    letter-spacing: -0.25px;
+    font-family: "Mulish";
+}
+
+
+
+
+
+
+
+
+/*Наши услуги*/
+.ServicesSection{
+  display: flex;
+  padding: 64px 0px 91px 0px;
+  gap:71px;
+  align-items: end;
+  background: #181818;
+}
+
+.ServicesSection h2{
+  margin-left: calc((100vw - 1280px) / 2);
+  margin-bottom: 60px;
+}
+
+.Services-Header{
+  display: flex;
+  flex-direction: column;
+  width: 498px;
+  flex-shrink: 0;
+  width: calc((100vw - 300px) / 2);
+}
+
+.Services-Content{
+  width: 100%;
+}
+
+.Services-Content p{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 111%;
+  width: 700px;
+}
+
+.Services-Content div{
+  background: #0058AB;
+  height: 1px;
+  width: 100%;
+  margin: 25.4px 0px;
+}
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 29px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 29px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.1s ease-in-out;
+  width: 497px;
+  height: 332px;
+  border-radius: 10px;
+  border: 1px solid #8D8D8D;
+  overflow: hidden;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+ 
+
+
+
+
+
+/*Преимущества секция*/
+.AdvantagesSection{
+  background: #181818 url("../../../img/tender/AdvantagesBack.png") no-repeat;
+  background-size: 100% 2542px;
+  background-position: center -1453px;
+  padding: 87px 0px 127px 0px;
+}
+
+.AdvantagesSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Advantages-Content{
+  margin-top: 57px;
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  grid-row-gap: 48px;
+  grid-column-gap: 49px;
+}
+
+.Advantages-Content .Card{
+  display: flex;
+  gap:30.82px;
+  align-items: center;
+}
+
+.Advantages-Content .Card > div{
+  width: 105px;
+  height: 92px;
+  border-radius: 12px;
+  background: #212121;
+  border: 1px solid #8D8D8D;
+  backdrop-filter: blur(7.695504665374756px);
+  box-shadow: 0px 0px 17.9px 0px #0666DF, 0px 0px 6.41px 0px #0485FE91, 0px 0px 2.65px 0px #FFFFFF59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.Advantages-Content .Card h3{
+  letter-spacing: 0px;
+  color:#fff;
+  text-transform: uppercase;
+font-weight: 500;
+font-size: 32.44px;
+line-height: 41.85px;
+}
+
+
+
+
+
+
+
+/*Наши проекты*/
+.ParkSection{
+  padding: 61px 0px 84px 0px;
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+}
+
+.ParkSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+
+
+.Park-Header{
+  display: flex;
+  gap:57px;
+}
+
+.Park-Header h2{
+  width: 498px;
+  flex-shrink: 0;
+}
+
+.Park-Header p{
+  font-size: 27px;
+  line-height: 29.97px;
+  letter-spacing: -0.27;
+  color:#fff;
+}
+
+
+.Park-Content{
+  display: grid;
+  margin-top: 71px;
+  grid-template-columns: 422px 353px 422px;
+  grid-template-rows: 225px;
+  justify-content: space-between;
+}
+
+.Park-Content .Card{
+  background: #242424A8;
+  border: 1px solid #8D8D8D;
+  backdrop-filter: blur(9.434041023254395px);
+box-shadow: 0px 0px 20.1px 0px #0485FE, 0px 0px 5.1px 0px #0485FEA6, 0px 0px 3.24px 0px #FFFFFF59;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Park-Content .Card img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+/* Секция форма */
+
+.Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#fff;
+    width: 729px;
+  }
+  
+  .Form-Header h2 {
+    color: #0485FE;
+  }
+  
+  .FormSection {
+    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background-size: 760px;
+    background-position: -131px -10px;
+    padding: 77px 0px 104px 0px;
+    border-radius: 20px;
+    border: 2px solid #3535358f;
+    position: relative;
+  }
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 734px;
+  }
+  
+  .FormSection form p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#666;
+  }
+  
+  .FormSection form > div {
+    padding: 27px 36px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #232323;
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
+
+  }
