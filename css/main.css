@@ -1234,6 +1234,15 @@ footer{
     background-size: 100% 100%;
   }
 
+  .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner h3{
+    width: 140px;
+    line-height: 100%;
+  }
+
+  .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner p{
+    width: 114px;
+  }
+
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner {
     background: linear-gradient(0deg, rgba(30, 30, 30, 0) 48%, #1e1e1e 90%),
       url("../img/Projects3.png");
@@ -1300,7 +1309,7 @@ footer{
 
   .Projects-Main_mobile .Info .Stats p {
     color: #fff;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 300;
   }
 
@@ -1376,8 +1385,8 @@ footer{
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner {
-    background: url("../img/Projects2.png") no-repeat;
-    background-size: 100% 100%;
+    background: url("../img/Projects2_1.png") no-repeat;
+    background-size: 93% 100%;
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner {

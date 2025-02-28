@@ -153,16 +153,6 @@
                 </div>
             </div>
         </section>
-        
-
-
-
-
-       
-
-
-
-
         <section class="FormSection">
         <div class="Form-Header">
           <h2>оставьте заявку</h2>

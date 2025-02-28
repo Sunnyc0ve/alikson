@@ -1,0 +1,709 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:185px;
+    padding: 60px 0px 85px 0px;
+    background: url("../../../img/investitions/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:40px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 67.44px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.6744px;
+    text-transform: uppercase;
+    width: 512px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.27px;
+}
+
+.MainSection-Header p:first-child{
+  margin-bottom: 30px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:260px;
+}
+
+.MainSection-Content a{
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    padding: 17.156px 25.734px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+.MainSection-Content a:hover{
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    row-gap:36px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+.MainSection .Info:first-child{
+    grid-column: span 2;
+}
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 69px;
+font-weight: 500;
+line-height: 111%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 111%;
+    letter-spacing: -0.25px;
+    font-family: "Mulish";
+}
+
+
+
+
+
+
+
+
+/*Рост с аликсон*/
+.GrowSection{
+  padding: 68px 0px 79px 0px;
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+}
+
+.GrowSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+
+
+.Grow-Header{
+  display: flex;
+  gap:57px;
+}
+
+.Grow-Header h2{
+  width: 498px;
+  flex-shrink: 0;
+}
+
+.Grow-Header p{
+  font-size: 27px;
+  line-height: 29.97px;
+  letter-spacing: -0.27;
+  color:#fff;
+}
+
+
+.Grow-Content{
+  display: grid;
+  margin-top: 51px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 330px;
+  gap:33px;
+}
+
+.Grow-Content .Card h3{
+font-weight: 500;
+font-size: 29.81px;
+line-height: 38.46px;
+letter-spacing: 0px;
+color:#fff;
+width: 198px;
+height: 58px;
+background: #171717;
+border: 1px solid #8D8D8D;
+text-align: center;
+position: absolute;
+top:18px;
+left:18px;
+border-radius: 7px;
+padding-top: 10px;
+text-transform: uppercase;
+}
+
+.Grow-Content .Card h4{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.22px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+.Grow-Content .Card p{
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 19.35px;
+}
+
+.Grow-Content .Card-Content{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.Grow-Content .Card-El{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:8px;
+}
+
+.Grow-Content .Card:first-child{
+  border: 1px solid #8D8D8D;
+  box-shadow: 0px 0px 20px 0px #0485FE,0px 0px 15px 0px #0485FE,0px 0px 2px 0px #FFFFFF;
+  position: relative;
+  padding: 24px 27px 6px 10px;
+  border-radius: 10px;
+  background: url("../../../img/investitions/Grow1.svg") no-repeat;
+  background-position: 36px 17px;
+}
+
+.Grow-Content .Card:first-child .Card-El:nth-child(1) > div{
+  width: 55;
+  height: 10;
+  border-radius: 3px;
+  background: #0485FE;
+}
+
+.Grow-Content .Card:first-child .Card-El:nth-child(2) > div{
+  width: 55;
+  height: 71;
+  border-radius: 3px;
+  background: #0485FE;
+}
+
+.Grow-Content .Card:first-child .Card-El:nth-child(3) > div{
+  width: 55;
+  height: 108;
+  border-radius: 3px;
+  background: #0485FE;
+}
+
+.Grow-Content .Card:first-child .Card-El:nth-child(4) > div{
+  width: 55;
+  height: 239;
+  border-radius: 3px;
+  background: #0485FE;
+}
+
+
+
+
+.Grow-Content .Card:last-child{
+  border: 1px solid #8D8D8D;
+  box-shadow: 0px 0px 36.9px 0px #00C99A, 0px 0px 28.4px 0px #00C99A, 0px 0px 9px 0px #FFFFFF;
+  position: relative;
+  padding: 26px 37px 6px 52px;
+  border-radius: 10px;
+  background: url("../../../img/investitions/Grow2.svg") no-repeat;
+  background-position: 70px 15px;
+}
+
+.Grow-Content .Card:last-child .Card-El:nth-child(1) > div{
+  width: 53;
+  height: 35;
+  border-radius: 3px;
+  background: #00C99A;
+}
+
+.Grow-Content .Card:last-child .Card-El:nth-child(2) > div{
+  width: 53;
+  height: 85;
+  border-radius: 3px;
+  background: #00C99A;
+}
+
+.Grow-Content .Card:last-child .Card-El:nth-child(3) > div{
+  width: 53;
+  height: 239;
+  border-radius: 3px;
+  background: #00C99A;
+}
+
+
+
+
+
+
+
+/*Рост рынка*/
+.MarketSection{
+  background: #181818; 
+  padding: 87px 0px 91px 0px;
+}
+
+.MarketSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Market-Header{
+}
+
+
+
+.Market-Content{
+  margin-top: 53px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 181px 181px;
+  grid-row-gap: 32px;
+  grid-column-gap: 25px;
+}
+
+.Market-Content .Card{
+  border-radius: 12px;
+  background: #30303061;
+  border: 1px solid #0058AB;
+  padding: 38px 27px 0px 43px;
+  backdrop-filter: blur(19.600000381469727px);
+}
+
+
+.Market-Content .Card h3{
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 38.85px;
+  margin-bottom: 10px;
+}
+
+.Market-Content .Card p{
+  font-weight: 300;
+  letter-spacing: -0.20px;
+  color:#fff;
+  font-size: 20px;
+  line-height: 22.2px;
+}
+
+
+
+
+
+
+
+
+
+/*Инвестиции с аликсон 1*/
+.ServicesSection{
+  display: flex;
+  padding: 60px 0px;
+  gap:71px;
+  align-items: end;
+  background: #212121;
+  border-radius: 15px;
+  border: 1px solid #353535;
+}
+
+.ServicesSection h2{
+  margin-left: calc((100vw - 1280px) / 2);
+  margin-bottom: 65px;
+}
+
+.Services-Header{
+  display: flex;
+  flex-direction: column;
+  width: 498px;
+  flex-shrink: 0;
+  width: calc((100vw - 300px) / 2);
+}
+
+.Services-Content{
+  width: 100%;
+}
+
+.Services-Content p{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 111%;
+  width: 700px;
+  text-transform: uppercase;
+}
+
+.Services-Content div{
+  background: #0058AB;
+  height: 1px;
+  width: 100%;
+  margin: 23.2px 0px;
+}
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 29px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 29px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.1s ease-in-out;
+  width: 456px;
+  height: 250px;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+ 
+
+
+
+
+
+/*Куда стремится бизнес*/
+.BuisnesSection{
+  padding: 96px 0px 115px 0px;
+  background: #181818;
+}
+
+.BuisnesSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Buisnes-Content{
+  display: grid;
+  gap:37px;
+  margin-top: 70px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 203px;
+}
+
+.Buisnes-Content .Card{
+  background: #30303021;
+  border: 1px solid #353535;
+  backdrop-filter: blur(20.299999237060547px);
+  padding: 28px 0px 0px 41px;
+  border-radius: 10px;
+}
+
+.Buisnes-Content .Card h3{
+  color:#0485FE;
+font-weight: 500;
+font-size: 60px;
+line-height: 66.6px;
+letter-spacing: -0.6;
+}
+
+.Buisnes-Content .Card p{
+  color:#fff;
+  letter-spacing: -0.25px;
+  font-family: 'Mulish';
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 27.75px;
+  width: 514px;
+}
+
+
+
+
+/*Инвестиции с аликсон 2*/
+.TableSection{
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+  padding-top: 61px;
+}
+
+.TableSection h2{
+  width: 1280px;
+  margin: auto;
+}
+
+.Table-Content{
+  margin-top: 50px;
+}
+
+.Table-Content h3{
+font-weight: 500;
+font-size: 25px;
+line-height: 30.92px;
+letter-spacing: 0px;
+color: #0485FE;
+width: 605px;
+flex-shrink: 0;
+}
+
+.Table-Content p{
+  color:#fff;
+  letter-spacing: 0px;
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 28.44px;
+  padding: 40px 0px 40px 70px;
+  border-left: 1.47px solid #FFFFFF30;
+}
+
+.Table-Content ul{
+  padding: 40px 0px 40px 70px;
+  border-left: 1.47px solid #FFFFFF30;
+}
+
+.Table-Content li{
+  color:#fff;
+  letter-spacing: 0px;
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 25.53px;
+  list-style: disc;
+}
+
+.Table-El{
+  border-top: 1.47px solid #FFFFFF30;
+}
+
+.Table-El > div{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+/*Наши клиенты*/
+.PartnersSection{
+  background: #181818;
+  padding: 104px 0px 100px 0px;
+}
+
+.PartnersSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Partners-Content{
+  margin-top: 41px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 105px);
+  grid-column-gap: 21px;
+  grid-row-gap: 14px;
+}
+
+.Partners-Content .Card{
+  background: #1717171A;
+  border-radius:11px;
+  border: 1px solid #0058AB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Секция форма */
+
+.Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#fff;
+    width: 729px;
+  }
+  
+  .Form-Header h2 {
+    color: #0485FE;
+  }
+  
+  .FormSection {
+    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background-size: 760px;
+    background-position: -131px -10px;
+    padding: 77px 0px 104px 0px;
+    border-radius: 20px;
+    border: 2px solid #3535358f;
+    position: relative;
+  }
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 734px;
+  }
+  
+  .FormSection form p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#666;
+  }
+  
+  .FormSection form > div {
+    padding: 27px 36px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #232323;
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
+
+  }
