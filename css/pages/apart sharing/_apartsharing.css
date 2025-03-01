@@ -12,6 +12,22 @@ h2{
     text-transform: uppercase;
 }
 
+@media (max-width: 979px) {
+    /*600*/
+    h2{
+        color: #0485FE;
+        /* font-size: 23px; */
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    h2{
+        font-size: 23px;
+        font-weight: 600;
+    }
+  }
+
 
 
 /* Главная секция*/
@@ -23,6 +39,7 @@ h2{
     padding: 59px 0px 85px 0px;
     background: url("../../../img/apart_sharing/MainBack.jpg") no-repeat;
     background-size: 100% 100%;
+    margin-top: -4px;
 }
 
 .MainSection > div{
@@ -62,7 +79,7 @@ h1{
 .MainSection-Content a{
     color: #FFF;
     font-size: 30.881px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.618px;
     padding: 17.156px 25.734px;
@@ -121,6 +138,146 @@ text-transform: uppercase;
     font-family: "Mulish";
 }
 
+.MainSection-Header p:last-child{
+    display: none;
+}
+@media (max-width: 1439px){
+    .MainSection > div{
+        width: 920px;
+    }
+
+    h1{
+        width: 334px;
+    }
+
+    .MainSection-Header p {
+        font-size: 24px;
+    }
+
+    .MainSection-Content a {
+        font-size: 26px;
+    }
+
+    .MainSection-Content {
+        gap: 105px;
+    }
+
+    .MainSection .Info h3 {
+        font-size: 57px;
+    }
+
+    .MainSection{
+        gap:134px;
+        background-size: 1440px;
+    background-position: center;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    h1{
+        font-size: 60px;
+        color: #0485FE;
+        width: auto;
+    }
+    h1 br{
+        display: none;
+    }
+    .MainSection > div{
+        width: 600px;
+    }
+    .MainSection-Header {
+        flex-direction: column;
+    }
+
+    .MainSection-Content{
+        flex-direction: column-reverse;
+        gap:16px;
+    }
+    .MainSection .Info:nth-child(3){
+        display: none;
+    }
+    .MainSection .Info:first-child {
+        grid-column: unset;
+    }
+
+    .MainSection-Content > div {
+        grid-template-columns: 1fr 1.1fr;
+        gap:0px;
+    }
+
+    .MainSection .Info p {
+        font-size: 17px;
+    }
+
+    .MainSection-Content a{
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .MainSection{
+        padding: 19px 0px 33px 0px;
+    }
+
+    
+    .MainSection > div{
+        width: 300px;
+    }
+
+    .MainSection-Header p {
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .MainSection-Header{
+        gap:12px;
+    }
+
+    .MainSection .Info h3 {
+        font-size: 33px;
+    }
+
+    .MainSection .Info p {
+        font-size: 10px;
+    }
+
+    .MainSection .Info::before {
+        width: 2px;
+    }
+
+    .MainSection .Info {
+        gap: 7px;
+    }
+
+    .MainSection-Header p:last-child{
+        display: block;
+    }
+    .MainSection-Header p:nth-child(2){
+        display: none;
+    }
+
+    .MainSection {
+        gap: 106px;
+    }
+
+    .MainSection-Content a {
+        font-size: 12px;
+        padding: 6.5px 0px;
+        border-radius: 4px;
+        border: 0.394px solid #8D8D8D;
+        background: #181818;
+        box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+    }
+  }
+
 
 
 /*Наши сервисы*/
@@ -131,6 +288,8 @@ text-transform: uppercase;
     border: 1px solid #353535;
     background: #212121 url("../../../img/apart_sharing/ServicesBack.png") no-repeat;
     background-position: calc((100vw - 1430px) / 2);
+    margin-top: -9px;
+    position: relative;
 }
 
 .ServicesSection > div{
@@ -169,10 +328,82 @@ text-transform: uppercase;
 .Services-Content .Card h3{
     color: #FFF;
     font-size: 32.44px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
 }
+
+@media (max-width: 1439px){
+    .ServicesSection > div{
+        width: 920px;
+    }
+
+    .Services-Content {
+         width: auto;
+         margin-top: 30px; 
+    }
+
+    .ServicesSection{
+        background-position: center bottom;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .ServicesSection > div{
+        width: 600px;
+    }
+
+    .Services-Content .Card h3 {
+        font-size: 25.44px;
+    }
+
+    .ServicesSection {
+        background: #212121;
+        border-radius: 7px;
+    }
+
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .ServicesSection > div{
+        width: 300px;
+    }
+
+    .Services-Content .Card h3 {
+        font-size: 14px;
+    }
+
+    .ServicesSection {
+        padding: 27px 0px;
+    }
+
+    .Services-Content .Card > div {
+        width: 40px;
+    }
+
+    .Services-Content .Card:nth-child(1) img{
+        width: 26px;
+    }
+    .Services-Content .Card:nth-child(2) img{
+        width: 20px;
+    }
+    .Services-Content .Card:nth-child(3) img{
+        width: 40px;
+    }
+    .Services-Content .Card:nth-child(4) img{
+        width: 34px;
+    }
+
+    .Services-Content .Card {
+        gap: 11px;
+        height: 47px;
+        padding-left: 7px;
+        border-radius: 4px;
+    }
+  }
+
 
 
 /*Система автоматизации*/
@@ -181,6 +412,7 @@ text-transform: uppercase;
     background-size: 100% 330%;
     background-position: right -881px;
     padding: 69px 0px 95px 0px;
+    margin-top: -9px;
 }
 
 .AutoSection > *{
@@ -197,6 +429,7 @@ text-transform: uppercase;
 }
 
 .Auto-Content .Card{
+    transition: 0.5s ease;
     flex-shrink: 0;
     border-radius: 11px;
     border: 2px solid #393939;
@@ -204,7 +437,7 @@ text-transform: uppercase;
     backdrop-filter: blur(16.980453491210938px);
 }
 
-.Auto-Content .Card:nth-child(2){
+.Auto-Content .Card:hover{
 box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
 backdrop-filter: blur(16.980453491210938px);
 }
@@ -246,6 +479,187 @@ backdrop-filter: blur(16.980453491210938px);
     margin-left: 20px;
     font-family: "Mulish";
 }
+.Auto-Content_mobile{
+    display: none;
+}
+@media (max-width: 1439px){
+    .AutoSection > *{
+        width: 920px;
+    }
+
+    .Auto-Content{
+        margin-top: 57px;
+        display: grid;
+        gap:30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 297px;
+    }
+
+    .Auto-Content .Card-Content li {
+        font-size: 15.431px;
+    }
+
+    .Auto-Content .Card p {
+        font-size: 13.344px;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .Auto-Content{
+        display: none;
+    }
+    .Auto-Content_mobile{
+        display: block;
+    }
+    
+    .AutoSection > *{
+        width: 600px;
+    }
+
+    .Auto-Content_mobile{
+        margin-top: 57px;
+    }
+    
+    .Auto-Content_mobile .Card{
+        transition: 0.5s ease;
+        flex-shrink: 0;
+        border-radius: 11px;
+        border: 2px solid #393939;
+        background: rgba(23, 23, 23, 0.40);
+        backdrop-filter: blur(16.980453491210938px);
+        width: 380px;
+        height: 280px;
+    }
+    
+    .Auto-Content_mobile .Card:hover{
+    box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
+    backdrop-filter: blur(16.980453491210938px);
+    }
+    
+    
+    .Auto-Content_mobile .Card-Header{
+        border-bottom: 2px solid #393939;
+        padding: 15px 0px 11px 23px;
+    }
+    
+    
+    
+    .Auto-Content_mobile .Card h3{
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+    .Auto-Content_mobile .Card p{
+        color: #FFF;
+        font-size: 16.344px;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+    .Auto-Content_mobile .Card-Content{
+        padding: 11px 20px 0px 23px;
+    }
+    
+    .Auto-Content_mobile .Card-Content li{
+        color: #FFF;
+        font-size: 16.431px;
+        font-weight: 400;
+        line-height: 111%;
+        list-style: disc;
+        margin-left: 20px;
+        font-family: "Mulish";
+    }
+
+    .Swiper-Control {
+        display: flex;
+        justify-content: space-between;
+        gap: 11px;
+        margin-top: 20px;
+        width: 100%;
+      }
+      
+      .Swiper-Control > button {
+        color: #fff;
+        font-size: 24px;
+        padding: 12px 30px;
+        border-radius: 4px;
+        background: #ffffff29;
+      }
+      
+      .Swiper-Control > button:hover {
+        opacity: 0.8;
+      }
+    
+      /* .Swiper-Control > button img {
+        width: 6px;
+      } */
+      .swiper{
+        overflow: visible;
+      }
+      .swiper-wrapper{
+        height: auto;
+        overflow: visible;
+      }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .AutoSection{
+        padding: 29px 0px 26px 0px;
+        background-position: center;
+    background-size: 100% 212%;
+    }
+    .AutoSection > *{
+        width: 300px;
+    }
+
+    .Auto-Content_mobile .Card{
+        width: 252px;
+        height: 177px;
+    }
+
+    .Auto-Content_mobile{
+        margin-top:28px;
+    }
+
+    .Auto-Content_mobile .Card h3 {
+        font-size: 14px;
+    }
+
+    .Auto-Content_mobile .Card p {
+        font-size: 10px;
+    }
+
+    .Auto-Content_mobile .Card-Content li {
+        font-size: 12px;
+    }
+    .Swiper-Control {
+        margin-top: 10px;
+      }
+    
+      .Swiper-Control > button {
+        padding: 5.7px 16px;
+        border-radius: 4px;
+      }
+    
+      .Swiper-Control > button img {
+        width: 6px;
+      }
+
+      .Auto-Content_mobile .Card-Content {
+        padding: 6px 0px 0px 6px;
+    }
+
+    .Auto-Content_mobile .Card-Header {
+        border-bottom: 2px solid #393939;
+        padding: 8px 0px 6px 13px;
+    }
+  }
 
 
 
@@ -259,6 +673,7 @@ backdrop-filter: blur(16.980453491210938px);
     background-position: calc((100vw - 1430px) / 2) 198px;
     padding: 78px 0px 120px calc((100vw - 1280px) / 2);
     gap:62px;
+    position: relative;
 }
 
 .Advantages-Header{
@@ -278,6 +693,7 @@ backdrop-filter: blur(16.980453491210938px);
     font-weight: 400;
     line-height: 111%;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .Advantages-Content div{
@@ -287,7 +703,64 @@ backdrop-filter: blur(16.980453491210938px);
     margin: 25px 0px;
 }
 
+@media (max-width: 1439px){
+    .AdvantagesSection{
+        padding: 78px 0px 120px calc((100vw - 920px) / 2);
+        gap:0px;
+        background-position: calc((100vw - 1085px) / 2) 198px;
+    }
 
+    .Advantages-Content p br{
+        display: none;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .AdvantagesSection{
+        padding: 78px 0px 120px calc((100vw - 600px) / 2);
+        flex-direction: column;
+        gap:20px;
+        background: #212121 url(../../../img/apart_sharing/ServicesBack.png) no-repeat;
+        background-size: 400px;
+        background-position: calc(100vw - 280px) 179px;
+        border-radius: 7px;
+        margin-top: -4px;
+    }
+
+    .Advantages-Content p {
+        font-size: 25px;
+        width: 400px;
+    }
+
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .AdvantagesSection {
+        padding: 29px 0px 25px calc((100vw - 300px) / 2);
+        background-size: 200px;
+        background-position: calc(100vw - 142px) 0px;
+    }
+
+    .Advantages-Content p {
+        font-size: 12px;
+        width: 230px;
+    }
+
+    .Advantages-Content div {
+        margin: 5px 0px;
+    }
+
+    .Advantages-Header {
+        width: 200px;
+    }
+  }
+  @media (max-width: 359px) {
+    .AdvantagesSection {
+        background-position: calc((100vw + 70px) / 2) 0px;
+    }
+  }
 
 
 /*Как это работает секция*/
@@ -296,6 +769,7 @@ backdrop-filter: blur(16.980453491210938px);
     background-size: 100% 280%;
     background-position: right -623px;
     padding: 79px 0px 104px 0px;
+    margin-top: -9px;
 }
 
 .HowSection > *{
@@ -327,7 +801,7 @@ backdrop-filter: blur(16.980453491210938px);
 .How-Content .Card h3{
     font-weight: 300;
     font-size: 110.17px;
-    line-height: 142.64px;
+    /* line-height: 142.64px; */
     width: 147px;
     color: #0485FE;
     flex-shrink: 0;
@@ -340,6 +814,70 @@ backdrop-filter: blur(16.980453491210938px);
     color:#fff;
 }
 
+@media (max-width: 1439px){
+    .HowSection > *{
+        width: 920px;
+    }
+
+    .How-Content {
+        grid-row-gap: 17px;
+        grid-column-gap: 15px;
+    }
+
+    .How-Content .Card p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .HowSection > *{
+        width: 600px;
+    }
+    .How-Content {
+        margin-top: 57px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 27px;
+        justify-content: space-between;
+    }
+
+    .How-Content .Card p {
+       width: 350px;
+    }
+
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .HowSection{
+        padding: 32px 0px;
+    }
+    .HowSection > *{
+        width: 300px;
+    }
+    .How-Content {
+        margin-top: 29px;
+        grid-row-gap: 10px;
+    }
+
+    .How-Content .Card p {
+       width: 190px;
+       font-size: 9px;
+       line-height: 111%;
+    }
+
+    .How-Content .Card h3 {
+        font-size: 52px;
+        width: 70px;
+    }
+
+    .How-Content .Card {
+        gap:10px;
+        padding-left: 11px;
+        height: 64px;
+    }
+  }
 
 
 /* Секция форма */
@@ -351,7 +889,7 @@ backdrop-filter: blur(16.980453491210938px);
   }
   
   .Form-Header p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 27px;
     line-height: 29.97px;
     letter-spacing: -1%;
@@ -364,12 +902,12 @@ backdrop-filter: blur(16.980453491210938px);
   }
   
   .FormSection {
-    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background: #212121 url("../../../img/Back_2.svg") no-repeat;
     background-size: 760px;
     background-position: -131px -10px;
     padding: 77px 0px 104px 0px;
     border-radius: 20px;
-    border: 2px solid #3535358f;
+    border: 1px solid #353535;
     position: relative;
   }
   
@@ -391,10 +929,10 @@ backdrop-filter: blur(16.980453491210938px);
   }
   
   .FormSection form p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 27px;
     line-height: 29.97px;
-    letter-spacing: -1%;
+    letter-spacing: -0.27px;
     color:#666;
   }
   
@@ -414,6 +952,7 @@ backdrop-filter: blur(16.980453491210938px);
     font-style: normal;
     outline: none;
     width: 100%;
+    font-weight: 300;
   }
   
   .FormSection form [type="submit"] {
@@ -438,3 +977,142 @@ box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5
 
   }
 
+  @media (max-width: 1439px) {
+    .FormSection > div {
+      width: 920px;
+    }
+  
+    .Form-Header p {
+      width: 401px;
+      font-size: 19px;
+    }
+  
+    .Form-Header h2 {
+      font-size: 43px;
+    }
+  
+    .Form-Header {
+      gap: 44px;
+    }
+  
+    .FormSection form {
+      width: 544px;
+    }
+  
+    .FormSection form p br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 979px) {
+    .FormSection {
+      padding: 30px 0px 40px 0px;
+    }
+  
+    .Form-Header {
+      margin-bottom: 30px !important;
+      flex-direction: column;
+    }
+  
+    .FormSection > div {
+      width: 600px;
+    }
+  
+    .Form-Header p {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+      display: none;
+    }
+  
+    .Form-Header h2 {
+      font-size: 23px;
+    }
+  
+    .FormSection form [type="submit"] {
+      width: 100%;
+      font-size: 12px;
+      padding: 15px 0px;
+    }
+  
+    .FormSection form [type="text"],
+    .FormSection form [type="text"]::placeholder,
+    .FormSection form [type="text"]::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+  
+    .FormSection form > div {
+      padding: 14px 16px;
+    }
+  
+    .FormSection form {
+      width: 100%;
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 659px) {
+    .FormSection {
+        background-size: 316px;
+        background-position: -2px 22px;
+      border-radius: 7px;
+    }
+    
+    .FormSection > div {
+      width: 300px;
+      gap: 20px;
+    }
+  
+    .FormSection form [type="submit"] {
+      padding: 12px 0px;
+      border-radius: 5px;
+      border-color: #353535;
+      opacity: 1;
+      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+      margin-bottom: 14px;
+    }
+  
+    .FormSection form p {
+      font-size: 10px;
+      line-height: 100%;
+    }
+  
+    .FormSection form p br {
+      display: block;
+    }
+  
+    .FormSection form > div {
+      padding: 13px 16px;
+      border-radius: 5px;
+      gap:11px;
+    }
+  
+    .FormSection form > div img{
+      width: 13px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*ФУТЕР*/
+  footer{
+    margin-top: -11px;
+  }

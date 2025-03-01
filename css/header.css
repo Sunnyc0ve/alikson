@@ -324,6 +324,10 @@ footer {
     display: none;
   }
 
+  .FooterContainer-Right a:hover{
+    color: #0485fe;
+  }
+
   @media (max-width: 1439px) {
     .FooterContainer {
         width: 920px;

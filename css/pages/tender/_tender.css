@@ -62,7 +62,7 @@ h1{
 .MainSection-Content a{
     color: #FFF;
     font-size: 30.881px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.618px;
     padding: 17.156px 25.734px;
@@ -223,7 +223,10 @@ text-transform: uppercase;
     border-radius: 6px;
     background: #0485FE;
     margin: 18px 0px;
-    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .Grow-Content .Graph3 div{
@@ -232,7 +235,9 @@ text-transform: uppercase;
     border-radius: 6px;
     background: #0485FE;
     margin: 12px 0px 18px 0px;
-    padding-top: 212px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Grow-Content .Graph2{
@@ -504,7 +509,7 @@ text-transform: uppercase;
   }
   
   .Form-Header p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 27px;
     line-height: 29.97px;
     letter-spacing: -1%;
@@ -517,12 +522,10 @@ text-transform: uppercase;
   }
   
   .FormSection {
-    background: #181818 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
+    background: #181818 url("../../../img/tender/FormBack.png") no-repeat;
     padding: 77px 0px 104px 0px;
     border-radius: 20px;
-    border: 2px solid #3535358f;
+    border: 1px solid #3535358f;
     position: relative;
   }
   
@@ -544,7 +547,7 @@ text-transform: uppercase;
   }
   
   .FormSection form p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 27px;
     line-height: 29.97px;
     letter-spacing: -1%;
@@ -567,6 +570,7 @@ text-transform: uppercase;
     font-style: normal;
     outline: none;
     width: 100%;
+    font-weight: 300;
   }
   
   .FormSection form [type="submit"] {

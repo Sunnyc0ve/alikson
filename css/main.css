@@ -23,9 +23,9 @@ footer{
   justify-content: center;
 }
 
-.MainSection video {
+/* .MainSection video {
   height: 750px;
-}
+} */
 
 .Video_mobile {
   display: none;
@@ -117,9 +117,11 @@ footer{
   .MainSection video {
     height: 302px;
   }
+
+  
 }
 
-@media (max-width: 379px) {
+@media (max-width: 518px) {
   .Video_mobile {
     display: block;
   }
@@ -129,7 +131,18 @@ footer{
   }
 
   .MainSection video {
+    height: 405px;
+  }
+
+  .MainSection .VideoContainer{
     height: 312px;
+  }
+}
+
+@media (max-width: 379px) {
+
+  .MainSection video {
+    height: 357px;
   }
 }
 
@@ -206,12 +219,13 @@ footer{
 .About-Main .Card h3 {
   color: #fff;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   font-family: 'TT Fors Trial Medium';
 }
 .About-Main .Card h3 span{
-  font-family: 'TT Fors Trial Bold';
+  font-weight: 700;
+  font-family: 'TT Fors Trial Medium';
 }
 .About-Main .Card p {
   color: #fff;
@@ -310,6 +324,11 @@ footer{
 }
 
 @media (max-width: 659px) {
+  .AboutSection .marquee {
+    animation: none;
+  }
+
+
   .About-Main .item:nth-child(8){
     display: none;
   }
@@ -1002,16 +1021,17 @@ footer{
   width: 451px;
   padding: 40px 0px;
   border-radius: 10px;
-  border: 0.6px solid #fff;
+  border: 1px solid #fff;
   background: #232323;
   opacity: 0.75;
+  height: 113px;
 }
 
 .Projects-Main .Links button:hover:not(.Active) {
   padding: 39px 0px;
-  border-width: 2px;
   opacity: 1;
   font-weight: 500;
+  border: 1px solid #888888;
 }
 
 .Projects-Main .Links .Active {
@@ -1241,6 +1261,11 @@ footer{
 
   .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner p{
     width: 114px;
+    font-size: 11px;
+  }
+
+  .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner p{
+    font-size: 11px;
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner {
@@ -1309,7 +1334,7 @@ footer{
 
   .Projects-Main_mobile .Info .Stats p {
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 300;
   }
 
@@ -1706,9 +1731,9 @@ footer{
   transition: all 0.1s ease-in-out;
 }
 
-/* .marquee {
+.marquee {
   animation: scroll 80s linear infinite;
-} */
+}
 
 @keyframes scroll {
   from {
