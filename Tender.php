@@ -196,6 +196,98 @@
                 <div class="Card"><img src="img/tender/Clients1.svg"></div>
                 <div class="Card"><img src="img/tender/Clients1.svg"></div>
             </div>
+            <div class="Clients-Content_mobile">
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                            <div class="item"><img src="img/tender/Clients1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="FormSection">
         <div class="Form-Header">
