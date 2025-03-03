@@ -172,6 +172,9 @@ text-transform: uppercase;
 
 @media (max-width: 979px) {
     /*600*/
+    .MainSection{
+        margin-top: -13px;
+    }
     h1{
         font-size: 60px;
         color: #0485FE;
@@ -226,6 +229,7 @@ text-transform: uppercase;
     .MainSection{
         padding: 19px 0px 33px 0px;
         gap: 67px;
+        margin-top: -3px;
     }
 
     
@@ -281,6 +285,8 @@ text-transform: uppercase;
     border: 1px solid #353535;
     background: #212121 url("../../../img/tender/GrowBack.svg") no-repeat;
     background-position: calc((100vw - 671px) / 2) 43px;
+    margin-top: -9px;
+    position: relative;
 }
 
 .GrowSection > div{
@@ -420,6 +426,7 @@ text-transform: uppercase;
 
     .GrowSection {
         background-position: calc((100vw - 921px) / 2) 131px;
+        margin-top: -18px;
     }
 }
 
@@ -498,6 +505,7 @@ text-transform: uppercase;
         padding: 32px 0px 27px 0px;
         background: #212121 url(../../../img/tender/GrowBack_2.svg) no-repeat;
         background-position: calc((100vw - 304px) / 2) 65px;
+        margin-top: -12px;
     }
 
     .Grow-Header p {
@@ -555,6 +563,7 @@ text-transform: uppercase;
     background-size: 100% 2542px;
     background-position: center -1453px;
     padding: 87px 0px 84px 0px;
+    margin-top: -9px;
 }
 
 .AdvantagesSection > *{
@@ -674,6 +683,9 @@ text-transform: uppercase;
     padding: 85px 0px 81px 0px;
     gap:71px;
     align-items: end;
+    margin-top: -9px;
+    background: #212121;
+    position: relative;
 }
 
 .ServicesSection h2{
@@ -835,10 +847,10 @@ text-transform: uppercase;
 .DirectionsSection{
     margin: auto;
     padding: 98px 0px 81px 0px;
-    border: 1px solid #353535;
     background: #181818 url("../../../img/tender/DirectionsBack.png") no-repeat;
     background-size: 100% 3784px;
     background-position: center -1210px;
+    margin-top: -10px;
 }
 
 .DirectionsSection > *{
@@ -990,6 +1002,8 @@ text-transform: uppercase;
     border: 1px solid #353535;
     border-radius: 15px;
     padding: 71px 0px 85px 0px;
+    margin-top: -11px;
+    position: relative;
 }
 
 .ClientsSection > *{
@@ -1110,9 +1124,7 @@ text-transform: uppercase;
   .FormSection {
     background: #181818 url("../../../img/tender/FormBack.png") no-repeat;
     padding: 77px 0px 104px 0px;
-    border-radius: 20px;
-    border: 1px solid #3535358f;
-    position: relative;
+    margin-top: -12px;
   }
   
   .Form-Main {

@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/pages/development/_development.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  </head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
   <body>
     <?php include('include/header.html')?>
     <main>
@@ -67,6 +73,47 @@
                         <li>Гибкие условия для арендаторов</li>
                         <li>Модульный дизайн помещений для максимальной эффективности</li>
                     </ul>
+                </div>
+            </div>
+            <div class="Projects-Content_mobile">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <h3>Офисные центры на улице Лобачевского</h3>
+                                <div></div>
+                                <p>Два ультрасовременных офисных здания по 30 этажей</p>
+                                <p>50 000 кв.м.</p>
+                                <ul>
+                                    <li>Класс А — премиальный уровень комфорта</li>
+                                    <li>Энергоэффективные технологии</li>
+                                    <li>Просторные коворкинги и зоны отдыха</li>
+                                    <li>Подземная парковка и развитая инфраструктура</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <h3>офисный комплекс на Международной улице</h3>
+                                <div></div>
+                                <p>Современное здание, ориентированное на бизнесы нового поколения</p>
+                                <p>25 000 кв.м.</p>
+                                <ul>
+                                    <li>Пространства для офисного шеринга</li>
+                                    <li>Гибкие условия для арендаторов</li>
+                                    <li>Модульный дизайн помещений для максимальной эффективности</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Swiper-Control">
+                    <button class="Swiper-Prev">
+                        <img src="img/ArrowLeft.svg" />
+                    </button>
+                    <button class="Swiper-Next">
+                        <img src="img/ArrowRight.svg" />
+                    </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,4 +229,19 @@
     <?php include('include/footer.html') ?>
   </body>
   <script src="include/header.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: -25,
+      direction: "horizontal",
+      loop: false,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
+      breakpoints: {
+        660: { spaceBetween: -140 },
+      },
+    });
+  </script>
 </html>
