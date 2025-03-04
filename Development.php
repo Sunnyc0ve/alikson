@@ -118,7 +118,8 @@
             </div>
         </section>
         <section class="AboutSection">
-            <h2>Офисный шеринг — новое слово<br> в коммерческой недвижимости</h2>
+            <h2 class="h2_desktop">Офисный шеринг — новое слово<br> в коммерческой недвижимости</h2>
+            <h2 class="h2_mobile">Офисный шеринг: новое слово в коммерческой недвижимости</h2>
             <div class="About-Content">
                 <div class="About-Left">
                     <img src="img/development/AboutImg.png">

@@ -576,6 +576,10 @@ margin-bottom: 12px;
   box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
 }
 
+.AboutSection .h2_mobile{
+  display: none;
+}
+
 @media (max-width: 1439px){
   /*920*/
   .AboutSection > *{
@@ -613,12 +617,59 @@ margin-bottom: 12px;
   .AboutSection > *{
     width: 600px;
   }
+
+  .About-Left{
+    display: none;
+  }
+
+  .AboutSection .h2_desktop{
+    display: none;
+  }
+
+  .AboutSection .h2_mobile{
+    display: block;
+  }
+
+  .About-Content {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .About-Right p {
+    margin-bottom: 20px;
+}
 }
 
 @media (max-width: 659px) {
   /*300*/
+  .AboutSection{
+    padding: 31px 0px;
+  }
   .AboutSection > *{
     width: 300px;
+  }
+
+  .AboutSection .h2_mobile {
+    font-size: 23px;
+  }
+
+  .About-Right p {
+    font-size: 12px;
+    margin-bottom: 23px;
+  }
+
+  .About-Content {
+    margin-top: 28px;
+  }
+
+  .About-Right a {
+    font-size: 14px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 0px 15px;
+  }
+  .About-Right a img{
+    width: 27px;
   }
 }
 
@@ -735,14 +786,101 @@ margin-bottom: 12px;
 
 @media (max-width: 1439px){
   /*920*/
+  .WhySection {
+    gap: 30px;
+}
+
+  .WhySection h2{
+    margin-left: calc((100vw - 920px) / 2);
+    font-size: 40px;
+    margin-bottom: 109px;
+  }
+  
+  .Why-Header{
+    width: calc((100vw - 40px) / 2);
+  }
+
+  .Why-Content {
+    grid-template-columns: 450px;
+  }
+  .Why-Content .Card h3 {
+    font-size: 30px;
+}
+
+.Why-Content .Card p {
+  font-size: 17px;
+}
 }
 
 @media (max-width: 979px) {
   /*600*/
+  .WhySection h2{
+    margin-left: calc((100vw - 600px) / 2);
+    margin-bottom: 50px;
+  }
+
+  .WhySection{
+    flex-direction: column;
+  }
+
+  .Why-Header{
+    width: 100%;
+  }
+
+  .Why-Content {
+    width: 600px;
+    margin: auto;
+    grid-template-columns: 100%;
+  }
+
+  .item {
+    width: 450px;
+    height: 265px;
+  }
 }
 
 @media (max-width: 659px) {
   /*300*/
+  .WhySection{
+    padding: 31px 0px;
+  }
+
+  .WhySection h2{
+    margin: auto;
+    margin-bottom: 23px;
+    font-size: 23px;
+    width: 300px;
+  }
+
+  .Why-Content {
+    width: 300px;
+  }
+
+  .item {
+    width: 205px;
+    height: 95px;
+  }
+
+  .items-wrap, .items {
+    gap: 5px;
+  }
+
+  .Why-Content .Card h3 {
+    font-size: 14px;
+  }
+
+  .Why-Content .Card p {
+    font-size: 10px;
+  }
+
+  .Why-Content {
+    grid-template-rows: repeat(3, 69px);
+}
+
+.Why-Content .Card {
+  padding: 18px 12px 16px 16px;
+  border-radius: 4px;
+}
 }
 
 

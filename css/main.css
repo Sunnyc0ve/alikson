@@ -1530,6 +1530,87 @@ footer{
   gap: 26px;
 }
 
+
+/* ////////// */
+
+/* Контейнер кастомного селекта */
+.custom-select {
+    position: relative;
+    width: 100%; /* НЕ Фиксированная ширина */
+/*     background: #1a1a1a;
+border: 1px solid #444;
+border-radius: 10px;
+cursor: pointer;
+margin-bottom: 10px; */
+}
+
+/* Заголовок селекта */
+.select-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-menu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 26px;
+}
+
+/* Кастомная стрелка */
+.custom-arrow {
+    width: 26px;
+    height: 26px;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+/* Опции выпадающего списка */
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #232323;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    border-top: none;
+    z-index: 10;
+}
+
+/* Отдельные пункты списка */
+.select-options li {
+    padding: 18px 0;
+    margin: 0 36px;
+    color: white;
+    transition: 0.3s;
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #353535;
+}
+
+.select-options li:nth-last-child(1) {
+    border: none;
+}
+
+/* Когда список открыт */
+.custom-select.active .select-options {
+    display: block;
+}
+
+.custom-select.active .custom-arrow {
+    transform: rotate(0deg);
+}
+
+
+/* /////////////// */
+
+.select-header,
 .FormSection form [type="text"],
 .FormSection form [type="text"]::placeholder,
 .FormSection form [type="text"]::-webkit-input-placeholder {
@@ -1544,6 +1625,7 @@ footer{
   margin-bottom: 26px;
   transition: 0.5s ease;
   text-align: center;
+  justify-content: center;
   color: #fff;
   font-size: 21px;
   font-weight: 500;
@@ -1578,7 +1660,7 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
   }
 
   .Form-Header h2 {
-    font-size: 43px;
+    font-size: 42px;
   }
 
   .Form-Header {
@@ -1640,6 +1722,13 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
     width: 100%;
     gap: 12px;
   }
+
+  .custom-select span{
+    font-size: 12px;
+  }
+  .select-options li {
+    font-size: 12px;
+}
 }
 
 @media (max-width: 659px) {
@@ -1684,6 +1773,20 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
   .FormSection form > div img{
     width: 13px;
   }
+
+  .select-menu {
+    gap: 11px;
+}
+
+.select-header {
+  height: 15px;
+}
+
+.select-options li {
+  font-size: 10px;
+  padding: 9px 0px;
+  margin: 0px 19px 0px 17px;
+}
 }
 
 

@@ -8,8 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/header.css?1.0" />
-    <link rel="stylesheet" href="css/main.css?1.0" />
+    <link rel="stylesheet" href="css/header.css?1.1" />
+    <link rel="stylesheet" href="css/main.css?1.2" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
@@ -696,23 +696,37 @@
           <p>Станьте частью инноваций и стройте будущее вместе с ALIKSON</p>
         </div>
         <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Мы свяжемся с вами в ближайшее время, чтобы ответить<br> на все вопросы</p>
-          </form>
+            <form action="" method="POST">
+                <div>
+                    <img src="img/inputInfo.svg" />
+                    <input type="text" name="name" required placeholder="Ваше имя" />
+                </div>
+                <div>
+                    <img src="img/inputInfo.svg" />
+                    <input type="text" name="phone" required placeholder="Ваш телефон" />
+                </div>
+
+                <!-- Кастомный выпадающий список -->
+                <div class="custom-select">
+                    <div class="select-header">
+                        <div class="select-menu">
+                        <img src="img/inputInfo.svg" />
+                        <span class="selected">Выберите тему обращения</span>
+                        </div>
+                        <img src="img/select-arrow.svg" class="custom-arrow" />
+                    </div>
+                    <ul class="select-options">
+                        <li data-value="client">Стать клиентом</li>
+                        <li data-value="investment">Инвестиции</li>
+                        <li data-value="work">Работа в группе компаний</li>
+                        <li data-value="other">Другое</li>
+                    </ul>
+                    <input type="hidden" name="topic" value="">
+                </div>
+
+                <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
+                <p>Мы свяжемся с вами в ближайшее время, чтобы ответить<br> на все вопросы</p>
+            </form>
         </div>
       </section>
       <section class="PartnersSection">
@@ -938,6 +952,37 @@ document.addEventListener("DOMContentLoaded", function () {
       isDown = false;
     });
  // }
+});
+
+///////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+    const select = document.querySelector(".custom-select");
+    const header = select.querySelector(".select-header");
+    const options = select.querySelectorAll(".select-options li");
+    const selectedText = select.querySelector(".selected");
+    const hiddenInput = select.querySelector("input[name='topic']");
+
+    // Открытие/закрытие списка
+    header.addEventListener("click", function () {
+        select.classList.toggle("active");
+    });
+
+    // Выбор элемента из списка
+    options.forEach(option => {
+        option.addEventListener("click", function () {
+            selectedText.textContent = this.textContent;
+            hiddenInput.value = this.dataset.value;
+            select.classList.remove("active");
+        });
+    });
+
+    // Закрытие списка при клике вне
+    document.addEventListener("click", function (e) {
+        if (!select.contains(e.target)) {
+            select.classList.remove("active");
+        }
+    });
 });
 
 
