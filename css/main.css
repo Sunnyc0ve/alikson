@@ -412,7 +412,7 @@ footer{
 .Buisnes-Header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px !important;
+  margin-bottom: 65px !important;
 }
 
 .Buisnes-Header p {
@@ -622,9 +622,7 @@ footer{
     width: 300px;
   }
 
-  .Buisnes-Header h2 {
-    margin-bottom: 30px;
-  }
+ 
 
   .BuisnesSection {
     padding: 30px 0px 45px 0px;
@@ -639,7 +637,7 @@ footer{
 
 .NewsSection {
   background: #181818;
-  padding: 70px 0px;
+  padding: 75px 0px 70px 0px;
   border-radius: 20px;
   border: 2px solid #3535358f;
   position: relative;
@@ -647,22 +645,22 @@ footer{
   z-index: 2;
 }
 
-.News-Main {
-  display: flex;
-  gap: 30px;
+
+.News-Main{
+  width: calc((100vw + 1280px) / 2);
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center; */
 }
 
-.NewsSection > div {
-  width: 1440px;
-  margin: auto;
-}
 
 .News-Header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 0px 80px;
-  margin-bottom: 40px !important;
+  margin-bottom: 75px !important;
+  width: 1280px;
+  margin: auto;
 }
 
 .News-Header p {
@@ -671,15 +669,16 @@ footer{
   width: 744px;
   line-height: 100%;
   letter-spacing: -0.25px;
+  padding-top: 4px;
 }
 
 .NewsSection .swiper-wrapper {
   height: auto;
-  margin-left: 80px;
+  padding-left: calc((100vw - 1000px) / 2);
 }
 
 .NewsSection .swiperN {
-  width: 100%;
+  width: 1920px;
   margin: 0px;
   position: relative;
   overflow: hidden;
@@ -760,7 +759,7 @@ footer{
   justify-content: end;
   gap: 11px;
   margin-top: 68px;
-  padding-right: 80px;
+  width: calc((100vw + 1280px) / 2)
 }
 
 .Swiper-Control > button {
@@ -775,50 +774,22 @@ footer{
   opacity: 0.8;
 }
 
-/* .swiperN .swiper-slide:nth-child(1) .Card-Image {
-  background: url("../img/News1.png");
-  background-size: 101% !important;
-}
-
-.swiperN .swiper-slide:nth-child(2) .Card-Image {
-  background: url("../img/News2.png");
-}
-
-.swiperN .swiper-slide:nth-child(3) .Card-Image {
-  background: url("../img/News3.png");
-}
-
-.swiperN .swiper-slide:nth-child(4) .Card-Image {
-  background: url("../img/News4.png");
-}
-
-.swiperN .swiper-slide:nth-child(5) .Card-Image {
-  background: url("../img/News5.png");
-}
-
-.swiperN .swiper-slide:nth-child(6) .Card-Image {
-  background: url("../img/News6.png");
-}
-
-.swiperN .swiper-slide:nth-child(7) .Card-Image {
-  background: url("../img/News7.png");
-}
-
-.swiperN .swiper-slide:nth-child(8) .Card-Image {
-  background: url("../img/News8.png");
-}
-
-.swiperN .swiper-slide:nth-child(9) .Card-Image {
-  background: url("../img/News9.png");
-}
-
-.swiperN .swiper-slide:nth-child(10) .Card-Image {
-  background: url("../img/News10.png");
-} */
 
 @media (max-width: 1439px) {
-  .NewsSection > div {
+  .News-Header {
     width: 980px;
+  }
+
+  .News-Main{
+    width: calc((100vw + 920px) / 2);
+  }
+
+  .Swiper-Control {
+    width: calc((100vw + 980px) / 2)
+  }
+
+  .NewsSection .swiper-wrapper {
+    padding-left: calc((100vw - 800px) / 2);
   }
 
   .News-Header p {
@@ -836,13 +807,25 @@ footer{
 }
 
 @media (max-width: 979px) {
+  .News-Header {
+    width: 600px;
+  }
+
+  .News-Main{
+    width: calc((100vw + 600px) / 2);
+  }
+
+  .Swiper-Control {
+    width: calc((100vw + 600px) / 2)
+  }
+
+  .NewsSection .swiper-wrapper {
+    padding-left: calc((100vw - 800px) / 2);
+  }
   .NewsSection {
     padding: 30px 0px 40px 0px;
   }
 
-  .NewsSection > div {
-    width: 600px;
-  }
 
   .News-Header {
     flex-direction: column;
@@ -900,6 +883,12 @@ footer{
     padding: 0px;
     justify-content: space-between;
     margin-top: 119px;
+    width: 100%;
+  }
+
+  .News-Main .Swiper-Control{
+    width: calc((100vw + 600px) / 2);
+    padding-left: calc((100vw - 600px) / 2);
   }
 
 }
@@ -910,11 +899,26 @@ footer{
     border-radius: 7px;
   }
 
-  .NewsSection > div {
-    width: 300px;
+
+  .News-Main{
+    width: 100%;
+  }
+
+  .NewsSection .Swiper-Control {
+    width: calc((100vw + 300px) / 2)
+  }
+
+  .NewsSection .swiper-wrapper {
+    padding-left: calc((100vw - 305px) / 2);
+  }
+
+  .News-Main .Swiper-Control{
+    width: calc((100vw + 300px) / 2);
+    padding-left: calc((100vw - 300px) / 2);
   }
 
   .News-Header {
+    width: 300px;
     margin-bottom: 30px !important;
   }
 
@@ -929,6 +933,7 @@ footer{
     justify-items: start;
     padding-bottom: 4.9px;
     height: 231.89px;
+    border-color: rgba(53, 53, 53, 1);
 }
 
   .News-Main .Tags {
@@ -1081,12 +1086,14 @@ footer{
   color: #fff;
   font-size: 35px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 111%;
 }
 
 .Projects-Main .Info .Banner p {
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 111%;
+  letter-spacing: -0.13px;
 }
 
 .Projects-Main .Info .Banner a {
@@ -1094,34 +1101,42 @@ footer{
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  padding: 7px 13px;
+  padding: 4px 17px;
   border-radius: 5px;
-  background: radial-gradient(circle, #0485fe 53%, #0485fe 93%);
+  background: #2C2C2C;
   text-transform: uppercase;
-  border: 0.1px solid #0485fe;
+  border: 1px solid #888888;
 }
 
-.Projects-Main .Info .Banner a:last-child {
+/* .Projects-Main .Info .Banner a:last-child {
   color: rgba(24, 24, 24, 1);
   background: rgba(142, 142, 142, 1);
   border: 0.1px solid rgba(142, 142, 142, 1);
-}
+} */
 
 .Projects-Main .Info .Banner > div {
   gap: 12px;
   display: flex;
+  align-items: center;
+}
+
+.Projects-Main .Info:nth-child(4) .Banner p{
+  width: 250px;
 }
 
 
-.Projects-Main .Info .Banner a:last-child:hover {
-  color: #000;
-  background: #fff;
+.Projects-Main .Info .Banner a:hover {
+  background: #0485FE2B;
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(19.4209041595459px);
+  box-shadow: 0px 0px 9.9px 0px #0485FECC,0px 0px 4.5px 0px #0485FECC,0px 0px 1.6px 0px #FFFFFF;
+
 }
 
 .Projects-Main .Info .Stats {
   border-radius: 10px;
   background: #1e1e1e;
-  padding: 32px 16px 27px 33px;
+  padding: 32px 33px 27px 33px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1261,11 +1276,14 @@ footer{
 
   .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner p{
     width: 114px;
-    font-size: 11px;
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner p{
-    font-size: 11px;
+    font-size: 8px;
+    position: absolute;
+    line-height: 8.4px;
+    top: 5px;
+    left: 70px;
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner {
@@ -1427,12 +1445,15 @@ footer{
   }
 
   .Projects-Main_mobile .Info .Banner a {
-    padding: 5px 13px;
+    padding: 5px 7px;
     background: #232323;
     border: none;
     box-shadow: 0px 0px 12.7px 0px rgba(4, 133, 254, 1),
       0px 0px 4.6px 0px rgba(4, 133, 254, 0.79),
       0px 0px 0.5px 0px rgba(255, 255, 255, 1);
+      display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
   }
 
   .Projects-Main_mobile .Info .Stats {
@@ -1525,20 +1546,25 @@ footer{
   text-align: center;
   color: #fff;
   font-size: 21px;
-  font-weight: 250;
+  font-weight: 500;
   text-transform: uppercase;
-  padding: 25px 0px;
+  height: 73px;
+  display: flex;
+  align-items: center;
   border-radius: 10px;
-  border: 0.6px solid #fff;
+  border: 1px solid #fff;
   background: #232323;
-  opacity: 0.75;
   cursor: pointer;
+  backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px 0px #FFFFFF59;
+
 }
 
 .FormSection form [type="submit"]:hover {
   color:#000;
   background: #fff;
-  font-weight: 600;
+  box-shadow: none;
 }
 
 @media (max-width: 1439px) {
@@ -1630,6 +1656,7 @@ footer{
 
   .FormSection form [type="submit"] {
     padding: 12px 0px;
+    height: auto;
     border-radius: 5px;
     border-color: #353535;
     opacity: 1;

@@ -8,8 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css?1.0" />
+    <link rel="stylesheet" href="css/main.css?1.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
@@ -526,10 +526,9 @@
           <div class="Info Active" data="Team">
             <div class="Banner">
               <h3>ALIKSON TEAM</h3>
-              <p>Дебют в Медиа Баскет</p>
               <div>
-                <a href="">организатор alikson group</a>
                 <a href="">подробнее</a>
+                <p>Дебют в Медиа Баскет</p>
               </div>
             </div>
             <div class="Stats">
@@ -554,9 +553,9 @@
           <div class="Info" data="Service">
             <div class="Banner">
               <h3>ALIKSON INVEST CLUB</h3>
-              <p>Сообщество для инвесторов, объединенных целью увеличения капитала</p>
               <div>
                 <a href="">подробнее</a>
+                <p>Сообщество для инвесторов, объединенных целью увеличения капитала</p>
               </div>
             </div>
             <div class="Stats">
@@ -576,12 +575,10 @@
           </div>
           <div class="Info" data="Fond">
             <div class="Banner">
-              <h3>ФОНД ALIKSON</h3>
-              <p>
-                Благотворительный фонд Alikson: Помогать — наша ответственность
-              </p>
+              <h3>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ALIKSON</h3>
               <div>
                 <a href="">подробнее</a>
+                <p>Благотворительный фонд Alikson: Помогать — наша ответственность</p>
               </div>
             </div>
             <div class="Stats">
@@ -610,7 +607,7 @@
                       <h3>ALIKSON TEAM</h3>
                       <p>Дебют в Медиа Баскет</p>
                     </div>
-                    <a href="">подробнее</a>
+                    <a href="">подробнее <img src="img/ArrowRight_3.svg"></a>
                   </div>
                   <div class="Stats">
                     <div>
@@ -638,7 +635,7 @@
                       <h3>ALIKSON INVEST CLUB</h3>
                       <p>Сообщество для инвесторов, объединенных целью увеличить капитала</p>
                     </div>
-                    <a href="">подробнее</a>
+                    <a href="">подробнее <img src="img/ArrowRight_3.svg"></a>
                   </div>
                   <div class="Stats">
                   <div>
@@ -662,7 +659,7 @@
                       <h3>ФОНД ALIKSON</h3>
                       <p>Помогать - наша ответственность</p>
                     </div>
-                    <a href="">подробнее</a>
+                    <a href="">подробнее <img src="img/ArrowRight_3.svg"></a>
                   </div>
                   <div class="Stats">
                     <div>
@@ -828,14 +825,14 @@
     //Слайдеры
     const swiperN = new Swiper(".swiperN", {
       loop: true,
-      slidesPerView: "auto",
-      spaceBetween: -70,
+      slidesPerView: 1,
+      spaceBetween: -1690,
       watchSlidesProgress: true, // Следит за прогрессом слайдов
   watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
-        660: { slidesPerView: 2, spaceBetween: -100 },
-        980: { slidesPerView: 2, spaceBetween: -180 },
-        1440: { slidesPerView: 3, spaceBetween: -275 },
+        660: { slidesPerView: 3, spaceBetween: -1200 },
+        980: { slidesPerView: 2, spaceBetween: -1130 },
+        1440: { slidesPerView: 3, spaceBetween: -755 },
       },
       direction: "horizontal",
       navigation: {
@@ -890,7 +887,8 @@
     
     //о компании
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 768) { // Только для мобилок
+//  if (window.innerWidth <= 768) {  Только для мобилок
+    
     const marquee = document.querySelector(".items-wrap");
     const marqueeContent = marquee.innerHTML; // Сохраняем оригинальный контент
     marquee.innerHTML += marqueeContent; // Дублируем контент
@@ -905,7 +903,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function startAutoScroll() {
       if (!isScrolling) {
         autoScroll = setInterval(() => {
-          marquee.scrollLeft += speed;
+          marquee.scrollLeft += 1;
           if (marquee.scrollLeft >= marquee.scrollWidth / 2) {
             marquee.scrollLeft = 0; // Перепрыгиваем в начало без рывков
           }
@@ -939,7 +937,7 @@ document.addEventListener("DOMContentLoaded", function () {
     marquee.addEventListener("touchend", () => {
       isDown = false;
     });
-  }
+ // }
 });
 
 

@@ -4,7 +4,7 @@ const Menu=document.querySelector('.Header-Menu_mobile_hidden')
 
 MenuButton.addEventListener('click',()=>{
   if(Menu.getAttribute('style')==undefined){
-    Menu.setAttribute('style','transform: translateX(0px);')
+    Menu.setAttribute('style','transform: translateY(0px);')
     MenuButton.querySelector('img').setAttribute('src','img/closeMenu.svg')
     document.querySelector('header').setAttribute('style','border-radius: 0px;')
     document.querySelector('body').setAttribute('style','overflow:hidden;')
