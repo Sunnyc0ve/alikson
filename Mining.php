@@ -97,8 +97,7 @@
                         </div>
                     </div>
                     <div class="Card-Content">
-                        <!-- <span>БАНК</span> -->
-                        <img src="img/mining/Vs1.svg">
+                        <span>БАНК</span>
                     </div>
                     <div class="Card-Footer">
                         <p>Ваш вклад - 300 000₽</p>
@@ -117,7 +116,7 @@
                         </div>
                     </div>
                     <div class="Card-Content">
-                    <img src="img/mining/Vs2.svg">
+                    <span>ALIKSON<br>МАЙНИНГ</span>
                     </div>
                     <div class="Card-Footer">
                         <p>Ваш вклад - 300 000₽</p>
@@ -129,7 +128,7 @@
                 <p>Средняя доходность 
                 от майнингового оборудования в 2024 году составила</p>
                 <div>
-                    <span>~45%</span>
+                    <span>~45% годовых</span>
                 </div>
             </div>
         </section>

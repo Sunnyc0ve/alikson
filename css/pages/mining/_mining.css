@@ -62,7 +62,7 @@ h1{
 .MainSection-Content a{
     color: #FFF;
     font-size: 30.881px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.618px;
     padding: 17.156px 25.734px;
@@ -125,6 +125,9 @@ text-transform: uppercase;
     border-radius: 15px;
     border: 1px solid #353535;
     padding: 86px 0px;
+    margin-top: -9px;
+    background: #212121;
+    position: relative;
 }
 
 .AboutSection h2{
@@ -222,7 +225,9 @@ text-transform: uppercase;
 
   /*Майнинг или банк*/
   .VsSection{
-    padding: 89px 0px 86px 0px;
+    padding: 89px 0px 85px 0px;
+    background: #181818 url("../../../img/mining/VsBack.png") center;
+    margin-top: -10px;
   }
 
   .VsSection > div{
@@ -248,16 +253,13 @@ text-transform: uppercase;
 
   .Vs-Content .Card:first-child{
     background: #262626;
-    width: 494;
-    height: 570;
+    width: 494px;
+    height: 377px;
     padding: 19px 22px;
     border-radius: 10px;
+    position: relative;
   }
 
-  .Vs-Content .Card:first-child .Card-Header{
-    display: flex;
-    justify-content: space-between;
-  }
 
   .Vs-Content .Card:first-child .Card-Header h3{
     font-weight: 500;
@@ -268,6 +270,7 @@ text-transform: uppercase;
     opacity: 0.77;
     text-transform: uppercase;
     width: 220px;
+    margin-bottom: 5px;
   }
 
   .Vs-Content .Card:first-child .Card-Header > div > div{
@@ -280,7 +283,7 @@ text-transform: uppercase;
     align-items: center;
     justify-content: center;
     gap:20px;
-    margin-bottom: 5px;
+    margin: 10px 0px 14px 0px;
   }
 
   .Vs-Content .Card:first-child .Card-Header span{
@@ -299,23 +302,28 @@ text-transform: uppercase;
     letter-spacing: 0px;
     color:#fff;
     opacity: 0.77;
-    text-align: right;
   }
 
-  /* .Card-Content span{
-    position: absolute;
-    font-weight: 500;
-    font-size: 32.1px;
-    line-height: 36.55px;
-    letter-spacing: 0px;
-    color:#fff;
-    opacity: 0.77;
-  } */
-
   .Vs-Content .Card:first-child .Card-Content{
+    position: absolute;
+    background: url("../../../img/mining/Vs1.svg");
+    width: 232px;
+    height: 232px;
     display: flex;
-    justify-content: end;
-    margin: 64px 0px 46px 0px;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    right: 40px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Content span{
+    font-weight: 500;
+    font-size: 26.16px;
+    line-height: 111%;
+    letter-spacing: 0px;
+    text-align: center;
+    color:#fff;
+    opacity: 0.5;
   }
 
   .Vs-Content .Card:first-child .Card-Footer p{
@@ -329,6 +337,10 @@ text-transform: uppercase;
     margin-bottom: 7px;
   }
 
+  .Vs-Content .Card:first-child .Card-Footer{
+    margin-top: 83px;
+  }
+
 
   
 
@@ -340,16 +352,12 @@ text-transform: uppercase;
 
 box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
 
-    width: 722;
-    height: 662;
+    width: 722px;
+    height: 469px;
     padding:30px 34px 21px 34px;
     border-radius: 10px;
   }
 
-  .Vs-Content .Card:last-child .Card-Header{
-    display: flex;
-    justify-content: space-between;
-  }
 
   .Vs-Content .Card:last-child .Card-Header h3{
     font-weight: 500;
@@ -367,46 +375,54 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
     background: #0485FE1A;
     backdrop-filter: blur(5.96500301361084px);
     box-shadow: 0px 0px 15.53px 0px #0666DF, 0px 0px 4.97px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
-    width: 307px;
-    height: 77px;
+    width: 223px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:30px;
-    margin-bottom: 10px;
+    gap:20px;
+    margin:23px 0px 10px 0px;
   }
 
   .Vs-Content .Card:last-child .Card-Header span{
     font-weight: 500;
     letter-spacing: 0px;
     color:#fff;
-    font-size: 51.2px;
-    line-height: 69.6px;
+    font-size: 37px;
+    line-height: 111%;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header img{
+    width: 15px;
   }
 
   .Vs-Content .Card:last-child .Card-Header p{
     font-weight: 400;
     letter-spacing: 0px;
     color:#fff;
-    text-align: right;
     font-size: 28.13px;
     line-height: 36.29px;
   }
 
-  /* .Card-Content span{
-    position: absolute;
-    font-weight: 500;
-    font-size: 32.1px;
-    line-height: 36.55px;
-    letter-spacing: 0px;
-    color:#fff;
-    opacity: 0.77;
-  } */
-
   .Vs-Content .Card:last-child .Card-Content{
+    position: absolute;
+    background: url("../../../img/mining/Vs2.svg");
+    width: 386px;
+    height: 386px;
     display: flex;
-    justify-content: end;
-    margin-top: 27px;
+    justify-content: center;
+    align-items: center;
+    top: 38px;
+    right: 34px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Content span{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 111%;
+    letter-spacing: 0px;
+    text-align: center;
+    color:#fff;
   }
 
   .Vs-Content .Card:last-child .Card-Footer p{
@@ -419,6 +435,10 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
     line-height: 32.69px;
   }
 
+  .Vs-Content .Card:last-child .Card-Footer{
+    margin-top: 101px;
+  }
+
   .Vs-Footer{
     background: #262626;
     border: 1px solid #353535;
@@ -427,7 +447,7 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
     border-radius: 10px;
     display: flex;
     align-items: center;
-    margin-top: 77px !important;
+    margin-top: 50px !important;
     gap:62px;
     padding-left: 33px;
   }
@@ -444,21 +464,23 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
   }
 
   .Vs-Footer div{
-    backdrop-filter: blur(5.96500301361084px);
-    box-shadow: 0px 0px 15.53px 0px #0666DF, 0px 0px 4.97px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
+    backdrop-filter: blur(18.5px);
+
+box-shadow: 0px 0px 22.7px 0px #0666DF,0px 0px 24.6px 0px #0485FE91,0px 0px 2.05px 0px #FFFFFF;
+
     border: 1px solid #353535;
     border-radius: 10px;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 57px;
+    padding-left: 31px;
   }
 
   .Vs-Footer div span{
     font-weight: 500;
-    font-size: 106.08px;
-    line-height: 117.75px;
+    font-size: 91px;
+    line-height: 111%;
     letter-spacing: -1.0608px;
     color:#0485FE;
   }

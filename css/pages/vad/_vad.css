@@ -1,0 +1,987 @@
+/* ОБЩИЕ */
+body{
+    background: #212121;
+}
+
+h2{
+    color: #FFF;
+    font-size: 52.127px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.521px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    h2{
+        color: #0485FE;
+        /* font-size: 23px; */
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    h2{
+        font-size: 23px;
+        font-weight: 600;
+    }
+  }
+
+
+
+/* Главная секция*/
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:260px;
+    padding: 59px 0px 85px 0px;
+    background: url("../../../img/vad/MainBack.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainSection > div{
+    width: 1280px;
+}
+
+.MainSection-Header{
+    display: flex;
+    gap:49px;
+    align-items: start;
+}
+h1{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 111%; 
+    letter-spacing: -0.696px;
+    text-transform: uppercase;
+    width: 512px;
+    flex-shrink: 0;
+}
+
+.MainSection-Header p{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.47px;
+}
+
+.MainSection-Content{
+    display: flex;
+    align-items: end;
+    gap:260px;
+}
+
+.MainSection-Content a{
+    width: 292px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 30.881px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.618px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #181818;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+.MainSection-Content a:hover{
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+}
+
+.MainSection-Content > div{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    row-gap:36px;
+    column-gap: 10px;
+}
+
+.MainSection .Info{
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.MainSection .Info::before{
+    content: "";
+    height: 90%;
+    width: 4px;
+    background: #0485FE;
+    display: block;
+    flex-shrink: 0;
+}
+
+.MainSection .Info:last-child{
+    grid-column: span 2;
+}
+
+.MainSection .Info h3{
+    color: #0485FE;
+font-size: 66px;
+font-weight: 500;
+line-height: 80%;
+letter-spacing: -0.69px;
+text-transform: uppercase;
+}
+
+.MainSection .Info p{
+    color: #FFF;
+    letter-spacing: -0.25px;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 111%;
+}
+
+.p_mobile{
+    display: none;
+}
+
+@media (max-width: 1439px){
+    .MainSection > div{
+        width: 920px;
+    }
+
+    h1{
+        width: 329px;
+        font-size: 51.58px;
+    }
+
+    .MainSection-Header p {
+        font-size: 24px;
+    }
+
+    .MainSection-Content a {
+        font-size: 26px;
+    }
+
+    .MainSection-Content {
+        gap: 105px;
+    }
+
+    .MainSection-Content > div{
+        grid-template-columns: 1.1fr 1fr;
+    }
+
+    .MainSection .Info p {
+        font-size: 20px;
+    }
+
+    .MainSection .Info h3 {
+        font-size: 47px;
+    }
+
+    .MainSection{
+        gap:134px;
+        background-size: 1440px;
+    background-position: center;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .MainSection{
+        margin-top: -13px;
+        gap: 65px;
+    }
+    h1{
+        font-size: 60px;
+        color: #0485FE;
+        width: auto;
+    }
+    h1 br{
+        display: none;
+    }
+    .MainSection .Info h3 {
+        font-size: 53px;
+    }
+    .MainSection > div{
+        width: 600px;
+    }
+    .MainSection-Header {
+        flex-direction: column;
+    }
+
+    .MainSection-Content{
+        flex-direction: column-reverse;
+        gap:16px;
+    }
+    .MainSection .Info:nth-child(3){
+        display: none;
+    }
+    .MainSection .Info:first-child {
+        grid-column: unset;
+    }
+
+    .MainSection-Content > div {
+        grid-template-columns: 1fr 1fr;
+        gap:0px;
+    }
+
+    .MainSection .Info p {
+        font-size: 17px;
+    }
+
+    .MainSection-Content a{
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .p_desktop{
+        display: none;
+    }
+    .p_mobile{
+        display: block;
+    }
+
+    .MainSection{
+        padding: 19px 0px 33px 0px;
+        gap: 80px;
+        margin-top: -3px;
+    }
+
+    
+    .MainSection > div{
+        width: 300px;
+    }
+
+    .MainSection-Header p {
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .MainSection-Header{
+        gap:12px;
+    }
+
+    .MainSection .Info h3 {
+        font-size: 35px;
+    }
+
+    .MainSection .Info p {
+        font-size: 11px;
+    }
+
+    .MainSection .Info::before {
+        width: 2px;
+    }
+
+    .MainSection .Info {
+        gap: 7px;
+    }
+
+    .MainSection-Content a {
+        font-size: 12px;
+        height: 37px;
+        border-radius: 4px;
+        border: 0.394px solid #8D8D8D;
+        background: #181818;
+        box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+    }
+
+    .MainSection-Content > div {
+        grid-template-columns: 150px 1fr;
+        gap:39px;
+    }
+  }
+
+
+
+
+
+/*Услуги секция*/
+.ServicesSection{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #353535;
+    padding: 85px 0px;
+    gap:71px;
+    align-items: end;
+    margin-top: -9px;
+    background: #212121;
+    position: relative;
+}
+
+.ServicesSection h2{
+    margin-left: calc((100vw - 1280px) / 2);
+    margin-bottom: 106px;
+}
+
+.Services-Header{
+    display: flex;
+    flex-direction: column;
+    width: 498px;
+    flex-shrink: 0;
+    width: calc((100vw - 300px) / 2);
+}
+
+.Services-Content{
+    width: 100%;
+}
+
+.Services-Content p{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 111%;
+    text-transform: uppercase;
+    width: 742px;
+}
+
+.Services-Content div{
+    background: #0058AB;
+    height: 1px;
+    width: 100%;
+    margin: 14px 0px;
+}
+  
+  .items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 29px;
+  }
+  
+  .items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 29px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+    /* width: 553px; */
+    height: 392px;
+  }
+
+  .item img{
+    height: 100%;
+  }
+  
+  .marquee {
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+  @media (max-width: 1439px){
+    /*920*/
+    .ServicesSection h2{
+        margin-left: calc((100vw - 920px) / 2);
+    }
+    
+    .Services-Header{
+        width: calc((100vw - 150px) / 2);
+    }
+
+    .ServicesSection {
+        gap: 40px;
+    }
+
+    .Services-Content p {
+        font-size: 25px;
+        width: 525px;
+    }
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .ServicesSection{
+        flex-direction: column;
+    }
+
+    .ServicesSection h2{
+        margin-left: calc((100vw - 600px) / 2);
+        margin-bottom: 30px;
+    }
+    
+    .Services-Header{
+        width: 100%;
+    }
+
+    .item {
+        /* width: 353px; */
+        height: 223px;
+    }
+
+    .items, .items-wrap{
+        gap: 15px;
+    }
+
+    .Services-Content > * {
+        margin-left: calc((100vw - 600px) / 2) !important;
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .ServicesSection{
+        padding: 31px 0px;
+        gap:24px;
+    }
+    .ServicesSection h2{
+        margin-left: calc((100vw - 300px) / 2);
+        margin-bottom: 20px;
+    }
+    .Services-Content > * {
+        margin-left: calc((100vw - 300px) / 2) !important;
+    }
+    .item {
+        height: 90px;
+    }
+    .items, .items-wrap {
+        gap: 10px;
+    }
+
+
+    .Services-Content p {
+        font-size: 12px;
+        line-height: normal;
+        width: 310px;
+    }
+
+    .Services-Content div {
+        margin: 10px 0px;
+    }
+  }
+
+
+
+
+
+
+/*Кому подойдут услуги секция*/
+.AboutServicesSection{
+    background: #181818;
+    padding: 85px 0px;
+    margin-top: -9px;
+}
+
+.AboutServicesSection > *{
+    width: 1280px;
+    margin: auto;
+}
+
+.AboutServices-Content{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 136px;
+    grid-row-gap: 40px;
+    grid-column-gap: 31px;
+}
+
+.AboutServices-Content .Card{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #30303061;
+    border: 1px solid #0058AB;
+    padding-left: 11px;
+}
+
+.AboutServices-Content .Card > div{
+    width: 132px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.AboutServices-Content .Card h3{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38.7px;
+    letter-spacing: 0px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1439px){
+    /*920*/
+    .AboutServicesSection > *{
+        width: 920px;
+    }
+    
+    .AboutServices-Content .Card h3 {
+        font-size: 25px;
+        line-height: normal;
+    }
+    
+    
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .AboutServicesSection > *{
+        width: 600px;
+    }
+
+    .AboutServices-Content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 136px;
+        gap: 20px;
+    }
+    
+    
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .AboutServicesSection{
+        padding: 38px 0px 31px 0px;
+        background: #181818 url("../../../img/vad/AboutServicesBack.png");
+        background-size: 100% 100%;
+    }
+
+    .AboutServicesSection > *{
+        width: 300px;
+    }
+    .AboutServices-Content .Card h3 {
+        font-size: 16px;
+    }
+
+    .AboutServices-Content .Card > div {
+        width: 52px;
+    }
+
+    .AboutServices-Content .Card:nth-child(1) img{
+        width:  41px;
+    }
+    .AboutServices-Content .Card:nth-child(2) img{
+        width:  36px;
+    }
+    .AboutServices-Content .Card:nth-child(3) img{
+        width:  32px;
+    }
+    .AboutServices-Content .Card:nth-child(4) img{
+        width:  52px;
+    }
+
+    .AboutServices-Content .Card {
+        gap:6px;
+        padding-left: 16px;
+        border-radius: 4px;
+    }
+
+    .AboutServices-Content {
+        grid-auto-rows: 56px;
+        gap: 9px;
+        margin-top: 20px;
+    }
+  }
+
+
+
+
+
+
+
+
+/*Услуги секция*/
+.AdvantagesSection{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #353535;
+    padding: 85px 0px;
+    gap:71px;
+    align-items: end;
+    margin-top: -9px;
+    background: #212121;
+    position: relative;
+}
+
+.AdvantagesSection h2{
+    margin-bottom: 58px;
+}
+
+.Advantages-Header{
+    display: flex;
+    flex-direction: column;
+    width: 477px;
+    flex-shrink: 0;
+    margin-left: calc((100vw - 1280px) / 2);
+}
+
+.Advantages-Content{
+    width: 100%;
+}
+
+.Advantages-Content p{
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+
+.Advantages-Content div{
+    background: #0058AB;
+    height: 1px;
+    width: 100%;
+    margin: 41px 0px;
+}
+
+.Advantages-Img{
+    width: 477px;
+    height: 242px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(33.960906982421875px);
+    box-shadow: 0px 0px 29.15px 0px #0485FE,0px 0px 18.07px 0px #0485FEBF,0px 0px 7.8px 0px #FFFFFF;
+    overflow: hidden;
+}
+
+.Advantages-Img img{
+    width: 100%;
+    height: 100%;
+}
+
+.img_mobile{
+    display: none;
+}
+  
+
+
+  @media (max-width: 1439px){
+    /*920*/
+    .Advantages-Header{
+        margin-left: calc((100vw - 920px) / 2);
+    }
+
+    .AdvantagesSection {
+        gap: 40px;
+    }
+
+    .Advantages-Content p {
+        font-size: 25px;
+        width: 431px;
+    }
+
+    .Advantages-Content div {
+        margin: 35px 0px;
+    }
+    
+    
+}
+
+@media (max-width: 979px) {
+    /*600*/
+    .AdvantagesSection{
+        flex-direction: column;
+    }
+
+
+
+
+    .Advantages-Header{
+        width: 600px;
+        margin: auto;
+    }
+
+    .Advantages-Content > * {
+        margin-left: calc((100vw - 600px) / 2) !important;
+    }
+
+    .Advantages-Img{
+        width: 100%;
+        height: 320px;
+    }
+  }
+
+  @media (max-width: 659px) {
+    /*300*/
+    .AdvantagesSection{
+        padding: 31px 0px;
+        gap:24px;
+    }
+    .Advantages-Header{
+        width: 300px;
+    }
+    .Advantages-Content > * {
+        margin-left: calc((100vw - 300px) / 2) !important;
+    }
+    .Advantages-Img{
+        height: 90px;
+        border: none;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
+    .img_mobile{
+        display: block;
+    }
+
+    .img_desktop{
+        display: none;
+    }
+
+    .AdvantagesSection h2 {
+        margin-bottom: 20px;
+    }
+
+
+
+    .Advantages-Content p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .Advantages-Content div {
+        margin: 10px 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* Секция форма */
+
+.Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#fff;
+    width: 729px;
+  }
+  
+  .Form-Header h2 {
+    color: #0485FE;
+  }
+  
+  .FormSection {
+    background: #181818 url("../../../img/tender/FormBack.png") no-repeat;
+    padding: 77px 0px 104px 0px;
+    margin-top: -12px;
+  }
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 734px;
+  }
+  
+  .FormSection form p {
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 29.97px;
+    letter-spacing: -1%;
+    color:#666;
+  }
+  
+  .FormSection form > div {
+    padding: 27px 36px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+    font-weight: 300;
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+    background: #232323;
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    backdrop-filter: blur(19.4209041595459px);
+
+box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
+
+  }
+  
+  @media (max-width: 1439px) {
+    .FormSection > div {
+      width: 920px;
+    }
+  
+    .Form-Header p {
+      width: 401px;
+      font-size: 19px;
+    }
+  
+    .Form-Header h2 {
+      font-size: 43px;
+    }
+  
+    .Form-Header {
+      gap: 44px;
+    }
+  
+    .FormSection form {
+      width: 544px;
+    }
+  
+    .FormSection form p br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 979px) {
+    .FormSection {
+      padding: 30px 0px 40px 0px;
+      background: #181818 url("../../../img/Back_2.svg") no-repeat;
+      background-size: 316px;
+      background-position: -20px 72px;
+    }
+  
+    .Form-Header {
+      margin-bottom: 30px !important;
+      flex-direction: column;
+    }
+  
+    .FormSection > div {
+      width: 600px;
+    }
+  
+    .Form-Header p {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+      line-height: 111%;
+      /* display: none; */
+    }
+  
+    .Form-Header h2 {
+      font-size: 23px;
+    }
+  
+    .FormSection form [type="submit"] {
+      width: 100%;
+      font-size: 12px;
+      padding: 15px 0px;
+    }
+  
+    .FormSection form [type="text"],
+    .FormSection form [type="text"]::placeholder,
+    .FormSection form [type="text"]::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+  
+    .FormSection form > div {
+      padding: 14px 16px;
+    }
+  
+    .FormSection form {
+      width: 100%;
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 659px) {
+    .FormSection {
+        background-size: 316px;
+        background-position: -20px 32px;
+      border-radius: 7px;
+    }
+    
+    .FormSection > div {
+      width: 300px;
+      gap: 20px;
+    }
+  
+    .FormSection form [type="submit"] {
+      padding: 12px 0px;
+      border-radius: 5px;
+      border-color: #353535;
+      opacity: 1;
+      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+      margin-bottom: 14px;
+    }
+  
+    .FormSection form p {
+      font-size: 10px;
+      line-height: 100%;
+    }
+  
+    .FormSection form p br {
+      display: block;
+    }
+  
+    .FormSection form > div {
+      padding: 13px 16px;
+      border-radius: 5px;
+      gap:11px;
+    }
+  
+    .FormSection form > div img{
+      width: 13px;
+    }
+  }
