@@ -959,16 +959,122 @@ backdrop-filter: blur(16.980453491210938px);
   letter-spacing: 0px;
 }
 
+.Investitions-Content_mobile{
+  display: none;
+}
+
 @media (max-width: 1439px){
   /*920*/
+  .InvestitionsSection > *{
+    width: 920px;
+  }
+  .Investitions-Content {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .Investitions-Content .Card h3 {
+    font-size: 18.48px;
+    line-height: normal;
+  }
+
+  .Investitions-Content .Card-Content li {
+    margin-left: 15px;
+    font-size: 15.25px;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 979px) {
   /*600*/
+  .InvestitionsSection > *{
+    width: 600px;
+  }
+  .Investitions-Content {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    grid-template-rows: unset;
+    gap:10px;
+  }
+
+  .Investitions-Content .Card-Header {
+    height: 60px;
+    padding: 15px 0px 0px 25px;
+}
+  
 }
 
 @media (max-width: 659px) {
   /*300*/
+  .InvestitionsSection{
+    padding: 31px 0px 26px 0px;
+  }
+  
+  .InvestitionsSection > *{
+    width: 300px;
+  }
+  .Investitions-Content_mobile{
+    display: block;
+    margin-top: 26px;
+  }
+
+  .Investitions-Content{
+    display: none;
+  }
+  
+  .Investitions-Content_mobile .Card{
+    transition: 0.5s ease;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #393939;
+    background: #242424AD;
+    backdrop-filter: blur(16.980453491210938px);
+    width: 237px;
+    height: 185px;
+  }
+  
+  /* .Investitions-Content_mobile .Card:hover{
+  box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
+  backdrop-filter: blur(16.980453491210938px);
+  } */
+  
+  
+  .Investitions-Content_mobile .Card-Header{
+    border-bottom: 1px solid #393939;
+    height: 62px;
+    padding: 14px 14px 12px 16px;
+  }
+  
+  
+  
+  .Investitions-Content_mobile .Card h3{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .Investitions-Content_mobile .Card-Content{
+    padding: 15px 14px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  .Investitions-Content_mobile .Card-Content li{
+    color: #FFF;
+    list-style: disc;
+    margin-left: 12px;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0px;
+  }
+
+  .InvestitionsSection .swiper-slide{
+    margin-right: -50px !important;
+  }
 }
 
 
@@ -1081,17 +1187,125 @@ box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5
 
   }
 
-  @media (max-width: 1439px){
-    /*920*/
+  @media (max-width: 1439px) {
+    .FormSection > div {
+      width: 920px;
+    }
+  
+    .Form-Header p {
+      width: 401px;
+      font-size: 19px;
+    }
+  
+    .Form-Header h2 {
+      font-size: 43px;
+    }
+  
+    .Form-Header {
+      gap: 44px;
+    }
+  
+    .FormSection form {
+      width: 544px;
+    }
+  
+    .FormSection form p br {
+      display: none;
+    }
   }
   
   @media (max-width: 979px) {
-    /*600*/
+    .FormSection {
+      padding: 30px 0px 40px 0px;
+    }
+  
+    .Form-Header {
+      margin-bottom: 30px !important;
+      flex-direction: column;
+    }
+  
+    .FormSection > div {
+      width: 600px;
+    }
+  
+    .Form-Header p {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+      line-height: 111%;
+      /* display: none; */
+    }
+  
+    .Form-Header h2 {
+      font-size: 23px;
+    }
+  
+    .FormSection form [type="submit"] {
+      width: 100%;
+      font-size: 12px;
+      padding: 15px 0px;
+    }
+  
+    .FormSection form [type="text"],
+    .FormSection form [type="text"]::placeholder,
+    .FormSection form [type="text"]::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+  
+    .FormSection form > div {
+      padding: 14px 16px;
+    }
+  
+    .FormSection form {
+      width: 100%;
+      gap: 12px;
+    }
   }
   
   @media (max-width: 659px) {
-    /*300*/
+    .FormSection {
+        background-size: 316px;
+        background-position: -2px 22px;
+      border-radius: 7px;
+    }
+    
+    .FormSection > div {
+      width: 300px;
+      gap: 20px;
+    }
+  
+    .FormSection form [type="submit"] {
+      padding: 12px 0px;
+      border-radius: 5px;
+      border-color: #353535;
+      opacity: 1;
+      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+      margin-bottom: 14px;
+    }
+  
+    .FormSection form p {
+      font-size: 10px;
+      line-height: 100%;
+    }
+  
+    .FormSection form p br {
+      display: block;
+    }
+  
+    .FormSection form > div {
+      padding: 13px 16px;
+      border-radius: 5px;
+      gap:11px;
+    }
+  
+    .FormSection form > div img{
+      width: 13px;
+    }
   }
+
 
 
 

@@ -200,6 +200,53 @@
                     </ul>
                 </div>
             </div>
+            <div class="Investitions-Content_mobile">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>Приобретение на этапе строительства:</h3>
+                                </div>
+                                    <ul class="Card-Content">
+                                        <li>Средняя стоимость кв.м на этапе котлована на 20–30% ниже рыночной</li>
+                                        <li>Рост цен после сдачи достигает 40%</li>
+                                    </ul>
+                            </div>    
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>Прирост стоимости объектов:</h3>
+                                </div>
+                                <ul class="Card-Content">
+                                    <li>Ежегодный рост цен на офисную недвижимость в Москве составляет 10–15%</li>
+                                    <li>В 2023 году рынок коммерческой недвижимости увеличился на 12%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>Доход от аренды</h3>
+                                </div>
+                                <ul class="Card-Content">
+                                    <li>Доходность от долгосрочной аренды офисов составляет 10-12% годовых</li>
+                                    <li>Растущий спрос на офисы класса A увеличивает ставки аренды на 20% за последние два года</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Swiper-Control">
+                    <button class="Swiper-Prev">
+                        <img src="img/ArrowLeft.svg" />
+                    </button>
+                    <button class="Swiper-Next">
+                        <img src="img/ArrowRight.svg" />
+                    </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="FormSection">
         <div class="Form-Header">
