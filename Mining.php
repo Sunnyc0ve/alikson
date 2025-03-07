@@ -5,13 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/mining/_mining.css" />
+    <link rel="stylesheet" href="css/pages/mining/_mining.css?1.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  </head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
   <body>
     <?php include('include/header.html')?>
     <main>
@@ -152,7 +158,8 @@
         </section>
         <section class="AdvantagesSection">
             <div class="Advantages-Header">
-                <h2>Преимущества работы с нами</h2>
+                <h2 class="h2_desktop">Преимущества работы с нами</h2>
+                <h2 class="h2_mobile">Наши Преимущества</h2>
             </div>
             <div class="Advantages-Content">
                 <h3>Передовые технологии</h3>
@@ -226,6 +233,54 @@
                     </div>
                 </div>
             </div>
+            <div class="Packs-Content_mobile">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>все включено</h3>
+                                </div>
+                                <div class="Card-Content">
+                                    <h4>Доверяйте всё профессионалам</h4>
+                                    <p>Мы организуем весь процесс майнинга, чтобы вы получали прибыль без лишних забот.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>Фиксированная доходность</h3>
+                                </div>
+                                <div class="Card-Content">
+                                    <p>- Регулярные выплаты вашей прибыли </p>
+                                    <p>- Прозрачные условия и максимальная надежность</p>
+                                    <p>- Полное техническое сопровождение от нашей команды</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <h3>Техническое обслуживание</h3>
+                                </div>
+                                <div class="Card-Content">
+                                    <h4>Уже есть оборудование?</h4>
+                                    <p>Доверьте его эксплуатацию нам, и получите максимум от своих мощностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Swiper-Control">
+                    <button class="Swiper-Prev">
+                        <img src="img/ArrowLeft.svg" />
+                    </button>
+                    <button class="Swiper-Next">
+                        <img src="img/ArrowRight.svg" />
+                    </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="FormSection">
         <div class="Form-Header">
@@ -256,4 +311,16 @@
     <?php include('include/footer.html') ?>
   </body>
   <script src="include/header.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: -300,
+      direction: "horizontal",
+      loop: false,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
+    });
+  </script>
 </html>
