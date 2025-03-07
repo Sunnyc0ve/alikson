@@ -36,7 +36,7 @@ h2{
     flex-direction: column;
     align-items: center;
     gap:174px;
-    padding: 59px 0px 110px 0px;
+    padding: 70px 0px 79px 0px;
     background: url("../../../img/tender/MainBack.jpg") no-repeat;
     background-size: 100% 100%;
 }
@@ -87,10 +87,13 @@ h1{
     background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    box-shadow: none;
+    color:#000;
+    background: #fff;
 }
 
 .MainSection-Content > div{
@@ -227,7 +230,7 @@ text-transform: uppercase;
     }
 
     .MainSection{
-        padding: 19px 0px 33px 0px;
+        padding: 33px 0px 42px 0px;
         gap: 67px;
         margin-top: -3px;
     }
@@ -280,11 +283,11 @@ text-transform: uppercase;
 /*Рост*/
 .GrowSection{
     margin: auto;
-    padding: 64px 0px 80px 0px;
+    padding: 70px 0px 70px 0px;
     border-radius: 15px;
     border: 1px solid #353535;
     background: #212121 url("../../../img/tender/GrowBack.svg") no-repeat;
-    background-position: calc((100vw - 671px) / 2) 43px;
+    background-position: calc((100vw - 685px) / 2) 79px;
     margin-top: -9px;
     position: relative;
 }
@@ -502,10 +505,11 @@ text-transform: uppercase;
     }
 
     .GrowSection{
-        padding: 32px 0px 27px 0px;
+        padding: 30px 0px;
         background: #212121 url(../../../img/tender/GrowBack_2.svg) no-repeat;
         background-position: calc((100vw - 304px) / 2) 65px;
         margin-top: -12px;
+        border-radius: 7px;
     }
 
     .Grow-Header p {
@@ -562,7 +566,7 @@ text-transform: uppercase;
     background: #181818 url("../../../img/tender/AdvantagesBack.png") no-repeat;
     background-size: 100% 2542px;
     background-position: center -1453px;
-    padding: 87px 0px 84px 0px;
+    padding: 79px 0px;
     margin-top: -9px;
 }
 
@@ -633,7 +637,7 @@ text-transform: uppercase;
     }
 
     .AdvantagesSection{
-        padding: 38px 0px 31px 0px;
+        padding: 39px 0px;
     }
 
     .Advantages-Content .Card > div {
@@ -651,7 +655,8 @@ text-transform: uppercase;
     }
 
     .Advantages-Content{
-        margin-top: 25px;
+        margin-top: 15px;
+        gap: 10px;
     }
 
     .Advantages-Content .Card{
@@ -680,7 +685,7 @@ text-transform: uppercase;
     display: flex;
     border-radius: 15px;
     border: 1px solid #353535;
-    padding: 85px 0px 81px 0px;
+    padding: 70px 0px;
     gap:71px;
     align-items: end;
     margin-top: -9px;
@@ -690,7 +695,7 @@ text-transform: uppercase;
 
 .ServicesSection h2{
     margin-left: calc((100vw - 1280px) / 2);
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .Services-Header{
@@ -811,12 +816,13 @@ text-transform: uppercase;
   @media (max-width: 659px) {
     /*300*/
     .ServicesSection{
-        padding: 31px 0px;
-        gap:24px;
+        padding: 30px 0px;
+        gap:15px;
+        border-radius: 7px;
     }
     .ServicesSection h2{
         margin-left: calc((100vw - 300px) / 2);
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .Services-Content > * {
         margin-left: calc((100vw - 300px) / 2) !important;
@@ -846,7 +852,7 @@ text-transform: uppercase;
   /*Направления секция*/
 .DirectionsSection{
     margin: auto;
-    padding: 98px 0px 81px 0px;
+    padding: 79px 0px;
     background: #181818 url("../../../img/tender/DirectionsBack.png") no-repeat;
     background-size: 100% 3784px;
     background-position: center -1210px;
@@ -859,7 +865,7 @@ text-transform: uppercase;
 }
 
 .Directions-Body{
-    margin-top: 51px;
+    margin-top: 46px;
     display: flex;
     gap:56px;
 }
@@ -952,12 +958,12 @@ text-transform: uppercase;
         width: 300px;
     }
     .DirectionsSection{
-        padding: 31px 0px;
+        padding: 40px 0px 41px 0px;
         background: #181818;
     }
 
     .Directions-Body{
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .Directions-Content .Card {
@@ -969,7 +975,7 @@ text-transform: uppercase;
     }
 
     .Directions-Content {
-        gap: 7px;
+        gap: 10px;
     }
 
     .Directions-Content .Card h3 {
@@ -1001,7 +1007,7 @@ text-transform: uppercase;
     background: #212121;
     border: 1px solid #353535;
     border-radius: 15px;
-    padding: 71px 0px 85px 0px;
+    padding: 70px 0px;
     margin-top: -11px;
     position: relative;
 }
@@ -1012,12 +1018,11 @@ text-transform: uppercase;
 }
 
 .Clients-Content{
-    margin-top: 41px;
+    margin-top: 46px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 104px;
-    grid-column-gap: 22px;
-    grid-row-gap: 14px;
+    gap:30px;
 }
 
 .Clients-Content .Card{
@@ -1060,7 +1065,8 @@ text-transform: uppercase;
     }
 
     .ClientsSection{
-        padding: 31px 0px;
+        padding: 30px 0px;
+        border-radius: 7px;
     }
 
     .Clients-Content_mobile{
@@ -1123,7 +1129,7 @@ text-transform: uppercase;
   
   .FormSection {
     background: #181818 url("../../../img/tender/FormBack.png") no-repeat;
-    padding: 77px 0px 104px 0px;
+    padding: 82px 0px 70px 0px;
     margin-top: -12px;
   }
   
@@ -1313,4 +1319,12 @@ box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5
     .FormSection form > div img{
       width: 13px;
     }
+  }
+
+
+  /*ФУТЕР*/
+  footer{
+    background: #212121;
+    border: 1px solid #353535;
+    border-radius: 7px;
   }
