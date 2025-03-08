@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/premier_cars/_premiercars.css" />
+    <link rel="stylesheet" href="css/pages/premier_cars/_premiercars.css?1.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,10 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>PREMIER CARS</h1>
-                <p>Premier cars   - аренда автомобилей премиум-класса с безупречным сервисом, который ориентирован на ваш комфорт и безопасность.
-Мы работаем с 2021 года предоставляя нашим клиентам только лучшие автомобили  с и самый высокий уровень обслуживания</p>
+                <div>
+                  <p>Premier cars   - аренда автомобилей премиум-класса с безупречным сервисом, который ориентирован на ваш комфорт и безопасность.</p>
+                  <p>Работаем с 2021 года предоставляя нашим клиентам только лучшие автомобили  с и самый высокий уровень обслуживания</p>
+                </div>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -85,27 +87,27 @@
             </div>
             <div class="Advantages-Content">
                 <div class="Card">
-                    <div><img src="img/tender/Adv1.svg"></div>
+                    <div><img src="img/premier_cars/Adv1.svg"></div>
                     <h3>Конфиденциальность</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv2.svg"></div>
+                    <div><img src="img/premier_cars/Adv2.svg"></div>
                     <h3>Полное страхование (КАСКО и ОСАГО) без франшизы </h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv3.svg"></div>
+                    <div><img src="img/premier_cars/Adv4.svg"></div>
                     <h3>Оформление аренды за 15 минут</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv4.svg"></div>
+                    <div><img src="img/premier_cars/Adv3.svg"></div>
                     <h3>100+ автомобилей<br> премиум-класса</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv4.svg"></div>
+                    <div><img src="img/premier_cars/Adv6.svg"></div>
                     <h3>Нет ограничения по скорости</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv4.svg"></div>
+                    <div><img src="img/premier_cars/Adv5.svg"></div>
                     <h3>Личный менеджер и круглосуточная поддержка</h3>
                 </div>
             </div>
@@ -126,6 +128,54 @@
                   <img src="img/premier_cars/Park3.png">
                 </div>
             </div>
+          <div class="Park-Content_mobile">
+            <div class="wrap">
+              <div class="items-wrap">
+                  <div class="items marquee">
+                      <div class="item"><img src="img/premier_cars/Park1.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Park2.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Park3.png" /></div>
+                  </div>
+                  <div aria-hidden="true" class="items marquee">
+                      <div class="item"><img src="img/premier_cars/Park1.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Park2.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Park3.png" /></div>
+                  </div>
+              </div>
+            </div>            
+          </div>
+        </section>
+        <section class="ReviewsSection">
+            <div class="Reviews-Header">
+              <h2>Отзывы клиентов</h2>
+            </div>
+            <div class="Reviews-Content">
+                <div class="Card">
+                  <img src="img/premier_cars/Reviews1.png">
+                </div>
+                <div class="Card">
+                  <img src="img/premier_cars/Reviews2.png">
+                </div>
+                <div class="Card">
+                  <img src="img/premier_cars/Reviews3.png">
+                </div>
+            </div>
+            <div class="Reviews-Content_mobile">
+              <div class="wrap">
+                <div class="items-wrap">
+                  <div class="items marquee">
+                      <div class="item"><img src="img/premier_cars/Reviews1.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Reviews2.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Reviews3.png" /></div>
+                  </div>
+                  <div aria-hidden="true" class="items marquee">
+                      <div class="item"><img src="img/premier_cars/Reviews1.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Reviews2.png" /></div>
+                      <div class="item"><img src="img/premier_cars/Reviews3.png" /></div>
+                  </div>
+              </div>
+            </div>            
+          </div>
         </section>
        
 
