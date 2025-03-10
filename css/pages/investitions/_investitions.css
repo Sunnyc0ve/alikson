@@ -12,6 +12,21 @@ h2{
     text-transform: uppercase;
 }
 
+@media (max-width: 979px) {
+  /*600*/
+  h2{
+      color: #0485FE;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h2{
+      font-size: 23px;
+      font-weight: 600;
+  }
+}
+
 
 
 /* Главная секция*/
@@ -20,9 +35,10 @@ h2{
     flex-direction: column;
     align-items: center;
     gap:185px;
-    padding: 60px 0px 85px 0px;
+    padding: 74px 0px 81px 0px;
     background: url("../../../img/investitions/MainBack.jpg") no-repeat;
     background-size: 100% 100%;
+    margin-top: -4px;
 }
 
 .MainSection > div{
@@ -48,7 +64,7 @@ h1{
 .MainSection-Header p{
     color: #FFF;
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 111%;
     letter-spacing: -0.27px;
 }
@@ -66,7 +82,7 @@ h1{
 .MainSection-Content a{
     color: #FFF;
     font-size: 30.881px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.618px;
     padding: 17.156px 25.734px;
@@ -75,10 +91,13 @@ h1{
     background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    box-shadow: none;
+    color:#000;
+    background: #fff;
 }
 
 .MainSection-Content > div{
@@ -124,6 +143,166 @@ text-transform: uppercase;
     font-family: "Mulish";
 }
 
+@media (max-width: 1439px){
+  .MainSection > div{
+      width: 920px;
+  }
+
+  .MainSection-Content > div {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+  h1{
+      width: 329px;
+      font-size: 51.58px;
+  }
+
+  .MainSection-Header p {
+      font-size: 21px;
+  }
+
+  .MainSection-Content a {
+      font-size: 26px;
+  }
+
+  .MainSection-Content {
+      gap: 157px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 44px;
+  }
+
+  .MainSection .Info p {
+    font-size: 21px;
+}
+
+  .MainSection{
+      gap:134px;
+      background-size: 1440px;
+  background-position: center;
+  }
+
+  .MainSection-Header {
+    gap: 75px;
+}
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .MainSection{
+      margin-top: -13px;
+  }
+  h1{
+      font-size: 60px;
+      color: #0485FE;
+      width: auto;
+  }
+  h1 br{
+      display: none;
+  }
+  .MainSection .Info h3 {
+      font-size: 53px;
+  }
+  .MainSection > div{
+      width: 600px;
+  }
+  .MainSection-Header {
+      flex-direction: column;
+      gap:20px;
+  }
+
+  .MainSection-Content{
+      flex-direction: column-reverse;
+      gap:16px;
+  }
+  .MainSection .Info:nth-child(1){
+      display: none;
+  }
+  .MainSection .Info:first-child {
+      grid-column: unset;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 1fr;
+      gap:0px;
+      width: 100%;
+  }
+
+  .MainSection .Info p {
+      font-size: 17px;
+  }
+
+  .MainSection-Content a{
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h1{
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .MainSection{
+      padding: 31px 0px 41px 0px;
+      gap: 30px;
+      margin-top: -6px;
+  }
+
+  .MainSection-Header p:first-child{
+    margin-bottom: 5px;
+  }
+
+  
+  .MainSection > div{
+      width: 300px;
+      gap:7px;
+  }
+
+  .MainSection-Header p {
+      font-size: 11px;
+      font-weight: 300;
+  }
+
+  .MainSection-Header{
+      gap:12px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 30px;
+  }
+
+  .MainSection .Info p {
+      font-size: 10px;
+  }
+
+  .MainSection .Info::before {
+      width: 2px;
+  }
+
+  .MainSection .Info {
+      gap: 7px;
+  }
+
+  .MainSection-Content a {
+      font-size: 12px;
+      padding: 6.5px 0px;
+      border-radius: 4px;
+      border: 0.394px solid #8D8D8D;
+      background: #181818;
+      box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+      margin-top: 13px;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 166px;
+  }
+}
+
 
 
 
@@ -133,10 +312,12 @@ text-transform: uppercase;
 
 /*Рост с аликсон*/
 .GrowSection{
-  padding: 68px 0px 79px 0px;
+  padding: 63px 0px 70px 0px;
   background: #212121;
   border: 1px solid #353535;
   border-radius: 15px;
+  margin-top: -11px;
+  position: relative;
 }
 
 .GrowSection > *{
@@ -158,7 +339,7 @@ text-transform: uppercase;
 
 .Grow-Header p{
   font-size: 27px;
-  line-height: 29.97px;
+  line-height: 111%;
   letter-spacing: -0.27;
   color:#fff;
 }
@@ -168,14 +349,14 @@ text-transform: uppercase;
   display: grid;
   margin-top: 51px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 330px;
-  gap:33px;
+  grid-auto-rows: 330px;
+  gap:30px;
 }
 
 .Grow-Content .Card h3{
 font-weight: 500;
 font-size: 29.81px;
-line-height: 38.46px;
+line-height: 111%;
 letter-spacing: 0px;
 color:#fff;
 width: 198px;
@@ -194,7 +375,7 @@ text-transform: uppercase;
 .Grow-Content .Card h4{
   font-weight: 500;
   font-size: 18px;
-  line-height: 23.22px;
+  line-height: 111%;
   letter-spacing: 0px;
   color: #fff;
 }
@@ -204,7 +385,7 @@ text-transform: uppercase;
   letter-spacing: 0px;
   color: #fff;
   font-size: 15px;
-  line-height: 19.35px;
+  line-height: 111%;
 }
 
 .Grow-Content .Card-Content{
@@ -231,29 +412,29 @@ text-transform: uppercase;
 }
 
 .Grow-Content .Card:first-child .Card-El:nth-child(1) > div{
-  width: 55;
-  height: 10;
+  width: 55px;
+  height: 10px;
   border-radius: 3px;
   background: #0485FE;
 }
 
 .Grow-Content .Card:first-child .Card-El:nth-child(2) > div{
-  width: 55;
-  height: 71;
+  width: 55px;
+  height: 71px;
   border-radius: 3px;
   background: #0485FE;
 }
 
 .Grow-Content .Card:first-child .Card-El:nth-child(3) > div{
-  width: 55;
-  height: 108;
+  width: 55px;
+  height: 108px;
   border-radius: 3px;
   background: #0485FE;
 }
 
 .Grow-Content .Card:first-child .Card-El:nth-child(4) > div{
-  width: 55;
-  height: 239;
+  width: 55px;
+  height: 239px;
   border-radius: 3px;
   background: #0485FE;
 }
@@ -272,26 +453,219 @@ text-transform: uppercase;
 }
 
 .Grow-Content .Card:last-child .Card-El:nth-child(1) > div{
-  width: 53;
-  height: 35;
+  width: 53px;
+  height: 35px;
   border-radius: 3px;
   background: #00C99A;
 }
 
 .Grow-Content .Card:last-child .Card-El:nth-child(2) > div{
-  width: 53;
-  height: 85;
+  width: 53px;
+  height: 85px;
   border-radius: 3px;
   background: #00C99A;
 }
 
 .Grow-Content .Card:last-child .Card-El:nth-child(3) > div{
-  width: 53;
-  height: 239;
+  width: 53px;
+  height: 239px;
   border-radius: 3px;
   background: #00C99A;
 }
 
+@media (max-width: 1439px){
+  /*920*/
+  .GrowSection > *{
+    width: 920px;
+  }
+
+  .Grow-Header h2 {
+    width: 384px;
+  }
+
+  .Grow-Header p {
+    font-size: 20px;
+  }
+
+  .Grow-Content .Card:first-child {
+    background-position: 39px 45px;
+    background-size: 299px;
+    padding: 73px 27px 6px 10px;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
+    height: 180px;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
+    height: 32px;
+  }
+
+
+  .Grow-Content .Card:last-child {
+    background-position: 39px 45px;
+    background-size: 299px;
+    padding: 73px 27px 6px 10px;
+  }
+
+  .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
+    height: 177px;
+  }
+
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .GrowSection > *{
+    width: 600px;
+  }
+
+  .Grow-Header{
+    flex-direction: column;
+    gap:30px;
+  }
+
+  .Grow-Content {
+    grid-template-columns: 1fr;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
+     height: 10px; 
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(2) > div {
+    height: 55px;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(3) > div {
+    height: 98px;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
+    height: 219px;
+  }
+
+  .Grow-Content .Card:first-child {
+    padding: 44px 27px 6px 10px;
+    background-position: 36px 17px;
+    background-size: auto;
+  }
+
+  .Grow-Content .Card:last-child {
+    padding: 46px 37px 6px 52px;
+    background-position: 70px 15px;
+    background-size: auto;
+  }
+
+  .Grow-Content .Card:last-child .Card-El:nth-child(1) > div {
+    height: 29px;
+  }
+
+  .Grow-Content .Card:last-child .Card-El:nth-child(2) > div {
+    height: 78px;
+  }
+
+  .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
+    height: 219px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .GrowSection > *{
+    width: 300px;
+  }
+
+  .GrowSection{
+    border-radius: 7px;
+    padding: 27px 0px 30px 0px;
+  }
+
+  .Grow-Header p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  .Grow-Header{
+    gap: 6px;
+  }
+
+  .Grow-Content{
+    margin-top: 12px;
+    gap:10px;
+  }
+
+  .Grow-Content .Card h3 {
+    font-size: 14px;
+    width: 95px;
+    height: 27px;
+    border-radius: 4px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:10px;
+    left: 10px;
+  }
+
+  .Grow-Content{
+    grid-auto-rows: unset;
+    grid-template-rows: 170px 172px;
+  }
+
+  .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
+    width: 26.5px;
+    height: 5px;
+  }
+  .Grow-Content .Card:first-child .Card-El:nth-child(2) > div {
+    width: 26.5px;
+    height: 34px;
+  }
+  .Grow-Content .Card:first-child .Card-El:nth-child(3) > div {
+    width: 26.5px;
+    height: 52px;
+  }
+  .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
+    width: 26.5px;
+    height: 114px;
+  }
+
+  .Grow-Content .Card h4, .Grow-Content .Card p {
+    font-size: 10px;
+  }
+
+  .Grow-Content .Card:first-child {
+    padding: 11px 8px 9px 3px;
+    background-position: 17px 6px;
+    background-size: 216px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9.58px 0px #0485FE,0px 0px 7.19px 0px #0485FE,0px 0px 0.96px 0px #FFFFFF;
+
+  }
+
+
+  .Grow-Content .Card:last-child .Card-El:nth-child(1) > div {
+    width: 25.6px;
+    height: 17px;
+  }
+  .Grow-Content .Card:last-child .Card-El:nth-child(2) > div {
+    width: 25.6px;
+    height: 41px;
+  }
+  .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
+    width: 25.6px;
+    height: 115px;
+  }
+
+  .Grow-Content .Card:last-child {
+    padding: 13px 14px 9px 22px;
+    background-position: 34px 6px;
+    background-size: 203px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5.5px 0px #00C99A,0px 0px 7.6px 0px #00C99A,0px 0px 2px 0px #FFFFFF;
+
+  }
+}
 
 
 
@@ -300,8 +674,10 @@ text-transform: uppercase;
 
 /*Рост рынка*/
 .MarketSection{
-  background: #181818; 
-  padding: 87px 0px 91px 0px;
+  background: #181818 url("../../../img/investitions/MarketBack.png") no-repeat;
+  background-size: 100% 100%; 
+  padding: 72px 0px 79px 0px;
+  margin-top: -9px;
 }
 
 .MarketSection > *{
@@ -309,18 +685,12 @@ text-transform: uppercase;
   margin: auto;
 }
 
-.Market-Header{
-}
-
-
-
 .Market-Content{
   margin-top: 53px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 181px 181px;
-  grid-row-gap: 32px;
-  grid-column-gap: 25px;
+  grid-auto-rows: 181px;
+  gap: 30px;
 }
 
 .Market-Content .Card{
@@ -338,7 +708,7 @@ text-transform: uppercase;
   color:#fff;
   text-transform: uppercase;
   font-size: 35px;
-  line-height: 38.85px;
+  line-height: 111%;
   margin-bottom: 10px;
 }
 
@@ -347,9 +717,79 @@ text-transform: uppercase;
   letter-spacing: -0.20px;
   color:#fff;
   font-size: 20px;
-  line-height: 22.2px;
+  line-height: 111%;
 }
 
+@media (max-width: 1439px){
+  /*920*/
+  .MarketSection > *{
+    width: 920px;
+  }
+  .Market-Content .Card h3 {
+    font-size: 30px;
+  }
+
+  .Market-Content .Card p {
+    font-size: 18px;
+  }
+
+  .Market-Content .Card p br{
+    display: none;
+  }
+
+  .Market-Content .Card{
+    padding: 28px 27px 0px 43px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .MarketSection > *{
+    width: 600px;
+  }
+
+  .Market-Content{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .MarketSection > *{
+    width: 300px;
+  }
+
+  .MarketSection{
+    padding: 35px 0px 39px 0px;
+    background: #181818 url("../../../img/investitions/MarketBack_mobile.png") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .Market-Content .Card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .Market-Content{
+    grid-auto-rows: unset;
+    grid-template-rows: 68px 84px 69px 71px;
+    gap:10px;
+    margin-top: 9px;
+  }
+
+  .Market-Content .Card p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .Market-Content .Card {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+  }
+}
 
 
 
@@ -361,12 +801,14 @@ text-transform: uppercase;
 /*Инвестиции с аликсон 1*/
 .ServicesSection{
   display: flex;
-  padding: 60px 0px;
+  padding: 63px 0px 65px 0px;
   gap:71px;
   align-items: end;
   background: #212121;
   border-radius: 15px;
   border: 1px solid #353535;
+  margin-top: -9px;
+  position: relative;
 }
 
 .ServicesSection h2{
@@ -447,6 +889,105 @@ text-transform: uppercase;
   }
 }
 
+.h2_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .ServicesSection h2{
+      margin-left: calc((100vw - 920px) / 2);
+      font-size: 46px;
+  }
+  
+  .Services-Header{
+      width: calc((100vw - 150px) / 2);
+  }
+
+  .ServicesSection {
+      gap: 40px;
+  }
+
+  .Services-Content p {
+      font-size: 25px;
+      width: 500px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .ServicesSection{
+      flex-direction: column;
+  }
+
+  .ServicesSection h2{
+      margin-left: calc((100vw - 600px) / 2);
+      width: 500px;
+  }
+  
+  .Services-Header{
+      width: 100%;
+  }
+
+  .item {
+      width: 353px;
+      height: 223px;
+  }
+
+  .Services-Content > * {
+      margin-left: calc((100vw - 600px) / 2) !important;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .ServicesSection{
+      padding: 27px 0px 25px 0px;
+      gap:15px;
+      border-radius: 7px;
+      margin-top: -5px;
+  }
+  .ServicesSection h2{
+      margin-left: calc((100vw - 300px) / 2);
+      margin-bottom: 9px;
+      font-size: 23px;
+      width: 300px;
+  }
+
+  .h2_mobile{
+    display: block;
+  }
+
+  .h2_desktop{
+    display: none;
+  }
+
+  .Services-Content > * {
+      margin-left: calc((100vw - 300px) / 2) !important;
+  }
+  .item {
+      width: 125px;
+      height: 77px;
+      margin: 0px;
+      border: none;
+      border-radius: 5px;
+  }
+  .items, .items-wrap {
+      gap: 5px;
+  }
+
+
+  .Services-Content p {
+      font-size: 14px;
+      line-height: normal;
+      width: 270px;
+  }
+
+  .Services-Content div {
+      margin: 8px 0px;
+  }
+}
+
  
 
 
@@ -455,8 +996,10 @@ text-transform: uppercase;
 
 /*Куда стремится бизнес*/
 .BuisnesSection{
-  padding: 96px 0px 115px 0px;
-  background: #181818;
+  padding: 72px 0px 79px 0px;
+  background: #181818 url("../../../img/investitions/BuisnesBack.png") no-repeat;
+  background-size: 100% 100%;
+  margin-top: -9px;
 }
 
 .BuisnesSection > *{
@@ -467,24 +1010,27 @@ text-transform: uppercase;
 .Buisnes-Content{
   display: grid;
   gap:37px;
-  margin-top: 70px;
+  margin-top: 46px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 203px;
+  grid-auto-rows: 203px;
 }
 
 .Buisnes-Content .Card{
   background: #30303021;
   border: 1px solid #353535;
   backdrop-filter: blur(20.299999237060547px);
-  padding: 28px 0px 0px 41px;
+  padding: 0px 0px 0px 41px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Buisnes-Content .Card h3{
   color:#0485FE;
 font-weight: 500;
 font-size: 60px;
-line-height: 66.6px;
+line-height: 111%;
 letter-spacing: -0.6;
 }
 
@@ -494,8 +1040,68 @@ letter-spacing: -0.6;
   font-family: 'Mulish';
   font-weight: 300;
   font-size: 25px;
-  line-height: 27.75px;
+  line-height: 111%;
   width: 514px;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .BuisnesSection > *{
+    width: 920px;
+  }
+
+  .Buisnes-Content .Card h3 {
+    font-size: 43px;
+  }
+
+  .Buisnes-Content .Card p {
+    font-size: 22px;
+    width: auto;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .BuisnesSection > *{
+    width: 600px;
+  }
+
+  .Buisnes-Content{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .BuisnesSection > *{
+    width: 300px;
+  }
+
+  .BuisnesSection{
+    padding: 36px 0px 39px 0px;
+    background: #181818 url("../../../img/investitions/BuisnesBack_mobile.png") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .Buisnes-Content{
+    grid-auto-rows: 98px;
+    gap:10px;
+    margin-top: 9px;
+  }
+
+  .Buisnes-Content .Card h3 {
+    font-size: 25px;
+  }
+
+  .Buisnes-Content .Card p {
+    font-size: 13px;
+    width: 237px;
+  }
+
+  .Buisnes-Content .Card{
+    border-radius: 5px;
+    padding-left: 16px;
+  }
 }
 
 
@@ -506,7 +1112,9 @@ letter-spacing: -0.6;
   background: #212121;
   border: 1px solid #353535;
   border-radius: 15px;
-  padding-top: 61px;
+  padding-top: 63px;
+  margin-top: -9px;
+  position: relative;
 }
 
 .TableSection h2{
@@ -515,16 +1123,16 @@ letter-spacing: -0.6;
 }
 
 .Table-Content{
-  margin-top: 50px;
+  margin-top: 54px;
 }
 
 .Table-Content h3{
 font-weight: 500;
 font-size: 25px;
-line-height: 30.92px;
+line-height: 111%;
 letter-spacing: 0px;
 color: #0485FE;
-width: 605px;
+width: 530px;
 flex-shrink: 0;
 }
 
@@ -534,7 +1142,7 @@ flex-shrink: 0;
   font-family: 'Mulish';
   font-weight: 400;
   font-size: 23px;
-  line-height: 28.44px;
+  line-height: 111%;
   padding: 40px 0px 40px 70px;
   border-left: 1.47px solid #FFFFFF30;
 }
@@ -550,7 +1158,7 @@ flex-shrink: 0;
   font-family: 'Mulish';
   font-weight: 400;
   font-size: 23px;
-  line-height: 25.53px;
+  line-height: 111%;
   list-style: disc;
 }
 
@@ -565,6 +1173,78 @@ flex-shrink: 0;
   align-items: center;
 }
 
+@media (max-width: 1439px){
+  /*920*/
+  .Table-El > div{
+    width: 920px;
+  }
+
+  .TableSection h2{
+    width: 920px;
+  }
+
+  .Table-Content h3 {
+    width: 353px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .Table-El > div{
+    width: 600px;
+  }
+  
+  .TableSection h2{
+    width: 600px;
+  }
+
+  .Table-Content h3 {
+    width: 270px;
+  }
+
+  .Table-Content p, .Table-Content li {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .Table-El > div{
+    width: 300px;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 0px 10px 0px;
+    gap:10px;
+  }
+  
+  .TableSection h2{
+    width: 300px;
+  }
+
+  .TableSection{
+    padding: 27px 0px 22px 0px;
+    border-radius: 7px;
+  }
+
+  .Table-Content{
+    margin-top: 8px;
+  }
+
+  .Table-Content p, .Table-Content li, .Table-Content ul{
+    font-size: 13px;
+    padding: 0px;
+    border:none;
+    list-style: none;
+    font-weight: 300;
+  }
+
+  .Table-Content ul{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  }
+
+}
 
 
 
@@ -574,8 +1254,10 @@ flex-shrink: 0;
 
 /*Наши клиенты*/
 .PartnersSection{
-  background: #181818;
-  padding: 104px 0px 100px 0px;
+  background: #181818 url("../../../img/investitions/PartnersBack.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 72px 0px 82px 0px;
+  margin-top: -9px;
 }
 
 .PartnersSection > *{
@@ -584,21 +1266,100 @@ flex-shrink: 0;
 }
 
 .Partners-Content{
-  margin-top: 41px;
+  margin-top: 46px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 105px);
-  grid-column-gap: 21px;
-  grid-row-gap: 14px;
+  grid-auto-rows: 105px;
+  gap:30px;
 }
 
 .Partners-Content .Card{
-  background: #1717171A;
   border-radius:11px;
   border: 1px solid #0058AB;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(23, 23, 23, 0.10);
+  backdrop-filter: blur(10.050000190734863px);
+}
+
+.Partners-Content .Card:nth-last-child(3){
+  grid-column-start: 2;
+}
+
+.Partners-Content_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .PartnersSection > *{
+    width: 920px;
+  }
+
+  .Partners-Content{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .Partners-Content .Card:nth-last-child(3){
+    grid-column-start: unset;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .PartnersSection > *{
+    width: 600px;
+  }
+
+  .Partners-Content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .PartnersSection h2{
+    width: 300px;
+  }
+
+  .PartnersSection{
+    padding: 36px 0px 32px 0px;
+    background: #181818 url("../../../img/investitions/PartnersBack_mobile.png") no-repeat;
+    background-size: 100% 100%;
+  }
+
+
+  .Partners-Content_mobile{
+    display: block;
+    width: 100%;
+    margin-top: 9px;
+  }
+
+  .Partners-Content{
+      display: none;
+  }
+
+  .Partners-Content_mobile .item{
+      width: 121px;
+      height: 53px;
+      border-radius: 5px;
+      border: 1px solid #0058AB;
+      background: rgba(23, 23, 23, 0.10);
+      backdrop-filter: blur(5.081792831420898px); 
+  }
+
+  .Partners-Content_mobile .item img{
+      width: 50%;
+  }
+
+  .Partners-Content_mobile .items, .items-wrap {
+      gap: 10px;
+  }
+
+  .Partners-Content_mobile .wrap{
+      margin-bottom: 10px;
+  }
 }
 
 
@@ -621,7 +1382,7 @@ flex-shrink: 0;
   }
   
   .Form-Header p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 27px;
     line-height: 29.97px;
     letter-spacing: -1%;
@@ -634,13 +1395,14 @@ flex-shrink: 0;
   }
   
   .FormSection {
-    background: #181818 url("../../../img/Back_2.svg") no-repeat;
+    background: #212121 url("../../../img/Back_2.svg") no-repeat;
     background-size: 760px;
     background-position: -131px -10px;
     padding: 77px 0px 104px 0px;
-    border-radius: 20px;
-    border: 2px solid #3535358f;
+    border-radius: 15px;
+    border: 1px solid #353535;
     position: relative;
+    margin-top: -12px;
   }
   
   .Form-Main {
@@ -684,6 +1446,7 @@ flex-shrink: 0;
     font-style: normal;
     outline: none;
     width: 100%;
+    font-weight: 300;
   }
   
   .FormSection form [type="submit"] {
@@ -692,7 +1455,7 @@ flex-shrink: 0;
     text-align: center;
     color: #fff;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 25px 0px;
     border-radius: 10px;
@@ -706,4 +1469,130 @@ flex-shrink: 0;
 
 box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
 
+  }
+
+
+  @media (max-width: 1439px) {
+    .FormSection > div {
+      width: 920px;
+    }
+  
+    .Form-Header p {
+      width: 401px;
+      font-size: 19px;
+    }
+  
+    .Form-Header h2 {
+      font-size: 43px;
+    }
+  
+    .Form-Header {
+      gap: 44px;
+    }
+  
+    .FormSection form {
+      width: 544px;
+    }
+  
+    .FormSection form p br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 979px) {
+    .FormSection {
+      padding: 30px 0px 40px 0px;
+    }
+  
+    .Form-Header {
+      margin-bottom: 30px !important;
+      flex-direction: column;
+    }
+  
+    .FormSection > div {
+      width: 600px;
+    }
+  
+    .Form-Header p {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+      line-height: 111%;
+      /* display: none; */
+    }
+  
+    .Form-Header h2 {
+      font-size: 23px;
+    }
+  
+    .FormSection form [type="submit"] {
+      width: 100%;
+      font-size: 12px;
+      padding: 15px 0px;
+    }
+  
+    .FormSection form [type="text"],
+    .FormSection form [type="text"]::placeholder,
+    .FormSection form [type="text"]::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+  
+    .FormSection form > div {
+      padding: 14px 16px;
+    }
+  
+    .FormSection form {
+      width: 100%;
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 659px) {
+    .FormSection {
+        background-size: 316px;
+        background-position: -9px 34px;
+      border-radius: 7px;
+    }
+    
+    .FormSection > div {
+      width: 300px;
+      gap: 20px;
+    }
+  
+    .FormSection form [type="submit"] {
+      padding: 12px 0px;
+      border-radius: 5px;
+      border-color: #353535;
+      opacity: 1;
+      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+      margin-bottom: 14px;
+    }
+  
+    .FormSection form p {
+      font-size: 10px;
+      line-height: 100%;
+    }
+  
+    .FormSection form p br {
+      display: block;
+    }
+  
+    .FormSection form > div {
+      padding: 13px 16px;
+      border-radius: 5px;
+      gap:11px;
+    }
+  
+    .FormSection form > div img{
+      width: 13px;
+    }
+  }
+
+
+  /*ФУТЕР*/
+  footer{
+    margin-top: -12px;
   }

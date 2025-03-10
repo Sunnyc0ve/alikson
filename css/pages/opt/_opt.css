@@ -63,7 +63,7 @@ h1{
 .MainSection-Header p{
     color: #FFF;
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 111%;
     letter-spacing: -0.27px;
 }
@@ -335,6 +335,7 @@ text-transform: uppercase;
   line-height: 111%;
   letter-spacing: -0.27;
   color:#fff;
+  font-weight: 300;
 }
 
 .Services-Content{
@@ -825,6 +826,8 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(23, 23, 23, 0.10);
+  backdrop-filter: blur(10.050000190734863px);
 }
 
 .Clients-Content_mobile{

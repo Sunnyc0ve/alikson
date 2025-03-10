@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/investitions/_investitions.css" />
+    <link rel="stylesheet" href="css/pages/investitions/_investitions.css?1.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
                 <h1>alikson инвестиции</h1>
                 <div>
                   <p>Мы создаем возможности для уверенного роста вашего капитала — с гарантией безопасности, стабильной доходностью и полной защитой ваших вложений.</p>
-                  <p>Мы успешно развиваем локальные и международные проекты в сегментах электроники, логистики и финансовых решений, обеспечивая партнерам предсказуемый доход и стабильность.</p>
+                  <p>Успешно развиваем локальные и международные проекты в сегментах электроники, логистики и финансовых решений, обеспечивая партнерам предсказуемый доход и стабильность.</p>
                 </div>
             </div>
             <div class="MainSection-Content">
@@ -108,7 +108,7 @@
             <div class="Market-Content">
                 <div class="Card">
                     <h3>Объем рынка</h3>
-                    <p>Прогнозируется рост до 800 млрд ₽ в 2025 году</p>
+                    <p>Прогнозируется рост до 800 млрд ₽ в 2025 г.</p>
                 </div>
                 <div class="Card">
                     <h3>e-commerce</h3>
@@ -126,7 +126,8 @@
         </section>
         <section class="ServicesSection">
             <div class="Services-Header">
-                <h2>Инвестиции с Alikson Group</h2>
+                <h2 class="h2_desktop">Инвестиции с Alikson Group</h2>
+                <h2 class="h2_mobile">Инвестиции<br> с Alikson Group</h2>
                     <div class="wrap">
                         <div class="items-wrap">
                             <div class="items marquee">
@@ -224,9 +225,101 @@
                 <div class="Card"><img src="img/investitions/Partners1.svg"></div>
                 <div class="Card"><img src="img/investitions/Partners1.svg"></div>
                 <div class="Card"><img src="img/investitions/Partners1.svg"></div>
-                <div class="Card" style="grid-column-start: 2;"><img src="img/investitions/Partners1.svg"></div>
                 <div class="Card"><img src="img/investitions/Partners1.svg"></div>
                 <div class="Card"><img src="img/investitions/Partners1.svg"></div>
+                <div class="Card"><img src="img/investitions/Partners1.svg"></div>
+            </div>
+            <div class="Partners-Content_mobile">
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                            <div class="item"><img src="img/investitions/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
