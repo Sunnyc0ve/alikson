@@ -8,8 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/header.css?1.1" />
-    <link rel="stylesheet" href="css/main.css?1.2" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/main.css?2.2" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
@@ -28,7 +28,7 @@
         <div class="MainContainer">
           <img src="img/name.svg" />
           <p>Технологии<br />Доверие<br />Результат</p>
-          <a href="">СВЯЗАТЬСЯ</a>
+          <a href="">Связаться</a>
         </div>
       </section>
       <section class="AboutSection">
@@ -78,31 +78,31 @@
           <div class="Info">
             <div class="Card">
               <div>
-                <h3><span>42,8</span> млрд ₽</h3>
+                <h3>42,8 млрд ₽</h3>
                 <p>годовой оборот</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3><span>20</span> МЛН $</h3>
+                <h3>20 МЛН $</h3>
                 <p>недвижимость компании</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3><span>100+</span></h3>
+                <h3>100+</h3>
                 <p>международных партнеров</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3><span>400+</span></h3>
+                <h3>400+</h3>
                 <p>сотрудников</p>
               </div>
             </div>
             <div class="Card">
               <div>
-                <h3><span>20+</span> проектов</h3>
+                <h3>20+ проектов</h3>
                 <p>инвестиционный портфель</p>
               </div>
             </div>
@@ -693,7 +693,7 @@
       <section class="FormSection">
         <div class="Form-Header">
           <h2>ПРИГЛАШАЕМ<br />К СОТРУДНИЧЕСТВУ</h2>
-          <p>Станьте частью инноваций и стройте будущее вместе с ALIKSON</p>
+          <p>Станьте частью инноваций и стройте будущее вместе<br> с ALIKSON</p>
         </div>
         <div class="Form-Main">
             <form action="" method="POST">
@@ -724,8 +724,8 @@
                     <input type="hidden" name="topic" value="">
                 </div>
 
-                <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-                <p>Мы свяжемся с вами в ближайшее время, чтобы ответить<br> на все вопросы</p>
+                <input type="submit" value="Оставить заявку" />
+                <p>Мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы</p>
             </form>
         </div>
       </section>
@@ -845,8 +845,8 @@
   watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
         660: { slidesPerView: 3, spaceBetween: -1200 },
-        980: { slidesPerView: 2, spaceBetween: -1130 },
-        1440: { slidesPerView: 3, spaceBetween: -755 },
+        980: { slidesPerView: 3, spaceBetween: -600 },
+        1440: { slidesPerView: 5, spaceBetween: 200 },
       },
       direction: "horizontal",
       navigation: {
@@ -964,8 +964,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenInput = select.querySelector("input[name='topic']");
 
     // Открытие/закрытие списка
-    header.addEventListener("click", function () {
+    select.addEventListener("click", function () {
+      if(select.getAttribute('class')!='custom-select active'){
         select.classList.toggle("active");
+      }else{
+        select.classList.remove("active");
+      }
     });
 
     // Выбор элемента из списка
@@ -973,7 +977,7 @@ document.addEventListener("DOMContentLoaded", function () {
         option.addEventListener("click", function () {
             selectedText.textContent = this.textContent;
             hiddenInput.value = this.dataset.value;
-            select.classList.remove("active");
+            selectedText.setAttribute('style','color:#fff;')
         });
     });
 

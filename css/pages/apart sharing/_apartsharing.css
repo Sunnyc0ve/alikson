@@ -3,14 +3,7 @@ body{
     background: #212121;
 }
 
-h2{
-    color: #FFF;
-    font-size: 52.127px;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.521px;
-    text-transform: uppercase;
-}
+
 
 @media (max-width: 979px) {
     /*600*/
@@ -35,112 +28,108 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:174px;
-    padding: 59px 0px 85px 0px;
-    background: url("../../../img/apart_sharing/MainBack.jpg") no-repeat;
-    background-size: 100% 100%;
+    gap:70px;
+    padding: 130px 0px 105px 0px;
+    background: #181818 url("../../../img/apart_sharing/MainBack.png") center;
+    background-size: 1920px 100%;
     margin-top: -4px;
 }
 
 .MainSection > div{
     width: 1280px;
+    margin: auto;
 }
 
 .MainSection-Header{
     display: flex;
-    gap:24px;
+    gap:10px;
     align-items: start;
 }
 h1{
     color: #FFF;
-    font-size: 69.58px;
+    font-size: 72px;
     font-weight: 500;
     line-height: 111%; 
-    letter-spacing: -0.696px;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
-    width: 532px;
+    width: 558px;
     flex-shrink: 0;
 }
 
 .MainSection-Header p{
     color: #FFF;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 111%;
-    letter-spacing: -0.27px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.25px;
 }
 
 .MainSection-Content{
     display: flex;
     align-items: end;
-    gap:259px;
+    gap:295px;
 }
 
 .MainSection-Content a{
     color: #FFF;
-    font-size: 30.881px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.618px;
-    padding: 17.156px 25.734px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
+    border-radius: 5px;
+    border: 1px solid rgba(170, 170, 170, 0.15);
+    background: #112A4D;
+    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+    width: 272px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    background: #fff;
+    color:#000;
 }
 
 .MainSection-Content > div{
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    row-gap:36px;
-    column-gap: 10px;
+    grid-template-columns: 1fr;
+    gap:40px;
 }
 
 .MainSection .Info{
     display: flex;
     align-items: center;
-    gap:18px;
+    gap:20px;
 }
 
 .MainSection .Info::before{
     content: "";
-    height: 90%;
-    width: 4px;
+    height: 72px;
+    width: 3px;
     background: #0485FE;
     display: block;
     flex-shrink: 0;
 }
 
-.MainSection .Info:first-child{
-    grid-column: span 2;
-}
-
 .MainSection .Info h3{
-    color: #0485FE;
-font-size: 69px;
-font-weight: 500;
-line-height: 111%;
-letter-spacing: -0.69px;
+    color: #fff;        
+font-size: 64px;
+font-weight: 700;
+line-height: 40px;
+margin-bottom: 10px;
 text-transform: uppercase;
 }
 
 .MainSection .Info p{
-    color: #FFF;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
     font-weight: 300;
-    line-height: 111%;
-    letter-spacing: -0.2px;
-    font-family: "Mulish";
+    line-height: normal;
 }
 
-.MainSection-Header p:last-child{
-    display: none;
-}
 @media (max-width: 1439px){
     .MainSection > div{
         width: 920px;
@@ -282,44 +271,42 @@ text-transform: uppercase;
 
 /*Наши сервисы*/
 .ServicesSection{
-    margin: auto;
-    padding: 68px 0px 65px 0px;
-    border-radius: 15px;
-    border: 1px solid #353535;
+    padding: 90px 0px 105px 0px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
     background: #212121 url("../../../img/apart_sharing/ServicesBack.png") no-repeat;
-    background-position: calc((100vw - 1430px) / 2);
-    margin-top: -9px;
+    background-position: calc((100vw - 1765px) / 2) -139px;
     position: relative;
+    margin-top: -15px;
 }
 
 .ServicesSection > div{
     width: 1280px;
     margin: auto;
+    display: flex;
 }
 
 .Services-Content{
     display: flex;
     flex-direction: column;
-    gap:18px;
-    width: 732px;
+    gap:20px;
     margin-left: auto;
+    width: 712px;
 }
 
 .Services-Content .Card{
-    background: #30303061;
-    border: 1px solid #0058AB;
-    backdrop-filter: blur(19.600000381469727px);
     border-radius: 10px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(5px);
     display: flex;
-    gap:40px;
-    align-items: center;
+    gap:20px;
     width: 100%;
-    height: 111px;
-    padding-left: 35px;
+    height: 74px;
+    padding: 20px;
 }
 
 .Services-Content .Card > div{
-    width: 93px;
+    width: 35px;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -327,10 +314,9 @@ text-transform: uppercase;
 
 .Services-Content .Card h3{
     color: #FFF;
-    font-size: 32.44px;
+    font-size: 24px;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 @media (max-width: 1439px){
@@ -408,11 +394,17 @@ text-transform: uppercase;
 
 /*Система автоматизации*/
 .AutoSection{
-    background: #181818 url("../../../img/apart_sharing/AutoBack.png") no-repeat;
-    background-size: 100% 330%;
-    background-position: right -881px;
-    padding: 69px 0px 95px 0px;
-    margin-top: -9px;
+    background: #181818 url("../../../img/apart_sharing/AutoBack.png") center;
+    background-size: 1920px 100%;
+    padding: 90px 0px 105px 0px;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #2f2f2f;
+    margin-top: -15px;
+    position: relative;
+}
+
+.AutoSection h2{
+    color: #0485FE;
 }
 
 .AutoSection > *{
@@ -421,15 +413,16 @@ text-transform: uppercase;
 }
 
 .Auto-Content{
-    margin-top: 57px;
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: 422px 363px 379px;
-    grid-template-rows: 297px;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 323px;
+    gap: 20px;
 }
 
 .Auto-Content .Card{
     transition: 0.5s ease;
+    padding: 20px;
     flex-shrink: 0;
     border-radius: 11px;
     border: 2px solid #393939;
@@ -443,16 +436,13 @@ backdrop-filter: blur(16.980453491210938px);
 }
 
 
-.Auto-Content .Card-Header{
-    border-bottom: 2px solid #393939;
-    padding: 15px 0px 11px 23px;
-}
+
 
 
 
 .Auto-Content .Card h3{
-    color: #FFF;
-    font-size: 25px;
+    color: #0485FE;
+    font-size: 32px;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
@@ -460,25 +450,31 @@ backdrop-filter: blur(16.980453491210938px);
 
 .Auto-Content .Card p{
     color: #FFF;
-    font-size: 16.344px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    margin: 10px 0px 25px 0px;
 }
 
-.Auto-Content .Card-Content{
-    padding: 11px 0px 0px 23px;
-}
 
 .Auto-Content .Card-Content li{
     color: #FFF;
-    font-size: 20.431px;
-    font-weight: 400;
-    line-height: 111%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
     list-style: disc;
-    margin-left: 20px;
-    font-family: "Mulish";
+    margin-left: 18px;
+    gap:10px;
 }
+/* .Auto-Content .Card-Content li::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+} */
 .Auto-Content_mobile{
     display: none;
 }
@@ -665,41 +661,46 @@ backdrop-filter: blur(16.980453491210938px);
 /*Преимущества секция*/
 .AdvantagesSection{
     display: flex;
-    border-radius: 15px;
-    border: 1px solid #353535;
     background: #212121 url("../../../img/apart_sharing/AdvantagesBack.png") no-repeat;
-    background-position: calc((100vw - 1430px) / 2) 198px;
-    padding: 78px 0px 120px calc((100vw - 1280px) / 2);
+    background-position: calc((100vw - 1803px) / 2) -11px;
+    padding: 90px 0px;
     gap:62px;
     position: relative;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    margin-top: -15px;
 }
 
-.Advantages-Header{
-    display: flex;
-    flex-direction: column;
-    width: 498px;
-    flex-shrink: 0;
+.Advantages-Container{
+    width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 568px 1fr;
 }
 
 .Advantages-Content{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.Advantages-Content .Card{
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    align-items: center;
 }
 
 .Advantages-Content p{
     color: #FFF;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 111%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
 }
 
-.Advantages-Content div{
-    background: #0058AB;
-    height: 1px;
-    width: 100%;
-    margin: 25px 0px;
-}
 
 @media (max-width: 1439px){
     .AdvantagesSection{
@@ -763,11 +764,13 @@ backdrop-filter: blur(16.980453491210938px);
 
 /*Как это работает секция*/
 .HowSection{
-    background: #181818 url("../../../img/apart_sharing/HowBack.png") no-repeat;
-    background-size: 100% 280%;
-    background-position: right -623px;
-    padding: 79px 0px 104px 0px;
-    margin-top: -9px;
+    background: #181818 url("../../../img/apart_sharing/HowBack.png") center;
+    background-size: 1920px 100%;
+    padding: 90px 0px 105px 0px;
+    margin-top: -15px;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #2f2f2f;
+    position: relative;
 }
 
 .HowSection > *{
@@ -776,39 +779,33 @@ backdrop-filter: blur(16.980453491210938px);
 }
 
 .How-Content{
-    margin-top: 57px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 27px;
-    grid-column-gap: 25px;
-    justify-content: space-between;
+    gap:20px;
+    grid-auto-columns: 93px;
 }
 
 .How-Content .Card{
-    height: 165px;
     border-radius: 10px;
-    border: 1px solid #0058AB;
-    background: #30303061;
-    backdrop-filter: blur(19.600000381469727px);
+    border: 1px solid rgba(170, 170, 170, 0.15);
+    background: #171717;
     display: flex;
     align-items: center;
-    gap:16px;
-    padding-left: 25px;
+    gap:20px;
+    padding: 20px;
 }
 
 .How-Content .Card h3{
-    font-weight: 300;
-    font-size: 110.17px;
-    /* line-height: 142.64px; */
-    width: 147px;
+    font-weight: 500;
+    font-size: 72px;
     color: #0485FE;
-    flex-shrink: 0;
 }
 
 .How-Content .Card p{
     font-weight: 300;
-    font-size: 20px;
-    line-height: 22.2px;
+    font-size: 18px;
+    line-height: normal;
     color:#fff;
 }
 
@@ -878,240 +875,6 @@ backdrop-filter: blur(16.980453491210938px);
   }
 
 
-/* Секция форма */
-
-.Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 300;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #212121 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
-    padding: 77px 0px 104px 0px;
-    border-radius: 20px;
-    border: 1px solid #353535;
-    position: relative;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 300;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -0.27px;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-    font-weight: 300;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
-
-box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
-
-  }
-
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 401px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      font-size: 43px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  
-    .FormSection form p br {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      padding: 30px 0px 40px 0px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
-      line-height: 111%;
-      /* display: none; */
-    }
-  
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
-    .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
-    }
-  
-    .FormSection form > div {
-      padding: 14px 16px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 12px;
-    }
-  }
-  
-  @media (max-width: 659px) {
-    .FormSection {
-        background-size: 316px;
-        background-position: -2px 22px;
-      border-radius: 7px;
-    }
-    
-    .FormSection > div {
-      width: 300px;
-      gap: 20px;
-    }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      font-size: 10px;
-      line-height: 100%;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*ФУТЕР*/
-  footer{
-    margin-top: -11px;
-  }

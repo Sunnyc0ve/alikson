@@ -4,8 +4,11 @@
     <title>Alikson - Тендерный дивизион</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/tender/_tender.css?1.0" />
+
+    
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/tender/_tender.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +21,7 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>Тендерный<br> дивизион</h1>
-                <p>Мы занимаемся комплексным снабжением крупных компаний и госучреждений, предлагая прямые поставки электроники, комплектующих, промышленного оборудования и офисной техники с высоким уровнем обслуживания</p>
+                <p>Инновационная платформа для аренды, сдачи и управления недвижимостью, который автоматизирует процесс и делает его максимально удобным для арендодателей и арендаторов. Предлагаем современные решения для бесконтактного заселения, контроля объектов и управления доходами</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -45,6 +48,7 @@
             </div>
         </section>
         <section class="GrowSection">
+            <img class="Decor" src="img/tender/decor.png">
             <div>
                 <div class="Grow-Header"> 
                     <h2>Рост выручки</h2>
@@ -56,17 +60,20 @@
                 <div class="Grow-Content">
                     <div class="Graph1">
                         <h3>300 млн ₽</h3>
-                        <div></div>
                         <p>2023 ГОД</p>
                     </div>
                     <div class="Graph2">
-                        <h3>1,9 МЛРД ₽</h3>
-                        <div>+633%</div>
+                        <div class="Graph-Header">
+                            <h3>1,9 МЛРД ₽</h3>
+                            <div>+633%</div>
+                        </div>
                         <p>2024 ГОД</p>
                     </div>
                     <div class="Graph3">
-                        <h3>5 МЛРД ₽</h3>
-                        <div>+ 263%</div>
+                        <div class="Graph-Header">
+                            <h3>5 МЛРД ₽</h3>
+                            <div>+ 263%</div>
+                        </div>
                         <p>2025 ГОД</p>
                     </div>
                 </div>
@@ -78,24 +85,25 @@
             </div>
             <div class="Advantages-Content">
                 <div class="Card">
-                    <div><img src="img/tender/Adv1.svg"></div>
+                    <img src="img/tender/Adv1.svg">
                     <h3>Комплексный подход</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv2.svg"></div>
+                    <img src="img/tender/Adv2.svg">
                     <h3>Персональный менеджер</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv3.svg"></div>
+                    <img src="img/tender/Adv3.svg">
                     <h3>Прямые поставки</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/tender/Adv4.svg"></div>
+                    <img src="img/tender/Adv4.svg">
                     <h3>Надежность</h3>
                 </div>
             </div>
         </section>
         <section class="ServicesSection">
+        <div class="Services-Container">
             <div class="Services-Header">
                 <h2>Наши услуги</h2>
                     <div class="wrap">
@@ -120,18 +128,32 @@
                     </div>
             </div>
             <div class="Services-Content">
-                <p>Закупка и логистика</p>
-                <div></div>
-                <p>Консультации по всем вопросам<br> тендерных закупок</p>
-                <div></div>
-                <p>Анализ рынка и предложений</p>
-                <div></div>
-                <p>Юридическое сопровождение</p>
-                <div></div>
-                <p>Поставка электроники и комплектующих</p>
-                <div></div>
-                <p>Специальные условия для государственных<br> учреждений</p>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Закупка и логистика</p>
+                </div>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Консультации по всем вопросам тендерных закупок</p>
+                </div>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Анализ рынка и предложений</p>
+                </div>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Юридическое сопровождение</p>
+                </div>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Поставка электроники и комплектующих</p>
+                </div>
+                <div class="Card">
+                    <img src="img/tender/checkbox.svg">
+                    <p>Специальные условия для государственных учреждений</p>
+                </div>
             </div>
+        </div>
         </section>
         <section class="DirectionsSection">
             <h2>Направления работы</h2>
@@ -144,25 +166,25 @@
                         <div>    
                             <img src="img/tender/Directions1.svg">
                         </div>
-                        <h3>электроника</h3>
+                        <h3>Электроника</h3>
                     </div>
                     <div class="Card">
                         <div>    
                             <img src="img/tender/Directions2.svg">
                         </div>
-                        <h3>комплектующие</h3>
+                        <h3>Комплектующие</h3>
                     </div>
                     <div class="Card">
                         <div>    
                             <img src="img/tender/Directions3.svg">
                         </div>
-                        <h3>офисная техника и мебель</h3>
+                        <h3>Офисная техника и мебель</h3>
                     </div>
                     <div class="Card">
                         <div>    
                             <img src="img/tender/Directions4.svg">
                         </div>
-                        <h3>промышленное оборудование</h3>
+                        <h3>Промышленное оборудование</h3>
                     </div>
                 </div>
             </div>
@@ -171,30 +193,30 @@
             <h2>наши клиенты</h2>
             <div class="Clients-Content">
                 <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
-                <div class="Card"><img src="img/tender/Clients1.svg"></div>
+                <div class="Card"><img src="img/tender/Clients2.svg"></div>
+                <div class="Card"><img src="img/tender/Clients3.svg"></div>
+                <div class="Card"><img src="img/tender/Clients4.svg"></div>
+                <div class="Card"><img src="img/tender/Clients5.svg"></div>
+                <div class="Card"><img src="img/tender/Clients6.svg"></div>
+                <div class="Card"><img src="img/tender/Clients7.svg"></div>
+                <div class="Card"><img src="img/tender/Clients8.svg"></div>
+                <div class="Card"><img src="img/tender/Clients9.svg"></div>
+                <div class="Card"><img src="img/tender/Clients10.svg"></div>
+                <div class="Card"><img src="img/tender/Clients11.svg"></div>
+                <div class="Card"><img src="img/tender/Clients12.svg"></div>
+                <div class="Card"><img src="img/tender/Clients13.svg"></div>
+                <div class="Card"><img src="img/tender/Clients14.svg"></div>
+                <div class="Card"><img src="img/tender/Clients15.svg"></div>
+                <div class="Card"><img src="img/tender/Clients16.svg"></div>
+                <div class="Card"><img src="img/tender/Clients17.svg"></div>
+                <div class="Card"><img src="img/tender/Clients18.svg"></div>
+                <div class="Card"><img src="img/tender/Clients19.svg"></div>
+                <div class="Card"><img src="img/tender/Clients20.svg"></div>
+                <div class="Card"><img src="img/tender/Clients21.svg"></div>
+                <div class="Card"><img src="img/tender/Clients22.svg"></div>
+                <div class="Card"><img src="img/tender/Clients23.svg"></div>
+                <div class="Card"><img src="img/tender/Clients24.svg"></div>
+                <div class="Card"><img src="img/tender/Clients25.svg"></div>
             </div>
             <div class="Clients-Content_mobile">
                 <div class="wrap">
@@ -289,31 +311,7 @@
                 </div>
             </div>
         </section>
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>

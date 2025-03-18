@@ -32,12 +32,15 @@
   h1 {
   }
   
-  h2 {
-    font-size: 52px;
-    color: #0485fe;
+
+
+  h2{
+    color: #FFF;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 100%;
-  }
+    line-height: 111%;
+    text-transform: uppercase;
+}
 
 
   
@@ -67,13 +70,16 @@
   }
   
   header nav a,
-  header input,
-  header input::placeholder,
-  header input::-webkit-input-placeholder {
+  header input {
     color: #fff;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     outline: none;
+  }
+  
+  header input::placeholder,
+  header input::-webkit-input-placeholder{
+    color: #FFFFFF99;
   }
   
   header nav a:hover {
@@ -81,7 +87,7 @@
   }
   
   header input {
-    width: 130px;
+    width: 134px;
   }
   
   .Header-Menu {
@@ -91,7 +97,7 @@
     border-radius: 6px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   
   .Header-Menu_mobile, .Header-Menu_mobile_hidden{
@@ -99,7 +105,7 @@
   }
 
   @media (min-width: 1921px) {
-    main{
+    main, header, footer{
       width: 1920px;
       margin: auto;
     }
@@ -267,8 +273,12 @@
 
   /* ФУТЕР */
 footer {
-    background: rgba(23, 23, 23, 1);
-    padding: 59px 0px 30px 0px;
+    padding: 90px 0px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #171717;
+    margin-top: -15px;
+    position: relative;
   }
   
   .FooterContainer {
@@ -300,14 +310,14 @@ footer {
   
   .FooterContainer-Right h3 {
     color: #fff;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 22px;
   }
   
   .FooterContainer-Right a {
     color: #bebebe;
-    font-size: 13px;
+    font-size: 16px;
     display: block;
     margin-bottom: 12px;
   }

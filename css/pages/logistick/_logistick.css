@@ -3,20 +3,10 @@ body{
     background: #212121;
 }
 
-h2{
-    color: #FFF;
-    font-size: 52.127px;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.521px;
-    text-transform: uppercase;
-}
-
 @media (max-width: 979px) {
     /*600*/
     h2{
         color: #0485FE;
-        /* font-size: 23px; */
     }
   }
 
@@ -35,10 +25,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:280px;
-    padding: 60px 0px 80px 0px;
-    background: url("../../../img/logistick/MainBack.jpg") no-repeat;
-    background-size: 100% 100%;
+    gap:70px;
+    padding: 130px 0px 105px 0px;
+    background: #181818 url("../../../img/apart_sharing/MainBack.png") center;
+    background-size: 1920px 100%;
+    margin-top: -4px;
 }
 
 .MainSection > div{
@@ -47,97 +38,93 @@ h2{
 
 .MainSection-Header{
     display: flex;
-    gap:41px;
+    gap:10px;
     align-items: start;
 }
+
 h1{
     color: #FFF;
-    font-size: 83px;
+    font-size: 72px;
     font-weight: 500;
     line-height: 111%; 
-    letter-spacing: -0.696px;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
-    width: 515px;
+    width: 558px;
     flex-shrink: 0;
 }
 
 .MainSection-Header p{
     color: #FFF;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 111%;
-    letter-spacing: -0.47px;
-    width: 639px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.25px;
 }
 
 .MainSection-Content{
     display: flex;
     align-items: end;
-    gap:260px;
+    gap:295px;
 }
 
 .MainSection-Content a{
-    width: 292px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #FFF;
-    font-size: 30.881px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.618px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
+    border-radius: 5px;
+    border: 1px solid rgba(170, 170, 170, 0.15);
+    background: #112A4D;
+    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+    width: 272px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    background: #fff;
+    color:#000;
 }
 
 .MainSection-Content > div{
     display: grid;
-    grid-template-columns: 384px 1fr;
+    grid-template-columns: 1fr;
+    gap:40px;
 }
 
 .MainSection .Info{
     display: flex;
     align-items: center;
-    gap:18px;
+    gap:20px;
 }
 
-.MainSection .Info::before{
+.MainSection .Info::before {
     content: "";
-    height: 90%;
-    width: 4px;
+    height: 72px;
+    width: 3px;
     background: #0485FE;
     display: block;
     flex-shrink: 0;
 }
 
-.MainSection .Info h3{
-    color: #0485FE;
-font-size: 67px;
-font-weight: 500;
-line-height: 80%;
-letter-spacing: -0.69px;
-text-transform: uppercase;
+.MainSection .Info h3 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.MainSection .Info p{
-    color: #FFF;
-    letter-spacing: -0.25px;
-    font-family: "Mulish";
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 111%;
-}
-
-.p_mobile{
-    display: none;
+.MainSection .Info p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
 }
 
 @media (max-width: 1439px){
@@ -303,71 +290,51 @@ text-transform: uppercase;
 
 /*Наши сервисы*/
 .ServicesSection{
-    display: flex;
-    border-radius: 15px;
-    border: 1px solid #353535;
-    padding: 68px 0px 84px 0px;
-    gap:17px;
-    margin-top: -9px;
-    background: #212121;
+    padding: 90px 0px 105px 0px;
+    margin-top: -15px;
     position: relative;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #141414;
 }
 
-.ServicesSection h2{
-    margin-left: calc((100vw - 1280px) / 2);
-    margin-bottom: 80px;
+.Services-Container{
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Services-Header{
     display: flex;
     flex-direction: column;
-    width: 498px;
-    flex-shrink: 0;
-    width: calc((100vw - 300px) / 2);
+    gap:50px;
+    width: 473px;
 }
 
 .Services-Content{
-    width: 100%;
+    width: 712px;
     display: flex;
     flex-direction: column;
-}
-
-.Services-Content .Card p{
-    color: #FFF;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 111%;
-    text-transform: uppercase;
-    width: 742px;
-}
-
-.Services-Content > p{
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 111%;
-    margin-bottom: auto;
-}
-
-.Services-Content .Border{
-    background: #0058AB;
-    height: 1px;
-    width: 100%;
-    margin: 57px 0px 57px 134px;
+    gap: 20px;
 }
 
 .Services-Content .Card{
+    padding: 20px;
     display: flex;
-    gap: 47px;
+    gap:20px;
     align-items: center;
+    border-radius: 10px;
+    background: #2C2C2C;
+    backdrop-filter: blur(5px);
 }
 
-.Services-Content .Card > div{
-    width: 87px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Services-Content p{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: auto;
 }
 
 
@@ -394,8 +361,7 @@ text-transform: uppercase;
     justify-content: center;
     align-items: center;
     transition: all 0.1s ease-in-out;
-    /* width: 553px; */
-    height: 430px;
+    height: 265px;
   }
 
   .item img{
@@ -533,9 +499,12 @@ text-transform: uppercase;
 
 /*География*/
 .GeographySection{
-    padding-top: 76px;
-    background: #181818;
-    margin-top: -9px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #171717;
+    padding-top: 90px;
+    position: relative;
+    margin-top: -15px;
 }
 
 .Geography-Header{
@@ -543,18 +512,24 @@ text-transform: uppercase;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Geography-Img{
+    display: flex;
+    justify-content: center;
 }
 
 .Geography-Header p{
-font-weight: 500;
-font-size: 27px;
-line-height: 111%;
-letter-spacing: 0px;
-color: #fff;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.25px;
 }
 
 .GeographySection img{
-    width: 100%;
+    width: 1280px;
 }
 
 @media (max-width: 1439px){
@@ -600,12 +575,12 @@ color: #fff;
 
    /*Наши услуги*/
 .OurServicesSection{
-    padding: 78px 0px 108px 0px;
-    background: #212121;
-    border: 1px solid #353535;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: -10px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 90px 0px 105px 0px;
     position: relative;
+    margin-top: -30px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #171717;
 }
 
 .OurServicesSection > *{
@@ -614,81 +589,79 @@ color: #fff;
 }
 
 .OurServices-Header{
-    display: grid;
-    grid-template-columns: 498px 1fr;
-    gap:57px;
+    display: flex;
+    gap:95px;
+}
+
+.OurServices-Header h2{
+    width: 100%;
 }
 
 .OurServices-Body{
     margin-top: 40px;
     display: flex;
-    gap:56px;
+    gap:95px;
 }
 
 .OurServices-Img{
-    width: 493px;
-    height: 370px;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 0px 42.68px 0px #0485FE, 0px 0px 16.79px 0px #0485FEBF, 0px 0px 2.79px 0px #FFFFFF;
+    width: 100%;
+    height: 347px;
     backdrop-filter: blur(34.17096710205078px);
     border-radius: 10px;
     overflow: hidden;
 }
 
 .OurServices-Img img{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .OurServices-Content{
     display: flex;
     flex-direction: column;
-    gap:22px;
-    width: 732px;
-    margin-left: auto;
+    gap:20px;
+    width: 712px;
+    flex-shrink: 0;
 }
 
 .OurServices-Content .Card{
-    background: #303030;
     border-radius: 10px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(5px);
     display: flex;
-    gap:36px;
+    gap:20px;
     align-items: center;
     width: 100%;
-    height: 109px;
-    padding-left: 41px;
+    padding:20px;
 }
 
-.OurServices-Content .Card .Card-Img{
-    width: 56px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
+.OurServices-Content .Card .Card-Img img{
+    width: 30px;
 }
 
 .OurServices-Content .Card h3{
     color: #FFF;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 38.7px;
-    letter-spacing: 0px;
-    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
 }
 
 .OurServices-Content .Card p{
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 18px;
     font-weight: 400;
-    font-size: 27px;
-    line-height: 111%;
-    letter-spacing: 0px;
+    line-height: normal;
 }
 
 .OurServices-Header p{
     color: #FFF;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 111%;
-    letter-spacing: 0px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.25px;
+    width: 712px;
+    flex-shrink: 0;
 }
 
 @media (max-width: 1439px){
@@ -807,57 +780,51 @@ color: #fff;
 
   /*Товары которые мы поставляем*/
 .GoodsSection{
-    display: flex;
-    border-radius: 10px 10px 0px 0px;
-    border: 1px solid #353535;
-    background: #191919 url("../../../img/logistick/GoodsBack.png");
-    padding: 79px 0px 114px calc((100vw - 1280px) / 2);
+    background: #171717 url("../../../img/logistick/GoodsBack.png") center;
+    background-size: 1920px 100%;
+    border-radius: 20px 20px 0px 0px;
+    padding: 90px 0px 105px 0px;
     position: relative;
-    margin-top: -11px;
+    margin-top: -15px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
 }
 
-.Goods-Header{
-    display: flex;
-    flex-direction: column;
-    width: 553px;
-    flex-shrink: 0;
+.GoodsSection > div{
+    width: 1280px;
+    margin: auto;
 }
+
 
 .Goods-Content{
-    width: 100%;
-    margin-top: 113px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 50px !important;
 }
-
 
 
 .Goods-Content .Card p{
     color: #FFF;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 111%;
-    text-transform: uppercase;
-    width: 404px;
+    line-height: normal;
 }
 
-
-.Goods-Content .Border{
-    background: #0058AB;
-    height: 1px;
-    width: 100%;
-    margin: 30px 0px 30px 113px;
-}
 
 .Goods-Content .Card{
     display: flex;
-    gap: 37px;
+    gap: 20px;
+    padding: 20px;
     align-items: center;
+    width: 712px;
+    border-radius: 10px;
+    background: #2C2C2C;
+    backdrop-filter: blur(5px);
 }
 
-.Goods-Content .Card > div{
-    width: 76px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Goods-Content .Card > div img{
+    width: 30px;
 }
 
 .Goods-Img{
@@ -1166,232 +1133,4 @@ color: #fff;
     .Why-Content .Card:nth-child(3) img{
         width: 25px;
     }
-  }
-
-
-
-
-/* Секция форма */
-
-.Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 300;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #181818 url("../../../img/tender/FormBack.png") no-repeat;
-    padding: 77px 0px 104px 0px;
-    margin-top: -12px;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 300;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-    font-weight: 300;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
-
-box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
-
-  }
-  
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 401px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      font-size: 43px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  
-    .FormSection form p br {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      padding: 30px 0px 40px 0px;
-      background: #181818 url("../../../img/Back_2.svg") no-repeat;
-      background-size: 316px;
-      background-position: -20px 72px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
-      line-height: 111%;
-      /* display: none; */
-    }
-  
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
-    .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
-    }
-  
-    .FormSection form > div {
-      padding: 14px 16px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 12px;
-    }
-  }
-  
-  @media (max-width: 659px) {
-    .FormSection {
-        background-size: 316px;
-        background-position: -20px 32px;
-      border-radius: 7px;
-    }
-    
-    .FormSection > div {
-      width: 300px;
-      gap: 20px;
-    }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      font-size: 10px;
-      line-height: 100%;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  }
-
-
-
-
-  /*ФУТЕР*/
-  footer{
-    border-radius: 15px;
-    background: #212121;
-    border: 1px solid #353535;
   }

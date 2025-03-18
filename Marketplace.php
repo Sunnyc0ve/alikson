@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/marketplace/_marketplace.css" />
+    <link rel="stylesheet" href="css/pages/marketplace/_marketplace.css?1.1" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,20 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>аликсон маркетплейс</h1>
-                <p>Аликсон Маркетплейс — платформа, где поставщики находят новых клиентов, а покупатели — качественные товары из различных категорий по привлекательным ценам. Мы делаем процесс торговли легким и комфортным, обеспечивая прозрачные условия, быструю логистику и поддержку на каждом этапе.</p>
-            </div>
+                <p class="p_desktop">Аликсон Маркетплейс — платформа, где поставщики находят новых клиентов, а покупатели — качественные товары из различных категорий по привлекательным ценам. Мы делаем процесс торговли легким и комфортным, обеспечивая прозрачные условия, быструю логистику и поддержку на каждом этапе</p>
+                <p class="p_mobile">Аликсон Маркетплейс — платформа,<br> 
+где поставщики находят новых клиентов,<br> 
+а покупатели — качественные товары<br> 
+из различных категорий по привлекательным ценам. Мы делаем процесс торговли легким<br> 
+и комфортным, обеспечивая прозрачные условия, быструю логистику и поддержку<br> 
+на каждом этапе</p>
+              </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
                 <div>
                     <div class="Info">
                         <div>
-                            <h3>100 000+</h3>
+                            <h3>100.000+</h3>
                             <p>видов продукции</p>
                         </div>
                     </div>
@@ -121,7 +127,7 @@
           </div>
         </section>
         <section class="PartnersSection">
-            <h2>наши клиенты</h2>
+            <h2>наши партнеры</h2>
             <div class="Partners-Content">
                 <div class="Card"><img src="img/marketplace/Partners1.svg"></div>
                 <div class="Card"><img src="img/marketplace/Partners1.svg"></div>
@@ -135,6 +141,90 @@
                 <div class="Card"><img src="img/marketplace/Partners1.svg"></div>
                 <div class="Card"><img src="img/marketplace/Partners1.svg"></div>
                 <div class="Card"><img src="img/marketplace/Partners1.svg"></div>
+            </div>
+            <div class="Partners-Content_mobile">
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="items-wrap">
+                        <div class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                        <div aria-hidden="true" class="items marquee">
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                            <div class="item"><img src="img/marketplace/Partners1.svg" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ReviewsSection">
+            <div class="Reviews-Header">
+              <h2>отзывы наших клиентов</h2>
+              <p>Мы гордимся доверием и успешным опытом сотрудничества. Отзывы наших партнеров — это лучшая оценка нашей работы и подтверждение, что мы движемся в правильном направлении</p>
+            </div>
+            <div class="Reviews-Content">
+              <div class="wrap">
+                      <div class="items-wrap">
+                            <div class="items marquee">
+                                <div class="item"><img src="img/marketplace/Reviews1.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews2.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews3.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews1.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews2.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews3.png" /></div>
+                            </div>
+                            <dv aria-hidden="true" class="items marquee">
+                                <div class="item"><img src="img/marketplace/Reviews1.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews2.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews3.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews1.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews2.png" /></div>
+                                <div class="item"><img src="img/marketplace/Reviews3.png" /></div>
+                            </div>
+                      </div>
+                </div>
             </div>
         </section>
        

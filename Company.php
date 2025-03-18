@@ -4,75 +4,83 @@
     <title>Alikson - О компании</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/company/_company.css" />
+    <link rel="stylesheet" href="css/pages/company/_company.css?1.3" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  </head>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
   <body>
     <?php include('include/header.html')?>
     <main>
         <section class="MainSection">
+            <img src="img/company/MainDecor.png">
             <div class="MainSection-Header">
                 <h1>О компании</h1>
-                <p>Alikson Group - группа компаний, ,работающая  с 2020 года в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги.Мы создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность.
-                </p>
+                <p class="p_desktop">Alikson Group - группа компаний, работающая  с 2020 года в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги. Создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность</p>
+                <p class="p_mobile">Alikson Group - группа компаний, ,работающая<br>  с 2020 года в 24 направлениях бизнеса,<br> в числе которых — информационные<br> технологии, логистика, инвестиции, девелопмент и платежные услуги</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
             </div>
         </section>
         <section class="ValuesSection">
-            <div class="Values-Header">
-                <h2>Наши ценности</h2>
-                    <div class="wrap">
-                        <div class="items-wrap">
-                            <div class="items marquee">
-                                <div class="item"><img src="img/company/Values1.png" /></div>
-                                <div class="item"><img src="img/company/Values2.png" /></div>
-                                <div class="item"><img src="img/company/Values3.png" /></div>
-                                <div class="item"><img src="img/company/Values4.png" /></div>
-                                <div class="item"><img src="img/company/Values5.png" /></div>
-                            </div>
-                            <div aria-hidden="true" class="items marquee">
-                                <div class="item"><img src="img/company/Values1.png" /></div>
-                                <div class="item"><img src="img/company/Values2.png" /></div>
-                                <div class="item"><img src="img/company/Values3.png" /></div>
-                                <div class="item"><img src="img/company/Values4.png" /></div>
-                                <div class="item"><img src="img/company/Values5.png" /></div>
+                <div class="Values-Header">
+                    <h2>Наши ценности</h2>
+                        <div class="wrap">
+                            <div class="items-wrap">
+                                <div class="items marquee">
+                                    <div class="item"><img src="img/company/Values1.png" /></div>
+                                    <div class="item"><img src="img/company/Values2.png" /></div>
+                                    <div class="item"><img src="img/company/Values3.png" /></div>
+                                    <div class="item"><img src="img/company/Values4.png" /></div>
+                                    <div class="item"><img src="img/company/Values5.png" /></div>
+                                </div>
+                                <div aria-hidden="true" class="items marquee">
+                                    <div class="item"><img src="img/company/Values1.png" /></div>
+                                    <div class="item"><img src="img/company/Values2.png" /></div>
+                                    <div class="item"><img src="img/company/Values3.png" /></div>
+                                    <div class="item"><img src="img/company/Values4.png" /></div>
+                                    <div class="item"><img src="img/company/Values5.png" /></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-            </div>
-            <div class="Values-Content">
-                <div class="Card">
-                    <div>
-                        <img src="img/company/ValuesIco1.svg">
-                    </div>
-                    <p>Технологичность</p>
                 </div>
-                <div class="Card">
-                    <div>
-                        <img src="img/company/ValuesIco2.svg">
+                <div class="Values-Content">
+                    <div class="Card">
+                        <div>
+                            <img src="img/company/ValuesIco1.svg">
+                        </div>
+                        <p>Технологичность</p>
                     </div>
-                    <p>Ответственность</p>
-                </div>
-                <div class="Card">
-                    <div>
-                        <img src="img/company/ValuesIco3.svg">
+                    <div class="Card">
+                        <div>
+                            <img src="img/company/ValuesIco2.svg">
+                        </div>
+                        <p>Ответственность</p>
                     </div>
-                    <p>Надежность</p>
-                </div>
-                <div class="Card">
-                    <div>
-                        <img src="img/company/ValuesIco4.svg">
+                    <div class="Card">
+                        <div>
+                            <img src="img/company/ValuesIco3.svg">
+                        </div>
+                        <p>Надежность</p>
                     </div>
-                    <p>Забота о клиентах</p>
+                    <div class="Card">
+                        <div>
+                            <img src="img/company/ValuesIco4.svg">
+                        </div>
+                        <p>Забота о клиентах</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <section class="TeamSection">
             <h2>наша команда</h2>
@@ -105,6 +113,53 @@
                     </div>
                 </div>
             </div>
+            <div class="Team-Content_mobile">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <img src="img/company/Team1.png">
+                                </div>
+                                <div class="Card-Content">
+                                    <h3>Егор Куликов</h3>
+                                    <p>Директор розничного направления</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <img src="img/company/Team2.png">
+                                </div>
+                                <div class="Card-Content">
+                                    <h3>Гасан Мустафаев</h3>
+                                    <p>Генеральный директор компании Alikson Group</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Card">
+                                <div class="Card-Header">
+                                    <img src="img/company/Team3.png">
+                                </div>
+                                <div class="Card-Content">
+                                    <h3>Алексей Глухов</h3>
+                                    <p>Руководитель отдела по работе с маркетплейсами</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Swiper-Control">
+                    <button class="Swiper-Prev">
+                        <img src="img/ArrowLeft.svg" />
+                    </button>
+                    <button class="Swiper-Next">
+                        <img src="img/ArrowRight.svg" />
+                    </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="CareerSection">
             <h2>карьера в компании</h2>
@@ -117,10 +172,20 @@
                     <a href="">вакансии <img src="img/pay_agent/Arrow.svg"></a>
                 </div>
             </div>
+            <div class="Career-Content_mobile">
+                <div class="Career-Left">
+                    <img src="img/company/CareerImg_mobile.jpg">
+                </div>
+                <div class="Career-Right">
+                    <p>Наша главная ценность — люди. В нашей команде работают топ-профессионалы с опытом в ведущих компаниях рынка.</p>
+                    <a href="">вакансии <img src="img/pay_agent/Arrow.svg"></a>
+                </div>
+            </div>
         </section>
         <section class="ImportantSection">
             <div class="Important-Header">
-                <h2>Что для нас важно в работе с сотрудниками:</h2>
+                <h2 class="h2_desktop">Что для нас важно в работе с сотрудниками:</h2>
+                <h2 class="h2_mobile">ценности в работе с сотрудниками:</h2>
             </div>
             <div class="Important-Content">
                 <div class="Card">
@@ -143,16 +208,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
         <section class="FormSection">
         <div class="Form-Header">
           <h2>оставьте заявку</h2>
@@ -182,4 +237,19 @@
     <?php include('include/footer.html') ?>
   </body>
   <script src="include/header.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: -126,
+      direction: "horizontal",
+      loop: false,
+      navigation: {
+        nextEl: ".Swiper-Next",
+        prevEl: ".Swiper-Prev",
+      },
+      breakpoints: {
+        660: { spaceBetween: -140 },
+      },
+    });
+  </script>
 </html>

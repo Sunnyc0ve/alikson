@@ -4,8 +4,10 @@
     <title>Alikson - Логистика</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/logistick/_logistick.css?1.0" />
+
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/logistick/_logistick.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +20,7 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>Логистика</h1>
-                <p>Полный спектр услуг в сфере закупки, доставки и таможенного оформления высокотехнологичной и потребительской электроники, оборудования и комплектующих. Помогаем бизнесу получать необходимые товары без административных и логистических барьеров</p>
+                <p>Полный спектр услуг в сфере закупки, доставки<br> и таможенного оформления высокотехнологичной<br> и потребительской электроники, оборудования<br> и комплектующих. Помогаем бизнесу получать необходимые товары без административных<br> и логистических барьеров</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -39,6 +41,7 @@
             </div>
         </section>
         <section class="ServicesSection">
+        <div class="Services-Container">
             <div class="Services-Header">
                 <h2>Наши сервисы</h2>
                     <div class="wrap">
@@ -65,27 +68,28 @@
             <div class="Services-Content">
                 <p>Полный цикл услуг - от закупки до доставки</p>
                 <div class="Card">
-                    <div><img src="img/logistick/ServicesIco1.svg"></div>
+                    <img src="img/logistick/checkbox.svg">
                     <p>Закупка товаров</p>
                 </div>
-                <div class="Border"></div>
                 <div class="Card">
-                    <div><img src="img/logistick/ServicesIco2.svg"></div>
+                    <img src="img/logistick/checkbox.svg">
                     <p>Транспортировка</p>
                 </div>
-                <div class="Border"></div>
                 <div class="Card">
-                    <div><img src="img/logistick/ServicesIco3.svg"></div>
+                    <img src="img/logistick/checkbox.svg">
                     <p>Таможенное оформление</p>
                 </div>
             </div>
+        </div>
         </section>
         <section class="GeographySection">
             <div class="Geography-Header">
                 <h2>ГЕОГРАФИЯ</h2>
                 <p>Прямые поставки из Китая, ОАЭ и других стран мира</p>
             </div>
-            <img src="img/logistick/GeogrBack.png">
+            <div class="Geography-Img">
+                <img src="img/logistick/GeogrBack.png">
+            </div>
         </section>
         <section class="OurServicesSection">
             <div class="OurServices-Header">
@@ -102,7 +106,7 @@
                             <img src="img/logistick/OurServicesIco1.svg">
                         </div>
                         <div>
-                            <h3>авиадоставка</h3>
+                            <h3>Авиадоставка</h3>
                             <p>от 7 до 14 дней</p>
                         </div>
                     </div>
@@ -111,7 +115,7 @@
                             <img src="img/logistick/OurServicesIco2.svg">
                         </div>
                         <div>
-                            <h3>автодоставка</h3>
+                            <h3>Автодоставка</h3>
                             <p>от 14 до 20 дней</p>
                         </div>
                     </div>
@@ -120,7 +124,7 @@
                             <img src="img/logistick/OurServicesIco3.svg">
                         </div>
                         <div>
-                            <h3>морские перевозки</h3>
+                            <h3>Морские перевозки</h3>
                             <p>от 30 до 50 дней</p>
                         </div>
                     </div>
@@ -129,7 +133,7 @@
         </section>
         <section class="GoodsSection">
             <div class="Goods-Header">
-                <h2>товары, которые мы поставляем</h2>
+                <h2>товары,<br> которые мы поставляем</h2>
                 <div class="Goods-Img">
                     <img src="img/logistick/GoodsImg.png">
                 </div>
@@ -137,22 +141,19 @@
             <div class="Goods-Content">
                  <div class="Card">
                     <div><img src="img/logistick/Goods1.svg"></div>
-                    <p>электроника<br> и оборудование</p>
+                    <p>Электроника и оборудование</p>
                 </div>
-                <div class="Border"></div>
                 <div class="Card">
                     <div><img src="img/logistick/Goods2.svg"></div>
-                    <p>микроэлектроника и комплектующие</p>
+                    <p>Микроэлектроника и комплектующие</p>
                 </div>
-                <div class="Border"></div>
                 <div class="Card">
                     <div><img src="img/logistick/Goods3.svg"></div>
-                    <p>крупная и мелкая бытовая техника</p>
+                    <p>Крупная и мелкая бытовая техника</p>
                 </div>
-                <div class="Border"></div>
                 <div class="Card">
                     <div><img src="img/logistick/Goods4.svg"></div>
-                    <p>гаджеты</p>
+                    <p>Гаджеты</p>
                 </div>
             </div>
         </section>
@@ -193,41 +194,7 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-
-
-
-
-
-
-
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>

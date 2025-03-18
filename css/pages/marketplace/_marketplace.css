@@ -12,6 +12,21 @@ h2{
     text-transform: uppercase;
 }
 
+@media (max-width: 979px) {
+  /*600*/
+  h2{
+      color: #0485FE;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h2{
+      font-size: 23px;
+      font-weight: 600;
+  }
+}
+
 
 
 /* Главная секция*/
@@ -20,9 +35,10 @@ h2{
     flex-direction: column;
     align-items: center;
     gap:185px;
-    padding: 60px 0px 85px 0px;
+    padding: 65px 0px 79px 0px;
     background: url("../../../img/marketplace/MainBack.jpg") no-repeat;
     background-size: 100% 100%;
+    margin-top: -5px;
 }
 
 .MainSection > div{
@@ -48,7 +64,7 @@ h1{
 .MainSection-Header p{
     color: #FFF;
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 111%;
     letter-spacing: -0.27px;
 }
@@ -71,10 +87,13 @@ h1{
     background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
+    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    box-shadow: none;
+    color:#000;
+    background: #fff;
 }
 
 .MainSection-Content > div{
@@ -117,7 +136,178 @@ text-transform: uppercase;
     font-family: "Mulish";
 }
 
+.p_mobile{
+  display: none;
+}
 
+@media (max-width: 1439px){
+  .MainSection > div{
+      width: 920px;
+  }
+
+  .MainSection-Content > div {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+  h1{
+      width: 329px;
+      font-size: 49px;
+  }
+
+  .MainSection-Header p {
+      font-size: 20px;
+  }
+
+  .MainSection-Content a {
+      font-size: 26px;
+  }
+
+  .MainSection-Content {
+      gap: 157px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 44px;
+  }
+
+  .MainSection .Info p {
+    font-size: 18px;
+}
+
+  .MainSection{
+      gap:134px;
+      background-size: 1440px;
+  background-position: center;
+  }
+
+  .MainSection-Header {
+    gap: 75px;
+}
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .MainSection{
+      margin-top: -13px;
+  }
+  h1{
+      font-size: 60px;
+      color: #0485FE;
+      width: auto;
+  }
+  h1 br{
+      display: none;
+  }
+  .MainSection .Info h3 {
+      font-size: 53px;
+  }
+  .MainSection > div{
+      width: 600px;
+  }
+  .MainSection-Header {
+      flex-direction: column;
+      gap:20px;
+  }
+
+  .MainSection-Content{
+      flex-direction: column-reverse;
+      gap:16px;
+  }
+  .MainSection .Info:nth-child(3),.MainSection .Info:nth-child(4){
+      display: none;
+  }
+  .MainSection .Info:first-child {
+      grid-column: unset;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 1fr;
+      gap:50px;
+      width: 100%;
+  }
+
+  .MainSection .Info p {
+      font-size: 17px;
+  }
+
+  .MainSection-Content a{
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h1{
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .p_mobile{
+    display: block;
+  }
+
+  .p_desktop{
+    display: none;
+  }
+
+  .MainSection{
+      padding: 31px 0px 41px 0px;
+      gap: 30px;
+      margin-top: -6px;
+  }
+
+  .MainSection-Header p:first-child{
+    margin-bottom: 5px;
+  }
+
+  
+  .MainSection > div{
+      width: 300px;
+      gap:7px;
+  }
+
+  .MainSection-Header p {
+      font-size: 13px;
+      font-weight: 300;
+  }
+
+  .MainSection-Header{
+      gap:12px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 35px;
+  }
+
+  .MainSection .Info p {
+      font-size: 11px;
+  }
+
+  .MainSection .Info::before {
+      width: 2px;
+  }
+
+  .MainSection .Info {
+      gap: 7px;
+  }
+
+  .MainSection-Content a {
+      font-size: 12px;
+      padding: 6.5px 0px;
+      border-radius: 4px;
+      border: 0.394px solid #8D8D8D;
+      background: #181818;
+      box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+      margin-top: 13px;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 175px 1fr;
+      gap:5px;
+  }
+}
 
 
 
@@ -127,14 +317,18 @@ text-transform: uppercase;
 /*Что мы предлагаем*/
 .AboutSection{
   display: flex;
-  padding: 68px 0px 72px 0px;
+  padding: 63px 0px 70px 0px;
   gap:71px;
   align-items: end;
-  background: #181818;
+  background: #212121;
+  border: 1px solid #353535;
+  border-radius: 15px;
+  margin-top: -9px;
+  position: relative;
 }
 
 .AboutSection h2{
-  margin-left: calc((100vw - 1280px) / 2);
+  margin-left: calc((100% - 1280px) / 2);
   position: absolute;
 }
 
@@ -143,7 +337,7 @@ text-transform: uppercase;
   flex-direction: column;
   width: 498px;
   flex-shrink: 0;
-  width: calc((100vw - 300px) / 2);
+  width: calc((100% - 300px) / 2);
 }
 
 .About-Content{
@@ -166,7 +360,7 @@ text-transform: uppercase;
 }
 
 .wrap{
-  margin-top: 125px;
+  margin-top: 105px;
 }
 
 .items-wrap {
@@ -185,18 +379,19 @@ text-transform: uppercase;
   justify-content: space-around;
   min-width: 100%;
 }
+
 .item {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
-  width: 503px;
+  width: auto;
   height: 329px;
 }
 
 .item img{
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -213,16 +408,116 @@ text-transform: uppercase;
   }
 }
 
+@media (max-width: 1439px){
+  /*920*/
+  .AboutSection h2{
+      margin-left: calc((100% - 920px) / 2);
+      width: 600px;
+  }
+
+  .wrap {
+    margin-top: 135px;
+  }
+
+  .About-Content div{
+    margin: 21px 0px;
+  }
+  
+  .About-Header{
+      width: calc((100% - 150px) / 2);
+  }
+
+  .AboutSection {
+      gap: 40px;
+  }
+
+  .About-Content p {
+      font-size: 25px;
+      width: 500px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .AboutSection{
+      flex-direction: column;
+  }
+
+  .AboutSection h2{
+      margin-left: calc((100% - 600px) / 2);
+  }
+  
+  .About-Header{
+      width: 100%;
+  }
+
+  .item {
+      height: 223px;
+  }
+
+  .About-Content > * {
+      margin-left: calc((100% - 600px) / 2) !important;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .AboutSection{
+      padding: 27px 0px 28px 0px;
+      gap:15px;
+      border-radius: 7px;
+      margin-top: -5px;
+  }
+  .AboutSection h2{
+      margin-left: calc((100% - 300px) / 2);
+      margin-bottom: 15px;
+      width: 280px;
+  }
+
+  .wrap {
+    margin-top: 60px;
+  }
+
+
+  .About-Content > * {
+      margin-left: calc((100% - 300px) / 2) !important;
+  }
+  .item {
+      height: 86px;
+      margin: 0px;
+      border: none;
+      border-radius: 5px;
+  }
+  .items, .items-wrap {
+      gap: 5px;
+  }
+
+
+  .About-Content p {
+      font-size: 14px;
+      line-height: normal;
+      width: 270px;
+  }
+
+  .About-Content p:nth-child(3){
+    width: 220px;
+  }
+
+  .About-Content div {
+      margin: 8px 0px;
+  }
+}
 
 
 
 
-/*Категории*/
+
+/*Преимущества работы*/
 .AdvantagesSection{
-  background: #212121; 
-  padding: 69px 0px;
-  border-radius: 15px 15px 0px 0px;
-  border: 1px solid #353535;
+  background: #181818 url("../../../img/marketplace/AdvantagesBack.png") no-repeat;
+  background-size: 100% 100%; 
+  padding: 79px 0px 40px 0px;
+  margin-top: -9px;
 }
 
 .AdvantagesSection > div{
@@ -230,14 +525,14 @@ text-transform: uppercase;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:29px;
+  gap:30px;
 }
 
 .AdvantagesSection .Card{
   display: flex;
   gap:38px;
   align-items: center;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   height: 158px;
   background: #3030304D;
   border: 1px solid #353535;
@@ -250,7 +545,7 @@ text-transform: uppercase;
   color:#fff;
   font-weight: 400;
   font-size: 35px;
-  line-height: 38.85px;
+  line-height: 111%;
   letter-spacing: 0.35px;
   text-transform: uppercase;
 }
@@ -270,6 +565,95 @@ text-transform: uppercase;
 
 .AdvantagesSection h2{
   margin-bottom: auto;
+  line-height: 105%;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .AdvantagesSection > div{
+    width: 920px;
+  }
+
+  .AdvantagesSection h2{
+    font-size: 42px;
+  }
+
+  .AdvantagesSection .Card span{
+    font-size: 27px;
+  }
+
+  .AdvantagesSection .Card{
+    gap:11px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .AdvantagesSection > div{
+    width: 600px;
+    grid-template-columns: 1fr;
+    gap:0px;
+  }
+
+  .AdvantagesSection h2{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .AdvantagesSection > div{
+    width: 300px;
+  }
+
+  .AdvantagesSection{
+    padding: 36px 0px 30px 0px;
+    background: #181818 url("../../../img/marketplace/AdvantagesBack_mobile.png") no-repeat;
+    background-size: 100% 100%; 
+  }
+
+  .AdvantagesSection h2{
+   font-size: 23px;
+   width: 250px;
+   margin-bottom: 10px;
+  }
+
+  .AdvantagesSection .Card{
+    height: 52px;
+    border-radius: 5px;
+    backdrop-filter: blur(9.363057136535645px);
+    gap:20px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .AdvantagesSection .Card span {
+    font-size: 14px;
+  }
+
+  .AdvantagesSection .Card > div {
+      width: 41px;
+  }
+
+  .Advantages-Left .Card:nth-child(2) img{
+      width:  30px;
+  }
+  .Advantages-Left .Card:nth-child(3) img{
+      width:  30.5px;
+  }
+  .Advantages-Right .Card:nth-child(1) img{
+      width:  28px;
+  }
+  .Advantages-Right .Card:nth-child(2) img{
+      width:  32px;
+  }
+  .Advantages-Right .Card:nth-child(3) img{
+      width:  28px;
+  }
+
+  .Advantages-Right .Card:nth-child(3) span br{
+    display: none;
+  }
 }
 
 
@@ -281,7 +665,9 @@ text-transform: uppercase;
   background: #212121;
   border: 1px solid #353535;
   border-radius: 15px;
-  padding: 69px 0px;
+  padding: 63px 0px 70px 0px;
+  position: relative;
+  margin-top: -9px;
 }
 
 .PartnersSection > *{
@@ -290,12 +676,11 @@ text-transform: uppercase;
 }
 
 .Partners-Content{
-  margin-top: 67px;
+  margin-top: 47px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 155px);
-  grid-column-gap: 27px;
-  grid-row-gap: 25px;
+  grid-auto-rows: 155px;
+  gap: 30px;
 }
 
 .Partners-Content .Card{
@@ -309,101 +694,440 @@ text-transform: uppercase;
   backdrop-filter: blur(24.681249618530273px)
 }
 
+.Partners-Content_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .PartnersSection > *{
+    width: 920px;
+  }
+
+  .Partners-Content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .PartnersSection > *{
+    width: 600px;
+  }
+
+  .Partners-Content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .PartnersSection > *{
+    width: 300px;
+  }
+
+  .PartnersSection{
+      padding: 27px 0px 21px 0px;
+      border-radius: 7px;
+      margin-top: -5px;
+  }
+
+  .Partners-Content_mobile{
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+  }
+
+  .Partners-Content{
+      display: none;
+  }
+
+  .Partners-Content_mobile .item{
+      width: 117px;
+      height: 61px;
+      border-radius: 5px;
+      border: 1px solid #171717;
+      background: rgba(36, 36, 36, 0.47);
+      box-shadow: 0px 0px 7.41px 0px #0485FE,0px 0px 3.85px 0px #0485FE, 0px 0px 1.18px 0px #FFFFFF;
+      margin: 5px 0px;
+  }
+
+  .Partners-Content_mobile .item img{
+      width: 30%;
+  }
+
+  .Partners-Content_mobile .items, .items-wrap {
+      gap: 10px;
+  }
+
+  .Partners-Content_mobile .wrap{
+      margin-bottom: 5px;
+      margin-top: 0px;
+  }
+
+  .Partners-Content_mobile .wrap:nth-child(2) .marquee {
+    animation-delay: 2s;
+  }
+  .Partners-Content_mobile .wrap:nth-child(3) .marquee {
+    animation-delay: 4s;
+  }
+}
+
+
+
+
+
+/*Отзывы*/
+.ReviewsSection{
+  padding: 72px 0px 79px 0px;
+  background: #181818 url("../../../img/marketplace/ReviewsBack.png") no-repeat;
+  background-size: 100% 100%;
+  margin-top: -9px;
+}
+
+.Reviews-Header{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  gap:57px;
+}
+
+.ReviewsSection h2{
+  width: 498px;
+  flex-shrink: 0;
+}
+
+.Reviews-Header p{
+  font-size: 27px;
+  line-height: 111%;
+  font-weight: 300;
+  letter-spacing: -0.27;
+  color:#fff;
+  width: 637px;
+}
+
+.Reviews-Content{
+  backdrop-filter: blur(9.434041023254395px);
+  box-shadow: 0px 0px 37.2px 0px #0485FE,0px 0px 15.6px 0px #0485FEA6,0px 0px 3.24px 0px #FFFFFF59;
+  border-top: 1px solid #ffffff84;
+  border-bottom: 1px solid #ffffff84;
+  padding: 40px 0px;
+  margin-top: 53px;
+}
+
+.ReviewsSection .wrap{
+  margin: 0px;
+}
+
+.ReviewsSection .item{
+  height: 255px;
+}
+
+.ReviewsSection .items, .ReviewsSection .items-wrap{
+  gap: 16px;
+}
+
+.Reviews-Content .Card img{
+  width: 100%;
+  height: 100%;
+}
+
+.Reviews-Content_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .Reviews-Header{
+    width: 920px;
+  }
+
+  .ReviewsSection h2{
+    width: 464px;
+  }
+
+  .Reviews-Header {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .Reviews-Header{
+    width: 600px;
+  }
+
+  .Reviews-Header{
+    flex-direction: column;
+  }
+
+  .Reviews-Header p{
+    width: auto;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .Reviews-Header{
+    width: 300px;
+  }
+
+  .ReviewsSection{
+    padding: 36px 0px 39px 0px;
+  }
+
+  .ReviewsSection h2{
+    width: auto;
+  }
+
+  .ReviewsSection .item{
+    height: 127px;
+  }
+
+  .Reviews-Content{
+    margin-top: 15px;
+    padding: 20px 0px;
+    backdrop-filter: blur(4.673392295837402px);
+    box-shadow: 0px 0px 18.43px 0px #0485FE,0px 0px 7.73px 0px #0485FEA6,0px 0px 1.61px 0px #FFFFFF59;
+  }
+
+  .Reviews-Header p{
+    font-size: 13px;
+  }
+}
+
 
 
 
 /* Секция форма */
 
 .Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #181818 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
-    padding: 77px 0px 104px 0px;
-    border-radius: 20px;
-    border: 2px solid #3535358f;
-    position: relative;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px !important;
+}
+
+.Form-Header p {
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 29.97px;
+  letter-spacing: -1%;
+  color:#fff;
+  width: 729px;
+}
+
+.Form-Header h2 {
+  color: #0485FE;
+}
+
+.FormSection {
+  background: #212121 url("../../../img/Back_2.svg") no-repeat;
+  background-size: 760px;
+  background-position: -131px -10px;
+  padding: 77px 0px 104px 0px;
+  border-radius: 15px;
+  border: 1px solid #353535;
+  position: relative;
+  margin-top: -12px;
+}
+
+.Form-Main {
+  display: flex;
+  justify-content: end;
+}
+
+.FormSection > div {
+  width: 1280px;
+  margin: auto;
+}
+
+.FormSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 734px;
+}
+
+.FormSection form p {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 29.97px;
+  letter-spacing: -1%;
+  color:#666;
+}
+
+.FormSection form > div {
+  padding: 27px 36px;
+  border-radius: 10px;
+  background: #353535;
+  display: flex;
+  gap: 26px;
+}
+
+.FormSection form [type="text"],
+.FormSection form [type="text"]::placeholder,
+.FormSection form [type="text"]::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  outline: none;
+  width: 100%;
+  font-weight: 300;
+}
+
+.FormSection form [type="submit"] {
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 25px 0px;
+  border-radius: 10px;
+  border: 1px solid #8D8D8D;
+  background: #232323;
+  cursor: pointer;
+}
+
+.FormSection form [type="submit"]:hover {
+  backdrop-filter: blur(19.4209041595459px);
 
 box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
 
+}
+
+
+@media (max-width: 1439px) {
+  .FormSection > div {
+    width: 920px;
   }
+
+  .Form-Header p {
+    width: 401px;
+    font-size: 19px;
+  }
+
+  .Form-Header h2 {
+    font-size: 43px;
+  }
+
+  .Form-Header {
+    gap: 44px;
+  }
+
+  .FormSection form {
+    width: 544px;
+  }
+
+  .FormSection form p br {
+    display: none;
+  }
+}
+
+@media (max-width: 979px) {
+  .FormSection {
+    padding: 30px 0px 40px 0px;
+  }
+
+  .Form-Header {
+    margin-bottom: 30px !important;
+    flex-direction: column;
+  }
+
+  .FormSection > div {
+    width: 600px;
+  }
+
+  .Form-Header p {
+    width: auto;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.12px;
+    line-height: 111%;
+    /* display: none; */
+  }
+
+  .Form-Header h2 {
+    font-size: 23px;
+  }
+
+  .FormSection form [type="submit"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 15px 0px;
+  }
+
+  .FormSection form [type="text"],
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  .FormSection form > div {
+    padding: 14px 16px;
+  }
+
+  .FormSection form {
+    width: 100%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 659px) {
+  .FormSection {
+      background-size: 250px;
+      background-position: -9px 34px;
+    border-radius: 7px;
+    padding: 27px 0px 16px 0px;
+  }
+
+  .Form-Header {
+    margin-bottom: 15px !important;
+  }
+  
+  .FormSection > div {
+    width: 300px;
+    gap: 20px;
+  }
+
+  .FormSection form [type="submit"] {
+    padding: 12px 0px;
+    border-radius: 5px;
+    border-color: #353535;
+    opacity: 1;
+    box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+      0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+      0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+    margin-bottom: 14px;
+  }
+
+  .FormSection form p {
+    display: none;
+  }
+
+  .Form-Header p{
+    display: none;
+  }
+
+  .FormSection form p br {
+    display: block;
+  }
+
+  .FormSection form > div {
+    padding: 13px 16px;
+    border-radius: 5px;
+    gap:11px;
+  }
+
+  .FormSection form > div img{
+    width: 13px;
+  }
+}
+
+
+/*ФУТЕР*/
+footer{
+  margin-top: -12px;
+}

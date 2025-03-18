@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/pay_agent/_payagent.css" />
+    <link rel="stylesheet" href="css/pages/pay_agent/_payagent.css?1.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>Платежный<br> агент</h1>
-                <p>Платежный агент, предоставляющий полный спектр услуг для международных расчетов российских компаний. Мы помогаем бизнесу сохранять финансовые потоки стабильными, независимо от ограничений</p>
+                <p>Платежный агент, предоставляющий полный спектр услуг для международных расчетов российских компаний. Помогаем бизнесу сохранять финансовые потоки стабильными, независимо от ограничений</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -45,9 +45,10 @@
                     <div><img src="img/pay_agent/AboutImg.png"></div>
                 </div>
                 <div class="About-Right">
-                    <p>Платежный агент — это финансовый посредник, который осуществляет переводы между клиентами и их контрагентами за границей. Он принимает денежные средства от клиента и передает их на счета поставщиков или партнеров на основании заключенного договора.</p>
-                    <p>Мы помогаем бизнесу проводить расчеты в ОАЭ, Китае и странах Европы, гарантируя соблюдение всех международных норм и стандартов</p>
-                    <a href="">оставить заявку <img src="img/pay_agent/Arrow.svg"></a>
+                    <p>Платежный агент — это финансовый посредник, который осуществляет переводы между клиентами и их контрагентами за границей. Он принимает денежные средства от клиента и передает их на счета поставщиков или партнеров на основании заключенного договора</p>
+                    <p class="p_desktop">Помогаем бизнесу проводить расчеты в ОАЭ, Китае и странах Европы, гарантируя соблюдение всех международных норм и стандартов</p>
+                    <p class="p_mobile">Помогаем бизнесу проводить расчеты в ОАЭ, Китае и странах Европы, гарантируя соблюдение всех международных норм и стандартов. Сопровождаем клиентов на каждом этапе, обеспечивая безопасность сделок, минимизацию рисков и максимальную эффективность</p>
+                    <a href="">Оставить заявку <img src="img/pay_agent/Arrow.svg"></a>
                 </div>
             </div>
         </section>
@@ -76,7 +77,7 @@
         </section>
         <section class="KindsSection">
             <div class="Kinds-Header">
-                <h2>Виды<br> переводов:</h2>
+                <h2>Виды переводов</h2>
                     <div class="wrap">
                         <div class="items-wrap">
                             <div class="items marquee">
@@ -114,7 +115,7 @@
         </section>
         <section class="AdvantagesSection">
             <div class="Advantages-Header">
-                <h2>Наши преимущества:</h2>
+                <h2>Наши преимущества</h2>
             </div>
             <div class="Advantages-Content">
                 <div class="Card">

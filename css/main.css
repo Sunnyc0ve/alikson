@@ -1,56 +1,70 @@
-footer{
-  margin-top: -135px;
+/* Общие */
+h2 {
+  font-size: 48px;
+  color: #0485fe;
+  font-weight: 700;
+  line-height: 100%;
 }
+
+
+
+
 
 /* Главная секция */
 .MainSection {
-  position: relative;
-  top: -6px;
-  overflow: hidden;
+  margin-top: -6px;
   z-index: 0;
+  position: relative;
 }
 
 .MainSection .MainContainer {
-  padding: 90px 0px;
+  padding: 130px 0px 100px 0px;
   position: absolute;
   top: 0px;
   z-index: 1;
-  margin-left: calc((100vw - 1280px) / 2);
+  margin-left: calc((100% - 1280px) / 2);
 }
 
 .MainSection .VideoContainer {
   display: flex;
   justify-content: center;
+  height: 696px;
 }
 
-/* .MainSection video {
-  height: 750px;
-} */
+.Video_desktop{
+  width: 1920px;
+  height: fit-content;
+}
+
+
 
 .Video_mobile {
   display: none;
 }
 
-.MainSection img {
-  margin-bottom: 73px;
-}
+
 
 .MainSection p {
-  margin-bottom: 111px;
-  font-size: 35px;
+  margin: 50px 0px;
+  font-size: 32px;
   color: #fff;
+  line-height: normal;
 }
 
 .MainSection a {
   transition: 0.5s ease;
+  display: flex;
+  height: 61px;
+  justify-content: center;
+  align-items: center;
+  width: 201px;
   color: #fff;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
-  background: #0456ca4d;
-  padding: 17px 50px;
-  border: 1px solid #aaaaaa;
-  border-radius: 6px;
-  box-shadow: 0px 0px 50.58px 0px #0666df;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
 }
 
 .MainSection a:hover {
@@ -156,15 +170,14 @@ footer{
 
 .AboutSection {
   background: #171717;
-  padding: 70px 0px 100px 0px;
+  padding: 90px 0px;
   border-radius: 20px 20px 0px 0px;
-  border: 2px solid #3535358f;
   position: relative;
-  top: -25px;
+  margin-top: -13px;
 }
 
 .AboutSection > div {
-  width: 1440px;
+  width: 1280px;
   margin: auto;
 }
 
@@ -172,15 +185,15 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 0px 80px;
   margin-bottom: 40px !important;
 }
 
 .About-Header p {
-  font-size: 25px;
+  font-size: 24px;
   color: #fff;
-  width: 744px;
-  line-height: 100%;
+  width: 715px;
+  font-weight: 300;
+  line-height: normal;
   letter-spacing: -0.25px;
 }
 
@@ -192,7 +205,7 @@ footer{
 }
 
 .AboutSection .wrap {
-  width: 584px;
+  width: 470px;
   margin: 0px;
 }
 
@@ -203,23 +216,24 @@ footer{
 
 .About-Main {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .About-Main .Info {
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
+  width: 715px;
 }
 
 .About-Main .Card {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
 }
 .About-Main .Card h3 {
   color: #fff;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   font-family: 'TT Fors Trial Medium';
 }
@@ -228,9 +242,9 @@ footer{
   font-family: 'TT Fors Trial Medium';
 }
 .About-Main .Card p {
-  color: #fff;
-  font-size: 18px;
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 20px;
+  line-height: normal;
 }
 .About-Main .Card::before {
   content: "";
@@ -394,14 +408,13 @@ footer{
 /* Бизнес секция */
 
 .BuisnesSection {
-  padding: 70px 0px 100px 0px;
+  padding: 90px 0px 105px 0px;
   border-radius: 20px 20px 0px 0px;
-  border: 2px solid #353535;
+  border: 2px solid #2f2f2f;
   position: relative;
-  top: -43px;
   background: url("../img/Back.png") #232323;
   background-position: center;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .BuisnesSection > div {
@@ -412,22 +425,23 @@ footer{
 .Buisnes-Header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 65px !important;
+  margin-bottom: 50px !important;
 }
 
 .Buisnes-Header p {
-  width: 744px;
+  width: 715px;
   color: #fff;
-  font-size: 25px;
-  line-height: 100%;
+  font-size: 24px;
+  line-height: normal;
   letter-spacing: -0.25px;
+  font-weight: 300;
 }
 
 .Buisnes-Main .Card {
   background: #2c2c2c;
   border: 1px solid #747474;
   border-radius: 10px;
-  padding: 16px 20px 22px 21px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -439,7 +453,6 @@ footer{
   color: #747474;
   font-size: 32px;
   font-weight: 500;
-  width: 276px;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
@@ -453,21 +466,24 @@ footer{
 .Buisnes-Main .Card p {
   transition: 0.5s ease;
   opacity: 0;
+  font-size: 19px;
 }
 
 .Buisnes-Main .Grid-1 {
   display: grid;
-  grid-template-columns: 460px 433px 337px;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  grid-template-rows: 350px 23px;
+  gap: 20px;
+  grid-auto-rows: 350px;
+  margin-bottom: 20px;
 }
 
 .Buisnes-Main .Grid-2 {
   display: grid;
-  grid-template-columns: 267px 334px 281px 338px;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  grid-template-rows: 354px 349px;
-  row-gap: 23px;
+  grid-auto-rows: 350px;
+  gap:20px;
 }
 
 .Buisnes-Main .Card:hover {
@@ -503,15 +519,7 @@ footer{
     font-size: 19px;
   }
 
-  .Buisnes-Main .Grid-1 {
-    grid-template-columns: 340px 293px 237px;
-  }
-
-  .Buisnes-Main .Grid-2 {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 290px;
-    gap: 23px;
-  }
+ 
 
   .Buisnes-Main .Card h3 {
     font-size: 24px;
@@ -637,36 +645,29 @@ footer{
 
 .NewsSection {
   background: #181818;
-  padding: 75px 0px 70px 0px;
-  border-radius: 20px;
-  border: 2px solid #3535358f;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
   position: relative;
-  top: -61px;
-  z-index: 2;
+  margin-top: -15px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
 }
 
-
-.News-Main{
-  width: calc((100vw + 1280px) / 2);
-  overflow: hidden;
-  /* display: flex;
-  justify-content: center; */
-}
 
 
 .News-Header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 75px !important;
+  margin-bottom: 50px !important;
   width: 1280px;
   margin: auto;
 }
 
 .News-Header p {
-  font-size: 25px;
+  font-size: 24px;
   color: #fff;
-  width: 744px;
+  width: 715px;
+  font-weight: 300;
   line-height: 100%;
   letter-spacing: -0.25px;
   padding-top: 4px;
@@ -674,7 +675,6 @@ footer{
 
 .NewsSection .swiper-wrapper {
   height: auto;
-  padding-left: calc((100vw - 1000px) / 2);
 }
 
 .NewsSection .swiperN {
@@ -700,8 +700,8 @@ footer{
   border-radius: 10px;
   border: 1.81px solid #818181;
   background: #ffffff29;
-  width: 361px;
-  height: 374.83px;
+  width: 400px;
+  height: 484px;
   padding-bottom: 14.84px;
   display: flex;
   flex-direction: column;
@@ -712,7 +712,7 @@ footer{
 
 .News-Main .Card .Card-Image {
   width: 100%;
-  height: 198px;
+  height: 250px;
   border-radius: 9px;
   border-bottom: 1.81px solid #818181;
   background-size: 100% !important;
@@ -757,9 +757,9 @@ footer{
 .Swiper-Control {
   display: flex;
   justify-content: end;
-  gap: 11px;
-  margin-top: 68px;
-  width: calc((100vw + 1280px) / 2)
+  gap: 10px;
+  margin-top: 50px;
+  width: calc((100vw + 1263px) / 2)
 }
 
 .Swiper-Control > button {
@@ -780,17 +780,12 @@ footer{
     width: 980px;
   }
 
-  .News-Main{
-    width: calc((100vw + 920px) / 2);
-  }
 
   .Swiper-Control {
     width: calc((100vw + 980px) / 2)
   }
 
-  .NewsSection .swiper-wrapper {
-    padding-left: calc((100vw - 800px) / 2);
-  }
+ 
 
   .News-Header p {
     width: 401px;
@@ -978,12 +973,15 @@ footer{
 /* Секция проекты */
 
 .ProjectsSection {
-  padding: 108px 0px 114px 0px;
-  background: url("../img/Back_1.png") #232323;
-  position: relative;
-  top: -80px;
+  padding: 90px 0px 105px 0px;
+  /* background: url("../img/Back_1.png") #232323;
   background-position: center;
-  background-size: 100%;
+  background-size: 100%; */
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #232323;
+  margin-top: -15px;
 }
 
 .ProjectsSection > div {
@@ -994,42 +992,46 @@ footer{
 .Projects-Header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px !important;
+  margin-bottom: 50px !important;
 }
 
 .Projects-Header p {
-  width: 744px;
+  width: 715px;
   color: #fff;
-  font-size: 25px;
-  line-height: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
   letter-spacing: -0.25px;
 }
+
+
 
 .Projects-Main {
   display: flex;
   justify-content: space-between;
+  gap:20px;
 }
 
 .Projects-Main .Links {
   display: flex;
   flex-direction: column;
-  gap: 73px;
+  gap: 20px;
 }
 
 .Projects-Main .Links button {
-  
-  text-align: center;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(170, 170, 170, 0.50);
   font-size: 24px;
-  font-weight: 250;
+  font-weight: 500;
   text-transform: uppercase;
-  width: 451px;
-  padding: 40px 0px;
-  border-radius: 10px;
-  border: 1px solid #fff;
+  width: 546px;
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
   background: #232323;
-  opacity: 0.75;
-  height: 113px;
+  transition: 0.5s ease;
 }
 
 .Projects-Main .Links button:hover:not(.Active) {
@@ -1040,17 +1042,14 @@ footer{
 }
 
 .Projects-Main .Links .Active {
-  transition:box-shadow 0.5s ease;
-  backdrop-filter: blur(19.4209041595459px);
-  box-shadow: 0px 0px 50.58px 0px #0666df, 0px 0px 16.18px 0px #0485fe91,
-    0px 0px 6.68px 0px #ffffff59;
-  opacity: 1;
-  font-weight: 500;
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+  color: #FFF;
 }
 
 .Projects-Main .Info {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .Projects-Main .Info:not(.Active) {
@@ -1058,16 +1057,16 @@ footer{
 }
 
 .Projects-Main .Info .Banner {
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%),
-    url("../img/Projects1.png");
-  background-size: 100% 100%;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png");
+  background-size: 111% 100%;
+  background-position: -23px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
   justify-content: end;
-  padding: 23px 18px;
+  padding: 20px;
   border-radius: 10px;
-  width: 449px;
+  width: 396px;
 }
 
 .Projects-Main .Info:nth-child(3) .Banner {
@@ -1091,9 +1090,13 @@ footer{
 
 .Projects-Main .Info .Banner p {
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 111%;
   letter-spacing: -0.13px;
+}
+
+.Projects-Main .Info:nth-child(4) .Banner h3{
+  font-size: 26px;
 }
 
 .Projects-Main .Info .Banner a {
@@ -1101,11 +1104,11 @@ footer{
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  padding: 4px 17px;
+  padding: 5px 15px;
   border-radius: 5px;
   background: #2C2C2C;
   text-transform: uppercase;
-  border: 1px solid #888888;
+  border: 1px solid rgba(170, 170, 170, 0.15);
 }
 
 /* .Projects-Main .Info .Banner a:last-child {
@@ -1115,14 +1118,11 @@ footer{
 } */
 
 .Projects-Main .Info .Banner > div {
-  gap: 12px;
+  gap: 15px;
   display: flex;
   align-items: center;
 }
 
-.Projects-Main .Info:nth-child(4) .Banner p{
-  width: 250px;
-}
 
 
 .Projects-Main .Info .Banner a:hover {
@@ -1136,21 +1136,23 @@ footer{
 .Projects-Main .Info .Stats {
   border-radius: 10px;
   background: #1e1e1e;
-  padding: 32px 33px 27px 33px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 288px;
+  gap:30px;
+  width: 298px;
 }
 
 .Projects-Main .Info .Stats h3 {
   color: #0084ff;
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 .Projects-Main .Info .Stats p {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.50);
+  font-weight: 300;
+  line-height: normal;
   font-size: 18px;
 }
 
@@ -1159,13 +1161,14 @@ footer{
   font-size: 15px;
   font-weight: 500;
   letter-spacing: -0.152px;
-  text-decoration-line: underline;
+  border-bottom: 1px solid #fff;
   text-transform: uppercase;
 }
 
 .Projects-Main .Info .Stats > div:last-child {
   display: flex;
-  justify-content: space-between;
+  gap:40px;
+  margin-top: auto;
 }
 
 .Projects-Main_mobile {
@@ -1466,36 +1469,33 @@ footer{
 
 
 /* Секция форма */
+.FormSection {
+  padding: 90px 0px 105px 0px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #171717 url("../img/FormBack.png") no-repeat;
+  background-position: left bottom;
+  background-size: 600px;
+  margin-top: -15px;
+}
 
 .Form-Header {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
   margin-bottom: 50px !important;
 }
 
 .Form-Header p {
-  width: 647px;
+  width: 715px;
   color: #fff;
-  font-size: 25px;
-  line-height: 100%;
+  font-size: 24px;
+  line-height: normal;
   letter-spacing: -0.25px;
 }
 
-.Form-Header h2 {
-  font-size: 47px;
-}
 
-.FormSection {
-  background: #181818 url("../img/Back_2.svg") no-repeat;
-  background-size: 760px;
-  background-position: -131px -10px;
-  padding: 70px 0px 65px 0px;
-  border-radius: 20px;
-  border: 2px solid #3535358f;
-  position: relative;
-  top: -98px;
-  z-index: 2;
-}
+
 
 .Form-Main {
   display: flex;
@@ -1510,20 +1510,19 @@ footer{
 .FormSection form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 744px;
+  gap: 20px;
+  width: 715px;
 }
 
 .FormSection form p {
-  font-weight: 100;
-  font-size: 25px;
-  line-height: 28.75px;
-  letter-spacing: -1%;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .FormSection form > div {
-  padding: 27px 36px;
+  padding: 24px 39px;
   border-radius: 10px;
   background: #353535;
   display: flex;
@@ -1536,12 +1535,7 @@ footer{
 /* Контейнер кастомного селекта */
 .custom-select {
     position: relative;
-    width: 100%; /* НЕ Фиксированная ширина */
-/*     background: #1a1a1a;
-border: 1px solid #444;
-border-radius: 10px;
-cursor: pointer;
-margin-bottom: 10px; */
+    cursor: pointer;
 }
 
 /* Заголовок селекта */
@@ -1557,6 +1551,7 @@ margin-bottom: 10px; */
     flex-wrap: wrap;
     align-items: center;
     gap: 26px;
+    color: rgba(255, 255, 255, 0.70);
 }
 
 /* Кастомная стрелка */
@@ -1571,7 +1566,7 @@ margin-bottom: 10px; */
 .select-options {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     width: 100%;
     background: #232323;
@@ -1583,13 +1578,13 @@ margin-bottom: 10px; */
 
 /* Отдельные пункты списка */
 .select-options li {
-    padding: 18px 0;
+    padding: 16px 0;
     margin: 0 36px;
     color: white;
     transition: 0.3s;
     list-style: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     border-bottom: 1px solid #353535;
 }
@@ -1611,36 +1606,37 @@ margin-bottom: 10px; */
 /* /////////////// */
 
 .select-header,
-.FormSection form [type="text"],
-.FormSection form [type="text"]::placeholder,
-.FormSection form [type="text"]::-webkit-input-placeholder {
-  color: #fff;
-  font-size: 25px;
+.FormSection form [type="text"]{
+  color:#fff;
+  font-size: 24px;
+  font-weight: 400;
   font-style: normal;
   outline: none;
   width: 100%;
 }
 
+
+.FormSection form [type="text"]::placeholder,
+.FormSection form [type="text"]::-webkit-input-placeholder{
+  color: rgba(255, 255, 255, 0.70);
+}
+
 .FormSection form [type="submit"] {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   transition: 0.5s ease;
   text-align: center;
   justify-content: center;
   color: #fff;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 500;
-  text-transform: uppercase;
-  height: 73px;
+  height: 61px;
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  border: 1px solid #fff;
-  background: #232323;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
   cursor: pointer;
-  backdrop-filter: blur(19.4209041595459px);
-
-box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px 0px #FFFFFF59;
-
 }
 
 .FormSection form [type="submit"]:hover {
@@ -1794,12 +1790,11 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
 /* Секция партнёры */
 
 .PartnersSection {
-  padding: 78px 0px 40px 0px;
-  border: 2px solid rgba(53, 53, 53, 1);
-  background: rgba(35, 35, 35, 1);
+  padding: 90px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #232323;
   position: relative;
-  top: -116px;
-  border-radius: 0px 0px 20px 20px;
+  margin-top: -15px;
 }
 
 .PartnersSection .wrap {
@@ -1822,7 +1817,6 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  border-radius: 0px 0px 20px 20px;
 }
 .PartnersSection:before {
   left: 0;
@@ -1862,7 +1856,7 @@ box-shadow: 0px 0px 32.7px 0px #0666DF,0px 0px 7.3px 0px #0485FE91,0px 0px 5.5px
 }
 
 .marquee {
-  animation: scroll 80s linear infinite;
+  animation: scroll 180s linear infinite;
 }
 
 @keyframes scroll {

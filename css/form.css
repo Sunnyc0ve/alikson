@@ -1,0 +1,247 @@
+/* Секция форма */
+.FormSection {
+    padding: 90px 0px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #171717 url("../../../img/FormBack.png") no-repeat;
+    background-position: left bottom;
+    background-size: 550px;
+    margin-top: -15px;
+  }
+
+  .FormSection h2{
+    color: #0485FE;
+  }
+  
+  .Form-Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px !important;
+  }
+  
+  .Form-Header p {
+    width: 715px;
+    color: #fff;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.25px;
+  }
+  
+  
+  
+  
+  .Form-Main {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .FormSection > div {
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .FormSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 715px;
+  }
+  
+  .FormSection form p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .FormSection form > div {
+    padding: 24px 39px;
+    border-radius: 10px;
+    background: #353535;
+    display: flex;
+    gap: 26px;
+  }
+  
+  
+ 
+  
+  .select-header,
+  .FormSection form [type="text"]{
+    color:#fff;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    width: 100%;
+  }
+  
+  
+  .FormSection form [type="text"]::placeholder,
+  .FormSection form [type="text"]::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.70);
+  }
+  
+  .FormSection form [type="submit"] {
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba(170, 170, 170, 0.15);
+    background: #112A4D;
+    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+    cursor: pointer;
+  }
+  
+  .FormSection form [type="submit"]:hover {
+    color:#000;
+    background: #fff;
+    box-shadow: none;
+  }
+  
+  @media (max-width: 1439px) {
+    .FormSection > div {
+      width: 920px;
+    }
+  
+    .Form-Header p {
+      width: 401px;
+      font-size: 19px;
+    }
+  
+    .Form-Header h2 {
+      font-size: 42px;
+    }
+  
+    .Form-Header {
+      gap: 44px;
+    }
+  
+    .FormSection form {
+      width: 544px;
+    }
+  
+    .FormSection form p br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 979px) {
+    .FormSection {
+      padding: 30px 0px 40px 0px;
+    }
+  
+    .Form-Header {
+      margin-bottom: 30px !important;
+      flex-direction: column;
+    }
+  
+    .FormSection > div {
+      width: 600px;
+    }
+  
+    .Form-Header p {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+      display: none;
+    }
+  
+    .Form-Header h2 {
+      font-size: 23px;
+    }
+  
+    .FormSection form [type="submit"] {
+      width: 100%;
+      font-size: 12px;
+      padding: 15px 0px;
+    }
+  
+    .FormSection form [type="text"],
+    .FormSection form [type="text"]::placeholder,
+    .FormSection form [type="text"]::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+  
+    .FormSection form > div {
+      padding: 14px 16px;
+    }
+  
+    .FormSection form {
+      width: 100%;
+      gap: 12px;
+    }
+  
+    .custom-select span{
+      font-size: 12px;
+    }
+    .select-options li {
+      font-size: 12px;
+  }
+  }
+  
+  @media (max-width: 659px) {
+    .FormSection {
+      background-size: 458px;
+      background-position: -85px -20px;
+      border-radius: 7px;
+    }
+    
+    .FormSection > div {
+      width: 300px;
+      gap: 20px;
+    }
+  
+    .FormSection form [type="submit"] {
+      padding: 12px 0px;
+      height: auto;
+      border-radius: 5px;
+      border-color: #353535;
+      opacity: 1;
+      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
+        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
+        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
+      margin-bottom: 14px;
+    }
+  
+    .FormSection form p {
+      font-size: 10px;
+      line-height: 100%;
+    }
+  
+    .FormSection form p br {
+      display: block;
+    }
+  
+    .FormSection form > div {
+      padding: 13px 16px;
+      border-radius: 5px;
+      gap:11px;
+    }
+  
+    .FormSection form > div img{
+      width: 13px;
+    }
+  
+    .select-menu {
+      gap: 11px;
+  }
+  
+  .select-header {
+    height: 15px;
+  }
+  
+  .select-options li {
+    font-size: 10px;
+    padding: 9px 0px;
+    margin: 0px 19px 0px 17px;
+  }
+  }
