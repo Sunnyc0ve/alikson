@@ -1,16 +1,8 @@
 /* ОБЩИЕ */
 body{
-    background: #212121;
+  background: #212121;
 }
 
-h2{
-    color: #FFF;
-    font-size: 52.127px;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.521px;
-    text-transform: uppercase;
-}
 
 @media (max-width: 979px) {
   /*600*/
@@ -31,111 +23,111 @@ h2{
 
 /* Главная секция*/
 .MainSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:185px;
-    padding: 70px 0px 79px 0px;
-    background: url("../../../img/tender/MainBack.jpg") no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:91px;
+  padding: 130px 0px 91px 0px;
+  background: #181818 url("../../../img/opt/MainBack.jpg") center;
+  background-size: 1920px 100%;
+  margin-top: -4px;
 }
 
 .MainSection > div{
-    width: 1280px;
+  width: 1280px;
 }
 
 .MainSection-Header{
-    display: flex;
-    gap:40px;
-    align-items: start;
+  display: flex;
+  gap:10px;
+  align-items: start;
 }
+
 h1{
-    color: #FFF;
-    font-size: 67.44px;
-    font-weight: 500;
-    line-height: 111%; 
-    letter-spacing: -0.6744px;
-    text-transform: uppercase;
-    width: 512px;
-    flex-shrink: 0;
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 111%; 
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 626px;
+  flex-shrink: 0;
 }
 
 .MainSection-Header p{
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 300;
-    line-height: 111%;
-    letter-spacing: -0.27px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.25px;
 }
 
 .MainSection-Content{
-    display: flex;
-    align-items: end;
-    gap:260px;
+  display: flex;
+  align-items: end;
+  gap:365px;
 }
 
 .MainSection-Content a{
-    color: #FFF;
-    font-size: 30.881px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.618px;
-    padding: 17.156px 25.734px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #181818;
-    flex-shrink: 0;
-    transition: 0.5s ease;
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+  width: 272px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
 }
 
 .MainSection-Content a:hover{
-  color: #000;
   background: #fff;
-  box-shadow: none;
+  color:#000;
 }
 
 .MainSection-Content > div{
-    display: grid;
-    grid-template-columns: 406px 1fr;
-    row-gap:36px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
 }
 
 .MainSection .Info{
-    display: flex;
-    align-items: center;
-    gap:16px;
+  display: flex;
+  align-items: center;
+  gap:20px;
 }
 
-.MainSection .Info::before{
-    content: "";
-    height: 90%;
-    width: 4px;
-    background: #0485FE;
-    display: block;
-    flex-shrink: 0;
+.MainSection .Info::before {
+  content: "";
+  height: 72px;
+  width: 3px;
+  background: #0485FE;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 14px;
 }
 
-.MainSection .Info:first-child{
-    grid-column: span 2;
+.MainSection .Info h3 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.MainSection .Info h3{
-    color: #0485FE;
-font-size: 69px;
-font-weight: 500;
-line-height: 111%;
-letter-spacing: -0.69px;
-text-transform: uppercase;
-}
-
-.MainSection .Info p{
-    color: #FFF;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 111%;
-    letter-spacing: -0.45px;
-    font-family: "Mulish";
+.MainSection .Info p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .p_mobile{
@@ -308,12 +300,12 @@ text-transform: uppercase;
 
  /*Наши услуги*/
  .ServicesSection{
-  background: #212121; 
-  padding: 70px 0px;
-  border-radius: 15px;
-  border: 1px solid #353535;
+  background: #181818;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
   position: relative;
-  margin-top: -9px;
+  margin-top: -15px;
 }
 
 .ServicesSection > *{
@@ -323,54 +315,45 @@ text-transform: uppercase;
 
 .Services-Header{
   display: flex;
-  gap:55px;
+  justify-content: space-between;
 }
 
-.Services-Header h2{
-  width: 498px;
-}
 
 .Services-Header p{
-  font-size: 27px;
-  line-height: 111%;
-  letter-spacing: -0.27;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.25px;
   color:#fff;
   font-weight: 300;
 }
 
 .Services-Content{
-  margin-top: 46px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 142px 142px 142px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .Services-Content .Card{
   display: flex;
-  gap:25px;
+  gap:20px;
   align-items: center;
-  border-radius: 12px;
-  background: #30303061;
-  border: 1px solid #0058AB;
-  padding-left: 20px;
+  border-radius: 10px;
+  background: #2C2C2C;
+  backdrop-filter: blur(10px);
+  padding: 20px;
 }
 
-.Services-Content .Card > div{
-  width: 105px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Services-Content .Card img{
+  width: 30px;
 }
+
 
 .Services-Content .Card h3{
   font-weight: 400;
-  font-size: 30px;
-  line-height: 111%;
-  letter-spacing: 0px;
+  font-size: 24px;
+  line-height: 100%;
   color:#fff;
-  text-transform: uppercase;
 }
 
 @media (max-width: 1439px){
@@ -474,59 +457,62 @@ text-transform: uppercase;
 
 /*Наши преимущества*/
 .AdvantagesSection{
-  display: flex;
-  padding: 79px 0px;
-  gap:71px;
-  align-items: end;
-  background: #181818 url("../../../img/opt/AdvantagesBack.png");
-  background-size: 100% 100%;
-  margin-top: -9px;
+  background: #171717 url("../../../img/opt/AdvantagesBack.png") center;
+  background-size: 1920px 100%;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
+  position: relative;
+  margin-top: -15px;
 }
 
-.AdvantagesSection h2{
-  margin-left: calc((100vw - 1280px) / 2);
-  margin-bottom: 47px;
+.AdvantagesSection > div{
+  width: 1280px;
+  margin: auto;
 }
 
-.Advantages-Header{
-  display: flex;
-  flex-direction: column;
-  width: 498px;
-  flex-shrink: 0;
-  width: calc((100vw - 300px) / 2);
+.Advantages-Header .wrap{
+  margin: 50px 0px;
 }
 
 .Advantages-Content{
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
 }
 
-.Advantages-Content p{
+.Advantages-Content .Card{
+  border: 1px solid #FFFFFF60;
+  backdrop-filter: blur(10px);
+  background: #181818;
+  padding: 20px;
+  display: flex;
+  gap:20px;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.Advantages-Content .Card p{
   color: #FFF;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 111%;
-  text-transform: uppercase;
+  line-height: 100%;
 }
 
-.Advantages-Content div{
-  background: #0058AB;
-  height: 1px;
-  width: 100%;
-  margin: 25.4px 0px;
-}
 
 .items-wrap {
   position: relative;
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: 29px;
+  gap: 20px;
 }
 
 .items {
   flex-shrink: 0;
   display: flex;
-  gap: 29px;
+  gap: 20px;
   counter-reset: item;
   justify-content: space-around;
   min-width: 100%;
@@ -537,8 +523,8 @@ text-transform: uppercase;
   justify-content: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
-  width: 488px;
-  height: 357px;
+  width: 426px;
+  height: 256px;
 }
 
 .item img{
@@ -647,58 +633,49 @@ text-transform: uppercase;
 
 /*Категории*/
 .CategoriesSection{
-  background: #212121; 
-  padding: 70px 0px 100px 0px;
-  border-radius: 15px 15px 0px 0px;
-  border: 1px solid #353535;
-  margin-top: -9px;
+  background: #181818;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
+  position: relative;
+  margin-top: -15px;
 }
 
 .CategoriesSection > div{
   width: 1280px;
   margin: auto;
+}
+
+.Categories-Content{
   display: grid;
-  grid-template-columns: 579px 1fr;
-  gap:81px;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  margin-top: 50px;
 }
 
-.CategoriesSection .Card{
+.Categories-Content .Card{
   display: flex;
-  gap:24px;
+  gap:20px;
+  padding: 20px;
   align-items: center;
-  margin-bottom: 27px;
+  background: #2C2C2C;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
-.CategoriesSection .Card span{
-  color:#fff;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 111%;
-  letter-spacing: 0px;
-  text-transform: uppercase;
+.Categories-Content .Card img{
+  width: 30px;
 }
 
-.CategoriesSection .Card > div{
-  width: 113px;
-  height: 99px;
-  border-radius: 13px;
-  border: 1px solid #8D8D8D;
-  backdrop-filter: blur(8.302919387817383px);
-  box-shadow: 0px 0px 17.6px 0px #0666DF, 0px 0px 4.1px 0px #0485FE91,0px 0px 2.7px 0px #FFFFFF59;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+.Categories-Content .Card span{
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
 }
 
-.Categories-Left{
-  display: flex;
-  flex-direction: column;
-}
 
-.CategoriesSection h2{
-  margin-bottom: auto;
-}
+
 
 @media (max-width: 1439px){
   /*920*/
@@ -798,13 +775,13 @@ text-transform: uppercase;
 
 /*Наши клиенты*/
 .ClientsSection{
-  background: #181818 url("../../../img/opt/ClientsBack.png");
-  background-size: 100% 100%;
-  border: 1px solid #353535;
-  border-radius: 35px 35px 0px 0px;
-  padding: 70px 0px 87px 0px;
+  background: #181818 url("../../../img/opt/ClientsBack.png") center;
+  background-size: 1920px 100%;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
   position: relative;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 .ClientsSection > *{
@@ -813,21 +790,19 @@ text-transform: uppercase;
 }
 
 .Clients-Content{
-  margin-top: 46px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 124px;
-  gap:30px;
+  grid-auto-rows: 104px;
+  gap:20px;
 }
 
 .Clients-Content .Card{
-  border-radius:11px;
-  border: 1px solid #0058AB;
+  border-radius:10px;
+  border: 1px solid #FFFFFF60;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(23, 23, 23, 0.10);
-  backdrop-filter: blur(10.050000190734863px);
 }
 
 .Clients-Content_mobile{
@@ -901,238 +876,3 @@ text-transform: uppercase;
       margin-bottom: 7px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Секция форма */
-
-.Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #212121 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
-    padding: 70px 0px;
-    border-radius: 20px;
-    border: 1px solid #353535;
-    position: relative;
-    margin-top: -17px;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
-
-box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
-
-  }
-
-
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 401px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      font-size: 43px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  
-    .FormSection form p br {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      padding: 30px 0px 40px 0px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
-      line-height: 111%;
-      /* display: none; */
-    }
-  
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
-    .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
-    }
-  
-    .FormSection form > div {
-      padding: 14px 16px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 12px;
-    }
-  }
-  
-  @media (max-width: 659px) {
-    .FormSection {
-        background-size: 316px;
-        background-position: -2px 22px;
-      border-radius: 7px;
-    }
-    
-    .FormSection > div {
-      width: 300px;
-      gap: 20px;
-    }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      font-size: 10px;
-      line-height: 100%;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  }
-
-  /*ФУТЕР*/
-  footer{
-    margin-top: -12px;
-  }

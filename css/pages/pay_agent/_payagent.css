@@ -3,22 +3,13 @@ body{
     background: #212121;
 }
 
-h2{
-    color: #FFF;
-    font-size: 52.127px;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.521px;
-    text-transform: uppercase;
-}
-
 @media (max-width: 979px) {
     /*600*/
     h2{
         color: #0485FE;
     }
   }
-  
+
   @media (max-width: 659px) {
     /*300*/
     h2{
@@ -34,11 +25,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:174px;
-    padding: 66px 0px 79px 0px;
-    background: url("../../../img/pay_agent/MainBack.jpg") no-repeat;
-    background-size: 100% 100%;
-    margin-top: -5px;
+    padding: 130px 0px 91px 0px;
+    background: #181818 url("../../../img/pay_agent/MainBack.jpg") center;
+    background-size: 1920px 100%;
+    margin-top: -4px;
+    gap: 180px;
 }
 
 .MainSection > div{
@@ -47,94 +38,94 @@ h2{
 
 .MainSection-Header{
     display: flex;
-    gap:24px;
+    gap:10px;
     align-items: start;
 }
+
 h1{
     color: #FFF;
-    font-size: 69.58px;
+    font-size: 72px;
     font-weight: 500;
     line-height: 111%; 
-    letter-spacing: -0.696px;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
-    width: 532px;
+    width: 517px;
     flex-shrink: 0;
 }
 
 .MainSection-Header p{
     color: #FFF;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 300;
-    line-height: 111%;
-    letter-spacing: -0.27px;
+    line-height: normal;
+    letter-spacing: -0.25px;
 }
 
 .MainSection-Content{
     display: flex;
     align-items: end;
-    gap:259px;
+    gap:254px;
 }
 
 .MainSection-Content a{
     color: #FFF;
-    font-size: 30.881px;
+    font-size: 24px;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.618px;
-    padding: 17.156px 25.734px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #181818;
     flex-shrink: 0;
     transition: 0.5s ease;
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+    border-radius: 5px;
+    border: 1px solid rgba(170, 170, 170, 0.15);
+    background: #112A4D;
+    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+    width: 272px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: none;
     background: #fff;
     color:#000;
 }
 
 .MainSection-Content > div{
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    row-gap:36px;
-    column-gap: 10px;
+    grid-template-columns: 1fr;
+    gap:40px;
 }
 
 .MainSection .Info{
     display: flex;
     align-items: center;
-    gap:18px;
+    gap:20px;
 }
 
-.MainSection .Info::before{
+.MainSection .Info::before {
     content: "";
-    height: 90%;
-    width: 4px;
+    height: 72px;
+    width: 3px;
     background: #0485FE;
     display: block;
     flex-shrink: 0;
+    margin-bottom: 14px;
 }
 
-
-.MainSection .Info h3{
-    color: #0485FE;
-font-size: 69px;
-font-weight: 500;
-line-height: 80%;
-letter-spacing: -0.69px;
-text-transform: uppercase;
+.MainSection .Info h3 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.MainSection .Info p{
-    color: #FFF;
-    font-family: 'Mulish';
-    font-weight: 400;
-    font-size: 24.3px;
-    line-height: 111%;
-    letter-spacing: -0.243;
+.MainSection .Info p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
 }
 
 @media (max-width: 1439px){
@@ -294,72 +285,76 @@ text-transform: uppercase;
 
  /*Что такое платежный агент*/
  .AboutSection{
-    margin: auto;
-    padding: 62px 0px 70px 0px;
-    border: 1px solid #353535;
-    background: #212121;
-    border-radius: 15px;
+    padding: 90px 0px 105px 0px;
+    background: #171717;
+    border: 1px solid #3535354D;
+    margin-top: -15px;
     position: relative;
-    margin-top: -9px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .AboutSection > div{
     width: 1280px;
     margin: auto;
+}
+
+
+.About-Content{
     display: flex;
-    gap:67px;
+    gap:95px;
+    margin-top: 50px;
 }
 
-.AboutSection h2{
-    font-size: 47.1px;
-    line-height: 111%;
-    margin-bottom: 55px;
-}
 
-.About-Left > div{
-    width: 494px;
-    height: 267px;
-    border: 1px solid #FFFFFF;
-    backdrop-filter: blur(33.960906982421875px);
-
-box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 7.8px 0px #FFFFFF;
-
+.About-Left{
+    width: 555px;
+    border: 1px solid #747474;
     border-radius: 10px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
-.About-Left > div img{
+.About-Left img{
     width: 100%;
     height: 100%;
 }
 
-.About-Right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .About-Right p{
     font-weight: 300;
-    font-size: 27px;
-    line-height: 111%;
-    letter-spacing: -0.27px;
-    color:#fff;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.25px;
+    color: #fff;
+}
+
+.About-Right .p_desktop{
+    margin: 40px 0px 20px 0px;
 }
 
 .About-Right a{
     font-weight: 400;
-    font-size: 30px;
-    line-height: 111%;
-    letter-spacing: -0.3px;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: #112A4D;
+    box-shadow: 0px 0px 50.5px 0px #006AFF26;
+    border: 1px solid #AAAAAA26;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 33px 40px 33px 50px;
-    background: #0485FE;
+    height: 61px;
     color:#fff;
-    text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.About-Right a:hover{
+    background: #fff;
+    color: #000;
 }
 
 .p_mobile{
@@ -454,10 +449,13 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
 
 /*Кому подойдут услуги секция*/
 .ServicesSection{
-    background: #181818 url("../../../img/pay_agent/ServicesBack.png") no-repeat;
-    background-size: 100% 100%;
-    padding: 71px 0px 79px 0px;
-    margin-top: -9px;
+    background: #181818 url("../../../img/pay_agent/ServicesBack.png") center;
+    background-size: 1920px 100%;
+    padding: 90px 0px 105px 0px;
+    margin-top: -15px;
+    border: 1px solid #3535354D;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 
 .ServicesSection > *{
@@ -466,38 +464,34 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
 }
 
 .Services-Content{
-    margin-top: 53px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 123px;
-    gap:30px;
+    gap:20px;
 }
 
 .Services-Content .Card{
     display: flex;
-    gap:7px;
+    gap:20px;
+    padding: 20px;
     align-items: center;
-    border-radius: 12px;
-    background: #212121;
-    border: 1px solid #0058AB;
-    padding-left: 10px;
+    border-radius: 10px;
+    background: #171717;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
 }
 
-.Services-Content .Card > div{
-    width: 114px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Services-Content .Card img{
+    width: 30px;
 }
+
 
 .Services-Content .Card h3{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38.7px;
-    letter-spacing: 0px;
     color:#fff;
-    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 @media (max-width: 1439px){
@@ -580,61 +574,64 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
 
 /*Виды переводов*/
 .KindsSection{
-    display: flex;
-    border-radius: 15px;
-    border: 1px solid #353535;
-    background: #212121;
-    padding: 63px 0px 60px 0px;
-    gap:71px;
-    align-items: end;
+    padding: 90px 0px 105px 0px;
+    margin-top: -15px;
     position: relative;
-    margin-top: -9px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(53, 53, 53, 0.30);
+    background: #171717;
 }
 
-.KindsSection h2{
-    margin-left: calc((100vw - 1280px) / 2);
-    margin-bottom: 58px;
+.KindsSection > div{
+    width: 1280px;
+    margin: auto;
 }
 
-.Kinds-Header{
-    display: flex;
-    flex-direction: column;
-    width: 498px;
-    flex-shrink: 0;
-    width: calc((100vw - 300px) / 2);
+
+
+.Kinds-Header .wrap{
+    margin: 50px 0px;
 }
+
 
 .Kinds-Content{
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.Kinds-Content .Card{
+    border-radius: 10px;
+    background: #2C2C2C;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    align-items: center;
 }
 
 .Kinds-Content p{
     color: #FFF;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 300;
-    line-height: 111%;
-    text-transform: uppercase;
+    line-height: normal;
 }
 
-.Kinds-Content div{
-    background: #0058AB;
-    height: 1px;
-    width: 100%;
-    margin: 24.5px 0px;
-}
+
   
   .items-wrap {
     position: relative;
     display: flex;
     overflow: hidden;
     user-select: none;
-    gap: 29px;
+    gap: 20px;
   }
   
   .items {
     flex-shrink: 0;
     display: flex;
-    gap: 29px;
+    gap: 20px;
     counter-reset: item;
     justify-content: space-around;
     min-width: 100%;
@@ -644,18 +641,27 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6px;
     transition: all 0.1s ease-in-out;
-    height: 336px;
+    height: 256px;
+    width: 423px;
   }
 
   .item img{
-    width: auto;
     height: 100%;
+    width: 100%;
   }
   
   .marquee {
     animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
   }
   
   @keyframes scroll {
@@ -766,10 +772,13 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
 
 /*Наши преимущества секция*/
 .AdvantagesSection{
-    background: #181818 url("../../../img/pay_agent/AdvantagesBack.png") no-repeat;
-    background-size: 100% 100%;
-    padding: 72px 0px 82px 0px;
-    margin-top: -9px;
+    background: #181818 url("../../../img/pay_agent/AdvantagesBack.png") center;
+    background-size: 1920px 100%;
+    padding: 90px 0px 105px 0px;
+    margin-top: -15px;
+    border: 1px solid #3535354D;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 
 .AdvantagesSection > *{
@@ -778,38 +787,34 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
 }
 
 .Advantages-Content{
-    margin-top: 47px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 110px;
-    gap:30px;
+    gap:20px;
 }
 
 .Advantages-Content .Card{
     display: flex;
-    gap:16px;
+    gap:20px;
+    padding: 20px;
     align-items: center;
-    border-radius: 12px;
-    background: #212121;
-    border: 1px solid #0058AB;
-    padding-left: 20px;
+    border-radius: 10px;
+    background: #171717;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
 }
 
-.Advantages-Content .Card > div{
-    width: 67px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Advantages-Content .Card img{
+    width: 30px;
 }
+
 
 .Advantages-Content .Card h3{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38.7px;
-    letter-spacing: 0px;
     color:#fff;
-    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 @media (max-width: 1439px){
@@ -893,234 +898,3 @@ box-shadow: 0px 0px 29.15px 0px #0485FE, 0px 0px 18.07px 0px #0485FEBF, 0px 0px 
   }
 
 
-/* Секция форма */
-
-.Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 300;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #212121 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
-    padding: 77px 0px 104px 0px;
-    border-radius: 15px;
-    border: 1px solid #353535;
-    position: relative;
-    margin-top: -12px;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-    font-weight: 300;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
-  
-  box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
-  
-  }
-  
-  
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 401px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      font-size: 43px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  
-    .FormSection form p br {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      padding: 30px 0px 40px 0px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
-      line-height: 111%;
-      /* display: none; */
-    }
-  
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
-    .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
-    }
-  
-    .FormSection form > div {
-      padding: 14px 16px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 12px;
-    }
-  }
-  
-  @media (max-width: 659px) {
-    .FormSection {
-        background-size: 250px;
-        background-position: -9px 34px;
-      border-radius: 7px;
-      padding: 27px 0px 16px 0px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 15px !important;
-    }
-    
-    .FormSection > div {
-      width: 300px;
-      gap: 20px;
-    }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      display: none;
-    }
-  
-    .Form-Header p{
-      display: none;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  }
-  
-  
-  /*ФУТЕР*/
-  footer{
-    margin-top: -12px;
-  }

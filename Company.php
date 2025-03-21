@@ -9,8 +9,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/company/_company.css?1.3" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/company/_company.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +24,10 @@
     <?php include('include/header.html')?>
     <main>
         <section class="MainSection">
-            <img src="img/company/MainDecor.png">
+            <!-- <img src="img/company/MainDecor.png"> -->
             <div class="MainSection-Header">
                 <h1>О компании</h1>
-                <p class="p_desktop">Alikson Group - группа компаний, работающая  с 2020 года в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги. Создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность</p>
+                <p class="p_desktop">Alikson Group - группа компаний, работающая  с 2020 года<br> в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги. Создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность</p>
                 <p class="p_mobile">Alikson Group - группа компаний, ,работающая<br>  с 2020 года в 24 направлениях бизнеса,<br> в числе которых — информационные<br> технологии, логистика, инвестиции, девелопмент и платежные услуги</p>
             </div>
             <div class="MainSection-Content">
@@ -57,28 +58,20 @@
                 </div>
                 <div class="Values-Content">
                     <div class="Card">
-                        <div>
                             <img src="img/company/ValuesIco1.svg">
-                        </div>
-                        <p>Технологичность</p>
+                            <p>Технологичность</p>
                     </div>
                     <div class="Card">
-                        <div>
                             <img src="img/company/ValuesIco2.svg">
-                        </div>
-                        <p>Ответственность</p>
+                            <p>Ответственность</p>
                     </div>
                     <div class="Card">
-                        <div>
                             <img src="img/company/ValuesIco3.svg">
-                        </div>
-                        <p>Надежность</p>
+                            <p>Надежность</p>
                     </div>
                     <div class="Card">
-                        <div>
                             <img src="img/company/ValuesIco4.svg">
-                        </div>
-                        <p>Забота о клиентах</p>
+                            <p>Забота о клиентах</p>
                     </div>
                 </div>
         </section>
@@ -100,7 +93,7 @@
                     </div>
                     <div class="Card-Content">
                         <h3>Гасан Мустафаев</h3>
-                        <p>Генеральный директор компании Alikson Group</p>
+                        <p>Генеральный директор компании<br> Alikson Group</p>
                     </div>
                 </div>
                 <div class="Card">
@@ -109,7 +102,7 @@
                     </div>
                     <div class="Card-Content">
                         <h3>Алексей Глухов</h3>
-                        <p>Руководитель отдела по работе с маркетплейсами</p>
+                        <p>Руководитель отдела по работе<br> с маркетплейсами</p>
                     </div>
                 </div>
             </div>
@@ -168,8 +161,8 @@
                     <img src="img/company/CareerImg.jpg">
                 </div>
                 <div class="Career-Right">
-                    <p>Наша главная ценность — люди. В нашей команде работают топ-профессионалы с опытом в ведущих компаниях рынка.</p>
-                    <a href="">вакансии <img src="img/pay_agent/Arrow.svg"></a>
+                    <p>Наша главная ценность — люди. В нашей команде работают топ-профессионалы с опытом в ведущих компаниях рынка</p>
+                    <a href="">Вакансии</a>
                 </div>
             </div>
             <div class="Career-Content_mobile">
@@ -177,8 +170,8 @@
                     <img src="img/company/CareerImg_mobile.jpg">
                 </div>
                 <div class="Career-Right">
-                    <p>Наша главная ценность — люди. В нашей команде работают топ-профессионалы с опытом в ведущих компаниях рынка.</p>
-                    <a href="">вакансии <img src="img/pay_agent/Arrow.svg"></a>
+                    <p>Наша главная ценность — люди. В нашей команде работают топ-профессионалы с опытом в ведущих компаниях рынка</p>
+                    <a href="">Вакансии</a>
                 </div>
             </div>
         </section>
@@ -189,50 +182,24 @@
             </div>
             <div class="Important-Content">
                 <div class="Card">
-                    <div>
-                        <img src="img/company/Important1.svg">
-                    </div>
+                    <img src="img/company/Important1.svg">
                     <p>Постоянное развитие</p>
                 </div>
                 <div class="Card">
-                    <div>
-                        <img src="img/company/Important2.svg">
-                    </div>
+                    <img src="img/company/Important2.svg">
                     <p>Уважение и признание</p>
                 </div>
                 <div class="Card">
-                    <div>
-                        <img src="img/company/Important3.svg">
-                    </div>
+                    <img src="img/company/Important3.svg">
                     <p>Открытый диалог</p>
+                </div>
+                <div class="Card">
+                    <img src="img/company/Important3.svg">
+                    <p>Командная работа и поддержка</p>
                 </div>
             </div>
         </section>
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>

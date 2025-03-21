@@ -4,8 +4,10 @@
     <title>Alikson - Девелопмент</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/development/_development.css?1.0" />
+
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/development/_development.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -31,6 +33,12 @@
                 <div>
                     <div class="Info">
                         <div>
+                            <h3>+40%</h3>
+                            <p>рост стоимости после сдачи объекта</p>
+                        </div>
+                    </div>
+                    <div class="Info">
+                        <div>
                             <h3>75 000 кв.м </h3>
                             <p>строим офисные пространства</p>
                         </div>
@@ -41,12 +49,6 @@
                             <p>доходность выше традиционной аренды</p>
                         </div>
                     </div>
-                    <div class="Info">
-                        <div>
-                            <h3>+40%</h3>
-                            <p>рост стоимости после сдачи объекта</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -54,9 +56,9 @@
             <h2>наши проекты</h2>
             <div class="Projects-Content">
                 <div class="Card">
-                    <h3>Офисные центры на улице Лобачевского</h3>
-                    <p>Два ультрасовременных офисных здания по 30 этажей</p>
-                    <p>50 000 кв.м.</p>
+                    <h3>Офисные центры<br> на улице Лобачевского</h3>
+                    <p>Два ультрасовременных офисных<br> здания по 30 этажей</p>
+                    <p class="info">50 000 кв.м.</p>
                     <ul>
                         <li>Класс А — премиальный уровень комфорта</li>
                         <li>Энергоэффективные технологии</li>
@@ -65,9 +67,9 @@
                     </ul>
                 </div>
                 <div class="Card">
-                    <h3>офисный комплекс на Международной улице</h3>
-                    <p>Современное здание, ориентированное на бизнесы нового поколения</p>
-                    <p>25 000 кв.м.</p>
+                    <h3>офисный комплекс<br> на Международной улице</h3>
+                    <p>Современное здание, ориентированное<br> на бизнесы нового поколения</p>
+                    <p class="info">25 000 кв.м.</p>
                     <ul>
                         <li>Пространства для офисного шеринга</li>
                         <li>Гибкие условия для арендаторов</li>
@@ -126,7 +128,7 @@
                 </div>
                 <div class="About-Right">
                     <p>Это современный формат аренды, который позволяет компаниям пользоваться офисным пространством гибко и экономично. Вместо долгосрочной аренды вы можете арендовать помещения на часы, дни или месяцы, выбирая только то, что нужно именно вам</p>
-                    <a href="">оставить заявку <img src="img/pay_agent/Arrow.svg"></a>
+                    <a href="">Оставить заявку</a>
                 </div>
             </div>
         </section>
@@ -173,27 +175,21 @@
             <h2>Инвестиции, которые работают на вас</h2>
             <div class="Investitions-Content">
                 <div class="Card">
-                    <div class="Card-Header">
-                        <h3>Приобретение на этапе строительства:</h3>
-                    </div>
+                        <h3>Приобретение на этапе строительства</h3>
                     <ul class="Card-Content">
                         <li>Средняя стоимость кв.м на этапе котлована на 20–30% ниже рыночной</li>
                         <li>Рост цен после сдачи достигает 40%</li>
                     </ul>
                 </div>    
                 <div class="Card">
-                    <div class="Card-Header">
-                        <h3>Прирост стоимости объектов:</h3>
-                    </div>
+                        <h3>Прирост стоимости объектов</h3>
                     <ul class="Card-Content">
                         <li>Ежегодный рост цен на офисную недвижимость в Москве составляет 10–15%</li>
                         <li>В 2023 году рынок коммерческой недвижимости увеличился на 12%</li>
                     </ul>
                 </div>
                 <div class="Card">
-                    <div class="Card-Header">
                         <h3>Доход от аренды</h3>
-                    </div>
                     <ul class="Card-Content">
                         <li>Доходность от долгосрочной аренды офисов составляет 10-12% годовых</li>
                         <li>Растущий спрос на офисы класса A увеличивает ставки аренды на 20% за последние два года</li>
@@ -248,31 +244,7 @@
                 </div>
             </div>
         </section>
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>

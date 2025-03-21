@@ -1,8 +1,8 @@
 <svg width="55" height="52" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.2344 43.6382V50.0744" stroke="white" stroke-width="2"/>
-<path d="M32.7656 43.6382V50.0744" stroke="white" stroke-width="2"/>
-<path d="M42.1274 50.6597H12.8721" stroke="white" stroke-width="2" stroke-linecap="round"/>
-<rect x="1" y="1.34033" width="53" height="42.4681" rx="3" stroke="white" stroke-width="2"/>
-<rect x="9.19141" y="9.53174" width="36.617" height="22.5745" stroke="white" stroke-width="2"/>
-<circle cx="27.4998" cy="38.3723" r="2.92553" fill="white"/>
+<path d="M22.2344 43.6382V50.0744" stroke="#006FFF" stroke-width="2"/>
+<path d="M32.7656 43.6382V50.0744" stroke="#006FFF" stroke-width="2"/>
+<path d="M42.1274 50.6597H12.8721" stroke="#006FFF" stroke-width="2" stroke-linecap="round"/>
+<rect x="1" y="1.34033" width="53" height="42.4681" rx="3" stroke="#006FFF" stroke-width="2"/>
+<rect x="9.19141" y="9.53174" width="36.617" height="22.5745" stroke="#006FFF" stroke-width="2"/>
+<circle cx="27.4998" cy="38.3723" r="2.92553" fill="#006FFF"/>
 </svg>

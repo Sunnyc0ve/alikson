@@ -4,8 +4,10 @@
     <title>Alikson - Майнинг</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/mining/_mining.css?1.0" />
+
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/mining/_mining.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -31,7 +33,7 @@
                 <div>
                     <div class="Info">
                         <div>
-                            <h3>3000+</h3>
+                            <h3>3 000+</h3>
                             <p>устройств в работе</p>
                         </div>
                     </div>
@@ -71,16 +73,16 @@
                             <p>высокая доходность</p>
                         </div>
                         <div>
-                            <h3>долгосрочные перспективы</h3>
+                            <h3>Долгосрочные перспективы</h3>
                             <p>растущий рынок криптовалют</p>
                         </div>
                         <div>
-                            <h3>диверсификация портфеля</h3>
+                            <h3>Диверсификация портфеля</h3>
                             <p>снижение финансовых рисков</p>
                         </div>
                         <div>
-                            <h3>пассивный доход</h3>
-                            <p>стабильные выплаты при минимальных<br> затратах времени</p>
+                            <h3>Пассивный доход</h3>
+                            <p>стабильные выплаты при минимальных затратах времени</p>
                         </div>
                     </div>
                 </div>
@@ -99,43 +101,42 @@
                                 <img src="img/mining/ArrowUp.svg">
                                 <span>+10-20%</span>
                             </div>
-                            <p>Доходность за год</p>
+                            <p>Доходность <span>за год</span></p>
                         </div>
                     </div>
                     <div class="Card-Content">
                         <span>БАНК</span>
                     </div>
                     <div class="Card-Footer">
-                        <p>Ваш вклад - 300 000₽</p>
-                        <p>Ваш доход - 30 000₽</p>
+                        <p>Ваш вклад <span>- 300 000₽</span></p>
+                        <p>Ваш доход <span>- 30 000₽</span></p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="Card-Header">
                         <h3>ДОХОД ЗА ГОД с аликсон</h3>
                         <div>
+                            <img class="decor" src="img/mining/decor.png">
                             <div>
                                 <img src="img/mining/ArrowUp_1.svg">
                                 <span>+40-70%</span>
                             </div>
-                            <p>Доходность за год</p>
+                            <p>Доходность <span>за год</span></p>
                         </div>
                     </div>
                     <div class="Card-Content">
                     <span>ALIKSON<br>МАЙНИНГ</span>
                     </div>
                     <div class="Card-Footer">
-                        <p>Ваш вклад - 300 000₽</p>
-                        <p>Ваш доход - 200 000₽</p>
+                        <p>Ваш вклад <span>- 300 000₽</span></p>
+                        <p>Ваш доход <span>- 200 000₽</span></p>
                     </div>
                 </div>
             </div>
             <div class="Vs-Footer">
                 <p>Средняя доходность 
                 от майнингового оборудования в 2024 году составила</p>
-                <div>
-                    <span>~45% годовых</span>
-                </div>
+                <span>~45% годовых</span>
             </div>
         </section>
         <section class="ServicesSection">
@@ -146,36 +147,45 @@
                 </div>
                 <div class="Services-Right">
                     <div class="Card">
-                        <h3>Продажа оборудования<br> для майнинга</h3>
+                        <h3>Продажа оборудования для майнинга</h3>
                         <p>Сертифицированное оборудование с гарантией. Быстрая доставка и размещение на хостинг</p>
                     </div>
                     <div class="Card">
                         <h3>Инвестиции в майнинг</h3>
-                        <p>Стабильный доход и полное сопровождение на каждом этапе - от установки и настройки оборудования до мониторинга и технической поддержки</p>
+                        <p>Стабильный доход и полное сопровождение на каждом этапе - от установки и настройки оборудования<br> до мониторинга и технической поддержки</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="AdvantagesSection">
             <div class="Advantages-Header">
-                <h2 class="h2_desktop">Преимущества работы с нами</h2>
-                <h2 class="h2_mobile">Наши Преимущества</h2>
+                <h2>Наши Преимущества</h2>
             </div>
             <div class="Advantages-Content">
-                <h3>Передовые технологии</h3>
-                <p>современное оборудование и ПО</p>
-                <div></div>
-                <h3>Прозрачные процессы</h3>
-                <p>открытость на каждом этапе</p>
-                <div></div>
-                <h3>Обслуживание “под ключ”</h3>
-                <p>экономия времени клиента</p>
-                <div></div>
-                <h3>Гибкость решений</h3>
-                <p>масштабируемость для любого бизнеса</p>
-                <div></div>
-                <h3>Безопасность</h3>
-                <p>высокий уровень защиты данных и оборудования</p>
+                <div class="Card">    
+                    <h3>Передовые технологии</h3>
+                    <p>современное оборудование и ПО</p>
+                </div>
+                <div class="Card">
+                    <h3>Прозрачные процессы</h3>
+                    <p>открытость на каждом этапе</p>
+                </div>
+                <div class="Card">
+                    <h3>Обслуживание “под ключ”</h3>
+                    <p>экономия времени клиента</p>
+                </div>
+                <div class="Card">
+                    <h3>Гибкость решений</h3>
+                    <p>масштабируемость для любого бизнеса</p>
+                </div>
+                <div class="Card">
+                    <h3>Безопасность</h3>
+                    <p>высокий уровень защиты данных и оборудования</p>
+                </div>
+                <div class="Card">
+                    <h3>Поддержка</h3>
+                    <p>настройка и техническое обслуживание оборудования</p>
+                </div>
             </div>
         </section>
         <section class="WhySection">
@@ -184,20 +194,20 @@
             </div>
             <div class="Why-Content">
                 <div class="Card">
-                    <div><img src="img/mining/Why1.svg"></div>
-                    <h3>ИННОВАЦИИ</h3>
+                    <img src="img/mining/Why1.png">
+                    <h3>Инновации</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/mining/Why2.svg"></div>
-                    <h3>ГАРАНТИЯ РЕЗУЛЬТАТА</h3>
+                    <img src="img/mining/Why2.png">
+                    <h3>Гарантия результата</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/mining/Why3.svg"></div>
-                    <h3>ПРОЗРАЧНОСТЬ</h3>
+                    <img src="img/mining/Why3.svg">
+                    <h3>Прозрачность</h3>
                 </div>
                 <div class="Card">
-                    <div><img src="img/mining/Why4.svg"></div>
-                    <h3>ДОЛГОСРОЧНОЕ<br> ПАРТНЕРСТВО</h3>
+                    <img src="img/mining/Why4.svg">
+                    <h3>Долгосрочное партнерство</h3>
                 </div>
             </div>
         </section>
@@ -205,31 +215,41 @@
             <h2>Пакеты услуг</h2>
             <div class="Packs-Content">
                 <div class="Card">
-                    <div class="Card-Header">
-                        <h3>все включено</h3>
-                    </div>
+                    <h3>все включено</h3>
                     <div class="Card-Content">
-                        <h4>Доверяйте всё профессионалам</h4>
+                        <h4>Доверяйте все профессионалам</h4>
                         <p>Мы организуем весь процесс майнинга, чтобы вы получали прибыль без лишних забот.</p>
+                    </div>
+                    <div class="Card_hidden">
+                        <p>- Подбор и приобретение оборудования</p>
+                        <p>- Полная установка и настройка оборудования</p>
+                        <p>- Техническое обслуживание на каждом этапе</p>
+                        <p>- Личный менеджер, готовый ответить на все вопросы</p>
+                        <p>- Аналитика доходности и поддержка 24/7</p>
                     </div>
                 </div>
                 <div class="Card">
-                    <div class="Card-Header">
-                        <h3>Фиксированная доходность</h3>
-                    </div>
+                    <h3>Фиксированная доходность</h3>
                     <div class="Card-Content">
-                        <p>- Регулярные выплаты вашей прибыли </p>
+                        <h4>Стабильный доход с гарантией</h4>
+                        <p>Просто инвестируйте, а мы сделаем все остальное</p>
+                    </div>
+                    <div class="Card_hidden">
+                        <p>- Регулярные выплаты вашей прибыли</p>
                         <p>- Прозрачные условия и максимальная надежность</p>
                         <p>- Полное техническое сопровождение от нашей команды</p>
                     </div>
                 </div>
                 <div class="Card">
-                    <div class="Card-Header">
-                        <h3>Техническое обслуживание</h3>
-                    </div>
+                    <h3>Техническое обслуживание</h3>
                     <div class="Card-Content">
                         <h4>Уже есть оборудование?</h4>
                         <p>Доверьте его эксплуатацию нам, и получите максимум от своих мощностей</p>
+                    </div>
+                    <div class="Card_hidden">
+                        <p>- Подключение к нашей эффективной инфраструктуре</p>
+                        <p>- Постоянный мониторинг, ремонт и оптимизация работы</p>
+                        <p>- Снижение затрат за счет профессионального управления</p>
                     </div>
                 </div>
             </div>
@@ -242,7 +262,7 @@
                                     <h3>все включено</h3>
                                 </div>
                                 <div class="Card-Content">
-                                    <h4>Доверяйте всё профессионалам</h4>
+                                    <h4>Доверяйте все профессионалам</h4>
                                     <p>Мы организуем весь процесс майнинга, чтобы вы получали прибыль без лишних забот.</p>
                                 </div>
                             </div>
@@ -282,31 +302,7 @@
                 </div>
             </div>
         </section>
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>
@@ -322,5 +318,19 @@
         prevEl: ".Swiper-Prev",
       },
     });
+  </script>
+  <script>
+    // document.querySelectorAll('.Packs-Content .Card').forEach(e=>{
+    //     e.addEventListener('mouseover',()=>{
+    //        // e.setAttribute('style','height:369px;')
+    //         e.querySelector('.Card-Content').setAttribute('style','display:none;')
+    //         e.querySelector('.Card_hidden').setAttribute('style','display:flex;')
+    //     })
+    //     e.addEventListener('mouseout',()=>{
+    //        // e.removeAttribute('style')
+    //         e.querySelector('.Card-Content').removeAttribute('style')
+    //         e.querySelector('.Card_hidden').removeAttribute('style')
+    //     })
+    // })
   </script>
 </html>

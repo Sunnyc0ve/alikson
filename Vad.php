@@ -4,8 +4,10 @@
     <title>Alikson - ВЭД</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/pages/vad/_vad.css?1.0" />
+
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css?2.0" />
+    <link rel="stylesheet" href="css/pages/vad/_vad.css?2.0" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +19,7 @@
     <main>
         <section class="MainSection">
             <div class="MainSection-Header">
-                <h1>ВЭД с Alikson Group</h1>
+                <h1>ВЭД<br> с Alikson Group</h1>
                 <p>Предоставляем полный спектр услуг по&nbsp;организации ВЭД операций, сопровождаем клиентов на&nbsp;каждом этапе, обеспечивая безопасность сделок, минимизацию рисков и&nbsp;максимальную эффективность</p>
             </div>
             <div class="MainSection-Content">
@@ -70,21 +72,38 @@
                     </div>
             </div>
             <div class="Services-Content">
-                <p>Аутсорсинг ВЭД</p>
-                <div></div>
-                <p>Поиск поставщиков и проверка контрагентов</p>
-                <div></div>
-                <p>Прямые поставки и оптовая дистрибуция</p>
-                <div></div>
-                <p>Логистика и хранение товаров</p>
-                <div></div>
-                <p>Импорт и экспорт продукции</p>
-                <div></div>
-                <p>Таможенное оформление и сертификация</p>
-                <div></div>
-                <p>Финансовые и валютные операции</p>
-                <div></div>
-                <p>Юридическое сопровождение сделок</p>
+                <div class="Card">    
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Аутсорсинг ВЭД</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Поиск поставщиков и проверка контрагентов</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Прямые поставки и оптовая дистрибуция</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Логистика и хранение товаров</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Импорт и экспорт продукции</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Таможенное оформление и сертификация</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Финансовые и валютные операции</p>
+                </div>
+                <div class="Card">
+                    <img src="img/vad/checkbox.svg">    
+                    <p>Юридическое сопровождение сделок</p>
+                </div>
             </div>
         </section>
         <section class="AboutServicesSection">
@@ -113,55 +132,37 @@
         <section class="AdvantagesSection">
             <div class="Advantages-Header">
                 <h2>Наши преимущества</h2>
+            </div>
+            <div class="Advantages-Body">
                 <div class="Advantages-Img">
                     <img class="img_desktop" src="img/vad/Advantages-Img.png">
                     <img class="img_mobile" src="img/vad/Advantages-Img_1.png">
                 </div>
-            </div>
-            <div class="Advantages-Content">
-                <p>Комплексный подход</p>
-                <div></div>
-                <p>Гарантированная безопасность </p>
-                <div></div>
-                <p>Гибкость и индивидуальный подход</p>
-                <div></div>
-                <p>Экономия времени и ресурсов</p>
+                <div class="Advantages-Content">
+                    <div class="Card">    
+                        <img src="img/vad/checkbox.svg">
+                        <p>Комплексный подход</p>
+                    </div>
+                    <div class="Card">
+                        <img src="img/vad/checkbox.svg">
+                        <p>Гарантированная безопасность</p>
+                    </div>
+                    <div class="Card">
+                        <img src="img/vad/checkbox.svg">
+                        <p>Анализ рынка и предложений</p>
+                    </div>
+                    <div class="Card">
+                        <img src="img/vad/checkbox.svg">
+                        <p>Гибкость и индивидуальный подход</p>
+                    </div>
+                    <div class="Card">
+                        <img src="img/vad/checkbox.svg">
+                        <p>Экономия времени и ресурсов</p>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        
-
-
-
-
-
-
-
-        <section class="FormSection">
-        <div class="Form-Header">
-          <h2>оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже сегодня</p>
-        </div>
-        <div class="Form-Main">
-          <form action="" method="POST">
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input type="text" name="name" required placeholder="Ваше имя" />
-            </div>
-            <div>
-              <img src="img/inputInfo.svg" />
-              <input
-                type="text"
-                name="phone"
-                required
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
-            <p>Заполните форму, чтобы узнать больше</p>
-          </form>
-        </div>
-      </section>
+        <?php include('include/form.php') ?>
     </main>
     <?php include('include/footer.html') ?>
   </body>

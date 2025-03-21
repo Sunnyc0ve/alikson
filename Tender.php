@@ -7,8 +7,8 @@
 
     
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/header.css?2.0" />
-    <link rel="stylesheet" href="css/pages/tender/_tender.css?2.0" />
+    <link rel="stylesheet" href="css/header.css?2.1" />
+    <link rel="stylesheet" href="css/pages/tender/_tender.css?2.2" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>Тендерный<br> дивизион</h1>
-                <p>Инновационная платформа для аренды, сдачи и управления недвижимостью, который автоматизирует процесс и делает его максимально удобным для арендодателей и арендаторов. Предлагаем современные решения для бесконтактного заселения, контроля объектов и управления доходами</p>
+                <p>Занимаемся комплексным снабжением крупных компаний<br> и госучреждений, предлагая прямые поставки электроники, комплектующих, промышленного оборудования и офисной техники с высоким уровнем обслуживания</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -134,23 +134,23 @@
                 </div>
                 <div class="Card">
                     <img src="img/tender/checkbox.svg">
-                    <p>Консультации по всем вопросам тендерных закупок</p>
+                    <p>Специальные условия для<br> государственных учреждений</p>
+                </div>
+                    <div class="Card">
+                        <img src="img/tender/checkbox.svg">
+                        <p>Анализ рынка и предложений</p>
+                    </div>
+                <div class="Card">
+                        <img src="img/tender/checkbox.svg">
+                        <p>Поставка электроники и комплектующих</p>
                 </div>
                 <div class="Card">
-                    <img src="img/tender/checkbox.svg">
-                    <p>Анализ рынка и предложений</p>
+                        <img src="img/tender/checkbox.svg">
+                        <p>Консультации по всем вопросам тендерных закупок</p>
                 </div>
                 <div class="Card">
-                    <img src="img/tender/checkbox.svg">
-                    <p>Юридическое сопровождение</p>
-                </div>
-                <div class="Card">
-                    <img src="img/tender/checkbox.svg">
-                    <p>Поставка электроники и комплектующих</p>
-                </div>
-                <div class="Card">
-                    <img src="img/tender/checkbox.svg">
-                    <p>Специальные условия для государственных учреждений</p>
+                        <img src="img/tender/checkbox.svg">
+                        <p>Оптимизация процессов закупок</p>
                 </div>
             </div>
         </div>

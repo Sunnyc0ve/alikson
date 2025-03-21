@@ -1,17 +1,7 @@
 /* ОБЩИЕ */
 body{
-    background: #212121;
+  background: #212121;
 }
-
-h2{
-    color: #FFF;
-    font-size: 52.127px;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.521px;
-    text-transform: uppercase;
-}
-
 
 @media (max-width: 979px) {
   /*600*/
@@ -29,108 +19,113 @@ h2{
 }
 
 
+
 /* Главная секция*/
 .MainSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:419px;
-    padding: 65px 0px 86px 0px;
-    background: url("../../../img/mining/MainBack.jpg") no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:253px;
+  padding: 130px 0px 91px 0px;
+  background: #181818 url("../../../img/mining/MainBack.jpg") center;
+  background-size: 1920px 100%;
+  margin-top: -4px;
 }
 
 .MainSection > div{
-    width: 1280px;
+  width: 1280px;
 }
 
 .MainSection-Header{
-    display: flex;
-    gap:24px;
-    align-items: start;
+  display: flex;
+  gap:10px;
+  align-items: start;
 }
+
 h1{
-    color: #FFF;
-    font-size: 69.58px;
-    font-weight: 500;
-    line-height: 111%; 
-    letter-spacing: -0.696px;
-    text-transform: uppercase;
-    width: 520px;
-    flex-shrink: 0;
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 111%; 
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 558px;
+  flex-shrink: 0;
 }
 
 .MainSection-Header p{
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 111%;
-    letter-spacing: -0.27px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.25px;
 }
 
 .MainSection-Content{
-    display: flex;
-    align-items: end;
-    gap:259px;
+  display: flex;
+  align-items: end;
+  gap:295px;
 }
 
 .MainSection-Content a{
-    color: #FFF;
-    font-size: 30.881px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.618px;
-    padding: 17.156px 25.734px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #181818;
-    flex-shrink: 0;
-    transition: 0.5s ease;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+  width: 272px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .MainSection-Content a:hover{
-    box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 8.8px 0px rgba(4, 133, 254, 0.75), 0px 0px 16.6px 0px #0485FE;
+  background: #fff;
+  color:#000;
 }
 
 .MainSection-Content > div{
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    row-gap:36px;
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
 }
 
 .MainSection .Info{
-    display: flex;
-    align-items: center;
-    gap:18px;
+  display: flex;
+  align-items: center;
+  gap:20px;
 }
 
-.MainSection .Info::before{
-    content: "";
-    height: 90%;
-    width: 4px;
-    background: #0485FE;
-    display: block;
-    flex-shrink: 0;
+.MainSection .Info::before {
+  content: "";
+  height: 72px;
+  width: 3px;
+  background: #0485FE;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 14px;
 }
 
-
-.MainSection .Info h3{
-    color: #0485FE;
-font-size: 69px;
-font-weight: 500;
-line-height: 80%;
-letter-spacing: -0.69px;
-text-transform: uppercase;
+.MainSection .Info h3 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.MainSection .Info p{
-    color: #FFF;
-    letter-spacing: -0.25px;
-    font-family: "Mulish";
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 27.75px;
+.MainSection .Info p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
 }
 
 
@@ -287,89 +282,108 @@ text-transform: uppercase;
 
 /*Почему майнинг выгоден*/
 .AboutSection{
-    border-radius: 15px;
-    border: 1px solid #353535;
-    padding: 86px 0px;
-    margin-top: -9px;
-    background: #212121;
-    position: relative;
+  padding: 90px 0px 105px 0px;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #171717;
 }
 
-.AboutSection h2{
-    width: 1280px;
-    margin: auto;
-    margin-bottom: 60px;
+.AboutSection > *{
+  width: 1280px;
+  margin: auto;
 }
 
-
-
-.About-Content{
-    display: flex;
-    gap: 57px;
-}
-
-.About-Content .Info p{
-    color: #FFF;
-    font-family: Mulish;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 111%;
-    letter-spacing: -0.25px;
-}
-
-.About-Content .Info h3{
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 111%;
-    letter-spacing: -0.35;
-    color: #0485FE;
-    text-transform: uppercase;
+.About-Content .wrap{
+  margin: 50px 0px;
 }
 
 .About-Content .Info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
 }
 
-.wrap{
-    width: calc((100vw - 300px) / 2);
+.About-Content .Info > div{
+  border-radius: 10px;
+  background: #2C2C2C;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
 }
-  
-  .items-wrap {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 29px;
-  }
-  
-  .items {
-    flex-shrink: 0;
-    display: flex;
-    gap: 29px;
-    counter-reset: item;
-    justify-content: space-around;
-    min-width: 100%;
-  }
-  .item {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    transition: all 0.1s ease-in-out;
-    height: 389px;
-  }
 
-  .item img{
-    width: 100%;
-    height: 100%;
+.About-Content h3{
+  color: #0485FE;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.About-Content p{
+  color: #FFFFFF99;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  height: 256px;
+  width: 423px;
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  
-  .marquee {
-    animation: scroll 40s linear infinite;
+  to {
+    transform: translateX(calc(-100% - 20px));
   }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
   
   @keyframes scroll {
     from {
@@ -479,9 +493,13 @@ text-transform: uppercase;
 
   /*Майнинг или банк*/
   .VsSection{
-    padding: 89px 0px 85px 0px;
-    background: #181818 url("../../../img/mining/VsBack.png") no-repeat center;
-    margin-top: -10px;
+    padding: 90px 0px 105px 0px;
+    border: 1px solid #3535354D;
+    background: #181818 url("../../../img/mining/VsBack.png") center;
+    background-size: 1920px 100%;
+    margin-top: -15px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
   }
 
   .VsSection > div{
@@ -490,72 +508,75 @@ text-transform: uppercase;
   }
 
   .Vs-Header p{
-    font-weight: 500;
-    font-size: 52.13px;
-    line-height: 57.86px;
-    letter-spacing: -0.5213;
-    color:#0485FE;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 111%;
     text-transform: uppercase;
+    color:#0485FE;
   }
 
 
   .Vs-Content{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
+    margin-top: 50px !important;
   }
 
   .Vs-Content .Card:first-child{
-    background: #262626;
-    width: 494px;
-    height: 377px;
-    padding: 19px 22px;
+    background: #171717;
+    width: 472px;
+    height: 342px;
+    padding: 20px;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
 
   .Vs-Content .Card:first-child .Card-Header h3{
-    font-weight: 500;
-    font-size: 27.57px;
-    line-height: 111%;
-    letter-spacing: 0px;
     color:#fff;
-    opacity: 0.77;
-    text-transform: uppercase;
-    width: 220px;
-    margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 258px;
   }
 
   .Vs-Content .Card:first-child .Card-Header > div > div{
-    border-radius: 10px;
+    border-radius: 100px;
     border: 1px solid #FFFFFF;
-    opacity: 0.63;
-    width: 184px;
-    height: 46px;
+    width: 150px;
+    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:20px;
-    margin: 10px 0px 14px 0px;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin: 15px 0px;
   }
 
-  .Vs-Content .Card:first-child .Card-Header span{
+  .Vs-Content .Card:first-child .Card-Header > div > div span{
+    color: #FFFFFF99;
     font-weight: 500;
-    font-size: 30.58px;
+    font-size: 24px;
     line-height: 111%;
-    letter-spacing: 0px;
-    color:#fff;
-    opacity: 0.59;
+    text-transform: uppercase;
   }
 
   .Vs-Content .Card:first-child .Card-Header p{
     font-weight: 400;
-    font-size: 17.09px;
-    line-height: 22.04px;
-    letter-spacing: 0px;
-    color:#fff;
-    opacity: 0.77;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF99;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header p span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
   }
 
   .Vs-Content .Card:first-child .Card-Content{
@@ -566,13 +587,13 @@ text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 24px;
-    right: 40px;
+    top: 66px;
+    right: 20px;
   }
 
   .Vs-Content .Card:first-child .Card-Content span{
     font-weight: 500;
-    font-size: 26.16px;
+    font-size: 24px;
     line-height: 111%;
     letter-spacing: 0px;
     text-align: center;
@@ -581,18 +602,26 @@ text-transform: uppercase;
   }
 
   .Vs-Content .Card:first-child .Card-Footer p{
+    font-weight: 300;
+    color: #FFFFFF99;
     font-family: 'Mulish';
-    font-weight: 400;
-    font-size: 22.43px;
-    line-height: 28.15px;
-    letter-spacing: 0px;
-    color:#fff;
-    opacity: 0.77;
-    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .Vs-Content .Card:first-child .Card-Footer p span{
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Mulish';
+    font-size: 18px;
+    line-height: 100%;
   }
 
   .Vs-Content .Card:first-child .Card-Footer{
-    margin-top: 83px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
   }
 
 
@@ -600,62 +629,61 @@ text-transform: uppercase;
 
 
   .Vs-Content .Card:last-child{
-    background: #262626;
-    border: 1px solid #353535;
-    backdrop-filter: blur(5.96500301361084px);
-
-box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
-
-    width: 722px;
-    height: 469px;
-    padding:30px 34px 21px 34px;
-    border-radius: 10px;
+    background: #171717;
+    width: 758px;
+    height: 550px;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
 
   .Vs-Content .Card:last-child .Card-Header h3{
     font-weight: 500;
-    letter-spacing: 0px;
     color:#fff;
     text-transform: uppercase;
-    width: 290px;
-    font-size: 36.46px;
-    line-height: 111%;
+    width: 414px;
+    font-size: 48px;
+    line-height: normal;
   }
 
   .Vs-Content .Card:last-child .Card-Header > div > div{
-    border-radius: 10px;
-    border: 1px solid #FFFFFF;
-    background: #0485FE1A;
-    backdrop-filter: blur(5.96500301361084px);
-    box-shadow: 0px 0px 15.53px 0px #0666DF, 0px 0px 4.97px 0px #0485FE91, 0px 0px 2.05px 0px #FFFFFF59;
-    width: 223px;
-    height: 56px;
+    border-radius: 100px;
+    background: #0485FE0D;
+    width: 220px;
+    height: 64px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:20px;
-    margin:23px 0px 10px 0px;
+    justify-content: space-between;
+    padding: 0px 24px;
+    margin: 24px 0px;
+    border: 1px solid #0485FE;
   }
 
-  .Vs-Content .Card:last-child .Card-Header span{
+  .Vs-Content .Card:last-child .Card-Header > div > div span{
     font-weight: 500;
-    letter-spacing: 0px;
-    color:#fff;
-    font-size: 37px;
+    font-size: 32px;
     line-height: 111%;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
 
-  .Vs-Content .Card:last-child .Card-Header img{
-    width: 15px;
-  }
+  
 
   .Vs-Content .Card:last-child .Card-Header p{
     font-weight: 400;
-    letter-spacing: 0px;
-    color:#fff;
-    font-size: 28.13px;
-    line-height: 111%;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF99;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header p span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #fff;
   }
 
   .Vs-Content .Card:last-child .Card-Content{
@@ -666,13 +694,13 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 38px;
-    right: 34px;
+    bottom: 32px;
+    right: 32px;
   }
 
   .Vs-Content .Card:last-child .Card-Content span{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 111%;
     letter-spacing: 0px;
     text-align: center;
@@ -680,63 +708,59 @@ box-shadow: 0px 0px 43.6px 0px #0666DF, 0px 0px 17.61px 0px #0485FE91, 0px 0px 2
   }
 
   .Vs-Content .Card:last-child .Card-Footer p{
+    font-weight: 300;
+    color: #FFFFFF99;
     font-family: 'Mulish';
-    font-weight: 400;
-    letter-spacing: 0px;
-    color:#fff;
-    margin-bottom: 8px;
-    font-size: 26.05px;
-    line-height: 111%;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  
+  .Vs-Content .Card:last-child .Card-Footer p span{
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Mulish';
+    font-size: 24px;
+    line-height: 100%;
   }
 
+
+
   .Vs-Content .Card:last-child .Card-Footer{
-    margin-top: 101px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .Vs-Footer{
-    background: #262626;
-    border: 1px solid #353535;
-    width: 100%;
-    height: 182;
+    background: #171717;
     border-radius: 10px;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px !important;
-    gap:62px;
-    padding-left: 33px;
   }
 
   .Vs-Footer p{
-    font-family: 'Mulish';
-    font-weight: 500;
-    font-size: 30.37px;
-    line-height: 111%;
-    letter-spacing: -0.3037;
     color:#FFFFFF;
-    width: 467px;
-    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    width: 451px;
   }
 
-  .Vs-Footer div{
-    backdrop-filter: blur(18.5px);
-
-box-shadow: 0px 0px 22.7px 0px #0666DF,0px 0px 24.6px 0px #0485FE91,0px 0px 2.05px 0px #FFFFFF;
-
-    border: 1px solid #353535;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 31px;
-  }
-
-  .Vs-Footer div span{
-    font-weight: 500;
-    font-size: 91px;
-    line-height: 111%;
-    letter-spacing: -1.0608px;
+  .Vs-Footer span{
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 100%;
     color:#0485FE;
+  }
+
+  .VsSection .decor{
+    position: absolute;
+    top: -450px;
+    left: -400px;
   }
 
 
@@ -935,10 +959,7 @@ box-shadow: 0px 0px 6.45px 0px #0666DF,0px 0px 2.07px 0px #0485FE91,0px 0px 0.85
 
 }
 
-.Vs-Content .Card:last-child .Card-Footer p {
-  font-size: 10px;
-  margin-bottom: 5px;
-}
+
 
 .Vs-Content .Card:last-child .Card-Header img {
   width: 10px;
@@ -989,19 +1010,19 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 
   /*Наши услуги*/
  .ServicesSection{
-    margin: auto;
-    padding: 85px 0px 0px 0px;
-    border: 1px solid #353535;
-    background: #212121;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: -9px;
+    padding: 90px 0px 15px 0px;
+    border: 1px solid #3535354D;
+    background: #171717;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -15px;
+    position: relative;
 }
 
 .ServicesSection > div{
     width: 1280px;
     margin: auto;
     display: flex;
-    gap:44px;
+    gap:95px;
 }
 
 .ServicesSection h2{
@@ -1011,7 +1032,7 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 }
 
 .Services-Left > div{
-    width: 479px;
+    width: auto;
     height: 492;
     overflow: hidden;
 }
@@ -1026,44 +1047,34 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 .Services-Right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap:32px;
+    margin-top: 102px;
+    gap:20px;
+    width: 712px;
+    flex-shrink: 0;
 }
 
 .Services-Right .Card{
-    background: #303030;
-    width: 732px;
+    width: 100%;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
+    padding: 20px;
 }
 
-.Services-Right .Card:first-child{
-    height: 218px;
-    padding: 38px 20px 0px 32px;
-}
-
-.Services-Right .Card:last-child{
-    height: 212px;
-    padding: 41px 20px 0px 32px;
-}
 
 .Services-Right .Card h3{
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 111%;
-    letter-spacing: -0.35;
     color:#0485FE;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
 }
 
 .Services-Right .Card p{
-    line-height: 38.85px;
-    letter-spacing: -0.25;
-    color:#fff;
-    font-family: 'Mulish';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 111%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  color: #FFFFFF99;
 }
 
 @media (max-width: 1439px){
@@ -1156,52 +1167,52 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 
 /*Преимущества секция*/
 .AdvantagesSection{
-    display: flex;
-    border-radius: 15px 15px 0px 0px;
-    border: 1px solid #353535;
-    background: #191919 url("../../../img/mining/AdvantagesBack.png");
-    background-size: auto 100%;
-    padding: 85px 0px 93px calc((100vw - 1280px) / 2);
-    gap:59px;
-    position: relative;
-    margin-top: -11px;
+  padding: 90px 0px 105px 0px;
+  border: 1px solid #3535354D;
+  background: #181818 url("../../../img/mining/AdvantagesBack.png") center;
+  background-size: 1920px 100%;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -15px;
+  position: relative;
 }
 
-.Advantages-Header{
-    display: flex;
-    flex-direction: column;
-    width: 498px;
-    flex-shrink: 0;
+.AdvantagesSection > div{
+  width: 1280px;
+  margin: auto;
 }
 
 .Advantages-Content{
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  margin-top: 50px !important;
+}
+
+.Advantages-Content .Card{
+  background: #2C2C2C;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .Advantages-Content h3{
     color: #FFF;
-    text-transform: uppercase;
     font-weight: 500;
-    font-size: 35px;
-    line-height: 111%;
-    letter-spacing: -0.35px;
+    font-size: 32px;
+    line-height: 100%;
 }
 
 .Advantages-Content p{
-    color: #FFF;
-    letter-spacing: -0.25px;
-    font-family: 'Mulish';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 111%;
+    color: #FFFFFF99;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
 }
 
-.Advantages-Content div{
-    background: #0058AB;
-    height: 1px;
-    width: 100%;
-    margin: 25px 0px;
-}
 
 .h2_mobile{
   display: none;
@@ -1292,12 +1303,12 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 
 /*Почему нас выбирают*/
 .WhySection{
-    background: #212121;
-    padding: 85px 0px;
-    border: 1px solid #353535;
-    border-radius: 15px;
-    margin-top: -9px;
-    position: relative;
+  padding: 90px 0px 105px 0px;
+  border: 1px solid #3535354D;
+  background: #181818;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -15px;
+  position: relative;
 }
 
 .WhySection > *{
@@ -1306,39 +1317,32 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 }
 
 .Why-Content{
-    margin-top: 57px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 130px;
-    grid-row-gap: 41px;
-    grid-column-gap: 36px;
+    gap: 20px;
 }
 
 .Why-Content .Card{
     display: flex;
-    gap:7px;
+    gap:20px;
+    padding: 20px;
     align-items: center;
-    border-radius: 12px;
-    background: #303030;
-    border: 1px solid #8D8D8D;
-    padding-left: 10px;
+    border-radius: 10px;
+    background: #171717;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
 }
 
-.Why-Content .Card > div{
-    width: 114px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Why-Content .Card > img{
+  width: 30px;
 }
 
 .Why-Content .Card h3{
-    letter-spacing: 0.35px;
     color:#fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 111%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
 }
 
 @media (max-width: 1439px){
@@ -1428,10 +1432,13 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 
 /*Пакеты услуг*/
 .PacksSection{
-    background: #181818 url("../../../img/mining/PacksBack.png") no-repeat;
-    background-size: 100% 100%;
-    padding: 76px 0px 95px 0px;
-    margin-top: -9px;
+  padding: 90px 0px 105px 0px;
+  border: 1px solid #3535354D;
+  background: #181818 url("../../../img/mining/PacksBack.png") center;
+  background-size: 1920px 100%;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -15px;
+  position: relative;
 }
 
 .PacksSection > *{
@@ -1440,20 +1447,21 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 }
 
 .Packs-Content{
-    margin-top: 57px;
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 384px);
-    grid-template-rows: 405px;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
 }
 
 .Packs-Content .Card{
-  transition: 0.5s ease;
-    flex-shrink: 0;
-    border-radius: 11px;
-    border: 1px solid #353535;
-    background: #2828289E;
-    backdrop-filter: blur(16.980453491210938px);
+    transition: 0.5s ease;
+    border-radius: 10px;
+    background: #2C2C2C;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .Packs-Content .Card:hover{
@@ -1462,61 +1470,38 @@ backdrop-filter: blur(16.980453491210938px);
 }
 
 
-.Packs-Content .Card-Header{
-    border-bottom: 1px solid #353535;
-    background: #282828;
-    height: 131px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .Packs-Content .Card h3{
     color: #0485FE;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 35.59px;
-    line-height: 39.5px;
-    letter-spacing: -0.3559;
-    text-align: center;
+    font-size: 32px;
+    line-height: normal;
 }
 
-.Packs-Content .Card h4{
+.Packs-Content .Card h4, .Packs-Content .Card_hidden p{
     color: #fff;
-    letter-spacing: -0.27;
-font-weight: 400;
-font-size: 27px;
-line-height: 29.97px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
 }
 
 .Packs-Content .Card p{
-    color: #FFF;
-    font-family: 'Mulish';
-    font-weight: 300;
-    font-size: 23px;
-    line-height: 25.53px;
-    letter-spacing: -0.23px;
+  color: #FFFFFF99;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
 }
 
 .Packs-Content .Card-Content{
-    padding: 11px 0px 0px 23px;
-    display: flex;
-    gap:34px;
-    justify-content: center;
-    flex-direction: column;
-    height: 274px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
 
-.Packs-Content .Card-Content li{
-    color: #FFF;
-    font-size: 20.431px;
-    font-weight: 400;
-    line-height: 111%;
-    list-style: disc;
-    margin-left: 20px;
-    font-family: "Mulish";
+.Packs-Content .Card_hidden{
+  flex-direction: column;
+  gap:10px;
 }
 
 .Packs-Content_mobile{
@@ -1688,227 +1673,3 @@ line-height: normal;
     width: 6px;
   }
 }
-
-
-
-/* Секция форма */
-
-.Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
-  }
-  
-  .Form-Header p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#fff;
-    width: 729px;
-  }
-  
-  .Form-Header h2 {
-    color: #0485FE;
-  }
-  
-  .FormSection {
-    background: #212121 url("../../../img/Back_2.svg") no-repeat;
-    background-size: 760px;
-    background-position: -131px -10px;
-    padding: 77px 0px 104px 0px;
-    border-radius: 15px;
-    border: 1px solid #353535;
-    position: relative;
-    margin-top: -9px;
-  }
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 734px;
-  }
-  
-  .FormSection form p {
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 29.97px;
-    letter-spacing: -1%;
-    color:#666;
-  }
-  
-  .FormSection form > div {
-    padding: 27px 36px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    outline: none;
-    width: 100%;
-  }
-  
-  .FormSection form [type="submit"] {
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 25px 0px;
-    border-radius: 10px;
-    border: 1px solid #8D8D8D;
-    background: #232323;
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    backdrop-filter: blur(19.4209041595459px);
-
-box-shadow: 0px 0px 32.7px 0px #0666DF, 0px 0px 7.3px 0px #0485FE91, 0px 0px 5.5px 0px #FFFFFF59;
-
-  }
-
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 401px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      font-size: 43px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  
-    .FormSection form p br {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      padding: 30px 0px 40px 0px;
-    }
-  
-    .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
-      line-height: 111%;
-      /* display: none; */
-    }
-  
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
-    .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
-    }
-  
-    .FormSection form > div {
-      padding: 14px 16px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 12px;
-    }
-  }
-  
-  @media (max-width: 659px) {
-    .FormSection {
-        background-size: 316px;
-        background-position: -2px 22px;
-      border-radius: 7px;
-    }
-    
-    .FormSection > div {
-      width: 300px;
-      gap: 20px;
-    }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      font-size: 10px;
-      line-height: 100%;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  }
-
-
-  /*ФУТЕР*/
-  footer{
-    margin-top: -9px;
-  }

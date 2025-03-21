@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/header.css?2.0" />
-    <link rel="stylesheet" href="css/pages/logistick/_logistick.css?2.0" />
+    <link rel="stylesheet" href="css/header.css?2.1" />
+    <link rel="stylesheet" href="css/pages/logistick/_logistick.css?2.2" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         <section class="MainSection">
             <div class="MainSection-Header">
                 <h1>Логистика</h1>
-                <p>Полный спектр услуг в сфере закупки, доставки<br> и таможенного оформления высокотехнологичной<br> и потребительской электроники, оборудования<br> и комплектующих. Помогаем бизнесу получать необходимые товары без административных<br> и логистических барьеров</p>
+                <p>Полный спектр услуг в сфере закупки, доставки<br> и таможенного оформления высокотехнологичной<br> и потребительской электроники, оборудования<br> и комплектующих. Помогаем бизнесу получать необходимые товары без административных и логистических барьеров</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
@@ -172,7 +172,7 @@
                             <img src="img/logistick/Why1.svg">
                         </div>
                         <div>
-                            <h3>легальные поставки</h3>
+                            <h3>Легальные поставки</h3>
                         </div>
                     </div>
                     <div class="Card">
@@ -180,7 +180,7 @@
                             <img src="img/logistick/Why2.svg">
                         </div>
                         <div>
-                            <h3>специальные условия</h3>
+                            <h3>Специальные условия</h3>
                         </div>
                     </div>
                     <div class="Card">
@@ -188,7 +188,7 @@
                             <img src="img/logistick/Why3.svg">
                         </div>
                         <div>
-                            <h3>ПРОЗРАЧНОСТЬ<br> и надежные сделки</h3>
+                            <h3>Прозрачность и надежные сделки</h3>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/header.css?2.1" />
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/pages/apart sharing/_apartsharing.css?2.1" />
+    <link rel="stylesheet" href="css/pages/apart sharing/_apartsharing.css?2.2" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

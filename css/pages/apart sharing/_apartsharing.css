@@ -130,6 +130,10 @@ text-transform: uppercase;
     line-height: normal;
 }
 
+.MainSection-Header p:last-child {
+    display: none;
+}
+
 @media (max-width: 1439px){
     .MainSection > div{
         width: 920px;
