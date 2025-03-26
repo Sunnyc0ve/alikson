@@ -1,8 +1,7 @@
 <section class="FormSection">
         <div class="Form-Header">
           <h2>Оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию<br> 
-          уже сегодня</p>
+          <p>Оставьте заявку и получите бесплатную консультацию уже&nbsp;сегодня</p>
         </div>
         <div class="Form-Main">
             <form action="" method="POST">

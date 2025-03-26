@@ -4,19 +4,9 @@ body{
 }
 
 
-@media (max-width: 979px) {
-  /*600*/
-  h2{
-      color: #0485FE;
-  }
-}
-
-@media (max-width: 659px) {
-  /*300*/
-  h2{
-      font-size: 23px;
-      font-weight: 600;
-  }
+.Services-Content .Card:hover, .Categories-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
 }
 
 
@@ -28,7 +18,7 @@ body{
   align-items: center;
   gap:91px;
   padding: 130px 0px 91px 0px;
-  background: #181818 url("../../../img/opt/MainBack.jpg") center;
+  background: #181818 url("../../img/opt/MainBack.jpg") center;
   background-size: 1920px 100%;
   margin-top: -4px;
 }
@@ -335,6 +325,7 @@ h1{
 }
 
 .Services-Content .Card{
+  transition: 0.5s ease;
   display: flex;
   gap:20px;
   align-items: center;
@@ -457,7 +448,7 @@ h1{
 
 /*Наши преимущества*/
 .AdvantagesSection{
-  background: #171717 url("../../../img/opt/AdvantagesBack.png") center;
+  background: #171717 url("../../img/opt/AdvantagesBack.png") center;
   background-size: 1920px 100%;
   padding: 90px 0px 105px 0px;
   border-radius: 20px 20px 0px 0px;
@@ -593,7 +584,7 @@ h1{
   .AdvantagesSection{
       padding: 39px 0px;
       gap:24px;
-      background: #181818 url("../../../img/opt/AdvantagesBack_mobile.png");
+      background: #181818 url("../../img/opt/AdvantagesBack_mobile.png");
       background-size: 100% 100%;
   }
   .AdvantagesSection h2{
@@ -654,6 +645,7 @@ h1{
 }
 
 .Categories-Content .Card{
+  transition: 0.5s ease;
   display: flex;
   gap:20px;
   padding: 20px;
@@ -775,7 +767,7 @@ h1{
 
 /*Наши клиенты*/
 .ClientsSection{
-  background: #181818 url("../../../img/opt/ClientsBack.png") center;
+  background: #181818 url("../../img/opt/ClientsBack.png") center;
   background-size: 1920px 100%;
   padding: 90px 0px 105px 0px;
   border-radius: 20px 20px 0px 0px;

@@ -112,136 +112,65 @@
     }
   
     .Form-Header p {
-      width: 401px;
+      width: 545px;
       font-size: 19px;
     }
   
     .Form-Header h2 {
-      font-size: 42px;
-    }
-  
-    .Form-Header {
-      gap: 44px;
+      width: 300px;
     }
   
     .FormSection form {
       width: 544px;
     }
-  
-    .FormSection form p br {
-      display: none;
-    }
   }
   
   @media (max-width: 979px) {
     .FormSection {
-      padding: 30px 0px 40px 0px;
+      border-radius: 10px 10px 0px 0px;
+      border: 1px solid #353535;
+      padding: 60px 0px 75px 0px;
+      background-size: auto 100%;
     }
   
     .Form-Header {
-      margin-bottom: 30px !important;
-      flex-direction: column;
+      margin-bottom: 25px !important;
     }
   
     .FormSection > div {
       width: 600px;
     }
   
-    .Form-Header p {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: -0.12px;
+    .Form-Header p, .FormSection form p {
       display: none;
     }
   
-    .Form-Header h2 {
-      font-size: 23px;
-    }
-  
     .FormSection form [type="submit"] {
-      width: 100%;
-      font-size: 12px;
-      padding: 15px 0px;
+      font-size: 16px;
+      height: 55px;
     }
   
     .FormSection form [type="text"],
     .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder {
-      font-size: 12px;
+    .FormSection form [type="text"]::-webkit-input-placeholder, .custom-select span, .select-options li {
+      font-size: 16px;
     }
   
     .FormSection form > div {
-      padding: 14px 16px;
+      height: 50px;
+      padding: 0px 0px 0px 40px;
+      gap: 15px;
+      border-radius: 5px;
     }
   
     .FormSection form {
       width: 100%;
-      gap: 12px;
+      gap: 20px;
     }
-  
-    .custom-select span{
-      font-size: 12px;
-    }
-    .select-options li {
-      font-size: 12px;
-  }
   }
   
   @media (max-width: 659px) {
-    .FormSection {
-      background-size: 458px;
-      background-position: -85px -20px;
-      border-radius: 7px;
-    }
-    
     .FormSection > div {
-      width: 300px;
-      gap: 20px;
+      width: 320px;
     }
-  
-    .FormSection form [type="submit"] {
-      padding: 12px 0px;
-      height: auto;
-      border-radius: 5px;
-      border-color: #353535;
-      opacity: 1;
-      box-shadow: 0px 0px 12.2px 0px rgba(6, 102, 223, 1),
-        0px 0px 6.26px 0px rgba(4, 133, 254, 0.57),
-        0px 0px 2.58px 0px rgba(255, 255, 255, 0.35);
-      margin-bottom: 14px;
-    }
-  
-    .FormSection form p {
-      font-size: 10px;
-      line-height: 100%;
-    }
-  
-    .FormSection form p br {
-      display: block;
-    }
-  
-    .FormSection form > div {
-      padding: 13px 16px;
-      border-radius: 5px;
-      gap:11px;
-    }
-  
-    .FormSection form > div img{
-      width: 13px;
-    }
-  
-    .select-menu {
-      gap: 11px;
-  }
-  
-  .select-header {
-    height: 15px;
-  }
-  
-  .select-options li {
-    font-size: 10px;
-    padding: 9px 0px;
-    margin: 0px 19px 0px 17px;
-  }
   }

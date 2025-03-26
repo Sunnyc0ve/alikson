@@ -1,0 +1,923 @@
+/* ОБЩИЕ */
+body{
+  background: #212121;
+}
+
+
+.Advantages-Content .Card:hover, .About-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:35px;
+  padding: 130px 0px 91px 0px;
+  background: #181818 url("../../img/marketplace/MainBack.jpg") center;
+  background-size: 1920px 100%;
+  margin-top: -4px;
+}
+
+.MainSection > div{
+  width: 1280px;
+}
+
+.MainSection-Header{
+  display: flex;
+  gap:10px;
+  align-items: start;
+}
+
+h1{
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 111%; 
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 626px;
+  flex-shrink: 0;
+}
+
+.MainSection-Header p{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.MainSection-Content{
+  display: flex;
+  align-items: end;
+  gap:365px;
+}
+
+.MainSection-Content a{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+  width: 272px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.MainSection-Content a:hover{
+  background: #fff;
+  color:#000;
+}
+
+.MainSection-Content > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap:40px;
+  column-gap:20px;
+}
+
+.MainSection-Content > div .Info:nth-child(1), .MainSection-Content > div .Info:nth-child(2){
+  grid-column: span 2;
+}
+
+.MainSection .Info{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.MainSection .Info::before {
+  content: "";
+  height: 72px;
+  width: 3px;
+  background: #0485FE;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+
+.MainSection .Info h3 {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.MainSection .Info p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.p_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  .MainSection > div{
+      width: 920px;
+  }
+
+  .MainSection-Content > div {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+  h1{
+      width: 329px;
+      font-size: 49px;
+  }
+
+  .MainSection-Header p {
+      font-size: 20px;
+  }
+
+  .MainSection-Content a {
+      font-size: 26px;
+  }
+
+  .MainSection-Content {
+      gap: 157px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 44px;
+  }
+
+  .MainSection .Info p {
+    font-size: 18px;
+}
+
+  .MainSection{
+      gap:134px;
+      background-size: 1440px;
+  background-position: center;
+  }
+
+  .MainSection-Header {
+    gap: 75px;
+}
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .MainSection{
+      margin-top: -13px;
+  }
+  h1{
+      font-size: 60px;
+      color: #0485FE;
+      width: auto;
+  }
+  h1 br{
+      display: none;
+  }
+  .MainSection .Info h3 {
+      font-size: 53px;
+  }
+  .MainSection > div{
+      width: 600px;
+  }
+  .MainSection-Header {
+      flex-direction: column;
+      gap:20px;
+  }
+
+  .MainSection-Content{
+      flex-direction: column-reverse;
+      gap:16px;
+  }
+  .MainSection .Info:nth-child(3),.MainSection .Info:nth-child(4){
+      display: none;
+  }
+  .MainSection .Info:first-child {
+      grid-column: unset;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 1fr;
+      gap:50px;
+      width: 100%;
+  }
+
+  .MainSection .Info p {
+      font-size: 17px;
+  }
+
+  .MainSection-Content a{
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h1{
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .p_mobile{
+    display: block;
+  }
+
+  .p_desktop{
+    display: none;
+  }
+
+  .MainSection{
+      padding: 31px 0px 41px 0px;
+      gap: 30px;
+      margin-top: -6px;
+  }
+
+  .MainSection-Header p:first-child{
+    margin-bottom: 5px;
+  }
+
+  
+  .MainSection > div{
+      width: 300px;
+      gap:7px;
+  }
+
+  .MainSection-Header p {
+      font-size: 13px;
+      font-weight: 300;
+  }
+
+  .MainSection-Header{
+      gap:12px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 35px;
+  }
+
+  .MainSection .Info p {
+      font-size: 11px;
+  }
+
+  .MainSection .Info::before {
+      width: 2px;
+  }
+
+  .MainSection .Info {
+      gap: 7px;
+  }
+
+  .MainSection-Content a {
+      font-size: 12px;
+      padding: 6.5px 0px;
+      border-radius: 4px;
+      border: 0.394px solid #8D8D8D;
+      background: #181818;
+      box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+      margin-top: 13px;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 175px 1fr;
+      gap:5px;
+  }
+}
+
+
+
+
+
+
+/*Что мы предлагаем*/
+.AboutSection{
+  padding: 90px 0px 105px 0px;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #171717;
+}
+
+.AboutSection > div{
+  width: 1280px;
+  margin: auto;
+}
+
+
+
+.About-Header .wrap{
+  margin: 50px 0px;
+}
+
+
+.About-Content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.About-Content .Card{
+  transition: 0.5s ease;
+  border-radius: 10px;
+  background: #2C2C2C;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+.About-Content .Card img{
+  width: 30px;
+}
+
+.About-Content p{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  height: 256px;
+  width: 423px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .AboutSection h2{
+      margin-left: calc((100% - 920px) / 2);
+      width: 600px;
+  }
+
+  .wrap {
+    margin-top: 135px;
+  }
+
+  .About-Content div{
+    margin: 21px 0px;
+  }
+  
+  .About-Header{
+      width: calc((100% - 150px) / 2);
+  }
+
+  .AboutSection {
+      gap: 40px;
+  }
+
+  .About-Content p {
+      font-size: 25px;
+      width: 500px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .AboutSection{
+      flex-direction: column;
+  }
+
+  .AboutSection h2{
+      margin-left: calc((100% - 600px) / 2);
+  }
+  
+  .About-Header{
+      width: 100%;
+  }
+
+  .item {
+      height: 223px;
+  }
+
+  .About-Content > * {
+      margin-left: calc((100% - 600px) / 2) !important;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .AboutSection{
+      padding: 27px 0px 28px 0px;
+      gap:15px;
+      border-radius: 7px;
+      margin-top: -5px;
+  }
+  .AboutSection h2{
+      margin-left: calc((100% - 300px) / 2);
+      margin-bottom: 15px;
+      width: 280px;
+  }
+
+  .wrap {
+    margin-top: 60px;
+  }
+
+
+  .About-Content > * {
+      margin-left: calc((100% - 300px) / 2) !important;
+  }
+  .item {
+      height: 86px;
+      margin: 0px;
+      border: none;
+      border-radius: 5px;
+  }
+  .items, .items-wrap {
+      gap: 5px;
+  }
+
+
+  .About-Content p {
+      font-size: 14px;
+      line-height: normal;
+      width: 270px;
+  }
+
+  .About-Content p:nth-child(3){
+    width: 220px;
+  }
+
+  .About-Content div {
+      margin: 8px 0px;
+  }
+}
+
+
+
+
+
+/*Преимущества работы*/
+.AdvantagesSection{
+  background: #181818 url("../../img/company/TeamBack.png") center;
+  background-size: 1920px 100%;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
+  position: relative;
+  margin-top: -15px;
+  }
+
+  .AdvantagesSection > div{
+    width: 1280px;
+    margin: auto;
+  }
+  
+
+  .Advantages-Content{
+    margin-top: 50px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+  }
+  
+  .Advantages-Content .Card{
+    transition: 0.5s ease;
+    background: #171717;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .Advantages-Content .Card img{
+    width: 30px;
+  }
+  
+  .Advantages-Content .Card h3{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+@media (max-width: 1439px){
+  /*920*/
+  .AdvantagesSection > div{
+    width: 920px;
+  }
+
+  .AdvantagesSection h2{
+    font-size: 42px;
+  }
+
+  .AdvantagesSection .Card span{
+    font-size: 27px;
+  }
+
+  .AdvantagesSection .Card{
+    gap:11px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .AdvantagesSection > div{
+    width: 600px;
+    grid-template-columns: 1fr;
+    gap:0px;
+  }
+
+  .AdvantagesSection h2{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .AdvantagesSection > div{
+    width: 300px;
+  }
+
+  .AdvantagesSection{
+    padding: 36px 0px 30px 0px;
+    background: #181818 url("../../img/marketplace/AdvantagesBack_mobile.png") no-repeat;
+    background-size: 100% 100%; 
+  }
+
+  .AdvantagesSection h2{
+   font-size: 23px;
+   width: 250px;
+   margin-bottom: 10px;
+  }
+
+  .AdvantagesSection .Card{
+    height: 52px;
+    border-radius: 5px;
+    backdrop-filter: blur(9.363057136535645px);
+    gap:20px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .AdvantagesSection .Card span {
+    font-size: 14px;
+  }
+
+  .AdvantagesSection .Card > div {
+      width: 41px;
+  }
+
+  .Advantages-Left .Card:nth-child(2) img{
+      width:  30px;
+  }
+  .Advantages-Left .Card:nth-child(3) img{
+      width:  30.5px;
+  }
+  .Advantages-Right .Card:nth-child(1) img{
+      width:  28px;
+  }
+  .Advantages-Right .Card:nth-child(2) img{
+      width:  32px;
+  }
+  .Advantages-Right .Card:nth-child(3) img{
+      width:  28px;
+  }
+
+  .Advantages-Right .Card:nth-child(3) span br{
+    display: none;
+  }
+}
+
+
+
+
+
+/*Наши клиенты*/
+.ClientsSection{
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #181818;
+  padding: 90px 0px 105px 0px;
+  margin-top: -15px;
+  position: relative;
+}
+
+.ClientsSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Clients-Content{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 104px;
+  gap:20px;
+}
+
+.Clients-Content .Card{
+  border-radius: 10px;
+  border: 1px solid #ffffff60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Clients-Content_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .ClientsSection > *{
+      width: 920px;
+  }
+  .Clients-Content{
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .ClientsSection > *{
+      width: 600px;
+  }
+  .Clients-Content{
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 15px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .ClientsSection > *{
+      width: 300px;
+  }
+
+  .ClientsSection{
+      padding: 30px 0px;
+      border-radius: 7px;
+  }
+
+  .Clients-Content_mobile{
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .Clients-Content{
+      display: none;
+  }
+
+  .Clients-Content_mobile .item{
+      width: 119px;
+      height: 52px;
+      border-radius: 5px;
+      border: 1px solid #0058AB;
+  }
+
+  .Clients-Content_mobile .item img{
+      width: 90%;
+  }
+
+  .Clients-Content_mobile .items, .items-wrap {
+      gap: 10px;
+  }
+
+  .Clients-Content_mobile .wrap{
+      margin-bottom: 7px;
+  }
+
+}
+
+
+
+
+
+/*Отзывы*/
+.ReviewsSection{
+  padding: 90px 0px 105px 0px;
+  background: #181818 url("../../img/premier_cars/ReviewsBack.png") center;
+  background-size: 1920px 100%;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+}
+
+.ReviewsSection > div{
+  width: 1280px;
+  margin: auto;
+}
+
+.Reviews-Header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Reviews-Header p{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  width: 644px;
+  flex-shrink: 0;
+}
+
+
+
+
+.Reviews-Content{
+  margin-top: 50px !important;
+}
+
+.ReviewsSection .swiper-wrapper {
+  height: auto;
+}
+
+.ReviewsSection .swiperP {
+  width: 1280px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+
+
+.ReviewsSection .swiper-slide {
+  height: auto;
+}
+
+.Reviews-Content .Card {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 340px;
+  height: 255px;
+}
+
+.Reviews-Content .Card img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.Swiper-Control {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.Swiper-Control > button {
+  color: #fff;
+  font-size: 24px;
+  padding: 7.5px 20.5px;
+  background: #ffffff29;
+  border-radius: 5px;
+}
+
+.Swiper-Control > button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 1439px){
+  /*920*/
+  .Reviews-Header{
+    width: 920px;
+  }
+
+  .Reviews-Content{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    grid-auto-rows: 180px;
+    padding: 50px calc((100vw - 920px) / 2);
+  }
+
+  .Reviews-Header h2{
+    width: auto;
+  }
+
+  .Reviews-Header {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .Reviews-Header{
+    width: 600px;
+  }
+
+  .Reviews-Header{
+    flex-direction: column;
+  }
+
+  .Reviews-Content{
+    grid-template-columns: 1fr;
+    gap:20px;
+    grid-auto-rows: 250px;
+    padding: 50px calc((100vw - 600px) / 2);
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .Reviews-Header{
+    width: 300px;
+  }
+
+  .ReviewsSection{
+    padding: 36px 0px 39px 0px;
+  }
+
+  .Reviews-Content_mobile{
+    display: block;
+    padding: 20px 0px;
+    margin-top: 15px;
+    backdrop-filter: blur(4.673392295837402px);
+    box-shadow: 0px 0px 18.43px 0px #0485FE,0px 0px 7.73px 0px #0485FEA6,0px 0px 1.61px 0px #FFFFFF59;
+    border-top: 1px solid #ffffff84;
+    border-bottom: 1px solid #ffffff84;
+  }
+
+  .ReviewsSection .item{
+    width: 194px;
+    height: 127px;
+  }
+
+  .Reviews-Content{
+    display: none;
+  }
+
+  .Reviews-Header p{
+    font-size: 13px;
+  }
+}

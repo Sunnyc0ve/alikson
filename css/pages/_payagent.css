@@ -3,20 +3,10 @@ body{
     background: #212121;
 }
 
-@media (max-width: 979px) {
-    /*600*/
-    h2{
-        color: #0485FE;
-    }
-  }
-
-  @media (max-width: 659px) {
-    /*300*/
-    h2{
-        font-size: 23px;
-        font-weight: 600;
-    }
-  }
+.Advantages-Content .Card:hover, .Services-Content .Card:hover{
+    background: #113058;
+    box-shadow: 0px 0px 6px 2px #0485FE;
+}
 
 
 
@@ -26,7 +16,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 130px 0px 91px 0px;
-    background: #181818 url("../../../img/pay_agent/MainBack.jpg") center;
+    background: #181818 url("../../img/pay_agent/MainBack.jpg") center;
     background-size: 1920px 100%;
     margin-top: -4px;
     gap: 180px;
@@ -449,7 +439,7 @@ h1{
 
 /*Кому подойдут услуги секция*/
 .ServicesSection{
-    background: #181818 url("../../../img/pay_agent/ServicesBack.png") center;
+    background: #181818 url("../../img/pay_agent/ServicesBack.png") center;
     background-size: 1920px 100%;
     padding: 90px 0px 105px 0px;
     margin-top: -15px;
@@ -471,6 +461,7 @@ h1{
 }
 
 .Services-Content .Card{
+    transition: 0.5s ease;
     display: flex;
     gap:20px;
     padding: 20px;
@@ -527,7 +518,7 @@ h1{
     /*300*/
     .ServicesSection{
         padding: 36px 0px 39px 0px;
-        background: #181818 url("../../../img/pay_agent/ServicesBack_mobile.png");
+        background: #181818 url("../../img/pay_agent/ServicesBack_mobile.png");
         background-size: 100% 100%;
     }
 
@@ -602,6 +593,7 @@ h1{
 
 
 .Kinds-Content .Card{
+    transition: 0.5s ease;
     border-radius: 10px;
     background: #2C2C2C;
     backdrop-filter: blur(5px);
@@ -772,7 +764,7 @@ h1{
 
 /*Наши преимущества секция*/
 .AdvantagesSection{
-    background: #181818 url("../../../img/pay_agent/AdvantagesBack.png") center;
+    background: #181818 url("../../img/pay_agent/AdvantagesBack.png") center;
     background-size: 1920px 100%;
     padding: 90px 0px 105px 0px;
     margin-top: -15px;
@@ -794,6 +786,7 @@ h1{
 }
 
 .Advantages-Content .Card{
+    transition: 0.5s ease;
     display: flex;
     gap:20px;
     padding: 20px;
@@ -850,7 +843,7 @@ h1{
     /*300*/
     .AdvantagesSection{
         padding: 36px 0px 39px 0px;
-        background: #181818 url("../../../img/pay_agent/AdvantagesBack_mobile.png");
+        background: #181818 url("../../img/pay_agent/AdvantagesBack_mobile.png");
         background-size: 100% 100%;
     }
 

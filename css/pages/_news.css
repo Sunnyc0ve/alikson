@@ -1,13 +1,19 @@
+body{
+    background: #181818;
+}
+
+
+
 .news__section-heading {
     color: #FFF;
-    font-family: 'TT Firs Neue', sans-serif;
-    font-size: 67.436px;
-    font-style: normal;
+    font-family: "TT Firs Neue";
+    font-size: 72px;
     font-weight: 500;
-    line-height: 1.11;
-    letter-spacing: -0.674px;
+    line-height: 111%;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
     width: 1280px;
+    margin: auto;
 }
 
 .news__card-image {
@@ -102,7 +108,7 @@
     gap: 50px;
     align-items: center;
     padding: 130px 0px 85px 0px;
-    background: url("../../../../img/news/background.png") center;
+    background: url("../../../img/news/background.png") center;
     background-size: 1920px 100%;
 }
 
@@ -150,8 +156,20 @@
     /*600*/
     .news__section-heading{
         color: #0485FE;
+        font-size: 24px;
     }
-    .news__inner, .news__section-heading {
+    .news__inner{
+        gap: 25px;
+        width: 600px;
+    }
+
+    .news__section{
+        gap: 25px;
+        padding: 60px 0px 75px 0px;
+        background: #212121;
+        margin-top: -4px;
+    }
+    .news__section-heading {
         width: 600px;
     }
 
@@ -161,84 +179,52 @@
 
     .news__card-image{
         width: 100%;
-        height: 330px;
+        height: 368px;
+        border-radius: 10px;
+    }
+
+    .news__content-tags{
+        font-size: 12px;
+    }
+
+    .news__content-heading{
+        font-size: 16px;
+    }
+
+    .news__content-button{
+        width: 100%;
+        font-size: 16px;
     }
 
     .news__body{
         margin-left: 0px;
         margin-top: -10px;
-        height: 200px;
-        border-radius: 0px 0px 7px 7px;
+        height: auto;
+        border-radius: 0px 0px 10px 10px;
     }
 
     .news__tags_w_heading {
-        gap: 17px;
+        gap: 20px;
     }
     .news__content{
-        padding-right: 20px;
+        padding: 30px 20px 20px 20px;
+        gap: 20px;
     }
 
-    .news__card:first-child h2{
-        font-size: 22px;
-    }
   }
   
   @media (max-width: 659px) {
-    /*300*/
-    .news__section-heading{
-        font-size: 30px;
-        font-weight: 600;
+    /*320*/
+    .news__inner{
+        width: 320px;
     }
 
-    .news__section{
-        padding-top: 30px;
-        gap:15px;
-    }
-
-    .news__inner, .news__section-heading {
-        width: 300px;
-        gap:10px;
+    .news__section-heading {
+        width: 320px;
     }
 
     .news__card-image{
-        height: 163px;
-    }
-
-    .news__content-heading, .news__card:first-child h2{
-        font-size: 13px;
-        font-weight: 300;
-    }
-    
-    .news__content-tags{
-        font-size: 10px;
-        font-weight: 300;
-    }
-
-    .news__content-button {
-        width: 100%;
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-
-    .news__content{
-        padding: 16px;
-        gap: 13px;
-    }
-
-    .news__tags_w_heading {
-        gap: 7px;
-    }
-
-    .news__body{
-        height: auto;
-    }
-
-    .arr_desk{
-        display: none;
-    }
-
-    .arr_mob{
-        display: block;
+        height: 200px;
     }
   }
 

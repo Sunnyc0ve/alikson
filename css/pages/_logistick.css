@@ -3,20 +3,11 @@ body{
     background: #212121;
 }
 
-@media (max-width: 979px) {
-    /*600*/
-    h2{
-        color: #0485FE;
-    }
-  }
+.Services-Content .Card:hover{
+    background: #113058;
+    box-shadow: 0px 0px 6px 2px #0485FE;
+}
 
-  @media (max-width: 659px) {
-    /*300*/
-    h2{
-        font-size: 23px;
-        font-weight: 600;
-    }
-  }
 
 
 
@@ -27,7 +18,7 @@ body{
     align-items: center;
     gap:70px;
     padding: 130px 0px 105px 0px;
-    background: #181818 url("../../../img/logistick/MainBack.jpg") center;
+    background: #181818 url("../../img/logistick/MainBack.jpg") center;
     background-size: 1920px 100%;
     margin-top: -4px;
 }
@@ -133,154 +124,89 @@ h1{
     }
 
     h1{
-        width: 329px;
-        font-size: 51.58px;
+        width: auto;
     }
 
-    .MainSection-Header p {
-        font-size: 24px;
-    }
-
-    .MainSection-Content a {
-        font-size: 26px;
-    }
-
-    .MainSection-Content {
-        gap: 105px;
-    }
-
-    .MainSection-Content > div{
-        grid-template-columns: 1.1fr 1fr;
-    }
-
-    .MainSection .Info p {
+    .MainSection-Header p{
         font-size: 20px;
     }
 
-    .MainSection .Info h3 {
-        font-size: 47px;
-    }
-
-    .MainSection{
-        gap:134px;
-        background-size: 1440px;
-    background-position: center;
+    .MainSection-Content{
+        gap: 185px;
     }
 }
 
 @media (max-width: 979px) {
     /*600*/
     .MainSection{
-        margin-top: -13px;
-        gap: 65px;
+        /* padding: 60px 0px 75px 0px;
+        gap:50px; */
+        padding: 0px;
+        gap: 20px;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
     }
+
     h1{
-        font-size: 60px;
-        color: #0485FE;
-        width: auto;
+        font-size: 48px;
     }
-    h1 br{
-        display: none;
-    }
-    .MainSection .Info h3 {
-        font-size: 53px;
-    }
+
     .MainSection > div{
         width: 600px;
     }
-    .MainSection-Header {
+
+    .MainSection-Header{
         flex-direction: column;
+    }
+
+    .MainSection-Header p{
+        font-size: 16px;
+        gap:30px;
     }
 
     .MainSection-Content{
         flex-direction: column-reverse;
-        gap:16px;
-    }
-    .MainSection .Info:nth-child(3){
-        display: none;
-    }
-    .MainSection .Info:first-child {
-        grid-column: unset;
-    }
-
-    .MainSection-Content > div {
-        grid-template-columns: 1fr 1fr;
-        gap:20px;
-    }
-
-    .MainSection .Info p {
-        font-size: 17px;
+        gap: 20px;
     }
 
     .MainSection-Content a{
         width: 100%;
-        text-align: center;
+        height: 55px;
+        font-size: 16px;
     }
-  }
 
-  @media (max-width: 659px) {
-    /*300*/
-    h1{
-        font-size: 30px;
-        font-weight: 600;
+    .MainSection .Info h3{
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .MainSection .Info p{
+        font-size: 14px;
+    }
+
+    .MainSection-Content > div{
+        gap: 20px;
+        width: 100%;
+    }
+
+    .MainSection .Info{
+        gap: 10px;
+    }
+
+    .p_mobile{
+        display: block;
     }
 
     .p_desktop{
         display: none;
     }
-    .p_mobile{
-        display: block;
-    }
+  }
 
-    .MainSection{
-        padding: 19px 0px 33px 0px;
-        gap: 80px;
-        margin-top: -3px;
-    }
-
-    
+  @media (max-width: 659px) {
+    /*320*/
     .MainSection > div{
-        width: 300px;
-    }
-
-    .MainSection-Header p {
-        font-size: 11px;
-        font-weight: 300;
-        width: 247px;
-    }
-
-    .MainSection-Header{
-        gap:12px;
-    }
-
-    .MainSection .Info h3 {
-        font-size: 35px;
-    }
-
-    .MainSection .Info p {
-        font-size: 11px;
-    }
-
-    .MainSection .Info::before {
-        width: 2px;
-    }
-
-    .MainSection .Info {
-        gap: 7px;
-    }
-
-    .MainSection-Content a {
-        font-size: 12px;
-        height: 37px;
-        border-radius: 4px;
-        border: 0.394px solid #8D8D8D;
-        background: #181818;
-        box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
-    }
-
-    .MainSection-Content > div {
-        grid-template-columns: 1fr 1fr;
-        gap: 0px;
+        width: 320px;
     }
   }
 
@@ -320,6 +246,7 @@ h1{
 }
 
 .Services-Content .Card{
+    transition: 0.5s ease;
     padding: 20px;
     display: flex;
     gap:20px;
@@ -334,6 +261,9 @@ h1{
     font-size: 24px;
     font-weight: 300;
     line-height: normal;
+}
+
+.Services-Content > p{
     margin-bottom: auto;
 }
 
@@ -385,114 +315,65 @@ h1{
 
   @media (max-width: 1439px){
     /*920*/
-    .ServicesSection h2{
-        margin-left: calc((100vw - 920px) / 2);
+    .Services-Container{
+        width: 920px;
     }
-    
-    .Services-Header{
-        width: calc((100vw - 150px) / 2);
-    }
-
-    .ServicesSection {
-        gap: 40px;
+    .Services-Content {
+        width: 421px;
     }
 }
 
 @media (max-width: 979px) {
     /*600*/
     .ServicesSection{
-        flex-direction: column;
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid #353535;
+        padding: 60px 0px 75px 0px;
     }
 
-    .ServicesSection h2{
-        margin-left: calc((100vw - 600px) / 2);
-        margin-bottom: 30px;
-    }
-    
     .Services-Header{
+        gap: 25px;
         width: 100%;
     }
 
-    .item {
-        /* width: 353px; */
-        height: 223px;
+    .Services-Header h2{
+        width: 600px;
+        margin: auto;
     }
 
-    .items, .items-wrap{
-        gap: 15px;
+    .Services-Container{
+        width: 100%;
+        flex-direction: column;
     }
 
     .Services-Content {
-        width: 600px;
+        width:600px;
         margin: auto;
+        margin-top: 25px;
     }
 
     .Services-Content > p{
         display: none;
     }
 
-    .Services-Content .Border {
-        display: none;
+    .item{
+        width: 268px;
+        height: 162px;
     }
 
-    .Services-Content .Card {
-        background: #30303061;
-        border: 0.42px solid #0058AB;
-        border-radius: 4px;
-        margin-bottom: 20px;
-        height: 120px;
-        padding-left: 20px;
+    .Services-Content p{
+        font-size: 16px;
     }
   }
 
   @media (max-width: 659px) {
-    /*300*/
-    .ServicesSection{
-        padding: 26px 0px 28px 0px;
-        gap:18px;
-    }
-    .ServicesSection h2{
-        margin-left: calc((100vw - 300px) / 2);
-        margin-bottom: 18px;
+    /*320*/
+    .Services-Header h2{
+        width: 320px;
     }
 
     .Services-Content {
-        width: 300px;
-    }
-   
-    .Services-Content .Card {
-        margin-bottom: 8px;
-        height: 47px;
-        padding-left: 14px;
-        gap:15px;
-    }
-
-    .item {
-        height: 110px;
-    }
-    .items, .items-wrap {
-        gap: 5px;
-    }
-
-    .Services-Content .Card > div {
-        width: 31px;
-    }
-
-
-    .Services-Content .Card p {
-        font-size: 12px;
-        line-height: normal;
-    }
-
-
-    .Services-Content .Card:nth-child(2) img{
-        width: 26px;
-    }
-    .Services-Content .Card:nth-child(4) img{
-        width: 33px;
-    }
-    .Services-Content .Card:nth-child(6) img{
-        width: 31px;
+        width:320px;
     }
   }
 
@@ -539,34 +420,61 @@ h1{
     .Geography-Header{
         width: 920px;
     }
-    .Geography-Header p {
-        font-size: 21px;
+
+    .GeographySection img{
+        width: 920px;
+    }
+
+    .Geography-Header p{
+        width: 473px;
     }
 }
 
 @media (max-width: 979px) {
     /*600*/
+    .GeographySection{
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid #353535;
+        padding: 60px 0px 75px 0px;
+    }
+
     .Geography-Header{
         width: 600px;
-    }
-    .Geography-Header{
         flex-direction: column;
+        justify-content: unset;
+        gap:25px;
+        margin-bottom: 25px;
+    }
+
+    .GeographySection img{
+        width: 100%;
+    }
+    
+    .Geography-Header p{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .Geography-Img{
+        width: 600px;
+        height: 290px;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        background: #353535;
+        overflow: hidden;
     }
   }
 
   @media (max-width: 659px) {
-    /*300*/
+    /*320*/
     .Geography-Header{
-        width: 300px;
+        width: 320px;
     }
-    .GeographySection{
-        padding-top: 29px;
-    }
-    .Geography-Header{
-        gap:10px;
-    }
-    .Geography-Header p {
-        font-size: 11px;
+
+    .Geography-Img{
+        width: 320px;
+        height: 154px;
     }
   }
 
@@ -626,7 +534,7 @@ h1{
 
 .OurServices-Content .Card{
     border-radius: 10px;
-    border: 1px solid #FFF;
+    border: 1px solid #ffffff60;
     backdrop-filter: blur(5px);
     display: flex;
     gap:20px;
@@ -669,100 +577,73 @@ h1{
     .OurServicesSection > *{
         width: 920px;
     }
-
-    .OurServices-Header p {
-        font-size: 22px;
-    }
-    
-    .OurServices-Img {
-        width: 608px;
-        height: 301px;
-    }
-    .OurServices-Content .Card h3 {
-        font-size: 22px;
-        line-height: normal;
-    }
-    .OurServices-Content .Card {
-        height: 87px;
-    }
-
     .OurServices-Content {
-        gap: 20px;
+        width: 421px;
     }
 
-    .OurServices-Header {
-        grid-template-columns: 392px 1fr;
+    .OurServices-Body{
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .OurServices-Img{
+        width: 473px;
+    }
+
+    .OurServices-Header p{
+        width: 421px;
     }
 }
 
 @media (max-width: 979px) {
     /*600*/
+    .OurServicesSection{
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid #353535;
+        padding: 60px 0px 75px 0px;
+        margin-top: -15px;
+    }
+
+    .OurServices-Header p{
+        display: none;
+    }
+
     .OurServicesSection > *{
         width: 600px;
     }
 
-    .OurServices-Header {
-        grid-template-columns:1fr;
+    .OurServices-Content {
+        width:100%;
     }
 
     .OurServices-Img{
-        display: none;
+        width: 100%;
+        height: 448px;
+    }
+
+    .OurServices-Body{
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .OurServices-Content .Card h3{
+        font-size: 16px;
+    }
+
+    .OurServices-Content .Card p{
+        font-size: 14px;
     }
   }
 
   @media (max-width: 659px) {
-    /*300*/
+    /*320*/
     .OurServicesSection > *{
-        width: 300px;
-    }
-    .OurServicesSection{
-        padding: 31px 0px 40px 0px;
+        width: 320px;
     }
 
-    .OurServices-Body{
-        margin-top: 25px;
-    }
-
-    .OurServices-Header p {
-        font-size: 12px;
-    }
-
-    .OurServices-Content .Card p {
-        font-size: 11px;
-    }
-
-    .OurServices-Content .Card {
-        height: 44px;
-        border-radius: 4px;
-        padding-left: 16px;
-        gap:14px;
-    }
-
-    .OurServices-Header {
-        gap: 20px;
-    }
-
-    .OurServices-Content .Card .Card-Img {
-        width: 23px;
-    }
-
-    .OurServices-Content {
-        gap: 9px;
-    }
-
-    .OurServices-Content .Card h3 {
-        font-size: 15px;
-    }
-   
-
-    .OurServices-Content .Card:nth-child(1) img{
-        width: 21px;
-    }
-    .OurServices-Content .Card:nth-child(2) img{
-        width: 22px;
-    }
-    .OurServices-Content .Card:nth-child(3) img{
-        width: 19px;
+    .OurServices-Img{
+        height: 239px;
     }
   }
 
@@ -780,7 +661,7 @@ h1{
 
   /*Товары которые мы поставляем*/
 .GoodsSection{
-    background: #171717 url("../../../img/logistick/GoodsBack.png") center;
+    background: #171717 url("../../img/logistick/GoodsBack.png") center;
     background-size: 1920px 100%;
     border-radius: 20px 20px 0px 0px;
     padding: 90px 0px 105px 0px;
@@ -813,6 +694,7 @@ h1{
 
 
 .Goods-Content .Card{
+    transition: 0.5s ease;
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -827,26 +709,12 @@ h1{
     width: 30px;
 }
 
-.Goods-Img{
-    display: none;
-}
 
 @media (max-width: 1439px){
     /*920*/
-    .GoodsSection{
-        padding: 79px 0px 114px calc((100vw - 920px) / 2);
-    }
-
-    .Goods-Header h2{
-        font-size: 42px;
-    }
-
-    .Goods-Header {
-        width: 409px;
-    }
-
-    .Goods-Content .Card p {
-        font-size: 27px;
+    .GoodsSection > div{
+        width: 920px;
+        margin: auto;
     }
 }
 
@@ -854,101 +722,28 @@ h1{
     /*600*/
 
     .GoodsSection{
-        padding: 79px 0px 114px calc((100vw - 600px) / 2);
-        gap:15px;
-    }
-
-    .Goods-Header {
-        width: 288px;
-        gap:20px;
-    }
-    .Goods-Img{
-        display: block;
-        width: 100%;
-        height: 521px;
+        border-radius: 10px 10px 0px 0px;
         border: 1px solid #353535;
-        border-radius: 5px;
-        overflow: hidden;
+        padding: 60px 0px 75px 0px;
     }
 
-    .Goods-Header h2 {
-        font-size: 29px;
+    .GoodsSection > div{
+        width: 600px;
     }
 
-    .Goods-Content .Card p {
-        font-size: 20px;
-        width: 244px;
+    .Goods-Content .Card p{
+        font-size: 16px;
     }
 
-
-    .Goods-Img img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .Goods-Content .Card {
-        gap: 15px;
+    .Goods-Content{
+        margin-top: 25px;
     }
   }
 
   @media (max-width: 659px) {
-    /*300*/
-
-    .Goods-Header h2 {
-        font-size: 23px;
-        position: absolute;
-        width: 235px;
-    }
-
-    .GoodsSection{
-        padding: 31px 0px 35px calc((100vw - 300px) / 2);
-        gap:15px;
-        background: #191919 url("../../../img/logistick/GoodsBack_mobile.png");
-        background-size: 100% 100%;
-    }
-
-    .Goods-Header {
-        width: 88px;
-        gap: 0px;
-    }
-
-    .Goods-Img{
-        height: 171px;
-        margin-top: 60px;
-    }
-
-    .Goods-Content .Card > div {
-        width: 32px;
-    }
-
-    .Goods-Content .Card {
-        gap:7px;
-    }
-
-    .Goods-Content .Card p {
-        font-size: 14px;
-        width: 165px;
-    }
-
-    .Goods-Content .Border {
-        margin: 9px 0px 9px 39px;
-    }
-
-    .Goods-Content {
-        margin-top: 60px;
-    }
-
-    .Goods-Content .Card:nth-child(1) img{
-        width: 23px;
-    }
-    .Goods-Content .Card:nth-child(3) img{
-        width: 25px;
-    }
-    .Goods-Content .Card:nth-child(5) img{
-        width: 28px;
-    }
-    .Goods-Content .Card:nth-child(7) img{
-        width: 24px;
+    /*320*/
+    .GoodsSection > div{
+        width: 320px;
     }
   }
 
@@ -1003,7 +798,7 @@ h1{
 
 .Why-Content .Card{
     border-radius: 10px;
-    border: 1px solid #FFF;
+    border: 1px solid #ffffff60;
     backdrop-filter: blur(5px);
     display: flex;
     gap: 20px;
@@ -1032,98 +827,76 @@ h1{
     .WhySection > *{
         width: 920px;
     }
-    
     .Why-Content {
+        width: 421px;
+    }
+
+    .Why-Body{
+        gap: 0px;
         justify-content: space-between;
     }
 
-    .Why-Img {
-        width: 708px;
-        height: 401px;
+    .Why-Img{
+        width: 473px;
     }
-    .Why-Content .Card h3 {
-        font-size: 22px;
-        line-height: normal;
+
+    .Why-Header p{
+        width: 421px;
     }
-    .Why-Content .Card {
-        height: 87px;
+
+    .Why-Content .Card h3{
+        font-size: 19px;
     }
 }
 
 @media (max-width: 979px) {
     /*600*/
+    .WhySection{
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid #353535;
+        padding: 60px 0px 75px 0px;
+        margin-top: -15px;
+    }
+
+    .Why-Header p{
+        display: none;
+    }
+
     .WhySection > *{
         width: 600px;
     }
 
-    .Why-Body{
-        flex-direction: column;
+    .Why-Content {
+        width:100%;
     }
 
     .Why-Img{
         width: 100%;
+        height: 363px;
     }
 
-    .Why-Content {
-        width: 100%;
+    .Why-Body{
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
     }
 
+    .Why-Content .Card h3{
+        font-size: 16px;
+    }
+
+    .Why-Content .Card p{
+        font-size: 14px;
+    }
   }
 
   @media (max-width: 659px) {
-    /*300*/
+    /*320*/
     .WhySection > *{
-        width: 300px;
-    }
-    .WhySection{
-        padding: 32px 0px;
-    }
-
-    .img_mobile{
-        display: block;
-    }
-
-    .img_desktop{
-        display: none;
+        width: 320px;
     }
 
     .Why-Img{
-        height: 89px;
-        border-radius: 5px;
-    }
-
-    .Why-Body{
-        margin-top: 12px;
-        gap:17px;
-    }
-
-    .Why-Content .Card {
-        height: 48px;
-        border-radius: 4px;
-        padding-left: 22px;
-        gap:23px;
-    }
-
-    .Why-Content {
-        gap: 7px;
-    }
-
-    .Why-Content .Card h3 {
-        font-size: 12px;
-    }
-
-    .Why-Content .Card .Card-Img {
-        width: 27px;
-    }
-   
-
-    .Why-Content .Card:nth-child(1) img{
-        width: 26px;
-    }
-    .Why-Content .Card:nth-child(2) img{
-        width: 23px;
-    }
-    .Why-Content .Card:nth-child(3) img{
-        width: 25px;
+        height: 182px;
     }
   }

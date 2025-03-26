@@ -3,19 +3,9 @@ body{
   background: #212121;
 }
 
-@media (max-width: 979px) {
-  /*600*/
-  h2{
-      color: #0485FE;
-  }
-}
-
-@media (max-width: 659px) {
-  /*300*/
-  h2{
-      font-size: 23px;
-      font-weight: 600;
-  }
+.Advantages-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
 }
 
 
@@ -25,9 +15,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:253px;
+  gap:128px;
   padding: 130px 0px 91px 0px;
-  background: #181818 url("../../../img/mining/MainBack.jpg") center;
+  background: #181818 url("../../img/mining/MainBack.jpg") center;
   background-size: 1920px 100%;
   margin-top: -4px;
 }
@@ -318,7 +308,7 @@ h1{
 
 .About-Content h3{
   color: #0485FE;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 32px;
   line-height: 100%;
 }
@@ -495,7 +485,7 @@ h1{
   .VsSection{
     padding: 90px 0px 105px 0px;
     border: 1px solid #3535354D;
-    background: #181818 url("../../../img/mining/VsBack.png") center;
+    background: #181818 url("../../img/mining/VsBack.png") center;
     background-size: 1920px 100%;
     margin-top: -15px;
     position: relative;
@@ -581,7 +571,7 @@ h1{
 
   .Vs-Content .Card:first-child .Card-Content{
     position: absolute;
-    background: url("../../../img/mining/Vs1.svg");
+    background: url("../../img/mining/Vs1.svg");
     width: 232px;
     height: 232px;
     display: flex;
@@ -688,7 +678,7 @@ h1{
 
   .Vs-Content .Card:last-child .Card-Content{
     position: absolute;
-    background: url("../../../img/mining/Vs2.svg");
+    background: url("../../img/mining/Vs2.svg");
     width: 386px;
     height: 386px;
     display: flex;
@@ -1169,7 +1159,7 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 .AdvantagesSection{
   padding: 90px 0px 105px 0px;
   border: 1px solid #3535354D;
-  background: #181818 url("../../../img/mining/AdvantagesBack.png") center;
+  background: #181818 url("../../img/mining/AdvantagesBack.png") center;
   background-size: 1920px 100%;
   border-radius: 20px 20px 0px 0px;
   margin-top: -15px;
@@ -1189,6 +1179,7 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 }
 
 .Advantages-Content .Card{
+  transition: 0.5s ease;
   background: #2C2C2C;
   backdrop-filter: blur(10px);
   padding: 20px;
@@ -1267,7 +1258,7 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 
   .AdvantagesSection{
       padding: 40px 0px 35px calc((100vw - 300px) / 2);
-      background: #191919  url("../../../img/mining/AdvantagesBack_mobile.png");
+      background: #191919  url("../../img/mining/AdvantagesBack_mobile.png");
       background-size: 100% 100%;
       gap:15px;
       border-radius: 0px;
@@ -1434,7 +1425,7 @@ box-shadow: 0px 0px 7.31px 0px #0666DF, 0px 0px 7.92px 0px #0485FE91, 0px 0px 0.
 .PacksSection{
   padding: 90px 0px 105px 0px;
   border: 1px solid #3535354D;
-  background: #181818 url("../../../img/mining/PacksBack.png") center;
+  background: #181818 url("../../img/mining/PacksBack.png") center;
   background-size: 1920px 100%;
   border-radius: 20px 20px 0px 0px;
   margin-top: -15px;
@@ -1477,13 +1468,18 @@ backdrop-filter: blur(16.980453491210938px);
     text-transform: uppercase;
     font-size: 32px;
     line-height: normal;
+    height: 82px;
 }
 
 .Packs-Content .Card h4, .Packs-Content .Card_hidden p{
-    color: #fff;
+  color: #fff;
   font-weight: 300;
   font-size: 24px;
   line-height: normal;
+}
+
+.Packs-Content .Card h4{
+  height: 62px;
 }
 
 .Packs-Content .Card p{
@@ -1491,6 +1487,7 @@ backdrop-filter: blur(16.980453491210938px);
   font-weight: 300;
   font-size: 24px;
   line-height: normal;
+  height: 93px;
 }
 
 .Packs-Content .Card-Content{
@@ -1499,9 +1496,21 @@ backdrop-filter: blur(16.980453491210938px);
   gap:10px;
 }
 
-.Packs-Content .Card_hidden{
-  flex-direction: column;
-  gap:10px;
+.Packs-Content .Card_hidden p{
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+
+.Packs-Content .Card_hidden p::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.60);
+  display: block;
+  flex-shrink: 0;
+  margin-top: 12px;
 }
 
 .Packs-Content_mobile{

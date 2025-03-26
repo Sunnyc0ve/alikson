@@ -27,7 +27,7 @@ body{
   flex-direction: column;
   align-items: center;
   padding: 130px 0px 105px 0px;
-  background: #181818 url("../../../img/company/MainBack.jpg") center;
+  background: #181818 url("../../img/company/MainBack.jpg") center;
   background-size: 1920px 100%;
   margin-top: -4px;
   gap:309px;
@@ -159,7 +159,7 @@ h1{
   .MainSection{
     padding: 15px 0px 39px 0px;
     gap: 55px;
-    background: url("../../../img/company/MainBack_mobile.png") no-repeat;
+    background: url("../../img/company/MainBack_mobile.png") no-repeat;
     background-size: 100% 100%;
   }
 
@@ -434,7 +434,7 @@ h1{
 
 /*Наша команда*/
 .TeamSection{
-  background: #181818 url("../../../img/company/TeamBack.png") center;
+  background: #181818 url("../../img/company/TeamBack.png") center;
   background-size: 1920px 100%;
   padding: 90px 0px 105px 0px;
   border-radius: 20px 20px 0px 0px;
@@ -456,8 +456,13 @@ h1{
   }
   
   .Team-Content .Card{
+    transition: 0.5s ease;
     background: #2C2C2C;
     border-radius: 15px;
+  }
+
+  .Team-Content .Card:hover{
+    box-shadow: 0px 0px 6px 2px #0485fec4;
   }
   
   
@@ -630,7 +635,7 @@ h1{
 
     .TeamSection{
       padding: 36px 0px 39px 0px;
-      background: #181818 url("../../../img/company/TeamBack_mobile.png") no-repeat;
+      background: #181818 url("../../img/company/TeamBack_mobile.png") no-repeat;
       background-size: 100% 100%;
     }
 
@@ -682,6 +687,67 @@ h1{
 
 
 
+/*Цифры компании*/
+.NumbersSection{
+  padding: 90px 0px 105px 0px;
+  background: #171717;
+  border: 1px solid #3535354D;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -15px;
+  position: relative;
+
+}
+
+.NumbersSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Numbers-Content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+  grid-auto-rows: 420px;
+  margin-top: 50px;
+}
+
+.Numbers-Content .Card{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  border-radius: 10px;
+  background-size: 100% !important;
+}
+
+.Numbers-Content .Card h3{
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height:  83.333%;
+  text-transform: uppercase;
+}
+
+.Numbers-Content .Card p{
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.Numbers-Content .Card:nth-child(1){
+  background: url("../../img/company/Numbers1.png");
+}
+.Numbers-Content .Card:nth-child(2){
+  background: url("../../img/company/Numbers2.png");;
+}
+.Numbers-Content .Card:nth-child(3){
+  background: url("../../img/company/Numbers3.png");;
+}
+.Numbers-Content .Card:nth-child(4){
+  background: url("../../img/company/Numbers4.png");;
+}
 
 
 
@@ -853,7 +919,7 @@ h1{
 
 /*Что для нас важно*/
 .ImportantSection{
-  background: #181818 url("../../../img/company/TeamBack.png") center;
+  background: #181818 url("../../img/company/TeamBack.png") center;
   background-size: 1920px 100%;
   padding: 90px 0px 105px 0px;
   border-radius: 20px 20px 0px 0px;

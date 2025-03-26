@@ -1,0 +1,884 @@
+/* ОБЩИЕ */
+body{
+  background: #212121;
+}
+
+
+.Advantages-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
+}
+
+
+
+/* Главная секция*/
+.MainSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:35px;
+  padding: 130px 0px 91px 0px;
+  background: #181818 url("../../img/premier_cars/MainBack.jpg") center;
+  background-size: 1920px 100%;
+  margin-top: -4px;
+}
+
+.MainSection > div{
+  width: 1280px;
+}
+
+.MainSection-Header{
+  display: flex;
+  gap:10px;
+  align-items: start;
+}
+
+h1{
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 111%; 
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 626px;
+  flex-shrink: 0;
+}
+
+.MainSection-Header p{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.MainSection-Content{
+  display: flex;
+  align-items: end;
+  gap:365px;
+}
+
+.MainSection-Content a{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.15);
+  background: #112A4D;
+  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
+  width: 272px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.MainSection-Content a:hover{
+  background: #fff;
+  color:#000;
+}
+
+.MainSection-Content > div{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
+}
+
+.MainSection .Info{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.MainSection .Info::before {
+  content: "";
+  height: 72px;
+  width: 3px;
+  background: #0485FE;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+
+.MainSection .Info h3 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.MainSection .Info p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 1439px){
+  .MainSection > div{
+      width: 920px;
+  }
+
+  .MainSection-Content > div {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+  h1{
+      width: 329px;
+      font-size: 51.58px;
+  }
+
+  .MainSection-Header p {
+      font-size: 21px;
+  }
+
+  .MainSection-Content a {
+      font-size: 26px;
+  }
+
+  .MainSection-Content {
+      gap: 157px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 52px;
+  }
+
+  .MainSection .Info p {
+    font-size: 21px;
+}
+
+  .MainSection{
+      gap:134px;
+      background-size: 1440px;
+  background-position: center;
+  }
+
+  .MainSection-Header {
+    gap: 75px;
+}
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .MainSection{
+      margin-top: -13px;
+  }
+  h1{
+      font-size: 60px;
+      color: #0485FE;
+      width: auto;
+  }
+  h1 br{
+      display: none;
+  }
+  .MainSection .Info h3 {
+      font-size: 53px;
+  }
+  .MainSection > div{
+      width: 600px;
+  }
+  .MainSection-Header {
+      flex-direction: column;
+      gap:20px;
+  }
+
+  .MainSection-Content{
+      flex-direction: column-reverse;
+      gap:16px;
+  }
+  .MainSection .Info:nth-child(3){
+      display: none;
+  }
+  .MainSection .Info:first-child {
+      grid-column: unset;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 1fr;
+      gap:0px;
+      width: 100%;
+  }
+
+  .MainSection .Info p {
+      font-size: 17px;
+  }
+
+  .MainSection-Content a{
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  h1{
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .MainSection{
+      padding: 31px 0px 35px 0px;
+      gap: 60px;
+      margin-top: -6px;
+  }
+
+  
+  .MainSection > div{
+      width: 300px;
+  }
+
+  .MainSection-Header p {
+      font-size: 11px;
+      font-weight: 300;
+  }
+
+  .MainSection-Header{
+      gap:12px;
+  }
+
+  .MainSection .Info h3 {
+      font-size: 30px;
+  }
+
+  .MainSection .Info p {
+      font-size: 10px;
+  }
+
+  .MainSection .Info::before {
+      width: 2px;
+  }
+
+  .MainSection .Info {
+      gap: 7px;
+  }
+
+  .MainSection-Content a {
+      font-size: 12px;
+      padding: 6.5px 0px;
+      border-radius: 4px;
+      border: 0.394px solid #8D8D8D;
+      background: #181818;
+      box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
+  }
+
+  .MainSection-Content > div {
+      grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+
+
+
+
+
+
+/*Наши услуги*/
+.ServicesSection{
+  padding: 90px 0px 105px 0px;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #171717;
+}
+
+.ServicesSection > div{
+  width: 1280px;
+  margin: auto;
+}
+
+
+
+.Services-Header .wrap{
+  margin: 50px 0px;
+}
+
+
+.Services-Content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.Services-Content .Card{
+  border-radius: 10px;
+  background: #2C2C2C;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+.Services-Content .Card img{
+  width: 30px;
+}
+
+.Services-Content p{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  height: 256px;
+  width: 423px;
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .ServicesSection h2{
+      margin-left: calc((100vw - 920px) / 2);
+  }
+  
+  .Services-Header{
+      width: calc((100vw - 150px) / 2);
+  }
+
+  .ServicesSection {
+      gap: 40px;
+  }
+
+  .Services-Content p {
+      font-size: 25px;
+      width: 500px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .ServicesSection{
+      flex-direction: column;
+  }
+
+  .ServicesSection h2{
+      margin-left: calc((100vw - 600px) / 2);
+  }
+  
+  .Services-Header{
+      width: 100%;
+  }
+
+  .item {
+      width: 353px;
+      height: 223px;
+  }
+
+  .Services-Content > * {
+      margin-left: calc((100vw - 600px) / 2) !important;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .ServicesSection{
+      padding: 27px 0px 28px 0px;
+      gap:15px;
+      border-radius: 7px;
+      margin-top: -5px;
+  }
+  .ServicesSection h2{
+      margin-left: calc((100vw - 300px) / 2);
+      margin-bottom: 15px;
+  }
+
+  .ServicesSection h2 br{
+    display: none;
+  }
+
+  .Services-Content > * {
+      margin-left: calc((100vw - 300px) / 2) !important;
+  }
+  .item {
+      width: 170px;
+      height: 86px;
+      margin: 0px;
+      border: none;
+      border-radius: 5px;
+  }
+  .items, .items-wrap {
+      gap: 5px;
+  }
+
+
+  .Services-Content p {
+      font-size: 14px;
+      line-height: normal;
+      width: 270px;
+  }
+
+  .Services-Content p:nth-child(3){
+    width: 220px;
+  }
+
+  .Services-Content div {
+      margin: 8px 0px;
+  }
+}
+
+ 
+
+
+
+
+
+/*Преимущества секция*/
+.AdvantagesSection{
+  background: #181818 url("../../img/company/TeamBack.png") center;
+  background-size: 1920px 100%;
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #3535354D;
+  position: relative;
+  margin-top: -15px;
+  }
+
+  .AdvantagesSection > div{
+    width: 1280px;
+    margin: auto;
+  }
+  
+
+  .Advantages-Content{
+    margin-top: 50px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+  }
+  
+  .Advantages-Content .Card{
+    transition: 0.5s ease;
+    background: #171717;
+    border: 1px solid #FFFFFF60;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .Advantages-Content .Card img{
+    width: 30px;
+  }
+  
+  .Advantages-Content .Card h3{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+
+@media (max-width: 1439px){
+  /*920*/
+  .AdvantagesSection > *{
+    width: 920px;
+  }
+
+  .Advantages-Content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Advantages-Content .Card h3{
+  font-size: 24px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .AdvantagesSection > *{
+    width: 600px;
+  }
+  .Advantages-Content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .AdvantagesSection > *{
+    width: 300px;
+  }
+
+  .AdvantagesSection{
+    padding: 36px 0px 39px 0px;
+    background: #181818 url("../../img/premier_cars/AdvantagesBack_mobile.png") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .Advantages-Content{
+    margin-top: 15px;
+    gap:10px;
+  }
+
+  .Advantages-Content .Card > div {
+    width: 45px;
+    height: 39px;
+    backdrop-filter: blur(3.2842893600463867px);
+    box-shadow: 0px 0px 7.26px 0px #0666DF, 0px 0px 2.74px 0px #0485FE91, 0px 0px 1.13px 0px #FFFFFF59;
+    border-radius: 5px;
+  }
+
+  .Advantages-Content .Card > div img{
+    width: auto;
+  }
+
+  .Advantages-Content .Card h3 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .Advantages-Content .Card {
+    gap: 13px;
+  }
+
+  .Advantages-Content .Card:nth-child(3) h3 {
+    width: 185px;
+  } 
+}
+
+
+
+
+
+
+/*Наш автопарк*/
+.ParkSection{
+  padding: 90px 0px 105px 0px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+  background: #171717;
+  margin-top: -15px;
+  position: relative;
+}
+
+.ParkSection > *{
+  width: 1280px;
+  margin: auto;
+}
+
+.Park-Header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Park-Header p{
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0.06px;
+  font-weight: 300;
+  color:#fff;
+  width: 644px;
+  flex-shrink: 0;
+}
+
+
+.Park-Content{
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 225px;
+  gap:20px;
+}
+
+.Park-Content .Card{
+  border-radius: 10px;
+  border: 1px solid #8D8D8D;
+  overflow: hidden;
+}
+
+.Park-Content .Card img{
+  width: 100%;
+  height: 100%;
+}
+
+.Park-Content_mobile{
+  display: none;
+}
+
+@media (max-width: 1439px){
+  /*920*/
+  .ParkSection > *{
+    width: 920px;
+  }
+
+  .Park-Content{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    grid-auto-rows: 180px;
+  }
+
+  .Park-Content .Card{
+    box-shadow: 0px 0px 7.26px 0px #0666DF, 0px 0px 2.74px 0px #0485FE91, 0px 0px 1.13px 0px #FFFFFF59;
+  }
+
+  .Park-Header h2{
+    width: auto;
+  }
+
+  .Park-Header {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .ParkSection > *{
+    width: 600px;
+  }
+
+  .Park-Header{
+    flex-direction: column;
+  }
+
+  .Park-Content{
+    grid-template-columns: 1fr;
+    gap:20px;
+    grid-auto-rows: 300px;
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .ParkSection > *{
+    width: 300px;
+  }
+
+  .ParkSection{
+    padding: 27px 0px 30px 0px;
+    border-radius: 7px;
+  }
+
+  .Park-Content_mobile{
+    display: block;
+    width: 100% !important;
+    margin-top: 15px;
+  }
+
+  .ParkSection .item{
+    width: 245px;
+    height: 130px;
+  }
+
+  .Park-Content{
+    display: none;
+  }
+
+  .Park-Header p{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+/*Отзывы*/
+.ReviewsSection{
+  padding: 90px 0px 105px 0px;
+  background: #181818 url("../../img/premier_cars/ReviewsBack.png") center;
+  background-size: 1920px 100%;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid rgba(53, 53, 53, 0.30);
+}
+
+.ReviewsSection > div{
+  width: 1280px;
+  margin: auto;
+}
+
+
+.Reviews-Content{
+  margin-top: 50px !important;
+}
+
+.ReviewsSection .swiper-wrapper {
+  height: auto;
+}
+
+.ReviewsSection .swiperP {
+  width: 1280px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+
+
+.ReviewsSection .swiper-slide {
+  height: auto;
+}
+
+.Reviews-Content .Card {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 413px;
+  height: 256px;
+}
+
+.Reviews-Content .Card img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.Swiper-Control {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.Swiper-Control > button {
+  color: #fff;
+  font-size: 24px;
+  padding: 7.5px 20.5px;
+  background: #ffffff29;
+  border-radius: 5px;
+}
+
+.Swiper-Control > button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 1439px){
+  /*920*/
+  .Reviews-Header{
+    width: 920px;
+  }
+
+  .Reviews-Content{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    grid-auto-rows: 180px;
+    padding: 50px calc((100vw - 920px) / 2);
+  }
+
+  .Reviews-Header h2{
+    width: auto;
+  }
+
+  .Reviews-Header {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 979px) {
+  /*600*/
+  .Reviews-Header{
+    width: 600px;
+  }
+
+  .Reviews-Header{
+    flex-direction: column;
+  }
+
+  .Reviews-Content{
+    grid-template-columns: 1fr;
+    gap:20px;
+    grid-auto-rows: 250px;
+    padding: 50px calc((100vw - 600px) / 2);
+  }
+}
+
+@media (max-width: 659px) {
+  /*300*/
+  .Reviews-Header{
+    width: 300px;
+  }
+
+  .ReviewsSection{
+    padding: 36px 0px 39px 0px;
+  }
+
+  .Reviews-Content_mobile{
+    display: block;
+    padding: 20px 0px;
+    margin-top: 15px;
+    backdrop-filter: blur(4.673392295837402px);
+    box-shadow: 0px 0px 18.43px 0px #0485FE,0px 0px 7.73px 0px #0485FEA6,0px 0px 1.61px 0px #FFFFFF59;
+    border-top: 1px solid #ffffff84;
+    border-bottom: 1px solid #ffffff84;
+  }
+
+  .ReviewsSection .item{
+    width: 194px;
+    height: 127px;
+  }
+
+  .Reviews-Content{
+    display: none;
+  }
+
+  .Reviews-Header p{
+    font-size: 13px;
+  }
+}

@@ -1,27 +1,8 @@
-<!DOCTYPE >
-<html lang="ru">
-  <head>
-    <title>Alikson - О компании</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/header.css?2.0" />
-    <link rel="stylesheet" href="css/pages/company/_company.css?2.0" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-  <body>
-    <?php include('include/header.html')?>
+<?php
+$title='Alikson О компании';
+$csspage='_company.css?2.6'; 
+include('include/header.php');
+?>
     <main>
         <section class="MainSection">
             <!-- <img src="img/company/MainDecor.png"> -->
@@ -93,7 +74,7 @@
                     </div>
                     <div class="Card-Content">
                         <h3>Гасан Мустафаев</h3>
-                        <p>Генеральный директор компании<br> Alikson Group</p>
+                        <p>Основатель компании<br> Alikson Group</p>
                     </div>
                 </div>
                 <div class="Card">
@@ -151,6 +132,27 @@
                         <img src="img/ArrowRight.svg" />
                     </button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="NumbersSection">
+            <h2>ЦИФРЫ КОМПАНИИ</h2>
+            <div class="Numbers-Content">
+                <div class="Card">
+                    <h3>400+</h3>
+                    <p>сотрудников </p>
+                </div>
+                <div class="Card">
+                    <h3>6</h3>
+                    <p>региональных офисов </p>
+                </div>
+                <div class="Card">
+                    <h3>10 000м²</h3>
+                    <p>складов класса А </p>
+                </div>
+                <div class="Card">
+                    <h3>100 000+</h3>
+                    <p>позиций ассортимента</p>
                 </div>
             </div>
         </section>

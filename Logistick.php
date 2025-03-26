@@ -1,21 +1,8 @@
-<!DOCTYPE >
-<html lang="ru">
-  <head>
-    <title>Alikson - Логистика</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/header.css?2.1" />
-    <link rel="stylesheet" href="css/pages/logistick/_logistick.css?2.2" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <?php include('include/header.html')?>
+<?php
+$title='Alikson Логистика';
+$csspage='_logistick.css?2.6'; 
+include('include/header.php');
+?>
     <main>
         <section class="MainSection">
             <div class="MainSection-Header">
@@ -134,9 +121,6 @@
         <section class="GoodsSection">
             <div class="Goods-Header">
                 <h2>товары,<br> которые мы поставляем</h2>
-                <div class="Goods-Img">
-                    <img src="img/logistick/GoodsImg.png">
-                </div>
             </div>
             <div class="Goods-Content">
                  <div class="Card">

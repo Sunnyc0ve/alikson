@@ -4,19 +4,9 @@ body{
 }
 
 
-@media (max-width: 979px) {
-  /*600*/
-  h2{
-      color: #0485FE;
-  }
-}
-
-@media (max-width: 659px) {
-  /*300*/
-  h2{
-      font-size: 23px;
-      font-weight: 600;
-  }
+.Why-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
 }
 
 
@@ -28,7 +18,7 @@ body{
   align-items: center;
   gap:35px;
   padding: 130px 0px 91px 0px;
-  background: #181818 url("../../../img/development/MainBack.jpg") center;
+  background: #181818 url("../../img/development/MainBack.jpg") center;
   background-size: 1920px 100%;
   margin-top: -4px;
 }
@@ -701,6 +691,7 @@ h1{
 }
 
 .Why-Content .Card{
+  transition: 0.5s ease;
   background: #2C2C2C;
   backdrop-filter: blur(10px);
   gap:5px;
@@ -876,7 +867,7 @@ h1{
 /*Инвестиции*/
 .InvestitionsSection{
   padding: 90px 0px 105px 0px;
-  background: #181818 url("../../../img/development/InvestitionsBack.png") center;
+  background: #181818 url("../../img/development/InvestitionsBack.png") center;
   background-size: 1920px 100%;
   border: 1px solid #3535354D;
   border-radius: 20px 20px 0px 0px;
