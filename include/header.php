@@ -17,7 +17,7 @@
   echo'<link rel="stylesheet" href="css/pages/' . $csspage . '" />';
   echo '<link rel="stylesheet" href="css/form.css?2.5" />';
   }else{
-    echo '<link rel="stylesheet" href="css/main.css?2.7" />';
+    echo '<link rel="stylesheet" href="css/main.css?2.8" />';
     }
 ?>
 

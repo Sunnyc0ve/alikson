@@ -3,7 +3,7 @@ body{
     background: #212121;
 }
 
-.Advantages-Content .Card:hover, .Directions-Content .Card:hover{
+.Advantages-Content .Card:hover, .Directions-Content .Card:hover, .Services-Content .Card:hover{
     background: #113058;
     box-shadow: 0px 0px 6px 2px #0485FE;
 }
@@ -197,6 +197,10 @@ h1{
     }
 
     .p_desktop{
+        display: none;
+    }
+
+    .MainSection .Info:last-child{
         display: none;
     }
   }

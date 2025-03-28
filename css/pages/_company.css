@@ -4,38 +4,49 @@ body{
 }
 
 
-@media (max-width: 979px) {
-  /*600*/
-  h2{
-      color: #0485FE;
-  }
-}
-
-@media (max-width: 659px) {
-  /*300*/
-  h2{
-      font-size: 23px;
-      font-weight: 600;
-  }
+.Values-Content .Card:hover, .Important-Content .Card:hover{
+  background: #113058;
+  box-shadow: 0px 0px 6px 2px #0485FE;
 }
 
 
 
 /* Главная секция*/
-.MainSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 130px 0px 105px 0px;
-  background: #181818 url("../../img/company/MainBack.jpg") center;
-  background-size: 1920px 100%;
-  margin-top: -4px;
-  gap:309px;
+.MainSection {
+  margin-top: -6px;
+  z-index: 0;
+  position: relative;
 }
 
-.MainSection > div{
-    width: 1280px;
+.MainSection .MainContainer {
+  padding: 60px 0px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  margin-left: calc((100% - 1280px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 280px;
 }
+
+.MainSection .VideoContainer {
+  display: flex;
+  justify-content: center;
+  height: 696px;
+}
+
+.Video_desktop{
+  width: 1920px;
+  height: fit-content;
+}
+
+
+
+.Video_mobile {
+  display: none;
+}
+
+
 
 .MainSection-Header{
     display: flex;
@@ -49,7 +60,7 @@ h1{
   line-height: 111%; 
   letter-spacing: -0.72px;
   text-transform: uppercase;
-  width: 100%;
+  width: 626px;
 }
 
 .MainSection-Header p{
@@ -58,7 +69,7 @@ h1{
   font-weight: 300;
   line-height: normal;
   letter-spacing: -0.25px;
-  width: 720px;
+  width: 644px;
   flex-shrink: 0;
 }
 
@@ -79,7 +90,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 559px;
+  margin-left: 635px;
 }
 
 .MainSection-Content a:hover{
@@ -230,6 +241,7 @@ h1{
 
 
 .Values-Content .Card{
+  transition: 0.5s ease;
   border-radius: 10px;
   background: #2C2C2C;
   backdrop-filter: blur(5px);
@@ -719,6 +731,7 @@ h1{
   gap: 10px;
   border-radius: 10px;
   background-size: 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 .Numbers-Content .Card h3{
@@ -740,13 +753,13 @@ h1{
   background: url("../../img/company/Numbers1.png");
 }
 .Numbers-Content .Card:nth-child(2){
-  background: url("../../img/company/Numbers2.png");;
+  background: url("../../img/company/Numbers2.png");
 }
 .Numbers-Content .Card:nth-child(3){
-  background: url("../../img/company/Numbers3.png");;
+  background: url("../../img/company/Numbers3.png");
 }
 .Numbers-Content .Card:nth-child(4){
-  background: url("../../img/company/Numbers4.png");;
+  background: url("../../img/company/Numbers4.png");
 }
 
 
@@ -942,6 +955,7 @@ h1{
   }
   
   .Important-Content .Card{
+    transition: 0.5s ease;
     background: #171717;
     border: 1px solid #FFFFFF60;
     backdrop-filter: blur(10px);

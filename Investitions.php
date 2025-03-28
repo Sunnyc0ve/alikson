@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Инвестиции';
-$csspage='_investitions.css?2.5'; 
+$csspage='_investitions.css?2.8'; 
 include('include/header.php');
 ?>
 <main>
@@ -97,7 +97,7 @@ include('include/header.php');
 <div class="Market-Content">
 <div class="Card">
 <h3>Объем рынка</h3>
-<p>Прогнозируется рост до&nbsp;800 млрд ₽&nbsp;в&nbsp;2025&nbsp;г.</p>
+<p>Прогнозируется рост до&nbsp;12,3 трлн ₽&nbsp;в&nbsp;2025&nbsp;г.</p>
 </div>
 <div class="Card">
 <h3>E-commerce</h3>
@@ -165,11 +165,11 @@ include('include/header.php');
 <h2>Куда стремится бизнес?</h2>
 <div class="Buisnes-Content">
 <div class="Card">
-<h3>800 млрд ₽</h3>
+<h3>12,3 трлн ₽</h3>
 <p>ежегодный оборот рынка оптовой дистрибуции электроники в&nbsp;России</p>
 </div>
 <div class="Card">
-<h3>37% (~300 млрд&nbsp;₽)</h3>
+<h3>37% (~4,5 трлн&nbsp;₽)</h3>
 <p>доля рынка, которую мы&nbsp;стремимся занять в&nbsp;ближайшие годы</p>
 </div>
 </div>

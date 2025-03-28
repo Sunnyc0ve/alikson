@@ -23,7 +23,7 @@ include('include/header.php');
 </div>
 <div class="Info">
 <div>
-<h3>2000+</h3>
+<h3>2 000+</h3>
 <p>клиентов выбрали нас </p>
 </div>
 </div>

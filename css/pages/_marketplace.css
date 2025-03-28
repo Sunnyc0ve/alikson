@@ -129,6 +129,10 @@ h1{
   display: none;
 }
 
+.MainSection .Info:last-child > div{
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1439px){
   .MainSection > div{
       width: 920px;
@@ -783,7 +787,7 @@ h1{
   font-weight: 300;
   line-height: normal;
   letter-spacing: -0.25px;
-  width: 644px;
+  width: 642px;
   flex-shrink: 0;
 }
 
@@ -816,6 +820,7 @@ h1{
 }
 
 .Reviews-Content .Card {
+  filter: grayscale(1);
   overflow: hidden;
   border-radius: 15px;
   width: 340px;

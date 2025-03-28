@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Майнинг';
-$csspage='_mining.css?2.5'; 
+$csspage='_mining.css?2.7'; 
 include('include/header.php');
 ?>
 <main>
@@ -101,7 +101,7 @@ include('include/header.php');
 </div>
 <div class="Card">
 <div class="Card-Header">
-<h3>ДОХОД ЗА&nbsp;ГОД с&nbsp;аликсон</h3>
+<h3>ДОХОД ЗА&nbsp;ГОД<br> с&nbsp;аликсон</h3>
 <div>
 <img class="decor" src="img/mining/decor.png">
 <div>
@@ -202,89 +202,45 @@ include('include/header.php');
 <h2>Пакеты услуг</h2>
 <div class="Packs-Content">
 <div class="Card">
-<h3>все включено</h3>
+<div class="Card-Header">
+<h3>Все<br> 
+включено</h3>
+</div>
 <div class="Card-Content">
-<h4>Доверяйте все профессионалам</h4>
-<p>Мы&nbsp;организуем весь процесс майнинга, чтобы вы&nbsp;получали прибыль без лишних забот</p>
-</div>
-<div class="Card_hidden">
-<p>Подбор и&nbsp;приобретение оборудования</p>
-<p>Полная установка и&nbsp;настройка оборудования</p>
-<p>Техническое обслуживание на&nbsp;каждом этапе</p>
-<p>Личный менеджер, готовый ответить на&nbsp;все вопросы</p>
-<p>Аналитика доходности и&nbsp;поддержка 24/7</p>
-</div>
-</div>
-<div class="Card">
-<h3>Фиксированная доходность</h3>
-<div class="Card-Content">
-<h4>Стабильный доход с&nbsp;гарантией</h4>
-<p>Просто инвестируйте, а&nbsp;мы&nbsp;сделаем все остальное</p>
-</div>
-<div class="Card_hidden">
-<p>Регулярные выплаты вашей прибыли</p>
-<p>Прозрачные условия и&nbsp;максимальная надежность</p>
-<p>Полное техническое сопровождение от&nbsp;нашей команды</p>
+<p>Доверяйте все профессионалам: мы&nbsp;организуем весь процесс майнинга, чтобы вы&nbsp;получали прибыль без лишних забот</p>
+<ul>
+<li>Подбор и&nbsp;приобретение оборудования</li>
+<li>Полная установка и&nbsp;настройка оборудования</li>
+<li>Техническое обслуживание на&nbsp;каждом этапе</li>
+<li>Личный менеджер, готовый ответить на&nbsp;все вопросы</li>
+<li>Аналитика доходности и&nbsp;поддержка 24/7</li>
+</ul>
 </div>
 </div>
-<div class="Card">
-<h3>Техническое обслуживание</h3>
-<div class="Card-Content">
-<h4>Уже есть оборудование?</h4>
-<p>Доверьте его эксплуатацию нам, и&nbsp;получите максимум от&nbsp;своих мощностей</p>
-</div>
-<div class="Card_hidden">
-<p>Подключение к&nbsp;нашей эффективной инфраструктуре</p>
-<p>Постоянный мониторинг, ремонт и&nbsp;оптимизация работы</p>
-<p>Снижение затрат за&nbsp;счет профессионального управления</p>
-</div>
-</div>
-</div>
-<div class="Packs-Content_mobile">
-<div class="swiper">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
 <div class="Card">
 <div class="Card-Header">
-<h3>все включено</h3>
+<h3>Фиксированная<br> доходность </h3>
 </div>
 <div class="Card-Content">
-<h4>Доверяйте все профессионалам</h4>
-<p>Мы&nbsp;организуем весь процесс майнинга, чтобы вы&nbsp;получали прибыль без лишних забот</p>
+<p>Стабильный доход с&nbsp;гарантией&nbsp;&mdash; просто инвестируйте, а&nbsp;мы&nbsp;сделаем все остальное</p>
+<ul>
+<li>Регулярные выплаты вашей прибыли</li>
+<li>Прозрачные условия и&nbsp;максимальная надежность</li>
+<li>Полное техническое сопровождение от&nbsp;нашей команды</li>
+</ul>
 </div>
 </div>
-</div>
-<div class="swiper-slide">
 <div class="Card">
 <div class="Card-Header">
-<h3>Фиксированная доходность</h3>
+<h3>Техническое<br> обслуживание</h3>
 </div>
 <div class="Card-Content">
-<p>&mdash;&nbsp;Регулярные выплаты вашей прибыли </p>
-<p>&mdash;&nbsp;Прозрачные условия и&nbsp;максимальная надежность</p>
-<p>&mdash;&nbsp;Полное техническое сопровождение от&nbsp;нашей команды</p>
-</div>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<div class="Card-Header">
-<h3>Техническое обслуживание</h3>
-</div>
-<div class="Card-Content">
-<h4>Уже есть оборудование?</h4>
-<p>Доверьте его эксплуатацию нам, и&nbsp;получите максимум от&nbsp;своих мощностей</p>
-</div>
-</div>
-</div>
-</div>
-<div class="Swiper-Control">
-<button class="Swiper-Prev">
-<img src="img/ArrowLeft.svg" />
-</button>
-<button class="Swiper-Next">
-<img src="img/ArrowRight.svg" />
-</button>
+<p>Уже есть оборудование? Доверьте его эксплуатацию нам, и&nbsp;получите максимум от&nbsp;своих мощностей</p>
+<ul>
+<li>Подключение к&nbsp;нашей эффективной инфраструктуре</li>
+<li>Постоянный мониторинг, ремонт и&nbsp;оптимизация работы</li>
+<li>Снижение затрат за&nbsp;счет профессионального управления</li>
+</ul>
 </div>
 </div>
 </div>

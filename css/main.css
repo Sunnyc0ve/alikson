@@ -1055,6 +1055,10 @@ h2 {
   gap: 20px;
 }
 
+.Projects-Main .Info:nth-child(2) .Banner > div{
+  align-items: center;
+}
+
 .Projects-Main .Info:not(.Active) {
   display: none;
 }
@@ -1175,6 +1179,10 @@ h2 {
 @media (max-width: 1439px) {
   .ProjectsSection > div {
     width: 920px;
+  }
+
+  .Projects-Main .Info:nth-child(2) .Banner > div{
+    align-items: start;
   }
 
   .Projects-Header p {

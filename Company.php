@@ -1,19 +1,28 @@
 <?php
 $title='Alikson О компании';
-$csspage='_company.css?2.6'; 
+$csspage='_company.css?2.7'; 
 include('include/header.php');
 ?>
     <main>
         <section class="MainSection">
-            <!-- <img src="img/company/MainDecor.png"> -->
+        <div class="VideoContainer">
+            <video muted autoplay loop playsinline class="Video_desktop">
+                <source src="img/company/mainVideo.mp4" />
+            </video>
+            <video muted autoplay loop playsinline class="Video_mobile">
+                <source src="img/mainVideo_1.mp4" />
+            </video>
+        </div>
+        <div class="MainContainer">
             <div class="MainSection-Header">
                 <h1>О компании</h1>
-                <p class="p_desktop">Alikson Group - группа компаний, работающая  с 2020 года<br> в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги. Создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность</p>
+                <p class="p_desktop">Alikson Group - группа компаний, работающая  с 2020 года в 24 направлениях бизнеса, в числе которых — информационные технологии, логистика, инвестиции, девелопмент и платежные услуги. Создаем комплексные решения для роста и масштабирования бизнеса, обеспечивая стабильность и высокую эффективность</p>
                 <p class="p_mobile">Alikson Group - группа компаний, ,работающая<br>  с 2020 года в 24 направлениях бизнеса,<br> в числе которых — информационные<br> технологии, логистика, инвестиции, девелопмент и платежные услуги</p>
             </div>
             <div class="MainSection-Content">
                 <a href="">Оставить заявку</a>
             </div>
+        </div>
         </section>
         <section class="ValuesSection">
                 <div class="Values-Header">

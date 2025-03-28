@@ -3,6 +3,10 @@ body{
     background: #212121;
 }
 
+.Services-Content .Card:hover, .Advantages-Content .Card:hover{
+    background: #113058;
+    box-shadow: 0px 0px 6px 2px #0485FE;
+  }
 
 
 
@@ -202,6 +206,10 @@ text-transform: uppercase;
     .p_desktop{
         display: none;
     }
+
+    .MainSection .Info:last-child{
+        display: none;
+    }
   }
 
   @media (max-width: 659px) {
@@ -239,6 +247,7 @@ text-transform: uppercase;
 }
 
 .Services-Content .Card{
+    transition: 0.5s ease;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     display: flex;
@@ -557,6 +566,7 @@ backdrop-filter: blur(16.980453491210938px);
 }
 
 .Advantages-Content .Card{
+    transition: 0.5s ease;
     border-radius: 10px;
     border: 1px solid #ffffff60;
     backdrop-filter: blur(5px);
