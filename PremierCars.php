@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Premier Cars';
-$csspage='_premiercars.css?2.5'; 
+$csspage='_premiercars.css?3.0'; 
 include('include/header.php');
 ?>
 <main>
@@ -8,8 +8,9 @@ include('include/header.php');
 <div class="MainSection-Header">
 <h1>PREMIER CARS</h1>
 <div>
-<p>Premier cars&nbsp;&mdash; аренда автомобилей премиум-класса с&nbsp;безупречным сервисом, который ориентирован на&nbsp;ваш комфорт и&nbsp;безопасность</p>
-<p>Работаем с&nbsp;2021 года предоставляя нашим клиентам только лучшие автомобили с&nbsp;и&nbsp;самый высокий уровень обслуживания</p>
+<p class="p_desktop">Premier cars&nbsp;&mdash; аренда автомобилей премиум-класса с&nbsp;безупречным сервисом, который ориентирован на&nbsp;ваш комфорт и&nbsp;безопасность</p>
+<p class="p_mobile">Premier cars&nbsp;&mdash; аренда автомобилей премиум-класса.</p>
+<p>Работаем с&nbsp;2021 года предоставляя нашим клиентам только лучшие автомобили и&nbsp;самый высокий уровень обслуживания</p>
 </div>
 </div>
 <div class="MainSection-Content">
@@ -135,8 +136,14 @@ include('include/header.php');
 <div class="item"><img src="img/premier_cars/Park1.png" /></div>
 <div class="item"><img src="img/premier_cars/Park2.png" /></div>
 <div class="item"><img src="img/premier_cars/Park3.png" /></div>
+<div class="item"><img src="img/premier_cars/Park1.png" /></div>
+<div class="item"><img src="img/premier_cars/Park2.png" /></div>
+<div class="item"><img src="img/premier_cars/Park3.png" /></div>
 </div>
 <div aria-hidden="true" class="items marquee">
+<div class="item"><img src="img/premier_cars/Park1.png" /></div>
+<div class="item"><img src="img/premier_cars/Park2.png" /></div>
+<div class="item"><img src="img/premier_cars/Park3.png" /></div>
 <div class="item"><img src="img/premier_cars/Park1.png" /></div>
 <div class="item"><img src="img/premier_cars/Park2.png" /></div>
 <div class="item"><img src="img/premier_cars/Park3.png" /></div>
@@ -204,12 +211,12 @@ include('include/header.php');
       const swiperP = new Swiper(".swiperP", {
       loop: true,
       slidesPerView: 1,
-      spaceBetween: -1690,
+      spaceBetween: 20,
       watchSlidesProgress: true, // Следит за прогрессом слайдов
       watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
-        660: { slidesPerView: 3, spaceBetween: -1200 },
-        980: { slidesPerView: 3, spaceBetween: -600 },
+        660: { slidesPerView: 2, spaceBetween: 80 },
+        980: { slidesPerView: 2, spaceBetween: 95 },
         1440: { slidesPerView: 3, spaceBetween: 20 },
       },
       direction: "horizontal",
@@ -218,5 +225,5 @@ include('include/header.php');
         prevEl: ".Swiper-Prev",
       },
     });
-    </script>
+</script>
 </html>

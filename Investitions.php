@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Инвестиции';
-$csspage='_investitions.css?2.8'; 
+$csspage='_investitions.css?3.0'; 
 include('include/header.php');
 ?>
 <main>
@@ -9,7 +9,7 @@ include('include/header.php');
 <h1>alikson инвестиции</h1>
 <div>
 <p>Мы&nbsp;создаем возможности для уверенного роста вашего капитала&nbsp;&mdash; с&nbsp;гарантией безопасности, стабильной доходностью и&nbsp;полной защитой ваших вложений</p>
-<p>Успешно развиваем локальные и&nbsp;международные проекты в&nbsp;сегментах электроники, логистики и&nbsp;финансовых решений, обеспечивая партнерам предсказуемый доход и&nbsp;стабильность</p>
+<p class="p_desktop">Успешно развиваем локальные и&nbsp;международные проекты в&nbsp;сегментах электроники, логистики и&nbsp;финансовых решений, обеспечивая партнерам предсказуемый доход и&nbsp;стабильность</p>
 </div>
 </div>
 <div class="MainSection-Content">
@@ -169,8 +169,8 @@ include('include/header.php');
 <p>ежегодный оборот рынка оптовой дистрибуции электроники в&nbsp;России</p>
 </div>
 <div class="Card">
-<h3>37% (~4,5 трлн&nbsp;₽)</h3>
-<p>доля рынка, которую мы&nbsp;стремимся занять в&nbsp;ближайшие годы</p>
+<h3>10%</h3>
+<p>целевая доля рынка<br> Aliskon group</p>
 </div>
 </div>
 </section>
@@ -178,10 +178,9 @@ include('include/header.php');
 <h2>Инвестиции с&nbsp;Alikson Group</h2>
 <div class="Table-Content">
 <div class="Card">
-<h3>ДОХОДНОСТЬ</h3>
-</div>
-<div class="Card">
-<p><span>36%</span> годовых</p>
+<p>Средняя доходность от инвестиций 
+с&nbsp;Alikson Group в&nbsp;2024 году составила </p>
+<span>~36% годовых</span>
 </div>
 <div class="Card">
 <h3>УСЛОВИЯ</h3>
@@ -203,8 +202,30 @@ include('include/header.php');
 </ul>
 </div>
 </div>
+<div class="Table-Content_mobile">
+<div class="Card">
+<span>~36% годовых</span>
+<p>Составила средняя доходность от инвестиций 
+с&nbsp;Alikson Group в&nbsp;2024 году </p>
+</div>
+<div class="Card">
+<h3>УСЛОВИЯ</h3>
+<ul>
+<li>Договор займа с&nbsp;гарантией возврата капитала</li>
+<li>Поручительство от&nbsp;собственника компании</li>
+</ul>
+</div>
+<div class="Card">
+<h3>РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ</h3>
+<ul>
+<li>Стабильный и&nbsp;прибыльный бизнес с&nbsp;низким уровнем рисков</li>
+<li>Прозрачность сделок и&nbsp;полная юридическая поддержка</li>
+<li>Выгодные условия для долгосрочного партнерства</li>
+</ul>
+</div>
+</div>
 </section>
-<section class="ClientsSection">
+<!-- <section class="ClientsSection">
 <h2>наши клиенты</h2>
 <div class="Clients-Content">
 <div class="Card"><img src="img/tender/Clients1.svg"></div>
@@ -325,7 +346,7 @@ include('include/header.php');
 </div>
 </div>
 </div>
-</section>
+</section> -->
 <?php include('include/form.php') ?>
 </main>
 <?php include('include/footer.html') ?>

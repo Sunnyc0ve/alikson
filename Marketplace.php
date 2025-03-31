@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Маркетплэйс';
-$csspage='_marketplace.css?2.5'; 
+$csspage='_marketplace.css?3.0'; 
 include('include/header.php');
 ?>
 <main>
@@ -8,12 +8,7 @@ include('include/header.php');
 <div class="MainSection-Header">
 <h1>аликсон маркетплейс</h1>
 <p class="p_desktop">Аликсон Маркетплейс&nbsp;&mdash; собственная платформа, где поставщики находят новых клиентов, а&nbsp;покупатели&nbsp;&mdash; качественные товары из&nbsp;различных категорий по&nbsp;привлекательным ценам. Мы&nbsp;делаем процесс торговли легким и&nbsp;комфортным, обеспечивая прозрачные условия, быструю логистику и&nbsp;поддержку на&nbsp;каждом этапе</p>
-<p class="p_mobile">Аликсон Маркетплейс&nbsp;&mdash; собственная платформа, 
-где поставщики находят новых клиентов, 
-а&nbsp;покупатели&nbsp;&mdash; качественные товары 
-из&nbsp;различных категорий по&nbsp;привлекательным ценам. Мы&nbsp;делаем процесс торговли легким 
-и&nbsp;комфортным, обеспечивая прозрачные условия, быструю логистику и&nbsp;поддержку 
-на&nbsp;каждом этапе</p>
+<p class="p_mobile">Аликсон Маркетплейс&nbsp;&mdash; собственная платформа, где поставщики находят новых клиентов, а&nbsp;покупатели&nbsp;&mdash; качественные товары из&nbsp;различных категорий по&nbsp;привлекательным ценам</p>
 </div>
 <div class="MainSection-Content">
 <a href="">Оставить заявку</a>
@@ -128,7 +123,7 @@ include('include/header.php');
 </div>
 </div>
 </section>
-<section class="ClientsSection">
+<!-- <section class="ClientsSection">
 <h2>наши клиенты</h2>
 <div class="Clients-Content">
 <div class="Card"><img src="img/tender/Clients1.svg"></div>
@@ -249,7 +244,7 @@ include('include/header.php');
 </div>
 </div>
 </div>
-</section>
+</section> -->
 <section class="ReviewsSection">
 <div class="Reviews-Header">
 <h2>Отзывы наших клиентов</h2>
@@ -311,12 +306,12 @@ include('include/header.php');
       const swiperP = new Swiper(".swiperP", {
       loop: true,
       slidesPerView: 1,
-      spaceBetween: -1690,
+      spaceBetween: 20,
       watchSlidesProgress: true, // Следит за прогрессом слайдов
       watchSlidesVisibility: true, // Следит за видимостью слайдов
       breakpoints: {
-        660: { slidesPerView: 3, spaceBetween: -1200 },
-        980: { slidesPerView: 3, spaceBetween: -600 },
+        660: { slidesPerView: 2, spaceBetween: 80 },
+        980: { slidesPerView: 3, spaceBetween: 140 },
         1440: { slidesPerView: 4, spaceBetween: 140 },
       },
       direction: "horizontal",
@@ -325,5 +320,5 @@ include('include/header.php');
         prevEl: ".Swiper-Prev",
       },
     });
-    </script>
+</script>
 </html>

@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Майнинг';
-$csspage='_mining.css?2.7'; 
+$csspage='_mining.css?2.8'; 
 include('include/header.php');
 ?>
 <main>
@@ -244,6 +244,68 @@ include('include/header.php');
 </div>
 </div>
 </div>
+<div class="Packs-Content_mobile">
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="Card">
+<div class="Card-Header">
+<h3>Все<br> включено</h3>
+</div>
+<div class="Card-Content">
+<p>Доверяйте все профессионалам: мы&nbsp;организуем весь процесс майнинга, чтобы вы&nbsp;получали прибыль без лишних забот</p>
+<ul>
+<li>Подбор и&nbsp;приобретение оборудования</li>
+<li>Полная установка и&nbsp;настройка оборудования</li>
+<li>Техническое обслуживание на&nbsp;каждом этапе</li>
+<li>Личный менеджер, готовый ответить на&nbsp;все вопросы</li>
+<li>Аналитика доходности и&nbsp;поддержка 24/7</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+
+<div class="Card">
+<div class="Card-Header">
+<h3>Фиксированная<br> доходность </h3>
+</div>
+<div class="Card-Content">
+<p>Стабильный доход с&nbsp;гарантией&nbsp;&mdash; просто инвестируйте, а&nbsp;мы&nbsp;сделаем все остальное</p>
+<ul>
+<li>Регулярные выплаты вашей прибыли</li>
+<li>Прозрачные условия и&nbsp;максимальная надежность</li>
+<li>Полное техническое сопровождение от&nbsp;нашей команды</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="Card">
+<div class="Card-Header">
+<h3>Техническое<br> обслуживание</h3>
+</div>
+<div class="Card-Content">
+<p>Уже есть оборудование? Доверьте его эксплуатацию нам, и&nbsp;получите максимум от&nbsp;своих мощностей</p>
+<ul>
+<li>Подключение к&nbsp;нашей эффективной инфраструктуре</li>
+<li>Постоянный мониторинг, ремонт и&nbsp;оптимизация работы</li>
+<li>Снижение затрат за&nbsp;счет профессионального управления</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="Swiper-Control">
+<button class="Swiper-Prev">
+<img src="img/ArrowLeft.svg" />
+</button>
+<button class="Swiper-Next">
+<img src="img/ArrowRight.svg" />
+</button>
+</div>
+</div>
+</div>
 </section>
 <?php include('include/form.php') ?>
 </main>
@@ -253,7 +315,7 @@ include('include/header.php');
 <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,
-      spaceBetween: -300,
+      spaceBetween: 20,
       direction: "horizontal",
       loop: false,
       navigation: {

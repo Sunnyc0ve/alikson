@@ -134,158 +134,101 @@ h1{
       width: 920px;
   }
 
-  .MainSection-Content > div {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-}
-
   h1{
-      width: 329px;
-      font-size: 51.58px;
+      width: 446px;
+      font-size: 58px;
   }
 
-  .MainSection-Header p {
-      font-size: 21px;
+
+  .MainSection-Header p{
+      font-size: 20px;
   }
 
-  .MainSection-Content a {
-      font-size: 26px;
+  .MainSection-Content{
+      gap: 185px;
   }
 
-  .MainSection-Content {
-      gap: 157px;
+  .MainSection .Info h3{
+    font-size: 53px;
   }
-
-  .MainSection .Info h3 {
-      font-size: 44px;
-  }
-
-  .MainSection .Info p {
-    font-size: 21px;
-}
-
-  .MainSection{
-      gap:134px;
-      background-size: 1440px;
-  background-position: center;
-  }
-
-  .MainSection-Header {
-    gap: 75px;
-}
 }
 
 @media (max-width: 979px) {
   /*600*/
   .MainSection{
-      margin-top: -13px;
+      /* padding: 60px 0px 75px 0px;
+      gap:50px; */
+      padding: 0px;
+      gap: 20px;
+      height: 100%;
+      justify-content: center;
+      margin-bottom: 15px;
   }
+
+  .p_mobile{
+    display: block;
+  }
+
+  .p_desktop{
+    display: none;
+  }
+
   h1{
-      font-size: 60px;
-      color: #0485FE;
+      font-size: 32px;
       width: auto;
   }
-  h1 br{
-      display: none;
-  }
-  .MainSection .Info h3 {
-      font-size: 53px;
-  }
+
   .MainSection > div{
       width: 600px;
   }
-  .MainSection-Header {
+
+  .MainSection-Header{
       flex-direction: column;
-      gap:20px;
+  }
+
+  .MainSection-Header p{
+      font-size: 16px;
+      gap:30px;
   }
 
   .MainSection-Content{
       flex-direction: column-reverse;
-      gap:16px;
-  }
-  .MainSection .Info:nth-child(1){
-      display: none;
-  }
-  .MainSection .Info:first-child {
-      grid-column: unset;
-  }
-
-  .MainSection-Content > div {
-      grid-template-columns: 1fr 1fr;
-      gap:0px;
-      width: 100%;
-  }
-
-  .MainSection .Info p {
-      font-size: 17px;
+      gap: 20px;
   }
 
   .MainSection-Content a{
       width: 100%;
-      text-align: center;
+      height: 55px;
+      font-size: 16px;
+  }
+
+  .MainSection .Info h3{
+      font-size: 32px;
+      margin-bottom: 5px;
+  }
+
+  .MainSection .Info p{
+      font-size: 14px;
+  }
+
+  .MainSection-Content > div{
+      gap: 20px;
+      width: 100%;
+  }
+
+  .MainSection .Info{
+      gap: 10px;
+  }
+
+  .MainSection .Info:last-child{
+      display: none;
   }
 }
 
 @media (max-width: 659px) {
-  /*300*/
-  h1{
-      font-size: 30px;
-      font-weight: 600;
-  }
-
-  .MainSection{
-      padding: 31px 0px 41px 0px;
-      gap: 30px;
-      margin-top: -6px;
-  }
-
-  .MainSection-Header p:first-child{
-    margin-bottom: 5px;
-  }
-
-  
+  /*320*/
   .MainSection > div{
-      width: 300px;
-      gap:7px;
-  }
-
-  .MainSection-Header p {
-      font-size: 11px;
-      font-weight: 300;
-  }
-
-  .MainSection-Header{
-      gap:12px;
-  }
-
-  .MainSection .Info h3 {
-      font-size: 30px;
-  }
-
-  .MainSection .Info p {
-      font-size: 10px;
-  }
-
-  .MainSection .Info::before {
-      width: 2px;
-  }
-
-  .MainSection .Info {
-      gap: 7px;
-  }
-
-  .MainSection-Content a {
-      font-size: 12px;
-      padding: 6.5px 0px;
-      border-radius: 4px;
-      border: 0.394px solid #8D8D8D;
-      background: #181818;
-      box-shadow: 0px 0px 0px 0px #FFF, 0px 0px 3.466px 0px rgba(4, 133, 254, 0.75), 0px 0px 6.538px 0px #0485FE;
-      margin-top: 13px;
-  }
-
-  .MainSection-Content > div {
-      grid-template-columns: 1fr 166px;
+      width: 320px;
   }
 }
 
@@ -478,192 +421,157 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
     width: 920px;
   }
 
-  .Grow-Header h2 {
-    width: 384px;
-  }
-
   .Grow-Header p {
     font-size: 20px;
+    width: 551px;
   }
 
-  .Grow-Content .Card:first-child {
-    background-position: 39px 45px;
-    background-size: 299px;
-    padding: 73px 27px 6px 10px;
-  }
-
-  .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
-    height: 180px;
-  }
-
-  .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
-    height: 32px;
-  }
-
-
-  .Grow-Content .Card:last-child {
-    background-position: 39px 45px;
-    background-size: 299px;
-    padding: 73px 27px 6px 10px;
-  }
-
-  .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
-    height: 177px;
+  .Grow-Content .Card:first-child, .Grow-Content .Card:last-child{
+    background-size: 100% !important;
+    background-position: center !important;
   }
 
 }
 
 @media (max-width: 979px) {
   /*600*/
+  .GrowSection{
+    border: 1px solid #353535;
+    padding: 60px 0px 75px 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
   .GrowSection > *{
     width: 600px;
   }
 
   .Grow-Header{
     flex-direction: column;
-    gap:30px;
+    gap:25px;
   }
 
   .Grow-Content {
     grid-template-columns: 1fr;
+    margin-top: 25px;
+    gap:30px;
+    grid-auto-rows: 280px;
   }
 
   .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
-     height: 10px; 
+     height: 30px; 
   }
 
   .Grow-Content .Card:first-child .Card-El:nth-child(2) > div {
-    height: 55px;
+    height: 70px;
   }
 
   .Grow-Content .Card:first-child .Card-El:nth-child(3) > div {
-    height: 98px;
+    height: 130px;
   }
 
   .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
-    height: 219px;
+    height: 200px;
   }
 
   .Grow-Content .Card:first-child {
-    padding: 44px 27px 6px 10px;
-    background-position: 36px 17px;
-    background-size: auto;
+    padding: 10px;
+    background-size: 100% 100% !important;
+    background-position-y: 10px !important;
+  }
+
+  .Grow-Content .Card h3{
+    top: 10px;
+    left: 10px;
+    width: 109px;
+    height: 32px;
+    font-size: 16px;
+    padding-top: 2px;
   }
 
   .Grow-Content .Card:last-child {
-    padding: 46px 37px 6px 52px;
-    background-position: 70px 15px;
-    background-size: auto;
+    padding: 10px;
+    background-size: 100% 100% !important;
+    background-position-y: 10px !important;
   }
 
   .Grow-Content .Card:last-child .Card-El:nth-child(1) > div {
-    height: 29px;
+    height: 30px;
   }
 
   .Grow-Content .Card:last-child .Card-El:nth-child(2) > div {
-    height: 78px;
+    height: 110px;
   }
 
   .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
-    height: 219px;
+    height: 200px;
+  }
+
+  .Grow-Header p{
+    font-size: 16px;
+    width: auto;
   }
 }
 
 @media (max-width: 659px) {
-  /*300*/
+  /*320*/
   .GrowSection > *{
-    width: 300px;
+    width: 320px;
   }
 
-  .GrowSection{
-    border-radius: 7px;
-    padding: 27px 0px 30px 0px;
-  }
-
-  .Grow-Header p {
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  .Grow-Header{
-    gap: 6px;
-  }
-
-  .Grow-Content{
-    margin-top: 12px;
-    gap:10px;
-  }
-
-  .Grow-Content .Card h3 {
-    font-size: 14px;
-    width: 95px;
-    height: 27px;
-    border-radius: 4px;
-    padding-top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top:10px;
-    left: 10px;
-  }
-
-  .Grow-Content{
-    grid-auto-rows: unset;
-    grid-template-rows: 170px 172px;
+  .Grow-Content {
+    grid-auto-rows: 180px;
   }
 
   .Grow-Content .Card:first-child .Card-El:nth-child(1) > div {
-    width: 26.5px;
     height: 5px;
-  }
-  .Grow-Content .Card:first-child .Card-El:nth-child(2) > div {
-    width: 26.5px;
-    height: 34px;
-  }
-  .Grow-Content .Card:first-child .Card-El:nth-child(3) > div {
-    width: 26.5px;
-    height: 52px;
-  }
-  .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
-    width: 26.5px;
-    height: 114px;
-  }
+    width: 29px;
+ }
 
-  .Grow-Content .Card h4, .Grow-Content .Card p {
-    font-size: 10px;
-  }
+ .Grow-Content .Card:first-child .Card-El:nth-child(2) > div {
+   height: 38px;
+   width: 29px;
+ }
 
-  .Grow-Content .Card:first-child {
-    padding: 11px 8px 9px 3px;
-    background-position: 17px 6px;
-    background-size: 216px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 9.58px 0px #0485FE,0px 0px 7.19px 0px #0485FE,0px 0px 0.96px 0px #FFFFFF;
+ .Grow-Content .Card:first-child .Card-El:nth-child(3) > div {
+   height: 57px;
+   width: 29px;
+ }
 
-  }
+ .Grow-Content .Card:first-child .Card-El:nth-child(4) > div {
+   height: 127px;
+   width: 29px;
+ }
+
+ .Grow-Content .Card:last-child .Card-El:nth-child(1) > div {
+  height: 30px;
+  width: 29px;
+}
+
+.Grow-Content .Card:last-child .Card-El:nth-child(2) > div {
+  height: 75px;
+  width: 29px;
+}
+
+.Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
+  height: 127px;
+  width: 29px;
+}
+
+.Grow-Content .Card h4{
+  font-size: 9px;
+}
+
+.Grow-Content .Card p{
+  font-size: 7px;
+}
+.Grow-Content .Card:first-child {
+  background-position-y: unset !important;
+}
+.Grow-Content .Card:last-child {
+  background-position-y: unset !important;
+}
 
 
-  .Grow-Content .Card:last-child .Card-El:nth-child(1) > div {
-    width: 25.6px;
-    height: 17px;
-  }
-  .Grow-Content .Card:last-child .Card-El:nth-child(2) > div {
-    width: 25.6px;
-    height: 41px;
-  }
-  .Grow-Content .Card:last-child .Card-El:nth-child(3) > div {
-    width: 25.6px;
-    height: 115px;
-  }
-
-  .Grow-Content .Card:last-child {
-    padding: 13px 14px 9px 22px;
-    background-position: 34px 6px;
-    background-size: 203px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5.5px 0px #00C99A,0px 0px 7.6px 0px #00C99A,0px 0px 2px 0px #FFFFFF;
-
-  }
 }
 
 
@@ -722,72 +630,43 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
 
 @media (max-width: 1439px){
   /*920*/
-  .MarketSection > *{
+  .MarketSection > div{
     width: 920px;
   }
-  .Market-Content .Card h3 {
-    font-size: 30px;
-  }
 
-  .Market-Content .Card p {
-    font-size: 18px;
-  }
-
-  .Market-Content .Card p br{
-    display: none;
-  }
-
-  .Market-Content .Card{
-    padding: 28px 27px 0px 43px;
-  }
 }
 
 @media (max-width: 979px) {
   /*600*/
-  .MarketSection > *{
+  .MarketSection{
+    border: 1px solid #353535;
+    padding: 60px 0px 75px 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .MarketSection > div{
     width: 600px;
   }
 
-  .Market-Content{
+  .Market-Content {
     grid-template-columns: 1fr;
+    margin-top: 25px !important;
   }
+
+  .Market-Content h3{
+    font-size: 20px;
+  }
+
+  .Market-Content p{
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 659px) {
-  /*300*/
-  .MarketSection > *{
-    width: 300px;
-  }
-
-  .MarketSection{
-    padding: 35px 0px 39px 0px;
-    background: #181818 url("../../img/investitions/MarketBack_mobile.png") no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .Market-Content .Card h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-
-  .Market-Content{
-    grid-auto-rows: unset;
-    grid-template-rows: 68px 84px 69px 71px;
-    gap:10px;
-    margin-top: 9px;
-  }
-
-  .Market-Content .Card p {
-    font-size: 12px;
-    font-weight: 300;
-  }
-
-  .Market-Content .Card {
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    justify-content: center;
+  /*320*/
+  .MarketSection > div{
+    width: 320px;
   }
 }
 
@@ -910,96 +789,53 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
 
 @media (max-width: 1439px){
   /*920*/
-  .ServicesSection h2{
-      margin-left: calc((100vw - 920px) / 2);
-      font-size: 46px;
-  }
-  
-  .Services-Header{
-      width: calc((100vw - 150px) / 2);
-  }
-
-  .ServicesSection {
-      gap: 40px;
-  }
-
-  .Services-Content p {
-      font-size: 25px;
-      width: 500px;
+  .ServicesSection > div{
+      width: 920px;
   }
 }
 
 @media (max-width: 979px) {
   /*600*/
   .ServicesSection{
-      flex-direction: column;
+      border: 1px solid #353535;
+      padding: 60px 0px 75px 0px;
+      border-radius: 10px 10px 0px 0px;
   }
 
-  .ServicesSection h2{
-      margin-left: calc((100vw - 600px) / 2);
-      width: 500px;
-  }
-  
-  .Services-Header{
-      width: 100%;
+  .Services-Header .wrap{
+      margin: 25px 0px;
   }
 
-  .item {
-      width: 353px;
-      height: 223px;
+  .ServicesSection > div{
+      width: 600px;
   }
 
-  .Services-Content > * {
-      margin-left: calc((100vw - 600px) / 2) !important;
+  .Services-Content{ 
+      grid-template-columns: 1fr;
+  }
+
+  .item{
+      width: 268px;
+      height: 162px;
+  }
+
+  .items{
+      gap: 13px;
+  }
+
+  .items-wrap{
+      gap: 13px;
+  }
+
+  .Services-Content .Card p{
+    font-size: 16px;
   }
 }
 
 @media (max-width: 659px) {
-  /*300*/
-  .ServicesSection{
-      padding: 27px 0px 25px 0px;
-      gap:15px;
-      border-radius: 7px;
-      margin-top: -5px;
-  }
-  .ServicesSection h2{
-      margin-left: calc((100vw - 300px) / 2);
-      margin-bottom: 9px;
-      font-size: 23px;
-      width: 300px;
-  }
-
-  .h2_mobile{
-    display: block;
-  }
-
-  .h2_desktop{
-    display: none;
-  }
-
-  .Services-Content > * {
-      margin-left: calc((100vw - 300px) / 2) !important;
-  }
-  .item {
-      width: 125px;
-      height: 77px;
-      margin: 0px;
-      border: none;
-      border-radius: 5px;
-  }
-  .items, .items-wrap {
-      gap: 5px;
-  }
-
-
-  .Services-Content p {
-      font-size: 14px;
-      line-height: normal;
-      width: 270px;
-  }
-
-  .Services-Content div {
-      margin: 8px 0px;
+  /*320*/
+  .ServicesSection > div{
+      width: 320px;
   }
 }
 
@@ -1013,7 +849,8 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
 .BuisnesSection{
   border-radius: 20px 20px 0px 0px;
   border: 1px solid rgba(53, 53, 53, 0.30);
-  background: #181818 url("../../img/investitions/BuisnesBack.png");
+  background: #181818 url("../../img/investitions/BuisnesBack.png") center;
+  background-size: 1920px 100%;
   padding: 90px 0px 105px 0px;
   margin-top: -15px;
   position: relative;
@@ -1060,15 +897,6 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
   .BuisnesSection > *{
     width: 920px;
   }
-
-  .Buisnes-Content .Card h3 {
-    font-size: 43px;
-  }
-
-  .Buisnes-Content .Card p {
-    font-size: 22px;
-    width: auto;
-  }
 }
 
 @media (max-width: 979px) {
@@ -1077,41 +905,35 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
     width: 600px;
   }
 
+  .BuisnesSection{
+    border: 1px solid #353535;
+    padding: 60px 0px 75px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
   .Buisnes-Content{
     grid-template-columns: 1fr;
+    margin-top: 25px;
+  }
+
+  .Buisnes-Content .Card h3{
+    font-size: 42px;
+  }
+
+  .Buisnes-Content .Card p{
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .Buisnes-Content .Card{
+    gap: 20px;
   }
 }
 
 @media (max-width: 659px) {
-  /*300*/
+  /*320*/
   .BuisnesSection > *{
-    width: 300px;
-  }
-
-  .BuisnesSection{
-    padding: 36px 0px 39px 0px;
-    background: #181818 url("../../img/investitions/BuisnesBack_mobile.png") no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .Buisnes-Content{
-    grid-auto-rows: 98px;
-    gap:10px;
-    margin-top: 9px;
-  }
-
-  .Buisnes-Content .Card h3 {
-    font-size: 25px;
-  }
-
-  .Buisnes-Content .Card p {
-    font-size: 13px;
-    width: 237px;
-  }
-
-  .Buisnes-Content .Card{
-    border-radius: 5px;
-    padding-left: 16px;
+    width: 320px;
   }
 }
 
@@ -1151,6 +973,26 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
   display: flex;
 }
 
+.Table-Content .Card:first-child{
+  grid-column: span 2;
+  border: 1px solid #2C2C2C;
+  background: #171717;
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Table-Content .Card:first-child p{
+  width: 451px;
+}
+
+.Table-Content .Card span{
+  color: #0485FE;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .Table-Content h3{
   color: #0485FE;
   font-size: 24px;
@@ -1160,7 +1002,7 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
 
 .Table-Content p{
   color: #FFF;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   line-height: normal;
 }
@@ -1174,82 +1016,109 @@ background: linear-gradient(180deg, #0058AB 0%, #0485FE 100%);
 .Table-Content li{
   color: #FFF;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.Table-Content_mobile{
+  display: none;
 }
 
 
 @media (max-width: 1439px){
   /*920*/
-  .Table-El > div{
+  .TableSection > *{
     width: 920px;
   }
 
-  .TableSection h2{
-    width: 920px;
+  .Table-Content .Card:first-child p{
+    width: 328px;
   }
 
-  .Table-Content h3 {
-    width: 353px;
+  .Table-Content{
+    grid-auto-rows: 190px;
   }
 }
 
 @media (max-width: 979px) {
   /*600*/
-  .Table-El > div{
+  .TableSection > *{
     width: 600px;
+  }
+
+  .TableSection{
+    border: 1px solid #353535;
+    padding: 60px 0px 75px 0px;
+    border-radius: 10px 10px 0px 0px;
   }
   
-  .TableSection h2{
-    width: 600px;
+  .Table-Content{
+    display: none;
   }
 
-  .Table-Content h3 {
-    width: 270px;
+  .Table-Content_mobile{
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
-  .Table-Content p, .Table-Content li {
-    font-size: 19px;
+  .Table-Content_mobile .Card{
+    padding: 20px;
+    border-radius: 10px;
+    background: #2C2C2C;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .Table-Content_mobile .Card:first-child{
+    border: 1px solid #2C2C2C;
+    background: none;
+    align-items: center;
+  }
+
+  .Table-Content_mobile .Card span{
+    color: #0485FE;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .Table-Content_mobile h3{
+    color: #0485FE;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .Table-Content_mobile p{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  
+  
+  .Table-Content_mobile li{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    list-style: disc;
+    margin-left: 25px;
   }
 }
 
 @media (max-width: 659px) {
-  /*300*/
-  .Table-El > div{
-    width: 300px;
-    flex-direction: column;
-    align-items: start;
-    padding: 20px 0px 10px 0px;
-    gap:10px;
+  /*320*/
+  .TableSection > *{
+    width: 320px;
   }
-  
-  .TableSection h2{
-    width: 300px;
-  }
-
-  .TableSection{
-    padding: 27px 0px 22px 0px;
-    border-radius: 7px;
-  }
-
-  .Table-Content{
-    margin-top: 8px;
-  }
-
-  .Table-Content p, .Table-Content li, .Table-Content ul{
-    font-size: 13px;
-    padding: 0px;
-    border:none;
-    list-style: none;
-    font-weight: 300;
-  }
-
-  .Table-Content ul{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-  }
-
 }
 
 
