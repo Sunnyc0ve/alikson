@@ -12,7 +12,7 @@ body{
 
 
 /* Главная секция*/
-.MainSection{
+/* .MainSection{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +21,43 @@ body{
   background: #232323 url("../../img/company/MainBack.png") center;
   background-size: 1920px 100%;
   margin-top: -4px;
+} */
+
+.MainSection {
+  margin-top: -6px;
+  z-index: 0;
+  position: relative;
 }
 
+.MainSection .MainContainer {
+  padding: 40px 0px 100px 0px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  margin-left: calc((100% - 1280px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap:270px;
+}
+
+.MainSection .VideoContainer {
+  display: flex;
+  justify-content: center;
+  height: 696px;
+}
+
+.Video_desktop{
+  width: 1920px;
+  height: fit-content;
+}
+
+
+
+.Video_mobile {
+  display: none;
+}
+
+/* 
 .MainSection .Decor, .MainSection .Decor_1{
   position: absolute;
   width: 600px;
@@ -36,7 +71,7 @@ body{
 
 .MainSection .Decor_1:hover{
   opacity: 1;
-}
+} */
 
 
 .MainSection-Header{
@@ -81,7 +116,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 266px;
+  margin-left: 635px;
 }
 
 .MainSection-Content a:hover{
@@ -93,11 +128,27 @@ h1{
   display: none;
 }
 
+
+@media (min-width: 1921px) {
+  .MainSection .MainContainer {
+    margin-left: calc((1920px - 1280px) / 2);
+  }
+  }
+
+
 @media (max-width: 1439px){
   /*920*/
-  .MainSection-Header{
-    width: 920px;
+  
+  .MainSection .MainContainer {
+    margin-left: calc((100% - 920px) / 2);
+    gap:175px;
   }
+
+  .MainSection .VideoContainer{
+    height: 630px;
+  }
+
+
   h1{
     width: 500px;
   }
@@ -107,12 +158,12 @@ h1{
     font-size: 20px;
   }
 
-  .MainSection .Decor, .MainSection .Decor_1{
+  /* .MainSection .Decor, .MainSection .Decor_1{
     left: calc((100% - 1040px) / 2);
-  }
+  } */
 
   .MainSection-Content a{
-    margin-left: 365px;
+    margin-left: 508px;
   }
 
   .MainSection{
@@ -123,14 +174,34 @@ h1{
 
 @media (max-width: 979px) {
   /*600*/
-  .MainSection > div{
+  /* .MainSection > div{
     width: 600px;
+  } */
+
+  .MainSection .MainContainer {
+    margin-left: calc((100% - 600px) / 2);
+    padding: 0px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    gap: 175px;
   }
 
-  .MainSection{
+
+  .MainSection .VideoContainer{
+    height: 407px;
+  }
+
+  .MainSection video {
+    width: 1060px;
+  }
+
+  /* .MainSection{
     padding: 60px 0px 75px 0px;
     gap: 300px;
-  }
+  } */
 
   .MainSection-Header{
     flex-direction: column;
@@ -160,24 +231,77 @@ h1{
   .MainSection-Header p{
     font-size: 16px;
     width: auto;
+    width: 300px;
+    margin-left: auto;
   }
 
-  .MainSection .Decor, .MainSection .Decor_1{
+  /* .MainSection .Decor, .MainSection .Decor_1{
     width: 340px;
     left: calc(50% - 176px);
     top: 210px;
-  }
+  } */
 }
 
 @media (max-width: 659px) {
   /*320*/
-  .MainSection > div{
+  /* .MainSection > div{
     width: 320px;
   }
   .MainSection .Decor, .MainSection .Decor_1{
     top:250px;
+  } */
+
+  .MainSection .MainContainer {
+    margin-left: calc((100% - 320px) / 2);
+    width: 320px;
+    height: auto;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .MainSection-Header p{
+    width: auto;
+  }
+
+  .MainSection-Header {
+    gap: 287px;
+  }
+
+  .MainSection .VideoContainer{
+    height: 527px;
+    margin-right: 247px;
+  }
+
+  .MainSection video {
+    width: auto;
+    height: 100%;
+}
+
+  .Video_desktop{
+    display: none;
+  }
+
+  .Video_mobile{
+    display: block;
   }
 }
+
+/* @media (max-width: 489px) {
+  .MainSection .VideoContainer{
+    height: 382px;
+  }
+
+  .MainSection .MainContainer {
+    height: 342px;
+    gap: 75px;
+  }
+
+  .MainSection video{
+    width: auto;
+    height: 100%;
+  }
+
+} */
 
 
 

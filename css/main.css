@@ -324,8 +324,9 @@ h2 {
   font-family: 'TT Fors Trial Medium';
 }
 .About-Main .Card h3 span{
-  font-weight: 700;
+  font-size: 38px;
   font-family: 'TT Fors Trial Medium';
+  line-height: 30px;
 }
 .About-Main .Card p {
   color: rgba(255, 255, 255, 0.50);
@@ -339,6 +340,10 @@ h2 {
   height: 72px;
   display: block;
   background: #0485fe;
+}
+
+.h3_mobile{
+  display: none;
 }
 
 @media (max-width: 1439px) {
@@ -362,6 +367,10 @@ h2 {
 
   .About-Main .Card h3 {
     font-size: 22px;
+  }
+
+  .About-Main .Card h3 span{
+    font-size: 28px;
   }
 }
 
@@ -418,6 +427,11 @@ h2 {
     font-size: 18px;
   }
 
+  .About-Main .Card h3 span{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .About-Main .Card p {
     font-size: 14px;
   }
@@ -437,6 +451,14 @@ h2 {
 
   .AboutSection .item {
    height: 162px;
+  }
+
+  .h3_mobile{
+    display: block;
+  }
+
+  .h3_desktop{
+    display: none;
   }
 
 }
@@ -646,7 +668,7 @@ h2 {
   .Buisnes-Main_mobile .Card h3 {
     transition: 0.5s ease;
     color: #747474;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -910,7 +932,7 @@ h2 {
   }
   
   .News-Main .Card .Card-Image {
-    height: 200px;
+    height: 170px;
   }
 
   .News-Header {
@@ -923,10 +945,7 @@ h2 {
 
   .News-Main .Card {
     width: 300px;
-    height: 430px;
-  }
-
-  .News-Main .Tags {
+    height: 400px;
   }
 
   .News-Main .Tags a {
@@ -1150,6 +1169,10 @@ h2 {
   font-weight: 700;
 }
 
+.Projects-Main .Info .Stats h3 span{
+  font-size: 38px;
+}
+
 .Projects-Main .Info .Stats p {
   color: rgba(255, 255, 255, 0.50);
   font-weight: 300;
@@ -1330,6 +1353,10 @@ h2 {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 5px;
+  }
+
+  .Projects-Main_mobile .Info .Stats h3 span{
+    font-size: 24px;
   }
 
   .Projects-Main_mobile .Info .Stats p {
@@ -1637,6 +1664,10 @@ h2 {
 
   .select-menu{
     gap: 15px;
+  }
+
+  .FormSection form > div img{
+    width: 18px;
   }
 }
 

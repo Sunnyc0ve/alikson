@@ -1,19 +1,29 @@
 <?php
 $title='Alikson О компании';
-$csspage='_company.css?3.0'; 
+$csspage='_company.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
 <section class="MainSection">
-<img class="Decor" src="img/company/mainDecor.png">
-<img class="Decor_1" src="img/company/mainDecor_1.png">
+<!-- <img class="Decor" src="img/company/mainDecor.png">
+<img class="Decor_1" src="img/company/mainDecor_1.png"> -->
+<div class="VideoContainer">
+<video muted autoplay loop playsinline class="Video_desktop">
+<source src="img/company/mainVideo.mp4" />
+</video>
+<video muted autoplay loop playsinline class="Video_mobile">
+<source src="img/company/mainVideo_1.mp4" />
+</video>
+</div>
+<div class="MainContainer">
 <div class="MainSection-Header">
 <h1>О&nbsp;компании</h1>
 <p class="p_desktop">Alikson Group&nbsp;&mdash; группа компаний, работающая с&nbsp;2020 года в&nbsp;24&nbsp;направлениях бизнеса, в&nbsp;числе которых&nbsp;&mdash; информационные технологии, логистика, инвестиции, девелопмент и&nbsp;платежные услуги. Создаем комплексные решения для роста и&nbsp;масштабирования бизнеса, обеспечивая стабильность и&nbsp;высокую эффективность</p>
-<p class="p_mobile">Alikson Group&nbsp;&mdash; группа компаний, работающая с&nbsp;2020 года в&nbsp;24&nbsp;направлениях бизнеса, в&nbsp;числе которых&nbsp;&mdash; информационные технологии, логистика, инвестиции, девелопмент и&nbsp;платежные услуги</p>
+<p class="p_mobile">Alikson Group&nbsp;&mdash; это дистрибуция электроники, международная логистика, инвестиции, девелопмент и&nbsp;платежные услуги</p>
 </div>
 <div class="MainSection-Content">
 <a href="">Оставить заявку</a>
+</div>
 </div>
 </section>
 <section class="ValuesSection">

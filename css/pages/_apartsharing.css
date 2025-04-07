@@ -142,8 +142,8 @@ text-transform: uppercase;
 @media (max-width: 979px) {
     /*600*/
     .MainSection{
-        /* padding: 60px 0px 75px 0px;
-        gap:50px; */
+        background: url('../../img/mainBackMobile.jpg') center;
+        background-size: 100% 100%;
         padding: 0px;
         gap: 20px;
         height: 100%;
@@ -618,7 +618,9 @@ backdrop-filter: blur(16.980453491210938px);
         font-size: 16px;
     }
 
-    
+    .Advantages-Content .Card:nth-child(5){
+        display: none;
+    }
 
   }
 

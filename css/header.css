@@ -9,9 +9,6 @@
     background: none;
   }
   
-  main {
-  }
-  
   section {
     overflow: hidden;
   }
@@ -365,13 +362,13 @@ footer {
     
       .FooterContainer_mobile button {
         color: #fff;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 12px;
+        font-weight: 300;
       }
     
       .FooterContainer_mobile a {
         color: #0485fe;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
         display: flex;
         align-items: center;

@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Маркетплэйс';
-$csspage='_marketplace.css?3.0'; 
+$csspage='_marketplace.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -117,7 +117,7 @@ include('include/header.php');
 <h3>Реклама и&nbsp;продвижение</h3>
 </div>
 <div class="Card">
-<img src="img/marketplace/Advantages5.svg">
+<img src="img/marketplace/Advantages6.svg">
 <h3>Экспертное сопровождение</h3>
 </div>
 </div>

@@ -1,13 +1,13 @@
 <?php
 $title='Alikson Тендерынй Дивизион';
-$csspage='_tender.css?2.6'; 
+$csspage='_tender.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
 <section class="MainSection">
 <div class="MainSection-Header">
 <h1>Тендерный<br> дивизион</h1>
-<p>Занимаемся комплексным снабжением крупных компаний и&nbsp;госучреждений, предлагая прямые поставки электроники, комплектующих, промышленного оборудования и&nbsp;офисной техники с&nbsp;высоким уровнем обслуживания</p>
+<p>Занимаемся комплексным снабжением крупных компаний и&nbsp;госучреждений, предлагая прямые поставки электроники, комплектующих, промышленного оборудования и&nbsp;офисной техники</p>
 </div>
 <div class="MainSection-Content">
 <a href="">Оставить заявку</a>
@@ -70,19 +70,19 @@ include('include/header.php');
 <h2>Наши преимущества</h2>
 </div>
 <div class="Advantages-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/Adv1.svg">
 <h3>Комплексный подход</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/Adv2.svg">
 <h3>Персональный менеджер</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/Adv3.svg">
 <h3>Прямые поставки</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/Adv4.svg">
 <h3>Надежность</h3>
 </div>
@@ -114,27 +114,27 @@ include('include/header.php');
 </div>
 </div>
 <div class="Services-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Закупка и&nbsp;логистика</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Специальные условия для&nbsp;государственных учреждений</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Анализ рынка и&nbsp;предложений</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Поставка электроники и&nbsp;комплектующих</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Консультации по&nbsp;всем вопросам тендерных закупок</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/tender/checkbox.svg">
 <p>Оптимизация процессов закупок</p>
 </div>
@@ -145,22 +145,22 @@ include('include/header.php');
 <h2>Направления работы</h2>
 <div class="Directions-Body">
 <div class="Directions-Img">
-<img src="img/tender/DirectionsImg.png">
+<img src="img/tender/DirectionsImg.jpg">
 </div>
 <div class="Directions-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <div> 
 <img src="img/tender/Directions1.svg">
 </div>
 <h3>Электроника</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <div> 
 <img src="img/tender/Directions2.svg">
 </div>
 <h3>Комплектующие</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <div> 
 <img src="img/tender/Directions3.svg">
 </div>

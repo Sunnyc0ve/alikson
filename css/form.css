@@ -105,6 +105,10 @@
     background: #fff;
     box-shadow: none;
   }
+
+  .FormSection form > div img{
+    width: 27px;
+  }
   
   @media (max-width: 1439px) {
     .FormSection > div {
@@ -166,6 +170,10 @@
     .FormSection form {
       width: 100%;
       gap: 20px;
+    }
+
+    .FormSection form > div img{
+      width: 18px;
     }
   }
   

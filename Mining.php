@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Майнинг';
-$csspage='_mining.css?2.8'; 
+$csspage='_mining.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -116,13 +116,13 @@ include('include/header.php');
 </div>
 <div class="Card-Footer">
 <p>Ваш вклад&nbsp;<span>&mdash; 300 000₽</span></p>
-<p>Ваш доход&nbsp;<span>&mdash; 200 000₽</span></p>
+<p>Ваш доход&nbsp;<span>&mdash; 135 000₽</span></p>
 </div>
 </div>
 </div>
 <div class="Vs-Footer">
-<p>Средняя доходность 
-от&nbsp;майнингового оборудования в&nbsp;2024 году составила</p>
+<p class="p_desktop">Средняя доходность от&nbsp;майнингового оборудования в&nbsp;2024 году составила</p>
+<p class="p_mobile">Средняя доходность от&nbsp;майнингового оборудования в&nbsp;2024 году</p>
 <span>~45% годовых</span>
 </div>
 </section>

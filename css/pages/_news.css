@@ -157,6 +157,7 @@ body{
     .news__section-heading{
         color: #0485FE;
         font-size: 24px;
+        font-weight: 700;
     }
     .news__inner{
         gap: 25px;

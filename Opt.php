@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Оптовая Дистрибуция';
-$csspage='_opt.css?2.6'; 
+$csspage='_opt.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -40,28 +40,28 @@ include('include/header.php');
 <p>Полный цикл услуг&nbsp;&mdash; от&nbsp;закупки до&nbsp;доставки</p>
 </div>
 <div class="Services-Content">
-<div class="Card">
-<img src="img/opt/Services1.svg">
-<h3>Оптовая дистрибуция</h3>
+<div class="Card" onclick="">
+<img src="img/opt/Services1.png">
+<h3>Оптовые поставки</h3>
 </div>
-<div class="Card">
-<img src="img/opt/Services2.svg">
+<div class="Card" onclick="">
+<img src="img/opt/Services2.png">
 <h3>Таможенное оформление и&nbsp;логистика</h3>
 </div>
-<div class="Card">
-<img src="img/opt/Services3.svg">
+<div class="Card" onclick="">
+<img src="img/opt/Services3.png">
 <h3>Юридическая поддержка</h3>
 </div>
-<div class="Card">
-<img src="img/opt/Services4.svg">
-<h3>Параллельный импорт и&nbsp;производство</h3>
+<div class="Card" onclick="">
+<img src="img/opt/Services4.png">
+<h3>Параллельный импорт</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Services5.svg">
 <h3>Консалтинг</h3>
 </div>
-<div class="Card">
-<img src="img/opt/Services6.svg">
+<div class="Card" onclick="">
+<img src="img/opt/Services6.png">
 <h3>Автоматизация процессов</h3>
 </div>
 </div>
@@ -91,27 +91,27 @@ include('include/header.php');
 </div>
 </div>
 <div class="Advantages-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg"> 
 <p>Высокая прибыльность</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg">
 <p>Прозрачные сделки</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg">
 <p>Быстрая масштабируемость</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg">
 <p>Экономия времени и&nbsp;ресурсов</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg">
 <p>Юридическая защита</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/checkbox.svg">
 <p>Поддержка на&nbsp;всех этапах сделки</p>
 </div>
@@ -121,35 +121,35 @@ include('include/header.php');
 <div>
 <h2>Категории товаров</h2>
 <div class="Categories-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories1.svg">
 <span>Электроника</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories2.svg">
 <span>Бытовая техника</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories3.svg">
 <span>Автотовары</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories7.svg">
 <span>Гаджеты и&nbsp;аксессуары</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories5.svg">
 <span>Компьютерная техника</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories6.svg">
 <span>Проф. оборудование</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories7.svg">
 <span>Игры и&nbsp;развлечения</span>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/opt/Categories4.svg">
 <span>Фото-и видео техника</span>
 </div>

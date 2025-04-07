@@ -3,7 +3,7 @@ body{
   background: #212121;
 }
 
-.Advantages-Content .Card:hover, .About-Content .Info > div:hover, .Why-Content .Card:hover, .Services-Right .Card:hover, .Packs-Content .Card:hover{
+.Advantages-Content .Card:hover, .About-Content .Info > div:hover, .Why-Content .Card:hover, .Services-Right .Card:hover, .Packs-Content .Card:hover, .Packs-Content_mobile .swiper-slide-active .Card{
   background: #113058;
   box-shadow: 0px 0px 6px 2px #0485FE;
 }
@@ -118,6 +118,9 @@ h1{
   line-height: normal;
 }
 
+.p_mobile{
+  display: none;
+}
 
 @media (max-width: 1439px){
   .MainSection > div{
@@ -144,8 +147,8 @@ h1{
 @media (max-width: 979px) {
   /*600*/
   .MainSection{
-      /* padding: 60px 0px 75px 0px;
-      gap:50px; */
+    background: url('../../img/mainBackMobile.jpg') center;
+    background-size: 100% 100%;
       padding: 0px;
       gap: 20px;
       height: 100%;
@@ -1313,6 +1316,10 @@ h1{
   .Packs-Content{
     display: none;
   }
+
+  .swiper{
+    overflow: visible;
+  }
   
   .Swiper-Control > button {
     width: 66px;
@@ -1347,6 +1354,6 @@ h1{
   }
 
   .Packs-Content_mobile .Card{
-    height: 426px;
+    height: 446px;
   }
 }

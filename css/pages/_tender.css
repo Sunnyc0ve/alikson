@@ -137,8 +137,8 @@ h1{
 @media (max-width: 979px) {
     /*600*/
     .MainSection{
-        /* padding: 60px 0px 75px 0px;
-        gap:50px; */
+        background: url('../../img/mainBackMobile.jpg') center;
+        background-size: 100% 100%;
         padding: 0px;
         gap: 20px;
         height: 100%;
@@ -686,6 +686,10 @@ h1{
         font-size: 16px;
     }
 
+    .Services-Content .Card:nth-child(3), .Services-Content .Card:nth-child(6){
+        display: none;
+    }
+
   }
 
   @media (max-width: 659px) {
@@ -796,7 +800,11 @@ h1{
     }
 
     .Directions-Img{
-        height: 560px;
+        height: auto;
+    }
+
+    .Directions-Img img {
+        height: auto;
     }
 
     .Directions-Content .Card h3{
@@ -812,7 +820,12 @@ h1{
     }
 
     .Directions-Img{
-        height: 299px;
+        height: 163px;
+    }
+
+    .Directions-Img img {
+        position: relative;
+        top: -23px;
     }
   }
 

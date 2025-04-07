@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<link rel="stylesheet" href="css/header.css?2.6" />
+<link rel="stylesheet" href="css/header.css?4.4" />
 <link rel="stylesheet" href="fonts/stylesheet.css" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,9 @@
 
 <?php if(isset($csspage)){ 
   echo'<link rel="stylesheet" href="css/pages/' . $csspage . '" />';
-  echo '<link rel="stylesheet" href="css/form.css?2.5" />';
+  echo '<link rel="stylesheet" href="css/form.css?4.4" />';
   }else{
-    echo '<link rel="stylesheet" href="css/main.css?2.8" />';
+    echo '<link rel="stylesheet" href="css/main.css?4.4" />';
     }
 ?>
 

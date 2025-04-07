@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Девелопмент';
-$csspage='_development.css?2.6'; 
+$csspage='_development.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -109,15 +109,15 @@ include('include/header.php');
 </div>
 </div>
 <div class="Why-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Гибкость для арендаторов</h3>
 <p>Компании могут арендовать небольшие функциональные помещения, идеально подходящие под их&nbsp;задачи</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Высокая доходность</h3>
 <p>Доходность гибких офисов на&nbsp;15&ndash;30% выше традиционной аренды благодаря динамичному формату и&nbsp;высокой заполняемости</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Популярность формата</h3>
 <p>В&nbsp;Москве спрос на&nbsp;гибкие офисы вырос на&nbsp;30%, особенно в&nbsp;сегменте класса А/В+</p>
 </div>

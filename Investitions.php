@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Инвестиции';
-$csspage='_investitions.css?3.0'; 
+$csspage='_investitions.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -43,7 +43,7 @@ include('include/header.php');
 </p>
 </div>
 <div class="Grow-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <h3>выручка</h3>
 <div class="Card-Content">
 <div class="Card-El">
@@ -68,7 +68,7 @@ include('include/header.php');
 </div>
 </div>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>прибыль</h3>
 <div class="Card-Content">
 <div class="Card-El">
@@ -95,19 +95,19 @@ include('include/header.php');
 <h2>Рост рынка электроники и&nbsp;комплектующих</h2>
 </div>
 <div class="Market-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Объем рынка</h3>
-<p>Прогнозируется рост до&nbsp;12,3 трлн ₽&nbsp;в&nbsp;2025&nbsp;г.</p>
+<p>Прогнозируется рост до&nbsp;12,3 трлн&nbsp;₽ в&nbsp;2025&nbsp;г.</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>E-commerce</h3>
 <p>Доля электроники в&nbsp;e-commerce занимает 18,5%, что делает его одним из&nbsp;самых крупных сегментов онлайн-торговли</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Рост онлайн-продаж</h3>
 <p>Ожидается среднегодовой рост рынка на&nbsp;уровне 8-10% ежегодно до&nbsp;2030 года</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <h3>Высокая маржинальность</h3>
 <p>Электроника остается одним из&nbsp;самых прибыльных сегментов ритейла</p>
 </div>
@@ -135,27 +135,27 @@ include('include/header.php');
 </div>
 </div>
 <div class="Services-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg"> 
 <p>Высокая доходность</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg">
 <p>Гарантия возврата капитала</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg">
 <p>Полное страхование сделок</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg">
 <p>Юридическая защита</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg">
 <p>Регулярные выплаты</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/investitions/checkbox.svg">
 <p>Регулярная отчетность</p>
 </div>

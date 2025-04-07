@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Premier Cars';
-$csspage='_premiercars.css?3.0'; 
+$csspage='_premiercars.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -116,7 +116,7 @@ include('include/header.php');
 <section class="ParkSection">
 <div class="Park-Header">
 <h2>наш автопарк</h2>
-<p>Наш автопарк включает только топовые модели от&nbsp;мировых брендов: Rolls-Royce, Lamborghini, Porsche и&nbsp;другие</p>
+<p>Наш автопарк включает топовые модели от&nbsp;мировых брендов: Rolls-Royce, Lamborghini, Porsche и&nbsp;другие</p>
 </div>
 <div class="Park-Content">
 <div class="Card">

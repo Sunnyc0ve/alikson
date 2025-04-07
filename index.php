@@ -64,37 +64,38 @@ include('include/header.php');
 <div class="Info">
 <div class="Card">
 <div>
-<h3>42,8 млрд ₽</h3>
+<h3><span>42,8</span> млрд ₽</h3>
 <p>годовой оборот</p>
 </div>
 </div>
 <div class="Card">
 <div>
-<h3>20&nbsp;МЛН $</h3>
+<h3><span>20</span>&nbsp;МЛН $</h3>
 <p>недвижимость компании</p>
 </div>
 </div>
 <div class="Card">
 <div>
-<h3>100+</h3>
+<h3><span>100</span>+</h3>
 <p>международных партнеров</p>
 </div>
 </div>
 <div class="Card">
 <div>
-<h3>400+</h3>
+<h3><span>400</span>+</h3>
 <p>сотрудников</p>
 </div>
 </div>
 <div class="Card">
 <div>
-<h3>20+&nbsp;проектов</h3>
+<h3><span>20</span>+&nbsp;проектов</h3>
 <p>инвестиционный портфель</p>
 </div>
 </div>
 <div class="Card">
 <div>
-<h3>ОАЭ, китай, европа</h3>
+<h3 class="h3_desktop">ОАЭ, китай, европа</h3>
+<h3 class="h3_mobile">ОАЭ, китай</h3>
 <p>офисы по&nbsp;всему миру</p>
 </div>
 </div>
@@ -519,15 +520,15 @@ IT-экосистем</p>
 </div>
 <div class="Stats">
 <div>
-<h3>3&nbsp;МЛРД</h3>
+<h3><span>3</span>&nbsp;МЛРД</h3>
 <p>Охват лиги в&nbsp;соцсетях</p>
 </div>
 <div>
-<h3>40+&nbsp;МЛН</h3>
+<h3><span>40</span>+&nbsp;МЛН</h3>
 <p>Подписчики игроков и&nbsp;амбассадоров</p>
 </div>
 <div>
-<h3>48+&nbsp;МЛН</h3>
+<h3><span>48</span>+&nbsp;МЛН</h3>
 <p>Охват публикаций о&nbsp;команде</p>
 </div>
 <div>
@@ -546,11 +547,11 @@ IT-экосистем</p>
 </div>
 <div class="Stats">
 <div>
-<h3>36%</h3>
+<h3><span>36</span>%</h3>
 <p>годовых средняя доходность </p>
 </div>
 <div>
-<h3>50+</h3>
+<h3><span>50</span>+</h3>
 <p>инвесторов с&nbsp;капиталом от&nbsp;25&nbsp;млн рублей</p>
 </div>
 <div>
@@ -569,11 +570,11 @@ IT-экосистем</p>
 </div>
 <div class="Stats">
 <div>
-<h3>45+</h3>
+<h3><span>45</span>+</h3>
 <p>Проектов реализовано за&nbsp;2&nbsp;года</p>
 </div>
 <div>
-<h3>1%</h3>
+<h3><span>1</span>%</h3>
 <p>Прибыли компании перечисляется в&nbsp;благотворительные фонды</p>
 </div>
 <div>
@@ -589,21 +590,21 @@ IT-экосистем</p>
 <div class="swiper-slide">
 <div class="Info">
 <div class="Banner">
-<!-- <h3>ALIKSON TEAM</h3> -->
+<h3>ALIKSON TEAM</h3>
 <p>Дебют в&nbsp;Медиа Баскет</p>
 <a href="">Подробнее</a>
 </div>
 <div class="Stats">
 <div>
-<h3>3&nbsp;МЛРД</h3>
+<h3><span>3</span>&nbsp;МЛРД</h3>
 <p>Охват лиги в&nbsp;соцсетях</p>
 </div>
 <div>
-<h3>40+&nbsp;МЛН</h3>
+<h3><span>40</span>+&nbsp;МЛН</h3>
 <p>Подписчики игроков и&nbsp;амбассадоров</p>
 </div>
 <div>
-<h3>48+&nbsp;МЛН</h3>
+<h3><span>48</span>+&nbsp;МЛН</h3>
 <p>Охват публикаций о&nbsp;команде</p>
 </div>
 <div>
@@ -616,17 +617,17 @@ IT-экосистем</p>
 <div class="swiper-slide">
 <div class="Info">
 <div class="Banner">
-<!-- <h3>ALIKSON INVEST CLUB</h3> -->
+<h3>ALIKSON INVEST CLUB</h3>
 <p>Сообщество для инвесторов, объединенных целью увеличить капитала</p>
 <a href="">подробнее</a>
 </div>
 <div class="Stats">
 <div>
-<h3>36%</h3>
+<h3><span>36</span>%</h3>
 <p>годовых средняя доходность </p>
 </div>
 <div>
-<h3>50+</h3>
+<h3><span>50</span>+</h3>
 <p>инвесторов с&nbsp;капиталом от&nbsp;25&nbsp;млн рублей</p>
 </div>
 <div>
@@ -639,17 +640,17 @@ IT-экосистем</p>
 <div class="swiper-slide">
 <div class="Info">
 <div class="Banner">
-<!-- <h3>ФОНД ALIKSON</h3> -->
+<h3>ФОНД ALIKSON</h3>
 <p>Помогать&nbsp;&mdash; наша ответственность</p>
 <a href="">подробнее</a>
 </div>
 <div class="Stats">
 <div>
-<h3>45+</h3>
+<h3><span>45</span>+</h3>
 <p>Проектов реализовано за&nbsp;2&nbsp;года</p>
 </div>
 <div>
-<h3>1%</h3>
+<h3><span>1</span>%</h3>
 <p>
 Прибыли компании перечисляется в&nbsp;благотворительные фонды
 </p>

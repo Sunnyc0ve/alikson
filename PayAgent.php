@@ -1,13 +1,13 @@
 <?php
 $title='Alikson Платежный агент';
-$csspage='_payagent.css?2.7'; 
+$csspage='_payagent.css?4.4'; 
 include('include/header.php');
 ?>
 <main>
 <section class="MainSection">
 <div class="MainSection-Header">
 <h1>Платежный<br> агент</h1>
-<p>Платежный агент, предоставляющий полный спектр услуг для международных расчетов российских компаний. Помогаем бизнесу сохранять финансовые потоки стабильными, независимо от&nbsp;ограничений</p>
+<p>Предоставляем полный спектр услуг для международных расчетов российских компаний. Помогаем бизнесу сохранять финансовые потоки стабильными, независимо от&nbsp;ограничений</p>
 </div>
 <div class="MainSection-Content">
 <a href="">Оставить заявку</a>
@@ -47,19 +47,19 @@ include('include/header.php');
 <h2>Кому подойдут наши услуги?</h2>
 </div>
 <div class="Services-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Services4.svg">
 <h3>Селлеры маркетплейсов</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Services3.svg">
 <h3>Владельцы торговых бизнесов</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Services2.svg">
 <h3>Производственные компании</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Services1.svg">
 <h3>Импортеры и&nbsp;экспортеры</h3>
 </div>
@@ -90,27 +90,27 @@ include('include/header.php');
 </div>
 </div>
 <div class="Kinds-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg"> 
 <p>Валютные переводы за&nbsp;границу</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg">
 <p>Международные расчеты в&nbsp;USD, EUR, AED, CNY</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg">
 <p>Оплата юридическим лицам и&nbsp;частным поставщикам</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg">
 <p>Обмен валют и&nbsp;криптоплатежи</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg">
 <p>Инкассация денежных средств</p>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/checkbox.svg">
 <p>Финансовая логистика</p>
 </div>
@@ -121,27 +121,27 @@ include('include/header.php');
 <h2>Наши преимущества</h2>
 </div>
 <div class="Advantages-Content">
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages1.svg">
 <h3>Безопасность</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages2.svg">
 <h3>Универсальные платежи</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages3.svg">
 <h3>Скорость переводов</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages4.svg">
 <h3>Низкие комиссии</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages5.svg">
 <h3>Экономия на&nbsp;конвертации</h3>
 </div>
-<div class="Card">
+<div class="Card" onclick="">
 <img src="img/pay_agent/Advantages6.svg">
 <h3>Индивидуальный подход</h3>
 </div>
