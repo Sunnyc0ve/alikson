@@ -15,7 +15,7 @@ include('include/header.php');
 <div class="MainContainer">
 <img src="img/name.svg" />
 <p>Технологии<br />Доверие<br />Результат</p>
-<a href="">Связаться</a>
+<a href="#AnchorForm">Связаться</a>
 </div>
 </section>
 <section class="AboutSection">
@@ -119,7 +119,7 @@ include('include/header.php');
 Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и&nbsp;надежность для комфортных и&nbsp;статусных поездок
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="PremierCars.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -128,7 +128,7 @@ include('include/header.php');
 Наша платформа предлагает удобные решения для торговли с&nbsp;высокой степенью технологической поддержки и&nbsp;хорошей доходностью
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Marketplace.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -137,7 +137,7 @@ include('include/header.php');
 Эффективная и&nbsp;выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и&nbsp;прозрачность транспортировок
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Opt.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="Grid-2">
@@ -148,7 +148,7 @@ include('include/header.php');
 Надежные инвестиционные возможности с&nbsp;прозрачной структурой и&nbsp;высоким уровнем поддержки для уверенного роста капитала
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Investitions.php">ПОДРОБНЕЕ</a>
 </div>
 
 <div class="Card">
@@ -158,7 +158,7 @@ include('include/header.php');
 Предоставляем стабильный и&nbsp;безопасный доступ к&nbsp;современным решениям в&nbsp;области майнинга, минимизируя риски и&nbsp;повышая доходность инвестиций
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Mining.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -167,7 +167,7 @@ include('include/header.php');
 Организуем надежные и&nbsp;оптимизированные логистические цепочки, гарантируя своевременную доставку по&nbsp;всему миру
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Logistick.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -176,7 +176,7 @@ include('include/header.php');
 Комплексные тендерные решения, помогая клиентам эффективно участвовать в&nbsp;конкурсах и&nbsp;минимизировать бюрократические риски
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Tender.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -185,7 +185,7 @@ include('include/header.php');
 Удобные и&nbsp;безопасные услуги платежного агента для приема и&nbsp;обработки платежей ваших клиентов
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="PayAgent.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -194,7 +194,7 @@ include('include/header.php');
 Реализуем устойчивые и&nbsp;перспективные девелоперские проекты, гарантируя высокую ликвидность и&nbsp;доходность объектов
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Development.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -203,7 +203,7 @@ include('include/header.php');
 Комплексные услуги по&nbsp;сопровождению внешнеэкономической деятельности (ВЭД), обеспечивая эффективную и&nbsp;безопасную работу с&nbsp;международными партнерами
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Vad.php">ПОДРОБНЕЕ</a>
 </div>
 <div class="Card">
 <div>
@@ -212,7 +212,7 @@ include('include/header.php');
 Технологичный и&nbsp;безопасный сервис для сдачи в&nbsp;аренду апартаментов с&nbsp;максимальной заботой о&nbsp;комфорте гостей и&nbsp;владельцев недвижимости
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="ApartSharing.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 </div>
@@ -228,7 +228,7 @@ include('include/header.php');
 Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и&nbsp;надежность для комфортных и&nbsp;статусных поездок
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="PremierCars.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -239,7 +239,7 @@ include('include/header.php');
 Наша платформа предлагает удобные решения для торговли с&nbsp;высокой степенью технологической поддержки и&nbsp;хорошей доходностью
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Marketplace.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -250,7 +250,7 @@ include('include/header.php');
 Эффективная и&nbsp;выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и&nbsp;прозрачность транспортировок
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Opt.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -261,7 +261,7 @@ include('include/header.php');
 Надежные инвестиционные возможности с&nbsp;прозрачной структурой и&nbsp;высоким уровнем поддержки для уверенного роста капитала
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Investitions.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 
@@ -273,7 +273,7 @@ include('include/header.php');
 Предоставляем стабильный и&nbsp;безопасный доступ к&nbsp;современным решениям в&nbsp;области майнинга, минимизируя риски и&nbsp;повышая доходность инвестиций
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Mining.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -284,7 +284,7 @@ include('include/header.php');
 Организуем надежные и&nbsp;оптимизированные логистические цепочки, гарантируя своевременную доставку по&nbsp;всему миру
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Logistick.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -295,7 +295,7 @@ include('include/header.php');
 Комплексные тендерные решения, помогая клиентам эффективно участвовать в&nbsp;конкурсах и&nbsp;минимизировать бюрократические риски
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Tender.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -306,7 +306,7 @@ include('include/header.php');
 Удобные и&nbsp;безопасные услуги платежного агента для приема и&nbsp;обработки платежей ваших клиентов
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="PayAgent.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -317,7 +317,7 @@ include('include/header.php');
 Реализуем устойчивые и&nbsp;перспективные девелоперские проекты, гарантируя высокую ликвидность и&nbsp;доходность объектов
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Development.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -328,7 +328,7 @@ include('include/header.php');
 Комплексные услуги по&nbsp;сопровождению внешнеэкономической деятельности (ВЭД), обеспечивая эффективную и&nbsp;безопасную работу с&nbsp;международными партнерами
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="Vad.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 <div class="swiper-slide">
@@ -339,7 +339,7 @@ include('include/header.php');
 Технологичный и&nbsp;безопасный сервис для сдачи в&nbsp;аренду апартаментов с&nbsp;максимальной заботой о&nbsp;комфорте гостей и&nbsp;владельцев недвижимости
 </p>
 </div>
-<a href="">ПОДРОБНЕЕ</a>
+<a href="ApartSharing.php">ПОДРОБНЕЕ</a>
 </div>
 </div>
 </div>
@@ -441,6 +441,17 @@ IT-экосистем</p>
 </div>
 <div class="swiper-slide">
 <div class="Card">
+<img class="Card-Image" src="img/News11.jpeg"></img>
+<div class="Tags">
+<a href="">#tadviser</a>
+<a href="">#биография</a>
+</div>
+<p>В Alikson Group рассказали о&nbsp;масштабном обновлении команды перед юбилейным сезоном Лига Ставок Media Basket</p>
+<a href="">Читать полностью</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="Card">
 <img class="Card-Image" src="img/News7.png"></img>
 <div class="Tags">
 <a href="">#ura.ru</a>
@@ -496,7 +507,7 @@ IT-экосистем</p>
 </div>
 </div>
 </section>
-<section class="ProjectsSection">
+<section class="ProjectsSection" id="AnchorProjects">
 <div class="Projects-Header">
 <h2>НАШИ ПРОЕКТЫ</h2>
 <p>
@@ -674,10 +685,10 @@ IT-экосистем</p>
 </div>
 </div>
 </section>
-<section class="FormSection">
+<section class="FormSection" id="AnchorForm">
 <div class="Form-Header">
 <h2>ПРИГЛАШАЕМ<br />К&nbsp;СОТРУДНИЧЕСТВУ</h2>
-<p>Станьте частью инноваций и&nbsp;стройте будущее вместе с&nbsp;ALIKSON</p>
+<p>Присоединяйтесь к ALIKSON &mdash;&nbsp;строим будущее вместе</p>
 </div>
 <div class="Form-Main">
 <form action="" method="POST">
@@ -816,9 +827,9 @@ IT-экосистем</p>
 </div>
 </section>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 <script>
     //Слайдеры
     const swiperN = new Swiper(".swiperN", {

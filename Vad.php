@@ -1,6 +1,6 @@
 <?php
 $title='Alikson ВЭД';
-$csspage='_vad.css?4.4'; 
+$csspage='_vad.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -10,7 +10,7 @@ include('include/header.php');
 <p>Предоставляем полный спектр услуг по&nbsp;организации ВЭД операций, сопровождаем клиентов на&nbsp;каждом этапе, обеспечивая безопасность сделок, минимизацию рисков и&nbsp;максимальную эффективность</p>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 <div>
 <div class="Info">
 <div>
@@ -151,7 +151,7 @@ include('include/header.php');
 </section>
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 </html>

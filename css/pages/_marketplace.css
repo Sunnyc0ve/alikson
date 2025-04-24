@@ -227,6 +227,13 @@ h1{
   .MainSection .Info:nth-child(3), .MainSection .Info:nth-child(4){
       display: none;
   }
+
+  @media (max-height: 630px) {
+    .MainSection{
+      height: auto;
+      padding: 60px;
+    }
+  }
 }
 
 @media (max-width: 659px) {

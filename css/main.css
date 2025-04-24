@@ -73,11 +73,12 @@ h2 {
   display: flex;
   justify-content: center;
   height: 696px;
+  align-items: start;
 }
 
 .Video_desktop{
   width: 1920px;
-  height: fit-content;
+  height: auto;
 }
 
 
@@ -179,7 +180,6 @@ h2 {
 
   .MainSection video {
     width: 659px;
-    height: fit-content;
 }
 
   .MainSection p{
@@ -799,7 +799,7 @@ h2 {
 .News-Main .Card {
   border-radius: 10px;
   width: 400px;
-  height: 484px;
+  height: 497px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -945,7 +945,7 @@ h2 {
 
   .News-Main .Card {
     width: 300px;
-    height: 400px;
+    height: 423px;
   }
 
   .News-Main .Tags a {

@@ -223,6 +223,13 @@ h1{
   .MainSection .Info:last-child{
       display: none;
   }
+
+  @media (max-height: 630px) {
+    .MainSection{
+      height: auto;
+      padding: 60px;
+    }
+  }
 }
 
 @media (max-width: 659px) {

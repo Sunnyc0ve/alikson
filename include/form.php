@@ -1,4 +1,4 @@
-<section class="FormSection">
+<section class="FormSection" id="AnchorForm">
         <div class="Form-Header">
           <h2>Оставьте заявку</h2>
           <p>Оставьте заявку и получите бесплатную консультацию уже&nbsp;сегодня</p>

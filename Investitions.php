@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Инвестиции';
-$csspage='_investitions.css?4.4'; 
+$csspage='_investitions.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -13,7 +13,7 @@ include('include/header.php');
 </div>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 <div>
 <div class="Info">
 <div>
@@ -349,7 +349,7 @@ include('include/header.php');
 </section> -->
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 </html>

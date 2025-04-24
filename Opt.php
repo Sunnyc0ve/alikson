@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Оптовая Дистрибуция';
-$csspage='_opt.css?4.4'; 
+$csspage='_opt.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -10,7 +10,7 @@ include('include/header.php');
 <p>Alikson Group&nbsp;&mdash; ваш надежный партнер в&nbsp;оптовой дистрибуции. Полный спектр услуг для бизнеса: закупка, логистика, таможенное оформление и&nbsp;юридическое сопровождение</p>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 <div>
 <div class="Info">
 <div>
@@ -258,7 +258,7 @@ include('include/header.php');
 </section>
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 </html>

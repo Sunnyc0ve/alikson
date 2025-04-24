@@ -1,6 +1,6 @@
 <?php
 $title='Alikson О компании';
-$csspage='_company.css?4.4'; 
+$csspage='_company.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -9,7 +9,7 @@ include('include/header.php');
 <img class="Decor_1" src="img/company/mainDecor_1.png"> -->
 <div class="VideoContainer">
 <video muted autoplay loop playsinline class="Video_desktop">
-<source src="img/company/mainVideo.mp4" />
+<source src="img/mainVideo.mp4" />
 </video>
 <video muted autoplay loop playsinline class="Video_mobile">
 <source src="img/company/mainVideo_1.mp4" />
@@ -22,7 +22,7 @@ include('include/header.php');
 <p class="p_mobile">Alikson Group&nbsp;&mdash; это дистрибуция электроники, международная логистика, инвестиции, девелопмент и&nbsp;платежные услуги</p>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 </div>
 </div>
 </section>
@@ -147,7 +147,7 @@ include('include/header.php');
 </div>
 </section>
 <section class="NumbersSection">
-<h2>ЦИФРЫ КОМПАНИИ</h2>
+<h2>Alikson в&nbsp;цифрах</h2>
 <div class="Numbers-Content">
 <div class="Card">
 <h3>400+</h3>
@@ -243,9 +243,9 @@ include('include/header.php');
 </section>
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,

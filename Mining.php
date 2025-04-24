@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Майнинг';
-$csspage='_mining.css?4.4'; 
+$csspage='_mining.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -10,7 +10,7 @@ include('include/header.php');
 <p>Alikson Group предлагает полный цикл решений в&nbsp;сфере майнинга. Мы&nbsp;гарантируем высокую надежность, минимизацию рисков и&nbsp;стабильный доход</p>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 <div>
 <div class="Info">
 <div>
@@ -96,7 +96,7 @@ include('include/header.php');
 </div>
 <div class="Card-Footer">
 <p>Ваш вклад&nbsp;<span>&mdash; 300 000₽</span></p>
-<p>Ваш доход&nbsp;<span>&mdash; 30 000₽</span></p>
+<p>Ваш доход&nbsp;<span>&mdash; 60 000₽</span></p>
 </div>
 </div>
 <div class="Card">
@@ -309,9 +309,9 @@ include('include/header.php');
 </section>
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,

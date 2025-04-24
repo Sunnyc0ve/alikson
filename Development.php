@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Девелопмент';
-$csspage='_development.css?4.4'; 
+$csspage='_development.css?4.92'; 
 include('include/header.php');
 ?>
 <main>
@@ -11,7 +11,7 @@ include('include/header.php');
 <p>Девелопмент&nbsp;&mdash; одно из&nbsp;ключевых направлений Alikson Group, направленное на&nbsp;создание современных и&nbsp;функциональных офисных пространств класса&nbsp;А и&nbsp;В+</p>
 </div>
 <div class="MainSection-Content">
-<a href="">Оставить заявку</a>
+<a href="#AnchorForm">Оставить заявку</a>
 <div>
 <div class="Info">
 <div>
@@ -160,9 +160,9 @@ include('include/header.php');
 </section>
 <?php include('include/form.php') ?>
 </main>
-<?php include('include/footer.html') ?>
+<?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js"></script>
+<script src="include/header.js?4.92"></script>
 <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,

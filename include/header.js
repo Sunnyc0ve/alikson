@@ -20,7 +20,7 @@ Menu.querySelectorAll('button[data]').forEach(e=>{
   e.addEventListener('click',()=>{
     const data=e.getAttribute('data')
     const UnderMenu=document.querySelectorAll(`[data=${data}]`)[1]
-    const height=UnderMenu.querySelector('div').clientHeight
+    const height=UnderMenu.querySelector('ul').clientHeight
     if(UnderMenu.getAttribute('style')==undefined){
       document.querySelectorAll('.Header-Menu_mobile_hidden [active]').forEach(e=>{
         e.removeAttribute('active')
@@ -45,4 +45,58 @@ document.querySelectorAll('.LangContainer button').forEach(e=>{
     }
   })
 })
+
+document.querySelector('#DirectionsMenuBtn').addEventListener('mouseover',()=>{
+  document.querySelector('.Directions_hidden').setAttribute('style','visibility: visible; opacity: 1;')
+})
+document.querySelector('#DirectionsMenuBtn').addEventListener('mouseout',()=>{
+  document.querySelector('.Directions_hidden').removeAttribute('style')
+})
 //ХЕДЕР
+
+
+
+
+
+//ФУТЕР
+const FooterMenu=document.querySelector('.FooterContainer_mobile')
+
+FooterMenu.querySelectorAll('button[data]').forEach(e=>{
+  e.addEventListener('click',()=>{
+    const data=e.getAttribute('data')
+    const UnderMenu=document.querySelectorAll(`[data=${data}]`)[1]
+    const height=UnderMenu.querySelector('ul').clientHeight+10
+    if(UnderMenu.getAttribute('style')==undefined){
+      document.querySelectorAll('.FooterContainer_mobile [active]').forEach(e=>{
+        e.removeAttribute('active')
+        e.removeAttribute('style')
+      })
+      UnderMenu.setAttribute('style',`height:${height}px;`)
+      UnderMenu.setAttribute('active','')
+    }else{
+      UnderMenu.removeAttribute('style')
+    }
+  })
+})
+//ФУТЕР
+
+
+
+
+
+
+//Плавный якорь
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+  anchor.addEventListener('click', function (e) {
+      if(document.querySelector('body').getAttribute('style')!=null){
+        MenuButton.click()
+      }
+      
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

@@ -201,6 +201,13 @@ h1{
     .p_desktop{
         display: none;
     }
+
+    @media (max-height: 630px) {
+        .MainSection{
+          height: auto;
+          padding: 60px;
+        }
+      }
   }
 
   @media (max-width: 659px) {

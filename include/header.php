@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<link rel="stylesheet" href="css/header.css?4.4" />
+<link rel="stylesheet" href="css/header.css?4.92" />
 <link rel="stylesheet" href="fonts/stylesheet.css" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,9 @@
 
 <?php if(isset($csspage)){ 
   echo'<link rel="stylesheet" href="css/pages/' . $csspage . '" />';
-  echo '<link rel="stylesheet" href="css/form.css?4.4" />';
+  echo '<link rel="stylesheet" href="css/form.css?4.92" />';
   }else{
-    echo '<link rel="stylesheet" href="css/main.css?4.4" />';
+    echo '<link rel="stylesheet" href="css/main.css?4.92" />';
     }
 ?>
 
@@ -26,15 +26,35 @@
 <body>
 <header>
   <div class="HeaderContainer">
-    <logo>
-      <img src="img/logo.svg" />
-    </logo>
+    <a href="index.php">
+      <logo>
+        <img src="img/logo.svg" />
+      </logo>
+    </a>
     <nav>
       <ul>
         <li><a href="Company.php">О компании</a></li>
-        <li><a href="">Направления бизнеса</a></li>
-        <li><a href="">Карьера в компании</a></li>
-        <li><a href="">Контакты</a></li>
+        <li id="DirectionsMenuBtn">Направления бизнеса
+          <div class="Directions_hidden">
+            <ul>
+              <li><a href="PremierCars.php">Premier Cars</a></li>
+              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+              <li><a href="Investitions.php">Alikson Invest</a></li>
+              <li><a href="Mining.php">Майнинг</a></li>
+              <li><a href="Logistick.php">Логистика</a></li>
+              <li><a href="Tender.php">Тендерный дивизион</a></li>
+              <li><a href="PayAgent.php">Платежный агент</a></li>
+              <li><a href="Development.php">Девелопмент</a></li>
+              <li><a href="Vad.php">ВЭД</a></li>
+              <li><a href="ApartSharing.php">Apart Sharing</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="news.php">Новости</a></li>
+        <li><a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorProjects">Проекты</a></li>
+        <li><a href="https://hh.ru/employer/5185896">Карьера</a></li>
+        <li><a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorForm">Контакты</a></li>
       </ul>
     </nav>
     <div class="Header-Menu">
@@ -46,70 +66,37 @@
       <button id="MenuButton"><img src="img/menu.svg" /></button>
       <div class="Header-Menu_mobile_hidden">
         <div>
-          <button data="m1"><span>О КОМПАНИИ</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m1">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
+          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
+          <div data="h1">
+            <ul>
+              <li><a href="PremierCars.php">Premier Cars</a></li>
+              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+              <li><a href="Investitions.php">Alikson Invest</a></li>
+              <li><a href="Mining.php">Майнинг</a></li>
+              <li><a href="Logistick.php">Логистика</a></li>
+              <li><a href="Tender.php">Тендерный дивизион</a></li>
+              <li><a href="PayAgent.php">Платежный агент</a></li>
+              <li><a href="Development.php">Девелопмент</a></li>
+              <li><a href="Vad.php">ВЭД</a></li>
+              <li><a href="ApartSharing.php">Apart Sharing</a></li>
+            </ul>
           </div>
         </div>
         <div>
-          <button data="m2"><span>НОВОСТИ</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m2">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
-          </div>
+          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
         </div>
         <div>
-          <button data="m3"><span>НАШИ ПРОЕКТЫ</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m3">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
-          </div>
+          <a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
         </div>
         <div>
-          <button data="m4"><span>СОТРУДНИЧЕСТВО</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m4">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
-          </div>
+          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
         </div>
         <div>
-          <button data="m5"><span>КОНТАКТЫ</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m5">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
-          </div>
-        </div>
-        <div>
-          <button data="m6"><span>ТЕХПОДДЕРЖКА</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="m6">
-            <div>
-            <!-- <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> 
-            <a href="">Ссылка</a> -->
-          </div>
-          </div>
+          <a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
         </div>
         <div>
           <div class="LastContainer">

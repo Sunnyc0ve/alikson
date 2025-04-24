@@ -203,6 +203,13 @@ h1{
     .MainSection .Info:last-child{
         display: none;
     }
+
+    @media (max-height: 630px) {
+        .MainSection{
+          height: auto;
+          padding: 60px;
+        }
+      }
   }
 
   @media (max-width: 659px) {
@@ -222,7 +229,6 @@ h1{
     border: 1px solid rgba(53, 53, 53, 0.30);
     background: #212121 url("../../img/tender/GrowB.png") no-repeat bottom;
     background-position: 90%;
-    overflow: visible;
 }
 
 .GrowSection .decor{

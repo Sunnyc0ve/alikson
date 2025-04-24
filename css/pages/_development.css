@@ -217,6 +217,13 @@ h1{
   .MainSection .Info:last-child{
       display: none;
   }
+
+  @media (max-height: 630px) {
+    .MainSection{
+      height: auto;
+      padding: 60px;
+    }
+  }
 }
 
 @media (max-width: 659px) {
@@ -285,7 +292,7 @@ h1{
 .Projects-Content .Card p{
   color:#fff;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 21px;
   line-height: normal;
 }
 
@@ -293,7 +300,7 @@ h1{
 .Projects-Content .Card li{
   color:#FFF;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 21px;
   line-height: normal;
   display: flex;
   align-items: start;
@@ -731,6 +738,20 @@ h1{
   font-size: 18px;
   line-height: normal;
   width: 330px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.Investitions-Content .Card p::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  display: block;
+  border-radius: 50px;
+  flex-shrink: 0;
+  margin-top: 10px;
 }
 
 
@@ -797,6 +818,10 @@ h1{
 
   .Investitions-Content .Card li::before{
     margin-top: 8px;
+  }
+
+  .Investitions-Content .Card p::before{
+    margin-top: 9px;
   }
 }
 
