@@ -13,6 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 <?php if(isset($csspage)){ 
   echo'<link rel="stylesheet" href="css/pages/' . $csspage . '" />';
   echo '<link rel="stylesheet" href="css/form.css?4.92" />';
@@ -62,8 +66,7 @@
       <input type="text" placeholder="Поиск по сайту" />
     </div>
     <div class="Header-Menu_mobile">
-      <button><img src="img/zoom_1.svg" /></button>
-      <button id="MenuButton"><img src="img/menu.svg" /></button>
+      <button id="MenuButton"><img src="img/BurgerMenu.svg" /></button>
       <div class="Header-Menu_mobile_hidden">
         <div>
           <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>

@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: "TT Firs Neue";
+    font-family: Inter;
     border: none;
     background: none;
   }
@@ -31,7 +31,7 @@
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
-    line-height: 111%;
+    line-height: 100%;
     text-transform: uppercase;
 }
 
@@ -39,15 +39,14 @@
   
   /* ХЕДЕР */
   header {
-    background: #181818;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    border-radius: 0px 0px 6px 6px;
-    border: 1px solid #3535358f;
     z-index: 1;
     position: relative;
+    border-radius: 0px 0px 5px 5px;
+    background: #0A0A0A;
   }
   
   .HeaderContainer {
@@ -280,14 +279,21 @@
 
 @media (max-width: 659px) {
   
-   
+   header{
+    padding: 18px 20px;
+   }
   
     .HeaderContainer {
-      width: 300px;
+      width: 100%;
     }
 
     .Header-Menu_mobile_hidden > div{
         width: 300px;
+    }
+
+    h2{
+      font-size: 14px;
+      font-weight: 500;
     }
 
 }
@@ -297,12 +303,57 @@
 
 
   /* ФУТЕР */
-footer {
+  footer{
+    display: grid;
+    grid-template-columns: 157px 1fr;
+    column-gap: 20px;
+    width: 332px;
+    margin: auto;
+    padding: 55px 0px;
+  }
+
+  .FooterColomn{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+  }
+
+  .FooterColomn h3{
+font-size: 12px;
+font-weight: 700;
+color: #fff;
+margin-bottom: 9px;
+  }
+
+  .FooterColomn a{
+    color: #BEBEBE;
+    font-size: 12;
+    font-weight: 300;
+  }
+
+  .FooterColomn:nth-child(3){
+    margin: 35px 0px 14px 0px;
+  }
+
+  .FooterColomn:nth-child(4){
+    margin-top: 67px;
+  }
+  .FooterColomn:nth-child(5){
+    justify-content: end;
+  }
+
+  .FooterColomn:nth-child(5) a{
+    color: #0485FE;
+    font-size: 14.781px;
+    font-weight: 500;
+    display: flex;
+    gap:10px;
+  }
+/* footer {
     padding: 90px 0px;
     border-radius: 20px 20px 0px 0px;
     border: 1px solid rgba(53, 53, 53, 0.30);
     background: #171717;
-    margin-top: -15px;
     position: relative;
   }
   
@@ -428,4 +479,4 @@ footer {
       .FooterContainer_mobile {
         width: 300px;
       }
-  }
+  } */
