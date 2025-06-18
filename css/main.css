@@ -1,7 +1,7 @@
 /* Общие */
 body{
   background: url("../img/backMainMob.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 
@@ -920,21 +920,11 @@ h1{
 
 
 /* Секция форма */
-.FormSection {
-  padding: 90px 0px 105px 0px;
-  position: relative;
-  border-radius: 20px;
-  border: 1px solid rgba(53, 53, 53, 0.30);
-  background: #171717 url("../img/FormBack.png") no-repeat;
-  background-position: left bottom;
-  background-size: 600px;
-  margin-top: -15px;
-}
+
 
 .Form-Header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px !important;
 }
 
 .Form-Header p {
@@ -953,10 +943,7 @@ h1{
   justify-content: end;
 }
 
-.FormSection > div {
-  width: 1280px;
-  margin: auto;
-}
+
 
 .FormSection form {
   display: flex;
@@ -972,14 +959,7 @@ h1{
   line-height: normal;
 }
 
-.FormSection form > div {
-  padding: 24px 39px;
-  border-radius: 10px;
-  background: #353535;
-  display: flex;
-  gap: 26px;
-  align-items: center;
-}
+
 
 
 /* ////////// */
@@ -1006,53 +986,19 @@ h1{
     color: rgba(255, 255, 255, 0.70);
 }
 
-/* Кастомная стрелка */
-.custom-arrow {
-    width: 26px;
-    height: 26px;
-    transform: rotate(-90deg);
-    transition: 0.3s;
-}
 
-/* Опции выпадающего списка */
-.select-options {
-    display: none;
-    position: absolute;
-    top: 90%;
-    left: 0;
-    width: 100%;
-    background: #232323;
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
-    border-top: none;
-    z-index: 10;
-}
 
-/* Отдельные пункты списка */
-.select-options li {
-    padding: 16px 0;
-    margin: 0 36px;
-    color: white;
-    transition: 0.3s;
-    list-style: none;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 300;
-    border-bottom: 1px solid #353535;
-}
+
+
+
 
 .select-options li:nth-last-child(1) {
     border: none;
 }
 
-/* Когда список открыт */
-.custom-select.active .select-options {
-    display: block;
-}
 
-.custom-select.active .custom-arrow {
-    transform: rotate(0deg);
-}
+
+
 
 
 /* /////////////// */
@@ -1073,39 +1019,12 @@ h1{
   color: rgba(255, 255, 255, 0.70);
 }
 
-.FormSection form [type="submit"] {
-  margin-bottom: 20px;
-  transition: 0.5s ease;
-  text-align: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  height: 61px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  border: 1px solid rgba(170, 170, 170, 0.15);
-  background: #112A4D;
-  box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
-  cursor: pointer;
-}
 
-.FormSection form [type="submit"]:hover {
-  color:#000;
-  background: #fff;
-  box-shadow: none;
-}
 
 @media (max-width: 1439px) {
-  .FormSection > div {
-    width: 920px;
-  }
 
-  .Form-Header p {
-    width: 401px;
-    font-size: 19px;
-  }
+
+
 
 
   .FormSection form {
@@ -1119,113 +1038,143 @@ h1{
 
 @media (max-width: 979px) {
   .FormSection {
-    border-radius: 10px 10px 0px 0px;
-    border: 1px solid #353535;
-    padding: 60px 0px 75px 0px;
-    background-size: auto 100%;
-    overflow: visible;
+    width: 332px;
+    margin: auto;
+    border-radius: 15.212px;
+    background: rgba(16, 16, 16, 0.80);
+    margin: 16px auto 43px auto;
+    padding: 29px 14px 34px 14px;
   }
 
   .Form-Header {
-    margin-bottom: 25px !important;
+    margin-bottom: 18px; 
   }
 
-  .FormSection > div {
-    width: 600px;
+  .Form-Header p{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.086px;
   }
 
-  .Form-Header p, .FormSection form p {
-    display: none;
+  .FormSection form{
+    height: 293px;
+    border-radius: 17.036px;
+    background: #FFF;
+    padding: 37px 24px 18px 28px;
   }
+
+  .FormSection form input[type="text"], .custom-select{
+    font-size: 12.613px;
+    font-weight: 400;
+    padding: 12px 20px 12px 20px;
+    border-radius: 7.883px;
+    border: 1px solid #2374A6;
+    background: rgba(30, 29, 29, 0.00);
+    color: #000;
+  }
+
+  .FormSection form [type="text"]::-webkit-input-placeholder{
+    color: rgba(24, 24, 24, 0.70);
+  }
+
+  .select-menu span{
+    color: rgba(24, 24, 24, 0.70);
+    font-size: 12.613px;
+    font-weight: 400;
+  }
+
+
+
 
   .FormSection form [type="submit"] {
-    font-size: 16px;
-    height: 55px;
+    height: 40px;
+    color: #FFF;
+    font-size: 12.493px;
+    font-weight: 700;
+    line-height: 100%;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    border-radius: 6.814px;
   }
 
-  .FormSection form [type="text"],
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder, .custom-select span, .select-options li {
-    font-size: 16px;
+  .FormSection form p{
+    color: #2270A2;
+    text-align: center;
+    font-size: 9.46px;
+    font-weight: 400;
   }
 
-  .FormSection form > div {
-    height: 50px;
-    padding: 0px 0px 0px 40px;
-    gap: 15px;
-    border-radius: 5px;
-  }
+  .select-options li {
+    padding: 14px 20;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12.613px;
+    border-bottom: 1px solid #2374A6;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    width: 252px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    border-top: none;
+    z-index: 10;
+    border: 1px solid #2374A6;
+}
+
+.custom-select.active .select-options {
+    display: block;
+}
+
+.custom-arrow{
+    transition: 0.3s;
+}
+
+.custom-select.active .custom-arrow {
+    transform: rotate(90deg);
+}
+
+.FormSection{
+  overflow: visible;
+}
+
+
+
 
   .FormSection form {
+    gap: 10px;
     width: 100%;
-    gap: 20px;
   }
 
-  .select-header > img{
-    display: none;
-  }
-
-  .select-menu{
-    gap: 15px;
-  }
-
-  .FormSection form > div img{
-    width: 18px;
-  }
 }
 
 @media (max-width: 659px) {
-  .FormSection > div {
-    width: 320px;
-  }
+
 }
 
 
 
 /* Секция партнёры */
 
-.PartnersSection {
-  padding: 80px 0px 95px 0px;
-  border: 1px solid rgba(53, 53, 53, 0.30);
-  background: #232323;
-  position: relative;
-  margin-top: -15px;
-  border-radius: 20px 20px 0px 0px;
-}
+
 
 .PartnersSection .wrap {
   width: 100%;
   margin: auto;
 }
 
-.PartnersSection:before,
-.PartnersSection:after {
-  content: "";
-  height: 100%;
-  top: 0;
-  width: 20%;
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-}
-.PartnersSection:before {
-  left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(23, 23, 23, 1) 10%,
-    rgba(35, 35, 35, 0) 100%
-  );
-}
-.PartnersSection:after {
-  right: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(35, 35, 35, 0) 0%,
-    rgba(23, 23, 23, 1) 90%
-  );
-}
+
+
 .PartnersSection .item img{
-  width: 140px;
+  height: 42px;
+  width: auto;
   border-radius: 5px;
 }
 
@@ -1234,20 +1183,5 @@ h1{
   animation: scroll 250s linear infinite;
 }
 
-@media (max-width: 1439px) {
-  
-}
-
-@media (max-width: 979px) {
-  .PartnersSection {
-    padding: 50px 0px 65px 0px;
-    border-radius: 10px 10px 0px 0px;
-    border: 1px solid #353535;
-  }
-
-  .PartnersSection .item img{
-    width: 140px;
-  }
-}
 
 

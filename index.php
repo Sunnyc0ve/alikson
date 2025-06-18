@@ -454,28 +454,17 @@ include('include/header.php');
       </div>
     </div>
   </section>
-  <!--
+ 
   <section class="FormSection" id="AnchorForm">
     <div class="Form-Header">
-      <h2>ПРИГЛАШАЕМ<br />К&nbsp;СОТРУДНИЧЕСТВУ</h2>
-      <p>Присоединяйтесь к ALIKSON &mdash;&nbsp;строим будущее вместе</p>
+      <p>Присоединяйтесь к ALIKSON — строим будущее вместе!</p>
     </div>
-    <div class="Form-Main">
       <form action="" method="POST">
-        <div>
-          <img src="img/inputInfo.svg" />
           <input type="text" name="name" required placeholder="Ваше имя" />
-        </div>
-        <div>
-          <img src="img/inputInfo.svg" />
           <input type="text" name="phone" required placeholder="Ваш телефон" />
-        </div>
-
-
         <div class="custom-select">
           <div class="select-header">
             <div class="select-menu">
-              <img src="img/inputInfo.svg" />
               <span class="selected">Выберите тему обращения</span>
             </div>
             <img src="img/select-arrow.svg" class="custom-arrow" />
@@ -492,7 +481,6 @@ include('include/header.php');
         <input type="submit" value="Оставить заявку" />
         <p>Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время, чтобы ответить на&nbsp;все вопросы</p>
       </form>
-    </div>
   </section>
   <section class="PartnersSection">
     <div class="wrap">
@@ -595,7 +583,7 @@ include('include/header.php');
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 </main>
 <?php include('include/footer.php') ?>
 </body>
@@ -750,7 +738,7 @@ include('include/header.php');
       option.addEventListener("click", function() {
         selectedText.textContent = this.textContent;
         hiddenInput.value = this.dataset.value;
-        selectedText.setAttribute('style', 'color:#fff;')
+        selectedText.setAttribute('style', 'color:#000;')
       });
     });
 
