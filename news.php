@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Новости';
-$csspage='_news.css?4.92'; 
+$csspage='_news.css?5.0'; 
 include('include/header.php');
 ?>
     <main class="container">
@@ -447,7 +447,7 @@ IT-экосистем</p>
     </main>
     <?php include('include/footer.php') ?>
   </body>
-  <script src="include/header.js?4.92"></script>
+  <script src="include/header.js?5.0"></script>
   <script>
     //Слайдеры
     const swiperN = new Swiper(".swiperN", {

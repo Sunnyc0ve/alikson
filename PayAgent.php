@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Платежный агент';
-$csspage='_payagent.css?4.92'; 
+$csspage='_payagent.css?5.0'; 
 include('include/header.php');
 ?>
 <main>
@@ -151,5 +151,5 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?4.92"></script>
+<script src="include/header.js?5.0"></script>
 </html>
