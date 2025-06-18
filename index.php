@@ -364,6 +364,7 @@ include('include/header.php');
 
    <section class="ProjectsSection" id="AnchorProjects">
     <div class="Projects-Header">
+      <p>За последние четыре года мы организовали и приняли участие в ряде значимых мероприятий</p>
       <h2>ПРОЕКТЫ</h2><span>05</span>
     </div>
     <div class="Projects-Main_mobile">
@@ -453,13 +454,103 @@ include('include/header.php');
         </div>
       </div>
     </div>
+    <div class="Projects-Main">
+<div class="Links">
+<button class="Active" data="Team">alikson team</button>
+<button data="Service">alikson club</button>
+<button data="Fond">благотфорительный фонд</button>
+</div>
+<div class="Info Active" data="Team">
+<div class="Banner">
+<!-- <h3>ALIKSON TEAM</h3> -->
+ <div class="ImgContainer">
+<img src="img/Projects1.png">
+</div>
+<div class="BannerInfo">
+<p>Дебют в&nbsp;Медиа Баскет</p>
+<a href="">Подробнее</a>
+</div>
+</div>
+<div class="Stats">
+<div>
+<h3>3&nbsp;МЛРД</h3>
+<p>Охват лиги в&nbsp;соцсетях</p>
+</div>
+<div>
+<h3>40+&nbsp;МЛН</h3>
+<p>Подписчики игроков и&nbsp;амбассадоров</p>
+</div>
+<div>
+<h3>48+&nbsp;МЛН</h3>
+<p>Охват публикаций о&nbsp;команде</p>
+</div>
+<div>
+<a href="">Стать спонсором</a>
+</div>
+</div>
+</div>
+<div class="Info" data="Service">
+<div class="Banner">
+<!-- <h3>ALIKSON INVEST CLUB</h3> -->
+<div class="ImgContainer">
+<img src="img/Projects2.png">
+</div>
+<div class="BannerInfo">
+<p>Сообщество для инвесторов,<br> объединенных целью увеличения капитала</p>
+<a href="">Подробнее</a>
+</div>
+</div>
+<div class="Stats">
+<div>
+<h3>36%</h3>
+<p>годовых средняя доходность </p>
+</div>
+<div>
+<h3>50+</h3>
+<p>инвесторов с&nbsp;капиталом от&nbsp;25&nbsp;млн рублей</p>
+</div>
+<div>
+<a href="">Подробнее</a>
+</div>
+</div>
+</div>
+<div class="Info" data="Fond">
+<div class="Banner">
+<!-- <h3>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ALIKSON</h3> -->
+<div class="ImgContainer">
+<img src="img/Projects3.png">
+</div>
+<div class="BannerInfo">
+<p>Благотворительный фонд Alikson:<br> Помогать&nbsp;&mdash; наша ответственность</p>
+<a href="">Подробнее</a>
+</div>
+</div>
+<div class="Stats">
+<div>
+<h3>45+</h3>
+<p>Проектов реализовано за&nbsp;2&nbsp;года</p>
+</div>
+<div>
+<h3>1%</h3>
+<p>Прибыли компании перечисляется в&nbsp;благотворительные фонды</p>
+</div>
+<div>
+<a href="">Подробнее</a>
+</div>
+</div>
+</div>
+</div>
   </section>
  
   <section class="FormSection" id="AnchorForm">
+    <img class="deskFormImg" src="img/FormBack.png">
     <div class="Form-Header">
       <p>Присоединяйтесь к ALIKSON — строим будущее вместе!</p>
     </div>
       <form action="" method="POST">
+        
+          <p class="FormHeaderMobile">Присоединяйтесь к ALIKSON - 
+«строим» будущее вместе!</p>
           <input type="text" name="name" required placeholder="Ваше имя" />
           <input type="text" name="phone" required placeholder="Ваш телефон" />
         <div class="custom-select">
@@ -587,7 +678,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.0"></script>
+<script src="include/header.js?5.1"></script>
 <script>
   //Слайдеры
   const swiperN = new Swiper(".swiperN", {
@@ -598,8 +689,12 @@ include('include/header.php');
     watchSlidesVisibility: true, // Следит за видимостью слайдов
     breakpoints: {
       660: {
-        slidesPerView: 3,
-        spaceBetween: 20
+        slidesPerView: 2,
+        spaceBetween: -5
+      },
+      1800: {
+        slidesPerView: 4,
+        spaceBetween: -160
       },
     },
     direction: "horizontal",
@@ -617,8 +712,12 @@ include('include/header.php');
     watchSlidesVisibility: true, // Следит за видимостью слайдов
     breakpoints: {
       660: {
+        slidesPerView: 2,
+        spaceBetween: -40
+      },
+      1800: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 90
       },
     },
     direction: "horizontal",
@@ -631,6 +730,12 @@ include('include/header.php');
   const swiperP = new Swiper(".swiperP", {
     slidesPerView: 1,
     spaceBetween: 20,
+    breakpoints: {
+      660: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+    },
     direction: "horizontal",
     loop: false,
     navigation: {
