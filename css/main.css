@@ -4,7 +4,7 @@ body{
   background-size: 100% 100%;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 980px) {
   body{
     background: url("../img/backMain.jpg");
     background-size: 100% 100%;
@@ -76,6 +76,67 @@ body{
 
 /* Главная секция */
   .MainSection{
+    width: 1790px;
+    padding: 273px 0px 200px 0px;
+    margin: auto;
+  }
+
+  h1{
+    color:#fff;
+    font-weight: 600;
+    width: auto;
+    text-align: center;
+    font-size: 77px;
+  }
+
+  .MainSection p{
+    color: #ffffff80;
+    font-weight: 400;
+    text-align: center;
+    width: 800px;
+    margin: 42px auto 49px auto;
+    font-size: 30px;
+  }
+
+  .MainSection a{
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 486px;
+    height: 62px;
+    font-size: 24px;
+    margin: auto;
+  }
+
+  @media (max-width: 1799px){
+    .MainSection{
+      width: 1400px;
+    }
+  }
+
+    @media (max-width: 1439px){
+    .MainSection{
+        width: 920px;
+      }
+    }
+
+  @media (max-width: 979px){
+    .MainSection{
+        width: 620px;
+      }
+
+    .MainSection p{
+    width: auto;
+  }
+  }
+
+
+@media (max-width: 659px){
+  .MainSection{
     width: 320px;
     margin: auto;
     padding: 58px 0px 25px 0px;
@@ -92,56 +153,13 @@ body{
     color: #ffffff80;
     font-weight: 400;
     width: 230px;
-    margin: 23px 0px 281px 0px;
+    margin: 23px auto 281px auto;
   }
 
   .MainSection a{
-    background: linear-gradient(#2178C8, #103B62);
     height: 40px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
-  }
-
-  
-@media (min-width: 660px) {
-  .MainSection{
-    width: 600px;
-  }
-
-  h1{
-    width: 300px;
-  }
-}
-
-@media (min-width: 1800px) {
-  .MainSection{
-    width: 1790px;
-    padding: 273px 0px 200px 0px;
-  }
-
-  h1{
     width: auto;
-    text-align: center;
-    font-size: 77px;
-  }
-
-  .MainSection p{
-    text-align: center;
-    width: 800px;
-    margin: 42px auto 49px auto;
-    font-size: 30px;
-  }
-
-  .MainSection a{
-   width: 486px;
-  height: 62px;
-  font-size: 24px;
-  margin: auto;
   }
 }
 
@@ -238,9 +256,15 @@ body{
   }
 }
 
-@media (min-width: 1800px) {
-  .AboutSection{
-    width: 1790px;
+@media (min-width: 980px) {
+.AboutSection{
+    width: 920px;
+  }
+}
+
+@media (min-width: 1440px) {
+.AboutSection{
+    width: 1400px;
     padding: 87px 0px 44px 0px;
     border-radius: 20px;
   }
@@ -250,10 +274,14 @@ body{
     width: 939px;
   }
 
+  .About-Header h2{
+    padding-top: 8px;
+  }
+
   .hwn{
     flex-direction: row-reverse;
     justify-content: start;
-    align-items: end;
+    align-items: start;
     width: auto;
     gap:139px;
   }
@@ -265,7 +293,7 @@ body{
   .About-Header{
     padding: 0px 0px 0px 51px;
     flex-direction: row;
-    align-items: baseline;
+    align-items: start;
     gap:141px;
     margin-bottom: 92px;
   }
@@ -325,6 +353,12 @@ body{
       background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%);
       top: 0px;
       right: 50px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .AboutSection{
+    width: 1790px;
   }
 }
 
@@ -454,9 +488,22 @@ body{
   }
 }
 
-@media (min-width: 1800px) {
+
+@media (min-width: 980px) {
+.BuisnesSection{
+    width: 920px;
+  }
+  .BuisnesSection .swiperB{
+    width: 1200px;
+  }
+    .Buisnes-Main_mobile .Card img {
+        right: 577px;
+    }
+}
+
+@media (min-width: 1440px) {
   .BuisnesSection{
-    width: 1790px;
+    width: 1400px;
     border-radius: 20px;
     margin-top: 30px;
     padding: 70px 0px 70px 0px;
@@ -489,7 +536,7 @@ body{
   }
 
   .BuisnesSection .Swiper-Control{
-    width: 1790px;
+    width: 1400px;
     padding: 0px 250px 0px 0px;
     margin: 0px;
     justify-content: end;
@@ -535,8 +582,22 @@ body{
 .Buisnes-Main_mobile .Card img{
   width: auto;
   height: auto;
+  right: 620px;
+}
+}
+
+@media (min-width: 1800px) {
+  .BuisnesSection{
+    width: 1790px;
+  }
+
+   .BuisnesSection .Swiper-Control{
+    width: 1790px;
+  }
+  .Buisnes-Main_mobile .Card img{
   right: -50px;
 }
+
 
 }
 
@@ -670,9 +731,17 @@ body{
   }
 }
 
-@media (min-width: 1800px) {
-  .NewsSection{
-    width: 1790px;
+@media (min-width: 980px) {
+.NewsSection{
+    width: 920px;
+  }
+
+    
+}
+
+@media (min-width: 1440px) {
+ .NewsSection{
+    width: 1400px;
     border-radius: 20px;
     margin-top: 30px;
     padding: 70px 0px 70px 0px;
@@ -706,7 +775,7 @@ body{
   }
 
   .NewsSection .Swiper-Control{
-    width: 1790px;
+    width: 1400px;
     padding: 0px 250px 0px 0px;
     margin: 0px;
     justify-content: end;
@@ -720,7 +789,7 @@ body{
 
 .News-Main_mobile .Card {
     width: 391px;
-    height: 413px;
+    height: 400px;
     border-radius: 15px;
     padding: 20px 20px 30px 20px;
 }
@@ -755,7 +824,17 @@ body{
   .NewsSection .swiperN {
     position: relative;
   }
+}
 
+@media (min-width: 1800px) {
+  .NewsSection{
+    width: 1790px;
+  }
+
+
+  .NewsSection .Swiper-Control{
+    width: 1790px;
+  }
 }
 
 
@@ -978,9 +1057,21 @@ body{
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 980px) {
+.ProjectsSection{
+    width: 920px;
+  }
+
+  .Projects-Main_mobile .Info{
+    width: 300px;
+  }
+
+    
+}
+
+@media (min-width: 1440px) {
   .ProjectsSection{
-    width: 1790px;
+    width: 1400px;
     margin-top: 91px;
   }
 
@@ -1016,7 +1107,7 @@ body{
 
     .Projects-Main {
         display: flex;
-        width: 1420px;
+        width: 1400px;
         margin: auto;
         gap: 20px;
     }
@@ -1043,12 +1134,6 @@ body{
   background: #101010;
 }
 
-/* .Projects-Main .Links button:hover:not(.Active) {
-  padding: 39px 0px;
-  opacity: 1;
-  font-weight: 500;
-  border: 1px solid #888888;
-} */
 
 .Projects-Main .Links .Active {
   border: 1.143px solid #1C67AC;
@@ -1068,30 +1153,7 @@ body{
   display: none;
 }
 
-/* .Projects-Main .Info .Banner {
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png");
-  background-size: 111% 100%;
-  background-position: -23px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: end;
-  padding: 20px;
-  border-radius: 10px;
-  width: 505px;
-}
 
-.Projects-Main .Info:nth-child(3) .Banner {
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%),
-    url("../img/Projects2.png");
-  background-size: 100% 100%;
-}
-
-.Projects-Main .Info:nth-child(4) .Banner {
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%),
-    url("../img/Projects3.png");
-  background-size: 100% 100%;
-} */
 
 .Projects-Main .Info .Banner{
   border-radius: 8.644px;
@@ -1166,7 +1228,7 @@ margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap:34px;
-  width: 408px;
+  width: 343px;
   border-radius: 11.432px;
   border: 1px solid #474747;
   background: #141416;
@@ -1208,6 +1270,22 @@ border-radius: 6px;
 
 .Projects-Main_mobile {
   display: none;
+}
+}
+
+@media (min-width: 1800px) {
+  .ProjectsSection{
+    width: 1790px;
+  }
+
+
+
+    .Projects-Main {
+        width: 1420px;
+    }
+
+    .Projects-Main .Info .Stats {
+  width: 408px;
 }
 
 }
@@ -1361,9 +1439,22 @@ border-radius: 6px;
   }
 }
 
-@media (min-width: 1800px) {
-  .FormSection{
-    width: 1790px;
+
+@media (min-width: 980px) {
+.FormSection{
+    width: 920px;
+  }
+
+  .FormSection form {
+    height: auto;
+    gap: 20px;
+}
+ 
+}
+
+@media (min-width: 1440px) {
+.FormSection{
+    width: 1400px;
     padding: 40px;
     position: relative;
     margin-top: 90px;
@@ -1375,7 +1466,7 @@ border-radius: 6px;
   }
 
   .FormSection form{
-    width: 936px;
+    width: 740px;
     margin-left: auto;
     padding: 48px 76px 41px 88px;
     height: auto;
@@ -1421,12 +1512,34 @@ border-radius: 6px;
     font-size: 22px;
   }
 
-  .deskFormImg{
-    display: block;
-    position: absolute;
+ 
+
+      .deskFormImg {
+        display: block;
+        position: absolute;
+        width: 557px;
+        bottom: 0px;
+        left: -7px;
+    }
+}
+
+@media (min-width: 1800px) {
+  .FormSection{
+    width: 1790px;
+  }
+
+   .deskFormImg{
     top: 0px;
     height: 100%;
+    bottom: unset;
+    left: unset;
+    width: auto;
   }
+
+   .FormSection form{
+    width: 936px;
+  }
+
 }
 
 
@@ -1457,9 +1570,9 @@ border-radius: 6px;
   animation: scroll 250s linear infinite;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 980px) {
   .PartnersSection .item img{
-    height: 100px;
+    height: auto;
   }
 }
 

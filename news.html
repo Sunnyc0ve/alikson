@@ -1,9 +1,108 @@
-<?php
-$title='Alikson Новости';
-$csspage='_news.css?5.2'; 
-include('include/header.php');
-?>
-    <main class="container">
+<html lang="ru"><head>
+<title>Alikson Новости</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="css/header.css?5.2">
+<link rel="stylesheet" href="fonts/stylesheet.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pages/_news.css?5.2"><link rel="stylesheet" href="css/form.css?5.2">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="HeaderContainer">
+    <a href="index.php">
+      <logo>
+        <img src="img/logo.svg">
+      </logo>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="Company.php">О компании</a></li>
+        <li id="DirectionsMenuBtn">Направления бизнеса
+          <div class="Directions_hidden">
+            <ul>
+              <li><a href="PremierCars.php">Premier Cars</a></li>
+              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+              <li><a href="Investitions.php">Alikson Invest</a></li>
+              <li><a href="Mining.php">Майнинг</a></li>
+              <li><a href="Logistick.php">Логистика</a></li>
+              <li><a href="Tender.php">Тендерный дивизион</a></li>
+              <li><a href="PayAgent.php">Платежный агент</a></li>
+              <li><a href="Development.php">Девелопмент</a></li>
+              <li><a href="Vad.php">ВЭД</a></li>
+              <li><a href="ApartSharing.php">Apart Sharing</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
+        <li><a href="index.php#AnchorForm">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="Header-Menu">
+      <button><img src="img/zoom.svg"></button>
+      <input type="text" placeholder="Поиск по сайту">
+    </div>
+    <div class="Header-Menu_mobile">
+      <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
+      <div class="Header-Menu_mobile_hidden">
+        <div>
+          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
+          <div data="h1">
+            <ul>
+              <li><a href="PremierCars.php">Premier Cars</a></li>
+              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+              <li><a href="Investitions.php">Alikson Invest</a></li>
+              <li><a href="Mining.php">Майнинг</a></li>
+              <li><a href="Logistick.php">Логистика</a></li>
+              <li><a href="Tender.php">Тендерный дивизион</a></li>
+              <li><a href="PayAgent.php">Платежный агент</a></li>
+              <li><a href="Development.php">Девелопмент</a></li>
+              <li><a href="Vad.php">ВЭД</a></li>
+              <li><a href="ApartSharing.php">Apart Sharing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <a href="index.php#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <a href="index.php#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
+        </div>
+        <div>
+          <div class="LastContainer">
+            <a href="">8-999-999-99-99</a>
+            <div class="LangContainer">
+              <button class="Active">RU</button>
+              <button>EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>    <main class="container">
 
 
         <section class="news__section">
@@ -11,7 +110,7 @@ include('include/header.php');
   
           <div class="news__inner">
             <div class="news__card">
-              <img src="./img/News1.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News1.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -35,7 +134,7 @@ include('include/header.php');
             </div>
 
             <div class="news__card">
-              <img src="./img/News2.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News2.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -59,7 +158,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News3.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News3.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -86,7 +185,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News4.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News4.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -112,7 +211,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News5.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News5.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -137,7 +236,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News6.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News6.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -149,7 +248,7 @@ include('include/header.php');
           
                     </p>
                     <h3 class="news__content-heading">
-                    Alikson Group на&nbsp;конференции T&mdash;LAB: новые горизонты IT-экосистем
+                    Alikson Group на&nbsp;конференции T—LAB: новые горизонты IT-экосистем
                     </h3>
                   </div>
   
@@ -162,7 +261,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News11.jpeg" alt loading="lazy" class="news__card-image">
+              <img src="./img/News11.jpeg" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -187,7 +286,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News7.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News7.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -212,7 +311,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News8.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News8.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -237,7 +336,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News9.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News9.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -262,7 +361,7 @@ include('include/header.php');
 
 
             <div class="news__card">
-              <img src="./img/News10.png" alt loading="lazy" class="news__card-image">
+              <img src="./img/News10.png" alt="" loading="lazy" class="news__card-image">
   
               <div class="news__body">
                 <div class="news__content">
@@ -274,7 +373,7 @@ include('include/header.php');
           
                     </p>
                     <h3 class="news__content-heading">
-                    Alikson Group: Новогодний корпоратив в&nbsp;стиле &laquo;Ревущих 20-х&raquo;
+                    Alikson Group: Новогодний корпоратив в&nbsp;стиле «Ревущих 20-х»
                     </h3>
                   </div>
   
@@ -445,8 +544,83 @@ IT-экосистем</p>
 </section> -->
       
     </main>
-    <?php include('include/footer.php') ?>
-  </body>
+    <footer>
+  <div class="Footer-Mobile">
+  <div class="FooterColomn">
+    <h3>Навигация</h3>
+    <a href="Company.php">О компании</a>
+    <a href="news.php">Новости</a>
+    <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+    <a href="index.php#AnchorProjects">Наши проекты</a>
+    <a href="index.php#AnchorForm">Контакты</a>
+  </div>
+  <div class="FooterColomn">
+      <h3>Социальные сети</h3>
+        <a href="https://t.me/alikson_corp">Telegram</a>
+        <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+  </div>
+  <div class="FooterColomn">
+        <h3>Направления</h3>
+        <a href="Marketplace.php">Маркетплейс электроники</a>
+        <a href="Investitions.php">Alikson инвестиции</a>
+        <a href="PremierCars.php">Аренда премиум авто</a>
+        <a href="Tender.php">Тендерный дивизион</a>
+        <a href="Opt.php">Оптовая дистрибуция</a>
+        <a href="Vad.php">Внешнеэкономическая деятельность</a>
+  </div>
+  <div class="FooterColomn">
+        <a href="ApartSharing.php">Apart Sharing</a>
+        <a href="Mining.php">Майнинг</a>
+        <a href="Logistick.php">Логистика</a>
+        <a href="PayAgent.php">Платежный агент</a>
+        <a href="Development.php">Девелопмент</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+  </div>
+  </div>
+  <div class="Footer-Desk">
+    <div class="FooterLeft">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+    </div>
+    <div class="FooterRight">
+      <div class="FooterColomn">
+        <h3>Навигация</h3>
+        <a href="Company.php">О компании</a>
+        <a href="news.php">Новости</a>
+        <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+        <a href="index.php#AnchorProjects">Наши проекты</a>
+        <a href="index.php#AnchorForm">Контакты</a>
+      </div>
+      <div class="FooterColomn">
+            <h3>Направления</h3>
+            <a href="Marketplace.php">Маркетплейс электроники</a>
+            <a href="Investitions.php">Alikson инвестиции</a>
+            <a href="PremierCars.php">Аренда премиум авто</a>
+            <a href="Tender.php">Тендерный дивизион</a>
+            <a href="Opt.php">Оптовая дистрибуция</a>
+            <a href="Vad.php">Внешнеэкономическая деятельность</a>
+      </div>
+      <div class="FooterColomn">
+            <a href="ApartSharing.php">Apart Sharing</a>
+            <a href="Mining.php">Майнинг</a>
+            <a href="Logistick.php">Логистика</a>
+            <a href="PayAgent.php">Платежный агент</a>
+            <a href="Development.php">Девелопмент</a>
+      </div>
+      <div class="FooterColomn">
+          <h3>Социальные сети</h3>
+            <a href="https://t.me/alikson_corp">Telegram</a>
+            <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+</footer>  
   <script src="include/header.js?5.2"></script>
   <script>
     //Слайдеры
@@ -468,4 +642,5 @@ IT-экосистем</p>
       },
     });
   </script>
-</html>
+
+</body></html>

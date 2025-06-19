@@ -98,7 +98,7 @@ include('include/header.php');
                 <span>01</span>
                 <h3>Premier Cars</h3>
                 <p>
-                  Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и&nbsp;надежность для комфортных и&nbsp;статусных поездок
+                  Премиальный автопрокат гарантирует клиентам высокий уровень сервиса и надежность для комфортных и статусных поездок
                 </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ include('include/header.php');
                 <span>02</span>
                 <h3>Аликсон Маркетплейс</h3>
                 <p>
-                  Наша платформа предлагает удобные решения для торговли с&nbsp;высокой степенью технологической поддержки и&nbsp;хорошей доходностью
+                  Наша платформа предлагает удобные решения для торговли с высокой степенью технологической поддержки и хорошей доходностью
                 </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ include('include/header.php');
                 <span>03</span>
                 <h3>Оптовая дистрибуция</h3>
                 <p>
-                  Эффективная и&nbsp;выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и&nbsp;прозрачность транспортировок
+                 Эффективная и выгодная оптовая дистрибуция. Обеспечиваем полную поддержку и прозрачность транспортировок
                 </p>
             </div>
           </div>
@@ -128,7 +128,7 @@ include('include/header.php');
               <span>04</span>
                 <h3>Alikson Invest</h3>
                 <p>
-                  Надежные инвестиционные возможности с&nbsp;прозрачной структурой и&nbsp;высоким уровнем поддержки для уверенного роста капитала
+                  Надежные инвестиционные возможности с прозрачной структурой и высоким уровнем поддержки для уверенного роста капитала
                 </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ include('include/header.php');
               <span>05</span>
                 <h3>Майнинг</h3>
                 <p>
-                  Предоставляем стабильный и&nbsp;безопасный доступ к&nbsp;современным решениям в&nbsp;области майнинга, минимизируя риски и&nbsp;повышая доходность инвестиций
+       Обеспечиваем стабильный и безопасный доступ к современным майнинговым решениям, снижая риски и увеличивая доходность
                 </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ include('include/header.php');
               <span>06</span>
                 <h3>Логистика</h3>
                 <p>
-                  Организуем надежные и&nbsp;оптимизированные логистические цепочки, гарантируя своевременную доставку по&nbsp;всему миру
+                Организуем надежные и оптимизированные логистические цепочки, гарантируя своевременную доставку по всему миру
                 </p>
             </div>
           </div>
@@ -159,7 +159,7 @@ include('include/header.php');
               <span>07</span>
                 <h3>Тендерный дивизион</h3>
                 <p>
-                  Комплексные тендерные решения, помогая клиентам эффективно участвовать в&nbsp;конкурсах и&nbsp;минимизировать бюрократические риски
+                  Комплексные тендерные решения, помогая клиентам эффективно участвовать в конкурсах и минимизировать бюрократические риски
                 </p>
             </div>
           </div>
@@ -169,7 +169,7 @@ include('include/header.php');
               <span>08</span>
                 <h3>Платежный агент</h3>
                 <p>
-                  Удобные и&nbsp;безопасные услуги платежного агента для приема и&nbsp;обработки платежей ваших клиентов
+                  Удобные и безопасные услуги платежного агента для приема и обработки платежей ваших клиентов
                 </p>
             </div>
           </div>
@@ -179,7 +179,7 @@ include('include/header.php');
               <span>09</span>
                 <h3>Девелопмент</h3>
                 <p>
-                  Реализуем устойчивые и&nbsp;перспективные девелоперские проекты, гарантируя высокую ликвидность и&nbsp;доходность объектов
+                  Реализуем устойчивые и перспективные девелоперские проекты, гарантируя высокую ликвидность и доходность объектов
                 </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ include('include/header.php');
               <span>10</span>
                 <h3>ВЭД</h3>
                 <p>
-                  Комплексные услуги по&nbsp;сопровождению внешнеэкономической деятельности (ВЭД), обеспечивая эффективную и&nbsp;безопасную работу с&nbsp;международными партнерами
+                  Предоставляем комплексное сопровождение ВЭД для эффективной и безопасной работы с международными партнерами
                 </p>
             </div>
           </div>
@@ -199,7 +199,7 @@ include('include/header.php');
               <span>11</span>
                 <h3>Apart Sharing</h3>
                 <p>
-                  Технологичный и&nbsp;безопасный сервис для сдачи в&nbsp;аренду апартаментов с&nbsp;максимальной заботой о&nbsp;комфорте гостей и&nbsp;владельцев недвижимости
+                  Технологичный и безопасный сервис для сдачи в аренду апартаментов с максимальной заботой о комфорте гостей и владельцев недвижимости
                 </p>
             </div>
           </div>
@@ -577,100 +577,32 @@ include('include/header.php');
     <div class="wrap">
       <div class="items-wrap">
         <div class="items marquee">
-          <div class="item"><img src="img/Partners/Frame 301.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-1.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-2.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-3.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-4.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-5.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-6.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-7.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-8.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-9.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-10.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-11.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-12.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-13.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-14.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-15.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-16.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-17.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-18.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-19.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-20.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-21.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-22.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-23.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-24.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-25.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-26.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-27.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-28.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-29.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-30.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-31.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-32.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-33.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-34.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-35.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-36.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-37.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-38.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-39.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-40.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-41.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-42.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-43.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-44.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-45.png" /></div>
+          <div class="item"><img src="img/Partners/1.png" /></div>
+          <div class="item"><img src="img/Partners/2.png" /></div>
+          <div class="item"><img src="img/Partners/3.png" /></div>
+          <div class="item"><img src="img/Partners/4.png" /></div>
+          <div class="item"><img src="img/Partners/5.png" /></div>
+          <div class="item"><img src="img/Partners/6.png" /></div>
+          <div class="item"><img src="img/Partners/1.png" /></div>
+          <div class="item"><img src="img/Partners/2.png" /></div>
+          <div class="item"><img src="img/Partners/3.png" /></div>
+          <div class="item"><img src="img/Partners/4.png" /></div>
+          <div class="item"><img src="img/Partners/5.png" /></div>
+          <div class="item"><img src="img/Partners/6.png" /></div>
         </div>
         <div aria-hidden="true" class="items marquee">
-          <div class="item"><img src="img/Partners/Frame 301.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-1.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-2.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-3.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-4.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-5.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-6.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-7.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-8.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-9.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-10.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-11.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-12.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-13.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-14.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-15.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-16.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-17.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-18.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-19.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-20.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-21.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-22.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-23.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-24.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-25.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-26.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-27.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-28.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-29.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-30.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-31.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-32.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-33.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-34.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-35.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-36.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-37.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-38.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-39.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-40.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-41.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-42.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-43.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-44.png" /></div>
-          <div class="item"><img src="img/Partners/Frame 301-45.png" /></div>
+          <div class="item"><img src="img/Partners/1.png" /></div>
+          <div class="item"><img src="img/Partners/2.png" /></div>
+          <div class="item"><img src="img/Partners/3.png" /></div>
+          <div class="item"><img src="img/Partners/4.png" /></div>
+          <div class="item"><img src="img/Partners/5.png" /></div>
+          <div class="item"><img src="img/Partners/6.png" /></div>
+          <div class="item"><img src="img/Partners/1.png" /></div>
+          <div class="item"><img src="img/Partners/2.png" /></div>
+          <div class="item"><img src="img/Partners/3.png" /></div>
+          <div class="item"><img src="img/Partners/4.png" /></div>
+          <div class="item"><img src="img/Partners/5.png" /></div>
+          <div class="item"><img src="img/Partners/6.png" /></div>
         </div>
       </div>
     </div>
@@ -678,7 +610,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.1"></script>
+<script src="include/header.js?5.2"></script>
 <script>
   //Слайдеры
   const swiperN = new Swiper(".swiperN", {
@@ -691,6 +623,14 @@ include('include/header.php');
       660: {
         slidesPerView: 2,
         spaceBetween: -5
+      },
+      980: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+       1440: {
+        slidesPerView: 3,
+        spaceBetween: -150
       },
       1800: {
         slidesPerView: 4,
@@ -715,6 +655,14 @@ include('include/header.php');
         slidesPerView: 2,
         spaceBetween: -40
       },
+       980: {
+        slidesPerView: 3,
+        spaceBetween: -230
+      },
+       1440: {
+        slidesPerView: 2,
+        spaceBetween: -580
+      },
       1800: {
         slidesPerView: 3,
         spaceBetween: 90
@@ -733,6 +681,10 @@ include('include/header.php');
     breakpoints: {
       660: {
         slidesPerView: 2,
+        spaceBetween: 10
+      },
+      980: {
+        slidesPerView: 3,
         spaceBetween: 10
       },
     },

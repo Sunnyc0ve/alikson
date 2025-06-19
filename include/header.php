@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<link rel="stylesheet" href="css/header.css?5.1" />
+<link rel="stylesheet" href="css/header.css?5.2" />
 <link rel="stylesheet" href="fonts/stylesheet.css" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
 
 <?php if(isset($csspage)){ 
   echo'<link rel="stylesheet" href="css/pages/' . $csspage . '" />';
-  echo '<link rel="stylesheet" href="css/form.css?5.1" />';
+  echo '<link rel="stylesheet" href="css/form.css?5.2" />';
   }else{
-    echo '<link rel="stylesheet" href="css/main.css?5.1" />';
+    echo '<link rel="stylesheet" href="css/main.css?5.2" />';
     }
 ?>
 
@@ -55,9 +55,7 @@
             </ul>
           </div>
         </li>
-        <li><a href="news.php">Новости</a></li>
-        <li><a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorProjects">Проекты</a></li>
-        <li><a href="https://hh.ru/employer/5185896">Карьера</a></li>
+        <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
         <li><a href="<?php if(isset($csspage)){echo 'index.php';} ?>#AnchorForm">Контакты</a></li>
       </ul>
     </nav>
