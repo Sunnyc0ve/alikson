@@ -568,8 +568,10 @@ include('include/header.php');
           </ul>
           <input type="hidden" name="topic" value="">
         </div>
-
+        <div class="FormButtonContainer">
+        <span>Оставить заявку</span>
         <input type="submit" value="Оставить заявку" />
+        </div>
         <p>Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время, чтобы ответить на&nbsp;все вопросы</p>
       </form>
   </section>

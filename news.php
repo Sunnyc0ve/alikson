@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Новости';
-$csspage='_news.css?5.2'; 
+$csspage='news.css?5.2'; 
 include('include/header.php');
 ?>
     <main class="container">

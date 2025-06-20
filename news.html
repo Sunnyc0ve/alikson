@@ -1,647 +1,646 @@
 <html lang="ru"><head>
-<title>Alikson Новости</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-<link rel="stylesheet" href="css/header.css?5.2">
-<link rel="stylesheet" href="fonts/stylesheet.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/pages/news.css?5.2">
-<link rel="stylesheet" href="css/form.css?5.2">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-<body>
-<header>
-  <div class="HeaderContainer">
-    <a href="index.php">
-      <logo>
-        <img src="img/logo.svg">
-      </logo>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="Company.php">О компании</a></li>
-        <li id="DirectionsMenuBtn">Направления бизнеса
-          <div class="Directions_hidden">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
+  <title>Alikson Новости</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <link rel="stylesheet" href="css/header.css?5.2">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/pages/news.css?5.2"><link rel="stylesheet" href="css/form.css?5.2">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+  <header>
+    <div class="HeaderContainer">
+      <a href="index.php">
+        <logo>
+          <img src="img/logo.svg">
+        </logo>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="Company.php">О компании</a></li>
+          <li id="DirectionsMenuBtn">Направления бизнеса
+            <div class="Directions_hidden">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
+          <li><a href="index.php#AnchorForm">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="Header-Menu">
+        <button><img src="img/zoom.svg"></button>
+        <input type="text" placeholder="Поиск по сайту">
+      </div>
+      <div class="Header-Menu_mobile">
+        <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
+        <div class="Header-Menu_mobile_hidden">
+          <div>
+            <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
           </div>
-        </li>
-        <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
-        <li><a href="index.php#AnchorForm">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="Header-Menu">
-      <button><img src="img/zoom.svg"></button>
-      <input type="text" placeholder="Поиск по сайту">
-    </div>
-    <div class="Header-Menu_mobile">
-      <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
-      <div class="Header-Menu_mobile_hidden">
-        <div>
-          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="h1">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
+          <div>
+            <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
+            <div data="h1">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div>
-          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <div class="LastContainer">
-            <a href="">8-999-999-99-99</a>
-            <div class="LangContainer">
-              <button class="Active">RU</button>
-              <button>EN</button>
+          <div>
+            <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
+          </div>
+          <div>
+            <a href="index.php#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
+          </div>
+          <div>
+            <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
+          </div>
+          <div>
+            <a href="index.php#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
+          </div>
+          <div>
+            <div class="LastContainer">
+              <a href="">8-999-999-99-99</a>
+              <div class="LangContainer">
+                <button class="Active">RU</button>
+                <button>EN</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>    <main class="container">
-
-
-        <section class="news__section">
-          <h1 class="news__section-heading">Новости</h1>
+  </header>    <main class="container">
   
-          <div class="news__inner">
-            <div class="news__card">
-              <img src="./img/News1.png" alt="" loading="lazy" class="news__card-image">
   
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-                    <a href="">#tadviser</a>
-                    <a href="">#apartsharing</a>
-                    <a href="">#интервью</a>
-                    </p>
-                    <h3 class="news__content-heading">
-                    Сервис аренды Apartsharing стал частью Alikson Group в&nbsp;рамках сделки на&nbsp;$10 млн
-                    </h3>
+          <section class="news__section">
+            <h1 class="news__section-heading">Новости</h1>
+    
+            <div class="news__inner">
+              <div class="news__card">
+                <img src="./img/News1.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+                      <a href="">#tadviser</a>
+                      <a href="">#apartsharing</a>
+                      <a href="">#интервью</a>
+                      </p>
+                      <h3 class="news__content-heading">
+                      Сервис аренды Apartsharing стал частью Alikson Group в&nbsp;рамках сделки на&nbsp;$10 млн
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
                   </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
                 </div>
               </div>
-            </div>
-
-            <div class="news__card">
-              <img src="./img/News2.png" alt="" loading="lazy" class="news__card-image">
   
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#aliksonteam</a>
-<a href="">#медиабаскет</a>
-                    </p>
-                    <h3 class="news__content-heading">
-                    Alikson Team в&nbsp;4-м сезоне Media Basket: От&nbsp;дебюта до&nbsp;полуфинала
-                    </h3>
+              <div class="news__card">
+                <img src="./img/News2.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#aliksonteam</a>
+  <a href="">#медиабаскет</a>
+                      </p>
+                      <h3 class="news__content-heading">
+                      Alikson Team в&nbsp;4-м сезоне Media Basket: От&nbsp;дебюта до&nbsp;полуфинала
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
                   </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
                 </div>
               </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News3.png" alt="" loading="lazy" class="news__card-image">
   
-              <div class="news__body">
-                <div class="news__content">
   
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#рбк</a>
-<a href="">#финансы</a>
-<a href="">#интервью</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Как 24-летний предприниматель создал миллиардную компанию Alikson Group
-
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News4.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#рбк</a>
-<a href="">#девелопмент</a>
-<a href="">#интервью</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Инновационный подход к&nbsp;созданию современных офисных пространств
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News5.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Офисный шеринг в&nbsp;Москве: Как гибкие офисы меняют правила игры на&nbsp;рынке недвижимости
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News6.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Alikson Group на&nbsp;конференции T—LAB: новые горизонты IT-экосистем
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News11.jpeg" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    В Alikson Group рассказали о&nbsp;масштабном обновлении команды перед юбилейным сезоном Лига Ставок Media Basket
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News7.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#ura.ru</a>
-<a href="">#электроника</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Российский рынок электроники в&nbsp;2025: Прогнозы, перспективы
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News8.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#aliksonteam</a>
-<a href="">#медиабаскет</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Alikson Team: Яркий дебют в&nbsp;медийной баскетбольной лиге
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News9.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#инк</a>
-<a href="">#майнинг</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Майнинг в&nbsp;России: Рост на&nbsp;7% за&nbsp;год и&nbsp;новые перспективы для инвесторов
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="news__card">
-              <img src="./img/News10.png" alt="" loading="lazy" class="news__card-image">
-  
-              <div class="news__body">
-                <div class="news__content">
-  
-                  <div class="news__tags_w_heading">
-                    <p class="news__content-tags">
-<a href="">#папарацци</a>
-<a href="">#мероприятия</a>
-          
-                    </p>
-                    <h3 class="news__content-heading">
-                    Alikson Group: Новогодний корпоратив в&nbsp;стиле «Ревущих 20-х»
-                    </h3>
-                  </div>
-  
-                  <button class="news__content-button">
-                    Читать полностью
-                  </button>
-                </div>
-              </div>
-            </div>
-
+              <div class="news__card">
+                <img src="./img/News3.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#рбк</a>
+  <a href="">#финансы</a>
+  <a href="">#интервью</a>
             
-
+                      </p>
+                      <h3 class="news__content-heading">
+                      Как 24-летний предприниматель создал миллиардную компанию Alikson Group
+  
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News4.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#рбк</a>
+  <a href="">#девелопмент</a>
+  <a href="">#интервью</a>
             
-          </div>
-        </section>
-<!-- <section class="NewsSection">
-<div class="News-Header">
-<h2>НОВОСТИ</h2>
-<p>О&nbsp;нас пишут&nbsp;&mdash; и&nbsp;мы&nbsp;не&nbsp;останавливаемся на&nbsp;достигнутом</p>
-</div>
-<div class="News-Main">
-<div class="swiperN">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News1.png"></img>
-<div class="Tags">
-<a href="">#tadviser</a>
-<a href="">#apartsharing</a>
-<a href="">#интервью</a>
-</div>
-<p>
-Сервис аренды Apartsharing стал частью Alikson Group в&nbsp;рамках сделки на&nbsp;$10 млн
-</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News2.png"></img>
-<div class="Tags">
-<a href="">#aliksonteam</a>
-<a href="">#медиабаскет</a>
-</div>
-<p>
-Alikson Team в&nbsp;4-м сезоне Media Basket: От&nbsp;дебюта до&nbsp;полуфинала
-</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News3.png"></img>
-<div class="Tags">
-<a href="">#рбк</a>
-<a href="">#финансы</a>
-<a href="">#интервью</a>
-</div>
-<p>
-Как 24-летний предприниматель создал миллиардную компанию Alikson Group
-</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News4.png"></img>
-<div class="Tags">
-<a href="">#рбк</a>
-<a href="">#девелопмент</a>
-<a href="">#интервью</a>
-</div>
-<p>Инновационный подход 
-к&nbsp;созданию современных офисных пространств</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News5.png"></img>
-<div class="Tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-</div>
-<p>Офисный шеринг в&nbsp;Москве: Как гибкие офисы меняют правила игры на&nbsp;рынке недвижимости</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News6.png"></img>
-<div class="Tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-</div>
-<p>Alikson Group на&nbsp;конференции T&mdash;LAB: новые горизонты 
-IT-экосистем</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News11.jpeg"></img>
-<div class="Tags">
-<a href="">#tadviser</a>
-<a href="">#биография</a>
-</div>
-<p>В Alikson Group рассказали о&nbsp;масштабном обновлении команды перед юбилейным сезоном Лига Ставок Media Basket</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News7.png"></img>
-<div class="Tags">
-<a href="">#ura.ru</a>
-<a href="">#электроника</a>
-</div>
-<p>Российский рынок электроники в&nbsp;2025: Прогнозы, перспективы</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News8.png"></img>
-<div class="Tags">
-<a href="">#aliksonteam</a>
-<a href="">#медиабаскет</a>
-</div>
-<p>Alikson Team: Яркий дебют в&nbsp;медийной баскетбольной лиге</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News9.png"></img>
-<div class="Tags">
-<a href="">#инк</a>
-<a href="">#майнинг</a>
-</div>
-<p>Майнинг в&nbsp;России: Рост на&nbsp;7% за&nbsp;год и&nbsp;новые перспективы для инвесторов
-</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="Card">
-<img class="Card-Image" src="img/News10.png"></img>
-<div class="Tags">
-<a href="">#папарацци</a>
-<a href="">#мероприятия</a>
-</div>
-<p>Alikson Group: Новогодний корпоратив в&nbsp;стиле &laquo;Ревущих 20-х&raquo;</p>
-<a href="">Читать полностью</a>
-</div>
-</div>
-</div>
-<div class="Swiper-Control">
-<button class="Swiper-Prev">
-<img src="img/ArrowLeft.svg" />
-</button>
-<button class="Swiper-Next">
-<img src="img/ArrowRight.svg" />
-</button>
-</div>
-</div>
-</div>
-</section> -->
-      
-    </main>
-    <footer>
-  <div class="Footer-Mobile">
-  <div class="FooterColomn">
-    <h3>Навигация</h3>
-    <a href="Company.php">О компании</a>
-    <a href="news.php">Новости</a>
-    <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
-    <a href="index.php#AnchorProjects">Наши проекты</a>
-    <a href="index.php#AnchorForm">Контакты</a>
+                      </p>
+                      <h3 class="news__content-heading">
+                      Инновационный подход к&nbsp;созданию современных офисных пространств
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News5.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Офисный шеринг в&nbsp;Москве: Как гибкие офисы меняют правила игры на&nbsp;рынке недвижимости
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News6.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Alikson Group на&nbsp;конференции T—LAB: новые горизонты IT-экосистем
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News11.jpeg" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      В Alikson Group рассказали о&nbsp;масштабном обновлении команды перед юбилейным сезоном Лига Ставок Media Basket
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News7.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#ura.ru</a>
+  <a href="">#электроника</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Российский рынок электроники в&nbsp;2025: Прогнозы, перспективы
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News8.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#aliksonteam</a>
+  <a href="">#медиабаскет</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Alikson Team: Яркий дебют в&nbsp;медийной баскетбольной лиге
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News9.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#инк</a>
+  <a href="">#майнинг</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Майнинг в&nbsp;России: Рост на&nbsp;7% за&nbsp;год и&nbsp;новые перспективы для инвесторов
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="news__card">
+                <img src="./img/News10.png" alt="" loading="lazy" class="news__card-image">
+    
+                <div class="news__body">
+                  <div class="news__content">
+    
+                    <div class="news__tags_w_heading">
+                      <p class="news__content-tags">
+  <a href="">#папарацци</a>
+  <a href="">#мероприятия</a>
+            
+                      </p>
+                      <h3 class="news__content-heading">
+                      Alikson Group: Новогодний корпоратив в&nbsp;стиле «Ревущих 20-х»
+                      </h3>
+                    </div>
+    
+                    <button class="news__content-button">
+                      Читать полностью
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+              
+  
+              
+            </div>
+          </section>
+  <!-- <section class="NewsSection">
+  <div class="News-Header">
+  <h2>НОВОСТИ</h2>
+  <p>О&nbsp;нас пишут&nbsp;&mdash; и&nbsp;мы&nbsp;не&nbsp;останавливаемся на&nbsp;достигнутом</p>
   </div>
-  <div class="FooterColomn">
-      <h3>Социальные сети</h3>
-        <a href="https://t.me/alikson_corp">Telegram</a>
-        <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+  <div class="News-Main">
+  <div class="swiperN">
+  <div class="swiper-wrapper">
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News1.png"></img>
+  <div class="Tags">
+  <a href="">#tadviser</a>
+  <a href="">#apartsharing</a>
+  <a href="">#интервью</a>
   </div>
-  <div class="FooterColomn">
-        <h3>Направления</h3>
-        <a href="Marketplace.php">Маркетплейс электроники</a>
-        <a href="Investitions.php">Alikson инвестиции</a>
-        <a href="PremierCars.php">Аренда премиум авто</a>
-        <a href="Tender.php">Тендерный дивизион</a>
-        <a href="Opt.php">Оптовая дистрибуция</a>
-        <a href="Vad.php">Внешнеэкономическая деятельность</a>
-  </div>
-  <div class="FooterColomn">
-        <a href="ApartSharing.php">Apart Sharing</a>
-        <a href="Mining.php">Майнинг</a>
-        <a href="Logistick.php">Логистика</a>
-        <a href="PayAgent.php">Платежный агент</a>
-        <a href="Development.php">Девелопмент</a>
-  </div>
-  <div class="FooterColomn">
-      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
-  </div>
-  <div class="FooterColomn">
-      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+  <p>
+  Сервис аренды Apartsharing стал частью Alikson Group в&nbsp;рамках сделки на&nbsp;$10 млн
+  </p>
+  <a href="">Читать полностью</a>
   </div>
   </div>
-  <div class="Footer-Desk">
-    <div class="FooterLeft">
-      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
-      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News2.png"></img>
+  <div class="Tags">
+  <a href="">#aliksonteam</a>
+  <a href="">#медиабаскет</a>
+  </div>
+  <p>
+  Alikson Team в&nbsp;4-м сезоне Media Basket: От&nbsp;дебюта до&nbsp;полуфинала
+  </p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News3.png"></img>
+  <div class="Tags">
+  <a href="">#рбк</a>
+  <a href="">#финансы</a>
+  <a href="">#интервью</a>
+  </div>
+  <p>
+  Как 24-летний предприниматель создал миллиардную компанию Alikson Group
+  </p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News4.png"></img>
+  <div class="Tags">
+  <a href="">#рбк</a>
+  <a href="">#девелопмент</a>
+  <a href="">#интервью</a>
+  </div>
+  <p>Инновационный подход 
+  к&nbsp;созданию современных офисных пространств</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News5.png"></img>
+  <div class="Tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+  </div>
+  <p>Офисный шеринг в&nbsp;Москве: Как гибкие офисы меняют правила игры на&nbsp;рынке недвижимости</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News6.png"></img>
+  <div class="Tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+  </div>
+  <p>Alikson Group на&nbsp;конференции T&mdash;LAB: новые горизонты 
+  IT-экосистем</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News11.jpeg"></img>
+  <div class="Tags">
+  <a href="">#tadviser</a>
+  <a href="">#биография</a>
+  </div>
+  <p>В Alikson Group рассказали о&nbsp;масштабном обновлении команды перед юбилейным сезоном Лига Ставок Media Basket</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News7.png"></img>
+  <div class="Tags">
+  <a href="">#ura.ru</a>
+  <a href="">#электроника</a>
+  </div>
+  <p>Российский рынок электроники в&nbsp;2025: Прогнозы, перспективы</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News8.png"></img>
+  <div class="Tags">
+  <a href="">#aliksonteam</a>
+  <a href="">#медиабаскет</a>
+  </div>
+  <p>Alikson Team: Яркий дебют в&nbsp;медийной баскетбольной лиге</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News9.png"></img>
+  <div class="Tags">
+  <a href="">#инк</a>
+  <a href="">#майнинг</a>
+  </div>
+  <p>Майнинг в&nbsp;России: Рост на&nbsp;7% за&nbsp;год и&nbsp;новые перспективы для инвесторов
+  </p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  <div class="swiper-slide">
+  <div class="Card">
+  <img class="Card-Image" src="img/News10.png"></img>
+  <div class="Tags">
+  <a href="">#папарацци</a>
+  <a href="">#мероприятия</a>
+  </div>
+  <p>Alikson Group: Новогодний корпоратив в&nbsp;стиле &laquo;Ревущих 20-х&raquo;</p>
+  <a href="">Читать полностью</a>
+  </div>
+  </div>
+  </div>
+  <div class="Swiper-Control">
+  <button class="Swiper-Prev">
+  <img src="img/ArrowLeft.svg" />
+  </button>
+  <button class="Swiper-Next">
+  <img src="img/ArrowRight.svg" />
+  </button>
+  </div>
+  </div>
+  </div>
+  </section> -->
+        
+      </main>
+      <footer>
+    <div class="Footer-Mobile">
+    <div class="FooterColomn">
+      <h3>Навигация</h3>
+      <a href="Company.php">О компании</a>
+      <a href="news.php">Новости</a>
+      <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+      <a href="index.php#AnchorProjects">Наши проекты</a>
+      <a href="index.php#AnchorForm">Контакты</a>
     </div>
-    <div class="FooterRight">
-      <div class="FooterColomn">
-        <h3>Навигация</h3>
-        <a href="Company.php">О компании</a>
-        <a href="news.php">Новости</a>
-        <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
-        <a href="index.php#AnchorProjects">Наши проекты</a>
-        <a href="index.php#AnchorForm">Контакты</a>
-      </div>
-      <div class="FooterColomn">
-            <h3>Направления</h3>
-            <a href="Marketplace.php">Маркетплейс электроники</a>
-            <a href="Investitions.php">Alikson инвестиции</a>
-            <a href="PremierCars.php">Аренда премиум авто</a>
-            <a href="Tender.php">Тендерный дивизион</a>
-            <a href="Opt.php">Оптовая дистрибуция</a>
-            <a href="Vad.php">Внешнеэкономическая деятельность</a>
-      </div>
-      <div class="FooterColomn">
-            <a href="ApartSharing.php">Apart Sharing</a>
-            <a href="Mining.php">Майнинг</a>
-            <a href="Logistick.php">Логистика</a>
-            <a href="PayAgent.php">Платежный агент</a>
-            <a href="Development.php">Девелопмент</a>
-      </div>
-      <div class="FooterColomn">
-          <h3>Социальные сети</h3>
-            <a href="https://t.me/alikson_corp">Telegram</a>
-            <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
-      </div>
+    <div class="FooterColomn">
+        <h3>Социальные сети</h3>
+          <a href="https://t.me/alikson_corp">Telegram</a>
+          <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
     </div>
-
-  </div>
-</footer>  
-  <script src="include/header.js?5.2"></script>
-  <script>
-    //Слайдеры
-    const swiperN = new Swiper(".swiperN", {
-      loop: true,
-      slidesPerView: 2,
-      spaceBetween: -20,
-      watchSlidesProgress: true, // Следит за прогрессом слайдов
-  watchSlidesVisibility: true, // Следит за видимостью слайдов
-      breakpoints: {
-        660: { slidesPerView: 3, spaceBetween: -20 },
-        980: { slidesPerView: 4, spaceBetween: 240 },
-        1440: { slidesPerView: 5, spaceBetween: 200 },
-      },
-      direction: "horizontal",
-      navigation: {
-        nextEl: ".Swiper-Next",
-        prevEl: ".Swiper-Prev",
-      },
-    });
-  </script>
-
-</body></html>
+    <div class="FooterColomn">
+          <h3>Направления</h3>
+          <a href="Marketplace.php">Маркетплейс электроники</a>
+          <a href="Investitions.php">Alikson инвестиции</a>
+          <a href="PremierCars.php">Аренда премиум авто</a>
+          <a href="Tender.php">Тендерный дивизион</a>
+          <a href="Opt.php">Оптовая дистрибуция</a>
+          <a href="Vad.php">Внешнеэкономическая деятельность</a>
+    </div>
+    <div class="FooterColomn">
+          <a href="ApartSharing.php">Apart Sharing</a>
+          <a href="Mining.php">Майнинг</a>
+          <a href="Logistick.php">Логистика</a>
+          <a href="PayAgent.php">Платежный агент</a>
+          <a href="Development.php">Девелопмент</a>
+    </div>
+    <div class="FooterColomn">
+        <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+    </div>
+    <div class="FooterColomn">
+        <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+    </div>
+    </div>
+    <div class="Footer-Desk">
+      <div class="FooterLeft">
+        <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+        <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+      </div>
+      <div class="FooterRight">
+        <div class="FooterColomn">
+          <h3>Навигация</h3>
+          <a href="Company.php">О компании</a>
+          <a href="news.php">Новости</a>
+          <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+          <a href="index.php#AnchorProjects">Наши проекты</a>
+          <a href="index.php#AnchorForm">Контакты</a>
+        </div>
+        <div class="FooterColomn">
+              <h3>Направления</h3>
+              <a href="Marketplace.php">Маркетплейс электроники</a>
+              <a href="Investitions.php">Alikson инвестиции</a>
+              <a href="PremierCars.php">Аренда премиум авто</a>
+              <a href="Tender.php">Тендерный дивизион</a>
+              <a href="Opt.php">Оптовая дистрибуция</a>
+              <a href="Vad.php">Внешнеэкономическая деятельность</a>
+        </div>
+        <div class="FooterColomn">
+              <a href="ApartSharing.php">Apart Sharing</a>
+              <a href="Mining.php">Майнинг</a>
+              <a href="Logistick.php">Логистика</a>
+              <a href="PayAgent.php">Платежный агент</a>
+              <a href="Development.php">Девелопмент</a>
+        </div>
+        <div class="FooterColomn">
+            <h3>Социальные сети</h3>
+              <a href="https://t.me/alikson_corp">Telegram</a>
+              <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>  
+    <script src="include/header.js?5.2"></script>
+    <script>
+      //Слайдеры
+      const swiperN = new Swiper(".swiperN", {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: -20,
+        watchSlidesProgress: true, // Следит за прогрессом слайдов
+    watchSlidesVisibility: true, // Следит за видимостью слайдов
+        breakpoints: {
+          660: { slidesPerView: 3, spaceBetween: -20 },
+          980: { slidesPerView: 4, spaceBetween: 240 },
+          1440: { slidesPerView: 5, spaceBetween: 200 },
+        },
+        direction: "horizontal",
+        navigation: {
+          nextEl: ".Swiper-Next",
+          prevEl: ".Swiper-Prev",
+        },
+      });
+    </script>
+  
+  </body></html>

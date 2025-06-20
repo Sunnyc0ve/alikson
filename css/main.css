@@ -9,7 +9,16 @@ body{
     background: url("../img/backMain.jpg");
     background-size: 100% 100%;
   }
+  .Swiper-Prev, .Swiper-Next{
+    transition: 0.3s ease;
+  }
+  
+  .Swiper-Prev:hover, .Swiper-Next:hover{
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
 }
+
+
 
 
 /*Слайдер*/
@@ -110,6 +119,11 @@ body{
     height: 62px;
     font-size: 24px;
     margin: auto;
+    transition: 0.3s ease;
+  }
+
+  .MainSection a:hover{
+    box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
   }
 
   @media (max-width: 1799px){
@@ -723,6 +737,12 @@ body{
       justify-content: center;
       align-items: center;
       margin-top: 7px;
+      transition: 0.3s ease;
+    }
+
+    .News-Main_mobile .Card > a:hover{
+      background: #fff;
+      color: #2375A6;
     }
 
     @media (min-width: 660px) {
@@ -1128,10 +1148,15 @@ body{
   text-transform: uppercase;
   width: 512px;
   height: 137px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   border-radius: 9.879px;
   border: 1.143px solid rgba(170, 170, 170, 0.15);
   background: #101010;
+}
+
+.Projects-Main .Links button:not(.Active):hover{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(89deg, #0385FD -11.06%, #00C899 150.14%);
+color: #FFF;
 }
 
 
@@ -1207,6 +1232,7 @@ align-items: center;
 background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
 border-radius: 6px;
 margin-top: 10px;
+transition: 0.3s;
 }
 
 
@@ -1214,10 +1240,7 @@ margin-top: 10px;
 
 
 .Projects-Main .Info .Banner a:hover {
-  background: #0485FE2B;
-  border: 1px solid #FFFFFF;
-  backdrop-filter: blur(19.4209041595459px);
-  box-shadow: 0px 0px 9.9px 0px #0485FECC,0px 0px 4.5px 0px #0485FECC,0px 0px 1.6px 0px #FFFFFF;
+  box-shadow: 0px 0px 14.5px 0px rgba(255, 255, 255, 0.25);
 
 }
 
@@ -1260,6 +1283,11 @@ justify-content: center;
 align-items: center;
 background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
 border-radius: 6px;
+transition: 0.3s;
+}
+
+.Projects-Main .Info .Stats a:hover{
+  box-shadow: 0px 0px 14.5px 0px rgba(255, 255, 255, 0.25);
 }
 
 .Projects-Main .Info .Stats > div:last-child {
@@ -1355,8 +1383,22 @@ border-radius: 6px;
     font-weight: 400;
   }
 
+.FormButtonContainer{
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  border-radius: 6.814px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.FormButtonContainer span{
+  font-size: 12.493px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFF;
+    position: absolute;
+    transition: 0.3s ease;
+}
 
   .FormSection form [type="submit"] {
     height: 40px;
@@ -1364,9 +1406,33 @@ border-radius: 6px;
     font-size: 12.493px;
     font-weight: 700;
     line-height: 100%;
-    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    background:none;
     border-radius: 6.814px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
   }
+
+  .FormButtonContainer:hover input{
+   opacity: 1;
+  }
+
+  .FormButtonContainer:hover span{
+    opacity: 0;
+   }
+
+   /* .FormButtonContainer::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+  }  */
+
+
 
   .FormSection form p{
     color: #2270A2;
@@ -1496,6 +1562,10 @@ border-radius: 6px;
   .FormSection form [type="submit"]{
     font-size: 22px;
     height: 72px;
+  }
+
+  .FormButtonContainer span{
+    font-size: 22px;
   }
 
   .FormSection form p{
