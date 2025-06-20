@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Оптовая Дистрибуция';
-$csspage='_opt.css?5.2'; 
+$csspage='_opt.css?5.3'; 
 include('include/header.php');
 ?>
 <main>
@@ -260,5 +260,5 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.2"></script>
+<script src="include/header.js?5.3"></script>
 </html>
