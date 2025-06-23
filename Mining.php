@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Майнинг';
-$csspage='_mining.css?5.3'; 
+$csspage='mining.css?5.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -175,23 +175,23 @@ include('include/header.php');
 </section>
 <section class="WhySection">
 <div class="Why-Header">
-<h2>Почему нас выбирают?</h2>
+<h2>Почему выбирают нас</h2>
 </div>
 <div class="Why-Content">
 <div class="Card">
-<img src="img/mining/Why1.png">
+<span>01</span>
 <h3>Инновации</h3>
 </div>
 <div class="Card">
-<img src="img/mining/Why2.png">
-<h3>Гарантия результата</h3>
-</div>
-<div class="Card">
-<img src="img/mining/Why3.svg">
+  <span>02</span>
 <h3>Прозрачность</h3>
 </div>
 <div class="Card">
-<img src="img/mining/Why4.svg">
+  <span>03</span>
+<h3>Гарантия результата</h3>
+</div>
+<div class="Card">
+  <span>04</span>
 <h3>Долгосрочное партнерство</h3>
 </div>
 </div>
@@ -309,7 +309,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.3"></script>
+<script src="include/header.js?5.4"></script>
 <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,

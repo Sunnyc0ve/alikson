@@ -1,6 +1,6 @@
 <?php
 $title='Alikson Маркетплэйс';
-$csspage='_marketplace.css?5.3'; 
+$csspage='_marketplace.css?5.4'; 
 include('include/header.php');
 ?>
 <main>
@@ -300,7 +300,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.3"></script>
+<script src="include/header.js?5.4"></script>
 <script>
       //Слайдеры
       const swiperP = new Swiper(".swiperP", {

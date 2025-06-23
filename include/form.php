@@ -1,21 +1,18 @@
 <section class="FormSection" id="AnchorForm">
-        <div class="Form-Header">
-          <h2>Оставьте заявку</h2>
-          <p>Оставьте заявку и получите бесплатную консультацию уже&nbsp;сегодня</p>
+    <img class="deskFormImg" src="img/FormBack.png">
+    <div class="Form-Header">
+      <p>Присоединяйтесь к ALIKSON — строим будущее вместе!</p>
+    </div>
+      <form action="" method="POST">
+        
+          <p class="FormHeaderMobile">Присоединяйтесь к ALIKSON - 
+«строим» будущее вместе!</p>
+          <input type="text" name="name" required placeholder="Ваше имя" />
+          <input type="text" name="phone" required placeholder="Ваш телефон" />
+        <div class="FormButtonContainer">
+        <span>Оставить заявку</span>
+        <input type="submit" value="Оставить заявку" />
         </div>
-        <div class="Form-Main">
-            <form action="" method="POST">
-                <div>
-                    <img src="img/inputInfo.svg" />
-                    <input type="text" name="name" required placeholder="Ваше имя" />
-                </div>
-                <div>
-                    <img src="img/inputInfo.svg" />
-                    <input type="text" name="phone" required placeholder="Ваш телефон" />
-                </div>
-
-                <input type="submit" value="Оставить заявку" />
-                <p>Мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы</p>
-            </form>
-        </div>
-</section>
+        <p>Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время, чтобы ответить на&nbsp;все вопросы</p>
+      </form>
+  </section>

@@ -1,184 +1,289 @@
 /* Секция форма */
-.FormSection {
-    padding: 90px 0px;
+  .custom-select {
     position: relative;
-    border-radius: 20px;
-    border: 1px solid rgba(53, 53, 53, 0.30);
-    background: #171717 url("../../../img/FormBack.png") no-repeat;
-    background-position: left bottom;
-    background-size: 550px;
-    margin-top: -15px;
+    cursor: pointer;
+}
+  .select-options li:nth-last-child(1) {
+    border: none;
+}
+
+  .FormSection {
+    width: 332px;
+    margin: auto;
+    border-radius: 15.212px;
+    background: rgba(16, 16, 16, 0.80);
+    margin: 16px auto 43px auto;
+    padding: 29px 14px 34px 14px;
   }
 
-  .FormSection h2{
-    color: #0485FE;
-  }
-  
   .Form-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px !important;
+    margin-bottom: 18px; 
   }
-  
-  .Form-Header p {
-    width: 715px;
-    color: #fff;
-    font-size: 24px;
-    line-height: normal;
-    letter-spacing: -0.25px;
+
+  .Form-Header p{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.086px;
   }
-  
-  
-  
-  
-  .Form-Main {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .FormSection > div {
-    width: 1280px;
-    margin: auto;
-  }
-  
-  .FormSection form {
+
+  .FormSection form{
+    height: 293px;
+    border-radius: 17.036px;
+    background: #FFF;
+    padding: 37px 24px 18px 28px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 715px;
-  }
-  
-  .FormSection form p {
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .FormSection form > div {
-    padding: 24px 39px;
-    border-radius: 10px;
-    background: #353535;
-    display: flex;
-    gap: 26px;
-  }
-  
-  
- 
-  
-  .select-header,
-  .FormSection form [type="text"]{
-    color:#fff;
-    font-size: 24px;
-    font-weight: 400;
-    font-style: normal;
-    outline: none;
+    gap: 10px;
     width: 100%;
   }
-  
-  
-  .FormSection form [type="text"]::placeholder,
-  .FormSection form [type="text"]::-webkit-input-placeholder{
-    color: rgba(255, 255, 255, 0.70);
+
+  .FormSection form input[type="text"], .custom-select{
+    font-size: 12.613px;
+    font-weight: 400;
+    padding: 12px 20px 12px 20px;
+    border-radius: 7.883px;
+    border: 1px solid #2374A6;
+    background: rgba(30, 29, 29, 0.00);
+    color: #000;
   }
-  
+
+  .FormSection form [type="text"]::-webkit-input-placeholder{
+    color: rgba(24, 24, 24, 0.70);
+  }
+
+  .select-menu span{
+    color: rgba(24, 24, 24, 0.70);
+    font-size: 12.613px;
+    font-weight: 400;
+  }
+
+.FormButtonContainer{
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  border-radius: 6.814px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormButtonContainer span{
+  font-size: 12.493px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFF;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
   .FormSection form [type="submit"] {
-    margin-bottom: 20px;
-    transition: 0.5s ease;
+    height: 40px;
+    color: #FFF;
+    font-size: 12.493px;
+    font-weight: 700;
+    line-height: 100%;
+    background:none;
+    border-radius: 6.814px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+  }
+
+  .FormButtonContainer:hover input{
+   opacity: 1;
+  }
+
+  .FormButtonContainer:hover span{
+    opacity: 0;
+   }
+
+   /* .FormButtonContainer::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+  }  */
+
+
+
+  .FormSection form p{
+    color: #2270A2;
     text-align: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-    height: 61px;
+    font-size: 9.46px;
+    font-weight: 400;
+  }
+
+  .select-options li {
+    padding: 14px 20;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12.613px;
+    border-bottom: 1px solid #2374A6;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    width: 252px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    border-top: none;
+    z-index: 10;
+    border: 1px solid #2374A6;
+}
+
+.custom-select.active .select-options {
+    display: block;
+}
+
+.custom-arrow{
+    transition: 0.3s;
+}
+
+.custom-select.active .custom-arrow {
+    transform: rotate(90deg);
+}
+
+.FormSection{
+  overflow: visible;
+}
+
+.select-header {
     display: flex;
     align-items: center;
-    border-radius: 5px;
-    border: 1px solid rgba(170, 170, 170, 0.15);
-    background: #112A4D;
-    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
-    cursor: pointer;
-  }
-  
-  .FormSection form [type="submit"]:hover {
-    color:#000;
-    background: #fff;
-    box-shadow: none;
+    justify-content: space-between;
+}
+
+.FormHeaderMobile{
+  display: none;
+}
+
+.deskFormImg{
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .FormSection{
+    width: 600px;
   }
 
-  .FormSection form > div img{
-    width: 27px;
+  .select-options{
+    width: 520px;
   }
-  
-  @media (max-width: 1439px) {
-    .FormSection > div {
-      width: 920px;
-    }
-  
-    .Form-Header p {
-      width: 545px;
-      font-size: 19px;
-    }
-  
-    .Form-Header h2 {
-      width: 300px;
-    }
-  
-    .FormSection form {
-      width: 544px;
-    }
-  }
-  
-  @media (max-width: 979px) {
-    .FormSection {
-      border-radius: 10px 10px 0px 0px;
-      border: 1px solid #353535;
-      padding: 60px 0px 75px 0px;
-      background-size: auto 100%;
-    }
-  
-    .Form-Header {
-      margin-bottom: 25px !important;
-    }
-  
-    .FormSection > div {
-      width: 600px;
-    }
-  
-    .Form-Header p, .FormSection form p {
-      display: none;
-    }
-  
-    .FormSection form [type="submit"] {
-      font-size: 16px;
-      height: 55px;
-    }
-  
-    .FormSection form [type="text"],
-    .FormSection form [type="text"]::placeholder,
-    .FormSection form [type="text"]::-webkit-input-placeholder, .custom-select span, .select-options li {
-      font-size: 16px;
-    }
-  
-    .FormSection form > div {
-      height: 50px;
-      padding: 0px 0px 0px 40px;
-      gap: 15px;
-      border-radius: 5px;
-    }
-  
-    .FormSection form {
-      width: 100%;
-      gap: 20px;
-    }
+}
 
-    .FormSection form > div img{
-      width: 18px;
-    }
+
+@media (min-width: 980px) {
+.FormSection{
+    width: 920px;
   }
-  
-  @media (max-width: 659px) {
-    .FormSection > div {
-      width: 320px;
-    }
+
+  .FormSection form {
+    height: auto;
+    gap: 20px;
+}
+ 
+}
+
+@media (min-width: 1440px) {
+.FormSection{
+    width: 1400px;
+    padding: 40px;
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
+
+  .Form-Header{
+    display: none;
+  }
+
+  .FormSection form{
+    width: 740px;
+    margin-left: auto;
+    padding: 48px 76px 41px 88px;
+    height: auto;
+    gap:18px;
+  }
+
+  .FormSection form .FormHeaderMobile{
+    display: block;
+    color: #111B23;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.231px;
+    text-align: left;
+    width: 515px;
+  }
+
+  .FormSection form input[type="text"], .custom-select{
+    font-size: 22px;
+    padding: 22px 36px;
+    border-radius: 13px;
+  }
+
+  .select-menu span{
+      font-size: 22px;
+  }
+
+  .FormSection form [type="submit"]{
+    font-size: 22px;
+    height: 72px;
+  }
+
+  .FormButtonContainer span{
+    font-size: 22px;
+  }
+
+  .FormSection form p{
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .select-options{
+    width: 772px;
+    top: 59px;
+  }
+
+  .select-options li{
+    font-size: 22px;
+  }
+
+ 
+
+      .deskFormImg {
+        display: block;
+        position: absolute;
+        width: 557px;
+        bottom: 0px;
+        left: -7px;
+    }
+}
+
+@media (min-width: 1800px) {
+  .FormSection{
+    width: 1790px;
+  }
+
+   .deskFormImg{
+    top: 0px;
+    height: 100%;
+    bottom: unset;
+    left: unset;
+    width: auto;
+  }
+
+   .FormSection form{
+    width: 936px;
+  }
+
+}

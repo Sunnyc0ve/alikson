@@ -986,38 +986,31 @@ font-weight: 500;
 }
 
 .WhySection > *{
-    width: 1280px;
+    width: 1490px;
     margin: auto;
 }
 
 .Why-Content{
-    margin-top: 50px;
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .Why-Content .Card{
-    transition: 0.5s ease;
-    display: flex;
-    gap:20px;
-    padding: 20px;
-    align-items: center;
-    border-radius: 10px;
-    background: #171717;
-    border: 1px solid #FFFFFF60;
-    backdrop-filter: blur(10px);
 }
 
-.Why-Content .Card > img{
-  width: 30px;
+.Why-Content .Card span{
+  color: #00C99A;
+font-size: 70px;
+font-weight: 400;
+margin-bottom: 10px;
+
 }
 
 .Why-Content .Card h3{
-    color:#fff;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: normal;
+   color: #FFF;
+font-size: 24px;
+font-weight: 400;
 }
 
 @media (max-width: 1439px){
@@ -1063,19 +1056,14 @@ font-weight: 500;
 
 /*Пакеты услуг*/
 .PacksSection{
-  padding: 90px 0px 105px 0px;
-  background: #171717 url("../../img/development/InvestitionsBack.png") center;
-  background-size: 1920px 100%;
-  border: 1px solid #3535354D;
-  border-radius: 20px 20px 0px 0px;
-  margin-top: -15px;
-  position: relative;
+  width: 1790px;
+  margin: auto;
+  padding: 80px 150px;
+  border-radius: 20px;
+background: rgba(16, 16, 16, 0.80);
 }
 
-.PacksSection > *{
-  width: 1280px;
-  margin: auto;
-}
+
 
 .Packs-Content, .Packs-Content_mobile{
   display: grid;
@@ -1086,7 +1074,7 @@ font-weight: 500;
 
 .Packs-Content .Card, .Packs-Content_mobile .Card{
   transition: 0.5s ease;
-  background: #2C2C2C;
+  background: #fff;
   backdrop-filter: blur(10px);
   border-radius: 10px;
   display: flex;
@@ -1094,40 +1082,42 @@ font-weight: 500;
 }
 
 .Packs-Content .Card .Card-Header, .Packs-Content_mobile .Card .Card-Header{
-  padding: 20px;
-  border-bottom: 2px solid #5A5A5A;
+  padding: 40px 30px;
+  border-bottom: 2px solid #0485FE;
 }
 
 .Packs-Content .Card .Card-Content, .Packs-Content_mobile .Card .Card-Content{
-  padding: 20px;
+   padding: 40px 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .Packs-Content .Card h3, .Packs-Content_mobile .Card h3{
   color:#0485FE;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 26px;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .Packs-Content .Card p, .Packs-Content_mobile .Card p{
-  color:#fff;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: normal;
+  color: #212121;
+font-size: 19px;
+font-weight: 400;
 }
 
 .Packs-Content .Card li, .Packs-Content_mobile .Card li{
-  color:#fff;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: normal;
   list-style: disc;
-  margin-left: 18px;
+  color: #212121;
+font-size: 19px;
+font-weight: 400;
+line-height:  95.879%;
+margin-left: 19px;
+margin-bottom: 10px;
 }
+
+
 
 .Packs-Content_mobile{
   display: none;
