@@ -81,7 +81,15 @@ body{
 
 
 
-
+main > video{
+      position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.5;
+        mix-blend-mode: lighten;
+}
 
 /* Главная секция */
   .MainSection{
@@ -146,6 +154,10 @@ body{
     .MainSection p{
     width: auto;
   }
+
+  main > video{
+    top: 400px;
+}
   }
 
 
@@ -155,6 +167,10 @@ body{
     margin: auto;
     padding: 58px 0px 25px 0px;
   }
+
+    main > video{
+    top: 390px;
+}
 
   h1{
     font-size: 40px;
@@ -263,6 +279,33 @@ body{
     align-items: center;
     width: 100%;
   }
+
+  .Map{
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    transition: 1s ease;
+  }
+
+  .ActiveMap{
+    opacity: 1;
+  }
+
+  [map-id="2"] > div{
+    display: flex;
+    gap:10px;
+  }
+
+  [map-id="3"] > div{
+    display: flex;
+    gap:10px;
+  }
+  
+
+  .ImgMapCont img{
+    width: 20px;  
+
+  }
   
 @media (min-width: 660px) {
   .AboutSection{
@@ -277,6 +320,23 @@ body{
 }
 
 @media (min-width: 1440px) {
+ .Map{
+    width: 800px;
+  }
+
+  .ImgMapCont img{
+    width: auto;  
+
+  }
+
+  [map-id="2"] > div{
+    gap:38px;
+  }
+
+  [map-id="3"] > div{
+    gap:38px;
+  }
+
 .AboutSection{
     width: 1400px;
     padding: 87px 0px 44px 0px;
@@ -459,46 +519,71 @@ body{
     width: 300px;
     height: 190px;
     padding: 14.25px;
-    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
     border-radius: 7px;
+    background: #fff;
+    transition: 0.3s;
+z-index: 1000;
+position: relative;
   }
+
+
+
+   .Buisnes-Main_mobile .swiper-slide-active .Card p, .Buisnes-Main_mobile .swiper-slide-active .Card span, .Buisnes-Main_mobile .swiper-slide-active .Card h3{
+    color: #fff;
+   }
+
+  .Buisnes-Main_mobile .Card::before{
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  transition: 0.3s ease;
+    border-radius: 7px;
+  z-index: -1000;
+}
+
+.Buisnes-Main_mobile .swiper-slide-active .Card::before {
+  opacity: 1;
+}
 
   .Buisnes-Main_mobile .Card img{
     position: absolute;
     top: 0px;
-    right: 55px;
+    right: 0px;
     width: 143px;
     height: 128px;
   }
 
   .Buisnes-Main_mobile .Card span{
-    color: rgba(255, 255, 255, 0.74);
+    color: #000;
     font-size: 15.675px;
     font-weight: 500;
   }
 
   .Buisnes-Main_mobile .Card h3{
-    color: rgba(255, 255, 255, 0.74);
+    color: #000;
     font-size: 14.25px;
     font-weight: 500;
     text-transform: uppercase;
     margin: 72px 0px 14px 0px;
   }
 
-    .Buisnes-Main_mobile .Card p{
-      color: #FFF;
-      font-size: 10.45px;
-      font-weight: 400;
-      letter-spacing: -0.119px;
-    }
+  .Buisnes-Main_mobile .Card p{
+    color: #000;
+    font-size: 10.45px;
+    font-weight: 400;
+    letter-spacing: -0.119px;
+  }
+
 
 @media (min-width: 660px) {
   .BuisnesSection{
     width: 600px;
-  }
-
-  .Buisnes-Main_mobile .Card img{
-    right: 50px;
   }
 }
 
@@ -510,9 +595,7 @@ body{
   .BuisnesSection .swiperB{
     width: 1200px;
   }
-    .Buisnes-Main_mobile .Card img {
-        right: 577px;
-    }
+   
 }
 
 @media (min-width: 1440px) {
@@ -559,8 +642,8 @@ body{
   }
 
   .BuisnesSection .Swiper-Control .Swiper-Prev {
-    margin: 0px 4px 0px 26px;
-}
+      margin: 0px 4px 0px 26px;
+  }
 
 .Buisnes-Main_mobile .Card {
     width: 630px;
@@ -569,14 +652,16 @@ body{
     border-radius: 15px;
 }
 
+.Buisnes-Main_mobile .Card::before{
+    border-radius: 15px;
+}
+
 .Buisnes-Main_mobile .Card span{
   font-size: 33px;
-  color: #fff;
 }
 
 .Buisnes-Main_mobile .Card h3{
   font-size: 30px;
-  color: #fff;
   margin: 153px 0px 30px 0px;
 }
 
@@ -596,7 +681,6 @@ body{
 .Buisnes-Main_mobile .Card img{
   width: auto;
   height: auto;
-  right: 620px;
 }
 }
 
@@ -609,7 +693,7 @@ body{
     width: 1790px;
   }
   .Buisnes-Main_mobile .Card img{
-  right: -50px;
+  right: 0px;
 }
 
 

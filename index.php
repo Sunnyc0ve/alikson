@@ -3,20 +3,9 @@ $title = 'Alikson';
 include('include/header.php');
 ?>
 <main>
-  <!-- <section class="MainSection">
-    <div class="VideoContainer">
-      <video muted autoplay loop playsinline class="Video_desktop">
-        <source src="img/mainVideo.mp4" />
-      </video>
-      <video muted autoplay loop playsinline class="Video_mobile">
-        <source src="img/mainVideo_1.mp4" />
-      </video>
-    </div>
-    <div class="MainContainer">
-      <p>Технологии.<br />Доверие.<br />Результат.</p>
-      <a href="#AnchorForm">Связаться</a>
-    </div>
-  </section> -->
+  <video muted autoplay loop>
+    <source src="img/videoMain.mp4" type="video/mp4" />
+  </video>
   <section class="MainSection">
     <h1>Технологии. Доверие. Результат.</h1>
     <p>Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>
@@ -44,7 +33,6 @@ include('include/header.php');
             <div class="item"><img src="img/About6.png" /></div>
             <div class="item"><img src="img/About7.png" /></div>
             <div class="item"><img src="img/About8.png" /></div>
-            <!-- <div class="item"><img src="img/About8_1.png" /></div> -->
             <div class="item"><img src="img/About9.png" /></div>
             <div class="item"><img src="img/About10.png" /></div>
             <div class="item"><img src="img/About11.png" /></div>
@@ -59,7 +47,6 @@ include('include/header.php');
             <div class="item"><img src="img/About6.png" /></div>
             <div class="item"><img src="img/About7.png" /></div>
             <div class="item"><img src="img/About8.png" /></div>
-            <!-- <div class="item"><img src="img/About8_1.png" /></div> -->
             <div class="item"><img src="img/About9.png" /></div>
             <div class="item"><img src="img/About10.png" /></div>
             <div class="item"><img src="img/About11.png" /></div>
@@ -72,8 +59,46 @@ include('include/header.php');
       <div class="hwn"><h2>ЦИФРЫ<br>КОМПАНИИ</h2><span>02</span></div>
     </div>
     <div class="Numbers-Main">
+      <div map-id="1" class="Map ActiveMap">
        <p>офисы по всему миру</p>
        <p class="Big">ОАЭ, китай, европа</p>
+      </div>
+      <div map-id="2" class="Map">
+         <p>годовой оборот</p>
+        <div>
+      
+       <p class="Big">42,8</p>
+       
+       <div class="ImgMapCont">
+        <img src="img/mining/ArrowUpBig.png">
+        <p>млрд</p>
+       </div>
+       </div>
+      </div>
+      <div map-id="3" class="Map">
+        
+       <p>недвижимость компании</p>
+        <div>
+       <p class="Big">20</p>
+       
+       <div class="ImgMapCont">
+        <img src="img/mining/ArrowUpBig.png">
+        <p>млн$</p>
+       </div>
+       </div>
+      </div>
+      <div map-id="4" class="Map">
+       <p>международных партнеров</p>
+       <p class="Big">100+</p>
+      </div>
+      <div map-id="5" class="Map">
+       <p>сотрудников</p>
+       <p class="Big">400+</p>
+      </div>
+      <div map-id="6" class="Map">
+       <p>проектов в инвестиционном портфеле</p>
+       <p class="Big">20+</p>
+      </div>
     </div>
   </section>
   <section class="BuisnesSection">
@@ -728,13 +753,13 @@ include('include/header.php');
     let startX;
     let scrollLeft;
     let isScrolling = false;
-    let speed = 0.5; // Скорость автопрокрутки
+    let speed = 0.6; // Скорость автопрокрутки
     let autoScroll;
 
     function startAutoScroll() {
       if (!isScrolling) {
         autoScroll = setInterval(() => {
-          marquee.scrollLeft += 1;
+          marquee.scrollLeft += speed;
           if (marquee.scrollLeft >= marquee.scrollWidth / 2) {
             marquee.scrollLeft = 0; // Перепрыгиваем в начало без рывков
           }
@@ -808,6 +833,20 @@ include('include/header.php');
       }
     });
   });
+
+
+
+
+  //Карта анимки
+  let mapid=1
+  setInterval(()=>{
+    mapid++
+    document.querySelector('.ActiveMap').setAttribute('class','Map')
+    document.querySelector(`[map-id="${mapid}"]`).setAttribute('class','Map ActiveMap')
+    if(mapid==6){
+      mapid=0
+    }
+  },3000)
 </script>
 
 </html>

@@ -5,33 +5,31 @@ include('include/header.php');
 ?>
 <main>
 <section class="MainSection">
-<div class="MainSection-Header">
-<h1>Майнинг</h1>
-<p>Alikson Group предлагает полный цикл решений в&nbsp;сфере майнинга. Мы&nbsp;гарантируем высокую надежность, минимизацию рисков и&nbsp;стабильный доход</p>
-</div>
-<div class="MainSection-Content">
-<a href="#AnchorForm">Оставить заявку</a>
-<div>
-<div class="Info">
-<div>
-<h3>3&nbsp;000+</h3>
-<p>устройств в&nbsp;работе</p>
-</div>
-</div>
-<div class="Info">
-<div>
-<h3>40-70%</h3>
-<p>годовых доходности</p>
-</div>
-</div>
-<div class="Info">
-<div>
-<h3>5</h3>
-<p>дата-центров</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="Background">
+  </div>
+  <h1>Майнинг</h1>
+  <p>Alikson Group предлагает полный цикл решений в сфере майнинга. Мы гарантируем высокую надежность, минимизацию рисков и стабильный доход</p>
+  <a href="">Оставить заявку</a>
+  <div class="Main-Content">
+    <div class="Main-El">
+      <div>
+        <h3>3 000+</h3>
+        <p>устройств в работе</p>
+      </div>
+    </div>
+    <div class="Main-El">
+      <div>
+        <h3>40-70%</h3>
+        <p>годовой доходности</p>
+      </div>
+    </div>
+    <div class="Main-El">
+      <div>
+        <h3>5</h3>
+        <p>дата-центров</p>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="AboutSection">
 <h2>Почему майнинг выгоден?</h2>
@@ -76,37 +74,37 @@ include('include/header.php');
 </section>
 <section class="VsSection">
 <div class="Vs-Header">
-<h2>МАЙНИНГ или вклад в&nbsp;банк</h2>
-<p>сравнение</p>
+<h2>МАЙНИНГ или вклад в&nbsp;банк<br><span>сравнение</span></h2>
 </div>
 <div class="Vs-Content"> 
 <div class="Card">
 <div class="Card-Header">
-<h3>ДОХОД ЗА&nbsp;ГОД от&nbsp;банка</h3>
+<h3>Доход за год от банка</h3>
 <div>
 <div>
 <img src="img/mining/ArrowUp.svg">
 <span>+10-20%</span>
 </div>
-<p>Доходность <span>за&nbsp;год</span></p>
+<p>Доходность за&nbsp;год</p>
 </div>
 </div>
 <div class="Card-Content">
 <span>БАНК</span>
 </div>
 <div class="Card-Footer">
-<p>Ваш вклад&nbsp;<span>&mdash; 300 000₽</span></p>
-<p>Ваш доход&nbsp;<span>&mdash; 60 000₽</span></p>
+<p>Ваш вклад&nbsp;<span>- 300 000₽</span></p>
+<p>Ваш доход&nbsp;<span>- 60 000₽</span></p>
 </div>
 </div>
 <div class="Card">
 <div class="Card-Header">
-<h3>ДОХОД ЗА&nbsp;ГОД<br> с&nbsp;аликсон</h3>
+<h3>Доход за год с АЛИКСОН</h3>
+<div class="Card-Header-Content">
 <div>
-<img class="decor" src="img/mining/decor.png">
 <div>
 <img src="img/mining/ArrowUp_1.svg">
 <span>+40-70%</span>
+</div>
 </div>
 <p>Доходность <span>за&nbsp;год</span></p>
 </div>
@@ -115,8 +113,8 @@ include('include/header.php');
 <span>ALIKSON<br> МАЙНИНГ</span>
 </div>
 <div class="Card-Footer">
-<p>Ваш вклад&nbsp;<span>&mdash; 300 000₽</span></p>
-<p>Ваш доход&nbsp;<span>&mdash; 135 000₽</span></p>
+<p>Ваш вклад&nbsp;<span>- 300 000₽</span></p>
+<p>Ваш доход&nbsp;<span>- 135 000₽</span></p>
 </div>
 </div>
 </div>
@@ -130,7 +128,7 @@ include('include/header.php');
 <div>
 <div class="Services-Left">
 <h2>Наши услуги</h2>
-<div><img src="img/mining/Services.png"></div>
+<img src="img/mining/Services.png">
 </div>
 <div class="Services-Right">
 <div class="Card">
