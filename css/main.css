@@ -87,7 +87,7 @@ main > video{
     left: 0px;
     top: 0px;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.2;
         mix-blend-mode: lighten;
 }
 
@@ -184,6 +184,7 @@ main > video{
     font-size: 40px;
     color: #fff;
     font-weight: 600;
+    text-align: left;
   }
 
   .MainSection p {
@@ -191,7 +192,8 @@ main > video{
     color: #ffffff80;
     font-weight: 400;
     width: 230px;
-    margin: 23px auto 281px auto;
+    margin: 23px 0px 281px 0px;
+    text-align: left;
   }
 
   .MainSection a {
