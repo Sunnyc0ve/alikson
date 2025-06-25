@@ -1,0 +1,661 @@
+/* ОБЩИЕ */
+body {
+    background: url("../../img/backMainMob.jpg");
+    background-size: 100% 100%;
+}
+
+@media (min-width: 980px) {
+    body {
+        background: url("../../img/backMain.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+/* Главная секция*/
+.MainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 170px 0px 250px 0px;
+    position: relative;
+}
+
+/* .MainSection .Background {
+  background: url('../../img/tender/MainBack.png');
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 1920px;
+  height: 920px;
+  top: -120px;
+  z-index: -1;
+} */
+
+.MainBack1 {
+    position: absolute;
+    left: 0px;
+    mix-blend-mode: color-dodge;
+    top: 250px;
+}
+
+.MainBack2 {
+    position: absolute;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    top: 70px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.72px;
+}
+
+.MainSection>p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    width: 935px;
+}
+
+.MainSection a {
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 486px;
+    height: 62px;
+    font-size: 24px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+
+.MainSection a:hover {
+    box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
+}
+
+.MainSection .Main-Content {
+    display: grid;
+    width: 678px;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    margin-top: 60px;
+}
+
+.Main-El {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+}
+
+.Main-El h3 {
+    color: #FFF;
+    font-size: 46.217px;
+    font-weight: 700;
+    line-height: 78.5%;
+    margin-bottom: 7px;
+}
+
+.Main-El p {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 12.999px;
+    font-weight: 400;
+}
+
+.Main-El::before {
+    content: "";
+    display: block;
+    border-radius: 43px;
+    background: #0485FE;
+    width: 2px;
+    height: 50px;
+}
+
+@media (max-width: 1799px) {}
+
+@media (max-width: 1439px) {}
+
+@media (max-width: 979px) {
+    .MainSection {
+        width: 620px;
+        margin: auto;
+        align-items: start;
+        padding: 60px 0px;
+    }
+
+    .MainSection .Main-Content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .MainSection a {
+        width: 100%;
+    }
+
+
+    .MainSection>p {
+        width: auto;
+        text-align: left;
+    }
+
+    .Main-Group {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 659px) {
+    .MainSection {
+        width: 320px;
+        gap: 20px;
+        position: static;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .MainSection>p {
+        font-size: 13px;
+        width: 285px;
+    }
+
+    .Main-El:last-child {
+        display: none;
+    }
+
+    .MainSection .Main-Content {
+        margin-top: 130px;
+    }
+
+    .Main-El h3 {
+        font-size: 18px;
+    }
+
+    .Main-El p {
+        font-size: 12px;
+    }
+
+    .Main-El>div p {
+        width: 70px;
+    }
+
+    .MainSection a {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .MainSection .Background {
+        background: url('../../img/mining/MainBackMobile.png');
+        width: 360px;
+        top: 0px;
+        height: 530px;
+        left: 0px;
+    }
+}
+
+
+
+/*Рост*/
+.GrowSection {
+    width: 1790px;
+    padding: 80px 120px 0px 150px;
+    border-radius: 20px;
+    background: rgba(16, 16, 16, 0.80);
+    margin: auto;
+}
+
+.GrowSection>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.GrowSection h2 {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.Grow-Header>div>div {
+    width: 354px;
+    height: 103px;
+    border-radius: 150px;
+    background: rgba(4, 133, 254, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-bottom: 30px;
+}
+
+.Grow-Header {
+    display: flex;
+    flex-direction: column;
+}
+
+.Grow-Header>div {
+    margin-top: auto;
+    padding-bottom: 80px;
+}
+
+.Grow-Header span {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.Grow-Header p {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Grow-Header p span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Grow-Content {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+}
+
+.Grow-Content h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Grow-Content p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Grow-Content .Graph-Header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    height: 42px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 5px auto 10px auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Grow-Header_mobile{
+    display: none;
+}
+
+
+@media (max-width: 1799px) {
+    .GrowSection {
+        width: 1400px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .Grow-Header>div>div {
+        width: 240px;
+        padding: 0px 20px;
+    }
+
+    .Grow-Header span {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .GrowSection {
+        width: 920px;
+    }
+    .Grow-Header{
+        display: none;
+    }
+.GrowSection>div{
+    display: block;
+}
+
+    .Grow-Header_mobile>div>div {
+    width: 354px;
+    height: 103px;
+    border-radius: 150px;
+    background: rgba(4, 133, 254, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-bottom: 30px;
+}
+
+.Grow-Header_mobile {
+    display: block;
+}
+
+.Grow-Header_mobile>div {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.Grow-Header_mobile span {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.Grow-Header_mobile p {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Grow-Header_mobile p span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Grow-Content > div img{
+    width: 270px;
+}
+}
+
+@media (max-width: 979px) {
+    .GrowSection {
+        width: 620px;
+    }
+}
+
+@media (max-width: 659px) {}
+
+
+
+/*Преимущества секция*/
+.AdvantagesSection {
+    border-radius: 20px;
+    background: #C2C4C5;
+    padding: 80px 150px;
+    width: 1790px;
+    margin: 30px auto 80px auto;
+}
+
+.Advantages-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Advantages-Header h2 {
+    color: #000;
+    width: 220px;
+}
+
+.Advantages-Header p {
+    color: #171717;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    width: 650px;
+}
+
+
+.Advantages-Content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-rows: 370px;
+}
+
+.Advantages-Content .Card {
+    padding: 34px 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    position: relative;
+    overflow: hidden;
+}
+
+.Advantages-Content .Card img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    z-index: 0;
+}
+
+.Advantages-Content .Card span {
+    color: #FFF;
+    font-size: 24.736px;
+    font-weight: 500;
+}
+
+.Advantages-Content .Card p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.281px;
+}
+
+.Advantages-Content .Card h3 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 80px 0px 20px 0px;
+    height: 53px;
+    width: 200px;
+}
+
+@media (max-width: 1799px) {
+    .AdvantagesSection {
+        width: 1400px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .AdvantagesSection {
+        width: 920px;
+    }
+
+    .Advantages-Content{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 979px) {}
+
+@media (max-width: 659px) {}
+
+
+
+
+/*Услуги секция*/
+.ServicesSection {
+    width: 1490px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+
+.Services-Header .wrap {
+    margin: 80px 0px;
+}
+
+
+.Services-Content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.Services-Header-Flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Services-Header-Flex p {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    width: 560px;
+}
+
+.Services-Content .Card {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 11px;
+    background: rgba(36, 36, 36, 0.50);
+}
+
+.Services-Content .Card img {
+    border-radius: 54.948px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+}
+
+.Services-Content .Card p {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+    width: 570px;
+}
+
+.Services-Content .Card h3 {
+    color: #FFF;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+.items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+}
+
+.items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+    height: 400px;
+    width: 600px;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+}
+
+.marquee {
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@media (max-width: 1799px) {
+    .ServicesSection {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .ServicesSection {
+        width: 920px;
+    }
+
+    .Services-Content .Card p{
+        width: auto;
+    }
+}
+
+@media (max-width: 979px) {}
+
+@media (max-width: 659px) {}
+
+
+/* Секция партнёры */
+
+
+.PartnersSection .wrap {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.PartnersSection .item img {
+    height: 42px;
+    width: auto;
+    border-radius: 5px;
+}
+
+
+.PartnersSection .marquee {
+    animation: scroll 250s linear infinite;
+}
+
+.PartnersSection .item {
+    width: auto;
+    height: auto;
+}
+
+@media (min-width: 980px) {
+    .PartnersSection .item img {
+        height: auto;
+    }
+}

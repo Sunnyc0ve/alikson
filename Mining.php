@@ -1,6 +1,6 @@
 <?php
 $title = 'Alikson Майнинг';
-$csspage = 'mining.css?5.6';
+$csspage = 'mining.css?5.7';
 include('include/header.php');
 ?>
 <main>
@@ -303,7 +303,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.6"></script>
+<script src="include/header.js?5.7"></script>
 <script>
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
