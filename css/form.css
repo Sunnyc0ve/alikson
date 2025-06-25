@@ -29,7 +29,7 @@
   }
 
   .FormSection form{
-    height: 293px;
+    height: auto;
     border-radius: 17.036px;
     background: #FFF;
     padding: 37px 24px 18px 28px;
@@ -222,7 +222,7 @@
     font-weight: 500;
     letter-spacing: -0.231px;
     text-align: left;
-    width: 515px;
+    width: auto;
   }
 
   .FormSection form input[type="text"], .custom-select{

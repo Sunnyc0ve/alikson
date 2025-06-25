@@ -1,12 +1,11 @@
 <section class="FormSection" id="AnchorForm">
     <img class="deskFormImg" src="img/FormBack.png">
     <div class="Form-Header">
-      <p>Присоединяйтесь к ALIKSON — строим будущее вместе!</p>
+      <p>Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
     </div>
       <form action="" method="POST">
         
-          <p class="FormHeaderMobile">Присоединяйтесь к ALIKSON - 
-«строим» будущее вместе!</p>
+          <p class="FormHeaderMobile">Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
           <input type="text" name="name" required placeholder="Ваше имя" />
           <input type="text" name="phone" required placeholder="Ваш телефон" />
         <div class="FormButtonContainer">

@@ -1,11 +1,11 @@
 /* ОБЩИЕ */
-body{
+body {
   background: url("../../img/backMainMob.jpg");
   background-size: 100% 100%;
 }
 
 @media (min-width: 980px) {
-  body{
+  body {
     background: url("../../img/backMain.jpg");
     background-size: 100% 100%;
   }
@@ -19,128 +19,211 @@ body{
 
 
 /* Главная секция*/
-  .MainSection{
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    align-items: center;
-    padding: 170px 0px 250px 0px;
-    position: relative;
-  }
+.MainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 170px 0px 250px 0px;
+  position: relative;
+}
 
-  .MainSection .Background{
-    background: url('../../img/mining/MainBack.jpg');
-    mix-blend-mode: overlay;
-    position: absolute;
-    width: 100%;
-    height: 920px;
-    top: -120px;
-    z-index: -1;
-  }
+.MainSection .Background {
+  background: url('../../img/mining/MainBack.jpg');
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 1920px;
+  height: 920px;
+  top: -120px;
+  z-index: -1;
+}
 
-  h1{
-    color: #FFF;
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 111%; 
-    letter-spacing: -0.72px;
-  }
+h1 {
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 111%;
+  letter-spacing: -0.72px;
+}
 
-  .MainSection > P{
-    color: #FFF;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: -0.25px;
-    width: 935px;
-  }
+.MainSection>p {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  width: 935px;
+}
 
-    .MainSection a{
-    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    border-radius: 8px;
-    width: 486px;
-    height: 62px;
-    font-size: 24px;
-    margin: auto;
-    transition: 0.3s ease;
-  }
+.MainSection a {
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 486px;
+  height: 62px;
+  font-size: 24px;
+  margin: auto;
+  transition: 0.3s ease;
+}
 
-    .MainSection a:hover{
-    box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
-  }
+.MainSection a:hover {
+  box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
+}
 
-  .MainSection .Main-Content{
-    display: grid;
-    width: 678px;
-    grid-template-columns: 1fr 1fr 0.6fr;
-    margin-top: 30px;
-  }
+.MainSection .Main-Content {
+  display: grid;
+  width: 678px;
+  grid-template-columns: 1fr 1fr 0.6fr;
+  margin-top: 60px;
+}
 
-.Main-El{
+.Main-El {
   display: flex;
   align-items: start;
   gap: 14px;
 }
 
+.Main-El h3 {
+  color: #FFF;
+  font-size: 46.217px;
+  font-weight: 700;
+  line-height: 78.5%;
+  margin-bottom: 7px;
+}
+
+.Main-El p {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 12.999px;
+  font-weight: 400;
+}
+
+.Main-El::before {
+  content: "";
+  display: block;
+  border-radius: 43px;
+  background: #0485FE;
+  width: 2px;
+  height: 50px;
+}
+
+@media (max-width: 1799px) {}
+
+@media (max-width: 1439px) {}
+
+@media (max-width: 979px) {
+  .MainSection{
+    width: 620px;
+    margin: auto;
+    align-items: start;
+    padding: 60px 0px;
+  }
+
+  .MainSection .Main-Content{
+    grid-template-columns: 1fr;
+    gap:20px;
+    width: 100%;
+  }
+
+  .MainSection a{
+    width: 100%;
+  }
+
+
+  .MainSection>p{
+    width: auto;
+    text-align: left;
+  }
+
+  .Main-Group{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 659px) {
+    .MainSection{
+    width: 320px;
+    gap:20px;
+    position: static;
+  }
+
+  h1{
+    font-size: 44px;
+  }
+
+  .MainSection>p{
+    font-size: 13px;
+    width: 285px;
+  }
+
+  .Main-El:last-child{
+    display: none;
+  }
+  .MainSection .Main-Content{
+    margin-top: 130px;
+  }
+
   .Main-El h3{
-    color: #FFF;
-font-size: 46.217px;
-font-weight: 700;
-line-height: 78.5%;
-margin-bottom: 7px;
+    font-size: 18px;
   }
 
   .Main-El p{
-color: rgba(255, 255, 255, 0.80);
-font-size: 12.999px;
-font-weight: 400;
+    font-size: 12px;
   }
 
-  .Main-El::before{
-    content:"";
-    display: block;
-    border-radius: 43px;
-    background: #0485FE;
-    width: 2px;
-    height: 50px;
+  .Main-El > div p{
+    width: 70px;
   }
 
+  .MainSection a{
+    font-size: 16px;
+    height: 40px;
+  }
 
+  .MainSection .Background{
+    background: url('../../img/mining/MainBackMobile.png');
+    width: 360px;
+    top: 0px;
+    height: 530px;
+    left: 0px;
+  }
+}
 
 
 /*Почему майнинг выгоден*/
 
-.AboutSection{
+.AboutSection {
   width: 1790px;
   margin: auto;
   border-radius: 20px;
-background: #C2C4C5;
-padding: 80px 150px;
+  background: #C2C4C5;
+  padding: 80px 150px;
 }
 
-.AboutSection h2{
+.AboutSection h2 {
   color: #000;
 }
 
 
 
-.About-Content .wrap{
+.About-Content .wrap {
   margin: 30px 0px;
 }
 
-.About-Content .Info{
+.About-Content .Info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 122px;
-  gap:20px;
+  gap: 20px;
 }
 
-.About-Content .Info > div{
+.About-Content .Info>div {
   transition: 0.5s ease;
   border-radius: 10px;
   background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
@@ -148,17 +231,17 @@ padding: 80px 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:12px;
+  gap: 12px;
   justify-content: center;
 }
 
-.About-Content h3{
+.About-Content h3 {
   color: #FFF;
   font-size: 37px;
   font-weight: 500;
 }
 
-.About-Content p{
+.About-Content p {
   color: rgba(255, 255, 255, 0.60);
   font-size: 21px;
   font-weight: 400;
@@ -182,17 +265,18 @@ padding: 80px 150px;
   justify-content: space-around;
   min-width: 100%;
 }
+
 .item {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
-width: 480px;
-height: 300px;
+  width: 480px;
+  height: 300px;
 }
 
-.item img{
+.item img {
   height: 100%;
   width: 100%;
 }
@@ -205,6 +289,7 @@ height: 300px;
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-100% - 20px));
   }
@@ -214,766 +299,770 @@ height: 300px;
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-100% - 20px));
   }
 }
-  
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 20px));
-    }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
 
-  @media (max-width: 1439px){
-    /*920*/
-    .AboutSection > *{
-        width: 920px;
-    }
+  to {
+    transform: translateX(calc(-100% - 20px));
   }
-
-  @media (max-width: 979px) {
-    /*600*/
-    .AboutSection{
-        border: 1px solid #353535;
-        padding: 60px 0px 75px 0px;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    .About-Content .wrap{
-        margin: 25px 0px;
-    }
-
-    .AboutSection > *{
-        width: 600px;
-    }
-
-    .About-Content .Info{ 
-        grid-template-columns: 1fr;
-    }
-
-    .item{
-        width: 268px;
-        height: 162px;
-    }
-
-    .items{
-        gap: 13px;
-    }
-
-    .items-wrap{
-        gap: 13px;
-    }
-
-    .About-Content p{
-        font-size: 16px;
-    }
-
-    .About-Content h3{
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 659px) {
-    /*320*/
-    .AboutSection > *{
-        width: 320px;
-    }
-  }
-
-
-
-
-
-
-  /*Майнинг или банк*/
-  .VsSection{
-    padding: 80px 0px;
-  }
-
-  .VsSection > div{
-    width: 1490px;
-    margin: auto;
-  }
-
-  .VsSection .Vs-Header{
-    margin-bottom: -100px;
-  }
-
-  .Vs-Header h2{
-    color: #ffffff80;
-  }
-
-  .Vs-Header h2 span{
-    color: #04FE9A;
-  }
-
-  .Vs-Header p{
-    color: #FFF;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 111%;
-    text-transform: uppercase;
-    color:#0485FE;
-  }
-
-
-  .Vs-Content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px !important;
-  }
-
-  .Vs-Content .Card:first-child{
-    background: #171717;
-    width: 548px;
-    height: 394px;
-    padding: 20px;
-    border-radius: 11px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .Vs-Content .Card:first-child .Card-Header h3{
- color: #FFF;
-font-size: 37px;
-font-weight: 500;
-  width: 258px;
-  }
-
-  .Vs-Content .Card:first-child .Card-Header > div > div{
-    border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.60);
-    width: 178px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    margin: 15px 0px;
-  }
-
-  .Vs-Content .Card:first-child .Card-Header > div > div span{
-    color: rgba(255, 255, 255, 0.60);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 111%;
-    text-transform: uppercase;
-  }
-
-  .Vs-Content .Card:first-child .Card-Header p{
-    color: #FFF;
-font-size: 21px;
-font-weight: 400;
-  }
-
-
-
-  .Vs-Content .Card:first-child .Card-Content {
-    position: absolute;
-    background: url(../../img/mining/Vs1.svg);
-    width: 270px;
-    height: 268px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 76px;
-    right: 20px;
 }
 
-  .Vs-Content .Card:first-child .Card-Content span{
-    color: #787878;
-    text-align: center;
-    font-size: 27.713px;
+@media (max-width: 1799px) {
+  .AboutSection {
+    width: 1400px;
+  }
+
+
+}
+
+@media (max-width: 1439px) {
+  .AboutSection {
+    width: 920px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 430px;
+    height: 250px;
+  }
+
+  .About-Content h3 {
+    color: #FFF;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 124.081%;
-    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 979px) {
+.AboutSection {
+    width: 620px;
   }
 
-  .Vs-Content .Card:first-child .Card-Footer p{
-   color: rgba(255, 255, 255, 0.70);
+  .About-Content .Info{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 659px) {
+  .AboutSection {
+    width: 320px;
+  }
+
+  .item {
+    width: 230px;
+    height: 138px;
+  }
+
+  .items-wrap {
+    gap: 10px;
+  }
+
+  .items {
+    gap: 10px;
+  }
+
+  .About-Content h3{
+    font-size: 16px;
+  }
+
+  .About-Content p{
+    font-size: 11px;
+  }
+
+  .About-Content .Info>div{
+    padding: 10px;
+    gap:2px;
+  }
+
+  .About-Content .Info {
+    grid-auto-rows: 68px;
+    gap:10px;
+  }
+
+  .About-Content .wrap {
+    margin: 20px 0px;
+  } 
+}
+
+
+
+
+
+
+/*Майнинг или банк*/
+.VsSection {
+  padding: 80px 0px;
+}
+
+.VsSection>div {
+  width: 1490px;
+  margin: auto;
+}
+
+.VsSection .Vs-Header {
+  margin-bottom: -100px;
+}
+
+.Vs-Header h2 {
+  color: #ffffff80;
+}
+
+.Vs-Header h2 span {
+  color: #04FE9A;
+}
+
+.Vs-Header p {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: #0485FE;
+}
+
+
+.Vs-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px !important;
+}
+
+.Vs-Content .Card:first-child {
+  background: #171717;
+  width: 548px;
+  height: 394px;
+  padding: 20px;
+  border-radius: 11px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Vs-Content .Card:first-child .Card-Header h3 {
+  color: #FFF;
+  font-size: 37px;
+  font-weight: 500;
+  width: 258px;
+}
+
+.Vs-Content .Card:first-child .Card-Header>div>div {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  width: 178px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin: 15px 0px;
+}
+
+.Vs-Content .Card:first-child .Card-Header>div>div span {
+  color: rgba(255, 255, 255, 0.60);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 111%;
+  text-transform: uppercase;
+}
+
+.Vs-Content .Card:first-child .Card-Header p {
+  color: #FFF;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+
+
+.Vs-Content .Card:first-child .Card-Content {
+  position: absolute;
+  background: url(../../img/mining/Vs1.svg);
+  width: 270px;
+  height: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 76px;
+  right: 20px;
+}
+
+.Vs-Content .Card:first-child .Card-Content span {
+  color: #787878;
+  text-align: center;
+  font-size: 27.713px;
+  font-weight: 500;
+  line-height: 124.081%;
+  text-transform: uppercase;
+}
+
+.Vs-Content .Card:first-child .Card-Footer p {
+  color: rgba(255, 255, 255, 0.70);
   font-family: 'Mulish';
   font-size: 21px;
   font-weight: 400;
-  }
+}
 
-  .Vs-Content .Card:first-child .Card-Footer p span{
-   color: #fff;
+.Vs-Content .Card:first-child .Card-Footer p span {
+  color: #fff;
   font-family: 'Mulish';
   font-size: 21px;
   font-weight: 400;
-  }
+}
 
-  .Vs-Content .Card:first-child .Card-Footer{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-  }
-
-
-  
+.Vs-Content .Card:first-child .Card-Footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 
-  .Vs-Content .Card:last-child{
-    background: #171717;
-    width: 882px;
-    height: 634px;
-    border-radius: 18px;
-    padding: 40px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
 
 
-  .Vs-Content .Card:last-child .Card-Header h3{
-   color: #FFF;
+
+.Vs-Content .Card:last-child {
+  background: #171717;
+  width: 882px;
+  height: 634px;
+  border-radius: 18px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Vs-Content .Card:last-child .Card-Header h3 {
+  color: #FFF;
   font-size: 55px;
   font-weight: 500;
   width: 370px;
-  }
+}
 
-  .Vs-Content .Card:last-child .Card-Header-Content > div{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(88deg, #1C67AC -47.59%, #41CCFF 13.37%, #41FFEF 85.61%);
-   width: 257px;
-    height: 73px;
-      border-radius: 100px;
-      padding: 2px;
-    margin: 27px 0px;
-    }
+.Vs-Content .Card:last-child .Card-Header-Content>div {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(88deg, #1C67AC -47.59%, #41CCFF 13.37%, #41FFEF 85.61%);
+  width: 257px;
+  height: 73px;
+  border-radius: 100px;
+  padding: 2px;
+  margin: 27px 0px;
+}
 
-  .Vs-Content .Card:last-child .Card-Header-Content > div > div{
-    border-radius: 100px;
-    background: #161f27;
-    width: 253px;
-    height: 69px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 24px;
-  }
+.Vs-Content .Card:last-child .Card-Header-Content>div>div {
+  border-radius: 100px;
+  background: #161f27;
+  width: 253px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
 
 
 
-  .Vs-Content .Card:last-child .Card-Header-Content > div > div span{
-    color: #fff;
-font-size: 37px;
-font-weight: 500;
-line-height:  177.844%;
-opacity: 0.77;
-  }
+.Vs-Content .Card:last-child .Card-Header-Content>div>div span {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 177.844%;
+  opacity: 0.77;
+}
 
-   .Vs-Content .Card:last-child .Card-Header-Content > div > div img{
-    opacity: 0.77;
-   }
+.Vs-Content .Card:last-child .Card-Header-Content>div>div img {
+  opacity: 0.77;
+}
 
-  
 
-  .Vs-Content .Card:last-child .Card-Header p{
-    color: rgba(255, 255, 255, 0.70);
-font-size: 28px;
 
-font-weight: 400;
+.Vs-Content .Card:last-child .Card-Header p {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 28px;
 
-  }
+  font-weight: 400;
 
-  .Vs-Content .Card:last-child .Card-Header p span{
+}
+
+.Vs-Content .Card:last-child .Card-Header p span {
   color: #FFF;
-font-size: 28px;
-font-weight: 400;
-  }
+  font-size: 28px;
+  font-weight: 400;
+}
 
-  .Vs-Content .Card:last-child .Card-Content{
-    position: absolute;
-    background: url("../../img/mining/Vs2.svg");
-    width: 525px;
-    height: 543px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0px;
-    right: 0px;
-  }
+.Vs-Content .Card:last-child .Card-Content {
+  position: absolute;
+  background: url("../../img/mining/Vs2.svg");
+  width: 525px;
+  height: 543px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+}
 
-  .Vs-Content .Card:last-child .Card-Content span{
-   color: #FFF;
-text-align: center;
-font-size: 24px;
-font-weight: 500;
-line-height: 137.5%;
-text-transform: uppercase;
-padding-right: 15px;
-padding-bottom: 15px;
-  }
+.Vs-Content .Card:last-child .Card-Content span {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 137.5%;
+  text-transform: uppercase;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
 
-  .Vs-Content .Card:last-child .Card-Footer p{
-    color: rgba(255, 255, 255, 0.70);
-font-family: 'Mulish';
-font-size: 28px;
-font-weight: 400;
-  }
-  
-  .Vs-Content .Card:last-child .Card-Footer p span{
-      color: #fff;
-font-family: 'Mulish';
-font-size: 28px;
-font-weight: 400;
-  }
+.Vs-Content .Card:last-child .Card-Footer p {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: 'Mulish';
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.Vs-Content .Card:last-child .Card-Footer p span {
+  color: #fff;
+  font-family: 'Mulish';
+  font-size: 28px;
+  font-weight: 400;
+}
 
 
 
-  .Vs-Content .Card:last-child .Card-Footer{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-  }
+.Vs-Content .Card:last-child .Card-Footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
 
-  .Vs-Footer{
-    background: #171717;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px !important;
-  }
+.Vs-Footer {
+  background: #171717;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px !important;
+}
 
-  .Vs-Footer p{
-   color: #FFF;
-font-size: 24px;
-font-weight: 400;
-width: 520px;
-  }
+.Vs-Footer p {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  width: 520px;
+}
 
-  .Vs-Footer span{
+.Vs-Footer span {
   color: #0485FE;
-font-size: 43px;
-font-weight: 500;
-  }
+  font-size: 43px;
+  font-weight: 500;
+}
 
-.Vs-Footer .p_mobile{
+.Vs-Footer .p_mobile {
   display: none;
 }
 
 
-
-  
-  @media (max-width: 1439px) {
-    .VsSection > div{
-      width: 920px;
-    }
-    .Vs-Content .Card:first-child {
-      width: 400px;
-    }
-
-    .Vs-Content .Card:last-child {
-      width: 500px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Content {
-      width: 180px;
-      height: 180px;
-      background-size: 100% 100%;
-      top: 76px;
-    right: 9px;
+@media (max-width: 1799px) {
+  .VsSection>div {
+    width: 1400px;
   }
 
-  .Vs-Content .Card:first-child .Card-Content span, .Vs-Content .Card:last-child .Card-Content span {
-    font-size: 22px;
+  .Vs-Content .Card:first-child {
+    width: 520px;
   }
 
+  .Vs-Content .Card:last-child {
+    width: 850px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .VsSection>div {
+    width: 920px;
+  }
+
+  .Vs-Content{
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px !important;
+  }
+
+  .VsSection .Vs-Header {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 979px) {
+  .VsSection>div {
+    width: 620px;
+  }
+
+  .Vs-Content .Card:last-child {
+    width: 100%;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header h3 {
+    font-size: 36px;
+  }
 
   .Vs-Content .Card:last-child .Card-Content {
-    width: 220px;
-    height: 220px;
+    width: 364px;
     background-size: 100% 100%;
-    top: 166;
-    right: 9px;
+    bottom: 33px;
+    right: -9px;
   }
 
-  .Vs-Footer span{
-    font-size: 64px;
+  .Vs-Footer p {
+    font-size: 18px;
+    width: 335px;
+  }
+
+  .Vs-Footer span {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 659px) {
+  .VsSection {
+    padding: 30px 0px;
+  }
+
+  .VsSection>div {
+    width: 320px;
+  }
+
+  .Vs-Content .Card:first-child {
+    width: 100%;
+    padding: 10px 20px;
+    height: 171px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header h3 {
+    font-size: 14px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header>div>div span {
+    font-size: 12px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Content span {
+    font-size: 12px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header p {
+    font-size: 11px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Footer p,
+  .Vs-Content .Card:first-child .Card-Footer p span {
+    font-size: 11px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header>div>div {
+    width: 77px;
+    height: 20px;
+    padding: 0px 5px;
+    margin: 7px 0px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Header>div>div img {
+    width: 6px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Content {
+    right: 20px;
+    width: 120px;
+    background-size: 100% 100%;
+    height: 116px;
+    top: 30px;
+  }
+
+  .Vs-Content .Card:first-child .Card-Footer {
+    gap: 5px;
+  }
+
+
+  .Vs-Content .Card:last-child .Card-Header h3 {
+    font-size: 24px;
+    width: 160px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header p, .Vs-Content .Card:last-child .Card-Header p span {
+    font-size: 17px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header p{
+    width: 110px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header-Content>div>div span {
+    font-size: 14px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Footer p,
+  .Vs-Content .Card:last-child .Card-Footer p span {
+    font-size: 13px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Content span {
+    font-size: 10px;
+    padding-right: 9px;
+    padding-bottom: 2px;
+  }
+
+  .Vs-Content .Card:last-child {
+    padding: 25px 20px;
+    height: 296px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Content {
+    width: 180px;
+    height: 180px;
+    right: 0px;
+    bottom: 60px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header-Content>div {
+    width: 100px;
+    height: 28px;
+    margin: 12px 0px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header-Content>div>div {
+    width: 96px;
+    height: 24px;
+    padding: 0px 10px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Header-Content>div>div img {
+    width: 10px;
+  }
+
+  .Vs-Content .Card:last-child .Card-Footer{
+    gap: 10px;
+  }
+
+  .Vs-Content{
+    gap:20px;
+  }
+
+  .Vs-Footer{
+    margin-top: 20px !important;
   }
 
   .Vs-Footer p{
-      font-size: 22px;
-    }
-}
-  
-  @media (max-width: 979px) {
-    .VsSection > div{
-      width: 600px;
-    }
-
-    .VsSection .decor{
-      display: none;
-    }
-
-    .VsSection{
-      border: 1px solid #353535;
-      padding: 60px 0px 75px 0px;
-      border-radius: 10px 10px 0px 0px;
-    }
-
-    .Vs-Header p{
-      font-size: 24px;
-      margin-top: 25px;
-    }
-
-    .Vs-Content{
-      flex-direction: column;
-      margin-top: 25px !important;
-      justify-content: unset;
-      gap:25px;
-    }
-
-    .Vs-Content .Card{
-      width: 100% !important;
-      height: 300px !important;
-      border-radius: 7px;
-      padding: 13px !important;
-    }
-
-    .Vs-Content .Card:first-child .Card-Header h3{
-      font-size: 21px;
-    }
-
-    .Vs-Content .Card:last-child .Card-Header h3{
-      font-size: 20px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Header > div > div{
-      width: 101px;
-      height: 27px;
-      padding: 0px 10px;
-      margin: 10px 0px;
-    }
-    .Vs-Content .Card:first-child .Card-Header > div > div img{
-      width: 9px;
-    }
-
-    .Vs-Content .Card:last-child .Card-Header > div > div{
-      width: 93px;
-      height: 27px;
-      padding: 0px 10px;
-      margin: 10px 0px;
-    }
-    .Vs-Content .Card:last-child .Card-Header > div > div img{
-      width: 11px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Header > div > div span{
-      font-size: 16px;
-      padding-top: 2px;
-    }
-    .Vs-Content .Card:last-child .Card-Header > div > div span{
-      font-size: 13px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Header p, .Vs-Content .Card:first-child .Card-Header p span, .Vs-Content .Card:first-child .Card-Footer p, .Vs-Content .Card:first-child .Card-Footer p span{
-      font-size: 12px;
-    }
-    .Vs-Content .Card:last-child .Card-Header p, .Vs-Content .Card:last-child .Card-Header p span, .Vs-Content .Card:last-child .Card-Footer p, .Vs-Content .Card:last-child .Card-Footer p span{
-      font-size: 10px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Content {
-      width: 250px;
-        height: 250px;
-        top: 20px;
-        right: 20px;
+    font-size: 12px;
+    width: 160px;
   }
 
-  .Vs-Content .Card:last-child .Card-Content {
-    width: 270px;
-    height: 270px;
-    top: 20px;
-    right: 20px;
+  .Vs-Footer span{
+    font-size: 21px;
+    width: 88px;
+  }
 }
 
-  .Vs-Content .Card:first-child .Card-Content span, .Vs-Content .Card:last-child .Card-Content span {
-    font-size: 28px;
+
+
+/*Наши услуги*/
+.ServicesSection {
+  border-radius: 20px;
+  background: #C2C4C5;
+  width: 1790px;
+  padding: 80px 150px 0px 150px;
+  margin: auto;
 }
 
-.Vs-Footer {
+.ServicesSection>div {
+  display: flex;
+}
+
+.ServicesSection h2 {
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.Services-Right {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  flex-direction: column-reverse;
-  margin-top: 25px !important;
+  width: 963px;
+  flex-shrink: 0;
+}
+
+.Services-Right .Card {
+  transition: 0.3s ease;
+  width: 100%;
+  height: 185px;
+  border-radius: 19px;
+  padding: 20px;
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.Vs-Footer span{
-  font-size: 41px;
-  width: auto;
-}
 
-.Vs-Footer p{
-  font-size: 16px;
-  width: auto;
-}
-
-.Vs-Content .Card:last-child .Card-Footer{
-  gap: 10px;
-}
-.Vs-Content .Card:first-child .Card-Footer{
-  gap: 10px;
-}
-
-  }
-  
-  @media (max-width: 659px) {
-    .VsSection > div{
-      width: 320px;
-    }
-
-    .Vs-Content .Card{
-      height: 232px !important;
-    }
-
-    .Vs-Content .Card:first-child .Card-Content{
-      width: 120px;
-      height: 120px;
-      top: 61px;
-      right: 38px;
-    }
-
-    .Vs-Content .Card:last-child .Card-Content{
-      width: 163px;
-      height: 163px;
-      bottom: 13px;
-      right: 13px;
-      top: auto;
-    }
-
-    .Vs-Content .Card:first-child .Card-Content span, .Vs-Content .Card:last-child .Card-Content span{
-      font-size: 12px;
-    }
-
-    .Vs-Content .Card:first-child .Card-Header > div > div span {
-      padding-top: 3px;
-    }
-    .Vs-Content .Card:last-child .Card-Header > div > div span {
-      padding-top: 2px;
-    }
-  }
-
-
-
-  /*Наши услуги*/
- .ServicesSection{
-  border-radius: 20px;
-background: #C2C4C5;
-width: 1790px;
-padding: 80px 150px 0px 150px;
-}
-
-.ServicesSection > div{
-    display: flex;
-}
-
-.ServicesSection h2{
-    margin-bottom: 50px;
-    color: #000;
-}
-
-/* .Services-Left > div{
-    width: auto;
-    height: 492;
-    overflow: hidden;
-}
-
-.Services-Left > div img{
-    position: relative;
-    top: 35px;
-    width: 100%;
-    height: 100%;
-} */
-
-.Services-Right{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    width: 963px;
-    flex-shrink: 0;
-}
-
-.Services-Right .Card{
-    transition: 0.3s ease;
-    width: 100%;
-    height: 185px;
-    border-radius: 19px;
-    padding: 20px;
-    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.Services-Right .Card h3{
+.Services-Right .Card h3 {
   color: #FFF;
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.Services-Right .Card p{
+.Services-Right .Card p {
   color: #FFF;
   font-size: 24px;
   font-weight: 400;
 }
 
-@media (max-width: 1439px){
-  .ServicesSection > div{
+@media (max-width: 1799px) {
+  .ServicesSection {
+    width: 1400px;
+  }
+
+  .Services-Right {
+    width: 731px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .ServicesSection {
     width: 920px;
-}
+    padding: 20px 20px 0px 20px;
+  }
 
-.ServicesSection > div {
-  gap: 0px;
-}
+  .Services-Left img {
+    width: 378px;
+  }
 
-.Services-Right {
-  width: 447px;
-}
+  .Services-Right {
+    width: 500px;
+  }
 
-.Services-Right .Card h3 {
-  font-size: 27px;
-}
+  .Services-Right .Card {
+    height: 150px;
+  }
 
-.Services-Right .Card p {
-  font-size: 19px;
-}
+  .Services-Right .Card h3 {
+    font-size: 24px;
+  }
+
+  .Services-Right .Card p {
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width: 979px) {
-  /*600*/
-  .ServicesSection > div{
-    width: 600px;
-    flex-direction: column;
-  }
-
-  .ServicesSection{
-    border: 1px solid #353535;
-    padding: 60px 0px 75px 0px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .Services-Left > div{
+   .ServicesSection {
     display: none;
   }
-
-  .Services-Right{
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .ServicesSection h2{
-    margin-bottom: 0px;
 }
 
-.Services-Right .Card h3{
-  font-size: 18px;
-}
-
-.Services-Right .Card p{
-  font-size: 14px;
-}
-}
-
-@media (max-width: 659px) {
-  /*320*/
-  .ServicesSection > div{
-    width: 320px;
-  }
-}
+@media (max-width: 659px) {}
 
 
 /*Преимущества секция*/
-.AdvantagesSection{
+.AdvantagesSection {
   padding: 80px 0px;
 }
 
-.AdvantagesSection > div{
+.AdvantagesSection>div {
   width: 1490px;
   margin: auto;
 }
 
-.Advantages-Content{
+.Advantages-Content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:20px;
+  gap: 20px;
   margin-top: 40px !important;
 }
 
-.Advantages-Content .Card{
+.Advantages-Content .Card {
   transition: 0.5s ease;
   backdrop-filter: blur(10px);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:5px;
+  gap: 5px;
   justify-content: center;
   border-radius: 11px;
   border: 1px solid #0485FE;
 }
 
-.Advantages-Content h3{
-    color: #FFF;
-font-size: 32px;
-font-weight: 500;
+.Advantages-Content h3 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
 }
 
-.Advantages-Content p{
+.Advantages-Content p {
   color: rgba(255, 255, 255, 0.60);
   font-size: 22px;
   font-weight: 400;
 }
 
+@media (max-width: 1799px) {
+  .AdvantagesSection>div {
+    width: 1400px;
+  }
+}
 
-@media (max-width: 1439px){
-  /*920*/
-  .AdvantagesSection > div{
+@media (max-width: 1439px) {
+  .AdvantagesSection>div {
     width: 920px;
   }
-
 }
+
 @media (max-width: 979px) {
-  /*600*/
-  .AdvantagesSection > div{
-    width: 600px;
+  .AdvantagesSection {
+    padding-top: 0px;
   }
-  .AdvantagesSection{
-    border: 1px solid #353535;
-    padding: 60px 0px 75px 0px;
-    border-radius: 10px 10px 0px 0px;
+
+  .AdvantagesSection>div {
+    width: 620px;
   }
-  .Advantages-Content{
+
+  .Advantages-Content {
     grid-template-columns: 1fr;
-    margin-top: 25px !important;
   }
-
-  .Advantages-Content h3{
-    font-size: 18px;
-  }
-
-  .Advantages-Content p{
-    font-size: 14px;
-  }
-
 }
 
 @media (max-width: 659px) {
-  /*320*/
-  .AdvantagesSection > div{
+  .AdvantagesSection{
+    padding-bottom: 30px;
+  }
+  .AdvantagesSection>div {
     width: 320px;
+  }
+
+  .Advantages-Content h3{
+    font-size: 14px;
+  }
+
+  .Advantages-Content p{
+    font-size: 12px;
+  }
+
+  .Advantages-Content{
+    grid-auto-rows: 75px;
+    row-gap: 10px;
+    margin-top: 20px !important;
+  }
+
+  .Advantages-Content .Card{
+    border-radius: 5px;
   }
 }
 
@@ -981,98 +1070,106 @@ font-weight: 500;
 
 
 /*Почему нас выбирают*/
-.WhySection{
+.WhySection {
   padding-bottom: 80px;
 }
 
-.WhySection > *{
-    width: 1490px;
-    margin: auto;
+.WhySection>* {
+  width: 1490px;
+  margin: auto;
 }
 
-.Why-Content{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.Why-Content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.Why-Content .Card{
-}
 
-.Why-Content .Card span{
+.Why-Content .Card span {
   color: #00C99A;
-font-size: 70px;
-font-weight: 400;
-margin-bottom: 10px;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 10px;
 
 }
 
-.Why-Content .Card h3{
-   color: #FFF;
-font-size: 24px;
-font-weight: 400;
+.Why-Content .Card h3 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-@media (max-width: 1439px){
-  /*920*/
-  .WhySection > div{
+@media (max-width: 1799px) {
+  .WhySection>* {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .WhySection>* {
     width: 920px;
   }
-
 }
+
 @media (max-width: 979px) {
-  /*600*/
-  .WhySection > div{
-    width: 600px;
-  }
-  .WhySection{
-    border: 1px solid #353535;
-    padding: 60px 0px 75px 0px;
-    border-radius: 10px 10px 0px 0px;
-  }
-  .Why-Content{
-    grid-template-columns: 1fr;
-    margin-top: 25px !important;
-    grid-auto-rows: 75px;
+  .WhySection>* {
+    width: 620px;
   }
 
-  .Why-Content .Card h3{
-    font-size: 16px;
-  }
-
-
+  .Why-Content {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap:20px;
+}
 }
 
 @media (max-width: 659px) {
-  /*320*/
-  .WhySection > div{
+  .WhySection{
+    padding-bottom: 30px;
+  }
+   .WhySection>* {
     width: 320px;
   }
+
+  .Why-Content .Card span{
+    font-size: 18px;
+  }
+
+  .Why-Content .Card h3{
+    font-size: 11px;
+  }
+
+  .Why-Content{
+    margin-top: 15px;
+    row-gap: 15px;
+    grid-template-columns: 70px 80px;
+    column-gap: 50px;
+  }
 }
-
-
 
 
 
 /*Пакеты услуг*/
-.PacksSection{
+.PacksSection {
   width: 1790px;
   margin: auto;
   padding: 80px 150px;
   border-radius: 20px;
-background: rgba(16, 16, 16, 0.80);
+  background: rgba(16, 16, 16, 0.80);
 }
 
 
 
-.Packs-Content, .Packs-Content_mobile{
+.Packs-Content,
+.Packs-Content_mobile {
   display: grid;
-  gap:20px;
+  gap: 20px;
   margin-top: 50px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Packs-Content .Card, .Packs-Content_mobile .Card{
+.Packs-Content .Card,
+.Packs-Content_mobile .Card {
   transition: 0.5s ease;
   background: #fff;
   backdrop-filter: blur(10px);
@@ -1081,140 +1178,131 @@ background: rgba(16, 16, 16, 0.80);
   flex-direction: column;
 }
 
-.Packs-Content .Card .Card-Header, .Packs-Content_mobile .Card .Card-Header{
+.Packs-Content .Card .Card-Header,
+.Packs-Content_mobile .Card .Card-Header {
   padding: 40px 30px;
   border-bottom: 2px solid #0485FE;
 }
 
-.Packs-Content .Card .Card-Content, .Packs-Content_mobile .Card .Card-Content{
-   padding: 40px 30px;
+.Packs-Content .Card .Card-Content,
+.Packs-Content_mobile .Card .Card-Content {
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.Packs-Content .Card h3, .Packs-Content_mobile .Card h3{
-  color:#0485FE;
+.Packs-Content .Card h3,
+.Packs-Content_mobile .Card h3 {
+  color: #0485FE;
   font-weight: 500;
   font-size: 26px;
   line-height: normal;
   text-transform: uppercase;
 }
 
-.Packs-Content .Card p, .Packs-Content_mobile .Card p{
+.Packs-Content .Card p,
+.Packs-Content_mobile .Card p {
   color: #212121;
-font-size: 19px;
-font-weight: 400;
+  font-size: 19px;
+  font-weight: 400;
 }
 
-.Packs-Content .Card li, .Packs-Content_mobile .Card li{
+.Packs-Content .Card li,
+.Packs-Content_mobile .Card li {
   list-style: disc;
   color: #212121;
-font-size: 19px;
-font-weight: 400;
-line-height:  95.879%;
-margin-left: 19px;
-margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 95.879%;
+  margin-left: 19px;
+  margin-bottom: 10px;
 }
 
 
 
-.Packs-Content_mobile{
+.Packs-Content_mobile {
   display: none;
 }
 
 
+@media (max-width: 1799px) {
+  .PacksSection {
+    width: 1400px;
+  }
+}
 
-@media (max-width: 1439px){
-  /*920*/
-  .PacksSection > *{
+@media (max-width: 1439px) {
+  .PacksSection {
     width: 920px;
+    padding: 20px 200px;
   }
 
+  .Packs-Content{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 979px) {
-  /*600*/
-  .PacksSection{
-    border: 1px solid #353535;
-    padding: 60px 0px 75px 0px;
-    border-radius: 10px 10px 0px 0px;
+  .PacksSection {
+    width: 620px;
+    padding: 20px;
   }
+  .Packs-Content_mobile {
+  display: block;
+}
 
-  
+.Packs-Content {
+  display: none;
+}
 
-  .Packs-Content_mobile .Card-Header{
-    height: auto;
-  }
+.Packs-Content_mobile .swiper-wrapper{
+  height: auto;
+}
 
-  .PacksSection > *{
-    width: 600px;
-  }
-
-  .Packs-Content_mobile .Card{
-    width: 100%;
-    backdrop-filter:none;
-    height: 300px;
-  }
-
-
-
-  .Packs-Content_mobile .Card h3{
-    font-size: 20px;
-  }
-
-  .Packs-Content_mobile .Card p, .Packs-Content_mobile .Card .info, .Packs-Content_mobile .Card li{
-    font-size: 16px;
-  }
-  .Packs-Content_mobile .Card li{
-    margin-left: 16px;
-  }
-
-  .Packs-Content_mobile{
-    display: block;
-    margin-top: 25px;
-  }
-  .Packs-Content{
-    display: none;
-  }
-
-  .swiper{
-    overflow: visible;
-  }
-  
-  .Swiper-Control > button {
-    width: 66px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background: #2C2C2C;  
-  }
-  
-  .Swiper-Control > button:hover {
-    opacity: 0.8;
-  }
-
-  .Swiper-Control{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-  }
-
-  .swiper-wrapper{
-    height: auto;
-  }
+.Packs-Content .Card, .Packs-Content_mobile .Card{
+  height: 463px;
+}
 }
 
 @media (max-width: 659px) {
-  /*320*/
-  .PacksSection > *{
+  .PacksSection {
     width: 320px;
+    border-radius: 8px;
+    padding: 20px 0px 20px 10px;
   }
 
-  .Packs-Content_mobile .Card{
-    height: 446px;
+  .Packs-Content .Card, .Packs-Content_mobile .Card{
+    width: 270px;
+    height: 205px;
+    border-radius: 7px;
+  }
+
+  .Packs-Content .Card h3, .Packs-Content_mobile .Card h3{
+    font-size: 13px;
+  }
+
+  .Packs-Content .Card p, .Packs-Content_mobile .Card p{
+    font-size: 10px;
+  }
+
+  .Packs-Content .Card li, .Packs-Content_mobile .Card li{
+    font-size: 10px;
+    margin-left: 14px;
+    margin-bottom: 5px;
+  }
+
+  .Packs-Content .Card .Card-Header, .Packs-Content_mobile .Card .Card-Header{
+    padding: 20px 10px 3px 10px;
+    border-bottom-width: 1px; 
+  }
+
+  .Packs-Content .Card .Card-Content, .Packs-Content_mobile .Card .Card-Content{
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .Packs-Content_mobile{
+    margin-top: 15px;
   }
 }

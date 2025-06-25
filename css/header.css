@@ -310,7 +310,7 @@
       text-transform: uppercase;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 660px) {
  h2{
   font-size: 24px;
  }
@@ -322,7 +322,7 @@
 
   /* ФУТЕР */
   footer{
-    width: 332px;
+    width: 320px;
     margin: auto;
     padding: 55px 0px;
   }
