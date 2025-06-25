@@ -3,10 +3,10 @@ $title = 'Alikson';
 include('include/header.php');
 ?>
 <main>
-  <video class="VideoDesk" muted autoplay loop>
+  <video class="VideoDesk" muted autoplay loop playsinline>
     <source  src="img/videoMain.mp4" type="video/mp4" />
   </video>
-  <video class="VideoMob" muted autoplay loop>
+  <video class="VideoMob" muted autoplay loop playsinline>
     <source src="img/videoMainMob.mp4" type="video/mp4" />
   </video>
   <section class="MainSection">

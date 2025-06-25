@@ -5,48 +5,48 @@ include('include/header.php');
 ?>
 <main>
 <section class="MainSection">
-<div class="MainSection-Header">
-<h1>Тендерный<br> дивизион</h1>
-<p>Занимаемся комплексным снабжением крупных компаний и&nbsp;госучреждений, предлагая прямые поставки электроники, комплектующих, промышленного оборудования и&nbsp;офисной техники</p>
-</div>
-<div class="MainSection-Content">
-<a href="#AnchorForm">Оставить заявку</a>
-<div>
-<div class="Info">
-<div>
-<h3>200+</h3>
-<p>контрактов и&nbsp;успешных сделок</p>
-</div>
-</div>
-<div class="Info">
-<div>
-<h3>1,9 млрд ₽</h3>
-<p>годовой оборот</p>
-</div>
-</div>
-<div class="Info">
-<div>
-<h3>30+</h3>
-<p>крупных клиентов</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <div class="Background">
+    </div>
+    <h1>Тендерный дивизион</h1>
+    <p>Занимаемся комплексным снабжением крупных компаний и госучреждений электроникой, комплектующими и оборудованием, напрямую и с высоким уровнем сервиса</p>
+    <div class="Main-Group">
+      <a href="">Узнать больше</a>
+      <div class="Main-Content">
+        <div class="Main-El">
+          <div>
+            <h3>200+</h3>
+            <p>контрактов и успешных сделок</p>
+          </div>
+        </div>
+        <div class="Main-El">
+          <div>
+            <h3>1,9 млрд ₽</h3>
+            <p>годовой оборот</p>
+          </div>
+        </div>
+        <div class="Main-El">
+          <div>
+            <h3>30+</h3>
+            <p>крупных клиентов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <section class="GrowSection">
-<img class="Decor" src="img/tender/decor.png">
 <div>
 <div class="Grow-Header"> 
 <h2>Рост выручки</h2>
 <div>
 <div><img src="img/tender/ArrowUp.svg"><span>+ 1&nbsp;666%</span></div>
-<p>Прирост оборота за&nbsp;2&nbsp;года</p>
+<p>Прирост оборота <span>за 2 года</span></p>
 </div>
 </div>
 <div class="Grow-Content">
 <div class="Graph1">
 <h3>300 млн ₽</h3>
 <p>2023&nbsp;ГОД</p>
+<img src="img/tender/Grow1.png">
 </div>
 <div class="Graph2">
 <div class="Graph-Header">
@@ -54,6 +54,7 @@ include('include/header.php');
 <div>+633%</div>
 </div>
 <p>2024&nbsp;ГОД</p>
+<img src="img/tender/Grow2.png">
 </div>
 <div class="Graph3">
 <div class="Graph-Header">
@@ -61,6 +62,7 @@ include('include/header.php');
 <div>+ 263%</div>
 </div>
 <p>2025&nbsp;ГОД</p>
+<img src="img/tender/Grow3.png">
 </div>
 </div>
 </div>
@@ -68,30 +70,52 @@ include('include/header.php');
 <section class="AdvantagesSection">
 <div class="Advantages-Header">
 <h2>Наши преимущества</h2>
+<p>Сильные стороны, которые помогают вашему бизнесу расти</p>
 </div>
 <div class="Advantages-Content">
-<div class="Card" onclick="">
-<img src="img/tender/Adv1.svg">
-<h3>Комплексный подход</h3>
-</div>
-<div class="Card" onclick="">
-<img src="img/tender/Adv2.svg">
-<h3>Персональный менеджер</h3>
-</div>
-<div class="Card" onclick="">
-<img src="img/tender/Adv3.svg">
+<div class="Card">
+<img src="img/tender/AdvantagesBack.png">
+<span>01</span>
 <h3>Прямые поставки</h3>
+<p>Закупаем напрямую 
+у производителей — 
+это гарантирует сроки 
+и оптимальную цену</p>
 </div>
-<div class="Card" onclick="">
-<img src="img/tender/Adv4.svg">
+<div class="Card">
+<img src="img/tender/AdvantagesBack.png">
+<span>02</span>
+<h3>Персональный менеджер</h3>
+<p>Вы работаете с личным специалистом, который сопровождает проект 
+от начала до конца</p>
+</div>
+<div class="Card">
+<img src="img/tender/AdvantagesBack.png">
+<span>03</span>
+<h3>Комплексный подход</h3>
+<p>Мы подбираем решения 
+под каждый проект, 
+учитывая все нюансы 
+и специфику бизнеса</p>
+</div>
+<div class="Card">
+<img src="img/tender/AdvantagesBack.png">
+<span>04</span>
 <h3>Надежность</h3>
+<p>Более 200 успешных 
+контрактов и 30 постоянных клиентов — подтверждение 
+нашего качества</p>
 </div>
 </div>
 </section>
 <section class="ServicesSection">
 <div class="Services-Container">
 <div class="Services-Header">
+<div class="Services-Header-Flex">
 <h2>Наши услуги</h2>
+<p>Комплексные решения под ключ: 
+от анализа рынка до логистики</p>
+</div>
 <div class="wrap">
 <div class="items-wrap">
 <div class="items marquee">
