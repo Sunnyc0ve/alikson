@@ -3,8 +3,11 @@ $title = 'Alikson';
 include('include/header.php');
 ?>
 <main>
-  <video muted autoplay loop>
-    <source src="img/videoMain.mp4" type="video/mp4" />
+  <video class="VideoDesk" muted autoplay loop>
+    <source  src="img/videoMain.mp4" type="video/mp4" />
+  </video>
+  <video class="VideoMob" muted autoplay loop>
+    <source src="img/videoMainMob.mp4" type="video/mp4" />
   </video>
   <section class="MainSection">
     <h1>Технологии. Доверие. Результат.</h1>
@@ -637,7 +640,7 @@ include('include/header.php');
 </main>
 <?php include('include/footer.php') ?>
 </body>
-<script src="include/header.js?5.4"></script>
+<script src="include/header.js?5.5"></script>
 <script>
   //Слайдеры
   const swiperN = new Swiper(".swiperN", {
