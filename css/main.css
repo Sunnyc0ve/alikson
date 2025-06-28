@@ -50,16 +50,12 @@ body{
 }
 
 .marquee {
-  animation: scroll 180s linear infinite;
+  animation: scroll 55s linear infinite;
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 20px));
-  }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 
@@ -1705,7 +1701,13 @@ transition: 0.3s;
   margin: auto;
 }
 
-
+.PartnersSection .items {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;           /* ширина = всем .item внутри */
+  animation: scroll 150s linear infinite;
+  will-change: transform;
+}
 
 .PartnersSection .item img{
   height: 42px;
@@ -1714,10 +1716,6 @@ transition: 0.3s;
   user-select: none;
 }
 
-
-.PartnersSection .marquee {
-  animation: scroll 50s linear infinite;
-}
 
 @media (min-width: 980px) {
   .PartnersSection .item img{
