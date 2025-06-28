@@ -125,7 +125,7 @@
   </video>
   <section class="MainSection md:py-[260px] pt-[60px]">
     <h1>Технологии. Доверие. Результат.</h1>
-    <p class="pb-[260px] md:pb-0">Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>
+    <p class="md:pb-0">Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>
     <a href="#AnchorForm">Узнать больше</a>
   </section>
   <section class="AboutSection bg-[#101010]/80 px-0 md:px-[50px]">
@@ -476,7 +476,7 @@
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </div>
   </section>
-   <section class="ProjectsSection" id="AnchorProjects">
+  <section class="ProjectsSection" id="AnchorProjects">
     <div class="Projects-Header">
       <p>За последние четыре года мы организовали и приняли участие в ряде значимых мероприятий</p>
       <div class="hwn"><h2>ПРОЕКТЫ</h2><span>05</span></div>
@@ -493,7 +493,7 @@
           </button>
         </div>
         <div class="swiper-wrapper" id="swiper-wrapper-dad710324e2a9e3eb" aria-live="polite" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);">
-          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 332px; margin-right: 20px;">
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3">
             <div class="Info">
               <div class="Banner">
                 <h3>ALIKSON TEAM</h3>
@@ -519,7 +519,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 332px; margin-right: 20px;">
+          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3">
             <div class="Info">
               <div class="Banner">
                 <h3>ALIKSON INVEST CLUB</h3>
@@ -541,7 +541,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 332px; margin-right: 20px;">
+          <div class="swiper-slide" role="group" aria-label="3 / 3">
             <div class="Info">
               <div class="Banner">
                 <h3>ФОНД ALIKSON</h3>
@@ -867,11 +867,15 @@
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
-      660: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      500: {
         slidesPerView: 2,
         spaceBetween: 10
       },
-      980: {
+      900: {
         slidesPerView: 3,
         spaceBetween: 10
       },
