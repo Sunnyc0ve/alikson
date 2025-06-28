@@ -1,3 +1,4 @@
+
 /* Общие */
 body{
   background: url("../img/backMainMob.jpg");
@@ -6,8 +7,9 @@ body{
 
 @media (min-width: 980px) {
   body{
-    background: url("../img/backMain.jpg");
+    background: url("../img/backMain.svg");
     background-size: 100% 100%;
+    background-color: #121212;
   }
   .Swiper-Prev, .Swiper-Next{
     transition: 0.3s ease;
@@ -24,18 +26,20 @@ body{
 /*Слайдер*/
 .items-wrap {
   position: relative;
-  display: flex;
+  display: block;
   overflow: hidden;
   user-select: none;
-  gap: 20px;
+  width: 100%;
 }
 .items {
   flex-shrink: 0;
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
   counter-reset: item;
   justify-content: space-around;
-  min-width: 100%;
+  width: max-content;
+  will-change: transform; 
 }
 .item {
   flex: 0 0 auto;
@@ -66,9 +70,7 @@ body{
   .items {
     gap: 7px;
   }
-  .marquee {
-  animation: scroll 250s linear infinite;
-  }
+
 
   @media (min-width: 1800px) {
     .items-wrap {
@@ -79,7 +81,14 @@ body{
     }
   }
 
-
+main {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  padding: 0 15px;
+  max-width: 1790px;
+  margin: 0 auto;
+}
 
 main > video{
       position: absolute;
@@ -93,9 +102,11 @@ main > video{
 
 /* Главная секция */
   .MainSection{
-    width: 1790px;
+    width: 100%;
     padding: 273px 0px 200px 0px;
     margin: auto;
+    min-width: 330px;
+    padding: 0 14px;
   }
 
   h1{
@@ -138,22 +149,8 @@ main > video{
     display: none;
   }
 
-  @media (max-width: 1799px){
-    .MainSection{
-      width: 1400px;
-    }
-  }
-
-    @media (max-width: 1439px){
-    .MainSection{
-        width: 920px;
-      }
-    }
 
   @media (max-width: 979px){
-    .MainSection{
-        width: 620px;
-      }
 
     .MainSection p{
     width: auto;
@@ -221,11 +218,10 @@ main > video{
 
 
   .AboutSection{
-    width: 332px;
     margin: auto;
-    background: #101010CC;
     border-radius: 8px;
     padding: 25px 0px 34px 0px;
+    width: 100%;
   }
 
   .About-Header{
@@ -247,14 +243,17 @@ main > video{
   .AboutSection .item{
     height: 146px;
     border-radius: 5px;
-    width: auto;
+    overflow: hidden;
+  }
+  .About-Main .wrap {
+    width: 100%;
     overflow: hidden;
   }
 
-   .AboutSection .wrap img {
-    width: auto;
+  .AboutSection .wrap img {
+    width: 100%;
     height: 100%;
-}
+  }
 
   .Numbers-Header{
     margin: 25px 0px 32px 0px;
@@ -325,17 +324,6 @@ main > video{
 
   }
   
-@media (min-width: 660px) {
-  .AboutSection{
-    width: 600px;
-  }
-}
-
-@media (min-width: 980px) {
-.AboutSection{
-    width: 920px;
-  }
-}
 
 @media (min-width: 1440px) {
  .Map{
@@ -356,7 +344,6 @@ main > video{
   }
 
 .AboutSection{
-    width: 1400px;
     padding: 87px 0px 44px 0px;
     border-radius: 20px;
   }
@@ -373,9 +360,8 @@ main > video{
   .hwn{
     flex-direction: row-reverse;
     justify-content: start;
-    align-items: start;
     width: auto;
-    gap:139px;
+    gap:69px;
   }
 
   .hwn span{
@@ -383,7 +369,6 @@ main > video{
   }
 
   .About-Header{
-    padding: 0px 0px 0px 51px;
     flex-direction: row;
     align-items: start;
     gap:141px;
@@ -393,6 +378,7 @@ main > video{
   .AboutSection .item{
     height: 351px;
     border-radius: 13px;
+    width: auto;
   }
 
   .Numbers-Main p{
@@ -410,59 +396,42 @@ main > video{
   }
 
   .Numbers-Header {
-        padding: 0px 0px 0px 51px;
-        position: relative;
-        top: 280px;
-        margin: 0px;
+    position: relative;
+    top: 280px;
+    margin: 0px;
   }
 
   .Numbers-Header .hwn{
-    gap: 130px;
+    gap: 69px;
   }
 
-  .About-Main{
-    padding: 0px 50px;
+
+}
+  .About-Main {
+    
     position: relative;
+    overflow: hidden;
+    /* WebKit-браузеры */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 100px,
+      black calc(100% - 100px),
+      transparent 100%
+    );
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    /* Остальные современные браузеры */
+    mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 100px,
+      black calc(100% - 100px),
+      transparent 100%
+    );
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
   }
-
-  .About-Main::before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      height: 351px;
-      width: 100px;
-      background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
-  }
-
-  .About-Main::after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      height: 351px;
-      width: 100px;
-      background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%);
-      top: 0px;
-      right: 50px;
-  }
-}
-
-@media (min-width: 1800px) {
-  .AboutSection{
-    width: 1790px;
-  }
-}
-
-
-
-
-
-
-
-
-/* Бизнес секция */
-
 
 
   .BuisnesSection .swiper-wrapper {
@@ -479,8 +448,7 @@ main > video{
   }
 
   .BuisnesSection .Swiper-Control .line{
-    border-radius: 41.856px;
-    background: #6E6E6E;
+    border-radius: 20px;
     height: 1px;
     width: 192px;
   }
@@ -509,10 +477,10 @@ main > video{
   .BuisnesSection{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.74);
-    width: 332px;
     margin: auto;
     padding: 26px 0px 34px 0px;
     margin-top: 24px;
+    width: 100%;
   }
 
   .Buisnes-Header{
@@ -533,41 +501,50 @@ main > video{
     font-weight: 400;
   }
 
-  .Buisnes-Main_mobile .Card{
+  .Buisnes-Main_mobile .Card {
     width: 300px;
     height: 190px;
     padding: 14.25px;
     border-radius: 7px;
     background: #fff;
-    transition: 0.3s;
-z-index: 1000;
-position: relative;
+  
+    /* теперь все свойства будут меняться за 1 секунду */
+    transition: all 0.5s ease;
+  
+    position: relative;
+    z-index: 1000;
   }
-
-
-
-   .Buisnes-Main_mobile .swiper-slide-active .Card p, .Buisnes-Main_mobile .swiper-slide-active .Card span, .Buisnes-Main_mobile .swiper-slide-active .Card h3{
+  
+  .Buisnes-Main_mobile .Card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    opacity: 0;
+  
+    /* анимируем opacity за 1 секунду */
+    transition: opacity 0.5s ease;
+  
+    border-radius: inherit;
+    z-index: -1;
+  }
+  
+  /* Активное состояние */
+  .Buisnes-Main_mobile .swiper-slide-active .Card {
+    /* делаем фон прозрачным, чтобы был виден градиент */
+    background: transparent;
+  }
+  .Buisnes-Main_mobile .swiper-slide-active .Card p,
+  .Buisnes-Main_mobile .swiper-slide-active .Card span,
+  .Buisnes-Main_mobile .swiper-slide-active .Card h3 {
+    /* текст станет белым тоже за 1 секунду */
+    transition: color 0.5s ease;
     color: #fff;
-   }
-
-  .Buisnes-Main_mobile .Card::before{
-  content: "";
-  display: block;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-  transition: 0.3s ease;
-    border-radius: 7px;
-  z-index: -1000;
-}
-
-.Buisnes-Main_mobile .swiper-slide-active .Card::before {
-  opacity: 1;
-}
+  }
+  .Buisnes-Main_mobile .swiper-slide-active .Card::before {
+    opacity: 1;
+  }
+  
 
   .Buisnes-Main_mobile .Card img{
     position: absolute;
@@ -599,17 +576,8 @@ position: relative;
   }
 
 
-@media (min-width: 660px) {
-  .BuisnesSection{
-    width: 600px;
-  }
-}
-
-
 @media (min-width: 980px) {
-.BuisnesSection{
-    width: 920px;
-  }
+
   .BuisnesSection .swiperB{
     width: 1200px;
   }
@@ -617,15 +585,9 @@ position: relative;
 }
 
 @media (min-width: 1440px) {
-  .BuisnesSection{
-    width: 1400px;
-    border-radius: 20px;
-    margin-top: 30px;
-    padding: 70px 0px 70px 0px;
-  }
 
   .Buisnes-Header span{
-    color: rgba(179, 179, 179, 0.22);
+    color: rgba(0, 0, 0, 0.22);
     font-size: 45.773px;
     font-weight: 400;
     line-height: 59.569px; 
@@ -634,7 +596,7 @@ position: relative;
   .Buisnes-Header{
     flex-direction: row-reverse;
     justify-content: start;
-    gap:140px;
+    gap:69px;
     padding: 0px 0px 0px 50px;
     margin-bottom: 50px;
   }
@@ -703,9 +665,6 @@ position: relative;
 }
 
 @media (min-width: 1800px) {
-  .BuisnesSection{
-    width: 1790px;
-  }
 
    .BuisnesSection .Swiper-Control{
     width: 1790px;
@@ -739,7 +698,7 @@ position: relative;
   }
 
   .NewsSection .Swiper-Control .line{
-    border-radius: 41.856px;
+    border-radius: 20px;
     background: #6E6E6E;
     height: 1px;
     width: 192px;
@@ -764,6 +723,7 @@ position: relative;
     margin: auto;
     padding: 26px 0px 34px 0px;
     margin-top: 24px;
+    width: 100%;
   }
 
   .News-Header{
@@ -847,27 +807,9 @@ position: relative;
       color: #2375A6;
     }
 
-    @media (min-width: 660px) {
-  .NewsSection{
-    width: 600px;
-  }
-}
 
-@media (min-width: 980px) {
-.NewsSection{
-    width: 920px;
-  }
-
-    
-}
 
 @media (min-width: 1440px) {
- .NewsSection{
-    width: 1400px;
-    border-radius: 20px;
-    margin-top: 30px;
-    padding: 70px 0px 70px 0px;
-  }
 
   .News-Header span{
     color: rgba(179, 179, 179, 0.22);
@@ -949,10 +891,6 @@ position: relative;
 }
 
 @media (min-width: 1800px) {
-  .NewsSection{
-    width: 1790px;
-  }
-
 
   .NewsSection .Swiper-Control{
     width: 1790px;
@@ -1085,13 +1023,16 @@ position: relative;
   width: 332px;
   margin: auto;
   margin-top: 27px;
+  width: 100%;
  }
 
-    .Projects-Header{
+  .Projects-Header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100% !important;
+    align-items: start;
+    font-weight: 400;
   }
 
   .Projects-Header h2{
@@ -1112,7 +1053,7 @@ position: relative;
   }
 
   .ProjectsSection .Swiper-Control .line{
-    border-radius: 41.856px;
+    border-radius: 20px;
     background: #6E6E6E;
     height: 1px;
     width: 214px;
@@ -1171,18 +1112,12 @@ position: relative;
     }
 
 @media (min-width: 660px) {
-  .ProjectsSection{
-    width: 600px;
-  }
   .Projects-Main_mobile .Info {
     width: 295px;
   }
 }
 
 @media (min-width: 980px) {
-.ProjectsSection{
-    width: 920px;
-  }
 
   .Projects-Main_mobile .Info{
     width: 300px;
@@ -1192,17 +1127,12 @@ position: relative;
 }
 
 @media (min-width: 1440px) {
-  .ProjectsSection{
-    width: 1400px;
-    margin-top: 91px;
-  }
 
   .Projects-Header{
     flex-direction: row-reverse;
     justify-content: start;
-    gap:140px;
+    gap:69px;
     padding-left: 50px;
-    align-items: baseline;
     margin-bottom: 70px;
   }
 
@@ -1241,34 +1171,73 @@ position: relative;
 }
 
 .Projects-Main .Links button {
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(170, 170, 170, 0.50);
-  font-size: 27px;
-  font-weight: 500;
-  text-transform: uppercase;
   width: 512px;
   height: 137px;
-  transition: 0.3s ease;
-  border-radius: 9.879px;
-  border: 1.143px solid rgba(170, 170, 170, 0.15);
   background: #101010;
-}
-
-.Projects-Main .Links button:not(.Active):hover{
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(89deg, #0385FD -11.06%, #00C899 150.14%);
-color: #FFF;
-}
-
-
-.Projects-Main .Links .Active {
-  border: 1.143px solid #1C67AC;
-  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-  box-shadow: 0px 0px 57.733px 0px rgba(0, 106, 255, 0.15);
-  color: #FFF;
+  color: rgba(170, 170, 170, 0.5);
+  font-size: 27px;
   font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 9.879px;
+  border: none;             /* рамку рисуем псевдо-элементом */
+  transition: color 0.5s ease;
 }
+
+/* Текст поверх всех слоёв */
+.Projects-Main .Links button > span {
+  position: relative;
+  z-index: 3;
+}
+
+.Projects-Main .Links button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.Projects-Main .Links button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.143px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.Projects-Main .Links button:not(.Active):hover {
+  color: #fff;
+}
+.Projects-Main .Links button:not(.Active):hover::before,
+.Projects-Main .Links button:not(.Active):hover::after {
+  opacity: 1;
+}
+
+/* Active: сразу фон+рамка и белый текст */
+.Projects-Main .Links button.Active {
+  color: #fff;
+}
+.Projects-Main .Links button.Active::before,
+.Projects-Main .Links button.Active::after {
+  opacity: 1;
+}
+
 
 .Projects-Main .Info {
   display: flex;
@@ -1404,10 +1373,6 @@ transition: 0.3s;
 }
 
 @media (min-width: 1800px) {
-  .ProjectsSection{
-    width: 1790px;
-  }
-
 
 
     .Projects-Main {
@@ -1421,9 +1386,6 @@ transition: 0.3s;
 }
   
 
-
-
-
 /* Секция форма */
   .custom-select {
     position: relative;
@@ -1434,10 +1396,9 @@ transition: 0.3s;
 }
 
   .FormSection {
-    width: 332px;
+    width: 100%;
     margin: auto;
     border-radius: 15.212px;
-    background: rgba(16, 16, 16, 0.80);
     margin: 16px auto 43px auto;
     padding: 29px 14px 34px 14px;
   }
@@ -1465,7 +1426,7 @@ transition: 0.3s;
     width: 100%;
   }
 
-  .FormSection form input[type="text"], .custom-select{
+  .FormSection form input[type="text"] {
     font-size: 12.613px;
     font-weight: 400;
     padding: 12px 20px 12px 20px;
@@ -1473,6 +1434,7 @@ transition: 0.3s;
     border: 1px solid #2374A6;
     background: rgba(30, 29, 29, 0.00);
     color: #000;
+    outline: none;
   }
 
   .FormSection form [type="text"]::-webkit-input-placeholder{
@@ -1518,6 +1480,7 @@ transition: 0.3s;
   }
 
   .FormButtonContainer:hover input{
+    outline: none;
    opacity: 1;
   }
 
@@ -1554,17 +1517,38 @@ transition: 0.3s;
 }
 
 .select-options {
-    display: none;
-    position: absolute;
-    top: 33px;
-    left: -1px;
-    width: 252px;
-    background: #fff;
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
-    border-top: none;
-    z-index: 10;
-    border: 1px solid #2374A6;
+  /* убираем display:none и всегда рендерим блок */
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 252px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  border-top: none;
+  z-index: 10;
+  border: 1px solid #2374A6;
+
+  /* Скрываем через высоту и opacity */
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+
+  /* Плавный разворот и появление */
+  transition:
+    max-height 0.3s ease-out,
+    opacity     0.3s ease-out,
+    transform   0.3s ease-out;
+}
+
+.custom-select.active .select-options {
+  /* Раскрываем до нужной высоты (больше, чем реальная) */
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .custom-select.active .select-options {
@@ -1581,12 +1565,21 @@ transition: 0.3s;
 
 .FormSection{
   overflow: visible;
+  position: relative;
+  overflow: hidden;
 }
 
 .select-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 12.613px;
+    font-weight: 400;
+    padding: 12px 20px 12px 20px;
+    border-radius: 7.883px;
+    border: 1px solid #2374A6;
+    background: rgba(30, 29, 29, 0.00);
+    color: #000;
 }
 
 .FormHeaderMobile{
@@ -1597,46 +1590,17 @@ transition: 0.3s;
   display: none;
 }
 
-@media (min-width: 660px) {
-  .FormSection{
-    width: 600px;
-  }
-
-  .select-options{
-    width: 520px;
-  }
-}
-
-
-@media (min-width: 980px) {
-.FormSection{
-    width: 920px;
-  }
-
-  .FormSection form {
-    height: auto;
-    gap: 20px;
-}
- 
-}
 
 @media (min-width: 1440px) {
-.FormSection{
-    width: 1400px;
-    padding: 40px;
-    position: relative;
-    margin-top: 90px;
-    margin-bottom: 90px;
-  }
 
   .Form-Header{
     display: none;
   }
 
   .FormSection form{
-    width: 740px;
+    width: 640px;
     margin-left: auto;
-    padding: 48px 76px 41px 88px;
+    padding: 40px 80px 53px 80px;
     height: auto;
     gap:18px;
   }
@@ -1650,10 +1614,14 @@ transition: 0.3s;
     text-align: left;
     width: 515px;
   }
-
-  .FormSection form input[type="text"], .custom-select{
+  .select-header {
     font-size: 22px;
-    padding: 22px 36px;
+    padding: 22px 30px;
+    border-radius: 13px;
+}
+  .FormSection form input[type="text"] {
+    font-size: 22px;
+    padding: 22px 30px;
     border-radius: 13px;
   }
 
@@ -1676,8 +1644,9 @@ transition: 0.3s;
   }
 
   .select-options{
-    width: 772px;
+    width: 100%;
     top: 59px;
+    left: 0;
   }
 
   .select-options li{
@@ -1686,30 +1655,37 @@ transition: 0.3s;
 
  
 
-      .deskFormImg {
-        display: block;
-        position: absolute;
-        width: 557px;
-        bottom: 0px;
-        left: -7px;
-    }
+  .deskFormImg {
+    display: block;
+    position: absolute;
+    width: 699px;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 772px;
+  }
 }
 
 @media (min-width: 1800px) {
-  .FormSection{
-    width: 1790px;
-  }
 
-   .deskFormImg{
+  .deskFormImg {
+    display: block;
+    position: absolute;
+    width: 699px;
+    bottom: 0px;
     top: 0px;
-    height: 100%;
-    bottom: unset;
-    left: unset;
-    width: auto;
+    left: 0px;
+    right: 0px;
+    height: 772px;
   }
 
-   .FormSection form{
+  .FormSection form{
     width: 936px;
+  }
+  .select-options{
+    width: 100%;
+    top: 59px;
   }
 
 }
@@ -1733,13 +1709,14 @@ transition: 0.3s;
 
 .PartnersSection .item img{
   height: 42px;
-  width: auto;
+  width: 100%;
   border-radius: 5px;
+  user-select: none;
 }
 
 
 .PartnersSection .marquee {
-  animation: scroll 250s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 @media (min-width: 980px) {

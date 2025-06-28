@@ -6,7 +6,20 @@
 
 <link rel="stylesheet" href="css/header.css?5.7">
 <link rel="stylesheet" href="fonts/stylesheet.css">
-
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    content: [
+      "<?php echo get_template_directory_uri(); ?>/**/*.php",
+      "<?php echo get_template_directory_uri(); ?>/src/js/**/*.js",
+    ],
+    corePlugins: {
+      preflight: false,
+    },
+    theme: { extend: {} },
+    plugins: [],
+  }
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
@@ -102,19 +115,20 @@
       </div>
     </div>
   </div>
-</header><main>
+</header>
+<main>
   <video class="VideoDesk" muted="" autoplay="" loop="" playsinline="">
     <source src="img/videoMain.mp4" type="video/mp4">
   </video>
   <video class="VideoMob" muted="" autoplay="" loop="" playsinline="">
     <source src="img/videoMainMob.mp4" type="video/mp4">
   </video>
-  <section class="MainSection">
+  <section class="MainSection md:py-[260px] pt-[60px]">
     <h1>Технологии. Доверие. Результат.</h1>
-    <p>Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>
+    <p class="pb-[260px] md:pb-0">Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>
     <a href="#AnchorForm">Узнать больше</a>
   </section>
-  <section class="AboutSection">
+  <section class="AboutSection bg-[#101010]/80 px-0 md:px-[50px]">
     <div class="About-Header">
       <div class="hwn">
       <h2>О&nbsp;КОМПАНИИ</h2><span>01</span>
@@ -139,50 +153,7 @@
             <div class="item"><img src="img/About9.png"></div>
             <div class="item"><img src="img/About10.png"></div>
             <div class="item"><img src="img/About11.png"></div>
-            <div class="item"><img src="img/About12.png"></div>
-          </div>
-          <div aria-hidden="true" class="items marquee">
-            <div class="item"><img src="img/About1.png"></div>
-            <div class="item"><img src="img/About2.png"></div>
-            <div class="item"><img src="img/About3.png"></div>
-            <div class="item"><img src="img/About4.png"></div>
-            <div class="item"><img src="img/About5.png"></div>
-            <div class="item"><img src="img/About6.png"></div>
-            <div class="item"><img src="img/About7.png"></div>
-            <div class="item"><img src="img/About8.png"></div>
-            <div class="item"><img src="img/About9.png"></div>
-            <div class="item"><img src="img/About10.png"></div>
-            <div class="item"><img src="img/About11.png"></div>
-            <div class="item"><img src="img/About12.png"></div>
-          </div>
-        
-          <div class="items marquee">
-            <div class="item"><img src="img/About1.png"></div>
-            <div class="item"><img src="img/About2.png"></div>
-            <div class="item"><img src="img/About3.png"></div>
-            <div class="item"><img src="img/About4.png"></div>
-            <div class="item"><img src="img/About5.png"></div>
-            <div class="item"><img src="img/About6.png"></div>
-            <div class="item"><img src="img/About7.png"></div>
-            <div class="item"><img src="img/About8.png"></div>
-            <div class="item"><img src="img/About9.png"></div>
-            <div class="item"><img src="img/About10.png"></div>
-            <div class="item"><img src="img/About11.png"></div>
-            <div class="item"><img src="img/About12.png"></div>
-          </div>
-          <div aria-hidden="true" class="items marquee">
-            <div class="item"><img src="img/About1.png"></div>
-            <div class="item"><img src="img/About2.png"></div>
-            <div class="item"><img src="img/About3.png"></div>
-            <div class="item"><img src="img/About4.png"></div>
-            <div class="item"><img src="img/About5.png"></div>
-            <div class="item"><img src="img/About6.png"></div>
-            <div class="item"><img src="img/About7.png"></div>
-            <div class="item"><img src="img/About8.png"></div>
-            <div class="item"><img src="img/About9.png"></div>
-            <div class="item"><img src="img/About10.png"></div>
-            <div class="item"><img src="img/About11.png"></div>
-            <div class="item"><img src="img/About12.png"></div>
+            <div class="item"><img src="img/About12.png"></div> 
           </div>
         </div>
       </div>
@@ -233,14 +204,14 @@
       </div>
     </div>
   </section>
-  <section class="BuisnesSection">
+  <section class="BuisnesSection bg-[#C2C4C5]">
     <div class="Buisnes-Header">
       <h2>НАПРАВЛЕНИЯ<br>БИЗНЕСА</h2><span>03</span>
     </div>
     <div class="Buisnes-Main_mobile">
       <div class="swiperB swiper-initialized swiper-horizontal swiper-watch-progress">
         <div class="Swiper-Control">
-          <div class="line"></div>
+          <div class="line bg-[#393939]/50 rounded-full"></div>
           <button class="Swiper-Prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c98c65de2951cf22">
             <img src="img/ArrowLeft.svg">
           </button>
@@ -248,19 +219,7 @@
             <img src="img/ArrowRight.svg">
           </button>
         </div>
-        <div class="swiper-wrapper" id="swiper-wrapper-c98c65de2951cf22" aria-live="polite">
-          
-          
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
+        <div class="swiper-wrapper" id="swiper-wrapper-c98c65de2951cf22" aria-live="polite">    
         <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 11" data-swiper-slide-index="0" style="width: 350px; margin-right: -40px;">
             <div class="Card">
               <img src="img/buisnesDecor.png">
@@ -364,14 +323,14 @@
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </div>
   </section>
-  <section class="NewsSection">
+  <section class="NewsSection bg-[#101010]/80">
     <div class="News-Header">
       <h2>НОВОСТИ<br>КОМПАНИИ</h2><span>04</span>
     </div>
     <div class="News-Main_mobile">
       <div class="swiperN swiper-initialized swiper-horizontal swiper-watch-progress">
         <div class="Swiper-Control">
-          <div class="line"></div>
+          <div class="line bg-white rounded-full"></div>
           <button class="Swiper-Prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-1026fb852a4788b1">
             <img src="img/ArrowLeft.svg">
           </button>
@@ -517,12 +476,10 @@
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </div>
   </section>
-
-
    <section class="ProjectsSection" id="AnchorProjects">
     <div class="Projects-Header">
       <p>За последние четыре года мы организовали и приняли участие в ряде значимых мероприятий</p>
-      <h2>ПРОЕКТЫ</h2><span>05</span>
+      <div class="hwn"><h2>ПРОЕКТЫ</h2><span>05</span></div>
     </div>
     <div class="Projects-Main_mobile">
       <div class="swiperP swiper-initialized swiper-horizontal swiper-backface-hidden">
@@ -612,94 +569,93 @@
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </div>
     <div class="Projects-Main">
-<div class="Links">
-<button class="Active" data="Team">alikson team</button>
-<button data="Service">alikson club</button>
-<button data="Fond">благотфорительный фонд</button>
-</div>
-<div class="Info Active" data="Team">
-<div class="Banner">
-<!-- <h3>ALIKSON TEAM</h3> -->
- <div class="ImgContainer">
-<img src="img/Projects1.png">
-</div>
-<div class="BannerInfo">
-<p>Дебют в&nbsp;Медиа Баскет</p>
-<a href="">Подробнее</a>
-</div>
-</div>
-<div class="Stats">
-<div>
-<h3>3&nbsp;МЛРД</h3>
-<p>Охват лиги в&nbsp;соцсетях</p>
-</div>
-<div>
-<h3>40+&nbsp;МЛН</h3>
-<p>Подписчики игроков и&nbsp;амбассадоров</p>
-</div>
-<div>
-<h3>48+&nbsp;МЛН</h3>
-<p>Охват публикаций о&nbsp;команде</p>
-</div>
-<div>
-<a href="">Стать спонсором</a>
-</div>
-</div>
-</div>
-<div class="Info" data="Service">
-<div class="Banner">
-<!-- <h3>ALIKSON INVEST CLUB</h3> -->
-<div class="ImgContainer">
-<img src="img/Projects2.png">
-</div>
-<div class="BannerInfo">
-<p>Сообщество для инвесторов,<br> объединенных целью увеличения капитала</p>
-<a href="">Подробнее</a>
-</div>
-</div>
-<div class="Stats">
-<div>
-<h3>36%</h3>
-<p>годовых средняя доходность </p>
-</div>
-<div>
-<h3>50+</h3>
-<p>инвесторов с&nbsp;капиталом от&nbsp;25&nbsp;млн рублей</p>
-</div>
-<div>
-<a href="">Подробнее</a>
-</div>
-</div>
-</div>
-<div class="Info" data="Fond">
-<div class="Banner">
-<!-- <h3>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ALIKSON</h3> -->
-<div class="ImgContainer">
-<img src="img/Projects3.png">
-</div>
-<div class="BannerInfo">
-<p>Благотворительный фонд Alikson:<br> Помогать&nbsp;— наша ответственность</p>
-<a href="">Подробнее</a>
-</div>
-</div>
-<div class="Stats">
-<div>
-<h3>45+</h3>
-<p>Проектов реализовано за&nbsp;2&nbsp;года</p>
-</div>
-<div>
-<h3>1%</h3>
-<p>Прибыли компании перечисляется в&nbsp;благотворительные фонды</p>
-</div>
-<div>
-<a href="">Подробнее</a>
-</div>
-</div>
-</div>
-</div>
+      <div class="Links">
+        <button class="Active" data="Team"><span>alikson team</span></button>
+        <button data="Service"><span>alikson club</span></button>
+        <button data="Fond"><span>благотфорительный фонд</span></button>
+      </div>
+      <div class="Info Active" data="Team">
+        <div class="Banner">
+        <!-- <h3>ALIKSON TEAM</h3> -->
+        <div class="ImgContainer">
+          <img src="img/Projects1.png">
+        </div>
+        <div class="BannerInfo">
+          <p>Дебют в&nbsp;Медиа Баскет</p>
+          <a href="">Подробнее</a>
+        </div>
+        </div>
+        <div class="Stats">
+          <div>
+            <h3>3&nbsp;МЛРД</h3>
+            <p>Охват лиги в&nbsp;соцсетях</p>
+          </div>
+          <div>
+            <h3>40+&nbsp;МЛН</h3>
+            <p>Подписчики игроков и&nbsp;амбассадоров</p>
+          </div>
+          <div>
+            <h3>48+&nbsp;МЛН</h3>
+            <p>Охват публикаций о&nbsp;команде</p>
+          </div>
+          <div>
+            <a href="">Стать спонсором</a>
+          </div>
+        </div>
+      </div>
+      <div class="Info" data="Service">
+        <div class="Banner">
+          <!-- <h3>ALIKSON INVEST CLUB</h3> -->
+          <div class="ImgContainer">
+            <img src="img/Projects2.png">
+          </div>
+          <div class="BannerInfo">
+            <p>Сообщество для инвесторов,<br> объединенных целью увеличения капитала</p>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+        <div class="Stats">
+          <div>
+            <h3>36%</h3>
+            <p>годовых средняя доходность </p>
+          </div>
+          <div>
+            <h3>50+</h3>
+            <p>инвесторов с&nbsp;капиталом от&nbsp;25&nbsp;млн рублей</p>
+          </div>
+          <div>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="Info" data="Fond">
+        <div class="Banner">
+          <!-- <h3>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ALIKSON</h3> -->
+          <div class="ImgContainer">
+            <img src="img/Projects3.png">
+          </div>
+          <div class="BannerInfo">
+            <p>Благотворительный фонд Alikson:<br> Помогать&nbsp;— наша ответственность</p>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+        <div class="Stats">
+          <div>
+            <h3>45+</h3>
+            <p>Проектов реализовано за&nbsp;2&nbsp;года</p>
+          </div>
+          <div>
+            <h3>1%</h3>
+            <p>Прибыли компании перечисляется в&nbsp;благотворительные фонды</p>
+          </div>
+          <div>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
- 
-  <section class="FormSection" id="AnchorForm">
+  <section class="FormSection bg-[#101010]/80" id="AnchorForm">
     <img class="deskFormImg" src="img/FormBack.png">
     <div class="Form-Header">
       <p>Присоединяйтесь к ALIKSON — строим будущее вместе!</p>
@@ -736,20 +692,6 @@
     <div class="wrap">
       <div class="items-wrap">
         <div class="items marquee">
-          <div class="item"><img src="img/Partners/1.png"></div>
-          <div class="item"><img src="img/Partners/2.png"></div>
-          <div class="item"><img src="img/Partners/3.png"></div>
-          <div class="item"><img src="img/Partners/4.png"></div>
-          <div class="item"><img src="img/Partners/5.png"></div>
-          <div class="item"><img src="img/Partners/6.png"></div>
-          <div class="item"><img src="img/Partners/1.png"></div>
-          <div class="item"><img src="img/Partners/2.png"></div>
-          <div class="item"><img src="img/Partners/3.png"></div>
-          <div class="item"><img src="img/Partners/4.png"></div>
-          <div class="item"><img src="img/Partners/5.png"></div>
-          <div class="item"><img src="img/Partners/6.png"></div>
-        </div>
-        <div aria-hidden="true" class="items marquee">
           <div class="item"><img src="img/Partners/1.png"></div>
           <div class="item"><img src="img/Partners/2.png"></div>
           <div class="item"><img src="img/Partners/3.png"></div>
@@ -948,62 +890,16 @@
     });
   });
 
-  //о компании
-  document.addEventListener("DOMContentLoaded", function() {
-    //  if (window.innerWidth <= 768) {  Только для мобилок
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelector(".items-wrap .items");
+    items.innerHTML += items.innerHTML;
 
-    const marquee = document.querySelector(".items-wrap");
-    const marqueeContent = marquee.innerHTML; // Сохраняем оригинальный контент
-    marquee.innerHTML += marqueeContent; // Дублируем контент
-
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    let isScrolling = false;
-    let speed = 0.6; // Скорость автопрокрутки
-    let autoScroll;
-
-    function startAutoScroll() {
-      if (!isScrolling) {
-        autoScroll = setInterval(() => {
-          marquee.scrollLeft += speed;
-          if (marquee.scrollLeft >= marquee.scrollWidth / 2) {
-            marquee.scrollLeft = 0; // Перепрыгиваем в начало без рывков
-          }
-        }, 16);
-      }
-    }
-
-    function stopAutoScroll() {
-      clearInterval(autoScroll);
-      isScrolling = true;
-      setTimeout(() => {
-        isScrolling = false;
-        startAutoScroll();
-      }, 2000); // Через 2 сек снова автопрокрутка
-    }
-
-    startAutoScroll();
-
-    marquee.addEventListener("touchstart", (e) => {
-      isDown = true;
-      startX = e.touches[0].pageX - marquee.offsetLeft;
-      scrollLeft = marquee.scrollLeft;
-      stopAutoScroll(); // Останавливаем автопрокрутку при свайпе
+    items.parentElement.addEventListener("touchstart", () => {
+      items.style.animationPlayState = "paused";
     });
-
-    marquee.addEventListener("touchmove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.touches[0].pageX - marquee.offsetLeft;
-      const walk = (x - startX) * 1.5;
-      marquee.scrollLeft = scrollLeft - walk;
+    items.parentElement.addEventListener("touchend", () => {
+      items.style.animationPlayState = "running";
     });
-
-    marquee.addEventListener("touchend", () => {
-      isDown = false;
-    });
-    // }
   });
 
   ///////////////////////////////////////////////
