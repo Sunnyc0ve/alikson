@@ -82,10 +82,8 @@ main > video{
 /* Главная секция */
   .MainSection{
     width: 100%;
-    padding: 273px 0px 200px 0px;
     margin: auto;
     min-width: 330px;
-    padding: 0 14px;
   }
 
   h1{
@@ -114,9 +112,9 @@ main > video{
     font-weight: 500;
     border-radius: 8px;
     width: 486px;
-    height: 62px;
+    margin: 0 auto;
+    padding: 12px 0;
     font-size: 24px;
-    margin: auto;
     transition: 0.3s ease;
   }
 
@@ -140,7 +138,20 @@ main > video{
 }
   }
 
+  @media (max-width: 979px){
 
+    .MainSection {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+    .MainSection a {
+      width: 100%;
+    }
+
+  }
 @media (max-width: 659px) {
 
   main>video {
@@ -170,7 +181,6 @@ main > video{
   .MainSection a {
     height: 40px;
     font-size: 16px;
-    width: auto;
   }
 
   .VideoMob {
@@ -261,6 +271,7 @@ main > video{
     font-size: 27px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-top: 8px;
   }
 
   .hwn span{
@@ -300,7 +311,7 @@ main > video{
 
   .ImgMapCont img{
     width: 20px;  
-
+    margin-top: 8px;
   }
   
 
@@ -311,7 +322,7 @@ main > video{
 
   .ImgMapCont img{
     width: auto;  
-
+    margin-top: 30px;
   }
 
   [map-id="2"] > div{
@@ -360,6 +371,7 @@ main > video{
 
   .Numbers-Main .Big{
     font-size: 115px;
+    margin-top: 30px;
   }
 
   .Numbers-Main{
@@ -967,8 +979,7 @@ main > video{
     height: 31px;
   }
 .Projects-Main_mobile .Info .Banner {
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png");
-    background-size: 100% 100%;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects1.png") no-repeat;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -979,17 +990,11 @@ main > video{
   }
 
   .Projects-Main_mobile .swiper-slide:nth-child(2) .Banner {
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects2.png");
-    background-size: 100% 100%;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects2.png") no-repeat;
   }
 
-
-
- 
-
   .Projects-Main_mobile .swiper-slide:nth-child(3) .Banner {
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects3.png");
-    background-size: 100% 100%;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 7.31%, #181818 93.34%), url("../img/Projects3.png") no-repeat;
   }
 
  .ProjectsSection{
