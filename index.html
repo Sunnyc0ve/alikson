@@ -70,52 +70,46 @@
     <div class="Header-Menu_mobile">
       <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
       <div class="Header-Menu_mobile_hidden">
-        <div>
-          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="h1">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
+        <div class="links">
+          <div>
+            <a href="Company.php"><span>О компании</span></a>
           </div>
-        </div>
-        <div>
-          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <div class="LastContainer">
-            <a href="">8-999-999-99-99</a>
-            <div class="LangContainer">
-              <button class="Active">RU</button>
-              <button>EN</button>
+          <div>
+            <button data="h1"><span>Направления бизнеса</span></button>
+            <div data="h1">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
             </div>
           </div>
+          <div>
+            <a href="https://hh.ru/employer/5185896"><span>Карьера в компании</span></a>
+          </div>
+          <div>
+            <a href="#AnchorForm"><span>Контакты</span></a>
+          </div>
+        </div>
+        <div class="Header-Menu">
+          <button><img src="img/zoom.svg"></button>
+          <input type="text" placeholder="Поиск по сайту">
         </div>
       </div>
     </div>
   </div>
 </header>
+<?php
+get_header();
+?>
 <main>
   <video class="VideoDesk" muted="" autoplay="" loop="" playsinline="">
     <source src="img/videoMain.mp4" type="video/mp4">
@@ -123,7 +117,7 @@
   <video class="VideoMob" muted="" autoplay="" loop="" playsinline="">
     <source src="img/videoMainMob.mp4" type="video/mp4">
   </video>
-  <section class="MainSection md:py-[260px] pt-[60px]">
+  <section class="MainSection md:py-[260px] pt-[120px]">
     <div>
       <h1>Технологии. Доверие. Результат.</h1>
       <p class="md:pb-0">Инвестиции, девелопмент, логистика и масштабные B2B-решения по всему миру</p>

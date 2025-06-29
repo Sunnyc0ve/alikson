@@ -7,7 +7,6 @@ MenuButton.addEventListener('click',()=>{
     Menu.setAttribute('style','transform: translateY(0px);')
     MenuButton.querySelector('img').setAttribute('src','img/closeMenu.svg')
     document.querySelector('header').setAttribute('style','border-radius: 0px; z-index:100;')
-    document.querySelector('body').setAttribute('style','overflow:hidden;')
   }else{
     Menu.removeAttribute('style')
     MenuButton.querySelector('img').setAttribute('src','img/menu.svg')
