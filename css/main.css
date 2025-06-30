@@ -103,23 +103,40 @@ main > video{
     font-size: 30px;
   }
 
-  .MainSection a{
-    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-    color: #fff;
+  .MainSection a {
+    position: relative;        /* чтобы ::before правильно позиционировался */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
-    border-radius: 8px;
     width: 486px;
     margin: 0 auto;
     padding: 12px 0;
     font-size: 24px;
-    transition: 0.3s ease;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    overflow: hidden;          /* обрезать псевдо-элемент за пределами углов */
+    z-index: 0;
   }
-
-  .MainSection a:hover{
-    box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
+  
+  /* в ::before — тот самый «новый» градиент, который будет всплывать */
+  .MainSection a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.20) 100%),
+      linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  /* при ховере просто плавно показываем ::before */
+  .MainSection a:hover::before {
+    opacity: 1;
   }
 
   .VideoMob{
@@ -1493,34 +1510,34 @@ transition: 0.3s;
     font-weight: 400;
     font-size: 12.613px;
     border-bottom: 1px solid #2374A6;
-}
+  }
 
-.select-options {
-  /* убираем display:none и всегда рендерим блок */
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  border-radius: 0 0 10px 10px;
-  overflow: hidden;
-  border-top: none;
-  z-index: 10;
-  border: 1px solid #2374A6;
+  .select-options {
+    /* убираем display:none и всегда рендерим блок */
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    border-top: none;
+    z-index: 10;
+    border: 1px solid #2374A6;
 
-  /* Скрываем через высоту и opacity */
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none;
+    /* Скрываем через высоту и opacity */
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
 
-  /* Плавный разворот и появление */
-  transition:
-    max-height 0.3s ease-out,
-    opacity     0.3s ease-out,
-    transform   0.3s ease-out;
-}
+    /* Плавный разворот и появление */
+    transition:
+      max-height 0.3s ease-out,
+      opacity     0.3s ease-out,
+      transform   0.3s ease-out;
+  }
 
 .custom-select.active .select-options {
   /* Раскрываем до нужной высоты (больше, чем реальная) */
@@ -1544,22 +1561,17 @@ transition: 0.3s;
     transform: rotate(90deg);
 }
 
-.FormSection{
-  overflow: visible;
-  position: relative;
-}
-
 .select-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12.613px;
-    font-weight: 400;
-    padding: 12px 20px 12px 20px;
-    border-radius: 7.883px;
-    border: 1px solid #2374A6;
-    background: rgba(30, 29, 29, 0.00);
-    color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.613px;
+  font-weight: 400;
+  padding: 12px 20px 12px 20px;
+  border-radius: 7.883px;
+  border: 1px solid #2374A6;
+  background: rgba(30, 29, 29, 0.00);
+  color: #000;
 }
 
 .FormHeaderMobile{
@@ -1569,7 +1581,15 @@ transition: 0.3s;
 .deskFormImg{
   display: none;
 }
-
+@media (max-width:1439px){
+  .FormSection{
+    overflow: visible;
+    position: relative;
+  }
+}
+.FormSection{
+  position: relative;
+}
 
 @media (min-width: 1440px) {
 
