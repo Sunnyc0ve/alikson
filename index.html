@@ -796,6 +796,52 @@ get_header();
 </footer>
 <script src="include/header.js"></script>
 <script>
+  (function() {
+    const input = document.getElementById('phone');
+    input.addEventListener('input', onPhoneInput);
+    input.addEventListener('blur', onPhoneBlur);
+
+    function onPhoneInput(e) {
+      let value = e.target.value.replace(/\D/g, '');
+
+      // всегда начинаем с 7
+      if (value.startsWith('8')) {
+        value = '7' + value.slice(1);
+      }
+      if (!value.startsWith('7')) {
+        value = '7' + value;
+      }
+
+      // обрезаем до 11 цифр: 7 + 10 цифр номера
+      value = value.slice(0, 11);
+
+      // собираем по формату +7 (XXX) XXX-XX-XX
+      let formatted = '+7';
+      if (value.length > 1) {
+        formatted += ' (' + value.slice(1, 4);
+      }
+      if (value.length >= 4) {
+        formatted += ') ' + value.slice(4, 7);
+      }
+      if (value.length >= 7) {
+        formatted += '-' + value.slice(7, 9);
+      }
+      if (value.length >= 9) {
+        formatted += '-' + value.slice(9, 11);
+      }
+
+      e.target.value = formatted;
+    }
+
+    function onPhoneBlur(e) {
+      const re = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+      if (!re.test(e.target.value)) {
+        e.target.setCustomValidity('Пожалуйста, введите номер в формате +7 (XXX) XXX-XX-XX');
+      } else {
+        e.target.setCustomValidity('');
+      }
+    }
+  })();
   //Слайдеры
   const swiperN = new Swiper(".swiperN", {
     loop: true,
