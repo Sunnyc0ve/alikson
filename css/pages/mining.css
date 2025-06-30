@@ -1,21 +1,64 @@
 /* ОБЩИЕ */
-body {
-  background: url("../../img/backMainMob.jpg");
+
+/* Общие */
+body{
+  background: url("../../img/backMainMob.svg");
   background-size: 100% 100%;
+  background-color: #121212;
 }
 
 @media (min-width: 980px) {
-  body {
-    background: url("../../img/backMain.jpg");
+  body{
+    background: url("../../img/backMain.svg");
     background-size: 100% 100%;
+    background-color: #121212;
+  }
+  .Swiper-Prev, .Swiper-Next{
+    transition: 0.3s ease;
+  }
+  
+  .Swiper-Prev:hover, .Swiper-Next:hover{
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
   }
 }
 
-/* .Advantages-Content .Card:hover, .About-Content .Info > div:hover, .Why-Content .Card:hover, .Services-Right .Card:hover, .Packs-Content .Card:hover, .Packs-Content_mobile .swiper-slide-active .Card{
-  background: #113058;
-  box-shadow: 0px 0px 6px 2px #0485FE;
-} */
 
+
+
+/*Слайдер*/
+.items-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  counter-reset: item;
+  justify-content: space-around;
+  width: max-content;
+  will-change: transform; 
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  padding: 0 20px;
+  max-width: 1790px;
+  margin: 0 auto;
+}
 
 
 /* Главная секция*/
@@ -25,15 +68,15 @@ body {
   gap: 30px;
   align-items: center;
   padding: 170px 0px 250px 0px;
-  position: relative;
 }
 
 .MainSection .Background {
   background: url('../../img/mining/MainBack.jpg');
+  
   mix-blend-mode: overlay;
   position: absolute;
-  width: 1920px;
-  height: 920px;
+  width: 100%;
+  height: 100%;
   top: -120px;
   z-index: -1;
 }
@@ -56,27 +99,43 @@ h1 {
 }
 
 .MainSection a {
-  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
-  color: #fff;
+  position: relative;        /* чтобы ::before правильно позиционировался */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
-  border-radius: 8px;
   width: 486px;
-  height: 62px;
+  margin: 0 auto;
+  padding: 12px 0;
   font-size: 24px;
-  margin: auto;
-  transition: 0.3s ease;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+  overflow: hidden;          /* обрезать псевдо-элемент за пределами углов */
+  z-index: 0;
 }
 
-.MainSection a:hover {
-  box-shadow: 0px -2px 14.6px 0px rgba(255, 255, 255, 0.60);
+/* в ::before — тот самый «новый» градиент, который будет всплывать */
+.MainSection a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.20) 100%),
+    linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+/* при ховере просто плавно показываем ::before */
+.MainSection a:hover::before {
+  opacity: 1;
 }
 
 .MainSection .Main-Content {
   display: grid;
-  width: 678px;
   grid-template-columns: 1fr 1fr 0.6fr;
   margin-top: 60px;
 }
@@ -110,14 +169,9 @@ h1 {
   height: 50px;
 }
 
-@media (max-width: 1799px) {}
-
-@media (max-width: 1439px) {}
 
 @media (max-width: 979px) {
   .MainSection{
-    width: 620px;
-    margin: auto;
     align-items: start;
     padding: 60px 0px;
   }
@@ -147,8 +201,7 @@ h1 {
 }
 
 @media (max-width: 659px) {
-    .MainSection{
-    width: 320px;
+  .MainSection{
     gap:20px;
     position: static;
   }
@@ -199,11 +252,11 @@ h1 {
 /*Почему майнинг выгоден*/
 
 .AboutSection {
-  width: 1790px;
   margin: auto;
   border-radius: 20px;
   background: #C2C4C5;
   padding: 80px 150px;
+  width: 100%;
 }
 
 .AboutSection h2 {
@@ -315,17 +368,8 @@ h1 {
   }
 }
 
-@media (max-width: 1799px) {
-  .AboutSection {
-    width: 1400px;
-  }
-
-
-}
-
 @media (max-width: 1439px) {
   .AboutSection {
-    width: 920px;
     padding: 20px;
   }
 
@@ -342,9 +386,6 @@ h1 {
 }
 
 @media (max-width: 979px) {
-.AboutSection {
-    width: 620px;
-  }
 
   .About-Content .Info{
     grid-template-columns: 1fr;
@@ -352,9 +393,6 @@ h1 {
 }
 
 @media (max-width: 659px) {
-  .AboutSection {
-    width: 320px;
-  }
 
   .item {
     width: 230px;
@@ -400,10 +438,12 @@ h1 {
 /*Майнинг или банк*/
 .VsSection {
   padding: 80px 0px;
+  max-width:  1490px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .VsSection>div {
-  width: 1490px;
   margin: auto;
 }
 
@@ -433,18 +473,21 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap:60px;
   margin-top: 50px !important;
+  width: 100%;
 }
 
 .Vs-Content .Card:first-child {
   background: #171717;
-  width: 548px;
   height: 394px;
   padding: 20px;
   border-radius: 11px;
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 548px;
 }
 
 
@@ -531,13 +574,14 @@ h1 {
 
 .Vs-Content .Card:last-child {
   background: #171717;
-  width: 882px;
+  width: 100%;
   height: 634px;
   border-radius: 18px;
   padding: 40px;
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 882px;
 }
 
 
@@ -673,13 +717,6 @@ h1 {
 
 
 @media (max-width: 1799px) {
-  .VsSection>div {
-    width: 1400px;
-  }
-
-  .Vs-Content .Card:first-child {
-    width: 520px;
-  }
 
   .Vs-Content .Card:last-child {
     width: 850px;
@@ -687,9 +724,6 @@ h1 {
 }
 
 @media (max-width: 1439px) {
-  .VsSection>div {
-    width: 920px;
-  }
 
   .Vs-Content{
     flex-direction: column;
@@ -703,9 +737,7 @@ h1 {
 }
 
 @media (max-width: 979px) {
-  .VsSection>div {
-    width: 620px;
-  }
+
 
   .Vs-Content .Card:last-child {
     width: 100%;
@@ -735,10 +767,6 @@ h1 {
 @media (max-width: 659px) {
   .VsSection {
     padding: 30px 0px;
-  }
-
-  .VsSection>div {
-    width: 320px;
   }
 
   .Vs-Content .Card:first-child {
@@ -877,7 +905,7 @@ h1 {
 .ServicesSection {
   border-radius: 20px;
   background: #C2C4C5;
-  width: 1790px;
+  width: 100%;
   padding: 80px 150px 0px 150px;
   margin: auto;
 }
@@ -926,9 +954,6 @@ h1 {
 }
 
 @media (max-width: 1799px) {
-  .ServicesSection {
-    width: 1400px;
-  }
 
   .Services-Right {
     width: 731px;
@@ -937,7 +962,6 @@ h1 {
 
 @media (max-width: 1439px) {
   .ServicesSection {
-    width: 920px;
     padding: 20px 20px 0px 20px;
   }
 
@@ -978,8 +1002,9 @@ h1 {
 }
 
 .AdvantagesSection>div {
-  width: 1490px;
+  max-width: 1490px;
   margin: auto;
+  width: 100%;
 }
 
 .Advantages-Content {
@@ -1013,26 +1038,12 @@ h1 {
   font-weight: 400;
 }
 
-@media (max-width: 1799px) {
-  .AdvantagesSection>div {
-    width: 1400px;
-  }
-}
-
-@media (max-width: 1439px) {
-  .AdvantagesSection>div {
-    width: 920px;
-  }
-}
 
 @media (max-width: 979px) {
   .AdvantagesSection {
     padding-top: 0px;
   }
 
-  .AdvantagesSection>div {
-    width: 620px;
-  }
 
   .Advantages-Content {
     grid-template-columns: 1fr;
@@ -1042,9 +1053,6 @@ h1 {
 @media (max-width: 659px) {
   .AdvantagesSection{
     padding-bottom: 30px;
-  }
-  .AdvantagesSection>div {
-    width: 320px;
   }
 
   .Advantages-Content h3{
@@ -1075,7 +1083,8 @@ h1 {
 }
 
 .WhySection>* {
-  width: 1490px;
+  max-width: 1490px;
+  width: 100%;
   margin: auto;
 }
 
@@ -1100,22 +1109,7 @@ h1 {
   font-weight: 400;
 }
 
-@media (max-width: 1799px) {
-  .WhySection>* {
-    width: 1400px;
-  }
-}
-
-@media (max-width: 1439px) {
-  .WhySection>* {
-    width: 920px;
-  }
-}
-
 @media (max-width: 979px) {
-  .WhySection>* {
-    width: 620px;
-  }
 
   .Why-Content {
   grid-template-columns: repeat(2, 1fr);
@@ -1126,9 +1120,6 @@ h1 {
 @media (max-width: 659px) {
   .WhySection{
     padding-bottom: 30px;
-  }
-   .WhySection>* {
-    width: 320px;
   }
 
   .Why-Content .Card span{
@@ -1151,8 +1142,8 @@ h1 {
 
 /*Пакеты услуг*/
 .PacksSection {
-  width: 1790px;
   margin: auto;
+  width: 100%;
   padding: 80px 150px;
   border-radius: 20px;
   background: rgba(16, 16, 16, 0.80);
@@ -1227,14 +1218,11 @@ h1 {
 
 
 @media (max-width: 1799px) {
-  .PacksSection {
-    width: 1400px;
-  }
+
 }
 
 @media (max-width: 1439px) {
   .PacksSection {
-    width: 920px;
     padding: 20px 200px;
   }
 
@@ -1245,7 +1233,6 @@ h1 {
 
 @media (max-width: 979px) {
   .PacksSection {
-    width: 620px;
     padding: 20px;
   }
   .Packs-Content_mobile {
@@ -1267,13 +1254,11 @@ h1 {
 
 @media (max-width: 659px) {
   .PacksSection {
-    width: 320px;
     border-radius: 8px;
-    padding: 20px 0px 20px 10px;
+    padding: 20px;
   }
 
   .Packs-Content .Card, .Packs-Content_mobile .Card{
-    width: 270px;
     height: 205px;
     border-radius: 7px;
   }

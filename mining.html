@@ -19,90 +19,82 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-<header>
-  <div class="HeaderContainer">
-    <a href="index.php">
-      <logo>
-        <img src="img/logo.svg">
-      </logo>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="Company.php">О компании</a></li>
-        <li id="DirectionsMenuBtn">Направления бизнеса
-          <div class="Directions_hidden">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
-        <li><a href="index.php#AnchorForm">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="Header-Menu">
-      <button><img src="img/zoom.svg"></button>
-      <input type="text" placeholder="Поиск по сайту">
-    </div>
-    <div class="Header-Menu_mobile">
-      <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
-      <div class="Header-Menu_mobile_hidden">
-        <div>
-          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="h1">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <div class="LastContainer">
-            <a href="">8-999-999-99-99</a>
-            <div class="LangContainer">
-              <button class="Active">RU</button>
-              <button>EN</button>
+  <header >
+    <div id="site-header" class="HeaderContainer">
+      <a href="index.php">
+        <logo>
+          <img src="./img/logo.svg">
+        </logo>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="Company.php">О компании</a></li>
+          <li id="DirectionsMenuBtn">Направления бизнеса
+            <div class="Directions_hidden">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
             </div>
+          </li>
+          <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
+          <li><a href="#AnchorForm">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="Header-Menu">
+        <button><img src="img/zoom.svg"></button>
+        <input type="text" placeholder="Поиск по сайту">
+      </div>
+      <div class="Header-Menu_mobile">
+        <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
+        <div class="Header-Menu_mobile_hidden">
+          <div class="links">
+            <div>
+              <a href="Company.php"><span>О компании</span></a>
+            </div>
+            <div>
+              <button data="h1"><span>Направления бизнеса</span></button>
+              <div data="h1">
+                <ul>
+                  <li><a href="PremierCars.php">Premier Cars</a></li>
+                  <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                  <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                  <li><a href="Investitions.php">Alikson Invest</a></li>
+                  <li><a href="Mining.php">Майнинг</a></li>
+                  <li><a href="Logistick.php">Логистика</a></li>
+                  <li><a href="Tender.php">Тендерный дивизион</a></li>
+                  <li><a href="PayAgent.php">Платежный агент</a></li>
+                  <li><a href="Development.php">Девелопмент</a></li>
+                  <li><a href="Vad.php">ВЭД</a></li>
+                  <li><a href="ApartSharing.php">Apart Sharing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <a href="https://hh.ru/employer/5185896"><span>Карьера в компании</span></a>
+            </div>
+            <div>
+              <a href="#AnchorForm"><span>Контакты</span></a>
+            </div>
+          </div>
+          <div class="Header-Menu">
+            <button><img src="img/zoom.svg"></button>
+            <input type="text" placeholder="Поиск по сайту">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header><main>
+  </header>
+<main>
   <section class="MainSection">
     <div class="Background">
     </div>
@@ -407,7 +399,14 @@
         
           <p class="FormHeaderMobile">Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
           <input type="text" name="name" required="" placeholder="Ваше имя">
-          <input type="text" name="phone" required="" placeholder="Ваш телефон">
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+            required
+            pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+          />
         <div class="FormButtonContainer">
         <span>Оставить заявку</span>
         <input type="submit" value="Оставить заявку">
@@ -494,12 +493,58 @@
 </footer>
 <script src="include/header.js?5.7"></script>
 <script>
+   (function() {
+    const input = document.getElementById('phone');
+    input.addEventListener('input', onPhoneInput);
+    input.addEventListener('blur', onPhoneBlur);
+
+    function onPhoneInput(e) {
+      let value = e.target.value.replace(/\D/g, '');
+
+      // всегда начинаем с 7
+      if (value.startsWith('8')) {
+        value = '7' + value.slice(1);
+      }
+      if (!value.startsWith('7')) {
+        value = '7' + value;
+      }
+
+      // обрезаем до 11 цифр: 7 + 10 цифр номера
+      value = value.slice(0, 11);
+
+      // собираем по формату +7 (XXX) XXX-XX-XX
+      let formatted = '+7';
+      if (value.length > 1) {
+        formatted += ' (' + value.slice(1, 4);
+      }
+      if (value.length >= 4) {
+        formatted += ') ' + value.slice(4, 7);
+      }
+      if (value.length >= 7) {
+        formatted += '-' + value.slice(7, 9);
+      }
+      if (value.length >= 9) {
+        formatted += '-' + value.slice(9, 11);
+      }
+
+      e.target.value = formatted;
+    }
+
+    function onPhoneBlur(e) {
+      const re = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+      if (!re.test(e.target.value)) {
+        e.target.setCustomValidity('Пожалуйста, введите номер в формате +7 (XXX) XXX-XX-XX');
+      } else {
+        e.target.setCustomValidity('');
+      }
+    }
+  })();
+
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
-    spaceBetween: -30,
+    spaceBetween: 20,
     direction: "horizontal",
-    loop: false,
-     breakpoints: {
+    breakpoints: {
       660: {
         spaceBetween: 20
       }
