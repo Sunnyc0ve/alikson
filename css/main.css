@@ -1575,6 +1575,7 @@ transition: 0.3s;
 
   .Form-Header{
     display: none;
+    overflow: hidden;
   }
 
   .FormSection form{

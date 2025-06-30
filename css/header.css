@@ -25,16 +25,16 @@
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
-  
 
-
-  
+  #site-header {
+    transition: all 0.7s ease;
+  }
   /* ХЕДЕР */
   header {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 40px;
+    top: 20px;
     z-index: 10;
     position: fixed;
     border-radius: 0px 0px 5px 5px;
@@ -122,6 +122,26 @@
     color: #fff;
   }
 
+  @media(min-width:980px) {
+
+    #site-header.scrolled {
+      background: #0a0a0a67;
+      backdrop-filter: blur(10px);
+      border-radius: 9999px;
+      padding: 15px;
+    }
+  }
+  
+  @media(min-width:1440px) {
+
+    #site-header.scrolled {
+      background: #0a0a0a67;
+      backdrop-filter: blur(10px);
+      border-radius: 9999px;
+      padding: 15px 25px;
+    }
+  }
+
   @media (min-width: 1921px) {
     main, header, footer{
       width: 1920px;
@@ -130,11 +150,12 @@
   }
 
   @media (max-width: 1439px) {
-    .HeaderContainer {
-      width: 920px;
-    }
 
-    header nav a,
+  .HeaderContainer {
+    width: 920px;
+  }
+
+  header nav a,
   header input,
   header input::placeholder,
   header input::-webkit-input-placeholder,
@@ -142,22 +163,22 @@
     font-size: 14px;
   }
 
-
-
   header nav ul {
     gap: 20px;
   }
 
   .HeaderContainer nav {
     padding: 15px 10px;
-}
+  }
 
-.HeaderContainer logo img{
-  width: 120px;
-}
+  .HeaderContainer logo img{
+    width: 120px;
+  }
+  
 }
 
 @media (max-width: 979px) {
+
   header {
     background: #0A0A0A;
     top: 0;

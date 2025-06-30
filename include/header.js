@@ -1,4 +1,20 @@
 //ХЕДЕР
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('site-header');
+
+    function onScroll() {
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  });
+})();
 const MenuButton=document.querySelector('#MenuButton')
 const Menu=document.querySelector('.Header-Menu_mobile_hidden')
 
@@ -52,9 +68,6 @@ document.querySelector('#DirectionsMenuBtn').addEventListener('mouseout',()=>{
   document.querySelector('.Directions_hidden').removeAttribute('style')
 })
 //ХЕДЕР
-
-
-
 
 
 //ФУТЕР
