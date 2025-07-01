@@ -3,7 +3,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    content: [
+      "<?php echo get_template_directory_uri(); ?>/**/*.php",
+      "<?php echo get_template_directory_uri(); ?>/src/js/**/*.js",
+    ],
+    corePlugins: {
+      preflight: false,
+    },
+    theme: { extend: {} },
+    plugins: [],
+  }
+</script>
 <link rel="stylesheet" href="css/header.css?5.7">
 <link rel="stylesheet" href="fonts/stylesheet.css">
 
@@ -133,46 +146,48 @@
       </div>
     </div>
   </section>
-<section class="GrowSection">
-<div>
-<div class="Grow-Header"> 
-<h2>Рост выручки</h2>
-<div>
-<div><img src="img/tender/ArrowUp.svg"><span>+ 1&nbsp;666%</span></div>
-<p>Прирост оборота <span>за 2 года</span></p>
-</div>
-</div>
-<div class="Grow-Header_mobile">
-<div> 
-<h2>Рост выручки</h2>
-<div><img src="img/tender/ArrowUp.svg"><span>+ 1&nbsp;666%</span></div>
-</div>
-<p>Прирост оборота <span>за 2 года</span></p>
-</div>
-<div class="Grow-Content">
-<div class="Graph1">
-<h3>300 млн ₽</h3>
-<p>2023&nbsp;ГОД</p>
-<img src="img/tender/Grow1.png">
-</div>
-<div class="Graph2">
-<div class="Graph-Header">
-<h3>1,9&nbsp;МЛРД ₽</h3>
-<div>+633%</div>
-</div>
-<p>2024&nbsp;ГОД</p>
-<img src="img/tender/Grow2.png">
-</div>
-<div class="Graph3">
-<div class="Graph-Header">
-<h3>5&nbsp;МЛРД ₽</h3>
-<div>+ 263%</div>
-</div>
-<p>2025&nbsp;ГОД</p>
-<img src="img/tender/Grow3.png">
-</div>
-</div>
-</div>
+<section class="GrowSection flex  flex-col xl:flex-row xl:justify-between px-[22px] pt-4">
+  <div class="Grow-Header gap-3 lg:gap-0">
+    <div class="flex items-center gap-5">
+      <h2>Рост выручки</h2>
+      <div class="flex xl:hidden bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
+        <img class="w-4 h-[22px]" src="img/tender/ArrowUp.svg">
+        <span class="text-lg md:text-xl lg:text-2xl xl:text-3xl">+ 1&nbsp;666%</span>
+      </div>
+    </div>
+    
+    <div class="flex flex-col gap-7 pb-7">
+      <div class="hidden xl:flex  bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
+        <img src="img/tender/ArrowUp.svg">
+        <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">+ 1&nbsp;666%</span>
+      </div>
+      <p>Прирост оборота <br><span>за 2 года</span></p>
+    </div>
+  </div>
+
+  <div class="Grow-Content">
+    <div class="Graph1">
+    <h3>300 млн ₽</h3>
+    <p>2023&nbsp;ГОД</p>
+    <img class="w-full" src="img/tender/Grow1.png">
+    </div>
+    <div class="Graph2">
+    <div class="Graph-Header">
+    <h3>1,9&nbsp;МЛРД ₽</h3>
+    <div>+633%</div>
+    </div>
+    <p>2024&nbsp;ГОД</p>
+    <img class="w-full" src="img/tender/Grow2.png">
+    </div>
+    <div class="Graph3">
+    <div class="Graph-Header">
+    <h3>5&nbsp;МЛРД ₽</h3>
+    <div>+ 263%</div>
+    </div>
+    <p>2025&nbsp;ГОД</p>
+    <img class="w-full" src="img/tender/Grow3.png">
+    </div>
+  </div>
 </section>
 <section class="AdvantagesSection">
 <div class="Advantages-Header">
