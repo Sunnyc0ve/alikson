@@ -516,7 +516,9 @@ main > video{
     position: relative;
     z-index: 1000;
   }
-  
+  .Buisnes-Main_mobile .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
   .Buisnes-Main_mobile .Card::before {
     content: "";
     position: absolute;
@@ -753,8 +755,11 @@ main > video{
     border-radius: 8.804px;
     background: #1E1E1E;
     border: #AAAAAA26 1px solid;
+    transition: 0.5s ease;
   }
-
+  .News-Main_mobile .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
   .News-Main_mobile .Card img{
     width: 100%;
     height: 170px;
@@ -905,7 +910,9 @@ main > video{
 
 /* Секция проекты */
 
-  
+  .ProjectsSection {
+    overflow: visible;
+  }
   .ProjectsSection .swiperP {
     width: 100%;
     margin: 0px;
@@ -957,7 +964,12 @@ main > video{
     margin-top: -10px;
     height: 278px;
   }
-
+  .Projects-Main .Banner:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
+  .Projects-Main .Stats:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
 
   .Projects-Main_mobile .Info .Stats h3 {
     color: #fff;
@@ -1104,6 +1116,7 @@ main > video{
 
     .Projects-Main{
       display: none;
+      transition: 0.5s ease;
     }
 
 @media (min-width: 660px) {
@@ -1157,6 +1170,7 @@ main > video{
         width: 1400px;
         margin: auto;
         gap: 20px;
+        transition: 0.5s ease;
     }
 
 .Projects-Main .Links {
@@ -1252,6 +1266,7 @@ main > video{
   border: 1px solid #474747;
   overflow: hidden;
   width: 505px;
+  transition: 0.5s ease;
 }
 
 .Projects-Main .Info .Banner .ImgContainer{
@@ -1321,6 +1336,7 @@ transition: 0.3s;
   border-radius: 11.432px;
   border: 1px solid #474747;
   background: #141416;
+  transition: 0.5s ease;
 }
 
 .Projects-Main .Info .Stats h3 {

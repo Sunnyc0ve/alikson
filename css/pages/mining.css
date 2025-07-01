@@ -138,6 +138,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 0.6fr;
   margin-top: 60px;
+  gap: 60px
 }
 
 .Main-El {
@@ -276,7 +277,7 @@ h1 {
   gap: 20px;
 }
 
-.About-Content .Info>div {
+.About-Content .Info > div {
   transition: 0.5s ease;
   border-radius: 10px;
   background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
@@ -288,6 +289,10 @@ h1 {
   justify-content: center;
 }
 
+/* Убираем пробел перед :hover */
+.About-Content .Info > div:hover {
+  box-shadow: 0 0 15px rgba(8, 8, 8, 0.91);
+}
 .About-Content h3 {
   color: #FFF;
   font-size: 37px;
@@ -441,6 +446,7 @@ h1 {
   max-width:  1490px;
   margin: 0 auto;
   width: 100%;
+  overflow: visible;
 }
 
 .VsSection>div {
@@ -476,6 +482,13 @@ h1 {
   gap:60px;
   margin-top: 50px !important;
   width: 100%;
+  overflow: visible;
+}
+.Vs-Content .Card {
+  transition: 0.5s ease;
+}
+.Vs-Content .Card:hover {
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
 }
 
 .Vs-Content .Card:first-child {
@@ -697,7 +710,12 @@ h1 {
   align-items: center;
   margin-top: 50px !important;
 }
-
+.Vs-Footer {
+  transition: 0.5s ease;
+}
+.Vs-Footer:hover {
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+}
 .Vs-Footer p {
   color: #FFF;
   font-size: 24px;
@@ -937,8 +955,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0.5s ease;
+
 }
 
+.Services-Right .Card:hover {
+  box-shadow: 0 0 15px rgba(8, 8, 8, 0.91);
+}
 
 .Services-Right .Card h3 {
   color: #FFF;
@@ -1025,7 +1048,10 @@ h1 {
   border-radius: 11px;
   border: 1px solid #0485FE;
 }
-
+.Advantages-Content .Card:hover {
+  background: #0485fe48;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+}
 .Advantages-Content h3 {
   color: #FFF;
   font-size: 32px;
@@ -1168,7 +1194,9 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-
+.Packs-Content .Card:hover {
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+}
 .Packs-Content .Card .Card-Header,
 .Packs-Content_mobile .Card .Card-Header {
   padding: 40px 30px;
