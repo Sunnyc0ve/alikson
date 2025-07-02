@@ -26,6 +26,7 @@ main {
     align-items: center;
     padding: 170px 0px 250px 0px;
     position: relative;
+    width: 100%;
 }
 
 /* .MainSection .Background {
@@ -130,7 +131,6 @@ h1 {
 
 @media (max-width: 979px) {
     .MainSection {
-        width: 620px;
         margin: auto;
         align-items: start;
         padding: 60px 0px;
@@ -162,7 +162,6 @@ h1 {
 
 @media (max-width: 659px) {
     .MainSection {
-        width: 320px;
         gap: 20px;
         position: static;
     }
@@ -245,15 +244,11 @@ h1 {
 
 .Grow-Header p {
     color: rgba(255, 255, 255, 0.60);
-    font-size: 24px;
-    font-weight: 500;
     line-height: normal;
 }
 
 .Grow-Header p span {
     color: #fff;
-    font-size: 24px;
-    font-weight: 500;
     line-height: normal;
 }
 
@@ -266,15 +261,12 @@ h1 {
 .Grow-Content h3 {
     color: #FFF;
     text-align: center;
-    font-size: 36px;
-    font-weight: 500;
     text-transform: uppercase;
 }
 
 .Grow-Content p {
     color: rgba(255, 255, 255, 0.70);
     text-align: center;
-    font-size: 24px;
     font-weight: 500;
 }
 
@@ -282,18 +274,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 217px;
-    height: 42px;
+    width: 100%;
     color: #FFF;
     text-align: center;
-    font-size: 18px;
     line-height: normal;
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.25);
     margin: 5px auto 10px auto;
-    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
 }
@@ -327,14 +315,23 @@ h1 {
 @media (max-width: 659px) {}
 
 
-
+.Advantages-Content_mobile .Card {
+    padding: 34px 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .Advantages-Content_mobile .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
 /*Преимущества секция*/
 .AdvantagesSection {
     width: 100%;
     border-radius: 20px;
     background: #C2C4C5;
-    padding: 80px 150px;
-    margin: 30px auto 80px auto;
+    padding: 20px 20px;
 }
 
 .Advantages-Header {
@@ -350,11 +347,19 @@ h1 {
 
 .Advantages-Header p {
     color: #171717;
-    font-size: 36px;
     font-weight: 400;
     letter-spacing: -1px;
-    width: 650px;
+    min-width: 126px;
+    width: min-content;
 }
+@media (min-width: 767px) {
+    .Advantages-Header p {
+    color: #171717;
+    font-weight: 400;
+    letter-spacing: -1px;
+    min-width: 500px;
+    width: min-content;
+}}
 
 
 .Advantages-Content {
@@ -363,6 +368,7 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     grid-auto-rows: 370px;
+
 }
 
 .Advantages-Content .Card {
@@ -403,7 +409,47 @@ h1 {
     height: 53px;
     width: 200px;
 }
+.Advantages-Content_mobile {
+    margin-top: 50px;
+}
+.Advantages-Content_mobile .Card {
+    padding: 20px 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    position: relative;
+    overflow: hidden;
+}
 
+.Advantages-Content_mobile .Card img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    z-index: 0;
+}
+
+.Advantages-Content_mobile .Card span {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Advantages-Content_mobile .Card p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: -0.281px;
+}
+
+.Advantages-Content_mobile .Card h3 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 80px 0px 20px 0px;
+    height: 53px;
+    width: 200px;
+}
 @media (max-width: 1439px) {
 
     .Advantages-Content{
@@ -435,7 +481,6 @@ h1 {
 
 .Services-Content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -447,15 +492,12 @@ h1 {
 
 .Services-Header-Flex p {
     color: #FFF;
-    font-size: 36px;
     font-weight: 500;
     letter-spacing: -0.25px;
-    width: 560px;
 }
 
 .Services-Content .Card {
     padding: 9px 30px 9px 20px;
-    display: flex;
     gap: 20px;
     align-items: center;
     border-radius: 11px;
@@ -470,65 +512,54 @@ h1 {
 
 .Services-Content .Card p {
     color: #FFF;
-    font-size: 22px;
     font-weight: 300;
     width: 570px;
 }
 
 .Services-Content .Card h3 {
     color: #FFF;
-    font-size: 29px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 
 
+/*Слайдер*/
 .items-wrap {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 20px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
 }
-
 .items {
-    flex-shrink: 0;
-    display: flex;
-    gap: 20px;
-    counter-reset: item;
-    justify-content: space-around;
-    min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  counter-reset: item;
+  justify-content: space-around;
+  width: max-content;
+  will-change: transform; 
 }
-
 .item {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.1s ease-in-out;
-    height: 400px;
-    width: 600px;
-}
-
-.item img {
-    height: 100%;
-    width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
 }
 
 .marquee {
     animation: scroll 40s linear infinite;
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
 
-    to {
-        transform: translateX(calc(-100% - 20px));
-    }
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
+
 
 @media (max-width: 1799px) {
 }
@@ -540,39 +571,32 @@ h1 {
     }
 }
 
-@media (max-width: 979px) {}
-
-@media (max-width: 659px) {}
-
 
 /* Секция партнёры */
 
 
 .PartnersSection .wrap {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
-
-
-.PartnersSection .item img {
-    height: 42px;
-    width: auto;
-    border-radius: 5px;
+.PartnersSection .items {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;           /* ширина = всем .item внутри */
+  animation: scroll 50s linear infinite;
+  will-change: transform;
 }
 
-
-.PartnersSection .marquee {
-    animation: scroll 250s linear infinite;
+.PartnersSection .item img{
+  height: 42px;
+  user-select: none;
+  object-fit: contain;
 }
 
-.PartnersSection .item {
-    width: auto;
-    height: auto;
-}
 
 @media (min-width: 980px) {
-    .PartnersSection .item img {
-        height: auto;
-    }
+  .PartnersSection .item img{
+    height: auto;
+  }
 }

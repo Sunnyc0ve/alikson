@@ -13,7 +13,13 @@
     corePlugins: {
       preflight: false,
     },
-    theme: { extend: {} },
+    theme: {
+      extend: {
+        screens: {
+          '980': '980px',
+        },
+      },
+    },
     plugins: [],
   }
 </script>
@@ -32,8 +38,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-<header>
-  <div class="HeaderContainer">
+<header >
+  <div id="site-header" class="HeaderContainer">
     <a href="index.php">
       <logo>
         <img src="img/logo.svg">
@@ -60,7 +66,7 @@
           </div>
         </li>
         <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
-        <li><a href="index.php#AnchorForm">Контакты</a></li>
+        <li><a href="#AnchorForm">Контакты</a></li>
       </ul>
     </nav>
     <div class="Header-Menu">
@@ -70,55 +76,46 @@
     <div class="Header-Menu_mobile">
       <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
       <div class="Header-Menu_mobile_hidden">
-        <div>
-          <a href="Company.php"><span>О компании</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <button data="h1"><span>Направления бизнеса</span><img src="img/ArrowRight_2.svg"></button>
-          <div data="h1">
-            <ul>
-              <li><a href="PremierCars.php">Premier Cars</a></li>
-              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
-              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
-              <li><a href="Investitions.php">Alikson Invest</a></li>
-              <li><a href="Mining.php">Майнинг</a></li>
-              <li><a href="Logistick.php">Логистика</a></li>
-              <li><a href="Tender.php">Тендерный дивизион</a></li>
-              <li><a href="PayAgent.php">Платежный агент</a></li>
-              <li><a href="Development.php">Девелопмент</a></li>
-              <li><a href="Vad.php">ВЭД</a></li>
-              <li><a href="ApartSharing.php">Apart Sharing</a></li>
-            </ul>
+        <div class="links">
+          <div>
+            <a href="Company.php"><span>О компании</span></a>
           </div>
-        </div>
-        <div>
-          <a href="news.php"><span>Новости</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorProjects"><span>Проекты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="https://hh.ru/employer/5185896"><span>Карьера</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <a href="index.php#AnchorForm"><span>Контакты</span><img src="img/ArrowRight_2.svg"></a>
-        </div>
-        <div>
-          <div class="LastContainer">
-            <a href="">8-999-999-99-99</a>
-            <div class="LangContainer">
-              <button class="Active">RU</button>
-              <button>EN</button>
+          <div>
+            <button data="h1"><span>Направления бизнеса</span></button>
+            <div data="h1">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
             </div>
           </div>
+          <div>
+            <a href="https://hh.ru/employer/5185896"><span>Карьера в компании</span></a>
+          </div>
+          <div>
+            <a href="#AnchorForm"><span>Контакты</span></a>
+          </div>
+        </div>
+        <div class="Header-Menu">
+          <button><img src="img/zoom.svg"></button>
+          <input type="text" placeholder="Поиск по сайту">
         </div>
       </div>
     </div>
   </div>
-</header><main>
-    <img class="MainBack1" src="img/tender/MainBack1.png">
-    <img class="MainBack2" src="img/tender/MainBack2.png">
-<section class="MainSection">
+</header>
+<main>
+
+<section class="MainSection pt-[120px]">
     
     <h1>Тендерный дивизион</h1>
     <p>Занимаемся комплексным снабжением крупных компаний и госучреждений электроникой, комплектующими и оборудованием, напрямую и с высоким уровнем сервиса</p>
@@ -147,87 +144,136 @@
     </div>
   </section>
 <section class="GrowSection flex  flex-col xl:flex-row xl:justify-between px-[22px] pt-4">
-  <div class="Grow-Header gap-3 lg:gap-0">
-    <div class="flex items-center gap-5">
-      <h2>Рост выручки</h2>
-      <div class="flex xl:hidden bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
-        <img class="w-4 h-[22px]" src="img/tender/ArrowUp.svg">
-        <span class="text-lg md:text-xl lg:text-2xl xl:text-3xl">+ 1&nbsp;666%</span>
+  <div class="flex  flex-col xl:flex-row xl:justify-between pt-4 max-w-[1490px] mx-auto">
+    <div class="Grow-Header gap-3 lg:gap-0 lg:justify-between">
+      <div class="flex items-center gap-5">
+        <h2 class="lg:opacity-50">Рост выручки</h2>
+        <div class="flex xl:hidden bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
+          <img class="w-4 h-[22px]" src="img/tender/ArrowUp.svg">
+          <span class="text-lg md:text-xl lg:text-2xl xl:text-3xl">+ 1&nbsp;666%</span>
+        </div>
+      </div>
+      
+      <div class="flex flex-col gap-7 pb-7">
+        <div class="hidden xl:flex  bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
+          <img src="img/tender/ArrowUp.svg" class="w-6 md:w-9">
+          <span class="text-lg md:text-xl lg:text-2xl">+ 1&nbsp;666%</span>
+        </div>
+        <p class="text-sm sm:text-xs md:text-base lg:text-lg">Прирост оборота <br><span>за 2 года</span></p>
       </div>
     </div>
-    
-    <div class="flex flex-col gap-7 pb-7">
-      <div class="hidden xl:flex  bg-[#04FE9A]/5 rounded-full px-2.5 py-1 items-center">
-        <img src="img/tender/ArrowUp.svg">
-        <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">+ 1&nbsp;666%</span>
-      </div>
-      <p>Прирост оборота <br><span>за 2 года</span></p>
-    </div>
-  </div>
 
-  <div class="Grow-Content">
-    <div class="Graph1">
-    <h3>300 млн ₽</h3>
-    <p>2023&nbsp;ГОД</p>
-    <img class="w-full" src="img/tender/Grow1.png">
-    </div>
-    <div class="Graph2">
-    <div class="Graph-Header">
-    <h3>1,9&nbsp;МЛРД ₽</h3>
-    <div>+633%</div>
-    </div>
-    <p>2024&nbsp;ГОД</p>
-    <img class="w-full" src="img/tender/Grow2.png">
-    </div>
-    <div class="Graph3">
-    <div class="Graph-Header">
-    <h3>5&nbsp;МЛРД ₽</h3>
-    <div>+ 263%</div>
-    </div>
-    <p>2025&nbsp;ГОД</p>
-    <img class="w-full" src="img/tender/Grow3.png">
+    <div class="Grow-Content">
+      <div class="Graph1">
+      <h3 class="whitespace-nowrap text-xs md:text-base lg:text-xl">300 млн ₽</h3>
+      <p class="text-[10px] sm:text-[12px] md:text-xs lg:text-base py-1">2023&nbsp;ГОД</p>
+      <img class="w-full" src="img/tender/Grow1.png">
+      </div>
+      <div class="Graph2">
+      <div class="Graph-Header">
+      <h3 class="whitespace-nowrap text-xs md:text-xs lg:text-base">1,9&nbsp;МЛРД ₽</h3>
+      <div class="text-sm sm:text-xs md:text-base lg:text-lg max-w-[150px] py-1">+633%</div>
+      </div>
+      <p class="text-[10px] sm:text-[12px] md:text-xs lg:text-base py-1">2024&nbsp;ГОД</p>
+      <img class="w-full" src="img/tender/Grow2.png">
+      </div>
+      <div class="Graph3">
+      <div class="Graph-Header">
+      <h3 class="whitespace-nowrap text-xs md:text-xs lg:text-base">5&nbsp;МЛРД ₽</h3>
+      <div class="text-sm sm:text-xs md:text-base lg:text-lg max-w-[150px] py-1">+ 263%</div>
+      </div>
+      <p class="text-[10px] sm:text-[12px] md:text-base lg:text-lg py-1">2025&nbsp;ГОД</p>
+      <img class="w-full" src="img/tender/Grow3.png">
+      </div>
     </div>
   </div>
 </section>
 <section class="AdvantagesSection">
-<div class="Advantages-Header">
-<h2>Наши преимущества</h2>
-<p>Сильные стороны, которые помогают вашему бизнесу расти</p>
-</div>
-<div class="Advantages-Content">
-<div class="Card">
-<img src="img/tender/AdvantagesBack.png">
-<span>01</span>
-<h3>Прямые поставки</h3>
-<p>Закупаем напрямую 
-у производителей — 
-это гарантирует сроки 
-и оптимальную цену</p>
-</div>
-<div class="Card">
-<img src="img/tender/AdvantagesBack.png">
-<span>02</span>
-<h3>Персональный менеджер</h3>
-<p>Вы работаете с личным специалистом, который сопровождает проект 
-от начала до конца</p>
-</div>
-<div class="Card">
-<img src="img/tender/AdvantagesBack.png">
-<span>03</span>
-<h3>Комплексный подход</h3>
-<p>Мы подбираем решения 
-под каждый проект, 
-учитывая все нюансы 
-и специфику бизнеса</p>
-</div>
-<div class="Card">
-<img src="img/tender/AdvantagesBack.png">
-<span>04</span>
-<h3>Надежность</h3>
-<p>Более 200 успешных 
-контрактов и 30 постоянных клиентов — подтверждение 
-нашего качества</p>
-</div>
+  <div class="Advantages-Header">
+    <h2>Наши преимущества</h2>
+    <p class="text-[11px] sm:text-sm md:text-base lg:text-lg xl:text-xl">Сильные стороны, которые помогают вашему бизнесу расти</p>
+  </div>
+      <div class="Advantages-Content hidden lg:flex">
+        <div class="Card">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>01</span>
+          <h3>Прямые поставки</h3>
+          <p>Закупаем напрямую 
+          у производителей — 
+          это гарантирует сроки 
+          и оптимальную цену</p>
+        </div>
+        <div class="Card">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>02</span>
+          <h3>Персональный менеджер</h3>
+          <p>Вы работаете с личным специалистом, который сопровождает проект 
+          от начала до конца</p>
+        </div>
+        <div class="Card">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>03</span>
+          <h3>Комплексный подход</h3>
+          <p>Мы подбираем решения 
+          под каждый проект, 
+          учитывая все нюансы 
+          и специфику бизнеса</p>
+        </div>
+        <div class="Card">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>04</span>
+          <h3>Надежность</h3>
+          <p>Более 200 успешных 
+          контрактов и 30 постоянных клиентов — подтверждение 
+          нашего качества</p>
+        </div>
+      </div>
+  <div class="w-full Advantages-Content_mobile block lg:hidden">
+  <div class="swiperB swiper-initialized swiper-horizontal swiper-watch-progress">
+    <div class="swiper-wrapper items-center" id="swiper-wrapper-c98c65de2951cf22" aria-live="polite">
+      <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0">  
+        <div class="Card max-h-[300px] my-auto">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>01</span>
+          <h3>Прямые поставки</h3>
+          <p>Закупаем напрямую 
+          у производителей — 
+          это гарантирует сроки 
+          и оптимальную цену</p>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 4" data-swiper-slide-index="2" style="width: 350px; margin-right: -40px;">
+        <div class="Card max-h-[300px] my-auto">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>02</span>
+          <h3>Персональный менеджер</h3>
+          <p>Вы работаете с личным специалистом, который сопровождает проект 
+          от начала до конца</p>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="3 / 4" data-swiper-slide-index="3" style="width: 350px; margin-right: -40px;">
+        <div class="Card max-h-[300px] my-auto">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>03</span>
+          <h3>Комплексный подход</h3>
+          <p>Мы подбираем решения 
+          под каждый проект, 
+          учитывая все нюансы 
+          и специфику бизнеса</p>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="4 / 4" data-swiper-slide-index="4" style="width: 350px; margin-right: -40px;">
+        <div class="Card max-h-[300px] my-auto">
+          <img src="img/tender/AdvantagesBack.png">
+          <span>04</span>
+          <h3>Надежность</h3>
+          <p>Более 200 успешных 
+          контрактов и 30 постоянных клиентов — подтверждение 
+          нашего качества</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 <section class="ServicesSection">
@@ -235,72 +281,64 @@
 <div class="Services-Header">
 <div class="Services-Header-Flex">
 <h2>Наши услуги</h2>
-<p>Комплексные решения под ключ: 
+<p class="text-[11px] sm:text-sm md:text-base lg:text-lg xl:text-xl w-min min-w-[187px]">Комплексные решения под ключ: 
 от анализа рынка до логистики</p>
 </div>
 <div class="wrap">
 <div class="items-wrap">
 <div class="items marquee">
-<div class="item"><img src="img/tender/Serv1.png"></div>
-<div class="item"><img src="img/tender/Serv2.png"></div>
-<div class="item"><img src="img/tender/Serv3.png"></div>
-<div class="item"><img src="img/tender/Serv4.png"></div>
-<div class="item"><img src="img/tender/Serv5.png"></div>
-<div class="item"><img src="img/tender/Serv6.png"></div>
-</div>
-<div aria-hidden="true" class="items marquee">
-<div class="item"><img src="img/tender/Serv1.png"></div>
-<div class="item"><img src="img/tender/Serv2.png"></div>
-<div class="item"><img src="img/tender/Serv3.png"></div>
-<div class="item"><img src="img/tender/Serv4.png"></div>
-<div class="item"><img src="img/tender/Serv5.png"></div>
-<div class="item"><img src="img/tender/Serv6.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv1.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv2.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv3.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv4.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv5.png"></div>
+<div class="item"><img class="max-w-[250px] md:max-h-[300px] md:max-w-[500px] lg:max-h-[400px] lg:max-w-[600px] w-full h-full" src="img/tender/Serv6.png"></div>
 </div>
 </div>
 </div>
 </div>
-<div class="Services-Content">
-<div class="Card">
-<img src="img/tender/ServIco1.svg">
-<div>
-<h3>Закупка и&nbsp;логистика</h3>
-<p>Эффективная доставка и управление цепочкой поставок</p>
+<div class="Services-Content 980:grid-cols-2">
+<div class="Card flex">
+  <img src="img/tender/ServIco1.svg">
+  <div>
+    <h3 class=" text-sm md:text-base lg:text-2xl">Закупка и&nbsp;логистика</h3>
+    <p class="text-[11px] sm:text-[12px]">Эффективная доставка и управление цепочкой поставок</p>
+  </div>
 </div>
+<div class="Card flex">
+  <img src="img/tender/ServIco2.svg">
+  <div>
+    <h3 class=" text-sm sm:text-xs md:text-base lg:text-2xl">Анализ рынка</h3>
+    <p class="text-[11px] sm:text-[12px] md:text-sm lg:text-base">Выбираем лучшее из доступного - по цене и срокам</p>
+  </div>
 </div>
-<div class="Card">
-<img src="img/tender/ServIco2.svg">
-<div>
-<h3>Анализ рынка</h3>
-<p>Выбираем лучшее из доступного - по цене и срокам</p>
+<div class="Card hidden 980:flex">
+  <img src="img/tender/ServIco3.svg">
+  <div class=" text-sm md:text-base lg:text-2xl">
+    <h3 class=" text-sm md:text-base lg:text-2xl">Спецусловия для гос.учреждений</h3>
+    <p class="text-[11px] sm:text-[12px]">Оформляем в рамках 44-ФЗ и 223-ФЗ без срывов</p>
+  </div>
 </div>
+<div class="Card flex">
+  <img src="img/tender/ServIco4.svg">
+  <div>
+    <h3 class=" text-sm md:text-base lg:text-2xl">Поставка комплектующих</h3>
+    <p class="text-[11px] sm:text-[12px]">Электроника и промышленное оборудование напрямую</p>
+  </div>
 </div>
-<div class="Card">
-<img src="img/tender/ServIco3.svg">
-<div>
-<h3>Спецусловия для гос.учреждений</h3>
-<p>Оформляем в рамках 44-ФЗ и 223-ФЗ без срывов</p>
+<div class="Card flex">
+  <img src="img/tender/ServIco5.svg">
+  <div>
+    <h3 class=" text-sm md:text-base lg:text-2xl">Консультации по тендерам</h3>
+    <p class="text-[11px] sm:text-[12px]">Помогаем подготовить документы и избежать ошибок</p>
+  </div>
 </div>
-</div>
-<div class="Card">
-<img src="img/tender/ServIco4.svg">
-<div>
-<h3>Поставка комплектующих</h3>
-<p>Электроника и промышленное оборудование напрямую</p>
-</div>
-</div>
-<div class="Card">
-<img src="img/tender/ServIco5.svg">
-<div>
-<h3>Консультации по тендерам</h3>
-<p>Помогаем подготовить документы и избежать ошибок</p>
-</div>
-</div>
-<div class="Card">
-<img src="img/tender/ServIco6.svg">
-<div>
-<h3>Оптимизация процессов</h3>
-<p>Снижаем издержки и улучшаем эффективность закупок</p>
-</div>
+<div class="Card hidden 980:flex">
+  <img src="img/tender/ServIco6.svg">
+  <div>
+    <h3 class=" text-sm md:text-base lg:text-2xl">Оптимизация процессов</h3>
+    <p class="text-[11px] sm:text-[12px]">Снижаем издержки и улучшаем эффективность закупок</p>
+  </div>
 </div>
 </div>
 </div>
@@ -309,20 +347,6 @@
     <div class="wrap">
       <div class="items-wrap">
         <div class="items marquee">
-          <div class="item"><img src="img/Partners/1.png"></div>
-          <div class="item"><img src="img/Partners/2.png"></div>
-          <div class="item"><img src="img/Partners/3.png"></div>
-          <div class="item"><img src="img/Partners/4.png"></div>
-          <div class="item"><img src="img/Partners/5.png"></div>
-          <div class="item"><img src="img/Partners/6.png"></div>
-          <div class="item"><img src="img/Partners/1.png"></div>
-          <div class="item"><img src="img/Partners/2.png"></div>
-          <div class="item"><img src="img/Partners/3.png"></div>
-          <div class="item"><img src="img/Partners/4.png"></div>
-          <div class="item"><img src="img/Partners/5.png"></div>
-          <div class="item"><img src="img/Partners/6.png"></div>
-        </div>
-        <div aria-hidden="true" class="items marquee">
           <div class="item"><img src="img/Partners/1.png"></div>
           <div class="item"><img src="img/Partners/2.png"></div>
           <div class="item"><img src="img/Partners/3.png"></div>
@@ -434,4 +458,19 @@
   </div>
 </footer>
 <script src="include/header.js?5.7"></script>
+<script>
+
+  const swiperB = new Swiper(".swiperB", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".Swiper-Next",
+      prevEl: ".Swiper-Prev",
+    },
+  });
+  </script>
 </body></html>
