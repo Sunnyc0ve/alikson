@@ -484,11 +484,11 @@ h1 {
     display: list-item;
     list-style: disc;
 }
-.Card ul li {
+.Auto-Content_mobile .Card ul li {
   position: relative;
   padding-left: 1.2em;        /* отступ, чтобы точка не наслаивалась на текст */
 }
-.Card ul li::before {
+.Auto-Content_mobile .Card ul li::before {
   content: "•";               /* символ буллета */
   position: absolute;
   left: 0;
