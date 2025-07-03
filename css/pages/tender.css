@@ -1,13 +1,16 @@
 /* ОБЩИЕ */
 body {
-    background: url("../../img/backMainMob.jpg");
+    background: url("../../img/tender/Mob-background.svg");
     background-size: 100% 100%;
+    background-color: #121212;
+    overflow-x: hidden;
 }
 
 @media (min-width: 980px) {
     body {
-        background: url("../../img/backMain.jpg");
+        background: url("../../img/tender/Pc-background.svg");
         background-size: 100% 100%;
+        background-color: #121212;
     }
 }
 main {
@@ -229,13 +232,15 @@ h1 {
 
 /*Рост*/
 .GrowSection {
-    width: 100%;
-    
-    border-radius: 20px;
-    background: rgba(16, 16, 16, 0.80);
-    margin: auto;
-    transition: all 0.5s ease;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  background-color: #101010CC;
+  background-image: url('../../img/tender/GrowBackground.svg');
+  background-size: 100% 100%;
 }
+
   .GrowSection:hover {
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
   }
@@ -352,12 +357,18 @@ h1 {
     background: #C2C4C5;
     padding: 20px 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
 }
 
 .Advantages-Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1490px;
+    width: 100%;
+    margin: 20px auto;
 }
 
 .Advantages-Header h2 {
@@ -387,6 +398,8 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     grid-auto-rows: 370px;
+    max-width: 1490px;
+    margin: 0 auto;
 
 }
 
@@ -431,9 +444,7 @@ h1 {
     height: 53px;
     width: 200px;
 }
-.Advantages-Content_mobile {
-    margin-top: 50px;
-}
+
 .Advantages-Content_mobile .Card {
     padding: 20px 20px;
     border-radius: 20px;
@@ -493,15 +504,13 @@ h1 {
 .ServicesSection {
     width: 100%;
     margin: auto;
-    margin-bottom: 80px;
-    margin-top: 80px;
     max-width: 1490px;
     overflow: visible;
 }
 
 
 .Services-Header .wrap {
-    margin: 80px 0px;
+    margin: 25px 0px;
 }
 
 
@@ -514,6 +523,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1490px;
 }
 
 .Services-Header-Flex p {
@@ -557,7 +567,6 @@ h1 {
 .items-wrap {
   position: relative;
   display: block;
-  overflow: hidden;
   user-select: none;
   width: 100%;
 }
@@ -603,7 +612,9 @@ h1 {
 
 /* Секция партнёры */
 
-
+.PartnersSection {
+  overflow: visible;
+}
 .PartnersSection .wrap {
   width: 100%;
   margin: auto;
