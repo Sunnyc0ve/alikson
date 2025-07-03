@@ -1,13 +1,13 @@
 /* ОБЩИЕ */
 body{
-    background: url("/img/apart/BackgroundPatenrMob.svg");
+    background: url("../../img/apart/BackgroundPatenrMob.svg");
     background-size: 100%;
     background-color: #121212;
 }
 
 @media (min-width: 980px) {
   body{
-    background: url("/img/apart/BackgroundPatenr.svg");
+    background: url("../../img/apart/BackgroundPatenr.svg");
     background-size: 100% 100%;
     background-color: #121212;
   }
