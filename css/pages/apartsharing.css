@@ -1,13 +1,13 @@
 /* ОБЩИЕ */
 body{
-    background: url("/img/apart_sharing/BackgroundPatenrMob.svg");
+    background: url("/img/apartSharing/BackgroundPatenrMob.svg");
     background-size: 100%;
     background-color: #121212;
 }
 
 @media (min-width: 980px) {
   body{
-    background: url("/img/apart_sharing/BackgroundPatenr.svg");
+    background: url("/img/apartSharing/BackgroundPatenr.svg");
     background-size: 100% 100%;
     background-color: #121212;
   }
@@ -279,7 +279,7 @@ h1 {
     padding: 90px 0px 105px 0px;
     border-radius: 20px 20px 0px 0px;
     border: 1px solid rgba(53, 53, 53, 0.30);
-    background: #212121 url("../../img/apart_sharing/ServicesBack.png") no-repeat;
+    background: #212121 url("../../img/apartSharing/ServicesBack.png") no-repeat;
     background-position: calc((100vw - 1765px) / 2) -139px;
     position: relative;
     margin-top: -15px;
@@ -569,7 +569,7 @@ h1 {
 /*Преимущества секция*/
 .AdvantagesSection{
     display: flex;
-    background: #212121 url("../../img/apart_sharing/AdvantagesBack.png") no-repeat;
+    background: #212121 url("../../img/apartSharing/AdvantagesBack.png") no-repeat;
     background-position: calc((100vw - 1803px) / 2) -11px;
     padding: 90px 0px;
     gap:62px;
@@ -661,7 +661,7 @@ h1 {
 
 /*Как это работает секция*/
 .HowSection{
-    background: #181818 url("../../img/apart_sharing/HowBack.png") center;
+    background: #181818 url("../../img/apartSharing/HowBack.png") center;
     background-size: 1920px 100%;
     padding: 90px 0px 105px 0px;
     margin-top: -15px;

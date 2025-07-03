@@ -40,25 +40,25 @@ include('include/header.php');
 <div class="Services-Content">
 <div class="Card">
 <div> 
-<img src="img/apart_sharing/Service1.svg">
+<img src="img/apartSharing/Service1.svg">
 </div>
 <h3>Интерактивная карта объектов</h3>
 </div>
 <div class="Card">
 <div> 
-<img src="img/apart_sharing/Service2.svg">
+<img src="img/apartSharing/Service2.svg">
 </div>
 <h3>Интеграция с&nbsp;платформами бронирования</h3>
 </div>
 <div class="Card">
 <div> 
-<img src="img/apart_sharing/Service3.svg">
+<img src="img/apartSharing/Service3.svg">
 </div>
 <h3>Управление объектами</h3>
 </div>
 <div class="Card">
 <div> 
-<img src="img/apart_sharing/Service4.svg">
+<img src="img/apartSharing/Service4.svg">
 </div>
 <h3>Автоматизация процессов</h3>
 </div>
@@ -169,27 +169,27 @@ include('include/header.php');
 </div>
 <div class="Advantages-Content">
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg"> 
+<img src="img/apartSharing/checkbox.svg"> 
 <p>Высокая доходность</p>
 </div>
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg">
+<img src="img/apartSharing/checkbox.svg">
 <p>Снижение расходов на&nbsp;привлечение гостей</p>
 </div>
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg">
+<img src="img/apartSharing/checkbox.svg">
 <p>Безопасный прием платежей</p>
 </div>
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg">
+<img src="img/apartSharing/checkbox.svg">
 <p>Бесконтактное заселение</p>
 </div>
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg">
+<img src="img/apartSharing/checkbox.svg">
 <p>Обязательная верификация гостей</p>
 </div>
 <div class="Card">
-<img src="img/apart_sharing/checkbox.svg">
+<img src="img/apartSharing/checkbox.svg">
 <p>Мобильное приложение</p>
 </div>
 </div>
