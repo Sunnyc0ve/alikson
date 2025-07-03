@@ -1,232 +1,275 @@
 /* ОБЩИЕ */
 body{
-    background: #212121;
+    background: url("/img/apart_sharing/BackgroundPatenrMob.svg");
+    background-size: 100%;
+    background-color: #121212;
 }
+
+@media (min-width: 980px) {
+  body{
+    background: url("/img/apart_sharing/BackgroundPatenr.svg");
+    background-size: 100% 100%;
+    background-color: #121212;
+  }
+}
+.MainBack2 {
+    position: absolute;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    top: 70px;
+    width: 200%;
+    left: 0;
+}
+.MainBack1 {
+    position: absolute;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 0 20px;
+    max-width: 1790px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+.link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(0deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.20) 100%),
+        linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.link:hover::before {
+    opacity: 1;
+}
+
 
 .Services-Content .Card:hover, .Advantages-Content .Card:hover{
     background: #113058;
     box-shadow: 0px 0px 6px 2px #0485FE;
   }
 
-
-
-/* Главная секция*/
-.MainSection{
+.MainSection {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     align-items: center;
-    gap:70px;
-    padding: 130px 0px 105px 0px;
-    background: #181818 url("../../img/apart_sharing/MainBack.png") center no-repeat;
-    background-size: 1920px 100%;
-    margin-top: -4px;
+    padding: 210px 0px 150px 0px;
+    position: relative;
+    width: 100%;
 }
 
-.MainSection > div{
-    width: 1280px;
-    margin: auto;
-}
+/* .MainSection .Background {
+  background: url('../../img/tender/MainBack.png');
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 1920px;
+  height: 920px;
+  top: -120px;
+  z-index: -1;
+} */
 
-.MainSection-Header{
-    display: flex;
-    gap:10px;
-    align-items: start;
-}
-h1{
+
+h1 {
     color: #FFF;
     font-size: 72px;
     font-weight: 500;
-    line-height: 111%; 
+    line-height: 111%;
     letter-spacing: -0.72px;
-    text-transform: uppercase;
-    width: 626px;
-    flex-shrink: 0;
 }
 
-.MainSection-Header p{
+.MainSection>p {
     color: #FFF;
+    text-align: center;
     font-size: 24px;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
     letter-spacing: -0.25px;
+    width: 935px;
 }
 
-.MainSection-Content{
-    display: flex;
-    align-items: end;
-    gap:365px;
-}
-
-.MainSection-Content a{
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    flex-shrink: 0;
-    transition: 0.5s ease;
-    border-radius: 5px;
-    border: 1px solid rgba(170, 170, 170, 0.15);
-    background: #112A4D;
-    box-shadow: 0px 0px 50.5px 0px rgba(0, 106, 255, 0.15);
-    width: 272px;
-    height: 61px;
+  .MainSection a {
+    position: relative;        /* чтобы ::before правильно позиционировался */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.MainSection-Content a:hover{
-    background: #fff;
-    color:#000;
-}
-
-.MainSection-Content > div{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:40px;
-}
-
-.MainSection .Info{
-    display: flex;
-    align-items: center;
-    gap:20px;
-}
-
-.MainSection .Info::before{
+    width: 486px;
+    margin: 0 auto;
+    padding: 12px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .MainSection a::before {
     content: "";
-    height: 72px;
-    width: 3px;
-    background: #0485FE;
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.20) 100%),
+      linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .MainSection a:hover::before {
+    opacity: 1;
+  }
+
+.MainSection .Main-Content {
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    margin-top: 60px;
+}
+
+.Main-El {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+    width: 100%;
+}
+
+.Main-El h3 {
+    color: #FFF;
+    font-size: 46.217px;
+    font-weight: 700;
+    line-height: 78.5%;
+    margin-bottom: 7px;
+}
+
+.Main-El p {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 12.999px;
+    font-weight: 400;
+}
+
+.Main-El::before {
+    content: "";
     display: block;
-    flex-shrink: 0;
+    border-radius: 43px;
+    background: #0485FE;
+    width: 2px;
+    height: 50px;
 }
 
-.MainSection .Info h3{
-    color: #fff;        
-font-size: 64px;
-font-weight: 700;
-line-height: 40px;
-margin-bottom: 10px;
-text-transform: uppercase;
-}
+@media (max-width: 1799px) {}
 
-.MainSection .Info p{
-    color: rgba(255, 255, 255, 0.50);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.p_mobile{
-    display: none;
-}
-
-@media (max-width: 1439px){
-    .MainSection > div{
-        width: 920px;
-    }
-
-    h1{
-        width: 333px;
-    }
-
-    .MainSection-Header p{
-        font-size: 20px;
-    }
-
-    .MainSection-Content{
-        gap: 71px;
-    }
-}
+@media (max-width: 1439px) {}
 
 @media (max-width: 979px) {
-    /*600*/
-    .MainSection{
-        background: url('../../img/mainBackMobile.jpg') center;
-        background-size: 100% 100%;
-        padding: 0px;
+    .MainSection {
+        margin: auto;
+        align-items: start;
+        padding: 60px 0px;
+    }
+
+    .MainSection .Main-Content {
+        grid-template-columns: 1fr;
         gap: 20px;
-        height: 100%;
-        justify-content: center;
-        margin-bottom: 15px;
+        width: 100%;
     }
 
-    h1{
-        font-size: 48px;
+    .MainSection a {
+        width: 100%;
     }
 
-    .MainSection > div{
-        width: 600px;
-        margin: 0px;
+
+    .MainSection>p {
+        width: auto;
+        text-align: left;
     }
 
-    .MainSection-Header{
-        flex-direction: column;
-    }
-
-    .MainSection-Header p{
-        font-size: 16px;
-        gap:30px;
-    }
-
-    .MainSection-Content{
+    .Main-Group {
+        display: flex;
         flex-direction: column-reverse;
-        gap: 20px;
+        gap: 30px;
+        width: 100%;
+    }
+}
 
+@media (max-width: 659px) {
+    .MainSection {
+        gap: 20px;
+        position: static;
+        padding-top: 120px;
     }
 
-    .MainSection-Content a{
-        width: 100%;
-        height: 55px;
+    h1 {
+        font-size: 44px;
+    }
+
+    .MainSection>p {
+        font-size: 13px;
+        width: 285px;
+    }
+
+    .Main-El:last-child {
+        display: none;
+    }
+
+    .MainSection .Main-Content {
+        margin-top: 130px;
+    }
+
+    .Main-El h3 {
+        font-size: 18px;
+    }
+
+    .Main-El p {
+        font-size: 12px;
+    }
+
+    .Main-El>div p {
+        width: 70px;
+    }
+
+    .MainSection a {
         font-size: 16px;
+        height: 40px;
     }
 
-    .MainSection .Info h3{
-        font-size: 32px;
-        margin-bottom: 5px;
+    .MainSection .Background {
+        background: url('../../img/mining/MainBackMobile.png');
+        width: 360px;
+        top: 0px;
+        height: 530px;
+        left: 0px;
     }
-
-    .MainSection .Info p{
-        font-size: 14px;
-    }
-
-    .MainSection-Content > div{
-        gap: 20px;
-        width: 100%;
-    }
-
-    .MainSection .Info{
-        gap: 10px;
-    }
-
-    .p_mobile{
-        display: block;
-    }
-
-    .p_desktop{
-        display: none;
-    }
-
-    .MainSection .Info:last-child{
-        display: none;
-    }
-
-    @media (max-height: 630px) {
-        .MainSection{
-          height: auto;
-          padding: 60px;
-        }
-      }
-  }
-
-  @media (max-width: 659px) {
-    /*320*/
-    .MainSection > div{
-        width: 320px;
-    }
-  }
-
-
+}
 
 /*Наши сервисы*/
 .ServicesSection{
@@ -335,215 +378,189 @@ text-transform: uppercase;
 
 
 /*Система автоматизации*/
-.AutoSection{
-    background: #181818 url("../../img/apart_sharing/AutoBack.png") center;
-    background-size: 1920px 100%;
-    padding: 90px 0px 105px 0px;
-    border-radius: 20px 20px 0px 0px;
-    border: 2px solid #2f2f2f;
-    margin-top: -15px;
+.Auto-Content_mobile .Card {
+    padding: 34px 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
     position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .Auto-Content_mobile .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
+/*Преимущества секция*/
+.AutoSection {
+    width: 100%;
+    border-radius: 20px;
+    background: #C2C4C5;
+    padding: 20px 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    transition: all 0.5s ease;
+}
+  .AutoSection:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.91);
+  }
+.Auto-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1490px;
+    width: 100%;
+    margin: 20px auto;
 }
 
-.AutoSection h2{
-    color: #0485FE;
+.Auto-Header h2 {
+    color: #000;
+    width: 220px;
+    font-weight: 500;
 }
 
-.AutoSection > *{
-    width: 1280px;
-    margin: auto;
+.Auto-Header p {
+    color: #171717;
+    font-weight: 400;
+    letter-spacing: -1px;
+    min-width: 126px;
+    width: min-content;
 }
+@media (min-width: 767px) {
+    .Auto-Header p {
+    color: #171717;
+    font-weight: 400;
+    letter-spacing: -1px;
+    min-width: 500px;
+    width: min-content;
+}}
 
-.Auto-Content{
+
+.Auto-Content {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 323px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-rows: 370px;
+    max-width: 1490px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.Auto-Content .Card{
-    transition: 0.5s ease;
-    padding: 20px;
-    flex-shrink: 0;
-    border-radius: 11px;
-    border: 2px solid #393939;
-    background: rgba(23, 23, 23, 0.40);
-    backdrop-filter: blur(16.980453491210938px);
+.Auto-Content .Card {
+    padding: 15px 35px 60px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+.Auto-Content .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(17, 17, 17, 0.91);
+}
+.Auto-Content .Card img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.Auto-Content .Card:hover{
-box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
-backdrop-filter: blur(16.980453491210938px);
-}
-
-.Auto-Content .Card h3{
-    color: #0485FE;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.Auto-Content .Card p{
+.Auto-Content .Card span {
     color: #FFF;
-    font-size: 18px;
+    font-size: 24.736px;
     font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    margin: 10px 0px 25px 0px;
 }
 
-
-.Auto-Content .Card-Content li{
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: normal;
+.Auto-Content .Card ul {
+    color: rgba(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.Auto-Content .Card ul li {
+    display: list-item;
     list-style: disc;
-    margin-left: 18px;
-    gap:10px;
+}
+.Card ul li {
+  position: relative;
+  padding-left: 1.2em;        /* отступ, чтобы точка не наслаивалась на текст */
+}
+.Card ul li::before {
+  content: "•";               /* символ буллета */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;                /* цвет точки */
+  line-height: 1;             /* чтобы вертикально выровнять */
+}
+.Auto-Content .Card h3 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 80px 0px 20px 0px;
+    height: 53px;
+    width: 200px;
 }
 
-.Auto-Content_mobile{
-    display: none;
+.Auto-Content_mobile .Card {
+    padding: 20px 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
-@media (max-width: 1439px){
-    .AutoSection > *{
-        width: 920px;
-    }
-
-    .Auto-Content {
-        grid-auto-rows: 477px;
-    }
+.Auto-Content_mobile .Card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(17, 17, 17, 0.91);
+}
+.Auto-Content_mobile .Card img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 979px) {
-    /*600*/
-    .AutoSection{
-        padding: 60px 0px 75px 0px;
-        border: 1px solid #353535;
-        border-radius: 10px 10px 0px 0px;
-    }
+.Auto-Content_mobile .Card span {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
 
-    .AutoSection h2{
-        color: #fff;
-        margin-bottom: 25px;
-    }
+.Auto-Content_mobile .Card ul {
+    color: rgba(255, 255, 255);
+    font-size: 11px;
+    font-weight: 400;
+    
+}
+.Auto-Content_mobile .Card ul li {
+    display: list-item;
+}
+.Auto-Content_mobile .Card h3 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top:50px;
+    height: 53px;
+    width: 200px;
+}
+@media (max-width: 1439px) {
 
     .Auto-Content{
-        display: none;
+        grid-template-columns: 1fr 1fr;
     }
-    .Auto-Content_mobile{
-        display: block;
-        width: 100% !important;
-    }
-    
-    .AutoSection > *{
-        width: 600px;
-    }
+}
 
-    .Auto-Content_mobile .Card{
-        transition: 0.5s ease;
-        padding: 20px;
-        background: rgba(23, 23, 23, 0.40);
-        width: 300px;
-        height: 364px;
-        border-radius: 10px;
-        border: 1px solid rgba(170, 170, 170, 0.15);
-        background: #171717;
-    }
-    
-    .Auto-Content_mobile .Card:hover{
-    box-shadow: 0px 0px 5.3px 0px #FFF, 0px 0px 8.2px 0px rgba(4, 133, 254, 0.75), 0px 0px 23.5px 0px #0485FE;
-    backdrop-filter: blur(16.980453491210938px);
-    }
-    
-    .Auto-Content_mobile .Card h3{
-        color: #0485FE;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-    
-    .Auto-Content_mobile .Card p{
-        color: #FFF;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: normal;
-        text-transform: uppercase;
-        margin: 10px 0px;
-    }
-    
-    
-    .Auto-Content_mobile .Card-Content li{
-        color: #FFF;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: normal;
-        list-style: disc;
-        margin-left: 16px;
-        gap:10px;
-    }
+@media (max-width: 979px) {}
 
-    .Auto-Content_mobile .swiper-wrapper {
-        padding-left: calc((100vw - 600px) / 2);
-        height: auto;
-      }
-
-      .Auto-Content_mobile .swiper {
-        width: 980px;
-        overflow: visible;
-      }
-    
-
-      .Swiper-Control{
-        width: 600px;
-        margin-left: calc((100vw - 600px) / 2);
-        margin-top: 25px;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .Swiper-Control > button {
-        width: 66px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;
-        background: #2C2C2C;  
-      }
-      
-      .Swiper-Control > button:hover {
-        opacity: 0.8;
-      }
-
-    
-  }
-
-  @media (max-width: 659px) {
-    /*300*/
-    .AutoSection > *{
-        width: 320px;
-    }
-
-    .Swiper-Control{
-        width: 320px;
-        margin-left: calc((100vw - 320px) / 2);
-      }
-
-      .Auto-Content_mobile .swiper-wrapper {
-        padding-left: calc((100vw - 320px) / 2);
-      }
-
-      .Auto-Content_mobile .swiper {
-        width: 660px;
-      }
-  }
-
-
+@media (max-width: 659px) {}
 
 
 /*Преимущества секция*/

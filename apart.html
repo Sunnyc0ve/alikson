@@ -1,0 +1,613 @@
+<html lang="ru"><head>
+<title>Alikson</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/form.css?5.7">
+<link rel="stylesheet" href="css/header.css?5.7">
+<link rel="stylesheet" href="fonts/stylesheet.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    content: [
+      "<?php echo get_template_directory_uri(); ?>/**/*.php",
+      "<?php echo get_template_directory_uri(); ?>/src/js/**/*.js",
+    ],
+    corePlugins: {
+      preflight: false,
+    },
+    theme: { extend: {} },
+    plugins: [],
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pages/_apartsharing.css?5.7">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header >
+    <div id="site-header" class="HeaderContainer">
+      <a href="index.php">
+        <logo>
+          <img src="./img/logo.svg">
+        </logo>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="Company.php">О компании</a></li>
+          <li id="DirectionsMenuBtn">Направления бизнеса
+            <div class="Directions_hidden">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="apart_sharing.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
+          <li><a href="#AnchorForm">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="Header-Menu">
+        <button><img src="img/zoom.svg"></button>
+        <input type="text" placeholder="Поиск по сайту">
+      </div>
+      <div class="Header-Menu_mobile">
+        <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
+        <div class="Header-Menu_mobile_hidden">
+          <div class="links">
+            <div>
+              <a href="Company.php"><span>О компании</span></a>
+            </div>
+            <div>
+              <button data="h1"><span>Направления бизнеса</span></button>
+              <div data="h1">
+                <ul>
+                  <li><a href="PremierCars.php">Premier Cars</a></li>
+                  <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                  <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                  <li><a href="Investitions.php">Alikson Invest</a></li>
+                  <li><a href="Mining.php">Майнинг</a></li>
+                  <li><a href="Logistick.php">Логистика</a></li>
+                  <li><a href="apart_sharing.php">Тендерный дивизион</a></li>
+                  <li><a href="PayAgent.php">Платежный агент</a></li>
+                  <li><a href="Development.php">Девелопмент</a></li>
+                  <li><a href="Vad.php">ВЭД</a></li>
+                  <li><a href="ApartSharing.php">Apart Sharing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <a href="https://hh.ru/employer/5185896"><span>Карьера в компании</span></a>
+            </div>
+            <div>
+              <a href="#AnchorForm"><span>Контакты</span></a>
+            </div>
+          </div>
+          <div class="Header-Menu">
+            <button><img src="img/zoom.svg"></button>
+            <input type="text" placeholder="Поиск по сайту">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<?php
+get_header();
+?>
+<main>
+<img class="MainBack2 block lg:hidden" src="img/apart_sharing/Background.png">
+<img class="MainBack1 hidden lg:block" src="img/apart_sharing/Background.png">
+<section class="MainSection pt-[120px]">
+    
+    <h1>Apart sharing</h1>
+    <p>Инновационная платформа для аренды и управления недвижимостью 
+        с автоматизацией процессов, бесконтактным заселением, 
+        контролем объектов и управлением доходами
+    </p>
+    <div class="Main-Group">
+      <a class="link">Узнать больше</a>
+      <div class="Main-Content">
+        <div class="Main-El">
+          <div>
+            <h3>5000+</h3>
+            <p>клиентов - ежемесячный 
+                прирост аудитории
+            </p>
+          </div>
+        </div>
+        <div class="Main-El">
+          <div>
+            <h3>>24 000</h3>
+            <p>новых пользователей установили 
+            приложение за последние 6 мес.
+            </p>
+          </div>
+        </div>
+        <div class="Main-El">
+          <div>
+            <h3>93%</h3>
+            <p class="whitespace-nowrap">клиентов продолжают пользоваться <br>
+                сервисом на постоянной основе
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible">
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                НАШИ СЕРВИСЫ
+            </h2>
+            <p class="
+                text-white
+                text-[9px] max-w-[135px]         /* мобильные */
+                sm:text-[12px] sm:max-w-[200px]  /* ≥640px */
+                md:text-[18px] md:max-w-[350px]  /* ≥768px */
+                lg:text-[28px] lg:max-w-[500px]  /* ≥1024px */
+                xl:text-[36px] xl:max-w-[648px]  /* ≥1280px */
+                ">
+                Наши инструменты – ваше
+                конкурентное преимущество
+            </p>
+
+        </div>
+        <div class="flex flex-col lg:flex-row w-full gap-[18px] xl:gap-[85px] ">
+            <img src="./img/apart_sharing/iphone16.png" alt="iphone 16" class="w-full h-full max-w-[725px]" />
+            <div class="flex flex-col gap-4">     
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Service1.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Интерактивная карта объектов
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Показывайте все локации в реальном времени — наглядно, удобно и технологично
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Service2.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm sm:text-xs md:text-base lg:text-2xl">
+                        Интеграция с платформами бронирования
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Системы онлайн-бронирования — автоматическая загрузка и актуальность данных
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Service3.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Управление объектами
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Контролируйте каждый объект в одном интерфейсе — статусы, занятость, доход
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Service4.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Автоматизация процессов
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Экономьте время: уведомления, отчёты, напоминания — всё работает без вашего участия
+                    </p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="link text-lg lg:py-6 w-full">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="AutoSection py-5 md:py-14 lg:py-16">
+  <div class="Auto-Header">
+    <h2 class=" font-mediumfont-medium">СИСТЕМА <br>АВТОМАТИЗАЦИИ</h2>
+    <p class="text-[11px] sm:text-sm md:text-base lg:text-lg xl:text-xl">Цифровая платформа управления - удобно, понятно, эффективно</p>
+  </div>
+    <div class="Auto-Content hidden lg:flex">
+        <div class="Card">
+          <img src="img/apart_sharing/AutoBack.png">
+          <span class="uppercase">для клиентов</span>
+          <h3>Apart Sharing</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>выбор квартир на карте</li>
+            <li>бронирование и оплата</li>
+            <li>открытие домофона</li>
+            <li>закрытие / открытие квартиры</li>
+            <li>завершение аренды</li>
+            <li>участие в реферальной программе</li>
+            <li>участие в бонусных программах</li>
+            <li>получение выплат и бонусов</li>
+            </ul>
+        </div>
+        <div class="Card">
+          <img src="img/apart_sharing/AutoBack.png">
+          <span>для клиентов</span>
+          <h3>Apart Business</h3>
+<ul class="list-disc list-inside space-y-1 mt-2">
+    <li>добавление квартир</li>
+    <li>отслеживание бронирований</li>
+    <li>получение выплат</li>
+    <li>мониторинг объекта</li>
+    <li>финансовая статистика</li>
+  </ul>
+
+        </div>
+        <div class="Card">
+          <img src="img/apart_sharing/AutoBack.png">
+          <span>для сотрудников</span>
+          <h3>Apart Cleaning</h3>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>получение заявок на уборку</li>
+                <li>выбор графика работы</li>
+                <li>отправление отчетов о состоянии квартиры</li>
+                <li>получение заработной платы</li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full Auto-Content_mobile block lg:hidden">
+      <div class="swiperB swiper-initialized swiper-horizontal swiper-watch-progress">
+        <div class="swiper-wrapper items-stretch" id="swiper-wrapper-c98c65de2951cf22" aria-live="polite">
+          <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active h-auto" role="group" aria-label="1 / 4" data-swiper-slide-index="0">  
+            <div class="Card max-h-[300px] my-auto  h-full justify-between flex flex-col">
+              <img src="img/apart_sharing/AutoBack.png">
+              <span>для клиентов</span>
+              <h3>Apart Sharing</h3>
+              <ul class="list-disc list-inside space-y-1 marker:text-white h-full">
+                <li>выбор квартир на карте</li>
+                <li>бронирование и оплата</li>
+                <li>открытие домофона</li>
+                <li>закрытие / открытие квартиры</li>
+                <li>завершение аренды</li>
+                <li>участие в реферальной программе</li>
+                <li>участие в бонусных программах</li>
+                <li>получение выплат и бонусов</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-visible swiper-slide-next h-auto" role="group" aria-label="2 / 4" data-swiper-slide-index="2" style="width: 350px; margin-right: -40px;">
+            <div class="Card max-h-[300px] my-auto  h-full justify-between flex flex-col">
+              <img src="img/apart_sharing/AutoBack.png">
+              <span>для клиентов</span>
+              <h3>Apart Business</h3>
+              <ul class="list-disc list-inside space-y-1  marker:text-white h-full">
+                <li>добавление квартир</li>
+                <li>отслеживание бронирований</li>
+                <li>получение выплат</li>
+                <li>мониторинг объекта</li>
+                <li>финансовая статистика</li>
+            </ul>
+
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-visible swiper-slide-next h-auto" role="group" aria-label="3 / 4" data-swiper-slide-index="3" style="width: 350px; margin-right: -40px;">
+            <div class="Card max-h-[300px] my-auto  h-full justify-between flex flex-col">
+              <img src="img/apart_sharing/AutoBack.png">
+              <span>для сотрудников</span>
+              <h3>Apart Cleaning</h3>
+              <ul class="list-disc list-inside space-y-1 marker:text-white h-full">
+                <li>получение заявок на уборку</li>
+                <li>выбор графика работы</li>
+                <li>отправление отчетов о состоянии квартиры</li>
+                <li>получение заработной платы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class=" w-full overflow-visible">
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                ПРЕИМУЩЕСТВА
+            </h2>
+            <p class="
+                text-white
+                text-[9px] max-w-[135px]         /* мобильные */
+                sm:text-[12px] sm:max-w-[200px]  /* ≥640px */
+                md:text-[18px] md:max-w-[350px]  /* ≥768px */
+                lg:text-[28px] lg:max-w-[500px]  /* ≥1024px */
+                xl:text-[36px] xl:max-w-[648px]  /* ≥1280px */
+                ">
+                Наши инструменты - ваше конкурентное преимущество
+            </p>
+
+        </div>
+        <div class="flex flex-col flex-col-reverse lg:flex-row w-full gap-[18px] xl:gap-[85px] ">
+            <div class="flex flex-col gap-4">     
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Adventage1.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Высокий доход
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Максимум прибыли при минимуме усилий
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Adventage2.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Экономия на привлечении гостей
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Максимум прибыли при минимуме усилий
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Adventage3.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Бесконтактная аренда
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Без личных встреч и с автоматизированной оплатой
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Adventage4.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Проверенные арендаторы
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Верификация и защита от проблемных гостей
+                    </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-start p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/apart_sharing/Adventage5.svg"
+                        class="" />
+                    <div>
+                    <h3 class="text-white font-medium mb-2.5
+                                text-sm md:text-base lg:text-2xl">
+                        Управление с телефона
+                    </h3>
+                    <p class="text-white font-light
+                                text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                               ">
+                        Всё под контролем в любом месте
+                    </p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="link text-lg lg:py-6 w-full">
+                    Узнать больше
+                </a>
+            </div>
+            <img src="./img/apart_sharing/AdvantagesBack.png" alt="iphone 16" class="w-full h-full max-w-[725px] mx-auto lg:mx-0" />       
+        </div>
+        
+    </div>
+    
+</section>
+<section class="FormSection" id="AnchorForm">
+<img class="deskFormImg" src="img/FormBack.png">
+<div class="Form-Header">
+    <p>Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
+</div>
+    <form action="" method="POST">
+    
+        <p class="FormHeaderMobile">Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
+        <input type="text" name="name" required="" placeholder="Ваше имя">
+        <input
+        id="phone"
+        type="tel"
+        name="phone"
+        placeholder="+7 (___) ___-__-__"
+        required
+        pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+        />
+    <div class="FormButtonContainer">
+    <span>Оставить заявку</span>
+    <input type="submit" value="Оставить заявку">
+    </div>
+    <p>Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время, чтобы ответить на&nbsp;все вопросы</p>
+    </form>
+</section>
+<?php include("include/form.php") ?>
+</main>
+<footer>
+  <div class="Footer-Mobile">
+  <div class="FooterColomn">
+    <h3>Навигация</h3>
+    <a href="Company.php">О компании</a>
+    <a href="news.php">Новости</a>
+    <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+    <a href="index.php#AnchorProjects">Наши проекты</a>
+    <a href="index.php#AnchorForm">Контакты</a>
+  </div>
+  <div class="FooterColomn">
+      <h3>Социальные сети</h3>
+        <a href="https://t.me/alikson_corp">Telegram</a>
+        <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+  </div>
+  <div class="FooterColomn">
+        <h3>Направления</h3>
+        <a href="Marketplace.php">Маркетплейс электроники</a>
+        <a href="Investitions.php">Alikson инвестиции</a>
+        <a href="PremierCars.php">Аренда премиум авто</a>
+        <a href="apart_sharing.php">Тендерный дивизион</a>
+        <a href="Opt.php">Оптовая дистрибуция</a>
+        <a href="Vad.php">Внешнеэкономическая деятельность</a>
+  </div>
+  <div class="FooterColomn">
+        <a href="ApartSharing.php">Apart Sharing</a>
+        <a href="Mining.php">Майнинг</a>
+        <a href="Logistick.php">Логистика</a>
+        <a href="PayAgent.php">Платежный агент</a>
+        <a href="Development.php">Девелопмент</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+  </div>
+  </div>
+  <div class="Footer-Desk">
+    <div class="FooterLeft">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+    </div>
+    <div class="FooterRight">
+      <div class="FooterColomn">
+        <h3>Навигация</h3>
+        <a href="Company.php">О компании</a>
+        <a href="news.php">Новости</a>
+        <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+        <a href="index.php#AnchorProjects">Наши проекты</a>
+        <a href="index.php#AnchorForm">Контакты</a>
+      </div>
+      <div class="FooterColomn">
+            <h3>Направления</h3>
+            <a href="Marketplace.php">Маркетплейс электроники</a>
+            <a href="Investitions.php">Alikson инвестиции</a>
+            <a href="PremierCars.php">Аренда премиум авто</a>
+            <a href="apart_sharing.php">Тендерный дивизион</a>
+            <a href="Opt.php">Оптовая дистрибуция</a>
+            <a href="Vad.php">Внешнеэкономическая деятельность</a>
+      </div>
+      <div class="FooterColomn">
+            <a href="ApartSharing.php">Apart Sharing</a>
+            <a href="Mining.php">Майнинг</a>
+            <a href="Logistick.php">Логистика</a>
+            <a href="PayAgent.php">Платежный агент</a>
+            <a href="Development.php">Девелопмент</a>
+      </div>
+      <div class="FooterColomn">
+          <h3>Социальные сети</h3>
+            <a href="https://t.me/alikson_corp">Telegram</a>
+            <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<?php include('include/footer.php') ?>
+</body>
+<script src="include/header.js?5.7"></script>
+<script>
+
+  const swiperB = new Swiper(".swiperB", {
+    loop: true,
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".Swiper-Next",
+      prevEl: ".Swiper-Prev",
+    },
+  });
+  </script>
+
+</body></html>
