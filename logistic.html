@@ -1,0 +1,615 @@
+<html lang="ru"><head>
+<title>Alikson Тендерный Дивизион</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    content: [
+      "<?php echo get_template_directory_uri(); ?>/**/*.php",
+      "<?php echo get_template_directory_uri(); ?>/src/js/**/*.js",
+    ],
+    corePlugins: {
+      preflight: false,
+    },
+    theme: {
+      extend: {
+        screens: {
+          '980': '980px',
+        },
+      },
+    },
+    plugins: [],
+  }
+</script>
+<link rel="stylesheet" href="css/header.css?5.7">
+<link rel="stylesheet" href="fonts/stylesheet.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pages/tender.css?5.7"><link rel="stylesheet" href="css/form.css?5.7">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header >
+  <div id="site-header" class="HeaderContainer">
+    <a href="index.php">
+      <logo>
+        <img src="img/logo.svg">
+      </logo>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="Company.php">О компании</a></li>
+        <li id="DirectionsMenuBtn">Направления бизнеса
+          <div class="Directions_hidden">
+            <ul>
+              <li><a href="PremierCars.php">Premier Cars</a></li>
+              <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+              <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+              <li><a href="Investitions.php">Alikson Invest</a></li>
+              <li><a href="Mining.php">Майнинг</a></li>
+              <li><a href="Logistick.php">Логистика</a></li>
+              <li><a href="Tender.php">Тендерный дивизион</a></li>
+              <li><a href="PayAgent.php">Платежный агент</a></li>
+              <li><a href="Development.php">Девелопмент</a></li>
+              <li><a href="Vad.php">ВЭД</a></li>
+              <li><a href="ApartSharing.php">Apart Sharing</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="https://hh.ru/employer/5185896">Карьера в компании</a></li>
+        <li><a href="#AnchorForm">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="Header-Menu">
+      <button><img src="img/zoom.svg"></button>
+      <input type="text" placeholder="Поиск по сайту">
+    </div>
+    <div class="Header-Menu_mobile">
+      <button id="MenuButton"><img src="img/BurgerMenu.svg"></button>
+      <div class="Header-Menu_mobile_hidden">
+        <div class="links">
+          <div>
+            <a href="Company.php"><span>О компании</span></a>
+          </div>
+          <div>
+            <button data="h1"><span>Направления бизнеса</span></button>
+            <div data="h1">
+              <ul>
+                <li><a href="PremierCars.php">Premier Cars</a></li>
+                <li><a href="Marketplace.php">Аликсон Маркетплейс</a></li>
+                <li><a href="Opt.php">Оптовая дистрибуция</a></li>
+                <li><a href="Investitions.php">Alikson Invest</a></li>
+                <li><a href="Mining.php">Майнинг</a></li>
+                <li><a href="Logistick.php">Логистика</a></li>
+                <li><a href="Tender.php">Тендерный дивизион</a></li>
+                <li><a href="PayAgent.php">Платежный агент</a></li>
+                <li><a href="Development.php">Девелопмент</a></li>
+                <li><a href="Vad.php">ВЭД</a></li>
+                <li><a href="ApartSharing.php">Apart Sharing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <a href="https://hh.ru/employer/5185896"><span>Карьера в компании</span></a>
+          </div>
+          <div>
+            <a href="#AnchorForm"><span>Контакты</span></a>
+          </div>
+        </div>
+        <div class="Header-Menu">
+          <button><img src="img/zoom.svg"></button>
+          <input type="text" placeholder="Поиск по сайту">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<img class="MainBack1 hidden lg:block z-0" src="img/tender/MainBack1.png">
+<img class="MainBack2 hidden lg:block z-0" src="img/tender/MainBack2.png">
+<img class="MainBack1 lg:hidden z-0" src="img/tender/MainBack1_mob.png">
+<img class="MainBack2 lg:hidden z-0" src="img/tender/MainBack2_mob.png">
+<section class="MainSection pt-[120px] z-1">
+    
+    <h1>Логистика</h1>
+    <p>Полный спектр услуг в сфере закупки, доставки и таможенного оформления высокотехнологичной  и потребительской электроники, оборудования и комплектующих. Помогаем бизнесу получать необходимые товары без административных и логистических барьеров</p>
+    <div class="Main-Group">
+      <a href="">Оставить заявку</a>
+      <div class="Main-Content">
+        <div class="Main-El">
+          <div>
+            <h3>130+</h3>
+            <p>клиентов из различных отраслей</p>
+          </div>
+        </div>
+        <div class="Main-El">
+          <div>
+            <h3>35+</h3>
+            <p>партнеров из разных стран</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible z-[2]">
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 lg:px-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                НАШИ СЕРВИСЫ
+            </h2>
+            <p class="
+                text-white
+                text-[9px] max-w-[135px]         /* мобильные */
+                sm:text-[12px] sm:max-w-[200px]  /* ≥640px */
+                md:text-[18px] md:max-w-[350px]  /* ≥768px */
+                lg:text-[28px] lg:max-w-[500px]  /* ≥1024px */
+                xl:text-[36px] xl:max-w-[648px]  /* ≥1280px */
+                ">
+                Полный цикл услуг - от закупки до доставки
+            </p>
+
+        </div>
+        <div class="flex flex-col justify-center lg:flex-row w-full gap-[18px] xl:gap-[85px] ">
+            <div class="wrap max-w-[864px] w-full overflow-hidden max-h-[324px] mx-auto" 
+              style="
+                -webkit-mask-image: linear-gradient(to right, transparent 0px, black 100px, black calc(100% - 100px), transparent 100%);
+                -webkit-mask-size: 100% 100%;
+                -webkit-mask-repeat: no-repeat;
+                mask-image: linear-gradient(to right, transparent 0px, black 100px, black calc(100% - 100px), transparent 100%);
+                mask-size: 100% 100%;
+                mask-repeat: no-repeat;
+              ">
+                <div class="items-wrap">
+                    <div class="items marquee">
+                        <div class="item"><img src="img/logistick/Services1.png" /></div>
+                        <div class="item"><img src="img/logistick/Services2.png" /></div>
+                        <div class="item"><img src="img/logistick/Services3.png" /></div>
+                        <div class="item"><img src="img/logistick/Services4.png" /></div>
+                        <div class="item"><img src="img/logistick/Services5.png" /></div>
+                        <div class="item"><img src="img/logistick/Services6.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">     
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <h3 class="text-white font-medium
+                                text-sm md:text-base lg:text-2xl">
+                        Закупка товаров
+                    </h3>
+                </div>
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <h3 class="text-white font-medium
+                                text-sm sm:text-xs md:text-base lg:text-2xl">
+                        Транспортировка
+                    </h3>
+                </div>
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-[rgba(36,36,36,0.5)]
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <h3 class="text-white font-medium
+                                text-sm md:text-base lg:text-2xl">
+                        Таможенное оформление
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible z-[2]">
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 lg:px-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                uppercase
+                ">
+                География
+            </h2>
+            <p class="
+                text-white
+                text-[9px] max-w-[135px]         /* мобильные */
+                sm:text-[12px] sm:max-w-[200px]  /* ≥640px */
+                md:text-[18px] md:max-w-[350px]  /* ≥768px */
+                lg:text-[28px] lg:max-w-[500px]  /* ≥1024px */
+                xl:text-[36px] xl:max-w-[648px]  /* ≥1280px */
+                ">
+                Прямые поставки из Китая, 
+                ОАЭ и других стран мира
+            </p>
+
+        </div>
+        <div class="flex flex-col lg:flex-row w-full gap-[18px] xl:gap-[85px] ">
+            <img src="img/logistick/Map.png" alt="map" class="w-full h-full max-w-[1250px] mx-auto" />
+        </div>
+        
+    </div>
+    
+</section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible z-[2]">
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 lg:px-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                наши услуги
+            </h2>
+        </div>
+        <div class="flex justify-center flex-col lg:flex-row w-full gap-[18px] xl:gap-[85px] ">
+            <div class="wrap max-w-[864px] w-full overflow-hidden max-h-[324px] mx-auto" 
+              style="
+                -webkit-mask-image: linear-gradient(to right, transparent 0px, black 100px, black calc(100% - 100px), transparent 100%);
+                -webkit-mask-size: 100% 100%;
+                -webkit-mask-repeat: no-repeat;
+                mask-image: linear-gradient(to right, transparent 0px, black 100px, black calc(100% - 100px), transparent 100%);
+                mask-size: 100% 100%;
+                mask-repeat: no-repeat;
+              ">
+                <div class="items-wrap">
+                    <div class="items marquee">
+                        <div class="item"><img src="img/logistick/Services1.png" /></div>
+                        <div class="item"><img src="img/logistick/Services2.png" /></div>
+                        <div class="item"><img src="img/logistick/Services3.png" /></div>
+                        <div class="item"><img src="img/logistick/Services4.png" /></div>
+                        <div class="item"><img src="img/logistick/Services5.png" /></div>
+                        <div class="item"><img src="img/logistick/Services6.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 w-full">     
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-transparent border-white border border-solid
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <div>
+                      <h3 class="text-white font-medium
+                                  text-sm md:text-base lg:text-2xl">
+                          Авиадоставка
+                      </h3>
+                      <p class="text-white/60 font-light
+                                  text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                                ">
+                          от 7 до 14 дней
+                      </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-transparent border-white border border-solid
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <div>
+                      <h3 class="text-white font-medium
+                                  text-sm md:text-base lg:text-2xl">
+                          Автодоставка
+                      </h3>
+                      <p class="text-white/60 font-light
+                                  text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                                ">
+                          от 14 до 20 дней
+                      </p>
+                    </div>
+                </div>
+                <div class="h-full flex items-center p-5 gap-[20px]
+                                rounded-[11px] bg-transparent border-white border border-solid
+                                transition-all duration-500 ease
+                                hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                    <img src="img/logistick/Check.svg"
+                        class="" />
+                    <div>
+                      <h3 class="text-white font-medium
+                                  text-sm md:text-base lg:text-2xl">
+                          Морские перевозки
+                      </h3>
+                      <p class="text-white/60 font-light
+                                  text-[11px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg
+                                ">
+                          от 30 до 50 дней
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible z-[2]">
+
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 lg:px-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                товары, которые мы поставляем
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 justify-center flex-col lg:grid-cols-2 w-full gap-5 ">
+            <div class="h-full w-full flex items-center p-5 gap-[20px]
+                            rounded-[11px] bg-transparent border-white border border-solid
+                            transition-all duration-500 ease
+                            hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                <img src="img/logistick/Check.svg"
+                    class="" />
+                  <h3 class="text-white font-medium
+                              text-sm md:text-base lg:text-2xl">
+                      Крупная и мелкая бытовая техника
+                  </h3>
+            </div>
+            <div class="h-full w-full flex items-center p-5 gap-[20px]
+                            rounded-[11px] bg-transparent border-white border border-solid
+                            transition-all duration-500 ease
+                            hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                <img src="img/logistick/Check.svg"
+                    class="" />
+                  <h3 class="text-white font-medium
+                              text-sm md:text-base lg:text-2xl">
+                      Электроника и оборудование
+                  </h3>
+            </div>
+            <div class="h-full w-full flex items-center p-5 gap-[20px]
+                            rounded-[11px] bg-transparent border-white border border-solid
+                            transition-all duration-500 ease
+                            hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                <img src="img/logistick/Check.svg"
+                    class="" />
+                  <h3 class="text-white font-medium
+                              text-sm md:text-base lg:text-2xl">
+                      Гаджеты
+                  </h3>
+            </div>
+            <div class="h-full w-full flex items-center p-5 gap-[20px]
+                            rounded-[11px] bg-transparent border-white border border-solid
+                            transition-all duration-500 ease
+                            hover:shadow-[0_0_15px_0_rgba(255,255,255,0.91)]">
+                <img src="img/logistick/Check.svg"
+                    class="" />
+                  <h3 class="text-white font-medium
+                              text-sm md:text-base lg:text-2xl">
+                      Микроэлектроника и комплектующие
+                  </h3>
+            </div>
+        </div>
+        
+    </div>  
+</section>
+<section class="lg:bg-[#101010]/80 rounded-[20px] w-full overflow-visible z-[2]">
+
+    <div class="flex flex-col gap-3 lg:gap-14 max-w-[1490px] mx-auto py-5 lg:px-5 md:py-10 lg:py-16 xl:py-20 w-full">
+        <div class="flex w-full justify-between items-center">
+            <h2 class=" font-medium
+                text-white
+                text-xs
+                sm:text-sm
+                md:text-base
+                lg:text-xl
+                xl:text-2xl
+                ">
+                ПОЧЕМУ НАС ВЫБИРАЮТ
+            </h2>
+        </div>
+        <div class="hidden lg:flex lg:items-center px-8 py-6 w-full gap-x-6">
+          <!-- Шаг 1 -->
+          <div class="flex items-center gap-3">
+            <span class="text-[70px] font-bold text-[#00C99A]">01</span>
+            <span class="text-base text-white whitespace-nowrap">Официальные<br>  поставки</span>
+          </div>
+          <!-- Линия -->
+          <div class="h-px bg-[#00C99A] w-full"></div>
+          <!-- Шаг 2 -->
+          <div class="flex items-center gap-3">
+            <span class="text-[70px] font-bold text-[#00C99A]">02</span>
+            <span class="text-base text-white whitespace-nowrap">Специальные<br>  условия</span>
+          </div>
+          <!-- Линия -->
+          <div class="h-px bg-[#00C99A] w-full"></div>
+          <!-- Шаг 3 -->
+          <div class="flex items-center gap-3">
+            <span class="text-[70px] font-bold text-[#00C99A]">03</span>
+            <span class="text-base text-white whitespace-nowrap">Прозрачность<br> и надёжные сделки</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-5 grid-rows-2 items-center px-8 py-6 lg:hidden">
+          <div class="col-start-1 flex">
+            <span class="text-2xl font-bold text-[#00C99A]">01</span>
+          </div>
+          <div class="col-start-2 h-px bg-[#00C99A] max-w-11"></div>
+          <div class="col-start-3 flex">
+            <span class="text-2xl font-bold text-[#00C99A]">02</span>
+          </div>
+          <div class="col-start-4 h-px bg-[#00C99A] max-w-11"></div>
+          <div class="col-start-5 flex">
+            <span class="text-2xl font-bold text-[#00C99A]">03</span>
+          </div>
+
+          <div class="col-start-1 flex justify-center">
+            <span class=" text-base text-white ">
+              Официальные поставки
+            </span>
+          </div>
+
+          <div class="col-start-3 flex justify-center">
+            <span class=" text-base text-white ">
+              Специальные условия
+            </span>
+          </div>
+          <div class="col-start-5 flex justify-center">
+            <span class=" text-base text-white ">
+              Прозрачность и надёжные сделки
+            </span>
+          </div>
+        </div>
+      </div>    
+  </div>  
+</section>
+<section class="FormSection" id="AnchorForm">
+    <img class="deskFormImg" src="img/FormBack.png">
+    <div class="Form-Header">
+      <p>Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
+    </div>
+      <form action="" method="POST">
+        
+          <p class="FormHeaderMobile">Оставьте заявку и получите бесплатную консультацию уже сегодня!</p>
+          <input type="text" name="name" required="" placeholder="Ваше имя">
+          <input type="text" name="phone" required="" placeholder="Ваш телефон">
+        <div class="FormButtonContainer">
+        <span>Оставить заявку</span>
+        <input type="submit" value="Оставить заявку">
+        </div>
+        <p>Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время, чтобы ответить на&nbsp;все вопросы</p>
+      </form>
+</section>
+</main>
+<footer>
+  <div class="Footer-Mobile">
+  <div class="FooterColomn">
+    <h3>Навигация</h3>
+    <a href="Company.php">О компании</a>
+    <a href="news.php">Новости</a>
+    <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+    <a href="index.php#AnchorProjects">Наши проекты</a>
+    <a href="index.php#AnchorForm">Контакты</a>
+  </div>
+  <div class="FooterColomn">
+      <h3>Социальные сети</h3>
+        <a href="https://t.me/alikson_corp">Telegram</a>
+        <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+  </div>
+  <div class="FooterColomn">
+        <h3>Направления</h3>
+        <a href="Marketplace.php">Маркетплейс электроники</a>
+        <a href="Investitions.php">Alikson инвестиции</a>
+        <a href="PremierCars.php">Аренда премиум авто</a>
+        <a href="Tender.php">Тендерный дивизион</a>
+        <a href="Opt.php">Оптовая дистрибуция</a>
+        <a href="Vad.php">Внешнеэкономическая деятельность</a>
+  </div>
+  <div class="FooterColomn">
+        <a href="ApartSharing.php">Apart Sharing</a>
+        <a href="Mining.php">Майнинг</a>
+        <a href="Logistick.php">Логистика</a>
+        <a href="PayAgent.php">Платежный агент</a>
+        <a href="Development.php">Девелопмент</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+  </div>
+  <div class="FooterColomn">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+  </div>
+  </div>
+  <div class="Footer-Desk">
+    <div class="FooterLeft">
+      <a href="index.php"><logo><img src="img/logoFooter.svg"></logo></a>
+      <a href="https://t.me/alikson_corp"><img src="img/tg.svg">@alikson_msk</a>
+    </div>
+    <div class="FooterRight">
+      <div class="FooterColomn">
+        <h3>Навигация</h3>
+        <a href="Company.php">О компании</a>
+        <a href="news.php">Новости</a>
+        <a href="https://hh.ru/employer/5185896">Карьера в компании</a>
+        <a href="index.php#AnchorProjects">Наши проекты</a>
+        <a href="index.php#AnchorForm">Контакты</a>
+      </div>
+      <div class="FooterColomn">
+            <h3>Направления</h3>
+            <a href="Marketplace.php">Маркетплейс электроники</a>
+            <a href="Investitions.php">Alikson инвестиции</a>
+            <a href="PremierCars.php">Аренда премиум авто</a>
+            <a href="Tender.php">Тендерный дивизион</a>
+            <a href="Opt.php">Оптовая дистрибуция</a>
+            <a href="Vad.php">Внешнеэкономическая деятельность</a>
+      </div>
+      <div class="FooterColomn">
+            <a href="ApartSharing.php">Apart Sharing</a>
+            <a href="Mining.php">Майнинг</a>
+            <a href="Logistick.php">Логистика</a>
+            <a href="PayAgent.php">Платежный агент</a>
+            <a href="Development.php">Девелопмент</a>
+      </div>
+      <div class="FooterColomn">
+          <h3>Социальные сети</h3>
+            <a href="https://t.me/alikson_corp">Telegram</a>
+            <a href="https://www.instagram.com/alikson_corp/">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="include/header.js?5.7"></script>
+<script>
+  const swiperA = new Swiper(".swiperA", {
+    loop: true,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".Swiper-Next",
+      prevEl: ".Swiper-Prev",
+    },
+  });
+  const swiperB = new Swiper(".swiperB", {
+    loop: true,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".Swiper-Next",
+      prevEl: ".Swiper-Prev",
+    },
+  });
+  </script>
+</body></html>
