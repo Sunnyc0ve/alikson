@@ -1,7 +1,7 @@
 /* ОБЩИЕ */
 body {
-    background: url("../../img/tender/Mob-background.svg");
-    background-size: 100% 100%;
+    background: url("../../img/tender/Mob-background.svg") no-repeat;
+    background-size: 100%;
     background-color: #121212;
     overflow-x: hidden;
 }
@@ -9,7 +9,7 @@ body {
 @media (min-width: 980px) {
     body {
         background: url("../../img/tender/Pc-background.svg");
-        background-size: 100% 100%;
+        background-size: 100%;
         background-color: #121212;
     }
 }
@@ -20,6 +20,7 @@ main {
     padding: 0 20px;
     max-width: 1790px;
     margin: 0 auto;
+    overflow: hidden;
   }
 /* Главная секция*/
 .MainSection {

@@ -1,0 +1,264 @@
+/* ОБЩИЕ */
+body {
+    background: url("../../img/logistick/Mob-background.svg") no-repeat;
+    background-size: 100%;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+@media (min-width: 980px) {
+    body {
+        background: url("../../img/logistick/Pc-background.svg");
+        background-size: 100%;
+        background-color: #121212;
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 0 20px;
+    max-width: 1790px;
+    margin: 0 auto;
+  }
+/* Главная секция*/
+.MainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 270px 0px 150px 0px;
+    position: relative;
+    width: 100%;
+}
+
+/* .MainSection .Background {
+  background: url('../../img/logistick/MainBack.png');
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 1920px;
+  height: 920px;
+  top: -120px;
+  z-index: -1;
+} */
+
+.MainBack1 {
+    position: absolute;
+    left: 0px;
+    mix-blend-mode: color-dodge;
+    top: 250px;
+}
+
+.MainBack2 {
+    position: absolute;
+    right: 0px;
+    mix-blend-mode: color-dodge;
+    top: 70px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: -0.72px;
+}
+
+.MainSection>p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    width: 935px;
+}
+
+  .MainSection a {
+    position: relative;        /* чтобы ::before правильно позиционировался */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 486px;
+    margin: 0 auto;
+    padding: 12px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2178C8 0%, #103B62 86.06%);
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .MainSection a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.20) 100%),
+      linear-gradient(268deg, #1C67AC -18.3%, #41CCFF 35.05%, #41FFEF 98.28%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .MainSection a:hover::before {
+    opacity: 1;
+  }
+
+.MainSection .Main-Content {
+    display: grid;
+    width: 678px;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    margin-top: 60px;
+}
+
+.Main-El {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+}
+
+.Main-El h3 {
+    color: #FFF;
+    font-size: 46.217px;
+    font-weight: 700;
+    line-height: 78.5%;
+    margin-bottom: 7px;
+}
+
+.Main-El p {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 12.999px;
+    font-weight: 400;
+}
+
+.Main-El::before {
+    content: "";
+    display: block;
+    border-radius: 43px;
+    background: #0485FE;
+    width: 2px;
+    height: 50px;
+}
+
+@media (max-width: 1799px) {}
+
+@media (max-width: 1439px) {}
+
+@media (max-width: 979px) {
+    .MainSection {
+        margin: auto;
+        align-items: start;
+        padding: 60px 0px;
+    }
+
+    .MainSection .Main-Content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .MainSection a {
+        width: 100%;
+    }
+
+
+    .MainSection>p {
+        width: auto;
+        text-align: left;
+    }
+
+    .Main-Group {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 659px) {
+    .MainSection {
+        gap: 20px;
+        position: static;
+        padding-top: 120px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .MainSection>p {
+        font-size: 13px;
+        width: 285px;
+    }
+
+    .Main-El:last-child {
+        display: none;
+    }
+
+    .MainSection .Main-Content {
+        margin-top: 130px;
+    }
+
+    .Main-El h3 {
+        font-size: 18px;
+    }
+
+    .Main-El p {
+        font-size: 12px;
+    }
+
+    .Main-El>div p {
+        width: 70px;
+    }
+
+    .MainSection a {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .MainSection .Background {
+        background: url('../../img/mining/MainBackMobile.png');
+        width: 360px;
+        top: 0px;
+        height: 530px;
+        left: 0px;
+    }
+}
+
+/*Слайдер*/
+.items-wrap {
+  position: relative;
+  display: block;
+  user-select: none;
+  width: 100%;
+}
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  counter-reset: item;
+  justify-content: space-around;
+  width: max-content;
+  will-change: transform; 
+}
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.marquee {
+    animation: scroll 30s linear infinite;
+}
+
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
