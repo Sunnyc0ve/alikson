@@ -110,8 +110,9 @@ h1 {
 .MainSection .Main-Content {
     display: grid;
     width: 678px;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 60px;
+    justify-items: center;
 }
 
 .Main-El {
@@ -158,6 +159,7 @@ h1 {
         grid-template-columns: 1fr;
         gap: 20px;
         width: 100%;
+        justify-items: start;
     }
 
     .MainSection a {
@@ -192,10 +194,6 @@ h1 {
     .MainSection>p {
         font-size: 13px;
         width: 285px;
-    }
-
-    .Main-El:last-child {
-        display: none;
     }
 
     .MainSection .Main-Content {
